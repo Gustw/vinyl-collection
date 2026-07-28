@@ -770,7 +770,7 @@
   Year: 2005
   Label: Dance Rock
   Art: https://i.discogs.com/FnXRE0BZSzzzuRRi1JiW6MWuIocvrYOsy110mUfonF8/rs:fit/g:sm/q:90/h:401/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2MjM1/OC0xMTQ5MDMzNjkx/LmpwZWc.jpeg
-   1. Around The World - Visionary Feat. Peter Ranking
+   1. Around The World - Visionary Feat. Peter Ranking [Key: F# major (2B) | BPM: 115]
    2. Tempest - Visionary Feat. Peter Ranking [Key: A# minor (3A) | BPM: 94]
 
 === Are You Shpongled? -- Shpongle ===
