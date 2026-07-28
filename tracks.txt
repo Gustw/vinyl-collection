@@ -291,14 +291,14 @@
   Art: https://i.discogs.com/4olT0rIhaV_TyCSGqjCvuo6NRL9ZTbGByGFywk2Eo_M/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNDE3/NDYtMTM4NTYyNDQz/Ny0xODI0LmpwZWc.jpeg
    1. Earthwalker - Radikal Guru [Key: G major (9B) | BPM: 140]
    2. Stay Calm - Radikal Guru [Key: D major (10B) | BPM: 140]
-   3. Different Dub - Radikal Guru [Key: C# major (3B)]
+   3. Different Dub - Radikal Guru [Key: C# major (3B) | BPM: 82]
    4. Know Yourself - Radikal Guru [Key: C# major (3B)]
    5. Spaced Out - Radikal Guru [Key: D major (10B) | BPM: 140]
    6. Subconscious - Radikal Guru [Key: G major (9B) | BPM: 158]
    7. Warning! - Radikal Guru [Key: D major (10B)]
    8. Outernational - Radikal Guru [Key: D major (10B)]
    9. Indra - Radikal Guru [Key: Ab major (4B)]
-  10. Wicked Dub - Radikal Guru [Key: E minor (9A)]
+  10. Wicked Dub - Radikal Guru [Key: E minor (9A) | BPM: 155]
 
 === Wicked Ones / Zion Dub -- Scott Allen (11) & Deeper Connection ===
   ID: 5184669
@@ -339,7 +339,7 @@
   Label: Urban Takeover
   Art: https://i.discogs.com/8xPyc_StApef1z8EbXs44lKyyMfWOELD9mMmhAoeRSQ/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTY2/LTE1OTcyNjM3MTQt/NzYyMi5qcGVn.jpeg
    1. Bad Ass ! - Mickey Finn And Aphrodite [Key: C# major (3B) | BPM: 84]
-   2. Drop Top Caddy - Mickey Finn And Aphrodite [Key: A major (11B)]
+   2. Drop Top Caddy - Mickey Finn And Aphrodite [Key: A# minor (3A) | BPM: 120]
 
 === Rukus / Vibration -- Gang Related ===
   ID: 65196
