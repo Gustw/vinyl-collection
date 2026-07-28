@@ -4053,7 +4053,7 @@
    7. Pieces Of What - MGMT [Key: E minor (9A) | BPM: 108]
    8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A) | BPM: 124]
    9. The Handshake - MGMT [Key: B minor (10A)]
-  10. Future Reflections - MGMT [Key: F major (7B)]
+  10. Future Reflections - MGMT [Key: F major (7B) | BPM: 140]
 
 === Salad Days -- Mac DeMarco ===
   ID: 5552990
@@ -4084,7 +4084,7 @@
   Art: https://i.discogs.com/hxepM9eNKg7wdX5BCU6OQTsNkqTRiDtJblJngl1MODI/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTE1/ODIwLTE1NDQ0NTI2/NDEtOTgxMS5qcGVn.jpeg
    1. Disco Devil - Lee Perry & The Full Experience [Key: C major (8B) | BPM: 78]
    2. Lion A De Winner - Lee Perry [Key: F# major (2B) | BPM: 122]
-   3. Dispensation - Winston Watson, Dellenger [Key: Bb major (6B)]
+   3. Dispensation - Winston Watson, Dellenger [Key: Bb major (6B) | BPM: 92]
    4. Such Is Life - Lord Creator [Key: F minor (4A) | BPM: 89]
    5. Roots Train - Junior Murvin [Key: G major (9B) | BPM: 128]
 
