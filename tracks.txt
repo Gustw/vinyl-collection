@@ -3753,8 +3753,8 @@
   12. The Old Man Still Wants It - Yann Tiersen [Key: E major (12B) | BPM: 124]
   13. Still Here - Yann Tiersen [Key: E minor (9A) | BPM: 125]
   14. It Was There... - Yann Tiersen [Key: B minor (10A) | BPM: 82]
-  15. Prayer No. 2 - Yann Tiersen [Key: E minor (9A)]
-  16. Summer Nursery Rhyme No. 1 - Yann Tiersen [Key: E minor (9A)]
+  15. Prayer No. 2 - Yann Tiersen [Key: E minor (9A) | BPM: 104]
+  16. Summer Nursery Rhyme No. 1 - Yann Tiersen [Key: E minor (9A) | BPM: 124]
   17. The Window - Yann Tiersen [Key: A minor (8A)]
   18. Prayer No. 3 - Yann Tiersen [Key: G minor (6A)]
   19. The Empty Room - Yann Tiersen [Key: A minor (8A)]
@@ -3773,8 +3773,8 @@
    4. I Remember The First Time - Alien Project [Key: B minor (10A) | BPM: 148]
    5. One Good (Remix) - Alien Project [Key: G major (9B) | BPM: 145]
    6. Fantasy - Alien Project [Key: G major (9B) | BPM: 145]
-   7. Nitro Punch - Alien Project [Key: C major (8B)]
-   8. Rapiginio - Alien Project [Key: B major (1B)]
+   7. Nitro Punch - Alien Project [Key: C major (8B) | BPM: 145]
+   8. Rapiginio - Alien Project [Key: B major (1B) | BPM: 142]
 
 === Evolution Of Expanded Consciousness -- Various ===
   ID: 713854
@@ -3783,11 +3783,11 @@
   Year: 2006
   Label: TIP.World
   Art: https://i.discogs.com/D_tcrRYMcJLw8wokjiZUteFzH4KEsunE79Apm0K2CPc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMzg1/NC0xNTEzODA5OTI3/LTU4NzMuanBlZw.jpeg
-   1. Vine Of Souls (Australia) - Cyberbabas [Key: G major (9B)]
-   2. Ancient Teachers Of Mankind (England) - Eat Static [Key: F minor (4A)]
-   3. Dances Between Worlds (South America) - 1200 Micrograms [Key: F major (7B)]
-   4. Voyages Into The Supernatural (Africa) - Hujaboy [Key: E minor (9A)]
-   5. Flesh Of The Gods (India) - GMS [Key: D major (10B)]
+   1. Vine Of Souls (Australia) - Cyberbabas [Key: D major (10B) | BPM: 65]
+   2. Ancient Teachers Of Mankind (England) - Eat Static [Key: F minor (4A) | BPM: 140]
+   3. Dances Between Worlds (South America) - 1200 Micrograms [Key: G# minor (1A) | BPM: 138]
+   4. Voyages Into The Supernatural (Africa) - Hujaboy [Key: G# minor (1A) | BPM: 94]
+   5. Flesh Of The Gods (India) - GMS [Key: D major (10B) | BPM: 97]
    6. The Serpent (Europe) - Bullet Proof [Key: Bb major (6B)]
 
 === Aries Tunes 002 -- Various ===
