@@ -19,6 +19,8 @@ import {
 } from './camelot';
 import { Track } from './models';
 import { ConfigService } from './config.service';
+import { Bridge, findBridges } from './bridge';
+import { formatPercent } from './transitions';
 
 const REL_ORDER: Record<string, number> = {
   'Same key': 0,
@@ -307,10 +309,92 @@ interface Row {
             }
           </div>
 
+          <div class="panel bridge-panel">
+            <div class="bridge-head">
+              <b>Bridge finder</b>
+              <span class="muted">
+                I'm on this record and want to get to another — what takes me there?
+              </span>
+              <span class="spacer"></span>
+              @if (bridgeTarget()) {
+                <button class="btn" (click)="clearBridge()">Clear</button>
+              }
+            </div>
+
+            <input
+              type="text"
+              placeholder="Search for the record you want to reach…"
+              [value]="bridgeQuery()"
+              (input)="bridgeQuery.set($any($event.target).value)"
+            />
+
+            @if (!bridgeTarget() && bridgeQuery().trim().length > 1) {
+              <div class="bridge-options">
+                @for (t of bridgeMatches(); track t.id) {
+                  <div class="popover-item" (click)="pickBridge(t)">
+                    <span class="track-title">{{ t.title }}</span>
+                    <span class="track-artist">{{ t.artist }}</span>
+                    @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
+                    <span [class]="'key-badge ' + keyClass(t.camelot)">{{ t.keyText || 'no key' }}</span>
+                  </div>
+                } @empty {
+                  <div class="muted" style="padding:8px">No records match that search.</div>
+                }
+              </div>
+            }
+
+            @if (bridgeTarget(); as target) {
+              <div class="muted bridge-goal">
+                Target: <b>{{ target.title }}</b> — {{ target.artist }}
+                <span [class]="'key-badge ' + keyClass(target.camelot)">{{ target.keyText || 'no key' }}</span>
+                @if (bridgeScope()) { <span>· searching within your crate selection</span> }
+              </div>
+
+              @if (bridges().length === 0) {
+                <div class="empty">
+                  No route found within {{ maxBridges }} record(s). Try widening the crate
+                  selection, or raising the pitch range in Settings.
+                </div>
+              } @else {
+                @for (b of bridges(); track b.path[1] ? b.path[1].id + '-' + b.hops : b.hops) {
+                  <div class="bridge-route">
+                    <div class="bridge-route-head">
+                      @if (b.hops === 0) {
+                        <span class="rel-badge rel-same">direct mix</span>
+                      } @else {
+                        <span class="rel-badge rel-relative">via {{ b.hops }} record(s)</span>
+                      }
+                    </div>
+                    @for (t of b.path; track t.id; let i = $index) {
+                      <div class="bridge-step" (click)="open(t)">
+                        <span class="set-pos">{{ i + 1 }}</span>
+                        <span class="track-title">{{ t.title }}</span>
+                        <span class="track-artist">{{ t.artist }}</span>
+                        @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
+                        <span [class]="'key-badge ' + keyClass(t.camelot)">{{ t.keyText || 'no key' }}</span>
+                      </div>
+                      @if (b.steps[i]; as st) {
+                        <div [class]="'transition ' + st.level">
+                          <span class="tr-icon">↓</span>
+                          <span class="tr-main">
+                            {{ st.from.camelot }} → {{ st.effectiveCamelot }}
+                            @if (st.relation) { <span class="muted">({{ st.relation }})</span> }
+                          </span>
+                          @if (st.percent !== null) {
+                            <span class="pitch-badge" [class.out]="!st.reachable">{{ stepPct(st.percent) }}</span>
+                          }
+                        </div>
+                      }
+                    }
+                  </div>
+                }
+              }
+            }
+          </div>
+
           @if (rows().length === 0) {
             <div class="panel empty">No mixable tracks match the current filters.</div>
-          } @else {
-            <div class="panel">
+          } @else {            <div class="panel">
               @for (r of rows(); track r.track.id) {
                 <div class="track-row" (click)="open(r.track)">
                   <span [class]="'rel-badge ' + relClass(r.camelot)">{{ rel(r.camelot) }}</span>
@@ -643,6 +727,67 @@ export class TrackDetailComponent {
 
   open(t: Track): void {
     this.router.navigate(['/track', t.id]);
+  }
+
+  // --- Bridge finder ------------------------------------------------------
+
+  /** Cap on inserted records; 2 keeps the search fast and the answer usable. */
+  readonly maxBridges = 2;
+
+  readonly bridgeQuery = signal('');
+  readonly bridgeTarget = signal<Track | null>(null);
+
+  /** True when a crate filter is narrowing the pool of usable records. */
+  readonly bridgeScope = computed(() => this.filters().crates.length > 0);
+
+  /**
+   * Records available to route through: the crate selection when there is one,
+   * since a bridge via a record you left at home is no use.
+   */
+  private readonly bridgePool = computed<Track[]>(() => {
+    const f = this.filters();
+    const crates = this.crateSvc.crates();
+    return this.col.tracks().filter((t) => inAnyCrate(crates, f.crates, t));
+  });
+
+  readonly bridgeMatches = computed<Track[]>(() => {
+    const q = this.bridgeQuery().trim().toLowerCase();
+    if (q.length < 2) return [];
+    const cur = this.track();
+    return this.col
+      .tracks()
+      .filter(
+        (t) =>
+          t.id !== cur?.id &&
+          !!t.camelot &&
+          (t.title + ' ' + t.artist + ' ' + t.recordTitle).toLowerCase().includes(q)
+      )
+      .slice(0, 8);
+  });
+
+  readonly bridges = computed<Bridge[]>(() => {
+    const from = this.track();
+    const to = this.bridgeTarget();
+    if (!from || !to) return [];
+    return findBridges(from, to, this.bridgePool(), {
+      pitchRange: this.pitchRange(),
+      maxBridges: this.maxBridges,
+      limit: 5,
+    });
+  });
+
+  pickBridge(t: Track): void {
+    this.bridgeTarget.set(t);
+    this.bridgeQuery.set(`${t.title} — ${t.artist}`);
+  }
+
+  clearBridge(): void {
+    this.bridgeTarget.set(null);
+    this.bridgeQuery.set('');
+  }
+
+  stepPct(percent: number): string {
+    return formatPercent(percent);
   }
 }
 

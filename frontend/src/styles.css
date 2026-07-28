@@ -474,6 +474,39 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 
 .ok-count { color: #9fe6c4; }
 
+/* --- Bridge finder --- */
+.bridge-panel { display: block; }
+.bridge-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.bridge-head .spacer { flex: 1; }
+.bridge-head .muted { font-size: 12px; }
+.bridge-options {
+  margin-top: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bridge-options .popover-item { border-bottom: 1px solid var(--border); }
+.bridge-options .popover-item:last-child { border-bottom: none; }
+.bridge-goal { margin-top: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.bridge-route {
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel-2);
+}
+.bridge-route-head { margin-bottom: 6px; }
+.bridge-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.bridge-step:hover { background: var(--panel); }
+.bridge-route .transition { margin-left: 30px; }
+
 .detail-grid { display: grid; grid-template-columns: 140px 1fr; gap: 8px 14px; }
 .detail-grid div.k { color: var(--muted); }
 .empty { color: var(--muted); padding: 20px; text-align: center; }
