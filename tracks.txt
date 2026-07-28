@@ -2219,8 +2219,8 @@
    4. Who's The Real Skinhead ? (Ska Edit) - The Architect [Key: F minor (4A) | BPM: 120]
    5. Old Mob Blues - The Architect [Key: B minor (10A) | BPM: 100]
    6. Design Of The Future - The Architect [Key: G# minor (1A) | BPM: 98]
-   7. Streets Of Neryhi - The Architect [Key: D major (10B)]
-   8. The Earth Is My Witness - The Architect [Key: F# minor (11A)]
+   7. Streets Of Neryhi - The Architect [Key: D major (10B) | BPM: 110]
+   8. The Earth Is My Witness - The Architect [Key: F# minor (11A) | BPM: 80]
 
 === Le Savoir Faire -- L'Entourloop ===
   ID: 10838657
@@ -2239,14 +2239,14 @@
    8. Le Rendez-Vous - L'Entourloop [Key: A# minor (3A) | BPM: 168]
    9. Forgotten Skank - L'Entourloop [Key: G major (9B) | BPM: 91]
   10. Mississippi Slang - L'Entourloop [Key: G# minor (1A) | BPM: 85]
-  11. Soundbwoy - L'Entourloop [Key: D major (10B)]
-  12. L'Amour Propre - L'Entourloop [Key: Bb major (6B)]
+  11. Soundbwoy - L'Entourloop [Key: D major (10B) | BPM: 170]
+  12. L'Amour Propre - L'Entourloop [Key: Bb major (6B) | BPM: 86]
   13. Fonk Monk - L'Entourloop [Key: C major (8B) | BPM: 184]
   14. The People And The Police - L'Entourloop [Key: E minor (9A) | BPM: 87]
   15. Le Tour De Force - L'Entourloop [Key: D major (10B) | BPM: 98]
-  16. Sounds To Wake The Kids Up - L'Entourloop [Key: F# minor (11A)]
-  17. One & Only - L'Entourloop [Key: D major (10B)]
-  18. Le Bonheur - L'Entourloop
+  16. Sounds To Wake The Kids Up - L'Entourloop [Key: F# minor (11A) | BPM: 172]
+  17. One & Only - L'Entourloop [Key: D major (10B) | BPM: 107]
+  18. Le Bonheur - L'Entourloop [Key: E minor (9A) | BPM: 140]
 
 === I Robot -- The Alan Parsons Project ===
   ID: 9763329
