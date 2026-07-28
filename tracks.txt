@@ -3572,7 +3572,7 @@
   Year: 2020
   Label: Irie-I Productions
   Art: https://i.discogs.com/cHMJbmA9KEaWCuQ9lmu7ohHNE5NiBE7RC2slFqbk-JE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Njgz/MDExLTE2NjkzNTU4/ODQtNjI4Ni5qcGVn.jpeg
-   1. Can't School Me (Melodica Cut) - Irie Ilodica [Key: G# minor (1A)]
+   1. Can't School Me (Melodica Cut) - Irie Ilodica [Key: G# minor (1A) | BPM: 138]
    2. Can't School Me Dub - Irie Ilodica [Key: C# minor (12A) | BPM: 110]
    3. Don't Judge Verse 1 - Irie Ilodica [Key: E minor (9A) | BPM: 156]
    4. Don't Judge Verse 3 - Irie Ilodica [Key: B minor (10A) | BPM: 144]
@@ -3581,16 +3581,16 @@
    7. Blazin Verse 1 - Irie Ilodica [Key: B minor (10A) | BPM: 126]
    8. Blazin Verse 3 - Irie Ilodica [Key: B minor (10A) | BPM: 126]
    9. Dreadwise Verse 1 - Irie Ilodica [Key: C major (8B) | BPM: 92]
-  10. Dreadwise Verse 5 - Irie Ilodica [Key: B minor (10A)]
-  11. Mystical Journey - Jah Works Ft. Irie Ilodica [Key: B minor (10A)]
-  12. Journey In Dub - Jah Works Ft. Irie Ilodica [Key: C# minor (12A)]
+  10. Dreadwise Verse 5 - Irie Ilodica [Key: B minor (10A) | BPM: 125]
+  11. Mystical Journey - Jah Works Ft. Irie Ilodica [Key: B minor (10A) | BPM: 128]
+  12. Journey In Dub - Jah Works Ft. Irie Ilodica [Key: C# minor (12A) | BPM: 110]
   13. I N I (Extended Mix) - Echo Vault & Jah Timothy [Key: D major (10B) | BPM: 128]
   14. Hungry Lion (Extended Mix) - Forward Fever Ft Jah Timothy & Cyndica [Key: A# minor (3A) | BPM: 126]
   15. Self Confidence - Jah Embassy Players Ft Jah Timothy [Key: D# minor (2A) | BPM: 125]
-  16. Self Confidub - Jah Embassy Players Ft Jah Timothy [Key: D# minor (2A)]
-  17. Tim's Piano - Ionyouth Ft Jah Timothy [Key: Bb major (6B)]
-  18. Verse 2 - Ionyouth Ft Jah Timothy [Key: A major (11B)]
-  19. Dreadical Dance (Extended Mix) - Dubtown Abbey Ft Irie ilodica [Key: C major (8B)]
+  16. Self Confidub - Jah Embassy Players Ft Jah Timothy [Key: D# minor (2A) | BPM: 125]
+  17. Tim's Piano - Ionyouth Ft Jah Timothy [Key: F major (7B) | BPM: 141]
+  18. Verse 2 - Ionyouth Ft Jah Timothy [Key: A major (11B) | BPM: 154]
+  19. Dreadical Dance (Extended Mix) - Dubtown Abbey Ft Irie ilodica [Key: C major (8B) | BPM: 132]
 
 === Book Of Dub Series Chapter 2 of 3 -- Indica Dubs Meets Shiloh Ites ===
   ID: 11757970
@@ -3599,8 +3599,8 @@
   Year: 2018
   Label: Indica Dubs
   Art: https://i.discogs.com/Xi9mnVJCi1MYYaWvtds8c1G6-h7puE4JfCn2XNSdVf4/rs:fit/g:sm/q:90/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzU3/OTcwLTE1MjE5NjY0/NTItOTY3OC5qcGVn.jpeg
-   1. A New Flower - Indica Dubs Meets Shiloh Ites [Key: F# minor (11A)]
-   2. A New Flower (Alternate Dubplate Mix) - Indica Dubs Meets Shiloh Ites [Key: C# minor (12A)]
+   1. A New Flower - Indica Dubs Meets Shiloh Ites [Key: B minor (10A) | BPM: 125]
+   2. A New Flower (Alternate Dubplate Mix) - Indica Dubs Meets Shiloh Ites [Key: C# minor (12A) | BPM: 110]
    3. A New Flower (Dub Mix 3) - Indica Dubs Meets Shiloh Ites [Key: G# minor (1A) | BPM: 128]
    4. A New Flower (Dub Mix 4) - Indica Dubs Meets Shiloh Ites [Key: G# minor (1A) | BPM: 128]
 
@@ -3668,7 +3668,7 @@
    4. Smokin Dub - Gaudi With The Scientist [Key: C# minor (12A) | BPM: 110]
    5. Theremin Dub Mafia - Gaudi With Prince Fatty [Key: C# minor (12A) | BPM: 110]
    6. Kumo Dub - Gaudi With Mad Professor [Key: C# minor (12A) | BPM: 110]
-   7. Dub Out Of Theremin - Gaudi With Adrian Sherwood [Key: F major (7B)]
+   7. Dub Out Of Theremin - Gaudi With Adrian Sherwood [Key: D major (10B) | BPM: 78]
    8. Secret Service Dub - Gaudi With Dennis Bovell [Key: B minor (10A) | BPM: 137]
    9. Future Sound Of Theremin - Gaudi With Mad Professor [Key: G major (9B) | BPM: 110]
   10. Butterfly Dub - Gaudi With Adrian Sherwood [Key: B major (1B) | BPM: 105]
