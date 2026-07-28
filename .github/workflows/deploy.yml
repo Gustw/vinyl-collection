@@ -1,9 +1,17 @@
 name: Deploy to GitHub Pages
 
 # Builds the Angular app in frontend/ and publishes it to GitHub Pages.
+# Data-only commits (tracks.txt from the in-app updater) and docs don't need a
+# rebuild — the hosted app reads tracks.txt at runtime from the raw URL — so
+# they're excluded here to avoid a Pages build per 10-record commit.
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'tracks.txt'
+      - 'tracks.txt.keys.tsv'
+      - 'frontend/src/assets/tracks.txt'
+      - '**/*.md'
   workflow_dispatch:
 
 permissions:
