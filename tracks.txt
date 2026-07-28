@@ -2526,7 +2526,7 @@
   Year: 2016
   Label: Virgin EMI Records
   Art: https://i.discogs.com/k7Q4X_bVGADYJW5-ib7-Hoyl-xNxeog22e0Ufnur9zc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNzEw/NzItMTQ4MzE4MTU2/My05MjgwLmpwZWc.jpeg
-   1. Bohemian Rhapsody - Queen [Key: C minor (5A)]
+   1. Bohemian Rhapsody - Queen [Key: C minor (5A) | BPM: 144]
    2. Another One Bites The Dust - Queen [Key: F minor (4A)]
    3. Killer Queen - Queen [Key: Bb major (6B) | BPM: 117]
    4. Fat Bottomed Girls - Queen [Key: D major (10B) | BPM: 88]
