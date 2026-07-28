@@ -4051,7 +4051,7 @@
    5. Kids - MGMT [Key: A major (11B) | BPM: 123]
    6. 4th Dimensional Transition - MGMT [Key: A major (11B) | BPM: 160]
    7. Pieces Of What - MGMT [Key: E minor (9A) | BPM: 108]
-   8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A)]
+   8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A) | BPM: 124]
    9. The Handshake - MGMT [Key: B minor (10A)]
   10. Future Reflections - MGMT [Key: F major (7B)]
 
@@ -4085,7 +4085,7 @@
    1. Disco Devil - Lee Perry & The Full Experience [Key: C major (8B) | BPM: 78]
    2. Lion A De Winner - Lee Perry [Key: F# major (2B) | BPM: 122]
    3. Dispensation - Winston Watson, Dellenger [Key: Bb major (6B)]
-   4. Such Is Life - Lord Creator [Key: F minor (4A)]
+   4. Such Is Life - Lord Creator [Key: F minor (4A) | BPM: 89]
    5. Roots Train - Junior Murvin [Key: G major (9B) | BPM: 128]
 
 === Stop That Train -- Clint Eastwood And General Saint ===
