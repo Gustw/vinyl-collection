@@ -3330,7 +3330,7 @@
    4. Sun Is Shining - Bob Marley & The Wailers [Key: A# minor (3A) | BPM: 129]
    5. Satisfy My Soul - Bob Marley & The Wailers [Key: G major (9B) | BPM: 128]
    6. She's Gone - Bob Marley & The Wailers [Key: F# minor (11A)]
-   7. Misty Morning - Bob Marley & The Wailers [Key: B minor (10A)]
+   7. Misty Morning - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 125]
    8. Crisis - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 123]
    9. Running Away - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 119]
   10. Time Will Tell - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 161]
