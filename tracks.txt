@@ -3683,9 +3683,9 @@
   Art: https://i.discogs.com/uFabeg-qqiIKinkx4rh4erV9BurkCZgj-ARWuieC6Dc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjQy/ODU5LTE1MTQ1MzM0/NzQtNDIyMi5qcGVn.jpeg
    1. Remember The Future - Shpongle [Key: E minor (9A) | BPM: 168]
    2. The Magumba State - Shpongle [Key: G major (9B) | BPM: 168]
-   3. Empty Branes - Shpongle [Key: F major (7B)]
-   4. Are We There Yet? - Shpongle [Key: F# major (2B)]
-   5. Herr Gringleflapper's Secret Stash Box - Shpongle [Key: D major (10B)]
+   3. Empty Branes - Shpongle [Key: F major (7B) | BPM: 155]
+   4. Are We There Yet? - Shpongle [Key: F# major (2B) | BPM: 134]
+   5. Herr Gringleflapper's Secret Stash Box - Shpongle [Key: D major (10B) | BPM: 144]
    6. Strange Planet... - Shpongle [Key: D major (10B) | BPM: 110]
    7. I Woke Up As A Shlummutz - Shpongle [Key: C major (8B) | BPM: 140]
    8. A Series Of Heads - Shpongle [Key: F# major (2B) | BPM: 92]
