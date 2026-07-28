@@ -3918,7 +3918,7 @@
    7. Praying For A Jeepbeat - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
    8. Groove St. - Nightmares On Wax [Key: A# minor (3A) | BPM: 97]
    9. Time (To Listen) - Nightmares On Wax [Key: Ab major (4B) | BPM: 170]
-  10. (Man) Tha Journey - Nightmares On Wax
+  10. (Man) Tha Journey - Nightmares On Wax [Key: C# minor (12A) | BPM: 95]
   11. Bless My Soul - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
   12. Cruise (Don't Stop) - Nightmares On Wax [Key: B minor (10A) | BPM: 94]
   13. Mission Venice - Nightmares On Wax [Key: A minor (8A) | BPM: 126]
