@@ -3241,8 +3241,8 @@
   Art: https://i.discogs.com/nBQskFWYB2KoU8cCVYeNH8FdQxf2j9yZZ1HLKe425J4/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODQy/Ni0xMjAwNjY1ODQ0/LmpwZWc.jpeg
    1. Moment Of Truth - Man With No Name [Key: G major (9B) | BPM: 140]
    2. Evolution - Man With No Name [Key: D major (10B) | BPM: 134]
-   3. Low Commotion - Man With No Name [Key: F# major (2B)]
-   4. Subterfuge - Man With No Name [Key: F# minor (11A)]
+   3. Low Commotion - Man With No Name [Key: F# major (2B) | BPM: 138]
+   4. Subterfuge - Man With No Name [Key: F# minor (11A) | BPM: 145]
    5. Dawn Chorus - Man With No Name [Key: C# major (3B) | BPM: 135]
    6. Floor-Essence (Dayglo Mix) - Man With No Name [Key: C major (8B) | BPM: 134]
    7. Sugar Rush (Refined Mix) - Man With No Name [Key: A minor (8A) | BPM: 140]
@@ -3255,14 +3255,14 @@
   Year: 2019
   Label: Omelette
   Art: https://i.discogs.com/8SYZN2jisYPdJImLfFQEih6Mqhb5GsYz490X2roQTKM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTMx/MDQ2LTE2ODAwMjA5/NjctMTgzMS5qcGVn.jpeg
-   1. Open Misère - Spoonbill [Key: F minor (4A)]
-   2. Gullydupling - Spoonbill [Key: C minor (5A)]
+   1. Open Misère - Spoonbill [Key: F minor (4A) | BPM: 79]
+   2. Gullydupling - Spoonbill [Key: C minor (5A) | BPM: 108]
    3. Skyview - Spoonbill, Eastward [Key: G major (9B) | BPM: 160]
    4. Menagerie - Spoonbill [Key: C major (8B) | BPM: 79]
    5. Coolabah - Spoonbill [Key: F minor (4A) | BPM: 100]
    6. Chewy Onya Boot - Spoonbill [Key: F minor (4A) | BPM: 93]
    7. Nodding Greenhood - Spoonbill [Key: A minor (8A) | BPM: 82]
-   8. Thermal Ride - Spoonbill [Key: F minor (4A)]
+   8. Thermal Ride - Spoonbill [Key: F minor (4A) | BPM: 92]
 
 === Who Say Jah No Dread (The Classic Augustus Pablo Sessions 1974-75) -- Jacob Miller ===
   ID: 12615690
@@ -3293,12 +3293,12 @@
   Art: https://i.discogs.com/YdYyOTuNPdYy0b9hf9bqTUDr4nt7zcTed3h3GDFoZzw/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTk1/MjEtMTI2NjY5ODk5/OC5qcGVn.jpeg
    1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A)]
    2. John Public - Gregory Isaacs [Key: B major (1B)]
-   3. Mr. Brown - Gregory Isaacs [Key: A major (11B)]
-   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B)]
-   5. Raving Tonight - Gregory Isaacs [Key: G major (9B)]
-   6. One More Time - Gregory Isaacs [Key: G minor (6A)]
-   7. Let's Dance - Gregory Isaacs [Key: Eb major (5B)]
-   8. Lonely Girl - Gregory Isaacs [Key: G major (9B)]
+   3. Mr. Brown - Gregory Isaacs [Key: A major (11B) | BPM: 75]
+   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 119]
+   5. Raving Tonight - Gregory Isaacs [Key: G major (9B) | BPM: 144]
+   6. One More Time - Gregory Isaacs [Key: G minor (6A) | BPM: 128]
+   7. Let's Dance - Gregory Isaacs [Key: Eb major (5B) | BPM: 77]
+   8. Lonely Girl - Gregory Isaacs [Key: G major (9B) | BPM: 79]
    9. Slave Market - Gregory Isaacs [Key: A major (11B) | BPM: 135]
   10. Soon Forward - Gregory Isaacs [Key: C major (8B) | BPM: 148]
 
