@@ -4213,8 +4213,8 @@
    1. Blessed Ithiopia - Dub Dynasty [Key: F minor (4A) | BPM: 140]
    2. Thundering Mantis - Dub Dynasty [Key: G major (9B) | BPM: 140]
    3. Black Rose - Dub Dynasty [Key: A major (11B) | BPM: 130]
-   4. Ever Powering Medicine - Dub Dynasty
-   5. We Got Jah - Dub Dynasty
+   4. Ever Powering Medicine - Dub Dynasty [Key: A minor (8A) | BPM: 96]
+   5. We Got Jah - Dub Dynasty [Key: C# minor (12A) | BPM: 140]
    6. Blessings - Dub Dynasty [Key: E minor (9A) | BPM: 125]
    7. River Jordan - Dub Dynasty [Key: B minor (10A) | BPM: 127]
    8. Ithiopia Dub - Dub Dynasty [Key: F minor (4A) | BPM: 140]
