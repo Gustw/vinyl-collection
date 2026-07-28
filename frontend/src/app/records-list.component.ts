@@ -1,4 +1,4 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, ElementRef, computed, effect, inject, signal, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { CollectionService } from './collection.service';
 import { FilterStateService, hasActiveFilters } from './filter-state.service';
@@ -216,6 +216,7 @@ interface Popover {
           <div class="popover-backdrop" (click)="closePopover()"></div>
           <div
             class="popover"
+            #popEl
             [style.left.px]="pop.x"
             [style.top.px]="pop.y"
             (click)="$event.stopPropagation()"
@@ -275,6 +276,28 @@ export class RecordsListComponent {
 
   /** Record popover shown near the pointer when a compact card is clicked. */
   readonly popover = signal<Popover | null>(null);
+  private readonly popEl = viewChild<ElementRef<HTMLDivElement>>('popEl');
+
+  constructor() {
+    // Once the popover is rendered, measure its real size and re-clamp so it
+    // never gets clipped by a screen edge (the open-time value is an estimate).
+    // allowSignalWrites: the effect updates the popover position signal, which
+    // converges in one extra pass thanks to the change guard below.
+    effect(
+      () => {
+        const pop = this.popover();
+        const el = this.popEl()?.nativeElement;
+        if (!pop || !el) return;
+        const { width, height } = el.getBoundingClientRect();
+        if (width === 0 || height === 0) return; // not laid out yet
+        const { x, y } = this.clampToViewport(pop.x, pop.y, width, height);
+        if (x !== pop.x || y !== pop.y) {
+          this.popover.set({ ...pop, x, y }); // converges in one extra pass
+        }
+      },
+      { allowSignalWrites: true }
+    );
+  }
 
   readonly filtered = computed<{ record: Rec; tracks: Track[] }[]>(() => {
     const f = this.filters();
@@ -348,11 +371,21 @@ export class RecordsListComponent {
   /** Opens the track popover next to the pointer, clamped to the viewport. */
   openRecord(ev: MouseEvent, record: Rec, tracks: Track[]): void {
     ev.stopPropagation();
+    // Initial estimate matching the CSS (width 300, max-height 60vh); the
+    // measure effect below refines this exactly once the popover has rendered.
     const w = 300;
-    const h = Math.min(360, 80 + tracks.length * 34);
-    const x = Math.max(8, Math.min(ev.clientX + 4, window.innerWidth - w - 8));
-    const y = Math.max(8, Math.min(ev.clientY + 4, window.innerHeight - h - 8));
-    this.popover.set({ x, y, record, tracks });
+    const estH = 80 + tracks.length * 40;
+    const h = Math.min(estH, Math.round(window.innerHeight * 0.6));
+    const pos = this.clampToViewport(ev.clientX + 4, ev.clientY + 4, w, h);
+    this.popover.set({ x: pos.x, y: pos.y, record, tracks });
+  }
+
+  /** Clamps a top-left point so a box of w×h stays within the viewport (8px gutter). */
+  private clampToViewport(x: number, y: number, w: number, h: number): { x: number; y: number } {
+    return {
+      x: Math.max(8, Math.min(x, window.innerWidth - w - 8)),
+      y: Math.max(8, Math.min(y, window.innerHeight - h - 8)),
+    };
   }
 
   closePopover(): void {
