@@ -2527,12 +2527,12 @@
   Label: Virgin EMI Records
   Art: https://i.discogs.com/k7Q4X_bVGADYJW5-ib7-Hoyl-xNxeog22e0Ufnur9zc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNzEw/NzItMTQ4MzE4MTU2/My05MjgwLmpwZWc.jpeg
    1. Bohemian Rhapsody - Queen [Key: C minor (5A) | BPM: 144]
-   2. Another One Bites The Dust - Queen [Key: F minor (4A)]
+   2. Another One Bites The Dust - Queen [Key: F minor (4A) | BPM: 110]
    3. Killer Queen - Queen [Key: Bb major (6B) | BPM: 117]
    4. Fat Bottomed Girls - Queen [Key: D major (10B) | BPM: 88]
    5. Bicycle Race - Queen [Key: Eb major (5B) | BPM: 83]
    6. You're My Best Friend - Queen [Key: C major (8B) | BPM: 119]
-   7. Don't Stop Me Now - Queen [Key: F major (7B)]
+   7. Don't Stop Me Now - Queen [Key: F major (7B) | BPM: 156]
    8. Save Me - Queen [Key: G major (9B) | BPM: 82]
    9. Crazy Little Thing Called Love - Queen [Key: C major (8B) | BPM: 77]
   10. Somebody To Love - Queen [Key: Ab major (4B) | BPM: 109]
