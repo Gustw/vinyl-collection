@@ -3291,8 +3291,8 @@
   Year: 1983
   Label: Virgin
   Art: https://i.discogs.com/YdYyOTuNPdYy0b9hf9bqTUDr4nt7zcTed3h3GDFoZzw/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTk1/MjEtMTI2NjY5ODk5/OC5qcGVn.jpeg
-   1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A)]
-   2. John Public - Gregory Isaacs [Key: B major (1B)]
+   1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A) | BPM: 79]
+   2. John Public - Gregory Isaacs [Key: B major (1B) | BPM: 135]
    3. Mr. Brown - Gregory Isaacs [Key: A major (11B) | BPM: 75]
    4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 119]
    5. Raving Tonight - Gregory Isaacs [Key: G major (9B) | BPM: 144]
