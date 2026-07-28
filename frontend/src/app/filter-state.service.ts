@@ -13,6 +13,11 @@ export interface Filters {
   bpmDoubleHalf: boolean;
   /** Detail view: show keys pitched to match BPM instead of their original key. */
   pitchAdjust: boolean;
+  /**
+   * Detail view: hide mixes that need more pitch than the turntables have
+   * (i.e. physically impossible transitions).
+   */
+  pitchLimit: boolean;
   /** Detail view: relationship types toggled OFF (empty = all types shown). */
   hiddenTypes: string[];
   /** Overview: inclusive release-year lower bound (null = no bound). */
@@ -22,7 +27,7 @@ export interface Filters {
 }
 
 export function emptyFilters(): Filters {
-  return { search: '', genres: [], styles: [], keys: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: true, pitchAdjust: false, hiddenTypes: [], yearMin: null, yearMax: null };
+  return { search: '', genres: [], styles: [], keys: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: true, pitchAdjust: false, pitchLimit: true, hiddenTypes: [], yearMin: null, yearMax: null };
 }
 
 export function hasActiveFilters(f: Filters): boolean {
@@ -50,6 +55,7 @@ export function activeFilterCount(f: Filters, scope: 'list' | 'detail'): number 
     n += f.hiddenTypes.length;
     if (f.bpmEnabled) n++;
     if (f.pitchAdjust) n++;
+    if (f.pitchLimit) n++;
   }
   return n;
 }
@@ -182,6 +188,11 @@ export class FilterStateService {
 
   setPitchAdjust(target: WritableSignal<Filters>, pitchAdjust: boolean): void {
     target.set({ ...target(), pitchAdjust });
+  }
+
+  /** Hides mixes needing more pitch than the turntables can give. */
+  setPitchLimit(target: WritableSignal<Filters>, pitchLimit: boolean): void {
+    target.set({ ...target(), pitchLimit });
   }
 
   /** Toggles a relationship type on/off (tracked as an exclude list). */

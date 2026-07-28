@@ -96,10 +96,22 @@ interface Popover {
             <input type="password" [value]="cfg().githubToken" (input)="set('githubToken', $any($event.target).value)" />
             <label>CORS proxy for tunebat <span class="muted">(prefix)</span></label>
             <input placeholder="e.g. https://api.allorigins.win/raw?url=" [value]="cfg().corsProxy" (input)="set('corsProxy', $any($event.target).value)" />
+            <label>Turntable pitch range <span class="muted">(± %)</span></label>
+            <input
+              type="number"
+              min="1"
+              max="100"
+              step="1"
+              placeholder="8"
+              [value]="cfg().pitchRange"
+              (input)="setPitchRange($any($event.target).value)"
+            />
           </div>
           <div class="muted settings-help">
             Tokens are stored only in your browser (localStorage). The GitHub token needs
             write access to the repo above so updates can be saved to <b>{{ cfg().tracksPath }}</b>.
+            The pitch range decides which mixes count as reachable — 8 for a stock Technics,
+            16 for wide-range mode, 50 for most digital decks.
           </div>
         </div>
       }
@@ -569,6 +581,12 @@ export class RecordsListComponent {
 
   set(field: keyof ReturnType<ConfigService['config']>, value: string): void {
     this.config.update({ [field]: value } as any);
+  }
+
+  /** Pitch range is numeric; keep the last good value when the box is cleared. */
+  setPitchRange(value: string): void {
+    const n = parseFloat(value);
+    this.config.update({ pitchRange: Number.isFinite(n) && n > 0 ? n : 8 });
   }
 }
 

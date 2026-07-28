@@ -100,6 +100,25 @@ export function pitchShiftSemitones(fromBpm: number, toBpm: number): number {
   return 12 * Math.log2(foldTempoRatio(toBpm / fromBpm));
 }
 
+/**
+ * The platter pitch adjustment, in percent, needed to beat-match a record at
+ * `fromBpm` to `toBpm` — i.e. where the pitch fader has to sit. Octaves are
+ * folded, so playing a 70 BPM record against a 140 BPM one needs 0%, not +100%.
+ *
+ * This is the number that decides whether a mix is *physically possible*: a
+ * stock Technics only offers ±8%, so a transition needing +11% cannot be done
+ * however well the keys fit.
+ */
+export function pitchPercent(fromBpm: number, toBpm: number): number {
+  if (!(fromBpm > 0) || !(toBpm > 0)) return 0;
+  return (foldTempoRatio(toBpm / fromBpm) - 1) * 100;
+}
+
+/** True when `percent` is within a turntable offering ±`range`%. */
+export function withinPitchRange(percent: number, range: number): boolean {
+  return Math.abs(percent) <= range + 1e-9;
+}
+
 /** Shifts a Camelot code by a whole number of semitones (+1 semitone = +7 wheel steps). */
 export function shiftCamelot(code: string, semitones: number): string {
   const m = CAMELOT_RE.exec(code);

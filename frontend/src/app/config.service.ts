@@ -19,6 +19,12 @@ export interface AppConfig {
    * `https://api.allorigins.win/raw?url=`.
    */
   corsProxy: string;
+  /**
+   * Pitch range of the turntables, in ± percent. Decides which mixes are
+   * physically reachable: 8 for a stock Technics, 16 for the wide-range mode,
+   * 50 for most digital decks.
+   */
+  pitchRange: number;
 }
 
 const STORAGE_KEY = 'app.config';
@@ -45,6 +51,7 @@ export function defaultConfig(): AppConfig {
     tracksPath: 'tracks.txt',
     githubToken: '',
     corsProxy: '',
+    pitchRange: 8,
     ...detect(),
   };
 }

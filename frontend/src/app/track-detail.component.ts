@@ -4,8 +4,20 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CollectionService } from './collection.service';
 import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
-import { mixableCamelot, relation, pitchShiftSemitones, shiftCamelot, shiftKeyName, camelotClass, CAMELOT_CODES, camelotToKeyName } from './camelot';
+import {
+  mixableCamelot,
+  relation,
+  pitchShiftSemitones,
+  pitchPercent,
+  withinPitchRange,
+  shiftCamelot,
+  shiftKeyName,
+  camelotClass,
+  CAMELOT_CODES,
+  camelotToKeyName,
+} from './camelot';
 import { Track } from './models';
+import { ConfigService } from './config.service';
 
 const REL_ORDER: Record<string, number> = {
   'Same key': 0,
@@ -36,6 +48,13 @@ interface Row {
   camelot: string;
   /** effective key name after any pitch adjustment. */
   keyName: string;
+  /**
+   * Platter pitch needed to beat-match this track to the current one, in
+   * percent, or null when either BPM is unknown.
+   */
+  percent: number | null;
+  /** false when `percent` exceeds the configured turntable range. */
+  reachable: boolean;
 }
 
 @Component({
@@ -233,6 +252,20 @@ interface Row {
             <label class="bpm-check">
               <input
                 type="checkbox"
+                [checked]="filters().pitchLimit"
+                (change)="onPitchLimit($any($event.target).checked)"
+              />
+              only mixes my decks can reach (± {{ pitchRange() }}%)
+            </label>
+            @if (filters().pitchLimit && unreachableCount()) {
+              <div class="muted pitch-hidden-note">
+                {{ unreachableCount() }} harmonically compatible track(s) hidden — they need
+                more than ± {{ pitchRange() }}% pitch. Change the range in Settings.
+              </div>
+            }
+            <label class="bpm-check">
+              <input
+                type="checkbox"
                 [checked]="filters().pitchAdjust"
                 (change)="onPitchAdjust($any($event.target).checked)"
               />
@@ -265,6 +298,12 @@ interface Row {
                   <span class="track-title">{{ r.track.title }}</span>
                   <span class="track-artist">{{ r.track.artist }}</span>
                   @if (r.track.bpm) { <span class="bpm-badge">{{ r.track.bpm }} BPM</span> }
+                  <span
+                    class="pitch-badge"
+                    [class.out]="!r.reachable"
+                    [class.unknown]="r.percent === null"
+                    [title]="pitchTitle(r)"
+                  >{{ pitchLabel(r) }}</span>
                   @if (r.adjusted) {
                     <span class="key-badge adjusted" [title]="'Original key: ' + (r.track.keyText || '—')">
                       {{ keyLabel(r) }}
@@ -285,8 +324,15 @@ interface Row {
 export class TrackDetailComponent {
   readonly col = inject(CollectionService);
   private readonly fs = inject(FilterStateService);
+  private readonly config = inject(ConfigService);
   private readonly router = inject(Router);
   private readonly route = inject(ActivatedRoute);
+
+  /** Turntable pitch range (± percent) from the settings. */
+  readonly pitchRange = computed(() => {
+    const r = Number(this.config.config().pitchRange);
+    return Number.isFinite(r) && r > 0 ? r : 8;
+  });
 
   readonly filters = this.fs.detail;
   readonly active = computed(() => hasActiveFilters(this.filters()));
@@ -379,20 +425,35 @@ export class TrackDetailComponent {
   /** Computes a track's effective (optionally pitch-adjusted) key vs the current track. */
   private effectiveRow(x: Track): Row {
     const ref = this.refBpm();
-    if (this.filters().pitchAdjust && ref !== null) {
-      const cand = parseFloat(x.bpm);
-      if (!Number.isNaN(cand) && cand > 0) {
-        const semis = pitchShiftSemitones(cand, ref);
-        return {
-          track: x,
-          adjusted: true,
-          semis,
-          camelot: shiftCamelot(x.camelot, semis),
-          keyName: shiftKeyName(x.keyName, semis),
-        };
-      }
+    const cand = parseFloat(x.bpm);
+    const hasBoth = ref !== null && !Number.isNaN(cand) && cand > 0;
+
+    // The platter pitch is a physical fact, independent of whether the user
+    // asked to see pitched keys, so it is always computed.
+    const percent = hasBoth ? pitchPercent(cand, ref!) : null;
+    const reachable = percent === null || withinPitchRange(percent, this.pitchRange());
+
+    if (this.filters().pitchAdjust && hasBoth) {
+      const semis = pitchShiftSemitones(cand, ref!);
+      return {
+        track: x,
+        adjusted: true,
+        semis,
+        camelot: shiftCamelot(x.camelot, semis),
+        keyName: shiftKeyName(x.keyName, semis),
+        percent,
+        reachable,
+      };
     }
-    return { track: x, adjusted: false, semis: 0, camelot: x.camelot, keyName: x.keyName };
+    return {
+      track: x,
+      adjusted: false,
+      semis: 0,
+      camelot: x.camelot,
+      keyName: x.keyName,
+      percent,
+      reachable,
+    };
   }
 
   /**
@@ -443,10 +504,42 @@ export class TrackDetailComponent {
     const hidden = new Set(f.hiddenTypes);
     const ref = this.refBpm() ?? undefined;
     return this.candidateRows().filter(
-      (r) => matchesTrack(r.track, f, ref, r.camelot) && !hidden.has(this.rel(r.camelot))
+      (r) =>
+        matchesTrack(r.track, f, ref, r.camelot) &&
+        !hidden.has(this.rel(r.camelot)) &&
+        (!f.pitchLimit || r.reachable)
     );
   });
   readonly shown = computed(() => this.rows().length);
+
+  /** How many mixable tracks the pitch-range filter is hiding. */
+  readonly unreachableCount = computed(() => {
+    const f = this.filters();
+    const hidden = new Set(f.hiddenTypes);
+    const ref = this.refBpm() ?? undefined;
+    return this.candidateRows().filter(
+      (r) =>
+        !r.reachable &&
+        matchesTrack(r.track, f, ref, r.camelot) &&
+        !hidden.has(this.rel(r.camelot))
+    ).length;
+  });
+
+  /** Signed pitch label for a row, e.g. "+2.4%" / "−3.1%" ("—" when unknown). */
+  pitchLabel(r: Row): string {
+    if (r.percent === null) return '—';
+    const sign = r.percent >= 0 ? '+' : '−';
+    return `${sign}${Math.abs(r.percent).toFixed(1)}%`;
+  }
+
+  /** Tooltip explaining what the pitch figure means for this transition. */
+  pitchTitle(r: Row): string {
+    if (r.percent === null) return 'BPM unknown — pitch cannot be calculated';
+    const range = this.pitchRange();
+    return r.reachable
+      ? `Set the pitch fader to ${this.pitchLabel(r)} to beat-match (within ±${range}%)`
+      : `Needs ${this.pitchLabel(r)} — beyond the ±${range}% your decks offer`;
+  }
 
   /** Relationship label of an effective Camelot code vs the current track. */
   rel(camelot: string): string {
@@ -505,6 +598,10 @@ export class TrackDetailComponent {
 
   onPitchAdjust(checked: boolean): void {
     this.fs.setPitchAdjust(this.filters, checked);
+  }
+
+  onPitchLimit(checked: boolean): void {
+    this.fs.setPitchLimit(this.filters, checked);
   }
 
   toggle(facet: 'genres' | 'styles' | 'keys', value: string): void {

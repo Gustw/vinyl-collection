@@ -354,6 +354,32 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 }
 .bpm-badge.none { opacity: .35; }
 
+/*
+ * Platter pitch needed to beat-match, e.g. "+2.4%". Turns red when it exceeds
+ * the turntable's range, i.e. the mix is physically impossible.
+ */
+.pitch-badge {
+  min-width: 58px;
+  text-align: center;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #1f2b26;
+  border: 1px solid #2f5a4a;
+  color: #9fe6cd;
+  white-space: nowrap;
+}
+.pitch-badge.out { background: #3a1c22; border-color: #7a2f3d; color: #ff9fb0; }
+.pitch-badge.unknown { background: var(--panel-2); border-color: var(--border); color: var(--muted); }
+.pitch-hidden-note {
+  margin-top: 6px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: rgba(255, 159, 176, .08);
+  border: 1px solid rgba(255, 159, 176, .22);
+  font-size: 12px;
+}
+
 .detail-grid { display: grid; grid-template-columns: 140px 1fr; gap: 8px 14px; }
 .detail-grid div.k { color: var(--muted); }
 .empty { color: var(--muted); padding: 20px; text-align: center; }
