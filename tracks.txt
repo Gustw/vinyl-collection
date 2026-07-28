@@ -1695,7 +1695,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/R50e153DLkN6VMKm65_YTbJWqGy9MqReRgD8Xl3KOLo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTEz/OTItMTYxNTkxMjgx/NS05NTU3LmpwZWc.jpeg
    1. Five On It - JFB [Key: A# minor (3A) | BPM: 174]
-   2. Tequila Sunrise - JFB [Key: C major (8B)]
+   2. Tequila Sunrise - JFB [Key: C major (8B) | BPM: 174]
 
 === Kaotik 05 -- Mandidextrous / Vandal (16) / Suburbass ===
   ID: 4996344
@@ -1727,8 +1727,8 @@
   Year: 2010
   Label: Znootpoch
   Art: https://i.discogs.com/voV-U3WP7Iwyfbo12ZhWMvHFO5wOcp0N-Rjem4cWZ8E/rs:fit/g:sm/q:90/h:196/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDQ4/NDItMTI2OTM0MTc2/MC5qcGVn.jpeg
-   1. Truth & Right - Candy [Key: C# minor (12A)]
-   2. Come On Home - Candy [Key: Ab major (4B)]
+   1. Truth & Right - Candy [Key: C# minor (12A) | BPM: 180]
+   2. Come On Home - Candy [Key: Ab major (4B) | BPM: 180]
 
 === King Of The Bongo / Stickybuds Guaranteed -- DJ Deekline & Ed Solo ===
   ID: 2664480
