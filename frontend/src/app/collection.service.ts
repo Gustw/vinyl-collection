@@ -1,7 +1,8 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { Rec, Track } from './models';
 import { ConfigService } from './config.service';
-import { githubConfigured, rawUrl } from './github';
+import { githubConfigured, getTracksFile, putTracksFile, rawUrl } from './github';
+import { renderTracksTxt } from './tracks-format';
 import { cachedKeyInfo } from './tunebat';
 
 const HEADER_RE = /^===\s(.*)\s===$/;
@@ -182,9 +183,36 @@ export function hydrateFromKeyCache(records: Rec[]): void {
   }
 }
 
+/** A manual key/BPM correction for one track, keyed by a stable id. */
+interface TrackOverride {
+  keyName: string;
+  camelot: string;
+  keyText: string;
+  bpm: string;
+}
+
+const OVERRIDES_KEY = 'overrides.tracks';
+
+/** Stable id for a track across reloads (numeric ids are reassigned each load). */
+function overrideId(releaseId: string, title: string, artist: string): string {
+  return `${releaseId}\u0000${title}\u0000${artist}`.toLowerCase();
+}
+
+function loadOverrides(): Record<string, TrackOverride> {
+  try {
+    const raw = localStorage.getItem(OVERRIDES_KEY);
+    return raw ? (JSON.parse(raw) as Record<string, TrackOverride>) : {};
+  } catch {
+    return {};
+  }
+}
+
 @Injectable({ providedIn: 'root' })
 export class CollectionService {
   private readonly config = inject(ConfigService);
+
+  /** Manual key/BPM corrections, applied on top of parsed/cached values. */
+  private overrides = loadOverrides();
 
   readonly records = signal<Rec[]>([]);
   readonly loaded = signal(false);
@@ -235,6 +263,7 @@ export class CollectionService {
     this.error.set(null);
     const records = parseTracksTxt(text);
     hydrateFromKeyCache(records);
+    this.applyOverrides(records);
     this.setRecords(records);
     this.loaded.set(true);
   }
@@ -260,6 +289,74 @@ export class CollectionService {
 
   trackById(id: number): Track | undefined {
     return this.tracks().find((t) => t.id === id);
+  }
+
+  /** Applies stored manual overrides on top of parsed/cached values. */
+  private applyOverrides(records: Rec[]): void {
+    for (const r of records) {
+      for (const t of r.tracks) {
+        const o = this.overrides[overrideId(t.releaseId, t.title, t.artist)];
+        if (!o) continue;
+        t.keyName = o.keyName;
+        t.camelot = o.camelot;
+        t.keyText = o.keyText;
+        t.bpm = o.bpm;
+      }
+    }
+  }
+
+  /**
+   * Sets a manual key/BPM correction for a track: updates it in memory and
+   * persists the override to localStorage (re-applied on reload). Blank key +
+   * blank BPM clears any existing override. Call `commitToGithub` to persist
+   * remotely.
+   */
+  setTrackKeyBpm(track: Track, keyName: string, camelot: string, bpm: string): void {
+    keyName = (keyName || '').trim();
+    camelot = (camelot || '').trim().toUpperCase();
+    bpm = (bpm || '').trim();
+    const keyText = keyName && camelot ? `${keyName} (${camelot})` : keyName;
+
+    // Update the live object so computed views recalc immediately.
+    track.keyName = keyName;
+    track.camelot = camelot;
+    track.keyText = keyText;
+    track.bpm = bpm;
+
+    const id = overrideId(track.releaseId, track.title, track.artist);
+    if (!keyName && !camelot && !bpm) {
+      delete this.overrides[id];
+    } else {
+      this.overrides[id] = { keyName, camelot, keyText, bpm };
+    }
+    try {
+      localStorage.setItem(OVERRIDES_KEY, JSON.stringify(this.overrides));
+    } catch {
+      /* ignore quota errors */
+    }
+    // New array reference so signals (tracks/records) recompute.
+    this.records.set([...this.records()]);
+  }
+
+  /** True when a GitHub repo + write token are configured. */
+  canCommit(): boolean {
+    const c = this.config.config();
+    return githubConfigured(c) && !!c.githubToken;
+  }
+
+  /**
+   * Commits the current collection to tracks.txt on GitHub — the same write a
+   * real tunebat update uses — so manual edits are persisted remotely. Throws a
+   * helpful error when GitHub isn't configured.
+   */
+  async commitToGithub(message: string): Promise<void> {
+    const cfg = this.config.config();
+    if (!githubConfigured(cfg) || !cfg.githubToken) {
+      throw new Error('Configure a GitHub repo and token in ⚙ Settings to save changes.');
+    }
+    const file = await getTracksFile(cfg); // current sha (null if the file is new)
+    const text = renderTracksTxt(this.records());
+    await putTracksFile(cfg, text, file?.sha, message);
   }
 }
 

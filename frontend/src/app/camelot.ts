@@ -19,6 +19,32 @@ export function camelotClass(code: string): string {
   return m ? `cam-${Number(m[1])}` : '';
 }
 
+/** All 24 Camelot codes in wheel order (1A, 1B, 2A, … 12B), for pickers. */
+export const CAMELOT_CODES: string[] = Array.from({ length: 12 }, (_, i) => [
+  `${i + 1}A`,
+  `${i + 1}B`,
+]).flat();
+
+// Standard Camelot ↔ musical key names (minor = A, major = B), indexed 1..12.
+const MINOR_KEY: Record<number, string> = {
+  1: 'G# minor', 2: 'D# minor', 3: 'A# minor', 4: 'F minor', 5: 'C minor',
+  6: 'G minor', 7: 'D minor', 8: 'A minor', 9: 'E minor', 10: 'B minor',
+  11: 'F# minor', 12: 'C# minor',
+};
+const MAJOR_KEY: Record<number, string> = {
+  1: 'B major', 2: 'F# major', 3: 'Db major', 4: 'Ab major', 5: 'Eb major',
+  6: 'Bb major', 7: 'F major', 8: 'C major', 9: 'G major', 10: 'D major',
+  11: 'A major', 12: 'E major',
+};
+
+/** Musical key name for a Camelot code, e.g. "8A" -> "A minor". '' if invalid. */
+export function camelotToKeyName(code: string): string {
+  const m = CAMELOT_RE.exec((code || '').trim());
+  if (!m) return '';
+  const n = Number(m[1]);
+  return m[2] === 'A' ? MINOR_KEY[n] ?? '' : MAJOR_KEY[n] ?? '';
+}
+
 /**
  * Camelot code of the parallel key (same root note, opposite mode).
  * Minor `nA` -> major `(n+3)B`; major `nB` -> minor `(n-3)A`.

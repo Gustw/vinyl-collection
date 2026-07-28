@@ -1,10 +1,10 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CollectionService } from './collection.service';
 import { FilterStateService, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
-import { mixableCamelot, relation, pitchShiftSemitones, shiftCamelot, shiftKeyName, camelotClass } from './camelot';
+import { mixableCamelot, relation, pitchShiftSemitones, shiftCamelot, shiftKeyName, camelotClass, CAMELOT_CODES, camelotToKeyName } from './camelot';
 import { Track } from './models';
 
 const REL_ORDER: Record<string, number> = {
@@ -78,6 +78,48 @@ interface Row {
                 <div class="k">Genre</div><div>{{ track()!.genres.join(', ') || '—' }}</div>
                 <div class="k">Style</div><div>{{ track()!.styles.join(', ') || '—' }}</div>
               </div>
+
+              @if (!editing()) {
+                <div class="edit-row">
+                  <button class="btn" (click)="startEdit()">✎ Edit key / BPM</button>
+                  @if (saveMsg(); as m) {
+                    <span class="muted" [class.err]="saveErr()">{{ m }}</span>
+                  }
+                </div>
+              } @else {
+                <div class="edit-form">
+                  <div class="ef-field">
+                    <label>Key</label>
+                    <select class="ef-select" [value]="editCamelot()" (change)="editCamelot.set($any($event.target).value)">
+                      <option value="">— none —</option>
+                      @for (c of camelotOptions; track c) {
+                        <option [value]="c">{{ c }} — {{ keyNameOf(c) }}</option>
+                      }
+                    </select>
+                  </div>
+                  <div class="ef-field">
+                    <label>BPM</label>
+                    <input
+                      class="ef-input"
+                      type="number"
+                      min="0"
+                      step="1"
+                      placeholder="e.g. 128"
+                      [value]="editBpm()"
+                      (input)="editBpm.set($any($event.target).value)"
+                    />
+                  </div>
+                  <div class="edit-actions">
+                    <button class="btn primary" [disabled]="saving()" (click)="save()">
+                      {{ saving() ? 'Saving…' : 'Save' }}
+                    </button>
+                    <button class="btn" [disabled]="saving()" (click)="cancelEdit()">Cancel</button>
+                  </div>
+                  @if (saveMsg(); as m) {
+                    <div class="muted" [class.err]="saveErr()" style="width:100%">{{ m }}</div>
+                  }
+                </div>
+              }
             </div>
           </div>
         </div>
@@ -247,6 +289,65 @@ export class TrackDetailComponent {
     const raw = parseFloat(this.track()?.bpm ?? '');
     return Number.isNaN(raw) ? null : raw;
   });
+
+  // --- Manual key/BPM editing ---
+  readonly camelotOptions = CAMELOT_CODES;
+  readonly editing = signal(false);
+  readonly editCamelot = signal('');
+  readonly editBpm = signal('');
+  readonly saving = signal(false);
+  readonly saveMsg = signal<string | null>(null);
+  readonly saveErr = signal(false);
+
+  /** Musical key name for a Camelot code, shown in the picker. */
+  keyNameOf(code: string): string {
+    return camelotToKeyName(code);
+  }
+
+  startEdit(): void {
+    const t = this.track();
+    if (!t) return;
+    this.editCamelot.set(t.camelot);
+    this.editBpm.set(t.bpm);
+    this.saveMsg.set(null);
+    this.saveErr.set(false);
+    this.editing.set(true);
+  }
+
+  cancelEdit(): void {
+    this.editing.set(false);
+  }
+
+  /** Applies the edit locally, then commits tracks.txt to GitHub. */
+  async save(): Promise<void> {
+    const t = this.track();
+    if (!t) return;
+    const camelot = this.editCamelot().trim();
+    const keyName = camelotToKeyName(camelot); // hardcoded from the chosen code
+    const bpm = this.editBpm().trim();
+
+    this.col.setTrackKeyBpm(t, keyName, camelot, bpm);
+    this.editing.set(false);
+
+    if (!this.col.canCommit()) {
+      this.saveErr.set(true);
+      this.saveMsg.set('Saved locally. Configure a GitHub repo + token in ⚙ to persist.');
+      return;
+    }
+    this.saving.set(true);
+    this.saveMsg.set(null);
+    this.saveErr.set(false);
+    try {
+      await this.col.commitToGithub(`Edit ${t.title} — key/BPM`);
+      this.saveMsg.set('Saved to GitHub.');
+      this.saveErr.set(false);
+    } catch (e) {
+      this.saveErr.set(true);
+      this.saveMsg.set('Saved locally, but GitHub commit failed: ' + e);
+    } finally {
+      this.saving.set(false);
+    }
+  }
 
   /** Computes a track's effective (optionally pitch-adjusted) key vs the current track. */
   private effectiveRow(x: Track): Row {
