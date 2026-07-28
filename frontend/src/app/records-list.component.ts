@@ -5,7 +5,7 @@ import { FilterStateService, activeFilterCount, hasActiveFilters } from './filte
 import { matchesTrack } from './filtering';
 import { camelotClass } from './camelot';
 import { Rec, Track } from './models';
-import { UpdaterService } from './updater.service';
+import { UpdaterService, TrackChange } from './updater.service';
 import { ConfigService } from './config.service';
 
 /** A record together with the tracks that survived the current filters. */
@@ -40,6 +40,14 @@ interface Popover {
       >
         {{ updater.running() ? 'Updating…' : '⟳ Update collection' }}
       </button>
+      <button
+        class="btn"
+        [disabled]="updater.running()"
+        title="Ask tunebat again for every track's key + BPM and correct the wrong ones (ignores the local cache)"
+        (click)="refetch()"
+      >
+        ↻ Re-fetch keys / BPM
+      </button>
       <button class="btn" title="Settings (Discogs / GitHub)" (click)="toggleSettings()">⚙</button>
     </div>
 
@@ -48,6 +56,10 @@ interface Popover {
         <div class="panel update-status">
           @if (updater.running()) {
             <div class="progress"><span class="bar" [style.width.%]="progressPct()"></span></div>
+            <span class="badge-count">{{ updater.processed() }} / {{ updater.total() }}</span>
+            @if (updater.corrected()) {
+              <span class="badge-count corrected-count">{{ updater.corrected() }} corrected</span>
+            }
           }
           <span class="muted">{{ updater.message() }}</span>
           @if (updater.error(); as e) { <span class="err"> — {{ e }}</span> }
@@ -280,6 +292,60 @@ interface Popover {
           </div>
         }
       }
+
+      @if (updater.reportReady()) {
+        <div class="modal-backdrop" (click)="closeReport()">
+          <div class="modal" (click)="$event.stopPropagation()">
+            <div class="modal-head">
+              <h2>Re-fetch report</h2>
+              <span class="spacer"></span>
+              <button class="btn" (click)="closeReport()">✕</button>
+            </div>
+
+            <div class="muted modal-sub">
+              Checked {{ updater.processed() }} of {{ updater.total() }} tracks —
+              <b>{{ updater.changes().length }}</b> updated.
+            </div>
+
+            @if (updater.changes().length === 0) {
+              <div class="empty">Everything already matched tunebat — nothing was changed.</div>
+            } @else {
+              <div class="modal-body">
+                @for (c of updater.changes(); track c.trackId) {
+                  <div class="change-row" (click)="openChange(c)">
+                    <div class="change-track">
+                      <div class="track-title">{{ c.title }}</div>
+                      <div class="muted">{{ c.artist }} · {{ c.recordTitle }}</div>
+                    </div>
+                    <div class="change-values">
+                      @if (c.keyChanged) {
+                        <div class="change-line">
+                          <span class="key-badge old">{{ c.oldKeyText || 'no key' }}</span>
+                          <span class="muted">→</span>
+                          <span [class]="'key-badge ' + keyClass(c.newKeyText)">{{ c.newKeyText }}</span>
+                        </div>
+                      }
+                      @if (c.bpmChanged) {
+                        <div class="change-line">
+                          <span class="bpm-badge old">{{ c.oldBpm || 'no BPM' }}</span>
+                          <span class="muted">→</span>
+                          <span class="bpm-badge">{{ c.newBpm }} BPM</span>
+                        </div>
+                      }
+                    </div>
+                  </div>
+                }
+              </div>
+            }
+
+            <div class="modal-foot">
+              <span class="muted">{{ updater.message() }}</span>
+              <span class="spacer"></span>
+              <button class="btn primary" (click)="closeReport()">Close</button>
+            </div>
+          </div>
+        </div>
+      }
     </div>
   `,
 })
@@ -454,6 +520,33 @@ export class RecordsListComponent {
 
   update(): void {
     void this.updater.start();
+  }
+
+  /** Re-asks tunebat for every track's key/BPM and corrects the wrong ones. */
+  refetch(): void {
+    const n = this.totalTracks();
+    const ok = confirm(
+      `Re-check all ${n} tracks against tunebat?\n\n` +
+        `This ignores the local cache and overwrites any key/BPM that comes back ` +
+        `different. It takes roughly ${Math.ceil((n * 0.5) / 60)} minute(s).`
+    );
+    if (ok) void this.updater.refetchAll();
+  }
+
+  closeReport(): void {
+    this.updater.dismissReport();
+  }
+
+  /** Camelot colour class for a "A minor (8A)" style key text. */
+  keyClass(keyText: string): string {
+    const m = /\((\d{1,2}[AB])\)/.exec(keyText || '');
+    return m ? camelotClass(m[1]) : '';
+  }
+
+  /** Jumps to a corrected track's detail page from the report. */
+  openChange(c: TrackChange): void {
+    this.closeReport();
+    this.router.navigate(['/track', c.trackId]);
   }
 
   toggleSettings(): void {

@@ -8,11 +8,26 @@ import {
   fetchReleaseDetail,
   wasReleaseCached,
 } from './discogs';
-import { lookupKey } from './tunebat';
+import { lookupKey, KeyInfo } from './tunebat';
 import { renderTracksTxt } from './tracks-format';
 import { getTracksFile, githubConfigured, putTracksFile } from './github';
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** One track corrected by a re-fetch pass, with its before/after values. */
+export interface TrackChange {
+  trackId: number;
+  title: string;
+  artist: string;
+  recordTitle: string;
+  oldKeyText: string;
+  newKeyText: string;
+  oldBpm: string;
+  newBpm: string;
+  /** Which fields actually differ (drives the highlighting in the report). */
+  keyChanged: boolean;
+  bpmChanged: boolean;
+}
 
 function entryToRec(e: CollectionEntry): Rec {
   return {
@@ -73,6 +88,17 @@ export class UpdaterService {
   readonly missingKeys = computed(() => this.col.tracks().filter((t) => !t.keyName).length);
   readonly missingBpm = computed(() => this.col.tracks().filter((t) => !t.bpm).length);
   readonly totalTracks = computed(() => this.col.tracks().length);
+
+  /** How many tracks the current re-fetch pass actually corrected. */
+  readonly corrected = signal(0);
+  /** What the re-fetch pass changed, for the summary shown when it finishes. */
+  readonly changes = signal<TrackChange[]>([]);
+  /** Set once a re-fetch pass has finished, so the UI can show its report. */
+  readonly reportReady = signal(false);
+
+  dismissReport(): void {
+    this.reportReady.set(false);
+  }
 
   private sha: string | undefined;
   private canCommit = true;
@@ -188,6 +214,116 @@ export class UpdaterService {
     } finally {
       this.running.set(false);
     }
+  }
+
+  /**
+   * Re-asks tunebat for the key + BPM of *every* track, ignoring the cached
+   * answers, and overwrites the ones that come back different. Use this to
+   * repair values that were looked up wrong. A track is only changed when
+   * tunebat actually returns something, so an empty or unreachable answer
+   * never wipes existing data.
+   */
+  async refetchAll(): Promise<void> {
+    if (this.running()) return;
+    const cfg = this.config.config();
+    this.running.set(true);
+    this.error.set(null);
+    this.processed.set(0);
+    this.corrected.set(0);
+    this.changes.set([]);
+    this.reportReady.set(false);
+    this.canCommit = githubConfigured(cfg) && !!cfg.githubToken;
+
+    try {
+      const records = this.col.records();
+      const jobs = records.flatMap((r) => r.tracks);
+      this.total.set(jobs.length);
+
+      if (this.canCommit) {
+        try {
+          const file = await getTracksFile(cfg);
+          this.sha = file?.sha;
+        } catch (e) {
+          this.canCommit = false;
+          this.message.set('Could not read tracks.txt from GitHub: ' + e);
+        }
+      }
+
+      let sinceCommit = 0;
+      for (const t of jobs) {
+        this.message.set(
+          `Re-checking ${t.artist} - ${t.title}… ` +
+            `(${this.processed() + 1}/${jobs.length}, ${this.corrected()} corrected)`
+        );
+        try {
+          const info = await lookupKey(cfg, t.artist, t.title, (s) => this.message.set(s), true);
+          const change = this.applyFresh(t, info);
+          if (change) {
+            this.changes.update((list) => [...list, change]);
+            this.corrected.update((n) => n + 1);
+            sinceCommit++;
+          }
+        } catch (e) {
+          console.warn('re-fetch failed for', t.artist, t.title, e);
+        }
+        this.processed.update((n) => n + 1);
+        this.push(records);
+        await sleep(500); // be polite to tunebat (reduces 429s)
+        if (sinceCommit >= 10) {
+          sinceCommit = 0;
+          await this.commit(records, cfg);
+        }
+      }
+
+      await this.commit(records, cfg);
+      const n = this.corrected();
+      const fixed = n === 0 ? 'nothing needed correcting' : `${n} track(s) corrected`;
+      this.message.set(
+        this.canCommit
+          ? `Re-fetch complete — ${fixed}, saved to GitHub.`
+          : `Re-fetch complete — ${fixed} (not saved: configure a GitHub token to persist).`
+      );
+    } catch (e) {
+      this.error.set(String(e));
+      this.message.set('Re-fetch failed: ' + e);
+    } finally {
+      this.running.set(false);
+      this.reportReady.set(true); // show the summary, even for a partial run
+    }
+  }
+
+  /**
+   * Overwrites a track's key/BPM with a freshly fetched answer when it differs.
+   * Returns a change record when something actually changed, else null. Empty
+   * fields in `info` are ignored so a failed/blocked lookup can never erase
+   * good data.
+   */
+  private applyFresh(t: Track, info: KeyInfo): TrackChange | null {
+    const keyChanged =
+      !!info.keyName && (info.keyName !== t.keyName || info.camelot !== t.camelot);
+    const bpmChanged = !!info.bpm && info.bpm !== t.bpm;
+    if (!keyChanged && !bpmChanged) return null;
+
+    const change: TrackChange = {
+      trackId: t.id,
+      title: t.title,
+      artist: t.artist,
+      recordTitle: t.recordTitle,
+      oldKeyText: t.keyText,
+      newKeyText: keyChanged ? info.keyText : t.keyText,
+      oldBpm: t.bpm,
+      newBpm: bpmChanged ? info.bpm : t.bpm,
+      keyChanged,
+      bpmChanged,
+    };
+
+    if (keyChanged) {
+      t.keyName = info.keyName;
+      t.camelot = info.camelot;
+      t.keyText = info.keyText;
+    }
+    if (bpmChanged) t.bpm = info.bpm;
+    return change;
   }
 
   /** Fetches a release's tracklist and fills missing keys/BPM, updating live. */

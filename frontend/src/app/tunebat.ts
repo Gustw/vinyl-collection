@@ -90,6 +90,10 @@ function parseKeyInfo(json: any): KeyInfo {
  * re-runs skip them. Returns empty fields when nothing is found or the
  * request is blocked (e.g. CORS without a proxy).
  *
+ * Pass `force` to ignore the cached answer and re-ask the API — used by the
+ * "re-fetch all keys/BPM" pass that repairs values that were wrong. The fresh
+ * answer replaces the cache entry.
+ *
  * On HTTP 429 it backs off (honouring Retry-After, else 60s like the Java
  * tool) and retries the same term instead of hammering the API, reporting the
  * wait via the optional onStatus callback.
@@ -98,12 +102,14 @@ export async function lookupKey(
   cfg: AppConfig,
   artist: string,
   title: string,
-  onStatus?: (message: string) => void
+  onStatus?: (message: string) => void,
+  force = false
 ): Promise<KeyInfo> {
   const term = `${artist} ${title}`.trim();
   const cached = cacheGet(term);
-  if (cached && cached.bpm) return cached; // fully cached
-  const fallback = cached ?? { ...EMPTY };
+  if (!force && cached && cached.bpm) return cached; // fully cached
+  // A forced re-fetch must not fall back to the (possibly wrong) cached value.
+  const fallback = force ? { ...EMPTY } : cached ?? { ...EMPTY };
   const keep = () => (fallback.keyName ? { ...fallback, bpm: '' } : { ...EMPTY });
 
   const url =
