@@ -4215,14 +4215,14 @@
    3. Black Rose - Dub Dynasty [Key: A major (11B) | BPM: 130]
    4. Ever Powering Medicine - Dub Dynasty
    5. We Got Jah - Dub Dynasty
-   6. Blessings - Dub Dynasty
+   6. Blessings - Dub Dynasty [Key: E minor (9A) | BPM: 125]
    7. River Jordan - Dub Dynasty [Key: B minor (10A) | BPM: 127]
    8. Ithiopia Dub - Dub Dynasty [Key: F minor (4A) | BPM: 140]
    9. Thundering Mantis Part II - Dub Dynasty [Key: C minor (5A) | BPM: 123]
   10. Black Rose Dub - Dub Dynasty [Key: B minor (10A) | BPM: 130]
   11. Ever Powering Dub - Dub Dynasty [Key: B major (1B) | BPM: 96]
-  12. We Got Dub - Dub Dynasty [Key: A major (11B)]
-  13. Evil Fi Bun - Dub Dynasty [Key: E minor (9A)]
+  12. We Got Dub - Dub Dynasty [Key: A major (11B) | BPM: 140]
+  13. Evil Fi Bun - Dub Dynasty [Key: E minor (9A) | BPM: 125]
   14. Welcome The Lion On Your Path - Dub Dynasty [Key: A minor (8A) | BPM: 136]
 
 === Rasta We Rasta / Africa To Hollywood Dub -- Danny Red / Forward Fever ===
