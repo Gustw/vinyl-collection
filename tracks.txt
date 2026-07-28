@@ -454,8 +454,8 @@
   Year: 2010
   Label: XS Records
   Art: https://i.discogs.com/KZn3S93imvLExnKgJh4cU78aD0Ae_-d3gZjG-Vqzk0w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NTk0/MzUtMTMzOTQwNzIw/MC0yNTg4LmpwZWc.jpeg
-   1. Bang Bang (Subzero Remix) - Soundclash [Key: D major (10B)]
-   2. Bang Bang (Original Mix) - Soundclash [Key: E minor (9A)]
+   1. Bang Bang (Subzero Remix) - Soundclash [Key: D major (10B) | BPM: 103]
+   2. Bang Bang (Original Mix) - Soundclash [Key: E minor (9A) | BPM: 206]
 
 === Gundelero -- Chopstick Dubplate ===
   ID: 2268116
