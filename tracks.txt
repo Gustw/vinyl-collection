@@ -1530,7 +1530,7 @@
   Year: 2009
   Label: On Point Music
   Art: https://i.discogs.com/tD28cL9kCa6kXxQtOa7U00gYyYatpCBImLCofZtUUhc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTc2/MzEtMTI5ODA2MDY2/NS5qcGVn.jpeg
-   1. Whip Them Soundboy - Visionary [Key: A# minor (3A)]
+   1. Whip Them Soundboy - Visionary [Key: Bb major (6B) | BPM: 75]
    2. Another Meditation - Isaac Maya [Key: C# minor (12A) | BPM: 125]
 
 === Sugar Me / Wadodem -- Wildlife ===
