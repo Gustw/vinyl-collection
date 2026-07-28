@@ -339,7 +339,7 @@
   Label: Urban Takeover
   Art: https://i.discogs.com/8xPyc_StApef1z8EbXs44lKyyMfWOELD9mMmhAoeRSQ/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTY2/LTE1OTcyNjM3MTQt/NzYyMi5qcGVn.jpeg
    1. Bad Ass ! - Mickey Finn And Aphrodite [Key: C# major (3B) | BPM: 84]
-   2. Drop Top Caddy - Mickey Finn And Aphrodite [Key: A# minor (3A) | BPM: 120]
+   2. Drop Top Caddy - Mickey Finn And Aphrodite [Key: A major (11B) | BPM: 89]
 
 === Rukus / Vibration -- Gang Related ===
   ID: 65196
@@ -398,7 +398,7 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/-iMblEZ9XofDTG0POTLs5AeB7nLfakRGGNKFF7Dbyj0/rs:fit/g:sm/q:90/h:289/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzUx/MjkwLTE0OTU4MTcx/ODAtODkyMi5qcGVn.jpeg
-   1. Rastafari Army - Unknown Artist [Key: B minor (10A) | BPM: 97]
+   1. Rastafari Army - Unknown Artist [Key: B major (1B) | BPM: 128]
    2. Rich Man Dub - Unknown Artist [Key: G# minor (1A) | BPM: 120]
 
 === Talk Too Much E.P. -- Vinyl Junkie & Sanxion Featuring Bushman ===
@@ -465,7 +465,7 @@
   Label: Chopstick Dubplate
   Art: https://i.discogs.com/0-9uu47LSJDxG3K68CHnnjH7xHyZtaF1hJBWolaw9Qk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjgx/MTYtMTYyMzMwMjI5/MS05Mzg2LmpwZWc.jpeg
    1. Gundelero - Chopstick Dubplate [Key: D major (10B) | BPM: 88]
-   2. Chop Gundelero Riddim - Chopstick Dubplate [Key: A# minor (3A) | BPM: 175]
+   2. Chop Gundelero Riddim - Chopstick Dubplate [Key: D major (10B) | BPM: 88]
 
 === Mash You Down / Live From Studio 1 -- Serial Killaz ===
   ID: 1758060
@@ -630,7 +630,7 @@
   Label: Roots Records
   Art: https://i.discogs.com/mkWmceeLgIZ-ik3RNe_7nmAhE2vtjCa8zEa078Fnhv4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0OTI0/MTUtMTI4Njk5MjM0/NC5qcGVn.jpeg
    1. Ganja Farmer - Aries / Murda [Key: G minor (6A) | BPM: 95]
-   2. One Of The Days - Aries / Murda [Key: G major (9B) | BPM: 93]
+   2. One Of The Days - Aries / Murda [Key: Ab major (4B) | BPM: 176]
 
 === Jerlipy Lip / Every Sound -- The Ragga Twins ===
   ID: 203067
@@ -640,7 +640,7 @@
   Label: Solid Vinyl
   Art: https://i.discogs.com/emHBByyL1-HFgg1qTy0_zGU5jExxt9Ky1B2wgXDIC6o/rs:fit/g:sm/q:90/h:300/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzA2/Ny0xMTQxMzIyOTQz/LmdpZg.jpeg
    1. Jerlipy Lip (Juggling Mix) - The Ragga Twins [Key: G major (9B) | BPM: 174]
-   2. Every Sound - The Ragga Twins [Key: G minor (6A) | BPM: 94]
+   2. Every Sound - The Ragga Twins [Key: B major (1B) | BPM: 140]
 
 === Prophet Rides Again -- Capleton ===
   ID: 1113407
@@ -748,7 +748,7 @@
   Year: 2007
   Label: Soul
   Art: https://i.discogs.com/cyT6UQhDHxUxjH3HcJdJkdewO7qYhJMDF1g0jVBI2bg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5MjQ3/Ni0xMTg2ODY0MTg0/LmpwZWc.jpeg
-   1. Mr. Mista - Camo & Khan [Key: C# minor (12A) | BPM: 132]
+   1. Mr. Mista - Camo & Khan [Key: B major (1B) | BPM: 178]
    2. Lion Youth - Dancing Djedi [Key: C# minor (12A) | BPM: 130]
 
 === Offbeat Division 3 -- Mikkim ===
@@ -886,7 +886,7 @@
   Label: Shogun Audio
   Art: https://i.discogs.com/8O_zncBT57h7fIxarJJVdJ9KJQbc37pUSVMyVt7CQM4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzOTI2/NjktMTM0NjI1NDA1/Mi02Njg2LmpwZWc.jpeg
    1. Led Astray - DJ Friction [Key: G minor (6A) | BPM: 71]
-   2. Stand Up (Sigma Rmx) - DJ Friction Vs Camo & Krooked Ft Dynamite MC [Key: C# major (3B) | BPM: 110]
+   2. Stand Up (Sigma Rmx) - DJ Friction Vs Camo & Krooked Ft Dynamite MC [Key: C# major (3B) | BPM: 175]
 
 === Heads High / Wings Of The Morning -- Heretic / Murder Inc. ===
   ID: 14342
@@ -979,7 +979,7 @@
   Label: Rockers Dubs
   Art: https://i.discogs.com/SigawlntkYEVXuOMEMHvRKZ68Awsi0g-BmAyDY8iC7s/rs:fit/g:sm/q:90/h:594/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0MTY3/Ni0xMzQ4MTQ1MDEy/LTYxNTUuanBlZw.jpeg
    1. Sound Clash (Mix 1) - Skoobz [Key: G major (9B) | BPM: 180]
-   2. Sound Clash (Mix 2) - Skoobz [Key: C# major (3B) | BPM: 98]
+   2. Sound Clash (Mix 2) - Skoobz [Key: G major (9B) | BPM: 180]
 
 === Jahoviah Ina Dub / Only You -- Terry Tee ===
   ID: 1366545
@@ -988,7 +988,7 @@
   Year: 2008
   Label: Knowledge & Wisdom Records
   Art: https://i.discogs.com/2G3r8KWbmD9OYb03PkEeVMd5Y5ydlWLnhfy566uDjnU/rs:fit/g:sm/q:90/h:288/w:288/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjY1/NDUtMTI3MjU4MDQ4/Ny5qcGVn.jpeg
-   1. Jahoviah Ina Dub - Terry T [Key: E minor (9A) | BPM: 98]
+   1. Jahoviah Ina Dub - Terry T [Key: G# minor (1A) | BPM: 95]
    2. Only You - Terry T [Key: A# minor (3A) | BPM: 73]
 
 === Computer Dub / Stone In My Heart -- Vini Selecta & U.Stone ===
@@ -998,7 +998,7 @@
   Year: 2009
   Label: Nu Urban Music France
   Art: https://i.discogs.com/FToNr2HG8CveDSqgYJ90nZMF23PkAmehUfmazjgze_Q/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Njg3/NzItMTIzNTc0MDgw/Ni5qcGVn.jpeg
-   1. Computer Dub - Viniselecta & U Stone [Key: A minor (8A) | BPM: 140]
+   1. Computer Dub - Viniselecta & U Stone [Key: D# minor (2A) | BPM: 91]
    2. Stone In My Heart - Viniselecta & U Stone [Key: Bb major (6B) | BPM: 137]
 
 === Run For Your Life / Dead Man Walking -- Visionary ===
