@@ -3909,11 +3909,11 @@
   Year: 2014
   Label: Warp Records
   Art: https://i.discogs.com/Iy1WvXmpt1kUQLXYFJMuHqr78OVl6P3uv4JW-3nGcl0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMDI5/MTAtMTQyMzM1NTg5/MC00MDEzLmpwZWc.jpeg
-   1. Nights Introlude - Nightmares On Wax [Key: G major (9B)]
-   2. Dreddoverboard - Nightmares On Wax [Key: G major (9B)]
-   3. Pipes Honour - Nightmares On Wax [Key: C# major (3B)]
-   4. Me + You - Nightmares On Wax [Key: C# major (3B)]
-   5. Stars - Nightmares On Wax [Key: B minor (10A)]
+   1. Nights Introlude - Nightmares On Wax [Key: G major (9B) | BPM: 94]
+   2. Dreddoverboard - Nightmares On Wax [Key: G major (9B) | BPM: 115]
+   3. Pipes Honour - Nightmares On Wax [Key: C# major (3B) | BPM: 159]
+   4. Me + You - Nightmares On Wax [Key: C# major (3B) | BPM: 154]
+   5. Stars - Nightmares On Wax [Key: B minor (10A) | BPM: 157]
    6. Wait A Minute - Nightmares On Wax [Key: A minor (8A)]
    7. Praying For A Jeepbeat - Nightmares On Wax [Key: C# major (3B)]
    8. Groove St. - Nightmares On Wax [Key: A# minor (3A)]
