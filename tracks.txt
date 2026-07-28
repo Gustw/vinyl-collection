@@ -2540,7 +2540,7 @@
   12. Good Old-Fashioned Lover Boy - Queen [Key: Eb major (5B) | BPM: 97]
   13. Play The Game - Queen [Key: F major (7B) | BPM: 79]
   14. Flash - Queen [Key: E minor (9A) | BPM: 108]
-  15. Seven Seas Of Rhye - Queen [Key: D major (10B)]
+  15. Seven Seas Of Rhye - Queen [Key: D major (10B) | BPM: 126]
   16. We Will Rock You - Queen [Key: D major (10B) | BPM: 81]
   17. We Are The Champions - Queen [Key: G minor (6A) | BPM: 64]
 
@@ -3329,8 +3329,8 @@
    3. Is This Love - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 122]
    4. Sun Is Shining - Bob Marley & The Wailers [Key: A# minor (3A) | BPM: 129]
    5. Satisfy My Soul - Bob Marley & The Wailers [Key: G major (9B) | BPM: 128]
-   6. She's Gone - Bob Marley & The Wailers [Key: F# minor (11A)]
-   7. Misty Morning - Bob Marley & The Wailers [Key: B minor (10A)]
+   6. She's Gone - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 148]
+   7. Misty Morning - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 125]
    8. Crisis - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 123]
    9. Running Away - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 119]
   10. Time Will Tell - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 161]
@@ -3755,10 +3755,10 @@
   14. It Was There... - Yann Tiersen [Key: B minor (10A) | BPM: 82]
   15. Prayer No. 2 - Yann Tiersen [Key: E minor (9A) | BPM: 104]
   16. Summer Nursery Rhyme No. 1 - Yann Tiersen [Key: E minor (9A) | BPM: 124]
-  17. The Window - Yann Tiersen [Key: A minor (8A)]
-  18. Prayer No. 3 - Yann Tiersen [Key: G minor (6A)]
-  19. The Empty Room - Yann Tiersen [Key: A minor (8A)]
-  20. Everyday Life - Yann Tiersen [Key: D minor (7A)]
+  17. The Window - Yann Tiersen [Key: A minor (8A) | BPM: 100]
+  18. Prayer No. 3 - Yann Tiersen [Key: G minor (6A) | BPM: 101]
+  19. The Empty Room - Yann Tiersen [Key: A minor (8A) | BPM: 113]
+  20. Everyday Life - Yann Tiersen [Key: D minor (7A) | BPM: 140]
 
 === Don't Worry Be Groovy! -- Alien Project ===
   ID: 246820
@@ -3914,11 +3914,11 @@
    3. Pipes Honour - Nightmares On Wax [Key: C# major (3B) | BPM: 159]
    4. Me + You - Nightmares On Wax [Key: C# major (3B) | BPM: 154]
    5. Stars - Nightmares On Wax [Key: B minor (10A) | BPM: 157]
-   6. Wait A Minute - Nightmares On Wax [Key: A minor (8A)]
-   7. Praying For A Jeepbeat - Nightmares On Wax [Key: C# major (3B)]
-   8. Groove St. - Nightmares On Wax [Key: A# minor (3A)]
-   9. Time (To Listen) - Nightmares On Wax [Key: Ab major (4B)]
-  10. (Man) Tha Journey - Nightmares On Wax
+   6. Wait A Minute - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
+   7. Praying For A Jeepbeat - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
+   8. Groove St. - Nightmares On Wax [Key: A# minor (3A) | BPM: 97]
+   9. Time (To Listen) - Nightmares On Wax [Key: Ab major (4B) | BPM: 170]
+  10. (Man) Tha Journey - Nightmares On Wax [Key: C# minor (12A) | BPM: 95]
   11. Bless My Soul - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
   12. Cruise (Don't Stop) - Nightmares On Wax [Key: B minor (10A) | BPM: 94]
   13. Mission Venice - Nightmares On Wax [Key: A minor (8A) | BPM: 126]
@@ -4052,7 +4052,7 @@
    6. 4th Dimensional Transition - MGMT [Key: A major (11B) | BPM: 160]
    7. Pieces Of What - MGMT [Key: E minor (9A) | BPM: 108]
    8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A) | BPM: 124]
-   9. The Handshake - MGMT [Key: B minor (10A)]
+   9. The Handshake - MGMT [Key: B minor (10A) | BPM: 140]
   10. Future Reflections - MGMT [Key: F major (7B) | BPM: 140]
 
 === Salad Days -- Mac DeMarco ===
