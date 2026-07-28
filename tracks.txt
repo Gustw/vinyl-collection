@@ -3331,7 +3331,7 @@
    5. Satisfy My Soul - Bob Marley & The Wailers [Key: G major (9B) | BPM: 128]
    6. She's Gone - Bob Marley & The Wailers [Key: F# minor (11A)]
    7. Misty Morning - Bob Marley & The Wailers [Key: B minor (10A)]
-   8. Crisis - Bob Marley & The Wailers [Key: F# minor (11A)]
+   8. Crisis - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 123]
    9. Running Away - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 119]
   10. Time Will Tell - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 161]
 
@@ -3439,9 +3439,9 @@
    2. Pick Myself Up - Peter Tosh [Key: D major (10B) | BPM: 139]
    3. I'm The Toughest - Peter Tosh [Key: A major (11B) | BPM: 175]
    4. Soon Come - Peter Tosh [Key: A minor (8A) | BPM: 139]
-   5. Moses - The Prophet - Peter Tosh [Key: A major (11B)]
-   6. Bush Doctor - Peter Tosh [Key: E minor (9A)]
-   7. Stand Firm - Peter Tosh [Key: A major (11B)]
+   5. Moses - The Prophet - Peter Tosh [Key: A major (11B) | BPM: 127]
+   6. Bush Doctor - Peter Tosh [Key: E minor (9A) | BPM: 136]
+   7. Stand Firm - Peter Tosh [Key: A major (11B) | BPM: 74]
    8. Dem Ha Fe Get A Beatin - Peter Tosh [Key: A major (11B) | BPM: 128]
    9. Creation - Peter Tosh [Key: C major (8B) | BPM: 80]
 
@@ -3681,15 +3681,15 @@
   Year: 2017
   Label: Twisted Records
   Art: https://i.discogs.com/uFabeg-qqiIKinkx4rh4erV9BurkCZgj-ARWuieC6Dc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjQy/ODU5LTE1MTQ1MzM0/NzQtNDIyMi5qcGVn.jpeg
-   1. Remember The Future - Shpongle [Key: E minor (9A)]
-   2. The Magumba State - Shpongle [Key: G major (9B)]
+   1. Remember The Future - Shpongle [Key: E minor (9A) | BPM: 168]
+   2. The Magumba State - Shpongle [Key: G major (9B) | BPM: 168]
    3. Empty Branes - Shpongle [Key: F major (7B)]
    4. Are We There Yet? - Shpongle [Key: F# major (2B)]
    5. Herr Gringleflapper's Secret Stash Box - Shpongle [Key: D major (10B)]
-   6. Strange Planet... - Shpongle [Key: D major (10B)]
-   7. I Woke Up As A Shlummutz - Shpongle [Key: C major (8B)]
-   8. A Series Of Heads - Shpongle [Key: F# minor (11A)]
-   9. Celestial Intoxication - Shpongle [Key: A minor (8A)]
+   6. Strange Planet... - Shpongle [Key: D major (10B) | BPM: 110]
+   7. I Woke Up As A Shlummutz - Shpongle [Key: C major (8B) | BPM: 140]
+   8. A Series Of Heads - Shpongle [Key: F# major (2B) | BPM: 92]
+   9. Celestial Intoxication - Shpongle [Key: A minor (8A) | BPM: 135]
   10. Hammock Therapy - Shpongle [Key: G major (9B) | BPM: 146]
 
 === Deck Wizards - Aural Sect -- Sid Shanti ===
@@ -3788,7 +3788,7 @@
    3. Dances Between Worlds (South America) - 1200 Micrograms [Key: G# minor (1A) | BPM: 138]
    4. Voyages Into The Supernatural (Africa) - Hujaboy [Key: G# minor (1A) | BPM: 94]
    5. Flesh Of The Gods (India) - GMS [Key: D major (10B) | BPM: 97]
-   6. The Serpent (Europe) - Bullet Proof [Key: Bb major (6B)]
+   6. The Serpent (Europe) - Bullet Proof [Key: G major (9B) | BPM: 81]
 
 === Aries Tunes 002 -- Various ===
   ID: 193973
@@ -3922,10 +3922,10 @@
   11. Bless My Soul - Nightmares On Wax [Key: C# major (3B)]
   12. Cruise (Don't Stop) - Nightmares On Wax [Key: B minor (10A)]
   13. Mission Venice - Nightmares On Wax [Key: A minor (8A)]
-  14. What I'm Feelin (Good) - Nightmares On Wax
-  15. Rise - Nightmares On Wax
-  16. Rise (Reprise) - Nightmares On Wax [Key: B minor (10A)]
-  17. Gambia Via Vagatorbeach - Nightmares On Wax [Key: C major (8B)]
+  14. What I'm Feelin (Good) - Nightmares On Wax [Key: Bb major (6B) | BPM: 101]
+  15. Rise - Nightmares On Wax [Key: C# minor (12A) | BPM: 170]
+  16. Rise (Reprise) - Nightmares On Wax [Key: B minor (10A) | BPM: 85]
+  17. Gambia Via Vagatorbeach - Nightmares On Wax [Key: C major (8B) | BPM: 150]
 
 === Sci​-​Fi Lullabies -- Bluetech ===
   ID: 13968661
