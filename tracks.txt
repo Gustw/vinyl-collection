@@ -1937,7 +1937,7 @@
   Year: 1995
   Label: Tokyo Tekno Tribe
   Art: https://i.discogs.com/Yh3JrgIkYzVYAWLxRM0vqR2cQnV5NMz3mBViAuJ50-s/rs:fit/g:sm/q:90/h:600/w:373/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMjU3/NS0xMTcxMDQ5NjUz/LmpwZWc.jpeg
-   1. The Revolution - KURO [Key: C major (8B)]
+   1. The Revolution - KURO [Key: C major (8B) | BPM: 125]
    2. Into Space - KURO [Key: A minor (8A) | BPM: 143]
 
 === Let's Get Stoned And Watch The Freaks / Green Worm -- Mindfield ===
