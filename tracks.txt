@@ -3331,7 +3331,7 @@
    5. Satisfy My Soul - Bob Marley & The Wailers [Key: G major (9B) | BPM: 128]
    6. She's Gone - Bob Marley & The Wailers [Key: F# minor (11A)]
    7. Misty Morning - Bob Marley & The Wailers [Key: B minor (10A)]
-   8. Crisis - Bob Marley & The Wailers [Key: F# minor (11A)]
+   8. Crisis - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 123]
    9. Running Away - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 119]
   10. Time Will Tell - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 161]
 
@@ -3439,9 +3439,9 @@
    2. Pick Myself Up - Peter Tosh [Key: D major (10B) | BPM: 139]
    3. I'm The Toughest - Peter Tosh [Key: A major (11B) | BPM: 175]
    4. Soon Come - Peter Tosh [Key: A minor (8A) | BPM: 139]
-   5. Moses - The Prophet - Peter Tosh [Key: A major (11B)]
-   6. Bush Doctor - Peter Tosh [Key: E minor (9A)]
-   7. Stand Firm - Peter Tosh [Key: A major (11B)]
+   5. Moses - The Prophet - Peter Tosh [Key: A major (11B) | BPM: 127]
+   6. Bush Doctor - Peter Tosh [Key: E minor (9A) | BPM: 136]
+   7. Stand Firm - Peter Tosh [Key: A major (11B) | BPM: 74]
    8. Dem Ha Fe Get A Beatin - Peter Tosh [Key: A major (11B) | BPM: 128]
    9. Creation - Peter Tosh [Key: C major (8B) | BPM: 80]
 
