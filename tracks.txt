@@ -210,8 +210,8 @@
   Year: 2007
   Label: Znootpoch
   Art: https://i.discogs.com/Z91Ks9fP31dNr2TPbqWiBeXZ-ZlVbzv-0ZseZAUaaNQ/rs:fit/g:sm/q:90/h:495/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjM5/NzgtMTIwMDUxOTA0/NS5qcGVn.jpeg
-   1. Ghost Town - Krumble [Key: C# major (3B)]
-   2. Angel City - Krumble [Key: A minor (8A)]
+   1. Ghost Town - Krumble [Key: C# major (3B) | BPM: 92]
+   2. Angel City - Krumble [Key: A minor (8A) | BPM: 180]
 
 === Burning Babylon / Empty Words -- Alix Perez ===
   ID: 19845166
