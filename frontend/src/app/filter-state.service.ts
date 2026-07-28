@@ -5,6 +5,8 @@ export interface Filters {
   genres: string[];
   styles: string[];
   keys: string[]; // Camelot codes, e.g. "8A"
+  /** Crate ids to restrict to (empty = the whole collection). */
+  crates: string[];
   /** Whether the BPM-difference filter is active (detail view). */
   bpmEnabled: boolean;
   /** ± BPM tolerance from the reference track's BPM. */
@@ -27,7 +29,7 @@ export interface Filters {
 }
 
 export function emptyFilters(): Filters {
-  return { search: '', genres: [], styles: [], keys: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: true, pitchAdjust: false, pitchLimit: true, hiddenTypes: [], yearMin: null, yearMax: null };
+  return { search: '', genres: [], styles: [], keys: [], crates: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: true, pitchAdjust: false, pitchLimit: true, hiddenTypes: [], yearMin: null, yearMax: null };
 }
 
 export function hasActiveFilters(f: Filters): boolean {
@@ -36,6 +38,7 @@ export function hasActiveFilters(f: Filters): boolean {
     f.genres.length > 0 ||
     f.styles.length > 0 ||
     f.keys.length > 0 ||
+    f.crates.length > 0 ||
     f.hiddenTypes.length > 0 ||
     f.yearMin != null ||
     f.yearMax != null
@@ -47,7 +50,7 @@ export function hasActiveFilters(f: Filters): boolean {
  * fold toggle so nothing looks "lost" while the filters are collapsed.
  */
 export function activeFilterCount(f: Filters, scope: 'list' | 'detail'): number {
-  let n = f.genres.length + f.styles.length + f.keys.length;
+  let n = f.genres.length + f.styles.length + f.keys.length + f.crates.length;
   if (scope === 'list') {
     if (f.yearMin != null) n++;
     if (f.yearMax != null) n++;
@@ -160,7 +163,7 @@ export class FilterStateService {
   }
 
   /** Immutable toggle of a value inside one of the array facets. */
-  toggle(target: WritableSignal<Filters>, facet: 'genres' | 'styles' | 'keys', value: string): void {
+  toggle(target: WritableSignal<Filters>, facet: 'genres' | 'styles' | 'keys' | 'crates', value: string): void {
     const f = target();
     const set = new Set(f[facet]);
     set.has(value) ? set.delete(value) : set.add(value);
@@ -169,6 +172,11 @@ export class FilterStateService {
 
   setSearch(target: WritableSignal<Filters>, search: string): void {
     target.set({ ...target(), search });
+  }
+
+  /** Replaces the crate selection outright (e.g. "show only this crate"). */
+  setCrates(target: WritableSignal<Filters>, crates: string[]): void {
+    target.set({ ...target(), crates });
   }
 
   /** Enables/disables the BPM-difference filter. */

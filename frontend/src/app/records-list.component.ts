@@ -1,6 +1,7 @@
 import { Component, ElementRef, computed, effect, inject, signal, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { CollectionService } from './collection.service';
+import { CrateService, inAnyCrate } from './crate.service';
 import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
 import { camelotClass } from './camelot';
@@ -48,6 +49,7 @@ interface Popover {
       >
         ↻ Re-fetch keys / BPM
       </button>
+      <button class="btn" title="Manage crates" (click)="openCrates()">🗃 Crates</button>
       <button class="btn" title="Settings (Discogs / GitHub)" (click)="toggleSettings()">⚙</button>
     </div>
 
@@ -300,10 +302,16 @@ interface Popover {
               <div class="popover-empty muted">No tracks for this record.</div>
             } @else {
               @for (t of pop.tracks; track t.id) {
-                <div class="popover-item" (click)="open(t)">
-                  <span class="track-title">{{ t.title }}</span>
+                <div class="popover-item">
+                  <span class="track-title" (click)="open(t)">{{ t.title }}</span>
                   @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
-                  <span [class]="keyBadgeClass(t)">{{ t.keyText || 'no key' }}</span>
+                  <span [class]="keyBadgeClass(t)" (click)="open(t)">{{ t.keyText || 'no key' }}</span>
+                  <button
+                    class="crate-btn"
+                    [class.on]="crateSvc.cratesOf(t).length"
+                    [title]="crateTitle(t)"
+                    (click)="openCratePicker($event, t)"
+                  >🗃</button>
                 </div>
               }
               @if (pop.hidden) {
@@ -314,6 +322,108 @@ interface Popover {
             }
           </div>
         }
+      }
+
+      @if (cratePicker(); as cp) {
+        <div class="popover-backdrop" (click)="closeCratePicker()"></div>
+        <div
+          class="popover crate-picker"
+          [style.left.px]="cp.x"
+          [style.top.px]="cp.y"
+          (click)="$event.stopPropagation()"
+        >
+          <div class="popover-head">
+            <span class="record-title">Add to crate</span>
+            <span class="muted">{{ cp.track.title }}</span>
+          </div>
+          @if (crateSvc.crates().length === 0) {
+            <div class="popover-empty muted">No crates yet — create one below.</div>
+          } @else {
+            @for (c of crateSvc.crates(); track c.id) {
+              <label class="popover-item crate-pick">
+                <input
+                  type="checkbox"
+                  [checked]="crateSvc.contains(c.id, cp.track)"
+                  (change)="crateSvc.toggle(c.id, cp.track)"
+                />
+                <span class="track-title">{{ c.name }}</span>
+                <span class="muted">{{ c.trackKeys.length }}</span>
+              </label>
+            }
+          }
+          <div class="crate-new">
+            <input
+              type="text"
+              placeholder="New crate name…"
+              [value]="newCrateName()"
+              (input)="newCrateName.set($any($event.target).value)"
+              (keydown.enter)="createCrateWith(cp.track)"
+            />
+            <button class="btn" [disabled]="!newCrateName().trim()" (click)="createCrateWith(cp.track)">Add</button>
+          </div>
+        </div>
+      }
+
+      @if (showCrates()) {
+        <div class="modal-backdrop" (click)="closeCrates()">
+          <div class="modal" (click)="$event.stopPropagation()">
+            <div class="modal-head">
+              <h2>Crates</h2>
+              <span class="spacer"></span>
+              <button class="btn" (click)="closeCrates()">✕</button>
+            </div>
+            <div class="muted modal-sub">
+              A crate is the box you actually carry to a gig. Crates are saved to
+              <b>{{ cfg().cratesPath }}</b> in your repo.
+            </div>
+
+            <div class="modal-body">
+              @if (crateSvc.crates().length === 0) {
+                <div class="empty">No crates yet.</div>
+              } @else {
+                @for (c of crateSvc.crates(); track c.id) {
+                  <div class="crate-row">
+                    <input
+                      class="crate-name"
+                      type="text"
+                      [value]="c.name"
+                      (change)="crateSvc.rename(c.id, $any($event.target).value)"
+                    />
+                    <span class="badge-count">{{ c.trackKeys.length }} track(s)</span>
+                    @if (crateSvc.missingCount(c.id); as miss) {
+                      <span class="badge-count err" [title]="'Tracks in this crate that are no longer in the collection'">
+                        {{ miss }} missing
+                      </span>
+                    }
+                    <span class="spacer"></span>
+                    <button class="btn" (click)="showOnlyCrate(c.id)">Show</button>
+                    <button class="btn danger" (click)="deleteCrate(c.id, c.name)">Delete</button>
+                  </div>
+                }
+              }
+            </div>
+
+            <div class="modal-foot">
+              <input
+                class="crate-name"
+                type="text"
+                placeholder="New crate name…"
+                [value]="newCrateName()"
+                (input)="newCrateName.set($any($event.target).value)"
+                (keydown.enter)="createCrate()"
+              />
+              <button class="btn primary" [disabled]="!newCrateName().trim()" (click)="createCrate()">
+                Create crate
+              </button>
+              <span class="spacer"></span>
+              @if (crateSvc.error()) {
+                <span class="err">{{ crateSvc.error() }}</span>
+              } @else if (crateSvc.status()) {
+                <span class="muted">{{ crateSvc.status() }}</span>
+              }
+            </div>
+          </div>
+        </div>
       }
 
       @if (updater.reportReady()) {
@@ -378,6 +488,7 @@ interface Popover {
 export class RecordsListComponent {
   readonly col = inject(CollectionService);
   readonly updater = inject(UpdaterService);
+  readonly crateSvc = inject(CrateService);
   private readonly config = inject(ConfigService);
   private readonly fs = inject(FilterStateService);
   private readonly router = inject(Router);
@@ -435,9 +546,12 @@ export class RecordsListComponent {
 
   readonly filtered = computed<Row[]>(() => {
     const f = this.filters();
+    const crates = this.crateSvc.crates();
     const out: Row[] = [];
     for (const r of this.col.records()) {
-      const tracks = r.tracks.filter((t) => matchesTrack(t, f));
+      const tracks = r.tracks.filter(
+        (t) => matchesTrack(t, f) && inAnyCrate(crates, f.crates, t)
+      );
       if (tracks.length) out.push({ record: r, tracks, hidden: r.tracks.length - tracks.length });
     }
     return out;
@@ -494,8 +608,70 @@ export class RecordsListComponent {
     this.fs.setYearMax(this.filters, Number.isNaN(y) ? null : y);
   }
 
-  toggle(facet: 'genres' | 'styles' | 'keys', value: string): void {
+  toggle(facet: 'genres' | 'styles' | 'keys' | 'crates', value: string): void {
     this.fs.toggle(this.filters, facet, value);
+  }
+
+  // --- Crates -------------------------------------------------------------
+
+  readonly showCrates = signal(false);
+  readonly newCrateName = signal('');
+  /** Track whose crate membership is being edited, positioned near the click. */
+  readonly cratePicker = signal<{ x: number; y: number; track: Track } | null>(null);
+
+  openCrates(): void {
+    this.closePopover();
+    this.showCrates.set(true);
+  }
+
+  closeCrates(): void {
+    this.showCrates.set(false);
+  }
+
+  createCrate(): void {
+    const name = this.newCrateName().trim();
+    if (!name) return;
+    this.crateSvc.create(name);
+    this.newCrateName.set('');
+  }
+
+  /** Creates a crate from the picker and drops the current track straight in. */
+  createCrateWith(t: Track): void {
+    const name = this.newCrateName().trim();
+    if (!name) return;
+    const crate = this.crateSvc.create(name);
+    this.crateSvc.add(crate.id, t);
+    this.newCrateName.set('');
+  }
+
+  deleteCrate(id: string, name: string): void {
+    if (!confirm(`Delete the crate "${name}"? The records themselves are not touched.`)) return;
+    this.crateSvc.remove(id);
+    // Drop it from the filter too, so the view doesn't silently show nothing.
+    if (this.filters().crates.includes(id)) this.fs.toggle(this.filters, 'crates', id);
+  }
+
+  /** Filters the overview down to a single crate. */
+  showOnlyCrate(id: string): void {
+    this.fs.setCrates(this.filters, [id]);
+    this.closeCrates();
+  }
+
+  openCratePicker(ev: MouseEvent, track: Track): void {
+    ev.stopPropagation();
+    const pos = this.clampToViewport(ev.clientX + 4, ev.clientY + 4, 300, 320);
+    this.cratePicker.set({ x: pos.x, y: pos.y, track });
+  }
+
+  closeCratePicker(): void {
+    this.cratePicker.set(null);
+    this.newCrateName.set('');
+  }
+
+  /** Tooltip listing the crates a track is in. */
+  crateTitle(t: Track): string {
+    const names = this.crateSvc.cratesOf(t).map((c) => c.name);
+    return names.length ? 'In crates: ' + names.join(', ') : 'Add to a crate';
   }
 
   clear(): void {

@@ -11,6 +11,8 @@ export interface AppConfig {
   githubRepo: string;
   githubBranch: string;
   tracksPath: string;
+  /** Repo path of the crates file (playlists), stored next to tracks.txt. */
+  cratesPath: string;
   /** GitHub token with `contents:write` on the repo (kept only in localStorage). */
   githubToken: string;
   /**
@@ -49,6 +51,7 @@ export function defaultConfig(): AppConfig {
     githubRepo: '',
     githubBranch: 'main',
     tracksPath: 'tracks.txt',
+    cratesPath: 'crates.json',
     githubToken: '',
     corsProxy: '',
     pitchRange: 8,

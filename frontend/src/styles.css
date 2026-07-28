@@ -91,6 +91,53 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 }
 .chip:hover { border-color: var(--accent); }
 .chip.active { background: var(--chip-active); border-color: var(--accent); }
+.chip.ghost { background: transparent; border-style: dashed; color: var(--muted); }
+.chip-count { opacity: .65; margin-left: 4px; font-size: 11px; }
+
+/* --- Crates --- */
+.crate-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  flex: 0 0 auto;
+}
+.crate-btn:hover { border-color: var(--accent); color: var(--text); }
+.crate-btn.on { color: var(--accent-2); }
+.crate-picker .crate-pick { cursor: pointer; }
+.crate-picker .crate-pick input { cursor: pointer; }
+.crate-new { display: flex; gap: 6px; padding: 8px 6px 2px; border-top: 1px solid var(--border); margin-top: 4px; }
+.crate-new input {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 8px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 13px;
+}
+.crate-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--border);
+}
+.crate-row .spacer { flex: 1; }
+.crate-name {
+  padding: 7px 9px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  min-width: 200px;
+}
+.crate-name:focus { outline: none; border-color: var(--accent); }
 
 .btn {
   padding: 8px 12px;

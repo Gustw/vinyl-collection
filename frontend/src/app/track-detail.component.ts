@@ -2,6 +2,7 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CollectionService } from './collection.service';
+import { CrateService, inAnyCrate } from './crate.service';
 import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
 import {
@@ -101,6 +102,14 @@ interface Row {
               @if (!editing()) {
                 <div class="edit-row">
                   <button class="btn" (click)="startEdit()">✎ Edit key / BPM</button>
+                  @for (c of crateSvc.crates(); track c.id) {
+                    <span
+                      class="chip"
+                      [class.active]="crateSvc.contains(c.id, track()!)"
+                      [title]="crateSvc.contains(c.id, track()!) ? 'Remove from ' + c.name : 'Add to ' + c.name"
+                      (click)="crateSvc.toggle(c.id, track()!)"
+                    >🗃 {{ c.name }}</span>
+                  }
                   @if (saveMsg(); as m) {
                     <span class="muted" [class.err]="saveErr()">{{ m }}</span>
                   }
@@ -177,6 +186,19 @@ interface Row {
             </div>
 
             @if (!collapsed()) {
+            @if (crateSvc.crates().length) {
+              <label>Crates <span class="muted" style="text-transform:none">— only mix from the box I'm bringing</span></label>
+              <div class="chips">
+                @for (c of crateSvc.crates(); track c.id) {
+                  <span
+                    class="chip"
+                    [class.active]="filters().crates.includes(c.id)"
+                    (click)="toggle('crates', c.id)"
+                  >{{ c.name }} <span class="chip-count">{{ c.trackKeys.length }}</span></span>
+                }
+              </div>
+            }
+
             @if (optionGenres().length) {
               <label>Genres</label>
               <div class="chips">
@@ -323,6 +345,7 @@ interface Row {
 })
 export class TrackDetailComponent {
   readonly col = inject(CollectionService);
+  readonly crateSvc = inject(CrateService);
   private readonly fs = inject(FilterStateService);
   private readonly config = inject(ConfigService);
   private readonly router = inject(Router);
@@ -503,9 +526,11 @@ export class TrackDetailComponent {
     const f = this.filters();
     const hidden = new Set(f.hiddenTypes);
     const ref = this.refBpm() ?? undefined;
+    const crates = this.crateSvc.crates();
     return this.candidateRows().filter(
       (r) =>
         matchesTrack(r.track, f, ref, r.camelot) &&
+        inAnyCrate(crates, f.crates, r.track) &&
         !hidden.has(this.rel(r.camelot)) &&
         (!f.pitchLimit || r.reachable)
     );
@@ -604,7 +629,7 @@ export class TrackDetailComponent {
     this.fs.setPitchLimit(this.filters, checked);
   }
 
-  toggle(facet: 'genres' | 'styles' | 'keys', value: string): void {
+  toggle(facet: 'genres' | 'styles' | 'keys' | 'crates', value: string): void {
     this.fs.toggle(this.filters, facet, value);
   }
 

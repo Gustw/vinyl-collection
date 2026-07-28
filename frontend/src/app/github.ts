@@ -17,10 +17,10 @@ function base64ToUtf8(b64: string): string {
   return new TextDecoder().decode(bytes);
 }
 
-function contentsUrl(cfg: AppConfig): string {
+function contentsUrl(cfg: AppConfig, path: string): string {
   return (
     `https://api.github.com/repos/${cfg.githubOwner}/${cfg.githubRepo}` +
-    `/contents/${cfg.tracksPath.split('/').map(encodeURIComponent).join('/')}`
+    `/contents/${path.split('/').map(encodeURIComponent).join('/')}`
   );
 }
 
@@ -33,13 +33,19 @@ export function githubConfigured(cfg: AppConfig): boolean {
   return !!(cfg.githubOwner && cfg.githubRepo && cfg.tracksPath);
 }
 
-/** Reads tracks.txt from the repo. Returns null if it doesn't exist yet. */
-export async function getTracksFile(cfg: AppConfig): Promise<GithubFile | null> {
+/** True when we can actually write to the repo (config + token present). */
+export function canWrite(cfg: AppConfig): boolean {
+  return githubConfigured(cfg) && !!cfg.githubToken;
+}
+
+/** Reads any file from the repo. Returns null if it doesn't exist yet. */
+export async function getFile(cfg: AppConfig, path: string): Promise<GithubFile | null> {
   const headers: Record<string, string> = { Accept: 'application/vnd.github+json' };
   if (cfg.githubToken) headers['Authorization'] = 'Bearer ' + cfg.githubToken;
-  const res = await fetch(contentsUrl(cfg) + '?ref=' + encodeURIComponent(cfg.githubBranch), {
-    headers,
-  });
+  const res = await fetch(
+    contentsUrl(cfg, path) + '?ref=' + encodeURIComponent(cfg.githubBranch),
+    { headers }
+  );
   if (res.status === 404) return null;
   if (res.status !== 200) throw new Error('GitHub read HTTP ' + res.status);
   const data = await res.json();
@@ -47,11 +53,12 @@ export async function getTracksFile(cfg: AppConfig): Promise<GithubFile | null> 
 }
 
 /**
- * Writes tracks.txt to the repo. Pass the current `sha` (from a prior read/write)
+ * Writes any file to the repo. Pass the current `sha` (from a prior read/write)
  * to update; omit it to create. Returns the new blob sha.
  */
-export async function putTracksFile(
+export async function putFile(
   cfg: AppConfig,
+  path: string,
   text: string,
   sha: string | undefined,
   message: string
@@ -63,7 +70,7 @@ export async function putTracksFile(
     branch: cfg.githubBranch,
   };
   if (sha) body['sha'] = sha;
-  const res = await fetch(contentsUrl(cfg), {
+  const res = await fetch(contentsUrl(cfg, path), {
     method: 'PUT',
     headers: {
       Accept: 'application/vnd.github+json',
@@ -77,6 +84,21 @@ export async function putTracksFile(
   }
   const data = await res.json();
   return String(data?.content?.sha || '');
+}
+
+/** Reads tracks.txt from the repo. Returns null if it doesn't exist yet. */
+export async function getTracksFile(cfg: AppConfig): Promise<GithubFile | null> {
+  return getFile(cfg, cfg.tracksPath);
+}
+
+/** Writes tracks.txt to the repo. Returns the new blob sha. */
+export async function putTracksFile(
+  cfg: AppConfig,
+  text: string,
+  sha: string | undefined,
+  message: string
+): Promise<string> {
+  return putFile(cfg, cfg.tracksPath, text, sha, message);
 }
 
 /** Public raw URL for the committed file (CORS-enabled, latest branch content). */

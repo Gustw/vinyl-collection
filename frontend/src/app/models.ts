@@ -40,3 +40,23 @@ export interface Rec {
   tracks: Track[];
 }
 
+/**
+ * A named, ordered selection of tracks — the digital equivalent of the box you
+ * actually carry to a gig ("Friday warm-up", "peak time", "the 14th").
+ *
+ * Membership is stored as artist/title keys rather than track ids, because ids
+ * are re-assigned every time tracks.txt is parsed. A key survives re-imports,
+ * re-orderings and even a record being replaced by a different pressing.
+ */
+export interface Crate {
+  id: string;
+  name: string;
+  /** Track keys (see trackKey()), in the order they should be played. */
+  trackKeys: string[];
+}
+
+/** Stable identity of a track across reloads: its artist + title, folded. */
+export function trackKey(t: Pick<Track, 'artist' | 'title'>): string {
+  return `${(t.artist || '').trim()}\u0000${(t.title || '').trim()}`.toLowerCase();
+}
+
