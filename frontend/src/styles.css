@@ -52,6 +52,21 @@ a:hover { text-decoration: underline; }
 
 .filters label { display: block; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; margin: 10px 0 6px; }
 
+/* Filter panel header: the search box stays visible, everything else folds. */
+.filters-head { display: flex; align-items: flex-end; gap: 10px; }
+.filters-search { flex: 1; min-width: 0; }
+.filters-search label { margin-top: 0; }
+.filters-toggle { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.filters-count {
+  font-size: 11px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: var(--chip-active);
+  border: 1px solid var(--accent);
+  color: #fff;
+}
+
 input[type="text"] {
   width: 100%;
   padding: 10px 12px;

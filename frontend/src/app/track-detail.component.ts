@@ -2,7 +2,7 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CollectionService } from './collection.service';
-import { FilterStateService, hasActiveFilters } from './filter-state.service';
+import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
 import { mixableCamelot, relation, pitchShiftSemitones, shiftCamelot, shiftKeyName, camelotClass, CAMELOT_CODES, camelotToKeyName } from './camelot';
 import { Track } from './models';
@@ -132,14 +132,32 @@ interface Row {
               Mixable with <b>{{ track()!.camelot }}</b>: {{ mixSet().join(', ') }}
             </div>
 
-            <label>Search</label>
-            <input
-              type="text"
-              placeholder="Search mixable tracks…"
-              [value]="filters().search"
-              (input)="onSearch($any($event.target).value)"
-            />
+            <div class="filters-head">
+              <div class="filters-search">
+                <label for="detail-search">Search</label>
+                <input
+                  id="detail-search"
+                  type="text"
+                  placeholder="Search mixable tracks…"
+                  [value]="filters().search"
+                  (input)="onSearch($any($event.target).value)"
+                />
+              </div>
+              <button
+                class="btn filters-toggle"
+                [attr.aria-expanded]="!collapsed()"
+                [title]="collapsed() ? 'Show all filters' : 'Fold filters (keep search)'"
+                (click)="toggleCollapsed()"
+              >
+                {{ collapsed() ? '▸' : '▾' }} Filters
+                @if (collapsed() && advancedCount()) { <span class="filters-count">{{ advancedCount() }}</span> }
+              </button>
+              @if (collapsed() && active()) {
+                <button class="btn" (click)="clear()">Clear</button>
+              }
+            </div>
 
+            @if (!collapsed()) {
             @if (optionGenres().length) {
               <label>Genres</label>
               <div class="chips">
@@ -231,6 +249,7 @@ interface Row {
             @if (active()) {
               <div style="margin-top:12px"><button class="btn" (click)="clear()">Clear filters</button></div>
             }
+            }
           </div>
 
           @if (rows().length === 0) {
@@ -271,6 +290,14 @@ export class TrackDetailComponent {
 
   readonly filters = this.fs.detail;
   readonly active = computed(() => hasActiveFilters(this.filters()));
+
+  /** Filters folded down to just the search box (remembered across reloads). */
+  readonly collapsed = this.fs.detailCollapsed;
+  readonly advancedCount = computed(() => activeFilterCount(this.filters(), 'detail'));
+
+  toggleCollapsed(): void {
+    this.fs.toggleCollapsed(this.collapsed);
+  }
 
   private readonly params = toSignal(this.route.paramMap);
 

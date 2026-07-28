@@ -37,6 +37,23 @@ export function hasActiveFilters(f: Filters): boolean {
   );
 }
 
+/**
+ * How many filters other than the search box are active. Shown next to the
+ * fold toggle so nothing looks "lost" while the filters are collapsed.
+ */
+export function activeFilterCount(f: Filters, scope: 'list' | 'detail'): number {
+  let n = f.genres.length + f.styles.length + f.keys.length;
+  if (scope === 'list') {
+    if (f.yearMin != null) n++;
+    if (f.yearMax != null) n++;
+  } else {
+    n += f.hiddenTypes.length;
+    if (f.bpmEnabled) n++;
+    if (f.pitchAdjust) n++;
+  }
+  return n;
+}
+
 /** Overview display preferences (remembered across reloads). */
 export interface ViewPrefs {
   /** Show each record's full tracklist, or just a compact record card. */
@@ -61,6 +78,32 @@ export class FilterStateService {
   readonly detail = this.persisted('filters.detail');
   /** Screen 1 overview display preferences. */
   readonly view = this.persistedView('view.list');
+  /** Whether the filter panels are folded to just the search box. */
+  readonly listCollapsed = this.persistedFlag('filters.list.collapsed');
+  readonly detailCollapsed = this.persistedFlag('filters.detail.collapsed');
+
+  /** Folds / unfolds a filter panel (everything except the search box). */
+  toggleCollapsed(target: WritableSignal<boolean>): void {
+    target.update((v) => !v);
+  }
+
+  private persistedFlag(storageKey: string): WritableSignal<boolean> {
+    let initial = false;
+    try {
+      initial = localStorage.getItem(storageKey) === 'true';
+    } catch {
+      /* ignore storage errors */
+    }
+    const sig = signal<boolean>(initial);
+    effect(() => {
+      try {
+        localStorage.setItem(storageKey, String(sig()));
+      } catch {
+        /* ignore storage errors */
+      }
+    });
+    return sig;
+  }
 
   private persisted(storageKey: string): WritableSignal<Filters> {
     const sig = signal<Filters>(this.load(storageKey));

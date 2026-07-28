@@ -1,7 +1,7 @@
 import { Component, ElementRef, computed, effect, inject, signal, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { CollectionService } from './collection.service';
-import { FilterStateService, hasActiveFilters } from './filter-state.service';
+import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
 import { camelotClass } from './camelot';
 import { Rec, Track } from './models';
@@ -77,58 +77,77 @@ interface Popover {
         <div class="panel empty">Loading collection…</div>
       } @else {
         <div class="panel filters">
-          <label>Search</label>
-          <input
-            type="text"
-            placeholder="Search title, artist, key, record, label, year…"
-            [value]="filters().search"
-            (input)="onSearch($any($event.target).value)"
-          />
-
-          <label>Genres</label>
-          <div class="chips">
-            @for (g of col.allGenres(); track g) {
-              <span class="chip" [class.active]="filters().genres.includes(g)" (click)="toggle('genres', g)">{{ g }}</span>
-            }
-          </div>
-
-          <label>Styles</label>
-          <div class="chips">
-            @for (s of col.allStyles(); track s) {
-              <span class="chip" [class.active]="filters().styles.includes(s)" (click)="toggle('styles', s)">{{ s }}</span>
-            }
-          </div>
-
-          <label>Keys (Camelot)</label>
-          <div class="chips">
-            @for (k of col.allCamelot(); track k) {
-              <span class="chip" [class.active]="filters().keys.includes(k)" (click)="toggle('keys', k)">{{ k }}</span>
-            }
-          </div>
-
-          <label>Release year</label>
-          <div class="year-filter">
-            <input
-              class="year-input"
-              type="number"
-              [placeholder]="minYear() ? 'from ' + minYear() : 'from'"
-              [value]="filters().yearMin ?? ''"
-              (input)="onYearMin($any($event.target).value)"
-            />
-            <span class="muted">–</span>
-            <input
-              class="year-input"
-              type="number"
-              [placeholder]="maxYear() ? 'to ' + maxYear() : 'to'"
-              [value]="filters().yearMax ?? ''"
-              (input)="onYearMax($any($event.target).value)"
-            />
-          </div>
-
-          @if (active()) {
-            <div style="margin-top:12px">
-              <button class="btn" (click)="clear()">Clear filters</button>
+          <div class="filters-head">
+            <div class="filters-search">
+              <label for="list-search">Search</label>
+              <input
+                id="list-search"
+                type="text"
+                placeholder="Search title, artist, key, record, label, year…"
+                [value]="filters().search"
+                (input)="onSearch($any($event.target).value)"
+              />
             </div>
+            <button
+              class="btn filters-toggle"
+              [attr.aria-expanded]="!collapsed()"
+              [title]="collapsed() ? 'Show all filters' : 'Fold filters (keep search)'"
+              (click)="toggleCollapsed()"
+            >
+              {{ collapsed() ? '▸' : '▾' }} Filters
+              @if (collapsed() && advancedCount()) { <span class="filters-count">{{ advancedCount() }}</span> }
+            </button>
+            @if (collapsed() && active()) {
+              <button class="btn" (click)="clear()">Clear</button>
+            }
+          </div>
+
+          @if (!collapsed()) {
+            <label>Genres</label>
+            <div class="chips">
+              @for (g of col.allGenres(); track g) {
+                <span class="chip" [class.active]="filters().genres.includes(g)" (click)="toggle('genres', g)">{{ g }}</span>
+              }
+            </div>
+
+            <label>Styles</label>
+            <div class="chips">
+              @for (s of col.allStyles(); track s) {
+                <span class="chip" [class.active]="filters().styles.includes(s)" (click)="toggle('styles', s)">{{ s }}</span>
+              }
+            </div>
+
+            <label>Keys (Camelot)</label>
+            <div class="chips">
+              @for (k of col.allCamelot(); track k) {
+                <span class="chip" [class.active]="filters().keys.includes(k)" (click)="toggle('keys', k)">{{ k }}</span>
+              }
+            </div>
+
+            <label>Release year</label>
+            <div class="year-filter">
+              <input
+                class="year-input"
+                type="number"
+                [placeholder]="minYear() ? 'from ' + minYear() : 'from'"
+                [value]="filters().yearMin ?? ''"
+                (input)="onYearMin($any($event.target).value)"
+              />
+              <span class="muted">–</span>
+              <input
+                class="year-input"
+                type="number"
+                [placeholder]="maxYear() ? 'to ' + maxYear() : 'to'"
+                [value]="filters().yearMax ?? ''"
+                (input)="onYearMax($any($event.target).value)"
+              />
+            </div>
+
+            @if (active()) {
+              <div style="margin-top:12px">
+                <button class="btn" (click)="clear()">Clear filters</button>
+              </div>
+            }
           }
         </div>
 
@@ -256,6 +275,10 @@ export class RecordsListComponent {
   readonly active = computed(() => hasActiveFilters(this.filters()));
   readonly view = this.fs.view;
 
+  /** Filters folded down to just the search box (remembered across reloads). */
+  readonly collapsed = this.fs.listCollapsed;
+  readonly advancedCount = computed(() => activeFilterCount(this.filters(), 'list'));
+
   readonly cfg = this.config.config;
   readonly showSettings = signal(false);
 
@@ -357,6 +380,10 @@ export class RecordsListComponent {
 
   clear(): void {
     this.fs.clear(this.filters);
+  }
+
+  toggleCollapsed(): void {
+    this.fs.toggleCollapsed(this.collapsed);
   }
 
   setShowTracks(showTracks: boolean): void {
