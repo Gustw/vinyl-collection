@@ -1,5 +1,5 @@
 import { Component, ElementRef, computed, effect, inject, signal, viewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { CollectionService } from './collection.service';
 import { CrateService, inAnyCrate } from './crate.service';
 import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
@@ -28,6 +28,7 @@ interface Popover {
 @Component({
   selector: 'app-records-list',
   standalone: true,
+  imports: [RouterLink],
   template: `
     <div class="topbar">
       <h1>🎵 Vinyl Collection</h1>
@@ -50,6 +51,7 @@ interface Popover {
         ↻ Re-fetch keys / BPM
       </button>
       <button class="btn" title="Manage crates" (click)="openCrates()">🗃 Crates</button>
+      <a class="btn" routerLink="/set" title="Build a set from a crate and check every transition">▶ Set builder</a>
       <button class="btn" title="Settings (Discogs / GitHub)" (click)="toggleSettings()">⚙</button>
     </div>
 

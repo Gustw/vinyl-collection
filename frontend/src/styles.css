@@ -427,6 +427,53 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   font-size: 12px;
 }
 
+/* --- Set builder --- */
+.set-summary { display: flex; align-items: center; gap: 12px; }
+.set-summary .spacer { flex: 1; }
+.set-list { padding: 6px 10px; }
+.set-item { display: flex; align-items: center; gap: 10px; padding: 8px 4px; }
+.set-pos {
+  min-width: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.set-track { flex: 1; min-width: 0; cursor: pointer; }
+.set-track .track-title { font-size: 14px; }
+.set-track .muted { font-size: 12px; }
+.set-actions { display: flex; gap: 4px; }
+.set-actions .btn { padding: 4px 8px; font-size: 12px; }
+
+/*
+ * A transition sits *between* two records: the junction is where a mix is won
+ * or lost, so it gets its own row rather than being an attribute of a track.
+ */
+.transition {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 0 34px;
+  padding: 5px 10px;
+  border-left: 3px solid var(--border);
+  font-size: 12px;
+  color: var(--muted);
+}
+.transition .tr-icon { font-weight: 700; }
+.transition .tr-main { color: var(--text); }
+.transition .tr-issue { font-style: italic; }
+.transition.good { border-left-color: #2f6a49; }
+.transition.good .tr-icon { color: #9fe6c4; }
+.transition.warn { border-left-color: #7a6224; background: rgba(255, 223, 158, .05); }
+.transition.warn .tr-icon,
+.transition.warn .tr-issue { color: #ffdf9e; }
+.transition.bad { border-left-color: #7a2f3d; background: rgba(255, 159, 176, .06); }
+.transition.bad .tr-icon,
+.transition.bad .tr-issue { color: #ff9fb0; }
+
+.ok-count { color: #9fe6c4; }
+
 .detail-grid { display: grid; grid-template-columns: 140px 1fr; gap: 8px 14px; }
 .detail-grid div.k { color: var(--muted); }
 .empty { color: var(--muted); padding: 20px; text-align: center; }
