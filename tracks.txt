@@ -57,7 +57,7 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Key: F major (7B) | BPM: 175]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Key: F major (7B) | BPM: 170]
    2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Key: B major (1B) | BPM: 88]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
@@ -68,7 +68,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
    1. Here I Come - Ed Solo [Key: E minor (9A) | BPM: 175]
-   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 176]
+   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 88]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
@@ -78,7 +78,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/FdvlQLYITfJ3PieS1Ql78jVkDt7fw0yEbjbN9lFlFgc/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDI1/NjEtMTM4MTQ3NzQ3/Mi0yMTkyLmpwZWc.jpeg
    1. Smoke The Weed - Ed Solo And Stickybuds [Key: A# minor (3A) | BPM: 175]
-   2. Joker Smoker - Ed Solo And Stickybuds [Key: C# major (3B) | BPM: 146]
+   2. Joker Smoker - Ed Solo And Stickybuds [Key: A# minor (3A) | BPM: 88]
 
 === Too Greedy (Rmx) / Murder Style -- Stalefish ===
   ID: 689940
@@ -107,7 +107,7 @@
   Year: 2010
   Label: Delacroix Records
   Art: https://i.discogs.com/0110MoSqhjMQEJAAmaODi4QBSmlRqO5YUQzjN2c4wo0/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzky/NjItMTM3MjI3Mzgy/NS0yODg2LmpwZWc.jpeg
-   1. Fit - Vendetta & Barber & Bad Kid [Key: C# major (3B) | BPM: 168]
+   1. Fit - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 150]
    2. I'm The Devil - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 87]
 
 === French Connection EP -- Various ===
@@ -117,10 +117,10 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/JUib6Gr_PX4nBy2NdleGpIT9adpmo3edg-R9UUCkNq0/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjE0/MzMtMTI5MTgyNTk5/NC5qcGVn.jpeg
-   1. Woman Dub - FX909 [Key: F minor (4A) | BPM: 127]
+   1. Woman Dub - FX909 [Key: F# minor (11A) | BPM: 125]
    2. Soundboy - Lord Bitum & Metod MC [Key: Bb major (6B) | BPM: 106]
-   3. Promise Land - Alix Perez & Youthman [Key: G minor (6A) | BPM: 125]
-   4. Dub Riddim - 2D [Key: C# major (3B) | BPM: 150]
+   3. Promise Land - Alix Perez & Youthman [Key: D minor (7A) | BPM: 174]
+   4. Dub Riddim - 2D [Key: F# major (2B) | BPM: 147]
 
 === World A Jungle Music -- Pixel ===
   ID: 9184651
@@ -250,7 +250,7 @@
   Year: 2022
   Label: Krak In Dub Ltd
   Art: https://i.discogs.com/hoCoFK8y5XCevubQL_RwFkBv6Cny5wS6QLdtY0Fr9CY/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTA5/MzMxLTE2NTQ3MDU3/MjctMjMxMi5qcGVn.jpeg
-   1. Mandela (Tribute To The Freedom Fighter) (Krak In Dub Rmx) - O.B.F. & Mr Williamz [Key: G major (9B) | BPM: 140]
+   1. Mandela (Tribute To The Freedom Fighter) (Krak In Dub Rmx) - O.B.F. & Mr Williamz [Key: E minor (9A) | BPM: 140]
 
 === Babylon EP -- Scott Allen (11), Pixel ===
   ID: 22290283
@@ -260,7 +260,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/Gli3QFTsVCVF0z2lydex8C5EL2VEZFmcsbdO2Wp-hsM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMjkw/MjgzLTE2NDU3Nzgy/MDYtMTI3NS5qcGVn.jpeg
    1. Jah Is Coming - Scott Allen, Pixel [Key: D minor (7A) | BPM: 180]
-   2. Babylon Fall - Scott Allen, Pixel [Key: Bb major (6B) | BPM: 153]
+   2. Babylon Fall - Scott Allen, Pixel [Key: Ab major (4B) | BPM: 85]
 
 === Red Light / Little Man -- St.Cal ===
   ID: 23602418
@@ -317,7 +317,7 @@
   Year: 2014
   Label: Born On Road Records
   Art: https://i.discogs.com/8i91qdie6lEwM_g0CbfwlHsFcO1Hf3MWMWXPUmn233k/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mzcw/ODktMTQwNDMzNDI4/MS03NTM2LmpwZWc.jpeg
-   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Key: A minor (8A) | BPM: 92]
+   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Key: B major (1B) | BPM: 175]
    2. Chem Trails - Aries, Gold Dubs, Bevan & Andy Sim ft Lion Art [Key: A minor (8A) | BPM: 135]
 
 === Wicked Vinyl 01 -- Wickedsquad ===
