@@ -1007,8 +1007,8 @@
   Style: Drum n Bass
   Year: 2007
   Label: On Point Music
-   1. Run For Your Life - Visionary [Key: F# minor (11A)]
-   2. Dead Man Walking - Visionary [Key: C# minor (12A)]
+   1. Run For Your Life - Visionary [Key: F# minor (11A) | BPM: 133]
+   2. Dead Man Walking - Visionary [Key: C# minor (12A) | BPM: 180]
 
 === Ganja Fire / Herbsmoke (Visionary Remix) -- Visionary / Aries ===
   ID: 976951
