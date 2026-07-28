@@ -1354,7 +1354,7 @@
   Label: Znootpoch
   Art: https://i.discogs.com/WVmOfaNNPQgQjUvUsoItTiek-Eo8okc0HiG9Uv3phVc/rs:fit/g:sm/q:90/h:200/w:199/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDQ4/MzktMTI2OTM0MTU2/Ni5qcGVn.jpeg
    1. 2 Short - Krak In Dub [Key: A# minor (3A) | BPM: 175]
-   2. Blast1 - Krak In Dub [Key: F minor (4A)]
+   2. Blast1 - Krak In Dub [Key: F minor (4A) | BPM: 170]
 
 === PSychoDynamiK 02 -- Various ===
   ID: 5302169
@@ -1380,13 +1380,13 @@
    5. Schmaltz Herring - Shpongle [Key: E minor (9A) | BPM: 135]
    6. Nothing Lasts... - Shpongle [Key: B minor (10A) | BPM: 150]
    7. Shnitzled In The Negev - Shpongle [Key: B minor (10A) | BPM: 150]
-   8. ...But Nothing Is Lost - Shpongle [Key: D major (10B)]
-   9. When Shall I Be Free? - Shpongle [Key: F major (7B)]
+   8. ...But Nothing Is Lost - Shpongle [Key: D major (10B) | BPM: 150]
+   9. When Shall I Be Free? - Shpongle [Key: F major (7B) | BPM: 90]
   10. The Stamen Of The Shamen - Shpongle [Key: D major (10B) | BPM: 90]
   11. Circuits Of The Imagination - Shpongle [Key: G major (9B) | BPM: 90]
   12. Linguistic Mystic - Shpongle [Key: G major (9B) | BPM: 90]
   13. Mentalism - Shpongle [Key: F minor (4A) | BPM: 90]
-  14. Invocation - Shpongle [Key: G minor (6A)]
+  14. Invocation - Shpongle [Key: G minor (6A) | BPM: 90]
   15. Molecular Superstructure - Shpongle [Key: C# major (3B) | BPM: 107]
   16. Turn Up The Silence - Shpongle [Key: D major (10B) | BPM: 130]
   17. Exhalation - Shpongle [Key: Eb major (5B) | BPM: 68]
