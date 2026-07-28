@@ -63,6 +63,17 @@ interface Popover {
           }
           <span class="muted">{{ updater.message() }}</span>
           @if (updater.error(); as e) { <span class="err"> — {{ e }}</span> }
+          @if (updater.running()) {
+            <span class="spacer"></span>
+            <button
+              class="btn danger"
+              [disabled]="updater.cancelling()"
+              title="Stop the running job — anything already done is saved"
+              (click)="updater.cancel()"
+            >
+              {{ updater.cancelling() ? 'Stopping…' : '✕ Cancel' }}
+            </button>
+          }
         </div>
       }
 
@@ -305,10 +316,13 @@ interface Popover {
             <div class="muted modal-sub">
               Checked {{ updater.processed() }} of {{ updater.total() }} tracks —
               <b>{{ updater.changes().length }}</b> updated.
+              @if (updater.processed() < updater.total()) {
+                <span> (stopped early — the rest were left untouched)</span>
+              }
             </div>
 
             @if (updater.changes().length === 0) {
-              <div class="empty">Everything already matched tunebat — nothing was changed.</div>
+              <div class="empty">No corrections were made — nothing was changed.</div>
             } @else {
               <div class="modal-body">
                 @for (c of updater.changes(); track c.trackId) {

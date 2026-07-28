@@ -94,6 +94,9 @@ function parseKeyInfo(json: any): KeyInfo {
  * "re-fetch all keys/BPM" pass that repairs values that were wrong. The fresh
  * answer replaces the cache entry.
  *
+ * `isCancelled` is polled during the rate-limit backoff so a user-cancelled
+ * job doesn't stay stuck in a minute-long wait.
+ *
  * On HTTP 429 it backs off (honouring Retry-After, else 60s like the Java
  * tool) and retries the same term instead of hammering the API, reporting the
  * wait via the optional onStatus callback.
@@ -103,7 +106,8 @@ export async function lookupKey(
   artist: string,
   title: string,
   onStatus?: (message: string) => void,
-  force = false
+  force = false,
+  isCancelled?: () => boolean
 ): Promise<KeyInfo> {
   const term = `${artist} ${title}`.trim();
   const cached = cacheGet(term);
@@ -119,6 +123,7 @@ export async function lookupKey(
   const MAX_RATE_WAITS = 5;
   let rateWaits = 0;
   while (true) {
+    if (isCancelled?.()) return keep();
     let res: Response;
     try {
       res = await fetch(target, { headers: { Accept: 'application/json' } });
@@ -134,7 +139,11 @@ export async function lookupKey(
         `Rate limited by tunebat — waiting ${Math.round(wait / 1000)}s ` +
           `(${rateWaits}/${MAX_RATE_WAITS})…`
       );
-      await sleep(wait);
+      // Sleep in slices so a cancellation isn't stuck behind a long backoff.
+      for (let left = wait; left > 0; left -= 250) {
+        if (isCancelled?.()) return keep();
+        await sleep(Math.min(250, left));
+      }
       continue; // retry the same term
     }
 

@@ -14,6 +14,14 @@ import { getTracksFile, githubConfigured, putTracksFile } from './github';
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/** Thrown internally to unwind a pipeline when the user cancels it. */
+class CancelledError extends Error {
+  constructor() {
+    super('cancelled');
+    this.name = 'CancelledError';
+  }
+}
+
 /** One track corrected by a re-fetch pass, with its before/after values. */
 export interface TrackChange {
   trackId: number;
@@ -96,8 +104,41 @@ export class UpdaterService {
   /** Set once a re-fetch pass has finished, so the UI can show its report. */
   readonly reportReady = signal(false);
 
+  /**
+   * Set while a cancellation is being honoured. The running job stops at its
+   * next checkpoint and still commits whatever it has already changed, so no
+   * work is thrown away.
+   */
+  readonly cancelling = signal(false);
+
+  /** Asks the running job to stop as soon as it can, saving its progress. */
+  cancel(): void {
+    if (!this.running() || this.cancelling()) return;
+    this.cancelling.set(true);
+    this.message.set('Cancelling — saving what has been done so far…');
+  }
+
   dismissReport(): void {
     this.reportReady.set(false);
+  }
+
+  /**
+   * Sleeps in small slices so a cancellation is noticed quickly instead of
+   * after a full pacing delay.
+   */
+  private async wait(ms: number): Promise<void> {
+    const step = 100;
+    let left = ms;
+    while (left > 0 && !this.cancelling()) {
+      const slice = Math.min(step, left);
+      await sleep(slice);
+      left -= slice;
+    }
+  }
+
+  /** Throws to unwind the pipeline when the user asked to stop. */
+  private throwIfCancelled(): void {
+    if (this.cancelling()) throw new CancelledError();
   }
 
   private sha: string | undefined;
@@ -107,12 +148,16 @@ export class UpdaterService {
     if (this.running()) return;
     const cfg = this.config.config();
     this.running.set(true);
+    this.cancelling.set(false);
     this.error.set(null);
     this.processed.set(0);
     this.total.set(0);
     this.canCommit = githubConfigured(cfg) && !!cfg.githubToken;
 
     const paceMs = cfg.discogsToken.trim() ? 1100 : 2500;
+
+    // Kept outside the try so the cancel path can still commit what we have.
+    let ordered: Rec[] | null = null;
 
     try {
       // Seed lookups from what's already on screen so existing records keep
@@ -131,13 +176,17 @@ export class UpdaterService {
       const entries = await fetchCollection(
         cfg,
         (p, tp) => this.message.set(`Fetching collection… page ${p}/${tp}`),
-        () => sleep(paceMs)
+        // Pacing doubles as the cancellation checkpoint for the paging loop.
+        async () => {
+          await this.wait(paceMs);
+          this.throwIfCancelled();
+        }
       );
 
       // 2) Merge into an ordered list; the collection defines the visible order.
       //    Existing records are updated in place (tracks/keys/BPM preserved);
       //    only genuinely new releases are appended.
-      const ordered: Rec[] = [];
+      const merged: Rec[] = [];
       const seen = new Set<Rec>();
       for (const e of entries) {
         let rec: Rec | undefined =
@@ -161,7 +210,7 @@ export class UpdaterService {
         }
         if (!seen.has(rec)) {
           seen.add(rec);
-          ordered.push(rec);
+          merged.push(rec);
         }
       }
       // Safety net: keep any existing record that didn't match a collection
@@ -169,9 +218,10 @@ export class UpdaterService {
       for (const r of existingRecs) {
         if (!seen.has(r)) {
           seen.add(r);
-          ordered.push(r);
+          merged.push(r);
         }
       }
+      ordered = merged;
       this.total.set(ordered.length);
       this.push(ordered);
 
@@ -189,10 +239,12 @@ export class UpdaterService {
       // 3) Enrich each record with its tracklist + keys/BPM.
       let sinceCommit = 0;
       for (const rec of ordered) {
+        if (this.cancelling()) break; // stop cleanly, then save below
         this.message.set(`Updating ${rec.title || rec.releaseId}…`);
         try {
-          await this.enrich(rec, cfg, paceMs, () => this.push(ordered));
+          await this.enrich(rec, cfg, paceMs, () => this.push(ordered!));
         } catch (e) {
+          if (e instanceof CancelledError) break;
           // Keep going; a failed record just stays as-is and is retried next run.
           console.warn('enrich failed for', rec.releaseId, e);
         }
@@ -204,16 +256,34 @@ export class UpdaterService {
         }
       }
 
+      // Always commit: this is also the save-on-cancel path.
       await this.commit(ordered, cfg);
-      this.message.set(
-        this.canCommit ? 'Update complete and saved to GitHub.' : 'Update complete (not saved: configure a GitHub token to persist).'
-      );
+      this.message.set(this.finishMessage('Update', this.cancelling()));
     } catch (e) {
-      this.error.set(String(e));
-      this.message.set('Update failed: ' + e);
+      if (e instanceof CancelledError) {
+        // Cancelled mid-collection-fetch: still persist anything already merged.
+        if (ordered) await this.commit(ordered, cfg);
+        this.message.set(this.finishMessage('Update', true));
+      } else {
+        this.error.set(String(e));
+        this.message.set('Update failed: ' + e);
+      }
     } finally {
       this.running.set(false);
+      this.cancelling.set(false);
     }
+  }
+
+  /** Closing status line for a finished / cancelled pipeline. */
+  private finishMessage(kind: 'Update' | 'Re-fetch', cancelled: boolean, extra = ''): string {
+    const what = cancelled ? `${kind} cancelled` : `${kind} complete`;
+    const detail = extra ? ` — ${extra}` : '';
+    const saved = this.canCommit
+      ? cancelled
+        ? ', progress so far saved to GitHub.'
+        : ', saved to GitHub.'
+      : ' (not saved: configure a GitHub token to persist).';
+    return what + detail + saved;
   }
 
   /**
@@ -227,6 +297,7 @@ export class UpdaterService {
     if (this.running()) return;
     const cfg = this.config.config();
     this.running.set(true);
+    this.cancelling.set(false);
     this.error.set(null);
     this.processed.set(0);
     this.corrected.set(0);
@@ -234,8 +305,9 @@ export class UpdaterService {
     this.reportReady.set(false);
     this.canCommit = githubConfigured(cfg) && !!cfg.githubToken;
 
+    const records = this.col.records();
+
     try {
-      const records = this.col.records();
       const jobs = records.flatMap((r) => r.tracks);
       this.total.set(jobs.length);
 
@@ -251,12 +323,20 @@ export class UpdaterService {
 
       let sinceCommit = 0;
       for (const t of jobs) {
+        if (this.cancelling()) break; // stop cleanly, then save below
         this.message.set(
           `Re-checking ${t.artist} - ${t.title}… ` +
             `(${this.processed() + 1}/${jobs.length}, ${this.corrected()} corrected)`
         );
         try {
-          const info = await lookupKey(cfg, t.artist, t.title, (s) => this.message.set(s), true);
+          const info = await lookupKey(
+            cfg,
+            t.artist,
+            t.title,
+            (s) => this.message.set(s),
+            true,
+            () => this.cancelling()
+          );
           const change = this.applyFresh(t, info);
           if (change) {
             this.changes.update((list) => [...list, change]);
@@ -268,26 +348,25 @@ export class UpdaterService {
         }
         this.processed.update((n) => n + 1);
         this.push(records);
-        await sleep(500); // be polite to tunebat (reduces 429s)
+        await this.wait(500); // be polite to tunebat (reduces 429s)
         if (sinceCommit >= 10) {
           sinceCommit = 0;
           await this.commit(records, cfg);
         }
       }
 
+      // Always commit: this is also the save-on-cancel path.
       await this.commit(records, cfg);
       const n = this.corrected();
       const fixed = n === 0 ? 'nothing needed correcting' : `${n} track(s) corrected`;
-      this.message.set(
-        this.canCommit
-          ? `Re-fetch complete — ${fixed}, saved to GitHub.`
-          : `Re-fetch complete — ${fixed} (not saved: configure a GitHub token to persist).`
-      );
+      this.message.set(this.finishMessage('Re-fetch', this.cancelling(), fixed));
     } catch (e) {
       this.error.set(String(e));
       this.message.set('Re-fetch failed: ' + e);
+      await this.commit(records, cfg); // don't lose corrections already made
     } finally {
       this.running.set(false);
+      this.cancelling.set(false);
       this.reportReady.set(true); // show the summary, even for a partial run
     }
   }
@@ -343,7 +422,8 @@ export class UpdaterService {
 
     const cachedBefore = wasReleaseCached(rec.releaseId);
     const detail = await fetchReleaseDetail(cfg, rec.releaseId);
-    if (!cachedBefore) await sleep(paceMs);
+    if (!cachedBefore) await this.wait(paceMs);
+    this.throwIfCancelled();
 
     // Record-level corrections/additions.
     if (detail.genres.length) rec.genres = detail.genres;
@@ -365,18 +445,27 @@ export class UpdaterService {
     rec.tracks = merged;
     onProgress();
 
-    // Fill gaps from tunebat.
+    // Fill gaps from tunebat. Only blanks are filled, so a value that is
+    // already there is never replaced.
     for (const t of rec.tracks) {
       if (t.keyName && t.bpm) continue;
-      const info = await lookupKey(cfg, t.artist, t.title, (s) => this.message.set(s));
-      if (info.keyName) {
+      this.throwIfCancelled(); // the record keeps whatever we filled so far
+      const info = await lookupKey(
+        cfg,
+        t.artist,
+        t.title,
+        (s) => this.message.set(s),
+        false,
+        () => this.cancelling()
+      );
+      if (info.keyName && !t.keyName) {
         t.keyName = info.keyName;
         t.camelot = info.camelot;
         t.keyText = info.keyText;
       }
-      if (info.bpm) t.bpm = info.bpm;
+      if (info.bpm && !t.bpm) t.bpm = info.bpm;
       onProgress();
-      await sleep(500); // be polite to tunebat (reduces 429s)
+      await this.wait(500); // be polite to tunebat (reduces 429s)
     }
   }
 
@@ -389,13 +478,17 @@ export class UpdaterService {
     cfg: ReturnType<ConfigService['config']>
   ): Promise<void> {
     if (!this.canCommit) return;
+    // Safety net: never overwrite tracks.txt with an empty file (e.g. cancelled
+    // before the collection finished loading).
+    if (!records.length) return;
     try {
       const text = renderTracksTxt(records);
+      const suffix = this.cancelling() ? ', cancelled' : '';
       this.sha = await putTracksFile(
         cfg,
         text,
         this.sha,
-        `Update collection (${this.processed()}/${this.total()} records)`
+        `Update collection (${this.processed()}/${this.total()}${suffix})`
       );
     } catch (e) {
       this.canCommit = false; // stop trying after a failure (e.g. sha conflict)

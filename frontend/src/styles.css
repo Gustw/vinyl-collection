@@ -435,7 +435,12 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 
 .update-status { display: flex; align-items: center; gap: 10px; }
 .update-status .err { color: #ff9fb0; }
+.update-status .spacer { flex: 1; }
 .corrected-count { color: #9fe6c4; }
+
+.btn.danger { border-color: #7a2f3d; color: #ff9fb0; }
+.btn.danger:hover { border-color: #b9455a; background: #3a1c22; }
+.btn:disabled { opacity: .55; cursor: default; }
 
 /* --- Re-fetch report modal --- */
 .modal-backdrop {
