@@ -2314,9 +2314,9 @@
   Year: 2016
   Label: Mute, BMG
   Art: https://i.discogs.com/ASPPf9jVqyQzMdJuVpjXOwvqNOU_lR0PjlqdcqJ1XKw/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NjU3/MjAtMTUwMDYzNDkx/OS05Mjc2LmpwZWc.jpeg
-   1. Honey - Moby [Key: Ab major (4B)]
-   2. Find My Baby - Moby [Key: G major (9B)]
-   3. Porcelain - Moby [Key: C minor (5A)]
+   1. Honey - Moby [Key: Ab major (4B) | BPM: 102]
+   2. Find My Baby - Moby [Key: G major (9B) | BPM: 94]
+   3. Porcelain - Moby [Key: C minor (5A) | BPM: 95]
    4. Why Does My Heart Feel So Bad? - Moby [Key: G major (9B)]
    5. South Side - Moby [Key: E major (12B) | BPM: 97]
    6. Rushing - Moby [Key: G major (9B) | BPM: 170]
