@@ -3922,10 +3922,10 @@
   11. Bless My Soul - Nightmares On Wax [Key: C# major (3B)]
   12. Cruise (Don't Stop) - Nightmares On Wax [Key: B minor (10A)]
   13. Mission Venice - Nightmares On Wax [Key: A minor (8A)]
-  14. What I'm Feelin (Good) - Nightmares On Wax
-  15. Rise - Nightmares On Wax
-  16. Rise (Reprise) - Nightmares On Wax [Key: B minor (10A)]
-  17. Gambia Via Vagatorbeach - Nightmares On Wax [Key: C major (8B)]
+  14. What I'm Feelin (Good) - Nightmares On Wax [Key: Bb major (6B) | BPM: 101]
+  15. Rise - Nightmares On Wax [Key: C# minor (12A) | BPM: 170]
+  16. Rise (Reprise) - Nightmares On Wax [Key: B minor (10A) | BPM: 85]
+  17. Gambia Via Vagatorbeach - Nightmares On Wax [Key: C major (8B) | BPM: 150]
 
 === Sci​-​Fi Lullabies -- Bluetech ===
   ID: 13968661
