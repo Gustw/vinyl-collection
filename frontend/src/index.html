@@ -15,6 +15,20 @@
   </head>
   <body>
     <app-root></app-root>
+
+    <!--
+      Attribution footer, kept as static markup (not rendered by Angular) so it
+      is present in the raw HTML that link validators and crawlers fetch — they
+      don't execute JavaScript, so a component-rendered link is invisible to
+      them. Required by the GetSongBPM API terms.
+    -->
+    <footer class="site-footer muted">
+      Key &amp; BPM data from
+      <a href="https://getsongbpm.com/" target="_blank" rel="noopener">GetSongBPM</a>
+      and <a href="https://tunebat.com/" target="_blank" rel="noopener">Tunebat</a>;
+      release data from
+      <a href="https://www.discogs.com/" target="_blank" rel="noopener">Discogs</a>.
+    </footer>
   </body>
 </html>
 

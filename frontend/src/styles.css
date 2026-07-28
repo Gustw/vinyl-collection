@@ -294,13 +294,15 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .muted { color: var(--muted); }
 
 /*
- * Attribution footer. It sits at the end of the page flow, so it only comes
- * into view once you've scrolled past the whole collection.
+ * Attribution footer. Lives in index.html as static markup (so link validators
+ * that don't run JavaScript can see the backlinks) and sits at the end of the
+ * page flow, so it only comes into view once you've scrolled past everything.
  */
 .site-footer {
-  margin-top: 24px;
-  padding: 18px 4px 8px;
+  margin: 24px 20px 0;
+  padding: 18px 4px 20px;
   border-top: 1px solid var(--border);
+  color: var(--muted);
   font-size: 12px;
   text-align: center;
 }
