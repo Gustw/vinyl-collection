@@ -3063,18 +3063,18 @@
   Year: 2014
   Label: Warp Records
   Art: https://i.discogs.com/OZG-emm1_ynyx7oXh1HQhnAzuDb9VX4fHG89P1CKRDY/rs:fit/g:sm/q:90/h:599/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxOTQz/MjktMTUzODYxMjA2/NC00MjYzLmpwZWc.jpeg
-   1. Passion - Nightmares On Wax [Key: C# major (3B)]
-   2. The Sweetest - Nightmares On Wax [Key: G major (9B)]
-   3. Flip Ya Lid - Nightmares On Wax [Key: E minor (9A)]
-   4. Pudpots - Nightmares On Wax [Key: B major (1B)]
+   1. Passion - Nightmares On Wax [Key: C# major (3B) | BPM: 213]
+   2. The Sweetest - Nightmares On Wax [Key: G major (9B) | BPM: 90]
+   3. Flip Ya Lid - Nightmares On Wax [Key: E minor (9A) | BPM: 90]
+   4. Pudpots - Nightmares On Wax [Key: B major (1B) | BPM: 95]
    5. Damn - Nightmares On Wax [Key: A# minor (3A) | BPM: 94]
    6. You Wish - Nightmares On Wax [Key: A minor (8A) | BPM: 103]
    7. Deepdown - Nightmares On Wax [Key: C major (8B) | BPM: 150]
    8. Chime Out - Nightmares On Wax [Key: C major (8B) | BPM: 120]
    9. Me! - Nightmares On Wax [Key: A major (11B) | BPM: 75]
-  10. I Am You - Nightmares On Wax [Key: E major (12B)]
-  11. Soul Purpose - Nightmares On Wax [Key: F# major (2B)]
-  12. African Pirates - Nightmares On Wax [Key: F# minor (11A)]
+  10. I Am You - Nightmares On Wax [Key: E major (12B) | BPM: 75]
+  11. Soul Purpose - Nightmares On Wax [Key: F# major (2B) | BPM: 83]
+  12. African Pirates - Nightmares On Wax [Key: F# minor (11A) | BPM: 115]
 
 === Boulevard (The Complete Series) -- St Germain ===
   ID: 4180576
