@@ -2840,8 +2840,8 @@
    5. Triangles & Rhombuses - Boards Of Canada [Key: E minor (9A)]
    6. Sixtyten - Boards Of Canada [Key: F# major (2B)]
    7. Turquoise Hexagon Sun - Boards Of Canada [Key: F# major (2B)]
-   8. Kaini Industries - Boards Of Canada [Key: F# major (2B)]
-   9. Bocuma - Boards Of Canada [Key: D minor (7A)]
+   8. Kaini Industries - Boards Of Canada [Key: F# major (2B) | BPM: 77]
+   9. Bocuma - Boards Of Canada [Key: D minor (7A) | BPM: 126]
   10. Roygbiv - Boards Of Canada [Key: E minor (9A) | BPM: 84]
   11. Rue The Whirl - Boards Of Canada [Key: C# major (3B) | BPM: 93]
   12. Aquarius - Boards Of Canada [Key: F# major (2B) | BPM: 169]
@@ -2849,7 +2849,7 @@
   14. Pete Standing Alone - Boards Of Canada [Key: C# major (3B) | BPM: 110]
   15. Smokes Quantity - Boards Of Canada [Key: G# minor (1A) | BPM: 99]
   16. Open The Light - Boards Of Canada [Key: D minor (7A) | BPM: 86]
-  17. One Very Important Thought - Boards Of Canada [Key: A major (11B)]
+  17. One Very Important Thought - Boards Of Canada [Key: A major (11B) | BPM: 66]
 
 === The Wall -- Pink Floyd ===
   ID: 15231618
@@ -2937,8 +2937,8 @@
    5. The Great Gig In The Sky - Pink Floyd [Key: F major (7B) | BPM: 116]
    6. Money - Pink Floyd [Key: B minor (10A) | BPM: 126]
    7. Us And Them - Pink Floyd [Key: D major (10B) | BPM: 73]
-   8. Any Colour You Like - Pink Floyd [Key: C major (8B)]
-   9. Brain Damage - Pink Floyd [Key: D major (10B)]
+   8. Any Colour You Like - Pink Floyd [Key: C major (8B) | BPM: 151]
+   9. Brain Damage - Pink Floyd [Key: D major (10B) | BPM: 134]
   10. Eclipse - Pink Floyd [Key: Bb major (6B) | BPM: 68]
 
 === Just A Poke -- Sweet Smoke ===
