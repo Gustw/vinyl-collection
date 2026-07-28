@@ -2540,7 +2540,7 @@
   12. Good Old-Fashioned Lover Boy - Queen [Key: Eb major (5B) | BPM: 97]
   13. Play The Game - Queen [Key: F major (7B) | BPM: 79]
   14. Flash - Queen [Key: E minor (9A) | BPM: 108]
-  15. Seven Seas Of Rhye - Queen [Key: D major (10B)]
+  15. Seven Seas Of Rhye - Queen [Key: D major (10B) | BPM: 126]
   16. We Will Rock You - Queen [Key: D major (10B) | BPM: 81]
   17. We Are The Champions - Queen [Key: G minor (6A) | BPM: 64]
 
