@@ -149,6 +149,7 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   font-size: 13px;
 }
 .btn:hover { border-color: var(--accent); }
+.btn.active { background: var(--chip-active); border-color: var(--accent); color: #fff; }
 
 .record { margin-bottom: 18px; }
 .record-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }

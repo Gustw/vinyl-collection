@@ -151,6 +151,23 @@ interface Popover {
           </div>
 
           @if (!collapsed()) {
+            @if (crateSvc.crates().length) {
+              <label>Crates</label>
+              <div class="chips">
+                @for (c of crateSvc.crates(); track c.id) {
+                  <span
+                    class="chip"
+                    [class.active]="filters().crates.includes(c.id)"
+                    [title]="filters().crates.includes(c.id) ? 'Click to stop filtering on ' + c.name : 'Click to also show ' + c.name"
+                    (click)="toggle('crates', c.id)"
+                  >🗃 {{ c.name }} <span class="chip-count">{{ c.trackKeys.length }}</span></span>
+                }
+                @if (filters().crates.length) {
+                  <span class="chip ghost" (click)="clearCrates()">✕ show all</span>
+                }
+              </div>
+            }
+
             <label>Genres</label>
             <div class="chips">
               @for (g of col.allGenres(); track g) {
@@ -398,7 +415,13 @@ interface Popover {
                       </span>
                     }
                     <span class="spacer"></span>
-                    <button class="btn" (click)="showOnlyCrate(c.id)">Show</button>
+                    <button
+                      class="btn"
+                      [class.active]="filters().crates.includes(c.id)"
+                      (click)="toggle('crates', c.id)"
+                    >
+                      {{ filters().crates.includes(c.id) ? '✓ Shown' : 'Show' }}
+                    </button>
                     <button class="btn danger" (click)="deleteCrate(c.id, c.name)">Delete</button>
                   </div>
                 }
@@ -653,10 +676,13 @@ export class RecordsListComponent {
     if (this.filters().crates.includes(id)) this.fs.toggle(this.filters, 'crates', id);
   }
 
-  /** Filters the overview down to a single crate. */
-  showOnlyCrate(id: string): void {
-    this.fs.setCrates(this.filters, [id]);
-    this.closeCrates();
+  /**
+   * Crates behave exactly like the genre/style facets: each chip is an
+   * independent toggle, several can be on at once (a track shown if it is in
+   * any of them), and turning them all off shows the whole collection again.
+   */
+  clearCrates(): void {
+    this.fs.setCrates(this.filters, []);
   }
 
   openCratePicker(ev: MouseEvent, track: Track): void {

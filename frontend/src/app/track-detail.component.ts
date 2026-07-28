@@ -195,8 +195,12 @@ interface Row {
                   <span
                     class="chip"
                     [class.active]="filters().crates.includes(c.id)"
+                    [title]="filters().crates.includes(c.id) ? 'Click to stop filtering on ' + c.name : 'Click to also mix from ' + c.name"
                     (click)="toggle('crates', c.id)"
-                  >{{ c.name }} <span class="chip-count">{{ c.trackKeys.length }}</span></span>
+                  >🗃 {{ c.name }} <span class="chip-count">{{ c.trackKeys.length }}</span></span>
+                }
+                @if (filters().crates.length) {
+                  <span class="chip ghost" (click)="clearCrates()">✕ show all</span>
                 }
               </div>
             }
@@ -715,6 +719,11 @@ export class TrackDetailComponent {
 
   toggle(facet: 'genres' | 'styles' | 'keys' | 'crates', value: string): void {
     this.fs.toggle(this.filters, facet, value);
+  }
+
+  /** Turns off every crate chip, i.e. mix from the whole collection again. */
+  clearCrates(): void {
+    this.fs.setCrates(this.filters, []);
   }
 
   toggleType(type: string): void {
