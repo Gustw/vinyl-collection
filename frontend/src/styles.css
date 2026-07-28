@@ -215,6 +215,13 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .track-row:hover { background: var(--panel-2); }
 .track-title { flex: 1; }
 .track-artist { color: var(--muted); }
+
+/* "+ N more tracks hidden by filters" note under a partially filtered tracklist. */
+.hidden-note {
+  padding: 7px 10px;
+  font-size: 12px;
+  font-style: italic;
+}
 .key-badge {
   min-width: 92px;
   text-align: center;

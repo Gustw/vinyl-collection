@@ -8,11 +8,20 @@ import { Rec, Track } from './models';
 import { UpdaterService } from './updater.service';
 import { ConfigService } from './config.service';
 
+/** A record together with the tracks that survived the current filters. */
+interface Row {
+  record: Rec;
+  tracks: Track[];
+  /** How many of the record's tracks the filters are hiding (0 = all shown). */
+  hidden: number;
+}
+
 interface Popover {
   x: number;
   y: number;
   record: Rec;
   tracks: Track[];
+  hidden: number;
 }
 
 @Component({
@@ -205,13 +214,18 @@ interface Popover {
                     <span [class]="keyBadgeClass(t)">{{ t.keyText || 'no key' }}</span>
                   </div>
                 }
+                @if (row.hidden) {
+                  <div class="hidden-note muted" [title]="hiddenTitle(row)">
+                    {{ hiddenLabel(row) }}
+                  </div>
+                }
               </div>
             </div>
           }
         } @else {
           <div [class]="view().layout === 'grid' ? 'rec-cards grid' : 'rec-cards list'">
             @for (row of filtered(); track row.record.title + row.record.artist) {
-              <div class="rec-card clickable" (click)="openRecord($event, row.record, row.tracks)">
+              <div class="rec-card clickable" (click)="openRecord($event, row)">
                 @if (row.record.artwork) {
                   <img class="cover" [src]="row.record.artwork" alt="" loading="lazy" referrerpolicy="no-referrer" />
                 }
@@ -255,6 +269,11 @@ interface Popover {
                   <span class="track-title">{{ t.title }}</span>
                   @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
                   <span [class]="keyBadgeClass(t)">{{ t.keyText || 'no key' }}</span>
+                </div>
+              }
+              @if (pop.hidden) {
+                <div class="hidden-note muted" [title]="hiddenTitle(pop)">
+                  {{ hiddenLabel(pop) }}
                 </div>
               }
             }
@@ -322,12 +341,12 @@ export class RecordsListComponent {
     );
   }
 
-  readonly filtered = computed<{ record: Rec; tracks: Track[] }[]>(() => {
+  readonly filtered = computed<Row[]>(() => {
     const f = this.filters();
-    const out: { record: Rec; tracks: Track[] }[] = [];
+    const out: Row[] = [];
     for (const r of this.col.records()) {
       const tracks = r.tracks.filter((t) => matchesTrack(t, f));
-      if (tracks.length) out.push({ record: r, tracks });
+      if (tracks.length) out.push({ record: r, tracks, hidden: r.tracks.length - tracks.length });
     }
     return out;
   });
@@ -358,6 +377,15 @@ export class RecordsListComponent {
   /** Key badge classes incl. the Camelot colour group (or "none" when absent). */
   keyBadgeClass(t: Track): string {
     return t.keyText ? 'key-badge ' + camelotClass(t.camelot) : 'key-badge none';
+  }
+
+  /** "+ 3 more tracks hidden by filters" note shown under a partial tracklist. */
+  hiddenLabel(row: { hidden: number }): string {
+    return `+ ${row.hidden} more ${row.hidden === 1 ? 'track' : 'tracks'} hidden by filters`;
+  }
+
+  hiddenTitle(row: { record: Rec; tracks: Track[] }): string {
+    return `${row.tracks.length} of ${row.record.tracks.length} tracks match the current filters`;
   }
 
   onSearch(value: string): void {
@@ -396,15 +424,15 @@ export class RecordsListComponent {
   }
 
   /** Opens the track popover next to the pointer, clamped to the viewport. */
-  openRecord(ev: MouseEvent, record: Rec, tracks: Track[]): void {
+  openRecord(ev: MouseEvent, row: Row): void {
     ev.stopPropagation();
     // Initial estimate matching the CSS (width 300, max-height 60vh); the
     // measure effect below refines this exactly once the popover has rendered.
     const w = 300;
-    const estH = 80 + tracks.length * 40;
+    const estH = 80 + row.tracks.length * 40 + (row.hidden ? 28 : 0);
     const h = Math.min(estH, Math.round(window.innerHeight * 0.6));
     const pos = this.clampToViewport(ev.clientX + 4, ev.clientY + 4, w, h);
-    this.popover.set({ x: pos.x, y: pos.y, record, tracks });
+    this.popover.set({ x: pos.x, y: pos.y, record: row.record, tracks: row.tracks, hidden: row.hidden });
   }
 
   /** Clamps a top-left point so a box of w×h stays within the viewport (8px gutter). */
