@@ -2128,7 +2128,7 @@
   Year: 2019
   Label: Vertigo, Phonogram
   Art: https://i.discogs.com/_TQODMJWRAJKA2lZ-2xJwrR6KsHrXSF85K1-pGR5YSU/rs:fit/g:sm/q:90/h:600/w:564/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTc4/NTIyLTE1Nzc1MTE1/NTktODUxOC5qcGVn.jpeg
-   1. Telegraph Road - Dire Straits [Key: D minor (7A)]
+   1. Telegraph Road - Dire Straits [Key: D minor (7A) | BPM: 125]
    2. Private Investigations - Dire Straits [Key: E minor (9A) | BPM: 84]
    3. Industrial Disease - Dire Straits [Key: A major (11B) | BPM: 150]
    4. Love Over Gold - Dire Straits [Key: F major (7B) | BPM: 96]
