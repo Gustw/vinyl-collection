@@ -968,8 +968,8 @@
   Year: 2009
   Label: Wikkid Riddim
   Art: https://i.discogs.com/sU_YYMt6f1ib9Yu7W6Tr8cgfkWHgfhfCAr6D6BlMw7g/rs:fit/g:sm/q:90/h:394/w:394/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDcx/NDEtMTQzMTI3NzI4/MC02NTc4LmpwZWc.jpeg
-   1. Beat The System (RCola's Jungle Remix) - Jahseal, Aldubb And Soultrain [Key: E minor (9A)]
-   2. Beat The System (Tricky D's Dubstep Remix) - Jahseal, Aldubb And Soultrain [Key: C major (8B)]
+   1. Beat The System (RCola's Jungle Remix) - Jahseal, Aldubb And Soultrain [Key: E minor (9A) | BPM: 126]
+   2. Beat The System (Tricky D's Dubstep Remix) - Jahseal, Aldubb And Soultrain [Key: C major (8B) | BPM: 132]
 
 === Sound Clash (Remixes) -- Skoobz ===
   ID: 541676
