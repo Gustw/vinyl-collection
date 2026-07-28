@@ -1877,8 +1877,8 @@
   Year: 2009
   Label: Znootpoch
   Art: https://i.discogs.com/HBQwrU54XMZLL8dw3J3cNXbDPdDuNHto-0458UUzxpA/rs:fit/g:sm/q:90/h:200/w:195/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzk2/MzctMTI2OTM0MTQ0/Mi5qcGVn.jpeg
-   1. Burning Marijuana - Candy [Key: C# major (3B)]
-   2. Lonely - Candy [Key: F# minor (11A)]
+   1. Burning Marijuana - Candy [Key: C# major (3B) | BPM: 180]
+   2. Lonely - Candy [Key: F minor (4A) | BPM: 120]
 
 === Hot This Year / Remember -- DJ Deekline & Ed Solo ===
   ID: 5846178
