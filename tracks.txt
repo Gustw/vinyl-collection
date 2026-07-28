@@ -1046,7 +1046,7 @@
   Year: 2009
   Label: Roots Records
   Art: https://i.discogs.com/5BU7zmIBDCi1jROcE9sIqRRLg4Pdpvudw6h45DH6gC0/rs:fit/g:sm/q:90/h:490/w:490/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDU5/NjMtMTIzNDI4NDgx/Ny5qcGVn.jpeg
-   1. Operation - NW2 [Key: A# minor (3A) | BPM: 100]
+   1. Operation - NW2 [Key: G minor (6A) | BPM: 165]
    2. Ala Bama - Aries [Key: D major (10B) | BPM: 121]
 
 === Lost And Found / Warn Ya -- RCola & Barrington Levy ===
@@ -1079,7 +1079,7 @@
   Label: Delacroix Records
   Art: https://i.discogs.com/Z4enKjX_F2ShEBaweGXWMTsoiX2f-mTzXnkLtydrRiA/rs:fit/g:sm/q:90/h:294/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Nzg0/OTYtMTIzNjM2MzIz/Mi5naWY.jpeg
    1. Bad Chill - Vendetta & Barber & Bad Kid [Key: E minor (9A) | BPM: 114]
-   2. More Gun - Vendetta & Barber & Bad Kid [Key: Ab major (4B) | BPM: 137]
+   2. More Gun - Vendetta & Barber & Bad Kid [Key: D minor (7A) | BPM: 119]
 
 === Bless I -- Vini Selecta and U.Stone Feat. Jah Call ===
   ID: 2213129
@@ -1087,7 +1087,7 @@
   Style: Drum n Bass
   Year: 2010
   Label: Nu Urban Music France
-   1. Bless I - Viniselecta and U Stone Feat. Jah Call [Key: Ab major (4B) | BPM: 89]
+   1. Bless I - Viniselecta and U Stone Feat. Jah Call [Key: B minor (10A) | BPM: 155]
    2. Bless I (Dub Mix) - Viniselecta and U Stone Feat. Jah Call [Key: A# minor (3A) | BPM: 125]
 
 === Rockafeller Skank (Mulders Urban Takeover Mix) / Intergalactic (Prisoners Of Technology TMS 1 Remix) -- Fatboy Slim / Beastie Boys ===
@@ -1108,7 +1108,7 @@
   Label: Infrared, Black Widow
   Art: https://i.discogs.com/1MnnvFhciWCgtUIImnv10YVttCxa8Yz7qYQkOR9tSig/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5ODE4/OC0xMjA0MDY2Mjk2/LmpwZWc.jpeg
    1. Cassanova - Wickaman & J.Majik [Key: Ab major (4B) | BPM: 99]
-   2. C-Style - J.Majik & Wickaman [Key: B minor (10A) | BPM: 128]
+   2. C-Style - J.Majik & Wickaman [Key: G minor (6A) | BPM: 110]
 
 === Turn Down The Lights / Soundboy Burial -- Benny Page / Visionary Featuring Peter Ranking ===
   ID: 2771571
@@ -1228,7 +1228,7 @@
    5. Metal On Metal - Kraftwerk [Key: A# minor (3A) | BPM: 107]
    6. Abzug - Kraftwerk [Key: C# major (3B) | BPM: 107]
    7. Franz Schubert - Kraftwerk [Key: D major (10B) | BPM: 112]
-   8. Endless Endless - Kraftwerk [Key: G major (9B) | BPM: 111]
+   8. Endless Endless - Kraftwerk [Key: B major (1B) | BPM: 110]
 
 === Enter The Wu-Tang (36 Chambers) -- Wu-Tang Clan ===
   ID: 12647200
@@ -1410,7 +1410,7 @@
   Style: Roots Reggae, Dub
   Label: Ire Hi-Fi
   Art: https://i.discogs.com/Tu0zm7lFjCqDOothhtkv5T5xfmcCOYWaAB1mP9pg1IQ/rs:fit/g:sm/q:90/h:247/w:248/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NTQz/MTktMTQ2Nzk4NTgw/Mi01MzM1LnBuZw.jpeg
-   1. No More War - Daddy Teacha & Uptones [Key: F minor (4A) | BPM: 75]
+   1. No More War - Daddy Teacha & Uptones [Key: Ab major (4B) | BPM: 146]
    2. Mother Of All Versions - Daddy Teacha [Key: A major (11B) | BPM: 142]
 
 === Man Down / Untold -- DJ Deekline & Ed Solo ===
@@ -1502,7 +1502,7 @@
   Label: Delacroix Records
   Art: https://i.discogs.com/_py3_vdilspnpbKwKHG1-HkitIjVV6L937Eywi8ZsRQ/rs:fit/g:sm/q:90/h:285/w:289/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NjA4/NDUtMTI0ODQzODYw/OS5naWY.jpeg
    1. Soundboy Dead - Vendetta & Barber & Bad Kid [Key: C# major (3B) | BPM: 125]
-   2. Try To Conquer I - Vendetta & Barber & Bad Kid [Key: F# major (2B) | BPM: 95]
+   2. Try To Conquer I - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 150]
 
 === You Can't Surrender -- Visionary ===
   ID: 1858695
@@ -1511,7 +1511,7 @@
   Year: 2005
   Label: Lion Dubs
    1. You Can't Surrender - Visionary [Key: B minor (10A) | BPM: 158]
-   2. I Know A Girl - Visionary [Key: G major (9B) | BPM: 123]
+   2. I Know A Girl - Visionary [Key: Bb major (6B) | BPM: 149]
 
 === Gimme Your Love / Jungle Rock -- Visionary ===
   ID: 709202
@@ -1531,7 +1531,7 @@
   Label: On Point Music
   Art: https://i.discogs.com/tD28cL9kCa6kXxQtOa7U00gYyYatpCBImLCofZtUUhc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTc2/MzEtMTI5ODA2MDY2/NS5qcGVn.jpeg
    1. Whip Them Soundboy - Visionary [Key: Bb major (6B) | BPM: 75]
-   2. Another Meditation - Isaac Maya [Key: C# minor (12A) | BPM: 125]
+   2. Another Meditation - Isaac Maya [Key: C# minor (12A) | BPM: 128]
 
 === Sugar Me / Wadodem -- Wildlife ===
   ID: 1686257
@@ -1540,7 +1540,7 @@
   Year: 2009
   Label: Jungle Cakes
   Art: https://i.discogs.com/RTX_KWlHmtvL0fQ779KNss_VseS2RBfj3fOX-XwQ0KU/rs:fit/g:sm/q:90/h:590/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODYy/NTctMTIzNzU3Nzc5/Ny5qcGVn.jpeg
-   1. Sugar Me - The Wildlife Collective [Key: Bb major (6B) | BPM: 113]
+   1. Sugar Me - The Wildlife Collective [Key: F# minor (11A) | BPM: 92]
    2. Wadodem - The Wildlife Collective [Key: G# minor (1A) | BPM: 114]
 
 === Ragga Tip (Walk And Skank) / Ragga Muffin -- Wildlife ===
