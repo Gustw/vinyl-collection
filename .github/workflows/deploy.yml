@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+# Builds the Angular app in frontend/ and publishes it to GitHub Pages.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy at a time; don't cancel an in-progress run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Keep the bundled fallback asset in sync with the repo-root tracks.txt.
+      - name: Sync tracks data
+        run: npm run sync-data
+
+      # --base-href ./ makes assets resolve under https://<user>.github.io/<repo>/
+      - name: Build
+        run: npm run build:pages
+
+      # Prevent GitHub Pages from running Jekyll over the Angular output.
+      - name: Add .nojekyll
+        run: touch dist/vinyl-frontend/browser/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist/vinyl-frontend/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

@@ -1,0 +1,397 @@
+import { Component, computed, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { CollectionService } from './collection.service';
+import { FilterStateService, hasActiveFilters } from './filter-state.service';
+import { matchesTrack } from './filtering';
+import { mixableCamelot, relation, pitchShiftSemitones, shiftCamelot, shiftKeyName } from './camelot';
+import { Track } from './models';
+
+const REL_ORDER: Record<string, number> = {
+  'Same key': 0,
+  'Same root': 1,
+  Relative: 2,
+  '+1 energy': 3,
+  '-1 energy': 4,
+  '+1 energy boost': 5,
+  '-1 energy drop': 6,
+  '+2 energy boost': 7,
+  '-2 energy drop': 8,
+  '+3 energy boost': 9,
+  '-3 energy drop': 10,
+  '+4 energy boost': 11,
+  '-4 energy drop': 12,
+  '+6 energy boost': 13,
+  Compatible: 14,
+};
+
+/** A mixable candidate together with its (optionally pitch-adjusted) key. */
+interface Row {
+  track: Track;
+  /** true when the key was shifted to beat-match the current track's BPM. */
+  adjusted: boolean;
+  /** signed semitone shift applied (0 when not adjusted). */
+  semis: number;
+  /** effective Camelot code after any pitch adjustment. */
+  camelot: string;
+  /** effective key name after any pitch adjustment. */
+  keyName: string;
+}
+
+@Component({
+  selector: 'app-track-detail',
+  standalone: true,
+  imports: [RouterLink],
+  template: `
+    <div class="topbar">
+      <a routerLink="/" class="btn">← Back to list</a>
+      <h1 style="margin-left:8px">Track detail</h1>
+      <span class="spacer"></span>
+      @if (track()) {
+        <span class="badge-count">{{ shown() }} mixable track(s)</span>
+      }
+    </div>
+
+    <div class="container">
+      @if (!col.loaded()) {
+        <div class="panel empty">Loading…</div>
+      } @else if (!track()) {
+        <div class="panel empty">Track not found. <a routerLink="/">Go back</a>.</div>
+      } @else {
+        <div class="panel">
+          <div class="detail-head">
+            @if (track()!.artwork) {
+              <img class="cover-lg" [src]="track()!.artwork" alt="" referrerpolicy="no-referrer" />
+            }
+            <div style="flex:1">
+              <div class="big-key">{{ track()!.keyText || 'No key detected' }}</div>
+              <div style="height:10px"></div>
+              <div class="detail-grid">
+                <div class="k">Title</div><div>{{ track()!.title }}</div>
+                <div class="k">Artist</div><div>{{ track()!.artist }}</div>
+                <div class="k">Record</div><div>{{ track()!.recordTitle }} — {{ track()!.recordArtist }}</div>
+                <div class="k">Year</div><div>{{ track()!.year || '—' }}</div>
+                <div class="k">Label</div><div>{{ track()!.labels.join(', ') || '—' }}</div>
+                <div class="k">Key</div><div>{{ track()!.keyName || '—' }}</div>
+                <div class="k">Camelot</div><div>{{ track()!.camelot || '—' }}</div>
+                <div class="k">BPM</div><div>{{ track()!.bpm || '—' }}</div>
+                <div class="k">Genre</div><div>{{ track()!.genres.join(', ') || '—' }}</div>
+                <div class="k">Style</div><div>{{ track()!.styles.join(', ') || '—' }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @if (!track()!.camelot) {
+          <div class="panel empty">This track has no detected key, so mixable tracks can't be computed.</div>
+        } @else {
+          <div class="panel filters">
+            <div class="muted" style="margin-bottom:6px">
+              Mixable with <b>{{ track()!.camelot }}</b>: {{ mixSet().join(', ') }}
+            </div>
+
+            <label>Search</label>
+            <input
+              type="text"
+              placeholder="Search mixable tracks…"
+              [value]="filters().search"
+              (input)="onSearch($any($event.target).value)"
+            />
+
+            @if (optionGenres().length) {
+              <label>Genres</label>
+              <div class="chips">
+                @for (g of optionGenres(); track g) {
+                  <span class="chip" [class.active]="filters().genres.includes(g)" (click)="toggle('genres', g)">{{ g }}</span>
+                }
+              </div>
+            }
+
+            @if (optionStyles().length) {
+              <label>Styles</label>
+              <div class="chips">
+                @for (s of optionStyles(); track s) {
+                  <span class="chip" [class.active]="filters().styles.includes(s)" (click)="toggle('styles', s)">{{ s }}</span>
+                }
+              </div>
+            }
+
+            <label>Keys (Camelot)</label>
+            <div class="chips">
+              @for (k of optionKeys(); track k) {
+                <span class="chip" [class.active]="filters().keys.includes(k)" (click)="toggle('keys', k)">{{ k }}</span>
+              }
+            </div>
+
+            @if (optionTypes().length) {
+              <label>Types</label>
+              <div class="chips">
+                @for (ty of optionTypes(); track ty) {
+                  <span class="chip" [class.active]="!filters().hiddenTypes.includes(ty)" (click)="toggleType(ty)">{{ ty }}</span>
+                }
+              </div>
+            }
+
+            <label>BPM difference</label>
+            @if (refBpm() === null) {
+              <div class="muted">This track has no BPM, so BPM filtering is unavailable.</div>
+            } @else {
+              <label class="bpm-check">
+                <input
+                  type="checkbox"
+                  [checked]="filters().bpmEnabled"
+                  (change)="onBpmEnabled($any($event.target).checked)"
+                />
+                filter by BPM difference
+              </label>
+              @if (filters().bpmEnabled) {
+                <div class="bpm-filter">
+                  <span class="muted">± </span>
+                  <input
+                    class="bpm-input"
+                    type="number"
+                    min="0"
+                    step="1"
+                    placeholder="0"
+                    [value]="filters().bpmRange || ''"
+                    (input)="onBpmRange($any($event.target).value)"
+                  />
+                  <span class="muted">BPM from {{ refBpm() }}</span>
+                  <label class="bpm-check">
+                    <input
+                      type="checkbox"
+                      [checked]="filters().bpmDoubleHalf"
+                      (change)="onBpmDoubleHalf($any($event.target).checked)"
+                    />
+                    match double / half tempo
+                  </label>
+                </div>
+              }
+            }
+
+            <label>Pitch / key</label>
+            <label class="bpm-check">
+              <input
+                type="checkbox"
+                [checked]="filters().pitchAdjust"
+                (change)="onPitchAdjust($any($event.target).checked)"
+              />
+              account for key change from BPM sync (pitch)
+            </label>
+            @if (filters().pitchAdjust) {
+              <div class="muted pitch-note">
+                Keys below are the <b>pitched</b> keys after beat-matching to
+                {{ track()!.bpm || '—' }} BPM — <b>not</b> the original keys.
+                Half/double-tempo matching doesn't count as a pitch change.
+              </div>
+            }
+
+            @if (active()) {
+              <div style="margin-top:12px"><button class="btn" (click)="clear()">Clear filters</button></div>
+            }
+          </div>
+
+          @if (rows().length === 0) {
+            <div class="panel empty">No mixable tracks match the current filters.</div>
+          } @else {
+            <div class="panel">
+              @for (r of rows(); track r.track.id) {
+                <div class="track-row" (click)="open(r.track)">
+                  <span [class]="'rel-badge ' + relClass(r.camelot)">{{ rel(r.camelot) }}</span>
+                  @if (r.track.artwork) {
+                    <img class="cover" [src]="r.track.artwork" alt="" loading="lazy" referrerpolicy="no-referrer" />
+                  }
+                  <span class="track-title">{{ r.track.title }}</span>
+                  <span class="track-artist">{{ r.track.artist }}</span>
+                  @if (r.track.bpm) { <span class="bpm-badge">{{ r.track.bpm }} BPM</span> }
+                  @if (r.adjusted) {
+                    <span class="key-badge adjusted" [title]="'Original key: ' + (r.track.keyText || '—')">
+                      {{ keyLabel(r) }}
+                      <span class="pitch-tag">pitched {{ shiftLabel(r) }}</span>
+                    </span>
+                  } @else {
+                    <span class="key-badge">{{ r.track.keyText }}</span>
+                  }
+                </div>
+              }
+            </div>
+          }
+        }
+      }
+    </div>
+  `,
+})
+export class TrackDetailComponent {
+  readonly col = inject(CollectionService);
+  private readonly fs = inject(FilterStateService);
+  private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
+
+  readonly filters = this.fs.detail;
+  readonly active = computed(() => hasActiveFilters(this.filters()));
+
+  private readonly params = toSignal(this.route.paramMap);
+
+  readonly track = computed<Track | undefined>(() => {
+    const id = Number(this.params()?.get('id'));
+    return Number.isNaN(id) ? undefined : this.col.trackById(id);
+  });
+
+  readonly mixSet = computed(() => {
+    const t = this.track();
+    return t ? mixableCamelot(t.camelot) : [];
+  });
+
+  /** The current track's BPM as a number, or null if it has none. */
+  readonly refBpm = computed<number | null>(() => {
+    const raw = parseFloat(this.track()?.bpm ?? '');
+    return Number.isNaN(raw) ? null : raw;
+  });
+
+  /** Computes a track's effective (optionally pitch-adjusted) key vs the current track. */
+  private effectiveRow(x: Track): Row {
+    const ref = this.refBpm();
+    if (this.filters().pitchAdjust && ref !== null) {
+      const cand = parseFloat(x.bpm);
+      if (!Number.isNaN(cand) && cand > 0) {
+        const semis = pitchShiftSemitones(cand, ref);
+        return {
+          track: x,
+          adjusted: true,
+          semis,
+          camelot: shiftCamelot(x.camelot, semis),
+          keyName: shiftKeyName(x.keyName, semis),
+        };
+      }
+    }
+    return { track: x, adjusted: false, semis: 0, camelot: x.camelot, keyName: x.keyName };
+  }
+
+  /**
+   * All mixable candidates (before facet filtering), excluding this track,
+   * as rows carrying their effective key. Mixability is judged on the
+   * effective (resulting) key, so with "account for key change" on, pitching
+   * can move tracks in or out of the mixable set and relabel their type.
+   */
+  private readonly candidateRows = computed<Row[]>(() => {
+    const t = this.track();
+    if (!t || !t.camelot) return [];
+    const set = new Set(this.mixSet());
+    const rows = this.col
+      .tracks()
+      .filter((x) => x.id !== t.id && !!x.camelot)
+      .map((x) => this.effectiveRow(x))
+      .filter((r) => set.has(r.camelot));
+    return rows.sort((a, b) => {
+      const ra = REL_ORDER[relation(t.camelot, a.camelot)] ?? 99;
+      const rb = REL_ORDER[relation(t.camelot, b.camelot)] ?? 99;
+      return ra === rb ? a.track.title.localeCompare(b.track.title) : ra - rb;
+    });
+  });
+
+  readonly optionGenres = computed(() =>
+    unique(this.candidateRows().flatMap((r) => r.track.genres))
+  );
+  readonly optionStyles = computed(() =>
+    unique(this.candidateRows().flatMap((r) => r.track.styles))
+  );
+  readonly optionKeys = computed(() =>
+    unique(this.candidateRows().map((r) => r.camelot)).sort()
+  );
+
+  /** Distinct relationship types among the candidates, ordered by REL_ORDER. */
+  readonly optionTypes = computed(() =>
+    unique(this.candidateRows().map((r) => this.rel(r.camelot)))
+      .sort((a, b) => (REL_ORDER[a] ?? 99) - (REL_ORDER[b] ?? 99))
+  );
+
+  /**
+   * Visible rows after applying the facet + BPM filters. The key facet is
+   * matched against each row's effective (resulting) key, and rows whose
+   * relationship type is toggled off are excluded.
+   */
+  readonly rows = computed<Row[]>(() => {
+    const f = this.filters();
+    const hidden = new Set(f.hiddenTypes);
+    const ref = this.refBpm() ?? undefined;
+    return this.candidateRows().filter(
+      (r) => matchesTrack(r.track, f, ref, r.camelot) && !hidden.has(this.rel(r.camelot))
+    );
+  });
+  readonly shown = computed(() => this.rows().length);
+
+  /** Relationship label of an effective Camelot code vs the current track. */
+  rel(camelot: string): string {
+    const base = this.track();
+    return base ? relation(base.camelot, camelot) : '';
+  }
+
+  /** Maps a relationship label to a CSS colour-group class for its badge. */
+  relClass(camelot: string): string {
+    const r = this.rel(camelot);
+    switch (r) {
+      case 'Same key': return 'rel-same';
+      case 'Same root': return 'rel-root';
+      case 'Relative': return 'rel-relative';
+      case '+1 energy':
+      case '-1 energy': return 'rel-energy';
+      case 'Compatible': return 'rel-compatible';
+    }
+    if (r.includes('boost')) return 'rel-boost';
+    if (r.includes('drop')) return 'rel-drop';
+    return 'rel-compatible';
+  }
+
+  /** Displayed key text for an adjusted row, e.g. "A# minor (3A)". */
+  keyLabel(r: Row): string {
+    const name = r.keyName || '';
+    return name ? `${name} (${r.camelot})` : r.camelot;
+  }
+
+  /** Signed semitone shift label, e.g. "+0.21 st" / "−0.35 st". */
+  shiftLabel(r: Row): string {
+    const sign = r.semis >= 0 ? '+' : '−';
+    return `${sign}${Math.abs(r.semis).toFixed(2)} st`;
+  }
+
+  onSearch(value: string): void {
+    this.fs.setSearch(this.filters, value);
+  }
+
+  onBpmRange(value: string): void {
+    this.fs.setBpmRange(this.filters, parseFloat(value));
+  }
+
+  onBpmEnabled(checked: boolean): void {
+    this.fs.setBpmEnabled(this.filters, checked);
+  }
+
+  onBpmDoubleHalf(checked: boolean): void {
+    this.fs.setBpmDoubleHalf(this.filters, checked);
+  }
+
+  onPitchAdjust(checked: boolean): void {
+    this.fs.setPitchAdjust(this.filters, checked);
+  }
+
+  toggle(facet: 'genres' | 'styles' | 'keys', value: string): void {
+    this.fs.toggle(this.filters, facet, value);
+  }
+
+  toggleType(type: string): void {
+    this.fs.toggleType(this.filters, type);
+  }
+
+  clear(): void {
+    this.fs.clear(this.filters);
+  }
+
+  open(t: Track): void {
+    this.router.navigate(['/track', t.id]);
+  }
+}
+
+function unique(values: string[]): string[] {
+  return Array.from(new Set(values.filter((v) => !!v))).sort((a, b) => a.localeCompare(b));
+}
+
