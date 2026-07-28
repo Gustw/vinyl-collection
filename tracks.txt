@@ -4052,7 +4052,7 @@
    6. 4th Dimensional Transition - MGMT [Key: A major (11B) | BPM: 160]
    7. Pieces Of What - MGMT [Key: E minor (9A) | BPM: 108]
    8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A) | BPM: 124]
-   9. The Handshake - MGMT [Key: B minor (10A)]
+   9. The Handshake - MGMT [Key: B minor (10A) | BPM: 140]
   10. Future Reflections - MGMT [Key: F major (7B) | BPM: 140]
 
 === Salad Days -- Mac DeMarco ===
