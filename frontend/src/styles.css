@@ -25,7 +25,7 @@ html, body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.container { max-width: none; width: 100%; margin: 0; padding: 16px 20px; }
 
 .topbar {
   display: flex;
@@ -212,6 +212,20 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   white-space: nowrap;
 }
 .key-badge.none { background: #2a2530; border-color: #443a4a; color: #b79ac2; }
+
+/* Camelot wheel colour-coding: hue = (n-1) * 30° around the wheel. */
+.key-badge.cam-1  { background: hsl(0,   40%, 20%); border-color: hsl(0,   45%, 42%); color: hsl(0,   85%, 80%); }
+.key-badge.cam-2  { background: hsl(30,  42%, 20%); border-color: hsl(30,  48%, 42%); color: hsl(30,  90%, 78%); }
+.key-badge.cam-3  { background: hsl(52,  42%, 19%); border-color: hsl(52,  50%, 40%); color: hsl(52,  90%, 76%); }
+.key-badge.cam-4  { background: hsl(80,  38%, 18%); border-color: hsl(80,  45%, 38%); color: hsl(80,  75%, 76%); }
+.key-badge.cam-5  { background: hsl(120, 34%, 18%); border-color: hsl(120, 40%, 36%); color: hsl(120, 65%, 78%); }
+.key-badge.cam-6  { background: hsl(155, 36%, 18%); border-color: hsl(155, 42%, 38%); color: hsl(155, 65%, 76%); }
+.key-badge.cam-7  { background: hsl(180, 40%, 18%); border-color: hsl(180, 46%, 38%); color: hsl(180, 70%, 76%); }
+.key-badge.cam-8  { background: hsl(205, 42%, 20%); border-color: hsl(205, 50%, 44%); color: hsl(205, 85%, 80%); }
+.key-badge.cam-9  { background: hsl(230, 44%, 22%); border-color: hsl(230, 52%, 48%); color: hsl(230, 90%, 84%); }
+.key-badge.cam-10 { background: hsl(265, 40%, 22%); border-color: hsl(265, 46%, 48%); color: hsl(265, 80%, 84%); }
+.key-badge.cam-11 { background: hsl(300, 38%, 21%); border-color: hsl(300, 44%, 46%); color: hsl(300, 78%, 83%); }
+.key-badge.cam-12 { background: hsl(330, 42%, 21%); border-color: hsl(330, 48%, 46%); color: hsl(330, 85%, 82%); }
 .key-badge.adjusted {
   background: #3a2f16;
   border-color: #7a6224;
@@ -257,6 +271,18 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 
 .muted { color: var(--muted); }
 .big-key { font-size: 22px; font-weight: 700; color: var(--accent-2); }
+.big-key.cam-1  { color: hsl(0,   85%, 78%); }
+.big-key.cam-2  { color: hsl(30,  90%, 74%); }
+.big-key.cam-3  { color: hsl(52,  90%, 70%); }
+.big-key.cam-4  { color: hsl(80,  75%, 72%); }
+.big-key.cam-5  { color: hsl(120, 62%, 72%); }
+.big-key.cam-6  { color: hsl(155, 62%, 70%); }
+.big-key.cam-7  { color: hsl(180, 68%, 70%); }
+.big-key.cam-8  { color: hsl(205, 85%, 76%); }
+.big-key.cam-9  { color: hsl(230, 90%, 82%); }
+.big-key.cam-10 { color: hsl(265, 80%, 82%); }
+.big-key.cam-11 { color: hsl(300, 78%, 80%); }
+.big-key.cam-12 { color: hsl(330, 85%, 80%); }
 
 .cover {
   width: 48px;

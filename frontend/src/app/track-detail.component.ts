@@ -4,7 +4,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CollectionService } from './collection.service';
 import { FilterStateService, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
-import { mixableCamelot, relation, pitchShiftSemitones, shiftCamelot, shiftKeyName } from './camelot';
+import { mixableCamelot, relation, pitchShiftSemitones, shiftCamelot, shiftKeyName, camelotClass } from './camelot';
 import { Track } from './models';
 
 const REL_ORDER: Record<string, number> = {
@@ -64,7 +64,7 @@ interface Row {
               <img class="cover-lg" [src]="track()!.artwork" alt="" referrerpolicy="no-referrer" />
             }
             <div style="flex:1">
-              <div class="big-key">{{ track()!.keyText || 'No key detected' }}</div>
+              <div [class]="'big-key ' + keyClass(track()!.camelot)">{{ track()!.keyText || 'No key detected' }}</div>
               <div style="height:10px"></div>
               <div class="detail-grid">
                 <div class="k">Title</div><div>{{ track()!.title }}</div>
@@ -210,7 +210,7 @@ interface Row {
                       <span class="pitch-tag">pitched {{ shiftLabel(r) }}</span>
                     </span>
                   } @else {
-                    <span class="key-badge">{{ r.track.keyText }}</span>
+                    <span [class]="'key-badge ' + keyClass(r.track.camelot)">{{ r.track.keyText }}</span>
                   }
                 </div>
               }
@@ -346,6 +346,11 @@ export class TrackDetailComponent {
   keyLabel(r: Row): string {
     const name = r.keyName || '';
     return name ? `${name} (${r.camelot})` : r.camelot;
+  }
+
+  /** Camelot colour-group class (cam-1..cam-12) for a key badge / big key. */
+  keyClass(camelot: string): string {
+    return camelotClass(camelot);
   }
 
   /** Signed semitone shift label, e.g. "+0.21 st" / "−0.35 st". */

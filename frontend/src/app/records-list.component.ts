@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { CollectionService } from './collection.service';
 import { FilterStateService, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
+import { camelotClass } from './camelot';
 import { Rec, Track } from './models';
 import { UpdaterService } from './updater.service';
 import { ConfigService } from './config.service';
@@ -182,7 +183,7 @@ interface Popover {
                     <span class="track-title">{{ t.title }}</span>
                     <span class="track-artist">{{ t.artist }}</span>
                     @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
-                    <span class="key-badge" [class.none]="!t.keyText">{{ t.keyText || 'no key' }}</span>
+                    <span [class]="keyBadgeClass(t)">{{ t.keyText || 'no key' }}</span>
                   </div>
                 }
               </div>
@@ -233,7 +234,7 @@ interface Popover {
                 <div class="popover-item" (click)="open(t)">
                   <span class="track-title">{{ t.title }}</span>
                   @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
-                  <span class="key-badge" [class.none]="!t.keyText">{{ t.keyText || 'no key' }}</span>
+                  <span [class]="keyBadgeClass(t)">{{ t.keyText || 'no key' }}</span>
                 </div>
               }
             }
@@ -306,6 +307,11 @@ export class RecordsListComponent {
     if (r.year) parts.push(String(r.year));
     if (r.labels.length) parts.push(r.labels.join(', '));
     return parts.join(' · ');
+  }
+
+  /** Key badge classes incl. the Camelot colour group (or "none" when absent). */
+  keyBadgeClass(t: Track): string {
+    return t.keyText ? 'key-badge ' + camelotClass(t.camelot) : 'key-badge none';
   }
 
   onSearch(value: string): void {

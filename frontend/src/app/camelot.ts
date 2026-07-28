@@ -10,6 +10,16 @@ function wrap(n: number): number {
 }
 
 /**
+ * CSS colour-group class for a Camelot code, based on its wheel number (1..12).
+ * Returns '' for a missing/invalid code. Pairs with `.key-badge.cam-N` /
+ * `.big-key.cam-N` styles so keys are colour-coded around the wheel.
+ */
+export function camelotClass(code: string): string {
+  const m = CAMELOT_RE.exec((code || '').trim());
+  return m ? `cam-${Number(m[1])}` : '';
+}
+
+/**
  * Camelot code of the parallel key (same root note, opposite mode).
  * Minor `nA` -> major `(n+3)B`; major `nB` -> minor `(n-3)A`.
  * e.g. 8A (A minor) -> 11B (A major); 8B (C major) -> 5A (C minor).
