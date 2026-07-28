@@ -2219,8 +2219,8 @@
    4. Who's The Real Skinhead ? (Ska Edit) - The Architect [Key: F minor (4A) | BPM: 120]
    5. Old Mob Blues - The Architect [Key: B minor (10A) | BPM: 100]
    6. Design Of The Future - The Architect [Key: G# minor (1A) | BPM: 98]
-   7. Streets Of Neryhi - The Architect [Key: D major (10B)]
-   8. The Earth Is My Witness - The Architect [Key: F# minor (11A)]
+   7. Streets Of Neryhi - The Architect [Key: D major (10B) | BPM: 110]
+   8. The Earth Is My Witness - The Architect [Key: F# minor (11A) | BPM: 80]
 
 === Le Savoir Faire -- L'Entourloop ===
   ID: 10838657
@@ -2239,14 +2239,14 @@
    8. Le Rendez-Vous - L'Entourloop [Key: A# minor (3A) | BPM: 168]
    9. Forgotten Skank - L'Entourloop [Key: G major (9B) | BPM: 91]
   10. Mississippi Slang - L'Entourloop [Key: G# minor (1A) | BPM: 85]
-  11. Soundbwoy - L'Entourloop [Key: D major (10B)]
-  12. L'Amour Propre - L'Entourloop [Key: Bb major (6B)]
+  11. Soundbwoy - L'Entourloop [Key: D major (10B) | BPM: 170]
+  12. L'Amour Propre - L'Entourloop [Key: Bb major (6B) | BPM: 86]
   13. Fonk Monk - L'Entourloop [Key: C major (8B) | BPM: 184]
   14. The People And The Police - L'Entourloop [Key: E minor (9A) | BPM: 87]
   15. Le Tour De Force - L'Entourloop [Key: D major (10B) | BPM: 98]
-  16. Sounds To Wake The Kids Up - L'Entourloop [Key: F# minor (11A)]
-  17. One & Only - L'Entourloop [Key: D major (10B)]
-  18. Le Bonheur - L'Entourloop
+  16. Sounds To Wake The Kids Up - L'Entourloop [Key: F# minor (11A) | BPM: 172]
+  17. One & Only - L'Entourloop [Key: D major (10B) | BPM: 107]
+  18. Le Bonheur - L'Entourloop [Key: E minor (9A) | BPM: 140]
 
 === I Robot -- The Alan Parsons Project ===
   ID: 9763329
@@ -2527,12 +2527,12 @@
   Label: Virgin EMI Records
   Art: https://i.discogs.com/k7Q4X_bVGADYJW5-ib7-Hoyl-xNxeog22e0Ufnur9zc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNzEw/NzItMTQ4MzE4MTU2/My05MjgwLmpwZWc.jpeg
    1. Bohemian Rhapsody - Queen [Key: C minor (5A) | BPM: 144]
-   2. Another One Bites The Dust - Queen [Key: F minor (4A)]
+   2. Another One Bites The Dust - Queen [Key: F minor (4A) | BPM: 110]
    3. Killer Queen - Queen [Key: Bb major (6B) | BPM: 117]
    4. Fat Bottomed Girls - Queen [Key: D major (10B) | BPM: 88]
    5. Bicycle Race - Queen [Key: Eb major (5B) | BPM: 83]
    6. You're My Best Friend - Queen [Key: C major (8B) | BPM: 119]
-   7. Don't Stop Me Now - Queen [Key: F major (7B)]
+   7. Don't Stop Me Now - Queen [Key: F major (7B) | BPM: 156]
    8. Save Me - Queen [Key: G major (9B) | BPM: 82]
    9. Crazy Little Thing Called Love - Queen [Key: C major (8B) | BPM: 77]
   10. Somebody To Love - Queen [Key: Ab major (4B) | BPM: 109]
@@ -2837,9 +2837,9 @@
    2. An Eagle In Your Mind - Boards Of Canada [Key: F# major (2B) | BPM: 96]
    3. The Color Of The Fire - Boards Of Canada [Key: F# major (2B) | BPM: 80]
    4. Telephasic Workshop - Boards Of Canada [Key: C# major (3B) | BPM: 100]
-   5. Triangles & Rhombuses - Boards Of Canada [Key: E minor (9A)]
-   6. Sixtyten - Boards Of Canada [Key: F# major (2B)]
-   7. Turquoise Hexagon Sun - Boards Of Canada [Key: F# major (2B)]
+   5. Triangles & Rhombuses - Boards Of Canada [Key: E minor (9A) | BPM: 81]
+   6. Sixtyten - Boards Of Canada [Key: F# major (2B) | BPM: 110]
+   7. Turquoise Hexagon Sun - Boards Of Canada [Key: F# major (2B) | BPM: 188]
    8. Kaini Industries - Boards Of Canada [Key: F# major (2B) | BPM: 77]
    9. Bocuma - Boards Of Canada [Key: D minor (7A) | BPM: 126]
   10. Roygbiv - Boards Of Canada [Key: E minor (9A) | BPM: 84]
@@ -3291,8 +3291,8 @@
   Year: 1983
   Label: Virgin
   Art: https://i.discogs.com/YdYyOTuNPdYy0b9hf9bqTUDr4nt7zcTed3h3GDFoZzw/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTk1/MjEtMTI2NjY5ODk5/OC5qcGVn.jpeg
-   1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A)]
-   2. John Public - Gregory Isaacs [Key: B major (1B)]
+   1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A) | BPM: 79]
+   2. John Public - Gregory Isaacs [Key: B major (1B) | BPM: 135]
    3. Mr. Brown - Gregory Isaacs [Key: A major (11B) | BPM: 75]
    4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 119]
    5. Raving Tonight - Gregory Isaacs [Key: G major (9B) | BPM: 144]
@@ -3683,9 +3683,9 @@
   Art: https://i.discogs.com/uFabeg-qqiIKinkx4rh4erV9BurkCZgj-ARWuieC6Dc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjQy/ODU5LTE1MTQ1MzM0/NzQtNDIyMi5qcGVn.jpeg
    1. Remember The Future - Shpongle [Key: E minor (9A) | BPM: 168]
    2. The Magumba State - Shpongle [Key: G major (9B) | BPM: 168]
-   3. Empty Branes - Shpongle [Key: F major (7B)]
-   4. Are We There Yet? - Shpongle [Key: F# major (2B)]
-   5. Herr Gringleflapper's Secret Stash Box - Shpongle [Key: D major (10B)]
+   3. Empty Branes - Shpongle [Key: F major (7B) | BPM: 155]
+   4. Are We There Yet? - Shpongle [Key: F# major (2B) | BPM: 134]
+   5. Herr Gringleflapper's Secret Stash Box - Shpongle [Key: D major (10B) | BPM: 144]
    6. Strange Planet... - Shpongle [Key: D major (10B) | BPM: 110]
    7. I Woke Up As A Shlummutz - Shpongle [Key: C major (8B) | BPM: 140]
    8. A Series Of Heads - Shpongle [Key: F# major (2B) | BPM: 92]
@@ -3919,9 +3919,9 @@
    8. Groove St. - Nightmares On Wax [Key: A# minor (3A)]
    9. Time (To Listen) - Nightmares On Wax [Key: Ab major (4B)]
   10. (Man) Tha Journey - Nightmares On Wax
-  11. Bless My Soul - Nightmares On Wax [Key: C# major (3B)]
-  12. Cruise (Don't Stop) - Nightmares On Wax [Key: B minor (10A)]
-  13. Mission Venice - Nightmares On Wax [Key: A minor (8A)]
+  11. Bless My Soul - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
+  12. Cruise (Don't Stop) - Nightmares On Wax [Key: B minor (10A) | BPM: 94]
+  13. Mission Venice - Nightmares On Wax [Key: A minor (8A) | BPM: 126]
   14. What I'm Feelin (Good) - Nightmares On Wax [Key: Bb major (6B) | BPM: 101]
   15. Rise - Nightmares On Wax [Key: C# minor (12A) | BPM: 170]
   16. Rise (Reprise) - Nightmares On Wax [Key: B minor (10A) | BPM: 85]
@@ -4051,9 +4051,9 @@
    5. Kids - MGMT [Key: A major (11B) | BPM: 123]
    6. 4th Dimensional Transition - MGMT [Key: A major (11B) | BPM: 160]
    7. Pieces Of What - MGMT [Key: E minor (9A) | BPM: 108]
-   8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A)]
+   8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A) | BPM: 124]
    9. The Handshake - MGMT [Key: B minor (10A)]
-  10. Future Reflections - MGMT [Key: F major (7B)]
+  10. Future Reflections - MGMT [Key: F major (7B) | BPM: 140]
 
 === Salad Days -- Mac DeMarco ===
   ID: 5552990
@@ -4084,8 +4084,8 @@
   Art: https://i.discogs.com/hxepM9eNKg7wdX5BCU6OQTsNkqTRiDtJblJngl1MODI/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTE1/ODIwLTE1NDQ0NTI2/NDEtOTgxMS5qcGVn.jpeg
    1. Disco Devil - Lee Perry & The Full Experience [Key: C major (8B) | BPM: 78]
    2. Lion A De Winner - Lee Perry [Key: F# major (2B) | BPM: 122]
-   3. Dispensation - Winston Watson, Dellenger [Key: Bb major (6B)]
-   4. Such Is Life - Lord Creator [Key: F minor (4A)]
+   3. Dispensation - Winston Watson, Dellenger [Key: Bb major (6B) | BPM: 92]
+   4. Such Is Life - Lord Creator [Key: F minor (4A) | BPM: 89]
    5. Roots Train - Junior Murvin [Key: G major (9B) | BPM: 128]
 
 === Stop That Train -- Clint Eastwood And General Saint ===
@@ -4213,16 +4213,16 @@
    1. Blessed Ithiopia - Dub Dynasty [Key: F minor (4A) | BPM: 140]
    2. Thundering Mantis - Dub Dynasty [Key: G major (9B) | BPM: 140]
    3. Black Rose - Dub Dynasty [Key: A major (11B) | BPM: 130]
-   4. Ever Powering Medicine - Dub Dynasty
-   5. We Got Jah - Dub Dynasty
-   6. Blessings - Dub Dynasty
+   4. Ever Powering Medicine - Dub Dynasty [Key: A minor (8A) | BPM: 96]
+   5. We Got Jah - Dub Dynasty [Key: C# minor (12A) | BPM: 140]
+   6. Blessings - Dub Dynasty [Key: E minor (9A) | BPM: 125]
    7. River Jordan - Dub Dynasty [Key: B minor (10A) | BPM: 127]
    8. Ithiopia Dub - Dub Dynasty [Key: F minor (4A) | BPM: 140]
    9. Thundering Mantis Part II - Dub Dynasty [Key: C minor (5A) | BPM: 123]
   10. Black Rose Dub - Dub Dynasty [Key: B minor (10A) | BPM: 130]
   11. Ever Powering Dub - Dub Dynasty [Key: B major (1B) | BPM: 96]
-  12. We Got Dub - Dub Dynasty [Key: A major (11B)]
-  13. Evil Fi Bun - Dub Dynasty [Key: E minor (9A)]
+  12. We Got Dub - Dub Dynasty [Key: A major (11B) | BPM: 140]
+  13. Evil Fi Bun - Dub Dynasty [Key: E minor (9A) | BPM: 125]
   14. Welcome The Lion On Your Path - Dub Dynasty [Key: A minor (8A) | BPM: 136]
 
 === Rasta We Rasta / Africa To Hollywood Dub -- Danny Red / Forward Fever ===
