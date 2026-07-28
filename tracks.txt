@@ -68,7 +68,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
    1. Here I Come - Ed Solo [Key: E minor (9A) | BPM: 175]
-   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 88]
+   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 176]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
