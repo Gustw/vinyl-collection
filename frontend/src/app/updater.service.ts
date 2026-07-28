@@ -104,6 +104,27 @@ export class UpdaterService {
   /** Set once a re-fetch pass has finished, so the UI can show its report. */
   readonly reportReady = signal(false);
 
+  /** Total time this run has spent parked on tunebat 429 backoffs. */
+  readonly rateLimitedMs = signal(0);
+  /**
+   * Estimated time left, in ms (null when not meaningful yet). Derived from
+   * actual wall-clock progress, so rate-limit waits are already priced in:
+   * if tunebat starts throttling, the estimate grows to match.
+   */
+  readonly etaMs = signal<number | null>(null);
+  /** Wall-clock start of the current run, for the ETA. */
+  private runStart = 0;
+
+  /** Recomputes the ETA from observed pace (including any 429 waits). */
+  private updateEta(done: number, total: number): void {
+    if (done <= 0 || done >= total) {
+      this.etaMs.set(null);
+      return;
+    }
+    const perItem = (Date.now() - this.runStart) / done;
+    this.etaMs.set(Math.round(perItem * (total - done)));
+  }
+
   /**
    * Set while a cancellation is being honoured. The running job stops at its
    * next checkpoint and still commits whatever it has already changed, so no
@@ -152,6 +173,9 @@ export class UpdaterService {
     this.error.set(null);
     this.processed.set(0);
     this.total.set(0);
+    this.rateLimitedMs.set(0);
+    this.etaMs.set(null);
+    this.runStart = Date.now();
     this.canCommit = githubConfigured(cfg) && !!cfg.githubToken;
 
     const paceMs = cfg.discogsToken.trim() ? 1100 : 2500;
@@ -249,6 +273,7 @@ export class UpdaterService {
           console.warn('enrich failed for', rec.releaseId, e);
         }
         this.processed.update((n) => n + 1);
+        this.updateEta(this.processed(), ordered.length);
         this.push(ordered);
         if (++sinceCommit >= 10) {
           sinceCommit = 0;
@@ -271,6 +296,7 @@ export class UpdaterService {
     } finally {
       this.running.set(false);
       this.cancelling.set(false);
+      this.etaMs.set(null);
     }
   }
 
@@ -303,6 +329,9 @@ export class UpdaterService {
     this.corrected.set(0);
     this.changes.set([]);
     this.reportReady.set(false);
+    this.rateLimitedMs.set(0);
+    this.etaMs.set(null);
+    this.runStart = Date.now();
     this.canCommit = githubConfigured(cfg) && !!cfg.githubToken;
 
     const records = this.col.records();
@@ -329,14 +358,12 @@ export class UpdaterService {
             `(${this.processed() + 1}/${jobs.length}, ${this.corrected()} corrected)`
         );
         try {
-          const info = await lookupKey(
-            cfg,
-            t.artist,
-            t.title,
-            (s) => this.message.set(s),
-            true,
-            () => this.cancelling()
-          );
+          const info = await lookupKey(cfg, t.artist, t.title, {
+            onStatus: (s) => this.message.set(s),
+            force: true,
+            isCancelled: () => this.cancelling(),
+            onRateLimitWait: (ms) => this.rateLimitedMs.update((n) => n + ms),
+          });
           const change = this.applyFresh(t, info);
           if (change) {
             this.changes.update((list) => [...list, change]);
@@ -347,6 +374,7 @@ export class UpdaterService {
           console.warn('re-fetch failed for', t.artist, t.title, e);
         }
         this.processed.update((n) => n + 1);
+        this.updateEta(this.processed(), jobs.length);
         this.push(records);
         await this.wait(500); // be polite to tunebat (reduces 429s)
         if (sinceCommit >= 10) {
@@ -367,6 +395,7 @@ export class UpdaterService {
     } finally {
       this.running.set(false);
       this.cancelling.set(false);
+      this.etaMs.set(null);
       this.reportReady.set(true); // show the summary, even for a partial run
     }
   }
@@ -450,14 +479,11 @@ export class UpdaterService {
     for (const t of rec.tracks) {
       if (t.keyName && t.bpm) continue;
       this.throwIfCancelled(); // the record keeps whatever we filled so far
-      const info = await lookupKey(
-        cfg,
-        t.artist,
-        t.title,
-        (s) => this.message.set(s),
-        false,
-        () => this.cancelling()
-      );
+      const info = await lookupKey(cfg, t.artist, t.title, {
+        onStatus: (s) => this.message.set(s),
+        isCancelled: () => this.cancelling(),
+        onRateLimitWait: (ms) => this.rateLimitedMs.update((n) => n + ms),
+      });
       if (info.keyName && !t.keyName) {
         t.keyName = info.keyName;
         t.camelot = info.camelot;

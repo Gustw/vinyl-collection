@@ -10,8 +10,7 @@ import { UpdaterService, TrackChange } from './updater.service';
 import { ConfigService } from './config.service';
 
 /** A record together with the tracks that survived the current filters. */
-interface Row {
-  record: Rec;
+interface Row {  record: Rec;
   tracks: Track[];
   /** How many of the record's tracks the filters are hiding (0 = all shown). */
   hidden: number;
@@ -23,6 +22,17 @@ interface Popover {
   record: Rec;
   tracks: Track[];
   hidden: number;
+}
+
+/** Compact duration for progress badges: "2h 5m", "3m 20s", "45s". */
+function formatDuration(ms: number): string {
+  const total = Math.max(0, Math.round(ms / 1000));
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  if (h) return `${h}h ${m}m`;
+  if (m) return `${m}m ${s}s`;
+  return `${s}s`;
 }
 
 @Component({
@@ -61,6 +71,16 @@ interface Popover {
           @if (updater.running()) {
             <div class="progress"><span class="bar" [style.width.%]="progressPct()"></span></div>
             <span class="badge-count">{{ updater.processed() }} / {{ updater.total() }}</span>
+            @if (updater.etaMs() !== null) {
+              <span class="badge-count" title="Estimated from the pace so far, including any time lost to rate limiting">
+                ~{{ etaLabel() }} left
+              </span>
+            }
+            @if (updater.rateLimitedMs() > 0) {
+              <span class="badge-count throttled-count" title="Time this run has spent waiting out tunebat rate limits">
+                ⏳ {{ throttledLabel() }} rate limited
+              </span>
+            }
             @if (updater.corrected()) {
               <span class="badge-count corrected-count">{{ updater.corrected() }} corrected</span>
             }
@@ -466,6 +486,11 @@ interface Popover {
               @if (updater.processed() < updater.total()) {
                 <span> (stopped early — the rest were left untouched)</span>
               }
+              @if (updater.rateLimitedMs() > 0) {
+                <span>
+                  · {{ throttledLabel() }} of that was spent waiting out tunebat rate limits.
+                </span>
+              }
             </div>
 
             @if (updater.changes().length === 0) {
@@ -755,13 +780,27 @@ export class RecordsListComponent {
   /** Re-asks tunebat for every track's key/BPM and corrects the wrong ones. */
   refetch(): void {
     const n = this.totalTracks();
+    // ~500ms pacing plus a typical request, so about a second per track. The
+    // real figure is whatever the live ETA settles on once tunebat's
+    // throttling (if any) shows itself.
+    const bestCase = Math.ceil(n / 60);
     const ok = confirm(
       `Re-check all ${n} tracks against tunebat?\n\n` +
-        `This ignores the local cache and overwrites any key/BPM that comes back ` +
-        `different. It takes roughly ${Math.ceil((n * 0.5) / 60)} minute(s).`
+        `This ignores the local cache and overwrites any key/BPM that comes ` +
+        `back different.\n\n` +
+        `Roughly ${bestCase} minute(s) if tunebat doesn't rate-limit. It will ` +
+        `back off for up to a minute each time it does, so the run can take ` +
+        `considerably longer — a live estimate is shown while it runs, and you ` +
+        `can cancel at any point without losing corrections already made.`
     );
     if (ok) void this.updater.refetchAll();
   }
+
+  /** "3m 20s" / "45s" for the remaining-time badge. */
+  readonly etaLabel = computed(() => formatDuration(this.updater.etaMs() ?? 0));
+
+  /** Time lost to 429 backoffs so far. */
+  readonly throttledLabel = computed(() => formatDuration(this.updater.rateLimitedMs()));
 
   closeReport(): void {
     this.updater.dismissReport();

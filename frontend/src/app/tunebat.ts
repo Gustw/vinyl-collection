@@ -84,31 +84,46 @@ function parseKeyInfo(json: any): KeyInfo {
   return { keyName: key, camelot, keyText, bpm };
 }
 
+/** Optional behaviour for a lookup. */
+export interface LookupOptions {
+  /** Progress/status line for the UI. */
+  onStatus?: (message: string) => void;
+  /**
+   * Ignore the cached answer and re-ask the API — used by the "re-fetch all
+   * keys/BPM" pass that repairs values that were wrong. The fresh answer
+   * replaces the cache entry.
+   */
+  force?: boolean;
+  /**
+   * Polled during the rate-limit backoff so a user-cancelled job doesn't stay
+   * stuck in a minute-long wait.
+   */
+  isCancelled?: () => boolean;
+  /**
+   * Called with how long this lookup actually spent parked on a 429. Lets the
+   * caller separate real work from waiting when estimating how long a run
+   * still has to go.
+   */
+  onRateLimitWait?: (ms: number) => void;
+}
+
 /**
  * Looks up a track's key + BPM on tunebat. Results (including "not found",
  * only when it actually reached the API) are cached in localStorage so
  * re-runs skip them. Returns empty fields when nothing is found or the
  * request is blocked (e.g. CORS without a proxy).
  *
- * Pass `force` to ignore the cached answer and re-ask the API — used by the
- * "re-fetch all keys/BPM" pass that repairs values that were wrong. The fresh
- * answer replaces the cache entry.
- *
- * `isCancelled` is polled during the rate-limit backoff so a user-cancelled
- * job doesn't stay stuck in a minute-long wait.
- *
  * On HTTP 429 it backs off (honouring Retry-After, else 60s like the Java
  * tool) and retries the same term instead of hammering the API, reporting the
- * wait via the optional onStatus callback.
+ * wait via onStatus and its length via onRateLimitWait.
  */
 export async function lookupKey(
   cfg: AppConfig,
   artist: string,
   title: string,
-  onStatus?: (message: string) => void,
-  force = false,
-  isCancelled?: () => boolean
+  opts: LookupOptions = {}
 ): Promise<KeyInfo> {
+  const { onStatus, force = false, isCancelled, onRateLimitWait } = opts;
   const term = `${artist} ${title}`.trim();
   const cached = cacheGet(term);
   if (!force && cached && cached.bpm) return cached; // fully cached
@@ -140,10 +155,17 @@ export async function lookupKey(
           `(${rateWaits}/${MAX_RATE_WAITS})…`
       );
       // Sleep in slices so a cancellation isn't stuck behind a long backoff.
+      let waited = 0;
       for (let left = wait; left > 0; left -= 250) {
-        if (isCancelled?.()) return keep();
-        await sleep(Math.min(250, left));
+        if (isCancelled?.()) {
+          onRateLimitWait?.(waited);
+          return keep();
+        }
+        const slice = Math.min(250, left);
+        await sleep(slice);
+        waited += slice;
       }
+      onRateLimitWait?.(waited);
       continue; // retry the same term
     }
 
