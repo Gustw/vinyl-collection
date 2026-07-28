@@ -1989,8 +1989,8 @@
   Year: 1995
   Label: X-DR Production
   Art: https://i.discogs.com/17MrnU6NGgOytFd79AZ4fFy-f4MatCAQbIX6YhhQRxA/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTQ5/Ni0xNTIyMDExNzIw/LTg2NDMuanBlZw.jpeg
-   1. Objectif Mercury (Ignition Mix) - Ariane [Key: A# minor (3A)]
-   2. Dolphins Orbital - Ariane [Key: E minor (9A)]
+   1. Objectif Mercury (Ignition Mix) - Ariane [Key: A# minor (3A) | BPM: 142]
+   2. Dolphins Orbital - Ariane [Key: E minor (9A) | BPM: 135]
 
 === Corolle -- Khetzal ===
   ID: 17476666
