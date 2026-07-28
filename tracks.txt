@@ -2213,12 +2213,12 @@
   Year: 2019
   Label: X-Ray Production
   Art: https://i.discogs.com/7bUjqjmrOKZvxaA9v6llSdqvxGKwrryTMG4RBsXhHVE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjIx/ODcyLTE3Mjg1OTI3/ODAtNjE3OC5qcGVn.jpeg
-   1. Les Pensées - The Architect [Key: A# minor (3A)]
-   2. L'usine À Disques (Rmx Duke Ellington & Louis Armstrong) - The Architect
-   3. Dreader Than Dread - The Architect
-   4. Who's The Real Skinhead ? (Ska Edit) - The Architect
-   5. Old Mob Blues - The Architect [Key: B minor (10A)]
-   6. Design Of The Future - The Architect [Key: G# minor (1A)]
+   1. Les Pensées - The Architect [Key: A# minor (3A) | BPM: 98]
+   2. L'usine À Disques (Rmx Duke Ellington & Louis Armstrong) - The Architect [Key: Ab major (4B) | BPM: 98]
+   3. Dreader Than Dread - The Architect [Key: A# minor (3A) | BPM: 95]
+   4. Who's The Real Skinhead ? (Ska Edit) - The Architect [Key: F minor (4A) | BPM: 120]
+   5. Old Mob Blues - The Architect [Key: B minor (10A) | BPM: 100]
+   6. Design Of The Future - The Architect [Key: G# minor (1A) | BPM: 98]
    7. Streets Of Neryhi - The Architect [Key: D major (10B)]
    8. The Earth Is My Witness - The Architect [Key: F# minor (11A)]
 
@@ -2229,21 +2229,21 @@
   Year: 2017
   Label: X-Ray Production
   Art: https://i.discogs.com/4AIci-ZT9N-zt1b0UHT_OvkEXDo6axgf5WO4TLedRIE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODM4/NjU3LTE1MDUxNDE4/ODEtNzg4Ni5qcGVn.jpeg
-   1. Le Savoir Faire - L'Entourloop [Key: E minor (9A)]
-   2. Weh U Come From - L'Entourloop [Key: A minor (8A)]
-   3. Johnny A Bad Man - L'Entourloop [Key: A major (11B)]
-   4. Shoefiti - L'Entourloop [Key: A# minor (3A)]
-   5. La Main A La Pâte - L'Entourloop
-   6. Boomblast - L'Entourloop [Key: F major (7B)]
-   7. Push The Limits - L'Entourloop [Key: F# minor (11A)]
-   8. Le Rendez-Vous - L'Entourloop [Key: A# minor (3A)]
-   9. Forgotten Skank - L'Entourloop [Key: G major (9B)]
-  10. Mississippi Slang - L'Entourloop [Key: G# minor (1A)]
+   1. Le Savoir Faire - L'Entourloop [Key: E minor (9A) | BPM: 96]
+   2. Weh U Come From - L'Entourloop [Key: A minor (8A) | BPM: 176]
+   3. Johnny A Bad Man - L'Entourloop [Key: A major (11B) | BPM: 98]
+   4. Shoefiti - L'Entourloop [Key: A# minor (3A) | BPM: 94]
+   5. La Main A La Pâte - L'Entourloop [Key: C major (8B) | BPM: 246]
+   6. Boomblast - L'Entourloop [Key: F major (7B) | BPM: 90]
+   7. Push The Limits - L'Entourloop [Key: F# minor (11A) | BPM: 166]
+   8. Le Rendez-Vous - L'Entourloop [Key: A# minor (3A) | BPM: 168]
+   9. Forgotten Skank - L'Entourloop [Key: G major (9B) | BPM: 91]
+  10. Mississippi Slang - L'Entourloop [Key: G# minor (1A) | BPM: 85]
   11. Soundbwoy - L'Entourloop [Key: D major (10B)]
   12. L'Amour Propre - L'Entourloop [Key: Bb major (6B)]
-  13. Fonk Monk - L'Entourloop
-  14. The People And The Police - L'Entourloop
-  15. Le Tour De Force - L'Entourloop [Key: D major (10B)]
+  13. Fonk Monk - L'Entourloop [Key: C major (8B) | BPM: 184]
+  14. The People And The Police - L'Entourloop [Key: E minor (9A) | BPM: 87]
+  15. Le Tour De Force - L'Entourloop [Key: D major (10B) | BPM: 98]
   16. Sounds To Wake The Kids Up - L'Entourloop [Key: F# minor (11A)]
   17. One & Only - L'Entourloop [Key: D major (10B)]
   18. Le Bonheur - L'Entourloop
