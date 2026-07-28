@@ -3755,8 +3755,8 @@
   14. It Was There... - Yann Tiersen [Key: B minor (10A) | BPM: 82]
   15. Prayer No. 2 - Yann Tiersen [Key: E minor (9A) | BPM: 104]
   16. Summer Nursery Rhyme No. 1 - Yann Tiersen [Key: E minor (9A) | BPM: 124]
-  17. The Window - Yann Tiersen [Key: A minor (8A)]
-  18. Prayer No. 3 - Yann Tiersen [Key: G minor (6A)]
+  17. The Window - Yann Tiersen [Key: A minor (8A) | BPM: 100]
+  18. Prayer No. 3 - Yann Tiersen [Key: G minor (6A) | BPM: 101]
   19. The Empty Room - Yann Tiersen [Key: A minor (8A)]
   20. Everyday Life - Yann Tiersen [Key: D minor (7A)]
 
