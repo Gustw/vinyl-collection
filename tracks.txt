@@ -441,9 +441,9 @@
    2. It's A Trick - Pablo Moses [Key: G major (9B) | BPM: 76]
    3. Pave The Way - Pablo Moses [Key: Eb major (5B) | BPM: 158]
    4. Dig On - Pablo Moses [Key: A minor (8A) | BPM: 130]
-   5. Africa Is For Me - Pablo Moses [Key: G major (9B)]
-   6. A Step Before Hell - Pablo Moses [Key: F# minor (11A)]
-   7. Last Straw - Pablo Moses [Key: D minor (7A)]
+   5. Africa Is For Me - Pablo Moses [Key: G major (9B) | BPM: 84]
+   6. A Step Before Hell - Pablo Moses [Key: F# minor (11A) | BPM: 153]
+   7. Last Straw - Pablo Moses [Key: D minor (7A) | BPM: 77]
    8. I See It Everyday - Pablo Moses [Key: F# major (2B) | BPM: 130]
    9. Sister - Pablo Moses [Key: E major (12B) | BPM: 113]
 
