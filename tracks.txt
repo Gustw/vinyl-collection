@@ -2678,7 +2678,7 @@
    5. Blue Condition - Cream [Key: C major (8B) | BPM: 80]
    6. Tales Of Brave Ulysses - Cream [Key: C minor (5A) | BPM: 106]
    7. Swlabr - Cream [Key: E minor (9A) | BPM: 124]
-   8. We're Going Wrong - Cream [Key: B minor (10A)]
+   8. We're Going Wrong - Cream [Key: B minor (10A) | BPM: 132]
    9. Outside Woman Blues - Cream [Key: A major (11B) | BPM: 113]
   10. Take It Back - Cream [Key: D major (10B) | BPM: 121]
   11. Mother's Lament - Cream [Key: G major (9B) | BPM: 95]
@@ -2691,10 +2691,10 @@
   Label: Columbia
   Art: https://i.discogs.com/_kXY8pF_QTKkwFhBPO91N3EYNqGpXPJA8tCALPyea_M/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0ODE2/MDMtMTM3NzgwNTI1/NC05ODI1LmpwZWc.jpeg
    1. Singing Winds, Crying Beasts - Santana [Key: C major (8B) | BPM: 120]
-   2. Black Magic Woman / Gypsy Queen - Santana [Key: D minor (7A)]
-   3. Oye Como Va - Santana [Key: G major (9B)]
-   4. Incident At Neshabur - Santana [Key: C major (8B)]
-   5. Se A Cabo - Santana [Key: A# minor (3A)]
+   2. Black Magic Woman / Gypsy Queen - Santana [Key: D minor (7A) | BPM: 124]
+   3. Oye Como Va - Santana [Key: G major (9B) | BPM: 128]
+   4. Incident At Neshabur - Santana [Key: C major (8B) | BPM: 136]
+   5. Se A Cabo - Santana [Key: A# minor (3A) | BPM: 137]
    6. Mother's Daughter - Santana [Key: Bb major (6B) | BPM: 139]
    7. Samba Pa Ti - Santana [Key: A minor (8A) | BPM: 92]
    8. Hope You're Feeling Better - Santana [Key: D major (10B) | BPM: 94]
