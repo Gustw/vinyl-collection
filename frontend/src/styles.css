@@ -292,6 +292,19 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .rel-badge.rel-compatible { background: #2a2f38; border-color: #3f4756; color: #b8c2d0; } /* gray  */
 
 .muted { color: var(--muted); }
+
+/*
+ * Attribution footer. It sits at the end of the page flow, so it only comes
+ * into view once you've scrolled past the whole collection.
+ */
+.site-footer {
+  margin-top: 24px;
+  padding: 18px 4px 8px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  text-align: center;
+}
+.site-footer a { color: var(--accent); }
 .big-key { font-size: 22px; font-weight: 700; color: var(--accent-2); }
 .big-key.cam-1  { color: hsl(0,   85%, 78%); }
 .big-key.cam-2  { color: hsl(30,  90%, 74%); }

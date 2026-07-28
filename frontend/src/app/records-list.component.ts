@@ -346,6 +346,13 @@ interface Popover {
           </div>
         </div>
       }
+
+      <footer class="site-footer muted">
+        Key &amp; BPM data from
+        <a href="https://getsongbpm.com/" target="_blank" rel="noopener">GetSongBPM</a>
+        and <a href="https://tunebat.com/" target="_blank" rel="noopener">Tunebat</a>;
+        release data from <a href="https://www.discogs.com/" target="_blank" rel="noopener">Discogs</a>.
+      </footer>
     </div>
   `,
 })
