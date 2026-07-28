@@ -761,7 +761,7 @@
    1. Rub A Dub Rock - Mikkim [Key: D major (10B) | BPM: 177]
    2. Rub A Dub Rock Instrumental - Mikkim [Key: D major (10B) | BPM: 177]
    3. Break The Chains - Mikkim [Key: E minor (9A) | BPM: 175]
-   4. Break The Chains Instrumental - Mikkim [Key: E minor (9A)]
+   4. Break The Chains Instrumental - Mikkim [Key: E minor (9A) | BPM: 175]
 
 === Around The World / Tempest -- Visionary Feat. Peter Ranking ===
   ID: 562358
