@@ -22,7 +22,7 @@ export interface Filters {
 }
 
 export function emptyFilters(): Filters {
-  return { search: '', genres: [], styles: [], keys: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: false, pitchAdjust: false, hiddenTypes: [], yearMin: null, yearMax: null };
+  return { search: '', genres: [], styles: [], keys: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: true, pitchAdjust: false, hiddenTypes: [], yearMin: null, yearMax: null };
 }
 
 export function hasActiveFilters(f: Filters): boolean {
