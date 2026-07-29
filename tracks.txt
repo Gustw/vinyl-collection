@@ -795,8 +795,8 @@
   Year: 2022
   Label: Rasta Vibez
   Art: https://i.discogs.com/Ee29qgcwbrNNtZ19Py1mzUws6KIS8OqL2-QoCkVeriQ/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzY5/MzY5LTE2NTM5ODY3/NDktMzYzOC5qcGVn.jpeg
-   1. Running Over - Gunmen [Key: C# major (3B) | BPM: 88]
-   2. The Sound - Gunmen [Key: D major (10B) | BPM: 175]
+   1. Running Over - Gunmen [Pos: A | Key: C# major (3B) | BPM: 88]
+   2. The Sound - Gunmen [Pos: B | Key: D major (10B) | BPM: 175]
 
 === Burn Them / Strictly Rubadub -- Mystic Pulse ===
   ID: 11506594
@@ -805,8 +805,8 @@
   Year: 2018
   Label: Rasta Vibez
   Art: https://i.discogs.com/bixy_BlcZBgMtjPQpOhAZXheqtUYHlCxBqxWAD1edEE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTA2/NTk0LTE1MTc1ODEz/NjItNjIzMy5qcGVn.jpeg
-   1. Burn Them - Mystic Pulse [Key: C# minor (12A) | BPM: 173]
-   2. Strictly Rubadub - Mystic Pulse [Key: B major (1B) | BPM: 170]
+   1. Burn Them - Mystic Pulse [Pos: A | Key: C# minor (12A) | BPM: 173]
+   2. Strictly Rubadub - Mystic Pulse [Pos: B | Key: B major (1B) | BPM: 170]
 
 === Babylon Pressure / Call Di Doctor -- Mystic Pulse ===
   ID: 23123543
@@ -815,8 +815,8 @@
   Year: 2022
   Label: Rasta Vibez
   Art: https://i.discogs.com/GiMRIF5PLQHv3QoZpMViTiGOr2IbwZF7FlkotiII8KI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTIz/NTQzLTE2NTM3NDYw/OTQtMTE0NS5qcGVn.jpeg
-   1. Babylon Pressure - Mystic Pulse [Key: F# major (2B) | BPM: 174]
-   2. Call Di Doctor - Mystic Pulse [Key: D major (10B) | BPM: 176]
+   1. Babylon Pressure - Mystic Pulse [Pos: A | Key: F# major (2B) | BPM: 174]
+   2. Call Di Doctor - Mystic Pulse [Pos: B | Key: D major (10B) | BPM: 176]
 
 === Jungle On Broadway -- Pixel ===
   ID: 5823298
@@ -825,8 +825,8 @@
   Year: 2014
   Label: Rasta Vibez
   Art: https://i.discogs.com/Fv2nTVapFQg_dTsctIjYjuOjho-HbGngrnHtkkVT9Jw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4MjMy/OTgtMTQxNzc2MzQ2/Mi04NjM2LmpwZWc.jpeg
-   1. Jungle On Broadway - Pixel [Key: E major (12B) | BPM: 175]
-   2. Steppin' (Rollers RMX) - Pixel [Key: G major (9B) | BPM: 180]
+   1. Jungle On Broadway - Pixel [Pos: A | Time: 6:18 | Key: E major (12B) | BPM: 175]
+   2. Steppin' (Rollers RMX) - Pixel [Pos: B | Time: 5:54 | Key: G major (9B) | BPM: 180]
 
 === Soundclash EP -- Pixel (8) / Gunmen ===
   ID: 9365807
@@ -835,8 +835,8 @@
   Year: 2016
   Label: Rasta Vibez
   Art: https://i.discogs.com/PYAJ2We3CgM012fxAD5N-biFrsulTrhcZ4aYU3vluAI/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNjU4/MDctMTQ3OTY3NzUw/NS0xMTU4LmpwZWc.jpeg
-   1. Soundclash - Pixel [Key: C# major (3B) | BPM: 87]
-   2. Teach - Gunmen [Key: E minor (9A) | BPM: 176]
+   1. Soundclash - Pixel [Pos: A1 | Key: C# major (3B) | BPM: 87]
+   2. Teach - Gunmen [Pos: B1 | Key: E minor (9A) | BPM: 176]
 
 === Legalize it! / Herbalist -- Pixel (8) / Mystic Pulse ===
   ID: 6737607
@@ -845,8 +845,8 @@
   Year: 2015
   Label: Rasta Vibez
   Art: https://i.discogs.com/gpWg-sNJn3RvYyUC0SQHhwspDWCxZmAA111U2lvwwh0/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3Mzc2/MDctMTY3MTU1OTEw/My00NDI3LmpwZWc.jpeg
-   1. Legalize it! - Pixel [Key: B major (1B) | BPM: 175]
-   2. Herbalist - Mystic Pulse [Key: E minor (9A) | BPM: 175]
+   1. Legalize it! - Pixel [Pos: A | Key: B major (1B) | BPM: 175]
+   2. Herbalist - Mystic Pulse [Pos: B | Key: E minor (9A) | BPM: 175]
 
 === Fussin' & Fightin' / Don't Fool Rasta -- Pixel (8) / Mystic Pulse ===
   ID: 7298036
@@ -855,8 +855,8 @@
   Year: 2015
   Label: Rasta Vibez
   Art: https://i.discogs.com/bKaT6vzKMZd9rYix5B32TLn3iYRzoNVzT_ApHcTTZqg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyOTgw/MzYtMTQzODY3ODUy/OS00NDgyLmpwZWc.jpeg
-   1. Fussin' & Fightin' - Pixel [Key: C minor (5A) | BPM: 175]
-   2. Don't Fool Rasta - Mystic Pulse [Key: A minor (8A) | BPM: 173]
+   1. Fussin' & Fightin' - Pixel [Pos: A | Key: C minor (5A) | BPM: 175]
+   2. Don't Fool Rasta - Mystic Pulse [Pos: B | Key: A minor (8A) | BPM: 173]
 
 === River Jordan EP -- Scott Allen (11) & Deeper Connection ===
   ID: 22037302
@@ -865,8 +865,8 @@
   Year: 2022
   Label: Rasta Vibez
   Art: https://i.discogs.com/X1m-Ysxxkb6GTVxE3CQZKMbydystLwtFlCSRkWIgkuQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDM3/MzAyLTE3Nzc0MTcz/OTktOTQyNS5qcGVn.jpeg
-   1. River Jordan - Scott Allen & Deeper Connection [Key: G# minor (1A) | BPM: 176]
-   2. We Nah Run - Scott Allen & Deeper Connection [Key: Ab major (4B) | BPM: 90]
+   1. River Jordan - Scott Allen & Deeper Connection [Pos: A | Key: G# minor (1A) | BPM: 176]
+   2. We Nah Run - Scott Allen & Deeper Connection [Pos: B | Key: Ab major (4B) | BPM: 90]
 
 === Champion DJ (Remixes) -- Blackstar ===
   ID: 691132
@@ -875,8 +875,8 @@
   Year: 2005
   Label: Congo Natty
   Art: https://i.discogs.com/xV74I3tf4qfetig3T_w27mfRsxQR1mfnrg5cYEbX9i0/rs:fit/g:sm/q:90/h:283/w:286/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5MTEz/Mi0xMTc3MDU3MTUy/LmdpZg.jpeg
-   1. Champion DJ (2005 Ebony Dubsters Remix) - Blackstar [Key: E major (12B) | BPM: 83]
-   2. Champion DJ (3rd Eye Mix) - Blackstar [Key: E major (12B) | BPM: 83]
+   1. Champion DJ (2005 Ebony Dubsters Remix) - Blackstar [Pos: A | Key: E major (12B) | BPM: 83]
+   2. Champion DJ (3rd Eye Mix) - Blackstar [Pos: AA | Key: E major (12B) | BPM: 83]
 
 === Led Astray / Stand Up (Sigma Rmx) -- DJ Friction ===
   ID: 3392669
@@ -885,8 +885,8 @@
   Year: 2012
   Label: Shogun Audio
   Art: https://i.discogs.com/8O_zncBT57h7fIxarJJVdJ9KJQbc37pUSVMyVt7CQM4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzOTI2/NjktMTM0NjI1NDA1/Mi02Njg2LmpwZWc.jpeg
-   1. Led Astray - DJ Friction [Key: G minor (6A) | BPM: 71]
-   2. Stand Up (Sigma Rmx) - DJ Friction Vs Camo & Krooked Ft Dynamite MC [Key: C# major (3B) | BPM: 175]
+   1. Led Astray - DJ Friction [Pos: A | Key: G minor (6A) | BPM: 71]
+   2. Stand Up (Sigma Rmx) - DJ Friction Vs Camo & Krooked Ft Dynamite MC [Pos: AA | Key: C# major (3B) | BPM: 175]
 
 === Heads High / Wings Of The Morning -- Heretic / Murder Inc. ===
   ID: 14342
