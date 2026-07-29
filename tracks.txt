@@ -464,8 +464,8 @@
   Year: 2010
   Label: Chopstick Dubplate
   Art: https://i.discogs.com/0-9uu47LSJDxG3K68CHnnjH7xHyZtaF1hJBWolaw9Qk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjgx/MTYtMTYyMzMwMjI5/MS05Mzg2LmpwZWc.jpeg
-   1. Gundelero - Chopstick Dubplate [Key: A# minor (3A) | BPM: 175]
-   2. Chop Gundelero Riddim - Chopstick Dubplate [Key: C# major (3B) | BPM: 88]
+   1. Gundelero - Chopstick Dubplate [Pos: A | Key: A# minor (3A) | BPM: 175]
+   2. Chop Gundelero Riddim - Chopstick Dubplate [Pos: AA | Key: C# major (3B) | BPM: 88]
 
 === Mash You Down / Live From Studio 1 -- Serial Killaz ===
   ID: 1758060
@@ -474,8 +474,8 @@
   Year: 2009
   Label: Ganja Records
   Art: https://i.discogs.com/Qru3moKyLdom5KsySj3IGGIn_lO0Hb79ph6qKs048L0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NTgw/NjAtMTI0MTk1NDMz/NC5qcGVn.jpeg
-   1. Mash You Down - Serial Killaz [Key: A major (11B) | BPM: 176]
-   2. Live From Studio 1 - Serial Killaz [Key: C# minor (12A) | BPM: 176]
+   1. Mash You Down - Serial Killaz [Pos: A | Key: A major (11B) | BPM: 176]
+   2. Live From Studio 1 - Serial Killaz [Pos: AA | Key: C# minor (12A) | BPM: 176]
 
 === Original Nuttah / Nuttah V.I.P. -- UK Apachi & Shy FX ===
   ID: 149207
@@ -484,10 +484,10 @@
   Year: 2002
   Label: SOSL Recordings
   Art: https://i.discogs.com/H-4aKHfLLPHWK95n5kywO8zjfUtj92aDb-HW1IMvRhk/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTIw/Ny0xMzg2MDE5NzI0/LTQ2ODIuanBlZw.jpeg
-   1. Original Nuttah (Bass Mix) - U.K Apachi & Shy FX [Key: C# major (3B) | BPM: 113]
-   2. Original Nuttah (The Bollywood Mix) - U.K Apachi & Shy FX [Key: C# major (3B) | BPM: 113]
-   3. Nuttah V.I.P. (The Shy FX V.I.P. Bambaata Mix) - U.K Apachi & Shy FX [Key: C major (8B) | BPM: 132]
-   4. Nuttah V.I.P. (T-Power Hyperfunk Mix) - U.K Apachi & Shy FX [Key: C major (8B) | BPM: 132]
+   1. Original Nuttah (Bass Mix) - U.K Apachi & Shy FX [Pos: A1 | Key: C# major (3B) | BPM: 113]
+   2. Original Nuttah (The Bollywood Mix) - U.K Apachi & Shy FX [Pos: A2 | Key: C# major (3B) | BPM: 113]
+   3. Nuttah V.I.P. (The Shy FX V.I.P. Bambaata Mix) - U.K Apachi & Shy FX [Pos: AA1 | Key: C major (8B) | BPM: 132]
+   4. Nuttah V.I.P. (T-Power Hyperfunk Mix) - U.K Apachi & Shy FX [Pos: AA2 | Key: C major (8B) | BPM: 132]
 
 === Promised Land / Promised Land VIP -- Rebel MC & Serial Killaz ===
   ID: 2819690
@@ -496,8 +496,8 @@
   Year: 2011
   Label: Congo Natty
   Art: https://i.discogs.com/xZrr9vruhRQ4sR64Ns4HFG9aRwc3TA2jM495zNvZBmk/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTk2/OTAtMTU0MTcwNDY5/NS05NjI0LmpwZWc.jpeg
-   1. Promised Land - Rebel MC & Serial Killaz [Key: A# minor (3A) | BPM: 139]
-   2. Promised Land VIP - Rebel MC & Serial Killaz [Key: E minor (9A) | BPM: 103]
+   1. Promised Land - Rebel MC & Serial Killaz [Pos: A | Key: A# minor (3A) | BPM: 139]
+   2. Promised Land VIP - Rebel MC & Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 103]
 
 === In Your Eyes / Lovely Woman -- Serial Killaz ===
   ID: 5196030
@@ -506,8 +506,8 @@
   Year: 2013
   Label: Serial Killaz
   Art: https://i.discogs.com/yDyzGqhhl-1UAr2V_DRr9uBbYRLr6s9RCPzJWZXwPnw/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxOTYw/MzAtMTQwNzY5MTM2/Mi01ODA1LmpwZWc.jpeg
-   1. In Your Eyes - Serial Killaz [Key: C# major (3B) | BPM: 176]
-   2. Lovely Woman - Serial Killaz [Key: C# major (3B) | BPM: 176]
+   1. In Your Eyes - Serial Killaz [Pos: A | Key: C# major (3B) | BPM: 176]
+   2. Lovely Woman - Serial Killaz [Pos: AA | Key: C# major (3B) | BPM: 176]
 
 === Informer -- Run Tingz Cru Feat. Blackout Ja & K*Ners ===
   ID: 2835589
@@ -516,9 +516,9 @@
   Year: 2011
   Label: Run Tingz Recordings
   Art: https://i.discogs.com/o8bAPUU8R8BQG6OlNbEXSSkxvvYPtRzAl0N5fsKBiRc/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MzU1/ODktMTMwMzIyNDY2/NS5qcGVn.jpeg
-   1. Run Tingz Cru (Original) - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Key: A# minor (3A) | BPM: 130]
-   2. Aries (Jungle Mix) - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Key: C# major (3B) | BPM: 120]
-   3. DJ/Clash Toolz - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Key: B minor (10A) | BPM: 100]
+   1. Run Tingz Cru (Original) - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Pos: A1 | Key: A# minor (3A) | BPM: 130]
+   2. Aries (Jungle Mix) - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Pos: AA1 | Key: C# major (3B) | BPM: 120]
+   3. DJ/Clash Toolz - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Pos: AA2 | Key: B minor (10A) | BPM: 100]
 
 === Outta Space (Remixes) -- Cut & Run ===
   ID: 243575
@@ -527,8 +527,8 @@
   Year: 2004
   Label: Cut & Run
   Art: https://i.discogs.com/QhjtuNhQkdo3AowzEvW7qxmpBdKAEjiya-sNcQNnPnM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MzU3/NS0xNjUwODgxMjMy/LTc3NDkuanBlZw.jpeg
-   1. Outta Space (Booty Space Mix) - Cut & Run [Key: F minor (4A) | BPM: 120]
-   2. Outta Space (DnB Mix) - Cut & Run [Key: F minor (4A) | BPM: 120]
+   1. Outta Space (Booty Space Mix) - Cut & Run [Pos: A | Key: F minor (4A) | BPM: 120]
+   2. Outta Space (DnB Mix) - Cut & Run [Pos: AA | Key: F minor (4A) | BPM: 120]
 
 === Jungle Story -- UK Apachi Vs Spyda ===
   ID: 1488610
@@ -537,8 +537,8 @@
   Year: 2008
   Label: Sativa Records, Easy Records
   Art: https://i.discogs.com/itaUVGVj07S9DVmvLYY0zRvopOE7oa59d93_zcKeJJg/rs:fit/g:sm/q:90/h:151/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODg2/MTAtMTIyMzgxNTA0/My5qcGVn.jpeg
-   1. Nuttah Story - UK Apache Vs MC Spyda [Key: F minor (4A) | BPM: 180]
-   2. Back In The Day - UK Apache Vs MC Spyda [Key: D major (10B) | BPM: 119]
+   1. Nuttah Story - UK Apache Vs MC Spyda [Pos: A | Time: 5:59 | Key: F minor (4A) | BPM: 180]
+   2. Back In The Day - UK Apache Vs MC Spyda [Pos: AA | Time: 5:20 | Key: D major (10B) | BPM: 119]
 
 === Untitled -- The Ragga Twins ===
   ID: 2025258
@@ -546,11 +546,11 @@
   Style: Drum n Bass, Jungle
   Label: Solid Vinyl
   Art: https://i.discogs.com/XA6d0-Z3GHbL9e8WWKga7hpAO2tmQ2aGmadXBbb0YEc/rs:fit/g:sm/q:90/h:454/w:453/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjUy/NTgtMTM4MTkyNjY0/NS02MTA3LmpwZWc.jpeg
-   1. Jerilipy Lipy - Mr Quest & Flyin Doc [Key: B minor (10A) | BPM: 98]
-   2. One Time - TC IZ & Ed Solo [Key: E minor (9A) | BPM: 176]
-   3. Respect - Mr Quest [Key: F minor (4A) | BPM: 175]
-   4. Shut Em Down - TC IZ & Ed Solo [Key: A# minor (3A) | BPM: 176]
-   5. The Message - Mr Quest ft. Lady MC [Key: F major (7B) | BPM: 178]
+   1. Jerilipy Lipy - Mr Quest & Flyin Doc [Pos: A | Key: B minor (10A) | BPM: 98]
+   2. One Time - TC IZ & Ed Solo [Pos: B1 | Key: E minor (9A) | BPM: 176]
+   3. Respect - Mr Quest [Pos: B2 | Key: F minor (4A) | BPM: 175]
+   4. Shut Em Down - TC IZ & Ed Solo [Pos: C | Key: A# minor (3A) | BPM: 176]
+   5. The Message - Mr Quest ft. Lady MC [Pos: D | Key: F major (7B) | BPM: 178]
 
 === Walk & Skank / Put It On -- Serial Killaz ===
   ID: 2568011
@@ -559,8 +559,8 @@
   Year: 2010
   Label: Killa Dubz
   Art: https://i.discogs.com/P6Kf3Vpsl5xtRB8zKnmvkJq4kpEG2NyZJyKQkRVxmcI/rs:fit/g:sm/q:90/h:499/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Njgw/MTEtMTI5MjA2NDcz/NS5qcGVn.jpeg
-   1. Walk & Skank - Serial Killaz [Key: D major (10B) | BPM: 176]
-   2. Put It On - Serial Killaz [Key: C# major (3B) | BPM: 176]
+   1. Walk & Skank - Serial Killaz [Pos: A | Key: D major (10B) | BPM: 176]
+   2. Put It On - Serial Killaz [Pos: AA | Key: C# major (3B) | BPM: 176]
 
 === Private Plates - Volume 2 -- Aphrodite ===
   ID: 55037
