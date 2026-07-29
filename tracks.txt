@@ -1561,7 +1561,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/qo-10_h-afpumUvSYUnL_oW3tdKNNwxpK8W3exUAvxs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Njgw/NTgtMTMyNTU0Mjk5/Mi5qcGVn.jpeg
    1. I Need A Dollar - The Wildlife Collective [Key: F# minor (11A) | BPM: 95]
-   2. Bad Bwoy - The Wildlife Collective [Key: Bb major (6B) | BPM: 113]
+   2. Bad Bwoy - The Wildlife Collective [Key: G minor (6A) | BPM: 111]
 
 === Solid As A Rock -- Bone Crusher (2) vs. Sizzla ===
   ID: 4088694
@@ -1641,9 +1641,9 @@
   Year: 2018
   Label: Raggatek Power
   Art: https://i.discogs.com/NBUOxfO5Myokej3OukOv2r6ikQ9E6JddgWmrVutCPtU/rs:fit/g:sm/q:90/h:300/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTk3/OTQ4LTE1NzUzMTY2/ODMtNzYzOS5qcGVn.jpeg
-   1. Bongotek - Guigoo [Key: F major (7B) | BPM: 110]
+   1. Bongotek - Guigoo [Key: F minor (4A) | BPM: 122]
    2. The Youth Of Today - Vandal [Key: A# minor (3A) | BPM: 190]
-   3. Sensitek - Guigoo [Key: E minor (9A) | BPM: 125]
+   3. Sensitek - Guigoo [Key: D major (10B) | BPM: 127]
 
 === Melting Pot 17 Ragga Jungle Series Vol. 3 -- Mooncat (3), Fak Scratch, Kursiva ===
   ID: 15948164
@@ -1868,7 +1868,7 @@
    1. Raggatek Fayah Burn - Miltatek [Key: G# minor (1A) | BPM: 196]
    2. Inked Body - Sparks [Key: C# major (3B) | BPM: 100]
    3. Cocaine Amplifier - Paranoiak [Key: C# minor (12A) | BPM: 160]
-   4. Big Mouth - Ritchy VS Psylotribe [Key: C major (8B) | BPM: 152]
+   4. Big Mouth - Ritchy VS Psylotribe [Key: B major (1B) | BPM: 82]
 
 === Burning Marijuana / Lonely -- Candy ===
   ID: 1939637
@@ -2049,10 +2049,10 @@
   Art: https://i.discogs.com/wrRoEN6_ZZ8ml8delHt5vlxPfeetcMPgB7EJ_nsKJKA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjY1/ODkwLTE1MDIwMDM5/NDAtODkwNS5qcGVn.jpeg
    1. Light Tunnel - Nuts One [Key: C major (8B) | BPM: 173]
    2. Metamorphosis - Nuts One [Key: C# major (3B) | BPM: 174]
-   3. Bad Dream - Nuts One [Key: C# major (3B) | BPM: 145]
+   3. Bad Dream - Nuts One [Key: A# minor (3A) | BPM: 112]
    4. Angel Dust - Nuts One [Key: D major (10B) | BPM: 170]
    5. The Crypt - Nuts One [Key: B major (1B) | BPM: 176]
-   6. Ghost Yard - Nuts One [Key: C major (8B) | BPM: 92]
+   6. Ghost Yard - Nuts One [Key: A# minor (3A) | BPM: 94]
    7. Short-Circuit - Nuts One [Key: C# major (3B) | BPM: 168]
    8. Capricorn - Nuts One [Key: G# minor (1A) | BPM: 97]
    9. Bubble Gum - Nuts One [Key: F# minor (11A) | BPM: 120]
@@ -2113,12 +2113,12 @@
   Label: Scoops
   Art: https://i.discogs.com/BjGvfXORA3Z87Zv1_fFLPKRyQL6IKg2gQLGhL-4yJyc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTEw/NzczLTE1NDQwOTg3/NjItNTQwNy5qcGVn.jpeg
    1. All Sisters Unite - Nia Songbird [Key: G major (9B) | BPM: 120]
-   2. Each One Teach One - Nish Wadada [Key: A# minor (3A) | BPM: 140]
+   2. Each One Teach One - Nish Wadada [Key: G major (9B) | BPM: 120]
    3. Rise Up - Boney L [Key: F major (7B) | BPM: 98]
    4. One Dub Nation - Vanya O [Key: C# minor (12A) | BPM: 110]
    5. Ghetto Yout Nah Give Up - Trilla Jenna [Key: B major (1B) | BPM: 115]
-   6. More Love - Saralène [Key: A minor (8A) | BPM: 141]
-   7. Peaceful Warriors - Sis I-Leen [Key: C major (8B) | BPM: 172]
+   6. More Love - Saralène [Key: Bb major (6B) | BPM: 85]
+   7. Peaceful Warriors - Sis I-Leen [Key: C# major (3B) | BPM: 90]
    8. Woman Is Divine - Nãnci Correia [Key: C# minor (12A) | BPM: 98]
 
 === Love Over Gold -- Dire Straits ===
@@ -2174,7 +2174,7 @@
   Year: 2020
   Label: Scoops
   Art: https://i.discogs.com/-_v3-r5xrO0XoxJHV5w2eU3E1jbomV29QpyUeBchrWM/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MzM5/ODM5LTE2MDc1NTUy/MDEtNjEzNC5qcGVn.jpeg
-   1. Searching For Jah - Vibronics Feat. Michael Prophet [Key: B minor (10A) | BPM: 119]
+   1. Searching For Jah - Vibronics Feat. Michael Prophet [Key: D# minor (2A) | BPM: 139]
    2. Searching For Jah (Version) - Vibronics [Key: Eb major (5B) | BPM: 139]
 
 === Tralalalala /  Dirty Babylon -- Jah Marnyah, Vibronics ===
