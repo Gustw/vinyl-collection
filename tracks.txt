@@ -348,8 +348,8 @@
   Year: 1997
   Label: Dope Dragon
   Art: https://i.discogs.com/fr5_tdi_8AghaXWiBGa7R7yIdt6_lc5OHguh-EC3Zhg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MTk2/LTExNjg1ODUwODIu/anBlZw.jpeg
-   1. Rukus - Gang Related [Key: A# minor (3A) | BPM: 132]
-   2. Vibration - Gang Related [Key: A# minor (3A) | BPM: 132]
+   1. Rukus - Gang Related [Pos: A | Key: A# minor (3A) | BPM: 132]
+   2. Vibration - Gang Related [Pos: B | Key: A# minor (3A) | BPM: 132]
 
 === Warning / My Sound -- Gunmen ===
   ID: 10089438
@@ -358,8 +358,8 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/X16WObwlLadiDm1dSICdkxbk18zSyQ2VJUwE4rMq4j8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDg5/NDM4LTE0OTE0OTMx/NDEtODkwNy5qcGVn.jpeg
-   1. Warning - Gunmen [Key: D major (10B) | BPM: 175]
-   2. My Sound - Gunmen [Key: B major (1B) | BPM: 175]
+   1. Warning - Gunmen [Pos: A | Time: 4:41 | Key: D major (10B) | BPM: 175]
+   2. My Sound - Gunmen [Pos: B | Time: 4:32 | Key: B major (1B) | BPM: 175]
 
 === The Sound / Messed Up -- Gunmen ===
   ID: 11116315
@@ -368,8 +368,8 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/AMlMRvAfBW0zEvKVbNhvb2kAPnRdc-3OUKaAD7q_9sA/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE2/MzE1LTE1MTAzMDE1/OTktODc0Ny5qcGVn.jpeg
-   1. The Sound - Gunmen [Key: D major (10B) | BPM: 175]
-   2. Messed Up - Gunmen [Key: B minor (10A) | BPM: 174]
+   1. The Sound - Gunmen [Pos: A | Time: 4:21 | Key: D major (10B) | BPM: 175]
+   2. Messed Up - Gunmen [Pos: B | Time: 4:30 | Key: B minor (10A) | BPM: 174]
 
 === Another Hit Song / Girls -- Gunmen ===
   ID: 9974991
@@ -378,8 +378,8 @@
   Year: 2016
   Label: Gunmen Music
   Art: https://i.discogs.com/N01o9p54zydl-ZkYn4T-vRnNvXpQah1BgOOsQWSvM_o/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5NzQ5/OTEtMTQ4OTUxMjMz/MC0zNjQ2LmpwZWc.jpeg
-   1. Another Hit Song - Gunmen [Key: G major (9B) | BPM: 176]
-   2. Girls - Gunmen [Key: C# major (3B) | BPM: 176]
+   1. Another Hit Song - Gunmen [Pos: A | Key: G major (9B) | BPM: 176]
+   2. Girls - Gunmen [Pos: B | Key: C# major (3B) | BPM: 176]
 
 === Get Mash Up -- Pixel ===
   ID: 9880413
@@ -388,8 +388,8 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/Vb8NuoXrbaBlsIZ8rYgByqLVKY7ry6_ZLKxQcbeCQU0/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4ODA0/MTMtMTQ4Nzg4MzEy/OC04NjI1LmpwZWc.jpeg
-   1. Get Mash Up - Pixel [Key: G major (9B) | BPM: 180]
-   2. Armed & Dangerous - Pixel [Key: C# major (3B) | BPM: 188]
+   1. Get Mash Up - Pixel [Pos: A | Key: G major (9B) | BPM: 180]
+   2. Armed & Dangerous - Pixel [Pos: B | Key: C# major (3B) | BPM: 188]
 
 === Rastafari Army / Rich Man Dub -- Unknown Artist ===
   ID: 10351290
@@ -398,8 +398,8 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/-iMblEZ9XofDTG0POTLs5AeB7nLfakRGGNKFF7Dbyj0/rs:fit/g:sm/q:90/h:289/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzUx/MjkwLTE0OTU4MTcx/ODAtODkyMi5qcGVn.jpeg
-   1. Rastafari Army - Unknown Artist [Key: B major (1B) | BPM: 128]
-   2. Rich Man Dub - Unknown Artist [Key: G# minor (1A) | BPM: 120]
+   1. Rastafari Army - Unknown Artist [Pos: A | Key: B major (1B) | BPM: 128]
+   2. Rich Man Dub - Unknown Artist [Pos: B | Key: G# minor (1A) | BPM: 120]
 
 === Talk Too Much E.P. -- Vinyl Junkie & Sanxion Featuring Bushman ===
   ID: 8296878
@@ -408,9 +408,9 @@
   Year: 2016
   Label: Asbo Records
   Art: https://i.discogs.com/X9_OnA8XTWnTyushwiEwlGgo81b-QhS-3_4sIaLkfMA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyOTY4/NzgtMTQ1ODkyNDg1/OC04MjAzLmpwZWc.jpeg
-   1. Talk Too Much - Vinyl Junkie & Sanxion Featuring Bushman [Key: G major (9B) | BPM: 121]
-   2. Talk Too Much (Dj Westy Remix) - Vinyl Junkie & Sanxion Featuring Bushman [Key: A# minor (3A) | BPM: 125]
-   3. Talk Too Much (140 Mix) - Vinyl Junkie & Sanxion Featuring Bushman [Key: G major (9B) | BPM: 121]
+   1. Talk Too Much - Vinyl Junkie & Sanxion Featuring Bushman [Pos: A1 | Key: G major (9B) | BPM: 121]
+   2. Talk Too Much (Dj Westy Remix) - Vinyl Junkie & Sanxion Featuring Bushman [Pos: B1 | Key: A# minor (3A) | BPM: 125]
+   3. Talk Too Much (140 Mix) - Vinyl Junkie & Sanxion Featuring Bushman [Pos: B2 | Key: G major (9B) | BPM: 121]
 
 === DiGi-Tal Dub -- Conscious Sounds ===
   ID: 8796280
@@ -419,16 +419,16 @@
   Year: 2016
   Label: Digi-Tal
   Art: https://i.discogs.com/1HLiFlH-uKvrM9YPfHdgG5QsaoqLDmKTeY-1fjStibo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3OTYy/ODAtMTQ2ODk0Njcx/Mi0xMjAwLmpwZWc.jpeg
-   1. Devils Payroll - Conscious Sounds [Key: C major (8B) | BPM: 78]
-   2. In Ya Area - Conscious Sounds [Key: Bb major (6B) | BPM: 143]
-   3. Dub Next Door - Conscious Sounds [Key: G major (9B) | BPM: 169]
-   4. Hard Road - Conscious Sounds [Key: A# minor (3A) | BPM: 127]
-   5. Mankind Gone Crazy - Conscious Sounds [Key: G major (9B) | BPM: 93]
-   6. Worries - Conscious Sounds [Key: Bb major (6B) | BPM: 90]
-   7. Run Down Money - Conscious Sounds [Key: E minor (9A) | BPM: 79]
-   8. In The Line - Conscious Sounds [Key: Bb major (6B) | BPM: 90]
-   9. Energy Dub - Conscious Sounds [Key: B major (1B) | BPM: 168]
-  10. Danger Dub - Conscious Sounds [Key: C# major (3B) | BPM: 180]
+   1. Devils Payroll - Conscious Sounds [Pos: A1 | Key: C major (8B) | BPM: 78]
+   2. In Ya Area - Conscious Sounds [Pos: A2 | Key: Bb major (6B) | BPM: 143]
+   3. Dub Next Door - Conscious Sounds [Pos: A3 | Key: G major (9B) | BPM: 169]
+   4. Hard Road - Conscious Sounds [Pos: A4 | Key: A# minor (3A) | BPM: 127]
+   5. Mankind Gone Crazy - Conscious Sounds [Pos: A5 | Key: G major (9B) | BPM: 93]
+   6. Worries - Conscious Sounds [Pos: B1 | Key: Bb major (6B) | BPM: 90]
+   7. Run Down Money - Conscious Sounds [Pos: B2 | Key: E minor (9A) | BPM: 79]
+   8. In The Line - Conscious Sounds [Pos: B3 | Key: Bb major (6B) | BPM: 90]
+   9. Energy Dub - Conscious Sounds [Pos: B4 | Key: B major (1B) | BPM: 168]
+  10. Danger Dub - Conscious Sounds [Pos: B5 | Key: C# major (3B) | BPM: 180]
 
 === Pave The Way -- Pablo Moses ===
   ID: 14447677
@@ -437,15 +437,15 @@
   Year: 2019
   Label: Music On Vinyl
   Art: https://i.discogs.com/HC0kBNtCwuT1miYsmjCbZD-2aW-afqoBcfdjDmS75b8/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDQ3/Njc3LTE3NTc3Mjc5/NjgtMTYyMi5qcGVn.jpeg
-   1. Proverbs Extractions - Pablo Moses [Key: C major (8B) | BPM: 139]
-   2. It's A Trick - Pablo Moses [Key: G major (9B) | BPM: 76]
-   3. Pave The Way - Pablo Moses [Key: Eb major (5B) | BPM: 158]
-   4. Dig On - Pablo Moses [Key: A minor (8A) | BPM: 130]
-   5. Africa Is For Me - Pablo Moses [Key: G major (9B) | BPM: 84]
-   6. A Step Before Hell - Pablo Moses [Key: F# minor (11A) | BPM: 153]
-   7. Last Straw - Pablo Moses [Key: D minor (7A) | BPM: 77]
-   8. I See It Everyday - Pablo Moses [Key: F# major (2B) | BPM: 130]
-   9. Sister - Pablo Moses [Key: E major (12B) | BPM: 113]
+   1. Proverbs Extractions - Pablo Moses [Pos: A1 | Time: 4:46 | Key: C major (8B) | BPM: 139]
+   2. It's A Trick - Pablo Moses [Pos: A2 | Time: 4:49 | Key: G major (9B) | BPM: 76]
+   3. Pave The Way - Pablo Moses [Pos: A3 | Time: 4:29 | Key: Eb major (5B) | BPM: 158]
+   4. Dig On - Pablo Moses [Pos: A4 | Time: 5:47 | Key: A minor (8A) | BPM: 130]
+   5. Africa Is For Me - Pablo Moses [Pos: B1 | Time: 4:09 | Key: G major (9B) | BPM: 84]
+   6. A Step Before Hell - Pablo Moses [Pos: B2 | Time: 3:27 | Key: F# minor (11A) | BPM: 153]
+   7. Last Straw - Pablo Moses [Pos: B3 | Time: 3:47 | Key: D minor (7A) | BPM: 77]
+   8. I See It Everyday - Pablo Moses [Pos: B4 | Time: 3:30 | Key: F# major (2B) | BPM: 130]
+   9. Sister - Pablo Moses [Pos: B5 | Time: 5:06 | Key: E major (12B) | BPM: 113]
 
 === Bang Bang -- Soundclash ===
   ID: 2559435
@@ -454,8 +454,8 @@
   Year: 2010
   Label: XS Records
   Art: https://i.discogs.com/KZn3S93imvLExnKgJh4cU78aD0Ae_-d3gZjG-Vqzk0w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NTk0/MzUtMTMzOTQwNzIw/MC0yNTg4LmpwZWc.jpeg
-   1. Bang Bang (Subzero Remix) - Soundclash [Key: E minor (9A) | BPM: 120]
-   2. Bang Bang (Original Mix) - Soundclash [Key: E minor (9A) | BPM: 206]
+   1. Bang Bang (Subzero Remix) - Soundclash [Pos: A | Key: E minor (9A) | BPM: 120]
+   2. Bang Bang (Original Mix) - Soundclash [Pos: AA | Key: E minor (9A) | BPM: 206]
 
 === Gundelero -- Chopstick Dubplate ===
   ID: 2268116
