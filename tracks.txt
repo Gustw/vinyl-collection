@@ -845,7 +845,7 @@
   Year: 2015
   Label: Rasta Vibez
   Art: https://i.discogs.com/gpWg-sNJn3RvYyUC0SQHhwspDWCxZmAA111U2lvwwh0/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3Mzc2/MDctMTY3MTU1OTEw/My00NDI3LmpwZWc.jpeg
-   1. Legalize it! - Pixel [Key: C major (8B) | BPM: 145]
+   1. Legalize it! - Pixel [Key: B major (1B) | BPM: 175]
    2. Herbalist - Mystic Pulse [Key: E minor (9A) | BPM: 175]
 
 === Fussin' & Fightin' / Don't Fool Rasta -- Pixel (8) / Mystic Pulse ===
@@ -1056,7 +1056,7 @@
   Year: 2009
   Label: Royal Crown
   Art: https://i.discogs.com/b_tuVOc2SrsrgdO34bz31qbmWm5qyREEL_WPzdHCHMo/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTU5/OTgtMTI2MDAxNTgz/NS5wbmc.jpeg
-   1. Lost And Found - Barrington Levy & RCola [Key: G major (9B) | BPM: 170]
+   1. Lost And Found - Barrington Levy & RCola [Key: A# minor (3A) | BPM: 170]
    2. Warn Ya - RCola [Key: A major (11B) | BPM: 174]
 
 === Step Express 09 -- Various ===
@@ -1228,7 +1228,7 @@
    5. Metal On Metal - Kraftwerk [Key: A# minor (3A) | BPM: 107]
    6. Abzug - Kraftwerk [Key: C# major (3B) | BPM: 107]
    7. Franz Schubert - Kraftwerk [Key: D major (10B) | BPM: 112]
-   8. Endless Endless - Kraftwerk [Key: B major (1B) | BPM: 110]
+   8. Endless Endless - Kraftwerk [Key: G major (9B) | BPM: 111]
 
 === Enter The Wu-Tang (36 Chambers) -- Wu-Tang Clan ===
   ID: 12647200
