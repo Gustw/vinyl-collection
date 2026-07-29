@@ -117,20 +117,20 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/JUib6Gr_PX4nBy2NdleGpIT9adpmo3edg-R9UUCkNq0/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjE0/MzMtMTI5MTgyNTk5/NC5qcGVn.jpeg
-   1. Woman Dub - FX909 [Key: F minor (4A) | BPM: 127]
-   2. Soundboy - Lord Bitum & Metod MC [Key: G major (9B) | BPM: 130]
-   3. Promise Land - Alix Perez & Youthman [Key: E minor (9A) | BPM: 112]
-   4. Dub Riddim - 2D [Key: F# major (2B) | BPM: 147]
+   1. Woman Dub - FX909 [Pos: A1 | Key: F minor (4A) | BPM: 127]
+   2. Soundboy - Lord Bitum & Metod MC [Pos: A2 | Key: G major (9B) | BPM: 130]
+   3. Promise Land - Alix Perez & Youthman [Pos: B1 | Key: E minor (9A) | BPM: 112]
+   4. Dub Riddim - 2D [Pos: B2 | Key: F# major (2B) | BPM: 147]
 
 === World A Jungle Music -- Pixel ===
   ID: 9184651
   Genre: Electronic
   Style: Drum n Bass, Jungle
-  Year: 2022
+  Year: 2014
   Label: Rasta Vibez
-  Art: https://i.discogs.com/XloaBUnRHCgd-rcl4Z1FgYmssTkTcR6QWZQON2FrMjU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNDI3/NTYwLTE2NTQwOTIz/ODYtNTkwMS5qcGVn.jpeg
-   1. Ice Cream Sound - Pixel [Key: C major (8B) | BPM: 126]
-   2. World A Jungle Music - Pixel [Key: D major (10B) | BPM: 175]
+  Art: https://i.discogs.com/8twJ0Cmewwfjb5XMCs2wqbaVJ2eEMN5ig-2tu_2A85c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxODQ2/NTEtMTQ3NjI2NTEw/MS01MTUyLmpwZWc.jpeg
+   1. Ice Cream Sound - Pixel [Pos: A | Key: C major (8B) | BPM: 126]
+   2. World A Jungle Music - Pixel [Pos: B | Key: D major (10B) | BPM: 175]
 
 === Call Di Doctor / Running Over -- Mystic Pulse / Gunmen ===
   ID: 8770838
@@ -139,8 +139,8 @@
   Year: 2016
   Label: Rasta Vibez
   Art: https://i.discogs.com/ad5bOsUFa5aQzFmtYurS9bM7IdpwQTsCeGnM3wiYwf8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3NzA4/MzgtMTQ2ODQzOTk3/Mi04NDkzLmpwZWc.jpeg
-   1. Call Di Doctor - Mystic Pulse [Key: D major (10B) | BPM: 176]
-   2. Running Over - Gunmen [Key: C# major (3B) | BPM: 88]
+   1. Call Di Doctor - Mystic Pulse [Pos: A | Key: D major (10B) | BPM: 176]
+   2. Running Over - Gunmen [Pos: B | Key: C# major (3B) | BPM: 88]
 
 === Lineage Of The Sun -- Jahyu ===
   ID: 11888391
@@ -149,18 +149,18 @@
   Year: 2018
   Label: Steppas
   Art: https://i.discogs.com/nL25y3WNh55ssy3HlckdsK1GUFcpLmHJLksxte4l8pM/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODg4/MzkxLTE1MjQxNjQ2/MTctNTExNi5qcGVn.jpeg
-   1. Inner Truth - Jahyu [Key: A# minor (3A) | BPM: 130]
-   2. Shamanic Dance - Jahyu [Key: E minor (9A) | BPM: 140]
-   3. Legacy - Jahyu [Key: C# major (3B) | BPM: 140]
-   4. Humble Minded - Jahyu [Key: A# minor (3A) | BPM: 130]
-   5. Hallasan - Jahyu [Key: A minor (8A) | BPM: 140]
-   6. Three Legged Crow - Jahyu [Key: D major (10B) | BPM: 140]
-   7. Relief For The Poor - Jahyu [Key: E minor (9A) | BPM: 140]
-   8. Tree Of Life - Jahyu [Key: B minor (10A) | BPM: 140]
-   9. Lion Paw - Jahyu [Key: D major (10B) | BPM: 140]
-  10. Outlaw Basterds - Jahyu [Key: D major (10B) | BPM: 140]
-  11. Tal Joom - Jahyu [Key: E minor (9A) | BPM: 140]
-  12. Reincarnation Dub - Jahyu [Key: A minor (8A) | BPM: 140]
+   1. Inner Truth - Jahyu [Pos: A1 | Time: 4:47 | Key: A# minor (3A) | BPM: 130]
+   2. Shamanic Dance - Jahyu [Pos: A2 | Time: 4:42 | Key: E minor (9A) | BPM: 140]
+   3. Legacy - Jahyu [Pos: A3 | Time: 4:53 | Key: C# major (3B) | BPM: 140]
+   4. Humble Minded - Jahyu [Pos: B1 | Time: 5:04 | Key: A# minor (3A) | BPM: 130]
+   5. Hallasan - Jahyu [Pos: B2 | Time: 4:41 | Key: A minor (8A) | BPM: 140]
+   6. Three Legged Crow - Jahyu [Pos: B3 | Time: 5:06 | Key: D major (10B) | BPM: 140]
+   7. Relief For The Poor - Jahyu [Pos: C1 | Time: 4:59 | Key: E minor (9A) | BPM: 140]
+   8. Tree Of Life - Jahyu [Pos: C2 | Time: 4:41 | Key: B minor (10A) | BPM: 140]
+   9. Lion Paw - Jahyu [Pos: C3 | Time: 4:39 | Key: D major (10B) | BPM: 140]
+  10. Outlaw Basterds - Jahyu [Pos: D1 | Time: 4:41 | Key: D major (10B) | BPM: 140]
+  11. Tal Joom - Jahyu [Pos: D2 | Time: 4:42 | Key: E minor (9A) | BPM: 140]
+  12. Reincarnation Dub - Jahyu [Pos: D3 | Time: 4:20 | Key: A minor (8A) | BPM: 140]
 
 === Kitachi In Dubwise -- Kitachi Meet Iration Steppas ===
   ID: 27064047
@@ -169,9 +169,9 @@
   Year: 2023
   Label: Dubquake Records
   Art: https://i.discogs.com/YwvWOg1ZAJtW_SSFo2aVSwc-nYTZmRqCw_vMIU0wiKQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MDY0/MDQ3LTE2ODM5Nzcy/NDQtMjg5Ny5qcGVn.jpeg
-   1. Scratch (Kitachi In Dubwise) - Kitachi Meet Iration Steppas [Key: A major (11B) | BPM: 120]
-   2. Scratch (Fling Foot Mix) - Kitachi Meet Iration Steppas [Key: D# minor (2A) | BPM: 94]
-   3. Scratch (Raw Stretch Foot Mix) - Kitachi Meet Iration Steppas [Key: A minor (8A) | BPM: 147]
+   1. Scratch (Kitachi In Dubwise) - Kitachi Meet Iration Steppas [Pos: A1 | Time: 5:29 | Key: A major (11B) | BPM: 120]
+   2. Scratch (Fling Foot Mix) - Kitachi Meet Iration Steppas [Pos: A2 | Time: 4:40 | Key: D# minor (2A) | BPM: 94]
+   3. Scratch (Raw Stretch Foot Mix) - Kitachi Meet Iration Steppas [Pos: B1 | Time: 4:33 | Key: A minor (8A) | BPM: 147]
 
 === Let H.I.M Arise / Emotion -- The Shanti-Ites ===
   ID: 31297589
@@ -180,10 +180,10 @@
   Year: 2024
   Label: Aba-Shanti-I
   Art: https://i.discogs.com/dTxpkwhChfBrWSuPZSAthPfHNlZ6USmIN3jP0zCCIGc/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMjk3/NTg5LTE3MjQ4NDMz/NzUtODc5Ny5qcGVn.jpeg
-   1. Let H.I.M Arise........ - The Shanti-Ites [Key: Bb major (6B) | BPM: 146]
-   2. Arise Dub - The Shanti-Ites [Key: A# minor (3A) | BPM: 150]
-   3. Emotion - The Shanti-Ites [Key: A# minor (3A) | BPM: 93]
-   4. Emotion Dub - The Shanti-Ites [Key: A# minor (3A) | BPM: 93]
+   1. Let H.I.M Arise........ - The Shanti-Ites [Pos: A1 | Key: Bb major (6B) | BPM: 146]
+   2. Arise Dub - The Shanti-Ites [Pos: A2 | Key: A# minor (3A) | BPM: 150]
+   3. Emotion - The Shanti-Ites [Pos: B1 | Key: A# minor (3A) | BPM: 93]
+   4. Emotion Dub - The Shanti-Ites [Pos: B2 | Key: A# minor (3A) | BPM: 93]
 
 === Candid -- Whitney ===
   ID: 15749653
@@ -192,16 +192,16 @@
   Year: 2020
   Label: Secretly Canadian
   Art: https://i.discogs.com/1UoAgz_NTai3XVqq8NkLadCypqXiIvsb2TYWCWQQor0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NzQ5/NjUzLTE1OTcwODkz/NjQtNjczMS5qcGVn.jpeg
-   1. Bank Head - Whitney [Key: E minor (9A) | BPM: 127]
-   2. A.M. AM - Whitney [Key: E major (12B) | BPM: 121]
-   3. Take Me Home, Country Roads - Whitney [Key: D major (10B) | BPM: 80]
-   4. High On A Rocky Ledge - Whitney [Key: F# major (2B) | BPM: 99]
-   5. Something Happen - Whitney [Key: B minor (10A) | BPM: 84]
-   6. Strange Overtones - Whitney [Key: D major (10B) | BPM: 110]
-   7. Hammond Song - Whitney [Key: Eb major (5B) | BPM: 152]
-   8. Crying, Laughing, Loving, Lying - Whitney [Key: G major (9B) | BPM: 100]
-   9. Rain - Whitney [Key: E minor (9A) | BPM: 79]
-  10. Rainbows & Ridges - Whitney [Key: Eb major (5B) | BPM: 95]
+   1. Bank Head - Whitney [Pos: 1 | Key: E minor (9A) | BPM: 127]
+   2. A.M. AM - Whitney [Pos: 2 | Key: E major (12B) | BPM: 121]
+   3. Take Me Home, Country Roads - Whitney [Pos: 3 | Time: 2:45 | Key: D major (10B) | BPM: 80]
+   4. High On A Rocky Ledge - Whitney [Pos: 4 | Key: F# major (2B) | BPM: 99]
+   5. Something Happen - Whitney [Pos: 5 | Key: B minor (10A) | BPM: 84]
+   6. Strange Overtones - Whitney [Pos: 6 | Time: 3:26 | Key: D major (10B) | BPM: 110]
+   7. Hammond Song - Whitney [Pos: 7 | Time: 5:00 | Key: Eb major (5B) | BPM: 152]
+   8. Crying, Laughing, Loving, Lying - Whitney [Pos: 8 | Key: G major (9B) | BPM: 100]
+   9. Rain - Whitney [Pos: 9 | Time: 3:48 | Key: E minor (9A) | BPM: 79]
+  10. Rainbows & Ridges - Whitney [Pos: 10 | Key: Eb major (5B) | BPM: 95]
 
 === Ghost Town / Angel City -- Krumble ===
   ID: 1163978
@@ -210,8 +210,8 @@
   Year: 2007
   Label: Znootpoch
   Art: https://i.discogs.com/Z91Ks9fP31dNr2TPbqWiBeXZ-ZlVbzv-0ZseZAUaaNQ/rs:fit/g:sm/q:90/h:495/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjM5/NzgtMTIwMDUxOTA0/NS5qcGVn.jpeg
-   1. Ghost Town - Krumble [Key: C# major (3B) | BPM: 92]
-   2. Angel City - Krumble [Key: A minor (8A) | BPM: 180]
+   1. Ghost Town - Krumble [Pos: A | Key: C# major (3B) | BPM: 92]
+   2. Angel City - Krumble [Pos: B | Key: A minor (8A) | BPM: 180]
 
 === Burning Babylon / Empty Words -- Alix Perez ===
   ID: 19845166
@@ -220,8 +220,8 @@
   Year: 2021
   Label: 1985 Music
   Art: https://i.discogs.com/rEIewHJG3po1VAhwXjj3gr_k_EH9D0qEVSdzxQAfWY8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5ODQ1/MTY2LTE2MzM3Njgz/NzAtMjk2Mi5qcGVn.jpeg
-   1. Burning Babylon - Alix Perez [Key: B major (1B) | BPM: 175]
-   2. Empty Words - Alix Perez [Key: C# major (3B) | BPM: 87]
+   1. Burning Babylon - Alix Perez [Pos: A | Key: B major (1B) | BPM: 175]
+   2. Empty Words - Alix Perez [Pos: B | Key: C# major (3B) | BPM: 87]
 
 === Mr. Majestic / The Other Side -- Calibre & High Contrast ===
   ID: 19351834
@@ -230,8 +230,8 @@
   Year: 2017
   Label: Signature Records
   Art: https://i.discogs.com/BnkXOgXDH9nfpKArghqW9w_Wa0_zuHZztg75gdG6dok/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MzUx/ODM0LTE2MjUyMjg1/MTItNTI0My5qcGVn.jpeg
-   1. Mr. Majestic - Calibre & High Contrast [Key: E minor (9A) | BPM: 173]
-   2. The Other Side - Calibre & High Contrast [Key: C# major (3B) | BPM: 173]
+   1. Mr. Majestic - Calibre & High Contrast [Pos: A | Key: E minor (9A) | BPM: 173]
+   2. The Other Side - Calibre & High Contrast [Pos: B | Key: C# major (3B) | BPM: 173]
 
 === Slow Motion -- Demolition Man & Krak In Dub ===
   ID: 2037635
