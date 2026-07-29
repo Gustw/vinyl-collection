@@ -339,7 +339,7 @@
   Label: Urban Takeover
   Art: https://i.discogs.com/8xPyc_StApef1z8EbXs44lKyyMfWOELD9mMmhAoeRSQ/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTY2/LTE1OTcyNjM3MTQt/NzYyMi5qcGVn.jpeg
    1. Bad Ass ! - Mickey Finn And Aphrodite [Key: C# major (3B) | BPM: 84]
-   2. Drop Top Caddy - Mickey Finn And Aphrodite [Key: A# minor (3A) | BPM: 120]
+   2. Drop Top Caddy - Mickey Finn And Aphrodite [Key: A major (11B) | BPM: 89]
 
 === Rukus / Vibration -- Gang Related ===
   ID: 65196
@@ -398,7 +398,7 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/-iMblEZ9XofDTG0POTLs5AeB7nLfakRGGNKFF7Dbyj0/rs:fit/g:sm/q:90/h:289/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzUx/MjkwLTE0OTU4MTcx/ODAtODkyMi5qcGVn.jpeg
-   1. Rastafari Army - Unknown Artist [Key: B minor (10A) | BPM: 97]
+   1. Rastafari Army - Unknown Artist [Key: B major (1B) | BPM: 128]
    2. Rich Man Dub - Unknown Artist [Key: G# minor (1A) | BPM: 120]
 
 === Talk Too Much E.P. -- Vinyl Junkie & Sanxion Featuring Bushman ===
@@ -465,7 +465,7 @@
   Label: Chopstick Dubplate
   Art: https://i.discogs.com/0-9uu47LSJDxG3K68CHnnjH7xHyZtaF1hJBWolaw9Qk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjgx/MTYtMTYyMzMwMjI5/MS05Mzg2LmpwZWc.jpeg
    1. Gundelero - Chopstick Dubplate [Key: D major (10B) | BPM: 88]
-   2. Chop Gundelero Riddim - Chopstick Dubplate [Key: A# minor (3A) | BPM: 175]
+   2. Chop Gundelero Riddim - Chopstick Dubplate [Key: D major (10B) | BPM: 88]
 
 === Mash You Down / Live From Studio 1 -- Serial Killaz ===
   ID: 1758060
@@ -630,7 +630,7 @@
   Label: Roots Records
   Art: https://i.discogs.com/mkWmceeLgIZ-ik3RNe_7nmAhE2vtjCa8zEa078Fnhv4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0OTI0/MTUtMTI4Njk5MjM0/NC5qcGVn.jpeg
    1. Ganja Farmer - Aries / Murda [Key: G minor (6A) | BPM: 95]
-   2. One Of The Days - Aries / Murda [Key: G major (9B) | BPM: 93]
+   2. One Of The Days - Aries / Murda [Key: Ab major (4B) | BPM: 176]
 
 === Jerlipy Lip / Every Sound -- The Ragga Twins ===
   ID: 203067
@@ -640,7 +640,7 @@
   Label: Solid Vinyl
   Art: https://i.discogs.com/emHBByyL1-HFgg1qTy0_zGU5jExxt9Ky1B2wgXDIC6o/rs:fit/g:sm/q:90/h:300/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzA2/Ny0xMTQxMzIyOTQz/LmdpZg.jpeg
    1. Jerlipy Lip (Juggling Mix) - The Ragga Twins [Key: G major (9B) | BPM: 174]
-   2. Every Sound - The Ragga Twins [Key: G minor (6A) | BPM: 94]
+   2. Every Sound - The Ragga Twins [Key: B major (1B) | BPM: 140]
 
 === Prophet Rides Again -- Capleton ===
   ID: 1113407
@@ -748,7 +748,7 @@
   Year: 2007
   Label: Soul
   Art: https://i.discogs.com/cyT6UQhDHxUxjH3HcJdJkdewO7qYhJMDF1g0jVBI2bg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5MjQ3/Ni0xMTg2ODY0MTg0/LmpwZWc.jpeg
-   1. Mr. Mista - Camo & Khan [Key: C# minor (12A) | BPM: 132]
+   1. Mr. Mista - Camo & Khan [Key: B major (1B) | BPM: 178]
    2. Lion Youth - Dancing Djedi [Key: C# minor (12A) | BPM: 130]
 
 === Offbeat Division 3 -- Mikkim ===
@@ -886,7 +886,7 @@
   Label: Shogun Audio
   Art: https://i.discogs.com/8O_zncBT57h7fIxarJJVdJ9KJQbc37pUSVMyVt7CQM4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzOTI2/NjktMTM0NjI1NDA1/Mi02Njg2LmpwZWc.jpeg
    1. Led Astray - DJ Friction [Key: G minor (6A) | BPM: 71]
-   2. Stand Up (Sigma Rmx) - DJ Friction Vs Camo & Krooked Ft Dynamite MC [Key: C# major (3B) | BPM: 110]
+   2. Stand Up (Sigma Rmx) - DJ Friction Vs Camo & Krooked Ft Dynamite MC [Key: C# major (3B) | BPM: 175]
 
 === Heads High / Wings Of The Morning -- Heretic / Murder Inc. ===
   ID: 14342
@@ -979,7 +979,7 @@
   Label: Rockers Dubs
   Art: https://i.discogs.com/SigawlntkYEVXuOMEMHvRKZ68Awsi0g-BmAyDY8iC7s/rs:fit/g:sm/q:90/h:594/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0MTY3/Ni0xMzQ4MTQ1MDEy/LTYxNTUuanBlZw.jpeg
    1. Sound Clash (Mix 1) - Skoobz [Key: G major (9B) | BPM: 180]
-   2. Sound Clash (Mix 2) - Skoobz [Key: C# major (3B) | BPM: 98]
+   2. Sound Clash (Mix 2) - Skoobz [Key: G major (9B) | BPM: 180]
 
 === Jahoviah Ina Dub / Only You -- Terry Tee ===
   ID: 1366545
@@ -988,7 +988,7 @@
   Year: 2008
   Label: Knowledge & Wisdom Records
   Art: https://i.discogs.com/2G3r8KWbmD9OYb03PkEeVMd5Y5ydlWLnhfy566uDjnU/rs:fit/g:sm/q:90/h:288/w:288/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjY1/NDUtMTI3MjU4MDQ4/Ny5qcGVn.jpeg
-   1. Jahoviah Ina Dub - Terry T [Key: E minor (9A) | BPM: 98]
+   1. Jahoviah Ina Dub - Terry T [Key: G# minor (1A) | BPM: 95]
    2. Only You - Terry T [Key: A# minor (3A) | BPM: 73]
 
 === Computer Dub / Stone In My Heart -- Vini Selecta & U.Stone ===
@@ -998,7 +998,7 @@
   Year: 2009
   Label: Nu Urban Music France
   Art: https://i.discogs.com/FToNr2HG8CveDSqgYJ90nZMF23PkAmehUfmazjgze_Q/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Njg3/NzItMTIzNTc0MDgw/Ni5qcGVn.jpeg
-   1. Computer Dub - Viniselecta & U Stone [Key: A minor (8A) | BPM: 140]
+   1. Computer Dub - Viniselecta & U Stone [Key: D# minor (2A) | BPM: 91]
    2. Stone In My Heart - Viniselecta & U Stone [Key: Bb major (6B) | BPM: 137]
 
 === Run For Your Life / Dead Man Walking -- Visionary ===
@@ -1046,7 +1046,7 @@
   Year: 2009
   Label: Roots Records
   Art: https://i.discogs.com/5BU7zmIBDCi1jROcE9sIqRRLg4Pdpvudw6h45DH6gC0/rs:fit/g:sm/q:90/h:490/w:490/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDU5/NjMtMTIzNDI4NDgx/Ny5qcGVn.jpeg
-   1. Operation - NW2 [Key: A# minor (3A) | BPM: 100]
+   1. Operation - NW2 [Key: G minor (6A) | BPM: 165]
    2. Ala Bama - Aries [Key: D major (10B) | BPM: 121]
 
 === Lost And Found / Warn Ya -- RCola & Barrington Levy ===
@@ -1079,7 +1079,7 @@
   Label: Delacroix Records
   Art: https://i.discogs.com/Z4enKjX_F2ShEBaweGXWMTsoiX2f-mTzXnkLtydrRiA/rs:fit/g:sm/q:90/h:294/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Nzg0/OTYtMTIzNjM2MzIz/Mi5naWY.jpeg
    1. Bad Chill - Vendetta & Barber & Bad Kid [Key: E minor (9A) | BPM: 114]
-   2. More Gun - Vendetta & Barber & Bad Kid [Key: Ab major (4B) | BPM: 137]
+   2. More Gun - Vendetta & Barber & Bad Kid [Key: D minor (7A) | BPM: 119]
 
 === Bless I -- Vini Selecta and U.Stone Feat. Jah Call ===
   ID: 2213129
@@ -1087,7 +1087,7 @@
   Style: Drum n Bass
   Year: 2010
   Label: Nu Urban Music France
-   1. Bless I - Viniselecta and U Stone Feat. Jah Call [Key: Ab major (4B) | BPM: 89]
+   1. Bless I - Viniselecta and U Stone Feat. Jah Call [Key: B minor (10A) | BPM: 155]
    2. Bless I (Dub Mix) - Viniselecta and U Stone Feat. Jah Call [Key: A# minor (3A) | BPM: 125]
 
 === Rockafeller Skank (Mulders Urban Takeover Mix) / Intergalactic (Prisoners Of Technology TMS 1 Remix) -- Fatboy Slim / Beastie Boys ===
@@ -1108,7 +1108,7 @@
   Label: Infrared, Black Widow
   Art: https://i.discogs.com/1MnnvFhciWCgtUIImnv10YVttCxa8Yz7qYQkOR9tSig/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5ODE4/OC0xMjA0MDY2Mjk2/LmpwZWc.jpeg
    1. Cassanova - Wickaman & J.Majik [Key: Ab major (4B) | BPM: 99]
-   2. C-Style - J.Majik & Wickaman [Key: B minor (10A) | BPM: 128]
+   2. C-Style - J.Majik & Wickaman [Key: G minor (6A) | BPM: 110]
 
 === Turn Down The Lights / Soundboy Burial -- Benny Page / Visionary Featuring Peter Ranking ===
   ID: 2771571
@@ -1228,7 +1228,7 @@
    5. Metal On Metal - Kraftwerk [Key: A# minor (3A) | BPM: 107]
    6. Abzug - Kraftwerk [Key: C# major (3B) | BPM: 107]
    7. Franz Schubert - Kraftwerk [Key: D major (10B) | BPM: 112]
-   8. Endless Endless - Kraftwerk [Key: G major (9B) | BPM: 111]
+   8. Endless Endless - Kraftwerk [Key: B major (1B) | BPM: 110]
 
 === Enter The Wu-Tang (36 Chambers) -- Wu-Tang Clan ===
   ID: 12647200
@@ -1410,7 +1410,7 @@
   Style: Roots Reggae, Dub
   Label: Ire Hi-Fi
   Art: https://i.discogs.com/Tu0zm7lFjCqDOothhtkv5T5xfmcCOYWaAB1mP9pg1IQ/rs:fit/g:sm/q:90/h:247/w:248/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NTQz/MTktMTQ2Nzk4NTgw/Mi01MzM1LnBuZw.jpeg
-   1. No More War - Daddy Teacha & Uptones [Key: F minor (4A) | BPM: 75]
+   1. No More War - Daddy Teacha & Uptones [Key: Ab major (4B) | BPM: 146]
    2. Mother Of All Versions - Daddy Teacha [Key: A major (11B) | BPM: 142]
 
 === Man Down / Untold -- DJ Deekline & Ed Solo ===
@@ -1502,7 +1502,7 @@
   Label: Delacroix Records
   Art: https://i.discogs.com/_py3_vdilspnpbKwKHG1-HkitIjVV6L937Eywi8ZsRQ/rs:fit/g:sm/q:90/h:285/w:289/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NjA4/NDUtMTI0ODQzODYw/OS5naWY.jpeg
    1. Soundboy Dead - Vendetta & Barber & Bad Kid [Key: C# major (3B) | BPM: 125]
-   2. Try To Conquer I - Vendetta & Barber & Bad Kid [Key: F# major (2B) | BPM: 95]
+   2. Try To Conquer I - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 150]
 
 === You Can't Surrender -- Visionary ===
   ID: 1858695
@@ -1511,7 +1511,7 @@
   Year: 2005
   Label: Lion Dubs
    1. You Can't Surrender - Visionary [Key: B minor (10A) | BPM: 158]
-   2. I Know A Girl - Visionary [Key: G major (9B) | BPM: 123]
+   2. I Know A Girl - Visionary [Key: Bb major (6B) | BPM: 149]
 
 === Gimme Your Love / Jungle Rock -- Visionary ===
   ID: 709202
@@ -1531,7 +1531,7 @@
   Label: On Point Music
   Art: https://i.discogs.com/tD28cL9kCa6kXxQtOa7U00gYyYatpCBImLCofZtUUhc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTc2/MzEtMTI5ODA2MDY2/NS5qcGVn.jpeg
    1. Whip Them Soundboy - Visionary [Key: Bb major (6B) | BPM: 75]
-   2. Another Meditation - Isaac Maya [Key: C# minor (12A) | BPM: 125]
+   2. Another Meditation - Isaac Maya [Key: C# minor (12A) | BPM: 128]
 
 === Sugar Me / Wadodem -- Wildlife ===
   ID: 1686257
@@ -1540,7 +1540,7 @@
   Year: 2009
   Label: Jungle Cakes
   Art: https://i.discogs.com/RTX_KWlHmtvL0fQ779KNss_VseS2RBfj3fOX-XwQ0KU/rs:fit/g:sm/q:90/h:590/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODYy/NTctMTIzNzU3Nzc5/Ny5qcGVn.jpeg
-   1. Sugar Me - The Wildlife Collective [Key: Bb major (6B) | BPM: 113]
+   1. Sugar Me - The Wildlife Collective [Key: F# minor (11A) | BPM: 92]
    2. Wadodem - The Wildlife Collective [Key: G# minor (1A) | BPM: 114]
 
 === Ragga Tip (Walk And Skank) / Ragga Muffin -- Wildlife ===
@@ -1561,7 +1561,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/qo-10_h-afpumUvSYUnL_oW3tdKNNwxpK8W3exUAvxs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Njgw/NTgtMTMyNTU0Mjk5/Mi5qcGVn.jpeg
    1. I Need A Dollar - The Wildlife Collective [Key: F# minor (11A) | BPM: 95]
-   2. Bad Bwoy - The Wildlife Collective [Key: Bb major (6B) | BPM: 113]
+   2. Bad Bwoy - The Wildlife Collective [Key: G minor (6A) | BPM: 111]
 
 === Solid As A Rock -- Bone Crusher (2) vs. Sizzla ===
   ID: 4088694
@@ -1641,9 +1641,9 @@
   Year: 2018
   Label: Raggatek Power
   Art: https://i.discogs.com/NBUOxfO5Myokej3OukOv2r6ikQ9E6JddgWmrVutCPtU/rs:fit/g:sm/q:90/h:300/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTk3/OTQ4LTE1NzUzMTY2/ODMtNzYzOS5qcGVn.jpeg
-   1. Bongotek - Guigoo [Key: F major (7B) | BPM: 110]
+   1. Bongotek - Guigoo [Key: F minor (4A) | BPM: 122]
    2. The Youth Of Today - Vandal [Key: A# minor (3A) | BPM: 190]
-   3. Sensitek - Guigoo [Key: E minor (9A) | BPM: 125]
+   3. Sensitek - Guigoo [Key: D major (10B) | BPM: 127]
 
 === Melting Pot 17 Ragga Jungle Series Vol. 3 -- Mooncat (3), Fak Scratch, Kursiva ===
   ID: 15948164
@@ -1868,7 +1868,7 @@
    1. Raggatek Fayah Burn - Miltatek [Key: G# minor (1A) | BPM: 196]
    2. Inked Body - Sparks [Key: C# major (3B) | BPM: 100]
    3. Cocaine Amplifier - Paranoiak [Key: C# minor (12A) | BPM: 160]
-   4. Big Mouth - Ritchy VS Psylotribe [Key: C major (8B) | BPM: 152]
+   4. Big Mouth - Ritchy VS Psylotribe [Key: B major (1B) | BPM: 82]
 
 === Burning Marijuana / Lonely -- Candy ===
   ID: 1939637
@@ -2049,10 +2049,10 @@
   Art: https://i.discogs.com/wrRoEN6_ZZ8ml8delHt5vlxPfeetcMPgB7EJ_nsKJKA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjY1/ODkwLTE1MDIwMDM5/NDAtODkwNS5qcGVn.jpeg
    1. Light Tunnel - Nuts One [Key: C major (8B) | BPM: 173]
    2. Metamorphosis - Nuts One [Key: C# major (3B) | BPM: 174]
-   3. Bad Dream - Nuts One [Key: C# major (3B) | BPM: 145]
+   3. Bad Dream - Nuts One [Key: A# minor (3A) | BPM: 112]
    4. Angel Dust - Nuts One [Key: D major (10B) | BPM: 170]
    5. The Crypt - Nuts One [Key: B major (1B) | BPM: 176]
-   6. Ghost Yard - Nuts One [Key: C major (8B) | BPM: 92]
+   6. Ghost Yard - Nuts One [Key: A# minor (3A) | BPM: 94]
    7. Short-Circuit - Nuts One [Key: C# major (3B) | BPM: 168]
    8. Capricorn - Nuts One [Key: G# minor (1A) | BPM: 97]
    9. Bubble Gum - Nuts One [Key: F# minor (11A) | BPM: 120]
@@ -2113,12 +2113,12 @@
   Label: Scoops
   Art: https://i.discogs.com/BjGvfXORA3Z87Zv1_fFLPKRyQL6IKg2gQLGhL-4yJyc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTEw/NzczLTE1NDQwOTg3/NjItNTQwNy5qcGVn.jpeg
    1. All Sisters Unite - Nia Songbird [Key: G major (9B) | BPM: 120]
-   2. Each One Teach One - Nish Wadada [Key: A# minor (3A) | BPM: 140]
+   2. Each One Teach One - Nish Wadada [Key: G major (9B) | BPM: 120]
    3. Rise Up - Boney L [Key: F major (7B) | BPM: 98]
    4. One Dub Nation - Vanya O [Key: C# minor (12A) | BPM: 110]
    5. Ghetto Yout Nah Give Up - Trilla Jenna [Key: B major (1B) | BPM: 115]
-   6. More Love - Saralène [Key: A minor (8A) | BPM: 141]
-   7. Peaceful Warriors - Sis I-Leen [Key: C major (8B) | BPM: 172]
+   6. More Love - Saralène [Key: Bb major (6B) | BPM: 85]
+   7. Peaceful Warriors - Sis I-Leen [Key: C# major (3B) | BPM: 90]
    8. Woman Is Divine - Nãnci Correia [Key: C# minor (12A) | BPM: 98]
 
 === Love Over Gold -- Dire Straits ===
@@ -2174,7 +2174,7 @@
   Year: 2020
   Label: Scoops
   Art: https://i.discogs.com/-_v3-r5xrO0XoxJHV5w2eU3E1jbomV29QpyUeBchrWM/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MzM5/ODM5LTE2MDc1NTUy/MDEtNjEzNC5qcGVn.jpeg
-   1. Searching For Jah - Vibronics Feat. Michael Prophet [Key: B minor (10A) | BPM: 119]
+   1. Searching For Jah - Vibronics Feat. Michael Prophet [Key: D# minor (2A) | BPM: 139]
    2. Searching For Jah (Version) - Vibronics [Key: Eb major (5B) | BPM: 139]
 
 === Tralalalala /  Dirty Babylon -- Jah Marnyah, Vibronics ===
@@ -2184,7 +2184,7 @@
   Year: 2016
   Label: Scoops
   Art: https://i.discogs.com/dWpEJNNTT9z-wjs2lKKOjOaJ1LqgoMTPaxTzCXO9F0A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMTU4/MTEtMTY1Mjk5MDA0/Ny0xMjIwLmpwZWc.jpeg
-   1. Tralalalala - Jah Marnyah [Key: A# minor (3A) | BPM: 139]
+   1. Tralalalala - Jah Marnyah [Key: B minor (10A) | BPM: 139]
    2. Tralalalala (Version) - Vibronics [Key: F# major (2B) | BPM: 139]
    3. Dirty Babylon - Jah Marnyah [Key: D major (10B) | BPM: 98]
    4. Dirty Babylon (Version) - Vibronics [Key: B minor (10A) | BPM: 150]
@@ -2198,12 +2198,12 @@
   Art: https://i.discogs.com/TEkPEfde6_nGWQE8aQvtUwPGSOB2poi_0gpgiuUdj8Y/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzkx/NDg3LTE1NDIwMjYw/MDAtNTUwNC5wbmc.jpeg
    1. Working Class - Marina P, Stand High Patrol [Key: G major (9B) | BPM: 120]
    2. Atmosphere - Marina P, Stand High Patrol [Key: C# major (3B) | BPM: 75]
-   3. Landlord - Marina P, Stand High Patrol [Key: A minor (8A) | BPM: 120]
+   3. Landlord - Marina P, Stand High Patrol [Key: Bb major (6B) | BPM: 144]
    4. Fragile - Marina P, Stand High Patrol [Key: C major (8B) | BPM: 136]
-   5. Spring Rain - Marina P, Stand High Patrol [Key: G major (9B) | BPM: 120]
+   5. Spring Rain - Marina P, Stand High Patrol [Key: C major (8B) | BPM: 140]
    6. Dreamcatcher - Marina P, Stand High Patrol [Key: C# minor (12A) | BPM: 86]
-   7. Raw Lines - Marina P, Stand High Patrol [Key: D# minor (2A) | BPM: 108]
-   8. Summer On Mars - Marina P, Stand High Patrol [Key: D minor (7A) | BPM: 145]
+   7. Raw Lines - Marina P, Stand High Patrol [Key: Eb major (5B) | BPM: 156]
+   8. Summer On Mars - Marina P, Stand High Patrol [Key: C# minor (12A) | BPM: 86]
    9. Rosetta - Marina P, Stand High Patrol [Key: D minor (7A) | BPM: 145]
 
 === Foundations -- The Architect ===
@@ -2255,7 +2255,7 @@
   Year: 2017
   Label: Arista, Sony Music, Legacy
   Art: https://i.discogs.com/-dHIglYpwfA6krkFFuNNSHLMJxuZWVmOVIfJ-lBomSM/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3NjMz/MjktMTQ4ODM2MjYz/MS03OTg5LmpwZWc.jpeg
-   1. I Robot - The Alan Parsons Project [Key: F major (7B) | BPM: 91]
+   1. I Robot - The Alan Parsons Project [Key: G major (9B) | BPM: 91]
    2. I Wouldn't Want To Be Like You - The Alan Parsons Project [Key: C# major (3B) | BPM: 101]
    3. Some Other Time - The Alan Parsons Project [Key: A minor (8A) | BPM: 126]
    4. Breakdown - The Alan Parsons Project [Key: D major (10B) | BPM: 170]
@@ -2360,7 +2360,7 @@
   Year: 1999
   Label: Flammable Records
   Art: https://i.discogs.com/LHtbyho20cr4_7wtKLISe3Q9VFJWl-fLeAltXe0GDqw/rs:fit/g:sm/q:90/h:569/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDE0/My0xNzYyNTAwMTYx/LTU2NjguanBlZw.jpeg
-   1. Scatterbomb (String Mix) - The Sneaker [Key: G major (9B) | BPM: 118]
+   1. Scatterbomb (String Mix) - The Sneaker [Key: B minor (10A) | BPM: 106]
    2. Scatterbomb (Trance Mix) - The Sneaker [Key: C major (8B) | BPM: 137]
 
 === Double Barrel / Spice Invader -- Fuzzy Logic ===
@@ -2437,7 +2437,7 @@
    2. Soundform - Astral Projection [Key: C# minor (12A) | BPM: 140]
    3. Flying Into A Star - Astral Projection [Key: A major (11B) | BPM: 142]
    4. No-One Ever Dreams - Astral Projection [Key: A# minor (3A) | BPM: 138]
-   5. Cosmic Ascension - Astral Projection Featuring D.J. Jorg [Key: D minor (7A) | BPM: 175]
+   5. Cosmic Ascension - Astral Projection Featuring D.J. Jorg [Key: E minor (9A) | BPM: 105]
    6. Life On Mars - Astral Projection [Key: F# major (2B) | BPM: 144]
    7. Liquid Sun - Astral Projection [Key: E major (12B) | BPM: 138]
    8. Ambient Galaxy (Disco Valley Mix) - Astral Projection [Key: G major (9B) | BPM: 140]
@@ -2463,7 +2463,7 @@
   Style: Folk Rock
   Label: CBS
   Art: https://i.discogs.com/RNYbPXTNt1UFddc4EpcRr-BmU6L7eAFs_fpPEn6jOOg/rs:fit/g:sm/q:90/h:421/w:438/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NzUz/MjgtMTM3MzcyNDY0/NC04NzM3LmpwZWc.jpeg
-   1. The Sounds Of Silence - Simon & Garfunkel [Key: F# major (2B) | BPM: 108]
+   1. The Sounds Of Silence - Simon & Garfunkel [Key: F# major (2B) | BPM: 107]
    2. Leaves That Are Green - Simon & Garfunkel [Key: E major (12B) | BPM: 106]
    3. Blessed - Simon & Garfunkel [Key: G major (9B) | BPM: 203]
    4. Kathy's Song - Simon & Garfunkel [Key: F# major (2B) | BPM: 102]
@@ -3003,7 +3003,7 @@
   Art: https://i.discogs.com/-okHy1YvixEgfTI7OM-91oG8L_sXZxkLz0FXQdsouio/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMDkx/NjItMTQ1MjQzMzM0/Ni04NDgyLmpwZWc.jpeg
    1. Summertime - The Shake Spears [Key: G minor (6A) | BPM: 131]
    2. I'll Go Crazy - The Shake Spears [Key: E major (12B) | BPM: 135]
-   3. Give It To Me - The Shake Spears [Key: G# minor (1A) | BPM: 127]
+   3. Give It To Me - The Shake Spears [Key: B minor (10A) | BPM: 159]
    4. Stop Playing That Song - The Shake Spears [Key: F major (7B) | BPM: 121]
    5. Summertime Blues - The Shake Spears [Key: G major (9B) | BPM: 161]
    6. Lucifer - The Shake Spears [Key: E major (12B) | BPM: 149]
@@ -3071,7 +3071,7 @@
    6. You Wish - Nightmares On Wax [Key: A minor (8A) | BPM: 103]
    7. Deepdown - Nightmares On Wax [Key: C major (8B) | BPM: 150]
    8. Chime Out - Nightmares On Wax [Key: C major (8B) | BPM: 120]
-   9. Me! - Nightmares On Wax [Key: A major (11B) | BPM: 75]
+   9. Me! - Nightmares On Wax [Key: D major (10B) | BPM: 123]
   10. I Am You - Nightmares On Wax [Key: E major (12B) | BPM: 75]
   11. Soul Purpose - Nightmares On Wax [Key: F# major (2B) | BPM: 83]
   12. African Pirates - Nightmares On Wax [Key: F# minor (11A) | BPM: 115]
@@ -3194,7 +3194,7 @@
   Label: Global Aura Records
   Art: https://i.discogs.com/xtRZIqjnyaV3upC8AluBQE5F5YJDew9oLlLinZ5pSKc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYx/NzM0LTE1ODc0ODcw/ODYtNTA5NC5qcGVn.jpeg
    1. Dog Days Bliss - Filteria [Key: Ab major (4B) | BPM: 144]
-   2. Voyager - Triquetra [Key: F# major (2B) | BPM: 99]
+   2. Voyager - Triquetra [Key: D minor (7A) | BPM: 148]
    3. 1001 Nights - Agneton [Key: D major (10B) | BPM: 152]
    4. Dream Shaper - Psilocybe Project [Key: A major (11B) | BPM: 145]
    5. Rise Above This - DJ Jape du Marie & Jack Wax [Key: C minor (5A) | BPM: 126]
@@ -3280,7 +3280,7 @@
    7. Who Say Jah No Dread - Jacob Miller [Key: B minor (10A) | BPM: 77]
    8. Jah Dread - Jacob Miller [Key: B minor (10A) | BPM: 77]
    9. Each One Teach One - Jacob Miller [Key: C major (8B) | BPM: 133]
-  10. Each One Teach One Version - Jacob Miller [Key: F minor (4A) | BPM: 93]
+  10. Each One Teach One Version - Jacob Miller [Key: Ab major (4B) | BPM: 130]
   11. Girl Name Pat - Jacob Miller [Key: Ab major (4B) | BPM: 138]
   12. Girl Name Pat Version - Jacob Miller [Key: Ab major (4B) | BPM: 138]
 
@@ -3294,7 +3294,7 @@
    1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A) | BPM: 79]
    2. John Public - Gregory Isaacs [Key: B major (1B) | BPM: 135]
    3. Mr. Brown - Gregory Isaacs [Key: A major (11B) | BPM: 75]
-   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 119]
+   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 136]
    5. Raving Tonight - Gregory Isaacs [Key: G major (9B) | BPM: 144]
    6. One More Time - Gregory Isaacs [Key: G minor (6A) | BPM: 128]
    7. Let's Dance - Gregory Isaacs [Key: Eb major (5B) | BPM: 77]
@@ -3344,7 +3344,7 @@
   Art: https://i.discogs.com/0LOIpvxKxKVqNmSQPncpHp7Tlyl8OrTlZwXW21Hc-9Y/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1NDE2/NTYtMTU1MjczODA5/OC03NzIzLmpwZWc.jpeg
    1. Positive Vibration - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 132]
    2. Roots, Rock, Reggae - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 139]
-   3. Johnny Was - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 87]
+   3. Johnny Was - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 152]
    4. Cry To Me - Bob Marley & The Wailers [Key: G major (9B) | BPM: 188]
    5. Want More - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 134]
    6. Crazy Baldhead - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 126]
@@ -3426,7 +3426,7 @@
    6. Get Ready - Gregory Isaacs [Key: C major (8B) | BPM: 176]
    7. Set The Captive Free - Gregory Isaacs [Key: G major (9B) | BPM: 133]
    8. The Winner - Gregory Isaacs [Key: A major (11B) | BPM: 139]
-   9. Smile - Gregory Isaacs [Key: F minor (4A) | BPM: 148]
+   9. Smile - Gregory Isaacs [Key: F minor (4A) | BPM: 145]
 
 === Bush Doctor -- Peter Tosh ===
   ID: 6226299
@@ -3458,15 +3458,15 @@
    4. Arabian Rock - Augustus Pablo [Key: C minor (5A) | BPM: 132]
    5. Pretty Baby - Augustus Pablo [Key: Bb major (6B) | BPM: 134]
    6. Pablo In Dub - Augustus Pablo [Key: Ab major (4B) | BPM: 144]
-   7. Marabi (Bonus Track) - Augustus Pablo [Key: G# minor (1A) | BPM: 81]
-   8. Java (Bonus Track) - Augustus Pablo [Key: F# major (2B) | BPM: 136]
+   7. Marabi (Bonus Track) - Augustus Pablo [Key: E major (12B) | BPM: 136]
+   8. Java (Bonus Track) - Augustus Pablo [Key: E major (12B) | BPM: 136]
    9. Skateland Rock - Augustus Pablo [Key: F minor (4A) | BPM: 141]
   10. Dread Eye - Augustus Pablo [Key: E major (12B) | BPM: 136]
   11. Too Late - Augustus Pablo [Key: C# minor (12A) | BPM: 115]
   12. Assignment No 1 - Augustus Pablo [Key: G minor (6A) | BPM: 142]
   13. Jah Rock - Augustus Pablo [Key: C major (8B) | BPM: 140]
   14. Lover's Mood - Augustus Pablo [Key: G# minor (1A) | BPM: 135]
-  15. Guiding Red (Bonus Track) - Augustus Pablo [Key: A minor (8A) | BPM: 160]
+  15. Guiding Red (Bonus Track) - Augustus Pablo [Key: E major (12B) | BPM: 136]
 
 === Dub Sampler Vol 2 -- Various ===
   ID: 570537
@@ -3475,7 +3475,7 @@
   Year: 2004
   Label: Jamaican Recordings
   Art: https://i.discogs.com/QplXF9iHk5RW1r5PzoaVIERbXRULddUkLKw4UEFJXWI/rs:fit/g:sm/q:90/h:208/w:208/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MDUz/Ny0xMTMyODA1ODAw/LmpwZWc.jpeg
-   1. No Lick No Dub - Johnny Clarke [Key: F# major (2B) | BPM: 126]
+   1. No Lick No Dub - Johnny Clarke [Key: C major (8B) | BPM: 122]
    2. Bosrock Dub - Don Carlos [Key: D major (10B) | BPM: 78]
    3. Take 5 Dub - King Tubby [Key: Ab major (4B) | BPM: 159]
    4. Some Good Dub - Locksley Castell [Key: A major (11B) | BPM: 172]
