@@ -998,8 +998,8 @@
   Year: 2009
   Label: Nu Urban Music France
   Art: https://i.discogs.com/FToNr2HG8CveDSqgYJ90nZMF23PkAmehUfmazjgze_Q/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Njg3/NzItMTIzNTc0MDgw/Ni5qcGVn.jpeg
-   1. Computer Dub - Viniselecta & U Stone [Key: D# minor (2A) | BPM: 91]
-   2. Stone In My Heart - Viniselecta & U Stone [Key: Bb major (6B) | BPM: 137]
+   1. Computer Dub - Viniselecta & U Stone [Pos: A | Key: D# minor (2A) | BPM: 91]
+   2. Stone In My Heart - Viniselecta & U Stone [Pos: B | Key: Bb major (6B) | BPM: 137]
 
 === Run For Your Life / Dead Man Walking -- Visionary ===
   ID: 1454125
@@ -1007,8 +1007,8 @@
   Style: Drum n Bass
   Year: 2007
   Label: On Point Music
-   1. Run For Your Life - Visionary [Key: F# minor (11A) | BPM: 133]
-   2. Dead Man Walking - Visionary [Key: C# minor (12A) | BPM: 180]
+   1. Run For Your Life - Visionary [Pos: A | Key: F# minor (11A) | BPM: 133]
+   2. Dead Man Walking - Visionary [Pos: AA | Key: C# minor (12A) | BPM: 180]
 
 === Ganja Fire / Herbsmoke (Visionary Remix) -- Visionary / Aries ===
   ID: 976951
@@ -1017,8 +1017,8 @@
   Year: 2007
   Label: Pure Vibez Recordings
   Art: https://i.discogs.com/rmruZinYsHc_3bYLskihRodq0MMQ6sdLMkPFuISsV7I/rs:fit/g:sm/q:90/h:336/w:336/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3Njk1/MS0xMTc5OTM1Nzg1/LmpwZWc.jpeg
-   1. Ganja Fire - Visionary Feat. Camp Souljah [Key: C# major (3B) | BPM: 140]
-   2. Herbsmoke (Visionary Remix) - Aries [Key: G major (9B) | BPM: 90]
+   1. Ganja Fire - Visionary Feat. Camp Souljah [Pos: A | Key: C# major (3B) | BPM: 140]
+   2. Herbsmoke (Visionary Remix) - Aries [Pos: B | Key: G major (9B) | BPM: 90]
 
 === We Got The Sound (Zound & Ku Remix) / Hollow Earth -- Zound & Ku (10) / DJ Dubb ===
   ID: 1650200
@@ -1026,8 +1026,8 @@
   Style: Drum n Bass
   Year: 2009
   Label: JungleXpeditions Records
-   1. We Got The Sound (Zound & Ku Remix) - Zound & Ku [Key: F# major (2B) | BPM: 200]
-   2. Hollow Earth - DJ Dubb [Key: Ab major (4B) | BPM: 125]
+   1. We Got The Sound (Zound & Ku Remix) - Zound & Ku [Pos: A | Key: F# major (2B) | BPM: 200]
+   2. Hollow Earth - DJ Dubb [Pos: AA | Key: Ab major (4B) | BPM: 125]
 
 === Brother & Sister / I Try -- Aries ===
   ID: 690001
@@ -1036,8 +1036,8 @@
   Year: 2006
   Label: Roots Records
   Art: https://i.discogs.com/LcaUtp4RKn8_7vy0oSjYR6lm-KPxmpVUOWoBrOU7x04/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5MDAw/MS0xMjg5NDk3Mzgy/LmpwZWc.jpeg
-   1. Brother & Sister - Aries [Key: C# major (3B) | BPM: 141]
-   2. I Try - Aries [Key: C# minor (12A) | BPM: 114]
+   1. Brother & Sister - Aries [Pos: A | Key: C# major (3B) | BPM: 141]
+   2. I Try - Aries [Pos: AA | Key: C# minor (12A) | BPM: 114]
 
 === Operation / Ala Bama -- NW2 / Aries ===
   ID: 1645963
@@ -1046,8 +1046,8 @@
   Year: 2009
   Label: Roots Records
   Art: https://i.discogs.com/5BU7zmIBDCi1jROcE9sIqRRLg4Pdpvudw6h45DH6gC0/rs:fit/g:sm/q:90/h:490/w:490/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDU5/NjMtMTIzNDI4NDgx/Ny5qcGVn.jpeg
-   1. Operation - NW2 [Key: G minor (6A) | BPM: 165]
-   2. Ala Bama - Aries [Key: D major (10B) | BPM: 121]
+   1. Operation - NW2 [Pos: A | Key: G minor (6A) | BPM: 165]
+   2. Ala Bama - Aries [Pos: AA | Key: D major (10B) | BPM: 121]
 
 === Lost And Found / Warn Ya -- RCola & Barrington Levy ===
   ID: 1655998
@@ -1056,8 +1056,8 @@
   Year: 2009
   Label: Royal Crown
   Art: https://i.discogs.com/b_tuVOc2SrsrgdO34bz31qbmWm5qyREEL_WPzdHCHMo/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTU5/OTgtMTI2MDAxNTgz/NS5wbmc.jpeg
-   1. Lost And Found - Barrington Levy & RCola [Key: A# minor (3A) | BPM: 170]
-   2. Warn Ya - RCola [Key: A major (11B) | BPM: 174]
+   1. Lost And Found - Barrington Levy & RCola [Pos: A | Key: A# minor (3A) | BPM: 170]
+   2. Warn Ya - RCola [Pos: B | Key: A major (11B) | BPM: 174]
 
 === Step Express 09 -- Various ===
   ID: 1029417
@@ -1066,10 +1066,10 @@
   Year: 2007
   Label: Step Express
   Art: https://i.discogs.com/lRS150G_T9flCOBGGWiY5ODumgM5h4NHrwqoSW4MuGU/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjk0/MTctMTE4NTg3NjQ5/Ni5qcGVn.jpeg
-   1. Kung Fu Man Dub - FX909 [Key: C# major (3B) | BPM: 125]
-   2. Warrior Dub - Diamond Eye [Key: F# minor (11A) | BPM: 141]
-   3. Small World - Mooncat vs Capleton [Key: C# major (3B) | BPM: 71]
-   4. Riddim 1 - Kafra [Key: A major (11B) | BPM: 100]
+   1. Kung Fu Man Dub - FX909 [Pos: A1 | Key: C# major (3B) | BPM: 125]
+   2. Warrior Dub - Diamond Eye [Pos: A2 | Key: F# minor (11A) | BPM: 141]
+   3. Small World - Mooncat vs Capleton [Pos: B1 | Key: C# major (3B) | BPM: 71]
+   4. Riddim 1 - Kafra [Pos: B2 | Key: A major (11B) | BPM: 100]
 
 === Bad Chill / More Gun -- Vendetta (2) & Barber (3) & Bad Kid ===
   ID: 1678496
@@ -1078,8 +1078,8 @@
   Year: 2009
   Label: Delacroix Records
   Art: https://i.discogs.com/Z4enKjX_F2ShEBaweGXWMTsoiX2f-mTzXnkLtydrRiA/rs:fit/g:sm/q:90/h:294/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Nzg0/OTYtMTIzNjM2MzIz/Mi5naWY.jpeg
-   1. Bad Chill - Vendetta & Barber & Bad Kid [Key: E minor (9A) | BPM: 114]
-   2. More Gun - Vendetta & Barber & Bad Kid [Key: D minor (7A) | BPM: 119]
+   1. Bad Chill - Vendetta & Barber & Bad Kid [Pos: A | Key: E minor (9A) | BPM: 114]
+   2. More Gun - Vendetta & Barber & Bad Kid [Pos: AA | Key: D minor (7A) | BPM: 119]
 
 === Bless I -- Vini Selecta and U.Stone Feat. Jah Call ===
   ID: 2213129
@@ -1087,8 +1087,8 @@
   Style: Drum n Bass
   Year: 2010
   Label: Nu Urban Music France
-   1. Bless I - Viniselecta and U Stone Feat. Jah Call [Key: B minor (10A) | BPM: 155]
-   2. Bless I (Dub Mix) - Viniselecta and U Stone Feat. Jah Call [Key: A# minor (3A) | BPM: 125]
+   1. Bless I - Viniselecta and U Stone Feat. Jah Call [Pos: A | Key: B minor (10A) | BPM: 155]
+   2. Bless I (Dub Mix) - Viniselecta and U Stone Feat. Jah Call [Pos: AA | Key: A# minor (3A) | BPM: 125]
 
 === Rockafeller Skank (Mulders Urban Takeover Mix) / Intergalactic (Prisoners Of Technology TMS 1 Remix) -- Fatboy Slim / Beastie Boys ===
   ID: 1312727
