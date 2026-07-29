@@ -24,7 +24,8 @@ updates back through the GitHub API.
   as impossible rather than merely awkward (configurable; 8% for a stock
   Technics, 50% for most digital decks).
 - **Crates** — named, ordered selections standing in for the box you actually
-  carry to a gig. Bridge and mix suggestions can be limited to one.
+  carry to a gig, each showing its total printed runtime. Bridge and mix
+  suggestions can be limited to one.
 - **Set builder** — puts a crate in playing order and lints every junction,
   separating mixes that can't be performed from ones that merely want an ear.
   Two cuts from the same record in a row are caught as unplayable: one disc

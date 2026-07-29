@@ -5,7 +5,7 @@ import { CrateService, inAnyCrate } from './crate.service';
 import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
 import { camelotClass } from './camelot';
-import { Rec, Track } from './models';
+import { Rec, Track, durationSeconds, formatRuntime, trackKey } from './models';
 import { UpdaterService, TrackChange } from './updater.service';
 import { ConfigService } from './config.service';
 import { KeyCheatsheetComponent } from './key-cheatsheet.component';
@@ -478,6 +478,9 @@ function formatDuration(ms: number): string {
                       (change)="crateSvc.rename(c.id, $any($event.target).value)"
                     />
                     <span class="badge-count">{{ c.trackKeys.length }} track(s)</span>
+                    @if (crateRuntime(c.id); as rt) {
+                      <span class="badge-count" [title]="crateRuntimeTitle(c.id)">⏱ {{ rt }}</span>
+                    }
                     @if (crateSvc.missingCount(c.id); as miss) {
                       <span class="badge-count err" [title]="'Tracks in this crate that are no longer in the collection'">
                         {{ miss }} missing
@@ -908,8 +911,7 @@ export class RecordsListComponent {
   readonly cratePicker = signal<{ x: number; y: number; track: Track } | null>(null);
 
   openCrates(): void {
-    this.closePopover();
-    this.showCrates.set(true);
+    this.closePopover();    this.showCrates.set(true);
   }
 
   closeCrates(): void {
@@ -963,6 +965,56 @@ export class RecordsListComponent {
   crateTitle(t: Track): string {
     const names = this.crateSvc.cratesOf(t).map((c) => c.name);
     return names.length ? 'In crates: ' + names.join(', ') : 'Add to a crate';
+  }
+
+  /**
+   * Printed runtime of every crate, computed in one pass.
+   *
+   * Memoised deliberately: the crates modal asks for this per row on every
+   * change-detection cycle, and resolving each crate individually would walk
+   * all ~1,750 tracks once per crate per pass.
+   */
+  private readonly crateRuntimes = computed(() => {
+    // Seconds per track key; first copy wins, matching CrateService.tracksOf.
+    const seconds = new Map<string, number>();
+    for (const t of this.col.tracks()) {
+      const k = trackKey(t);
+      if (!seconds.has(k)) seconds.set(k, durationSeconds(t.duration));
+    }
+
+    const out = new Map<string, { label: string; known: number; resolved: number }>();
+    for (const c of this.crateSvc.crates()) {
+      let total = 0;
+      let known = 0;
+      let resolved = 0;
+      for (const key of c.trackKeys) {
+        const secs = seconds.get(key);
+        if (secs === undefined) continue; // record sold or renamed — nothing to count
+        resolved++;
+        if (secs > 0) {
+          total += secs;
+          known++;
+        }
+      }
+      out.set(c.id, { label: total > 0 ? formatRuntime(total) : '', known, resolved });
+    }
+    return out;
+  });
+
+  /** Printed runtime of a crate, or '' when none of its tracks has a length. */
+  crateRuntime(crateId: string): string {
+    return this.crateRuntimes().get(crateId)?.label ?? '';
+  }
+
+  crateRuntimeTitle(crateId: string): string {
+    const r = this.crateRuntimes().get(crateId);
+    if (!r) return '';
+    const caveat =
+      r.known < r.resolved ? ` — ${r.resolved - r.known} have no printed length` : '';
+    return (
+      `Total printed runtime of ${r.known} of ${r.resolved} track(s)${caveat}. ` +
+      `Played end to end; mixing will shorten it.`
+    );
   }
 
   clear(): void {
