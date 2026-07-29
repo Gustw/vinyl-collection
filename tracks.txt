@@ -487,7 +487,7 @@
    1. Original Nuttah (Bass Mix) - U.K Apachi & Shy FX [Key: C# major (3B) | BPM: 113]
    2. Original Nuttah (The Bollywood Mix) - U.K Apachi & Shy FX [Key: C# major (3B) | BPM: 113]
    3. Nuttah V.I.P. (The Shy FX V.I.P. Bambaata Mix) - U.K Apachi & Shy FX [Key: C major (8B) | BPM: 132]
-   4. Nuttah V.I.P. (T-Power Hyperfunk Mix) - U.K Apachi & Shy FX [Key: B major (1B) | BPM: 125]
+   4. Nuttah V.I.P. (T-Power Hyperfunk Mix) - U.K Apachi & Shy FX [Key: C major (8B) | BPM: 132]
 
 === Promised Land / Promised Land VIP -- Rebel MC & Serial Killaz ===
   ID: 2819690
@@ -497,7 +497,7 @@
   Label: Congo Natty
   Art: https://i.discogs.com/xZrr9vruhRQ4sR64Ns4HFG9aRwc3TA2jM495zNvZBmk/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTk2/OTAtMTU0MTcwNDY5/NS05NjI0LmpwZWc.jpeg
    1. Promised Land - Rebel MC & Serial Killaz [Key: A# minor (3A) | BPM: 139]
-   2. Promised Land VIP - Rebel MC & Serial Killaz [Key: A# minor (3A) | BPM: 139]
+   2. Promised Land VIP - Rebel MC & Serial Killaz [Key: E minor (9A) | BPM: 103]
 
 === In Your Eyes / Lovely Woman -- Serial Killaz ===
   ID: 5196030
@@ -546,7 +546,7 @@
   Style: Drum n Bass, Jungle
   Label: Solid Vinyl
   Art: https://i.discogs.com/XA6d0-Z3GHbL9e8WWKga7hpAO2tmQ2aGmadXBbb0YEc/rs:fit/g:sm/q:90/h:454/w:453/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjUy/NTgtMTM4MTkyNjY0/NS02MTA3LmpwZWc.jpeg
-   1. Jerilipy Lipy - Mr Quest & Flyin Doc [Key: E major (12B) | BPM: 105]
+   1. Jerilipy Lipy - Mr Quest & Flyin Doc [Key: B minor (10A) | BPM: 98]
    2. One Time - TC IZ & Ed Solo [Key: E minor (9A) | BPM: 176]
    3. Respect - Mr Quest [Key: F minor (4A) | BPM: 175]
    4. Shut Em Down - TC IZ & Ed Solo [Key: A# minor (3A) | BPM: 176]
@@ -599,7 +599,7 @@
   Year: 2010
   Label: Necessary Mayhem
   Art: https://i.discogs.com/wybyICxO-7wo6p89WksUFfKx1K85Cb9Lt_kiAjrSRjQ/rs:fit/g:sm/q:90/h:480/w:494/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTU3/MjktMTM0MzQyNjY0/Mi02MTYyLmpwZWc.jpeg
-   1. Dubplate (Benny Page Remix) - YT, Million Stylez, Tenor Fly, Blackout Ja & Mr Williamz [Key: C major (8B) | BPM: 132]
+   1. Dubplate (Benny Page Remix) - YT, Million Stylez, Tenor Fly, Blackout Ja & Mr Williamz [Key: C# major (3B) | BPM: 127]
    2. Dubplate (Benny Page Dub) - YT, Million Stylez, Tenor Fly, Blackout Ja & Mr Williamz [Key: G# minor (1A) | BPM: 172]
 
 === Fire -- Demolition Man ===
@@ -620,7 +620,7 @@
   Label: Street Life
   Art: https://i.discogs.com/-f3SgKo2XZiHPgTJsGZAA0mZU37SjIKTAq7L3rnlwm8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxODI5/ODYtMTMzOTUyOTE4/OC0yMDI1LmpwZWc.jpeg
    1. Special Dedication (Sigma Remix) - DJ Nut Nut [Key: G# minor (1A) | BPM: 175]
-   2. Special Dedication (Original Mix) - DJ Nut Nut [Key: C# major (3B) | BPM: 156]
+   2. Special Dedication (Original Mix) - DJ Nut Nut [Key: C# major (3B) | BPM: 98]
 
 === Ganja Farmer / One Of The Days -- Aries / Jacky Murda ===
   ID: 2492415
@@ -640,7 +640,7 @@
   Label: Solid Vinyl
   Art: https://i.discogs.com/emHBByyL1-HFgg1qTy0_zGU5jExxt9Ky1B2wgXDIC6o/rs:fit/g:sm/q:90/h:300/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzA2/Ny0xMTQxMzIyOTQz/LmdpZg.jpeg
    1. Jerlipy Lip (Juggling Mix) - The Ragga Twins [Key: G major (9B) | BPM: 174]
-   2. Every Sound - The Ragga Twins [Key: B major (1B) | BPM: 140]
+   2. Every Sound - The Ragga Twins [Key: C# major (3B) | BPM: 60]
 
 === Prophet Rides Again -- Capleton ===
   ID: 1113407
@@ -659,8 +659,8 @@
   Year: 2007
   Label: Congo Natty
   Art: https://i.discogs.com/InUlnnlZhWKJDp2IyMThwa8nP5BQuYEv2pSKH2i6tkA/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NDY0/OS0xMzQ0MjAxNjMz/LTUyNDcuanBlZw.jpeg
-   1. Wardance (Serial Killaz Remix) - Tribe Of Issachar [Key: D major (10B) | BPM: 130]
-   2. Wardance (Serial Killaz Vip Mix) - Tribe Of Issachar [Key: G major (9B) | BPM: 97]
+   1. Wardance (Serial Killaz Remix) - Tribe Of Issachar [Key: C# major (3B) | BPM: 123]
+   2. Wardance (Serial Killaz Vip Mix) - Tribe Of Issachar [Key: F# minor (11A) | BPM: 128]
 
 === 18 & Over / Shine Eyes Girl -- Dj Panik (3) & M-Rode ===
   ID: 2014211
@@ -724,7 +724,7 @@
   Year: 2017
   Label: PSychoDynamiK
   Art: https://i.discogs.com/E0PVx509xQDJcvYZ7Klwozwt_Y5eulf1_yt9GGGEDLc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2NTI3/ODUtMTQ4NDI0ODQ0/OC0zMTIxLmpwZWc.jpeg
-   1. Jungleman - La Phaze [Key: E minor (9A) | BPM: 171]
+   1. Jungleman - La Phaze [Key: C# minor (12A) | BPM: 176]
    2. Pass Me The Rizzla - DJ Dee Kline [Key: C minor (5A) | BPM: 106]
    3. Paper Planes - Phibes [Key: G minor (6A) | BPM: 128]
    4. Give It To Me - Kursiva [Key: G major (9B) | BPM: 176]
