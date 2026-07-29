@@ -41,6 +41,10 @@ whatever the list is showing is what gets printed, so narrow it down first
   Type size comes from the *configured* slot count, not from how many tracks a
   sticker happens to hold, so a leftover single track is set exactly like a full
   sticker and leaves its unused rows blank rather than ballooning to fill them.
+- **Top line:** `year · label · record name`, the provenance in grey and the
+  record name in bold. No artist — on a sleeve you already know whose record it
+  is, and the space buys a readable title. Only the first imprint is shown, and
+  it is capped at 45% of the line so a long label can't crowd out the name.
 - **Sheets:** the gapless 70 × 37 mm 24-up sheet (most own-brand packs) and
   Avery L7159 / J8159 (63.5 × 33.9 mm). Both are 3 × 8 on A4.
 - **Edge safety margin** (default 2 mm) keeps text away from the die-cut edge,

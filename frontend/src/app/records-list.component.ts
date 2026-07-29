@@ -888,6 +888,9 @@ export class RecordsListComponent {
     const stickers = this.stickerList();
     if (!stickers.length) return;
     downloadBlob(renderStickerPdf(stickers, this.stickerOpts()), stickerFilename());
+    // The sheet is on its way and the settings are remembered, so there is
+    // nothing left to do in here.
+    this.closeStickers();
   }
 
   // --- Crates -------------------------------------------------------------

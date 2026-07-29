@@ -140,7 +140,8 @@ export interface StickerTrack {
 
 export interface Sticker {
   recordTitle: string;
-  recordArtist: string;
+  /** Record label(s) — the imprint, not the sticker. */
+  labels: string[];
   year: number;
   /** 1-based index of this sticker within its record, and the total. */
   part: number;
@@ -167,7 +168,7 @@ export function buildStickers(rows: StickerSource[], perSticker: PerSticker): St
     for (let i = 0; i < parts; i++) {
       out.push({
         recordTitle: row.record.title,
-        recordArtist: row.record.artist,
+        labels: row.record.labels,
         year: row.record.year,
         part: i + 1,
         parts,
@@ -203,6 +204,9 @@ const GREY: Rgb = { r: 0.42, g: 0.42, b: 0.42 };
 const RULE: Rgb = { r: 0.78, g: 0.78, b: 0.78 };
 const OUTLINE: Rgb = { r: 0.85, g: 0.85, b: 0.85 };
 
+/** Helvetica's descender, as a fraction of the point size. */
+const DESCENDER = 0.212;
+
 function keyColours(camelot: string, colour: boolean): { fill: Rgb; text: Rgb } {
   const m = /^(\d{1,2})([AB])$/.exec((camelot || '').trim());
   if (!m || !colour) return { fill: { r: 0.93, g: 0.93, b: 0.93 }, text: { r: 0.2, g: 0.2, b: 0.2 } };
@@ -211,10 +215,44 @@ function keyColours(camelot: string, colour: boolean): { fill: Rgb; text: Rgb } 
   return { fill: hsl(hue, 70, 84), text: hsl(hue, 70, 26) };
 }
 
-/** "Artist — Title (1997)", trimmed of the parts that are missing. */
-function recordLine(s: Sticker): string {
-  const head = [s.recordArtist, s.recordTitle].filter(Boolean).join(' — ');
-  return s.year ? `${head} · ${s.year}` : head;
+/**
+ * The provenance in front of the record name: "1997 · Transient Records".
+ * Only the first imprint is used — a co-release listing three labels would eat
+ * the whole line, and the record's own name is what you're scanning for.
+ */
+function provenance(s: Sticker): string {
+  return [s.year ? String(s.year) : '', s.labels[0] || ''].filter(Boolean).join(' · ');
+}
+
+/**
+ * Draws the sticker's top line: year and label in grey, then the record name in
+ * bold. The artist is deliberately absent — on a sleeve you already know whose
+ * record it is, and the space buys a readable title.
+ *
+ * The two runs are fitted rather than simply concatenated and clipped: the
+ * provenance is capped at 45% of the line so a long imprint can never crowd out
+ * the record name, which is the part that identifies the sleeve.
+ */
+function drawHeader(doc: PdfDoc, s: Sticker, x: number, baseline: number, w: number, size: number): void {
+  const prefix = provenance(s);
+  const title = s.recordTitle || '';
+  const sep = prefix && title ? '  ' : '';
+
+  const prefixW = textWidth(prefix, size, false);
+  const titleW = textWidth(title, size, true);
+  const sepW = textWidth(sep, size, false);
+
+  let shownPrefix = prefix;
+  let shownTitle = title;
+  if (prefixW + sepW + titleW > w) {
+    shownPrefix = ellipsize(prefix, Math.min(prefixW, w * 0.45), size, false);
+    const used = textWidth(shownPrefix, size, false) + sepW;
+    shownTitle = ellipsize(title, w - used, size, true);
+  }
+
+  if (shownPrefix) doc.text(x, baseline, shownPrefix, { size, color: GREY });
+  const titleX = x + (shownPrefix ? textWidth(shownPrefix, size, false) + sepW : 0);
+  if (shownTitle) doc.text(titleX, baseline, shownTitle, { size, bold: true });
 }
 
 /**
@@ -240,10 +278,7 @@ function drawSticker(
   const partLabel = s.parts > 1 ? `${s.part}/${s.parts}` : '';
   const partW = partLabel ? textWidth(partLabel, headSize, false) + 4 : 0;
 
-  doc.text(x, y + headSize, ellipsize(recordLine(s), w - partW, headSize, true), {
-    size: headSize,
-    bold: true,
-  });
+  drawHeader(doc, s, x, y + headSize, w - partW, headSize);
   if (partLabel) {
     doc.text(x + w, y + headSize, partLabel, { size: headSize, color: GREY, align: 'right' });
   }
@@ -254,12 +289,15 @@ function drawSticker(
   const listTop = top + 2;
   const rowH = (y + h - listTop) / Math.max(slots, s.tracks.length);
   const titleSize = Math.max(6, Math.min(11, rowH * 0.4));
-  const artistSize = Math.max(5, Math.min(8.5, rowH * 0.29));
+  // The artist line was set far too small to read at arm's length in a dark
+  // room; it now sits just under the title rather than a third of its size.
+  const artistSize = Math.max(6.5, Math.min(9.5, rowH * 0.34));
   const keySize = Math.max(6, Math.min(10, rowH * 0.36));
   const badgeW = Math.max(textWidth('12A', keySize, true) + 6, 16);
   const badgeH = keySize + 3;
   const bpmW = textWidth('188', keySize, true) + 2;
-
+  /** Leading between the track title and the artist beneath it. */
+  const subGap = 1.5;
   s.tracks.forEach((t, i) => {
     const rowY = listTop + i * rowH;
     if (i > 0) doc.line(x, rowY - 1, x + w, rowY - 1, RULE, 0.25);
@@ -267,11 +305,16 @@ function drawSticker(
     // The block is centred in its row: with two tracks per sticker the rows are
     // much taller than their content, and a partly-filled sticker leaves its
     // unused rows blank at the bottom rather than stretching into them.
+    //
+    // The artist line's descender counts towards the block height. Leaving it
+    // out over-estimates the free space and the centring pushes the row's tails
+    // down onto the rule below it — with the larger artist type there is only
+    // about a point of slack to play with.
     const sub = [t.artist, t.keyName].filter(Boolean).join(' · ');
-    const blockH = titleSize + (sub ? artistSize + 2.5 : 0);
-    const pad = Math.max(0, (rowH - blockH - 2) / 2);
+    const blockH = titleSize + (sub ? subGap + artistSize * (1 + DESCENDER) : 0);
+    const pad = Math.max(0, (rowH - blockH - 1) / 2);
     const titleBase = rowY + pad + titleSize;
-    const subBase = titleBase + artistSize + 2.5;
+    const subBase = titleBase + artistSize + subGap;
 
     // Key badge, left.
     const badgeY = rowY + (rowH - badgeH) / 2 - 1;
