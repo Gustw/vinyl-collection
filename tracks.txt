@@ -5,7 +5,7 @@
   Year: 2016
   Label: Jungle Cakes
   Art: https://i.discogs.com/3pg6tU3kpv7Io7Ecd4d5Jk9dE8Ks_9dULNF2f5u5bXU/rs:fit/g:sm/q:90/h:583/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMTY0/ODctMTQ3Mzk0Mjc2/Mi00Njc5Lm1wbw.jpeg
-   1. Bad Boys (Benny Page Remix) - Ed Solo And Deekline [Key: D major (10B) | BPM: 105]
+   1. Bad Boys (Benny Page Remix) - Ed Solo And Deekline [Key: E minor (9A) | BPM: 175]
    2. Pass Me The Dubplate (Benny Page Remix) - Deekline Featuring Tippa Irie [Key: A# minor (3A) | BPM: 175]
 
 === Desolate EP -- Kit ===
@@ -57,7 +57,7 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Key: F major (7B) | BPM: 170]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Key: G major (9B) | BPM: 175]
    2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Key: B major (1B) | BPM: 88]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
@@ -68,7 +68,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
    1. Here I Come - Ed Solo [Key: E minor (9A) | BPM: 175]
-   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 88]
+   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 176]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
