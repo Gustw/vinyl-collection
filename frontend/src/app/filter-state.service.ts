@@ -87,7 +87,11 @@ export class FilterStateService {
   readonly detail = this.persisted('filters.detail');
   /** Screen 1 overview display preferences. */
   readonly view = this.persistedView('view.list');
-  /** Whether the filter panels are folded to just the search box. */
+  /**
+   * Whether the filter panels are folded to just the search box. On a phone
+   * they start folded: the genre/style/key chip lists run to several screens,
+   * so leaving them open would bury the collection under its own filters.
+   */
   readonly listCollapsed = this.persistedFlag('filters.list.collapsed');
   readonly detailCollapsed = this.persistedFlag('filters.detail.collapsed');
 
@@ -96,10 +100,24 @@ export class FilterStateService {
     target.update((v) => !v);
   }
 
-  private persistedFlag(storageKey: string): WritableSignal<boolean> {
-    let initial = false;
+  /**
+   * Starting state for a filter panel the user has never touched on this
+   * device. Only ever a first-run default — an explicit choice is remembered
+   * and always wins, on any screen size.
+   */
+  private defaultCollapsed(): boolean {
     try {
-      initial = localStorage.getItem(storageKey) === 'true';
+      return window.matchMedia('(max-width: 720px)').matches;
+    } catch {
+      return false;
+    }
+  }
+
+  private persistedFlag(storageKey: string): WritableSignal<boolean> {
+    let initial = this.defaultCollapsed();
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (raw !== null) initial = raw === 'true';
     } catch {
       /* ignore storage errors */
     }

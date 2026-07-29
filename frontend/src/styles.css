@@ -20,7 +20,18 @@ html, body {
   color: var(--text);
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
+  /* Stop iOS inflating text in landscape, which breaks the badge columns. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
+
+/*
+ * Record and track titles arrive from Discogs and can contain very long
+ * unbroken runs (catalogue numbers, URLs). Without this one of them can force
+ * the whole page wider than the screen and leave everything horizontally
+ * scrollable on a phone.
+ */
+body { overflow-wrap: break-word; }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -736,5 +747,227 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 }
 .settings-grid input:focus { outline: none; border-color: var(--accent); }
 .settings-help { margin-top: 12px; font-size: 12px; }
+
+
+/* ==========================================================================
+   Narrow screens (phones, and desktop windows dragged small)
+   --------------------------------------------------------------------------
+   The desktop layout leans on wide, fixed-width badge columns to keep numbers
+   aligned down a list. That alignment is worth a lot on a big screen and is
+   impossible on a 360px one, where the same row needs ~620px. So rather than
+   shrinking everything, rows here re-flow onto two or three lines: the record
+   identifies itself on the first line and its numbers sit together below.
+   ========================================================================== */
+@media (max-width: 720px) {
+  /* --- Page frame --- */
+  .container { padding: 12px 12px 0; }
+  .panel { padding: 12px; margin-bottom: 12px; }
+  .site-footer { margin: 24px 12px 0; }
+
+  /*
+   * The topbar carries up to five actions. Sticky, they wrap to three rows and
+   * eat a fifth of the screen on every scroll, so here it scrolls away with the
+   * page and gives the height back to the collection.
+   */
+  .topbar {
+    position: static;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  /* margin override: the detail screen sets margin-left inline. */
+  .topbar h1 { font-size: 16px; margin: 0 !important; }
+  .topbar .spacer { display: none; }
+  .topbar .btn { flex: 1 1 auto; text-align: center; }
+
+  /* --- Touch targets: ~40px is the smallest comfortable tap area --- */
+  .btn { padding: 10px 12px; min-height: 40px; }
+  .set-actions .btn { padding: 8px 10px; min-height: 36px; }
+  .chip { padding: 8px 12px; font-size: 13px; }
+  .crate-btn { min-width: 38px; min-height: 36px; font-size: 16px; }
+
+  /*
+   * iOS zooms into any field whose text is under 16px when it takes focus, and
+   * never zooms back out — which strands the layout off-screen.
+   */
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  select,
+  textarea,
+  .crate-new input,
+  .crate-name,
+  .bpm-filter .bpm-input,
+  .year-filter .year-input,
+  .ef-select,
+  .ef-input,
+  .settings-grid input { font-size: 16px; }
+
+  /* --- Filters --- */
+  .filters-head { flex-wrap: wrap; }
+  .filters-search { flex: 1 1 100%; }
+  .filters-head .btn { flex: 1 1 auto; }
+  .bpm-filter, .year-filter { flex-wrap: wrap; }
+  .bpm-filter .bpm-check { margin-left: 0; flex: 1 1 100%; }
+  .year-filter .year-input { flex: 1 1 0; width: auto; min-width: 0; }
+
+  /* --- Overview --- */
+  .view-controls { flex-wrap: wrap; row-gap: 10px; }
+  .view-controls .spacer { flex: 1 1 100%; height: 0; }
+  .seg { flex: 1 1 auto; }
+  .seg .btn { flex: 1; }
+  /* Two tiles per row reads better than one huge one. */
+  .rec-cards.grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+  .rec-cards.grid .rec-card .cover { height: 120px; }
+  .rec-card { padding: 10px; gap: 10px; }
+
+  /*
+   * Badges size to their content here. The fixed minimums that align them into
+   * columns on desktop are exactly what overflows the row on a phone.
+   */
+  .rel-badge, .key-badge, .bpm-badge, .pitch-badge { min-width: 0; }
+
+  /*
+   * Dense lists carry up to four badges per row. Shrinking them slightly is
+   * what lets a record's numbers stay together on one line instead of wrapping
+   * onto a second and making every row a third taller.
+   */
+  .mixable-list .rel-badge,
+  .mixable-list .bpm-badge,
+  .mixable-list .pitch-badge,
+  .mixable-list .key-badge,
+  .bridge-step .bpm-badge,
+  .bridge-step .pitch-badge,
+  .bridge-step .key-badge,
+  .set-item .bpm-badge,
+  .set-item .key-badge { font-size: 11px; padding: 2px 6px; }
+  /* The pitched-key badge carries a sub-label; trim it so the badge row fits. */
+  .key-badge.adjusted { gap: 4px; }
+  .key-badge.adjusted .pitch-tag { font-size: 9px; padding: 1px 4px; }
+
+  /* --- Track rows (record tracklists): title, then artist + numbers --- */
+  .track-row { flex-wrap: wrap; row-gap: 6px; padding: 10px 6px; }
+  .track-row .track-title { flex: 1 1 100%; font-weight: 600; }
+
+  /*
+   * Mixable list: sleeve and title lead, artist below them, and the relation /
+   * BPM / pitch / key badges gather on a line of their own.
+   *
+   * The title gets two lines and the artist one. Left to wrap freely a single
+   * row runs to ~170px on a 360px screen — four records to a screenful, which
+   * defeats the point of a list you scan.
+   */
+  .mixable-list .track-row { padding: 8px 4px; column-gap: 8px; row-gap: 4px; }
+  .mixable-list .track-row .cover { order: 1; width: 36px; height: 36px; }
+  .mixable-list .track-title {
+    order: 2;
+    flex: 1 1 auto;
+    font-weight: 600;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .mixable-list .track-artist {
+    order: 3;
+    flex: 1 1 100%;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mixable-list .rel-badge { order: 4; }
+  .mixable-list .bpm-badge { order: 5; }
+  .mixable-list .pitch-badge { order: 6; }
+  .mixable-list .key-badge { order: 7; }
+
+  /* --- Track detail --- */
+  .detail-head { flex-direction: column; gap: 12px; }
+  .cover-lg { width: 100%; max-width: 240px; height: auto; aspect-ratio: 1; }
+  .cover-lg.cover-none { font-size: 44px; }
+  .detail-grid { grid-template-columns: 92px minmax(0, 1fr); gap: 6px 10px; }
+
+  .edit-row { flex-wrap: wrap; gap: 8px; }
+  .edit-form { gap: 10px; padding: 10px; }
+  .ef-field { flex: 1 1 100%; }
+  .ef-select, .ef-input { width: 100%; min-width: 0; }
+  .edit-actions { flex: 1 1 100%; }
+  .edit-actions .btn { flex: 1; }
+
+  /* --- Bridge finder --- */
+  .bridge-step { flex-wrap: wrap; row-gap: 4px; padding: 8px 4px; }
+  .bridge-step .track-title { flex: 1 1 auto; font-weight: 600; }
+  .bridge-step .track-artist {
+    flex: 1 1 100%;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bridge-options .popover-item { flex-wrap: wrap; row-gap: 4px; }
+  .bridge-options .popover-item .track-title { flex: 1 1 auto; font-weight: 600; }
+  .bridge-options .popover-item .track-artist {
+    flex: 1 1 100%;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bridge-route { padding: 8px; }
+
+  /* The transition's indent is a desktop luxury; reclaim it for content. */
+  .transition { margin-left: 12px; padding: 6px 8px; }
+  .bridge-route .transition { margin-left: 10px; }
+
+  /* --- Set builder --- */
+  .set-summary { flex-wrap: wrap; row-gap: 10px; }
+  .set-summary .spacer { flex: 1 1 100%; height: 0; }
+  .set-summary .btn { flex: 1 1 auto; }
+  .set-list { padding: 6px; }
+  .set-item { flex-wrap: wrap; row-gap: 8px; padding: 10px 2px; }
+  .set-item .cover { width: 36px; height: 36px; }
+  /* One line each: the record is already identified by its sleeve and position. */
+  .set-track .track-title,
+  .set-track .muted {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /*
+   * Full-width zero-height pseudo-element: the standard way to force a line
+   * break in a wrapping flex row. Keeps position + sleeve + title together on
+   * the first line and drops the badges and controls onto the second.
+   */
+  .set-item::after { content: ""; flex: 1 1 100%; height: 0; order: 1; }
+  .set-item .bpm-badge,
+  .set-item .key-badge,
+  .set-item .set-actions { order: 2; }
+  .set-item .set-actions { margin-left: auto; }
+
+  /* --- Popovers: never wider than the screen --- */
+  .popover { width: min(320px, calc(100vw - 16px)); max-height: 70vh; }
+  .crate-row { flex-wrap: wrap; row-gap: 8px; }
+  .crate-name { min-width: 0; width: 100%; }
+
+  /* --- Update status bar --- */
+  .update-status { flex-wrap: wrap; row-gap: 8px; }
+  .update-status .progress { flex: 1 1 100%; }
+  .update-status .spacer { display: none; }
+  .update-status .btn { flex: 1 1 auto; }
+
+  /* --- Re-fetch report modal --- */
+  .modal-backdrop { padding: 8px; }
+  .modal { max-height: 92vh; padding: 12px; }
+  .change-row { flex-wrap: wrap; row-gap: 8px; }
+  .change-values { width: 100%; align-items: flex-start; }
+  .modal-foot { flex-wrap: wrap; row-gap: 10px; }
+  .modal-foot .spacer { flex: 1 1 100%; height: 0; }
+
+  /* --- Settings: label above field, not beside it --- */
+  .settings-grid { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .settings-grid label { margin-top: 8px; }
+}
+
 
 
