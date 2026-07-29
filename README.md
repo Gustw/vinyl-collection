@@ -27,6 +27,8 @@ updates back through the GitHub API.
   carry to a gig. Bridge and mix suggestions can be limited to one.
 - **Set builder** — puts a crate in playing order and lints every junction,
   separating mixes that can't be performed from ones that merely want an ear.
+  Two cuts from the same record in a row are caught as unplayable: one disc
+  can't be on two decks at once.
 - **Bridge finder** — "I'm on this record, I want to reach that one, what takes
   me there?" Searches routes through the records you have, keeping every deck
   inside its pitch range and tracking where the set tempo ends up.

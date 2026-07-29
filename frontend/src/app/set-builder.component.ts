@@ -27,7 +27,7 @@ import { Transition, evaluateSet, formatPercent } from './transitions';
           <span class="badge-count" [title]="runtimeTitle()">⏱ {{ rt }}</span>
         }
         @if (blockedCount()) {
-          <span class="badge-count err" title="The decks can't close the tempo gap">
+          <span class="badge-count err" [title]="blockedTitle()">
             {{ blockedCount() }} unplayable transition(s)
           </span>
         }
@@ -171,6 +171,21 @@ export class SetBuilderComponent {
   readonly blockedCount = computed(
     () => this.transitions().filter((t) => t.level === 'bad').length
   );
+
+  /** Of those, the ones blocked because both cuts share a disc. */
+  readonly sameRecordCount = computed(
+    () => this.transitions().filter((t) => t.sameRecord).length
+  );
+
+  /** Spells out *why* the set is blocked, since there are two different reasons. */
+  blockedTitle(): string {
+    const same = this.sameRecordCount();
+    const tempo = this.blockedCount() - same;
+    const parts: string[] = [];
+    if (tempo) parts.push(`${tempo} where the decks can't close the tempo gap`);
+    if (same) parts.push(`${same} where both cuts are on the same record`);
+    return parts.join(', ');
+  }
 
   /** Transitions that will play but want an ear on them — clashing keys, mostly. */
   readonly warningCount = computed(

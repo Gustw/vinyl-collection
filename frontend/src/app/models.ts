@@ -70,6 +70,34 @@ export function trackKey(t: Pick<Track, 'artist' | 'title'>): string {
 }
 
 /**
+ * Identity of the physical disc a track sits on: its Discogs release id, or the
+ * record's title + artist when there is no id. Returns '' when the track
+ * carries nothing identifying, so two unknowns are never taken for each other.
+ */
+export function recordKey(t: Pick<Track, 'releaseId' | 'recordTitle' | 'recordArtist'>): string {
+  const id = (t.releaseId || '').trim();
+  if (id) return `id:${id}`;
+  const title = (t.recordTitle || '').trim();
+  const artist = (t.recordArtist || '').trim();
+  return title || artist ? `${title}\u0000${artist}`.toLowerCase() : '';
+}
+
+/** True when both tracks are cuts on the same physical record. */
+export function sameRecord(
+  a: Pick<Track, 'releaseId' | 'recordTitle' | 'recordArtist'>,
+  b: Pick<Track, 'releaseId' | 'recordTitle' | 'recordArtist'>
+): boolean {
+  const ka = recordKey(a);
+  return !!ka && ka === recordKey(b);
+}
+
+/** The side a position sits on: "A1" → "A", "AA2" → "AA" ('' if unknown). */
+export function positionSide(position: string): string {
+  const m = /^([A-Za-z]+)/.exec((position || '').trim());
+  return m ? m[1].toUpperCase() : '';
+}
+
+/**
  * Seconds in a printed duration: "6:32" → 392, "1:02:03" → 3723.
  * Returns 0 for anything unparseable, so unknown lengths simply don't count
  * towards a total rather than poisoning it with NaN.

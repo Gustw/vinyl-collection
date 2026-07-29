@@ -1,4 +1,4 @@
-import { Track } from './models';
+import { Track, positionSide, sameRecord } from './models';
 import {
   clampToWindow,
   foldBpmTo,
@@ -15,8 +15,9 @@ import {
 /**
  * How serious a problem with a transition is.
  *
- * 'bad' is reserved for mixes that *cannot happen* — the tempos are further
- * apart than the pitch faders can close. Everything else, clashing keys
+ * 'bad' is reserved for mixes that *cannot be performed*: either the tempos are
+ * further apart than the pitch faders can close, or both cuts live on the same
+ * disc and so can't be on two decks at once. Everything else, clashing keys
  * included, is a 'warn': a thing to know about, not a thing the decks refuse.
  */
 export type TransitionLevel = 'good' | 'warn' | 'bad';
@@ -41,6 +42,8 @@ export interface Transition {
   bpmDelta: number | null;
   /** True when the pitch needed by *both* records is within the decks' range. */
   reachable: boolean;
+  /** True when both cuts are on the same physical disc, so no blend is possible. */
+  sameRecord: boolean;
   /** True when the (pitched) keys are harmonically compatible. */
   harmonic: boolean;
   level: TransitionLevel;
@@ -105,7 +108,17 @@ export function evaluateTransitionAt(
     if (level === 'good') level = 'warn';
   };
 
-  // Tempo first, because it is the only thing here that can make a mix
+  // Before anything musical: one disc cannot be on two decks at once, so
+  // consecutive cuts from the same record can't be blended however well their
+  // keys and tempos fit. Easy to miss when planning from a screen — the two
+  // cuts look like two separate tracks — and impossible to miss on the night.
+  const onSameRecord = sameRecord(from, to);
+  if (onSameRecord) {
+    issues.push(sameRecordIssue(from, to));
+    level = 'bad';
+  }
+
+  // Tempo next, because it is the only other thing here that can make a mix
   // outright impossible: no amount of taste gets a record past the end of its
   // pitch fader.
   if (!known) {
@@ -157,10 +170,27 @@ export function evaluateTransitionAt(
     mixTempo,
     bpmDelta,
     reachable,
+    sameRecord: onSameRecord,
     harmonic,
     level,
     issues,
   };
+}
+
+/**
+ * Explains a same-record collision, naming the sides when both are known —
+ * "both on side A" reads differently to "sides A and B", which at least tells
+ * you the record would also have to be flipped.
+ */
+function sameRecordIssue(from: Track, to: Track): string {
+  const a = positionSide(from.position);
+  const b = positionSide(to.position);
+  let where = '';
+  if (a && b) where = a === b ? ` (both on side ${a})` : ` (sides ${a} and ${b})`;
+  return (
+    `Both cuts are on the same record${where} — one disc can't be on two decks, ` +
+    `so these can't be blended; you'd have to stop and re-cue.`
+  );
 }
 
 /** Signed percentage label, e.g. "+2.4%" / "−3.1%". */
