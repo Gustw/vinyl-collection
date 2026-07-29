@@ -30,6 +30,9 @@ updates back through the GitHub API.
 - **Bridge finder** — "I'm on this record, I want to reach that one, what takes
   me there?" Searches routes through the records you have, keeping every deck
   inside its pitch range and tracking where the set tempo ends up.
+- **Sticker sheets** — prints whatever the filters currently show onto a 24-up A4
+  label sheet (2 or 4 tracks per sticker, with key and BPM), so the work done in
+  here is readable on the sleeve in a dark room.
 
 ## Running it
 

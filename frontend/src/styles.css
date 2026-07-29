@@ -748,6 +748,21 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .settings-grid input:focus { outline: none; border-color: var(--accent); }
 .settings-help { margin-top: 12px; font-size: 12px; }
 
+/* --- Sticker sheet modal ---
+   Reuses .settings-grid, but its rows hold selects and toggle buttons as well
+   as plain inputs. */
+.settings-grid select {
+  width: 100%;
+  padding: 8px 10px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+}
+.settings-grid select:focus { outline: none; border-color: var(--accent); }
+.settings-grid .seg { display: flex; gap: 8px; }
+
 
 /* ==========================================================================
    Narrow screens (phones, and desktop windows dragged small)

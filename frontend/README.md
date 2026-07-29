@@ -14,6 +14,35 @@ produced by the Java tool and lets you browse and mix your collection.
 Filters on both screens are **remembered** (kept when navigating between screens
 and persisted to `localStorage` across reloads). Each screen keeps its own set.
 
+## Sticker sheets (🏷 on screen 1)
+Generates a print-ready PDF of sleeve labels from the **filtered** track list —
+whatever the list is showing is what gets printed, so narrow it down first
+(a crate, a genre, a BPM band) rather than printing 900 tracks.
+
+- **2 or 4 tracks per sticker.** A record with more matching tracks than fit
+  simply continues onto the next sticker, numbered `1/2`, `2/2`. A record never
+  shares a sticker with another one — a label has to make sense on one sleeve.
+  Type size comes from the *configured* slot count, not from how many tracks a
+  sticker happens to hold, so a leftover single track is set exactly like a full
+  sticker and leaves its unused rows blank rather than ballooning to fill them.
+- **Sheets:** the gapless 70 × 37 mm 24-up sheet (most own-brand packs) and
+  Avery L7159 / J8159 (63.5 × 33.9 mm). Both are 3 × 8 on A4.
+- **Edge safety margin** (default 2 mm) keeps text away from the die-cut edge,
+  absorbing the millimetre or two brands differ by and the drift of a printer
+  that doesn't register perfectly.
+- **Skip labels** lets you start part-way down a sheet you've already used.
+- **Outlines** draws the label boundaries for a test print on plain paper.
+
+All of these are remembered in `localStorage` alongside the filters and view
+preferences, so the sheet you settled on is still set next time.
+
+Print at **100% / actual size** — "fit to page" shrinks the sheet by a few
+millimetres and everything walks off the labels.
+
+The PDF is written by `pdf.ts`, a ~250-line writer using the standard Helvetica
+fonts. That's deliberate: the app is a static bundle and the only thing needed
+is "put this string at this coordinate", which isn't worth 300 kB of jsPDF.
+
 ## Data & updating (no server — runs entirely in the browser)
 The app loads `tracks.txt` at runtime. When a GitHub repo is configured it reads
 the live file from `raw.githubusercontent.com`; otherwise it falls back to the

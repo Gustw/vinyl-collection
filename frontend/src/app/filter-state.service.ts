@@ -1,4 +1,5 @@
 import { Injectable, effect, signal, WritableSignal } from '@angular/core';
+import { defaultStickerPrefs } from './stickers';
 
 export interface Filters {
   search: string;
@@ -87,6 +88,8 @@ export class FilterStateService {
   readonly detail = this.persisted('filters.detail');
   /** Screen 1 overview display preferences. */
   readonly view = this.persistedView('view.list');
+  /** Sticker sheet settings (tracks per sticker, sheet, margins…). */
+  readonly stickers = this.persistedJson('stickers', defaultStickerPrefs);
   /**
    * Whether the filter panels are folded to just the search box. On a phone
    * they start folded: the genre/style/key chip lists run to several screens,
@@ -145,7 +148,23 @@ export class FilterStateService {
   }
 
   private persistedView(storageKey: string): WritableSignal<ViewPrefs> {
-    const sig = signal<ViewPrefs>(this.loadView(storageKey));
+    return this.persistedJson(storageKey, defaultViewPrefs);
+  }
+
+  /**
+   * A signal of plain JSON state, loaded from and mirrored back to
+   * localStorage. Stored values are merged over the defaults, so settings added
+   * in a later version appear rather than coming back undefined.
+   */
+  private persistedJson<T extends object>(storageKey: string, fallback: () => T): WritableSignal<T> {
+    let initial = fallback();
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (raw) initial = { ...initial, ...(JSON.parse(raw) as Partial<T>) };
+    } catch {
+      /* ignore storage / parse errors */
+    }
+    const sig = signal<T>(initial);
     effect(() => {
       try {
         localStorage.setItem(storageKey, JSON.stringify(sig()));
@@ -156,17 +175,6 @@ export class FilterStateService {
     return sig;
   }
 
-  private loadView(storageKey: string): ViewPrefs {
-    try {
-      const raw = localStorage.getItem(storageKey);
-      if (raw) {
-        return { ...defaultViewPrefs(), ...(JSON.parse(raw) as Partial<ViewPrefs>) };
-      }
-    } catch {
-      /* ignore */
-    }
-    return defaultViewPrefs();
-  }
 
   private load(storageKey: string): Filters {
     try {

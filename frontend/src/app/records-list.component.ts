@@ -8,6 +8,16 @@ import { camelotClass } from './camelot';
 import { Rec, Track } from './models';
 import { UpdaterService, TrackChange } from './updater.service';
 import { ConfigService } from './config.service';
+import { downloadBlob } from './pdf';
+import {
+  SHEETS,
+  StickerPrefs,
+  buildStickers,
+  pageCount,
+  renderStickerPdf,
+  stickerFilename,
+  stickerOptions,
+} from './stickers';
 
 /** A record together with the tracks that survived the current filters. */
 interface Row {  record: Rec;
@@ -61,6 +71,13 @@ function formatDuration(ms: number): string {
         {{ updater.resumePoint() ? '↻ Resume keys / BPM' : '↻ Re-fetch keys / BPM' }}
       </button>
       <button class="btn" title="Manage crates" (click)="openCrates()">🗃 Crates</button>
+      <button
+        class="btn"
+        title="Print sticker sheets for the tracks matching the current filters"
+        (click)="openStickers()"
+      >
+        🏷 Stickers
+      </button>
       <a class="btn" routerLink="/set" title="Build a set from a crate and check every transition">▶ Set builder</a>
       <button class="btn" title="Settings (Discogs / GitHub)" (click)="toggleSettings()">⚙</button>
     </div>
@@ -487,6 +504,123 @@ function formatDuration(ms: number): string {
         </div>
       }
 
+      @if (showStickers()) {
+        <div class="modal-backdrop" (click)="closeStickers()">
+          <div class="modal" (click)="$event.stopPropagation()">
+            <div class="modal-head">
+              <h2>🏷 Sticker sheet</h2>
+              <span class="spacer"></span>
+              <button class="btn" (click)="closeStickers()">✕</button>
+            </div>
+
+            <div class="muted modal-sub">
+              Prints the <b>{{ shownTracks() }}</b> track(s) matching your current filters —
+              not the whole collection. Each sticker carries one record's tracks with their
+              key and BPM; a record with more tracks than fit continues onto the next
+              sticker (“1/2”, “2/2”).
+            </div>
+
+            <div class="settings-grid">
+              <label>Tracks per sticker</label>
+              <div class="seg">
+                <button
+                  class="btn"
+                  [class.active]="stickerPrefs().perSticker === 2"
+                  (click)="setSticker('perSticker', 2)"
+                >
+                  2 per sticker
+                </button>
+                <button
+                  class="btn"
+                  [class.active]="stickerPrefs().perSticker === 4"
+                  (click)="setSticker('perSticker', 4)"
+                >
+                  4 per sticker
+                </button>
+              </div>
+
+              <label>Sheet</label>
+              <select
+                [value]="stickerPrefs().sheetId"
+                (change)="setSticker('sheetId', $any($event.target).value)"
+              >
+                @for (s of sheets; track s.id) {
+                  <option [value]="s.id">{{ s.label }}</option>
+                }
+              </select>
+
+              <label>
+                Edge safety margin <span class="muted">(mm)</span>
+              </label>
+              <input
+                type="number"
+                min="0"
+                max="6"
+                step="0.5"
+                [value]="stickerPrefs().safeMm"
+                (input)="setStickerSafe($any($event.target).value)"
+              />
+
+              <label>
+                Skip labels on first page <span class="muted">(part-used sheet)</span>
+              </label>
+              <input
+                type="number"
+                min="0"
+                [max]="labelsPerPage() - 1"
+                step="1"
+                [value]="stickerPrefs().skip"
+                (input)="setStickerSkip($any($event.target).value)"
+              />
+
+              <label>Colour-code keys</label>
+              <div>
+                <button
+                  class="btn"
+                  [class.active]="stickerPrefs().colour"
+                  (click)="setSticker('colour', !stickerPrefs().colour)"
+                >
+                  {{ stickerPrefs().colour ? '✓ Camelot colours' : 'Plain grey' }}
+                </button>
+              </div>
+
+              <label>
+                Label outlines <span class="muted">(test print on plain paper)</span>
+              </label>
+              <div>
+                <button
+                  class="btn"
+                  [class.active]="stickerPrefs().outlines"
+                  (click)="setSticker('outlines', !stickerPrefs().outlines)"
+                >
+                  {{ stickerPrefs().outlines ? '✓ Drawn' : 'Hidden' }}
+                </button>
+              </div>
+            </div>
+
+            <div class="pitch-hidden-note">
+              Print at <b>100% / actual size</b> with page scaling off — “fit to page” shrinks
+              everything by a few millimetres and the text drifts off the labels. Run one test
+              on plain paper with outlines on and hold it against a sheet before committing.
+            </div>
+
+            <div class="modal-foot">
+              @if (stickerCount()) {
+                <span class="muted">
+                  {{ stickerCount() }} sticker(s) over {{ stickerPages() }} page(s)
+                </span>
+              } @else {
+                <span class="muted">Nothing matches the current filters.</span>
+              }
+              <span class="spacer"></span>
+              <button class="btn primary" [disabled]="!stickerCount()" (click)="downloadStickers()">
+                ⤓ Download PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+
       @if (updater.reportReady()) {
         <div class="modal-backdrop" (click)="closeReport()">
           <div class="modal" (click)="$event.stopPropagation()">
@@ -688,10 +822,62 @@ export class RecordsListComponent {
     this.fs.toggle(this.filters, facet, value);
   }
 
+  // --- Stickers -----------------------------------------------------------
+
+  readonly sheets = SHEETS;
+  readonly showStickers = signal(false);
+  /** Remembered across reloads, like the filters and view preferences. */
+  readonly stickerPrefs = this.fs.stickers;
+
+  private readonly stickerOpts = computed(() => stickerOptions(this.stickerPrefs()));
+
+  /** Labels on one sheet — the cap for "skip" on a part-used page. */
+  readonly labelsPerPage = computed(() => {
+    const s = this.stickerOpts().sheet;
+    return s.cols * s.rows;
+  });
+
+  /** The stickers the current filters would produce (drives the live count). */
+  readonly stickerList = computed(() =>
+    buildStickers(this.filtered(), this.stickerPrefs().perSticker)
+  );
+  readonly stickerCount = computed(() => this.stickerList().length);
+  readonly stickerPages = computed(() => pageCount(this.stickerCount(), this.stickerOpts()));
+
+  openStickers(): void {
+    this.closePopover();
+    this.showStickers.set(true);
+  }
+
+  closeStickers(): void {
+    this.showStickers.set(false);
+  }
+
+  /** Immutable patch of the remembered sticker settings. */
+  setSticker<K extends keyof StickerPrefs>(key: K, value: StickerPrefs[K]): void {
+    this.stickerPrefs.set({ ...this.stickerPrefs(), [key]: value });
+  }
+
+  setStickerSafe(value: string): void {
+    const n = parseFloat(value);
+    this.setSticker('safeMm', Number.isFinite(n) ? Math.min(Math.max(n, 0), 6) : 0);
+  }
+
+  setStickerSkip(value: string): void {
+    const n = parseInt(value, 10);
+    const max = this.labelsPerPage() - 1;
+    this.setSticker('skip', Number.isFinite(n) ? Math.min(Math.max(n, 0), max) : 0);
+  }
+
+  downloadStickers(): void {
+    const stickers = this.stickerList();
+    if (!stickers.length) return;
+    downloadBlob(renderStickerPdf(stickers, this.stickerOpts()), stickerFilename());
+  }
+
   // --- Crates -------------------------------------------------------------
 
-  readonly showCrates = signal(false);
-  readonly newCrateName = signal('');
+  readonly showCrates = signal(false);  readonly newCrateName = signal('');
   /** Track whose crate membership is being edited, positioned near the click. */
   readonly cratePicker = signal<{ x: number; y: number; track: Track } | null>(null);
 
