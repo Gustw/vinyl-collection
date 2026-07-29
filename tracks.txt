@@ -38,7 +38,7 @@
    9. Where Did It Go - Desmond Dekker [Key: C major (8B) | BPM: 132]
   10. The More You Live - Desmond Dekker [Key: G major (9B) | BPM: 101]
   11. Look What They're Doing To Me - Desmond Dekker [Key: Ab major (4B) | BPM: 119]
-  12. 007 Shanty Town - Desmond Dekker [Key: Ab major (4B) | BPM: 97]
+  12. 007 Shanty Town - Desmond Dekker [Key: A major (11B) | BPM: 102]
 
 === Ganja Smuggling -- Eek-A-Mouse ===
   ID: 32473200
@@ -57,7 +57,7 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Key: G major (9B) | BPM: 175]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Key: F major (7B) | BPM: 170]
    2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Key: B major (1B) | BPM: 88]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
@@ -68,7 +68,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
    1. Here I Come - Ed Solo [Key: E minor (9A) | BPM: 175]
-   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 176]
+   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 88]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
@@ -260,7 +260,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/Gli3QFTsVCVF0z2lydex8C5EL2VEZFmcsbdO2Wp-hsM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMjkw/MjgzLTE2NDU3Nzgy/MDYtMTI3NS5qcGVn.jpeg
    1. Jah Is Coming - Scott Allen, Pixel [Key: D minor (7A) | BPM: 180]
-   2. Babylon Fall - Scott Allen, Pixel [Key: Ab major (4B) | BPM: 85]
+   2. Babylon Fall - Scott Allen, Pixel [Key: D minor (7A) | BPM: 88]
 
 === Red Light / Little Man -- St.Cal ===
   ID: 23602418
@@ -279,8 +279,8 @@
   Year: 2011
   Label: Necessary Bass
   Art: https://i.discogs.com/SH9-AwtS9O8T60Y_VcgQT-dm6nZfj4F9whYArczEN4M/rs:fit/g:sm/q:90/h:336/w:336/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjgw/MDgtMTMyNjAyNTY4/Mi5qcGVn.jpeg
-   1. Wicked & Wild (Dancehall Style) - Tippa Irie [Key: B minor (10A) | BPM: 100]
-   2. Police In Helicopter (Frisk Mix) - Million Stylez [Key: D major (10B) | BPM: 120]
+   1. Wicked & Wild (Dancehall Style) - Tippa Irie [Key: B minor (10A) | BPM: 130]
+   2. Police In Helicopter (Frisk Mix) - Million Stylez [Key: C minor (5A) | BPM: 119]
 
 === Subconscious -- Radikal Guru ===
   ID: 5141746
@@ -317,7 +317,7 @@
   Year: 2014
   Label: Born On Road Records
   Art: https://i.discogs.com/8i91qdie6lEwM_g0CbfwlHsFcO1Hf3MWMWXPUmn233k/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mzcw/ODktMTQwNDMzNDI4/MS03NTM2LmpwZWc.jpeg
-   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Key: B major (1B) | BPM: 175]
+   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Key: B minor (10A) | BPM: 175]
    2. Chem Trails - Aries, Gold Dubs, Bevan & Andy Sim ft Lion Art [Key: A minor (8A) | BPM: 135]
 
 === Wicked Vinyl 01 -- Wickedsquad ===
@@ -454,7 +454,7 @@
   Year: 2010
   Label: XS Records
   Art: https://i.discogs.com/KZn3S93imvLExnKgJh4cU78aD0Ae_-d3gZjG-Vqzk0w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NTk0/MzUtMTMzOTQwNzIw/MC0yNTg4LmpwZWc.jpeg
-   1. Bang Bang (Subzero Remix) - Soundclash [Key: D major (10B) | BPM: 103]
+   1. Bang Bang (Subzero Remix) - Soundclash [Key: E minor (9A) | BPM: 120]
    2. Bang Bang (Original Mix) - Soundclash [Key: E minor (9A) | BPM: 206]
 
 === Gundelero -- Chopstick Dubplate ===
@@ -464,8 +464,8 @@
   Year: 2010
   Label: Chopstick Dubplate
   Art: https://i.discogs.com/0-9uu47LSJDxG3K68CHnnjH7xHyZtaF1hJBWolaw9Qk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjgx/MTYtMTYyMzMwMjI5/MS05Mzg2LmpwZWc.jpeg
-   1. Gundelero - Chopstick Dubplate [Key: D major (10B) | BPM: 88]
-   2. Chop Gundelero Riddim - Chopstick Dubplate [Key: D major (10B) | BPM: 88]
+   1. Gundelero - Chopstick Dubplate [Key: A# minor (3A) | BPM: 175]
+   2. Chop Gundelero Riddim - Chopstick Dubplate [Key: C# major (3B) | BPM: 88]
 
 === Mash You Down / Live From Studio 1 -- Serial Killaz ===
   ID: 1758060
