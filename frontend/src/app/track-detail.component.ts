@@ -120,10 +120,16 @@ interface Row {
                 <div class="edit-form">
                   <div class="ef-field">
                     <label>Key</label>
-                    <select class="ef-select" [value]="editCamelot()" (change)="editCamelot.set($any($event.target).value)">
-                      <option value="">— none —</option>
+                    <!--
+                      Selection is driven by [selected] on each option rather than
+                      [value] on the select: a [value] binding on the parent is
+                      applied before @for has created the options, so it would
+                      match nothing and silently leave the field blank.
+                    -->
+                    <select class="ef-select" (change)="editCamelot.set($any($event.target).value)">
+                      <option value="" [selected]="!editCamelot()">— none —</option>
                       @for (c of camelotOptions; track c) {
-                        <option [value]="c">{{ c }} — {{ keyNameOf(c) }}</option>
+                        <option [value]="c" [selected]="c === editCamelot()">{{ c }} — {{ keyNameOf(c) }}</option>
                       }
                     </select>
                   </div>
@@ -519,11 +525,18 @@ export class TrackDetailComponent {
     return camelotToKeyName(code);
   }
 
+  /**
+   * Opens the editor with both fields pre-filled from the track, so correcting
+   * one of them leaves the other exactly as it was. This matters: `save()`
+   * writes key and BPM together, so a field that opened blank would silently
+   * wipe the value it was supposed to preserve.
+   */
   startEdit(): void {
     const t = this.track();
     if (!t) return;
-    this.editCamelot.set(t.camelot);
-    this.editBpm.set(t.bpm);
+    // Normalised so it matches an option value in the Camelot picker.
+    this.editCamelot.set((t.camelot || '').trim().toUpperCase());
+    this.editBpm.set((t.bpm || '').trim());
     this.saveMsg.set(null);
     this.saveErr.set(false);
     this.editing.set(true);
