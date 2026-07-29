@@ -42,7 +42,9 @@ function splitTrackMeta(body: string): { body: string; meta: TrackMeta } {
   for (const f of fields) {
     const name = f![1].toLowerCase();
     const value = f![2].trim();
-    if (name === 'pos') meta.position = value;
+    // Positions are folded up on the way in as well as on the way out of
+    // Discogs, so a file written before that was done still displays evenly.
+    if (name === 'pos') meta.position = value.toUpperCase();
     else if (name === 'time') meta.duration = value;
     else if (name === 'key') meta.keyText = value;
     else if (name === 'bpm') meta.bpm = value;

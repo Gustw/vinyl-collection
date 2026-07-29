@@ -99,6 +99,14 @@ still used to write the file, otherwise it will drop `Pos`/`Time` on rewrite.
 Keys and BPMs are best-effort lookups and can be corrected by hand in the app;
 an edit is written straight back to `tracks.txt`.
 
+**`Pos` is reliable, `Time` often isn't.** Both come from Discogs, and Discogs
+contributors fill them in very unevenly: across a sample of this collection,
+positions were present for 100% of tracks but durations for only ~44% — and
+those were almost entirely albums and compilations. Every 12" single in the
+sample had no durations at all, which is the bulk of a DJ collection. Blank
+lengths are therefore expected, not a fault, and the UI hides length badges and
+crate runtimes rather than showing a misleading `0:00`.
+
 ### Maintenance scripts
 
 ```powershell

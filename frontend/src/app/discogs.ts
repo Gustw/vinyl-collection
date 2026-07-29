@@ -156,7 +156,10 @@ export async function fetchReleaseDetail(
       tracks.push({
         title,
         artist: joinArtists(entry?.artists, releaseArtist),
-        position: String(entry?.position || '').trim(),
+        // Discogs positions are user-entered and the case is inconsistent — the
+        // same collection has both "A1" and "a". Folded up so a column of them
+        // reads as a column.
+        position: String(entry?.position || '').trim().toUpperCase(),
         duration: String(entry?.duration || '').trim(),
       });
     }
