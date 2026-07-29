@@ -87,7 +87,7 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/1gAJD-oNOVOpLajXjU9n03tnccygX4NoVx5taUsASFI/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4OTk0/MC0xMTQ5OTQzMTk3/LmpwZWc.jpeg
-   1. Too Greedy (Rmx) - Stalefish [Key: B minor (10A) | BPM: 144]
+   1. Too Greedy (Rmx) - Stalefish [Key: F# minor (11A) | BPM: 73]
    2. Murder Style - Stalefish [Key: B major (1B) | BPM: 100]
 
 === Amen In Session / Seek And Find -- Jinx (In Dub) ===
@@ -107,7 +107,7 @@
   Year: 2010
   Label: Delacroix Records
   Art: https://i.discogs.com/0110MoSqhjMQEJAAmaODi4QBSmlRqO5YUQzjN2c4wo0/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzky/NjItMTM3MjI3Mzgy/NS0yODg2LmpwZWc.jpeg
-   1. Fit - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 150]
+   1. Fit - Vendetta & Barber & Bad Kid [Key: A# minor (3A) | BPM: 88]
    2. I'm The Devil - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 87]
 
 === French Connection EP -- Various ===
@@ -117,9 +117,9 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/JUib6Gr_PX4nBy2NdleGpIT9adpmo3edg-R9UUCkNq0/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjE0/MzMtMTI5MTgyNTk5/NC5qcGVn.jpeg
-   1. Woman Dub - FX909 [Key: F# minor (11A) | BPM: 125]
-   2. Soundboy - Lord Bitum & Metod MC [Key: Bb major (6B) | BPM: 106]
-   3. Promise Land - Alix Perez & Youthman [Key: D minor (7A) | BPM: 174]
+   1. Woman Dub - FX909 [Key: F minor (4A) | BPM: 127]
+   2. Soundboy - Lord Bitum & Metod MC [Key: G major (9B) | BPM: 130]
+   3. Promise Land - Alix Perez & Youthman [Key: E minor (9A) | BPM: 112]
    4. Dub Riddim - 2D [Key: F# major (2B) | BPM: 147]
 
 === World A Jungle Music -- Pixel ===
@@ -129,7 +129,7 @@
   Year: 2022
   Label: Rasta Vibez
   Art: https://i.discogs.com/XloaBUnRHCgd-rcl4Z1FgYmssTkTcR6QWZQON2FrMjU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNDI3/NTYwLTE2NTQwOTIz/ODYtNTkwMS5qcGVn.jpeg
-   1. Ice Cream Sound - Pixel [Key: D major (10B) | BPM: 173]
+   1. Ice Cream Sound - Pixel [Key: C major (8B) | BPM: 126]
    2. World A Jungle Music - Pixel [Key: D major (10B) | BPM: 175]
 
 === Call Di Doctor / Running Over -- Mystic Pulse / Gunmen ===
