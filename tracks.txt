@@ -2184,7 +2184,7 @@
   Year: 2016
   Label: Scoops
   Art: https://i.discogs.com/dWpEJNNTT9z-wjs2lKKOjOaJ1LqgoMTPaxTzCXO9F0A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMTU4/MTEtMTY1Mjk5MDA0/Ny0xMjIwLmpwZWc.jpeg
-   1. Tralalalala - Jah Marnyah [Key: A# minor (3A) | BPM: 139]
+   1. Tralalalala - Jah Marnyah [Key: B minor (10A) | BPM: 139]
    2. Tralalalala (Version) - Vibronics [Key: F# major (2B) | BPM: 139]
    3. Dirty Babylon - Jah Marnyah [Key: D major (10B) | BPM: 98]
    4. Dirty Babylon (Version) - Vibronics [Key: B minor (10A) | BPM: 150]
@@ -2198,12 +2198,12 @@
   Art: https://i.discogs.com/TEkPEfde6_nGWQE8aQvtUwPGSOB2poi_0gpgiuUdj8Y/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzkx/NDg3LTE1NDIwMjYw/MDAtNTUwNC5wbmc.jpeg
    1. Working Class - Marina P, Stand High Patrol [Key: G major (9B) | BPM: 120]
    2. Atmosphere - Marina P, Stand High Patrol [Key: C# major (3B) | BPM: 75]
-   3. Landlord - Marina P, Stand High Patrol [Key: A minor (8A) | BPM: 120]
+   3. Landlord - Marina P, Stand High Patrol [Key: Bb major (6B) | BPM: 144]
    4. Fragile - Marina P, Stand High Patrol [Key: C major (8B) | BPM: 136]
-   5. Spring Rain - Marina P, Stand High Patrol [Key: G major (9B) | BPM: 120]
+   5. Spring Rain - Marina P, Stand High Patrol [Key: C major (8B) | BPM: 140]
    6. Dreamcatcher - Marina P, Stand High Patrol [Key: C# minor (12A) | BPM: 86]
-   7. Raw Lines - Marina P, Stand High Patrol [Key: D# minor (2A) | BPM: 108]
-   8. Summer On Mars - Marina P, Stand High Patrol [Key: D minor (7A) | BPM: 145]
+   7. Raw Lines - Marina P, Stand High Patrol [Key: Eb major (5B) | BPM: 156]
+   8. Summer On Mars - Marina P, Stand High Patrol [Key: C# minor (12A) | BPM: 86]
    9. Rosetta - Marina P, Stand High Patrol [Key: D minor (7A) | BPM: 145]
 
 === Foundations -- The Architect ===
@@ -2255,7 +2255,7 @@
   Year: 2017
   Label: Arista, Sony Music, Legacy
   Art: https://i.discogs.com/-dHIglYpwfA6krkFFuNNSHLMJxuZWVmOVIfJ-lBomSM/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3NjMz/MjktMTQ4ODM2MjYz/MS03OTg5LmpwZWc.jpeg
-   1. I Robot - The Alan Parsons Project [Key: F major (7B) | BPM: 91]
+   1. I Robot - The Alan Parsons Project [Key: G major (9B) | BPM: 91]
    2. I Wouldn't Want To Be Like You - The Alan Parsons Project [Key: C# major (3B) | BPM: 101]
    3. Some Other Time - The Alan Parsons Project [Key: A minor (8A) | BPM: 126]
    4. Breakdown - The Alan Parsons Project [Key: D major (10B) | BPM: 170]
@@ -2360,7 +2360,7 @@
   Year: 1999
   Label: Flammable Records
   Art: https://i.discogs.com/LHtbyho20cr4_7wtKLISe3Q9VFJWl-fLeAltXe0GDqw/rs:fit/g:sm/q:90/h:569/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDE0/My0xNzYyNTAwMTYx/LTU2NjguanBlZw.jpeg
-   1. Scatterbomb (String Mix) - The Sneaker [Key: G major (9B) | BPM: 118]
+   1. Scatterbomb (String Mix) - The Sneaker [Key: B minor (10A) | BPM: 106]
    2. Scatterbomb (Trance Mix) - The Sneaker [Key: C major (8B) | BPM: 137]
 
 === Double Barrel / Spice Invader -- Fuzzy Logic ===
@@ -2437,7 +2437,7 @@
    2. Soundform - Astral Projection [Key: C# minor (12A) | BPM: 140]
    3. Flying Into A Star - Astral Projection [Key: A major (11B) | BPM: 142]
    4. No-One Ever Dreams - Astral Projection [Key: A# minor (3A) | BPM: 138]
-   5. Cosmic Ascension - Astral Projection Featuring D.J. Jorg [Key: D minor (7A) | BPM: 175]
+   5. Cosmic Ascension - Astral Projection Featuring D.J. Jorg [Key: E minor (9A) | BPM: 105]
    6. Life On Mars - Astral Projection [Key: F# major (2B) | BPM: 144]
    7. Liquid Sun - Astral Projection [Key: E major (12B) | BPM: 138]
    8. Ambient Galaxy (Disco Valley Mix) - Astral Projection [Key: G major (9B) | BPM: 140]
@@ -2463,7 +2463,7 @@
   Style: Folk Rock
   Label: CBS
   Art: https://i.discogs.com/RNYbPXTNt1UFddc4EpcRr-BmU6L7eAFs_fpPEn6jOOg/rs:fit/g:sm/q:90/h:421/w:438/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NzUz/MjgtMTM3MzcyNDY0/NC04NzM3LmpwZWc.jpeg
-   1. The Sounds Of Silence - Simon & Garfunkel [Key: F# major (2B) | BPM: 108]
+   1. The Sounds Of Silence - Simon & Garfunkel [Key: F# major (2B) | BPM: 107]
    2. Leaves That Are Green - Simon & Garfunkel [Key: E major (12B) | BPM: 106]
    3. Blessed - Simon & Garfunkel [Key: G major (9B) | BPM: 203]
    4. Kathy's Song - Simon & Garfunkel [Key: F# major (2B) | BPM: 102]
@@ -3003,7 +3003,7 @@
   Art: https://i.discogs.com/-okHy1YvixEgfTI7OM-91oG8L_sXZxkLz0FXQdsouio/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMDkx/NjItMTQ1MjQzMzM0/Ni04NDgyLmpwZWc.jpeg
    1. Summertime - The Shake Spears [Key: G minor (6A) | BPM: 131]
    2. I'll Go Crazy - The Shake Spears [Key: E major (12B) | BPM: 135]
-   3. Give It To Me - The Shake Spears [Key: G# minor (1A) | BPM: 127]
+   3. Give It To Me - The Shake Spears [Key: B minor (10A) | BPM: 159]
    4. Stop Playing That Song - The Shake Spears [Key: F major (7B) | BPM: 121]
    5. Summertime Blues - The Shake Spears [Key: G major (9B) | BPM: 161]
    6. Lucifer - The Shake Spears [Key: E major (12B) | BPM: 149]
