@@ -895,8 +895,8 @@
   Year: 2001
   Label: Rude Bwoy Plastic
   Art: https://i.discogs.com/cmjjJZuzyVivAoygiqmCHx5Fj3Hq42bj4omHV-UDGbo/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzQy/LTExMjE3NzUxMjYu/anBn.jpeg
-   1. Heads High - Heretic [Key: G major (9B) | BPM: 92]
-   2. Wings Of The Morning - Murder Inc. [Key: B major (1B) | BPM: 144]
+   1. Heads High - Heretic [Pos: A | Key: G major (9B) | BPM: 92]
+   2. Wings Of The Morning - Murder Inc. [Pos: B | Key: B major (1B) | BPM: 144]
 
 === E.Legal Gunshot / Foxy 2 Tails -- Mr. Quest / DJ Dhanu ===
   ID: 2204400
@@ -904,8 +904,8 @@
   Style: Drum n Bass
   Year: 2005
   Label: Solid Vinyl
-   1. E.Legal Gunshot - Mr. Quest [Key: C# major (3B) | BPM: 180]
-   2. Foxy 2 Tails - DJ Dhanu [Key: G minor (6A) | BPM: 147]
+   1. E.Legal Gunshot - Mr. Quest [Pos: A | Key: C# major (3B) | BPM: 180]
+   2. Foxy 2 Tails - DJ Dhanu [Pos: AA | Key: G minor (6A) | BPM: 147]
 
 === Tribal Natty (Aphrodite Remixes) -- Tribe Of Issachar ===
   ID: 618428
@@ -914,8 +914,8 @@
   Year: 2005
   Label: Congo Natty
   Art: https://i.discogs.com/f9wxdCinwUXKlBcf1FFDNpIeB1dbxLb6sxm-O5PFPrg/rs:fit/g:sm/q:90/h:500/w:493/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxODQy/OC0xMTUwNjI4NDI1/LmpwZWc.jpeg
-   1. Tribal Natty (Aphrodite Remix) - Tribe Of Issachar [Key: G# minor (1A) | BPM: 99]
-   2. Tribal Natty (Aphrodite Dub Mix) - Tribe Of Issachar [Key: A# minor (3A) | BPM: 120]
+   1. Tribal Natty (Aphrodite Remix) - Tribe Of Issachar [Pos: A | Key: G# minor (1A) | BPM: 99]
+   2. Tribal Natty (Aphrodite Dub Mix) - Tribe Of Issachar [Pos: AA | Key: A# minor (3A) | BPM: 120]
 
 === Concrete Jungle -- UK Apachi ===
   ID: 1009325
@@ -924,9 +924,9 @@
   Year: 2007
   Label: Nuttah Beats
   Art: https://i.discogs.com/bNVsl5zNt-6nxwuLj7RckkOBGB5WNB279ziufgfvwUA/rs:fit/g:sm/q:90/h:576/w:576/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDkz/MjUtMTU0OTgzNjE4/My0yNjQ2LmpwZWc.jpeg
-   1. Concrete Jungle (Vocal Mix) - UK Apache [Key: D major (10B) | BPM: 135]
-   2. Concrete Jungle (Dub Mix) - UK Apache [Key: D major (10B) | BPM: 135]
-   3. Concrete Jungle (Hip Hop Mix) - UK Apache [Key: D major (10B) | BPM: 135]
+   1. Concrete Jungle (Vocal Mix) - UK Apache [Pos: A1 | Key: D major (10B) | BPM: 135]
+   2. Concrete Jungle (Dub Mix) - UK Apache [Pos: AA1 | Key: D major (10B) | BPM: 135]
+   3. Concrete Jungle (Hip Hop Mix) - UK Apache [Pos: AA2 | Key: D major (10B) | BPM: 135]
 
 === Step Express EP -- Various ===
   ID: 664690
@@ -935,10 +935,10 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/GKYTPDsCVjvqP0qiChncd5U4bcY3aNktn5Pn-ZiL5iY/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NDY5/MC0xMTQ1MTA1OTk2/LmpwZWc.jpeg
-   1. Electricité (Stalefish Remix) - Metod MC [Key: F minor (4A) | BPM: 130]
-   2. Télé Réalité - Metod MC [Key: A minor (8A) | BPM: 98]
-   3. Ride On (Remix) - Stalefish [Key: B minor (10A) | BPM: 140]
-   4. Break The Alarm - 2D [Key: A minor (8A) | BPM: 128]
+   1. Electricité (Stalefish Remix) - Metod MC [Pos: A1 | Key: F minor (4A) | BPM: 130]
+   2. Télé Réalité - Metod MC [Pos: A2 | Key: A minor (8A) | BPM: 98]
+   3. Ride On (Remix) - Stalefish [Pos: B1 | Key: B minor (10A) | BPM: 140]
+   4. Break The Alarm - 2D [Pos: B2 | Key: A minor (8A) | BPM: 128]
 
 === Girls Pon Mi Mind -- Dirty Dubsters Feat. Top Cat ===
   ID: 3719450
@@ -947,9 +947,9 @@
   Year: 2012
   Label: Irish Moss Records
   Art: https://i.discogs.com/mmiDtr8pqTn14STEie-q-rmn214vYTEv7OWTlxpIiXc/rs:fit/g:sm/q:90/h:600/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MTk0/NTAtMTU0MTQ0NDkx/MS01MTk5LmpwZWc.jpeg
-   1. Girls Pon Mi Mind (Original Mix) - Dirty Dubsters Feat. Top Cat [Key: A# minor (3A) | BPM: 128]
-   2. Girls Pon Mi Mind (LionDub Remix) - Dirty Dubsters Feat. Top Cat [Key: Bb major (6B) | BPM: 178]
-   3. Girls Pon Mi Mind (Spenda C Remix) - Dirty Dubsters Feat. Top Cat [Key: F# major (2B) | BPM: 112]
+   1. Girls Pon Mi Mind (Original Mix) - Dirty Dubsters Feat. Top Cat [Pos: A | Time: 3:33 | Key: A# minor (3A) | BPM: 128]
+   2. Girls Pon Mi Mind (LionDub Remix) - Dirty Dubsters Feat. Top Cat [Pos: B1 | Time: 5:33 | Key: Bb major (6B) | BPM: 178]
+   3. Girls Pon Mi Mind (Spenda C Remix) - Dirty Dubsters Feat. Top Cat [Pos: B2 | Time: 4:03 | Key: F# major (2B) | BPM: 112]
 
 === I'm A Versionist / Cenizas De Babylon -- DJ Dubb ===
   ID: 1005321
@@ -958,8 +958,8 @@
   Year: 2007
   Label: Junglista Records
   Art: https://i.discogs.com/2awSnDthHiTmw1ILrsHpBbg9aJQZ5fwyHLYKNZEqd18/rs:fit/g:sm/q:90/h:295/w:295/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDUz/MjEtMTE4MzEzMzcz/My5qcGVn.jpeg
-   1. I'm A Versionist - DJ Dubb [Key: C# major (3B) | BPM: 170]
-   2. Cenizas De Babylon - DJ Dubb [Key: C# minor (12A) | BPM: 110]
+   1. I'm A Versionist - DJ Dubb [Pos: A | Key: C# major (3B) | BPM: 170]
+   2. Cenizas De Babylon - DJ Dubb [Pos: AA | Key: C# minor (12A) | BPM: 110]
 
 === Beat The System Remixes -- Jah Seal, Aldubb And Soultrain ===
   ID: 2047141
@@ -968,8 +968,8 @@
   Year: 2009
   Label: Wikkid Riddim
   Art: https://i.discogs.com/sU_YYMt6f1ib9Yu7W6Tr8cgfkWHgfhfCAr6D6BlMw7g/rs:fit/g:sm/q:90/h:394/w:394/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDcx/NDEtMTQzMTI3NzI4/MC02NTc4LmpwZWc.jpeg
-   1. Beat The System (RCola's Jungle Remix) - Jahseal, Aldubb And Soultrain [Key: E minor (9A) | BPM: 126]
-   2. Beat The System (Tricky D's Dubstep Remix) - Jahseal, Aldubb And Soultrain [Key: C major (8B) | BPM: 132]
+   1. Beat The System (RCola's Jungle Remix) - Jahseal, Aldubb And Soultrain [Pos: A | Key: E minor (9A) | BPM: 126]
+   2. Beat The System (Tricky D's Dubstep Remix) - Jahseal, Aldubb And Soultrain [Pos: AA | Key: C major (8B) | BPM: 132]
 
 === Sound Clash (Remixes) -- Skoobz ===
   ID: 541676
@@ -978,8 +978,8 @@
   Year: 2005
   Label: Rockers Dubs
   Art: https://i.discogs.com/SigawlntkYEVXuOMEMHvRKZ68Awsi0g-BmAyDY8iC7s/rs:fit/g:sm/q:90/h:594/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0MTY3/Ni0xMzQ4MTQ1MDEy/LTYxNTUuanBlZw.jpeg
-   1. Sound Clash (Mix 1) - Skoobz [Key: G major (9B) | BPM: 180]
-   2. Sound Clash (Mix 2) - Skoobz [Key: G major (9B) | BPM: 180]
+   1. Sound Clash (Mix 1) - Skoobz [Pos: A | Key: G major (9B) | BPM: 180]
+   2. Sound Clash (Mix 2) - Skoobz [Pos: AA | Key: G major (9B) | BPM: 180]
 
 === Jahoviah Ina Dub / Only You -- Terry Tee ===
   ID: 1366545
@@ -988,8 +988,8 @@
   Year: 2008
   Label: Knowledge & Wisdom Records
   Art: https://i.discogs.com/2G3r8KWbmD9OYb03PkEeVMd5Y5ydlWLnhfy566uDjnU/rs:fit/g:sm/q:90/h:288/w:288/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjY1/NDUtMTI3MjU4MDQ4/Ny5qcGVn.jpeg
-   1. Jahoviah Ina Dub - Terry T [Key: G# minor (1A) | BPM: 95]
-   2. Only You - Terry T [Key: A# minor (3A) | BPM: 73]
+   1. Jahoviah Ina Dub - Terry T [Pos: A | Key: G# minor (1A) | BPM: 95]
+   2. Only You - Terry T [Pos: AA | Key: A# minor (3A) | BPM: 73]
 
 === Computer Dub / Stone In My Heart -- Vini Selecta & U.Stone ===
   ID: 1668772
