@@ -12,7 +12,13 @@ import {
   mixableCamelot,
 } from './camelot';
 
-/** How serious a problem with a transition is. */
+/**
+ * How serious a problem with a transition is.
+ *
+ * 'bad' is reserved for mixes that *cannot happen* — the tempos are further
+ * apart than the pitch faders can close. Everything else, clashing keys
+ * included, is a 'warn': a thing to know about, not a thing the decks refuse.
+ */
 export type TransitionLevel = 'good' | 'warn' | 'bad';
 
 /** The evaluation of playing `to` straight after `from`. */
@@ -38,7 +44,7 @@ export interface Transition {
   /** True when the (pitched) keys are harmonically compatible. */
   harmonic: boolean;
   level: TransitionLevel;
-  /** Human explanations of anything wrong, worst first. */
+  /** Human explanations of anything wrong, blocking problems first. */
   issues: string[];
 }
 
@@ -95,24 +101,24 @@ export function evaluateTransitionAt(
 
   const issues: string[] = [];
   let level: TransitionLevel = 'good';
+  const warn = () => {
+    if (level === 'good') level = 'warn';
+  };
 
-  if (!from.camelot || !to.camelot) {
-    issues.push('Key unknown — this transition cannot be checked.');
-    level = 'warn';
-  } else if (!harmonic) {
-    issues.push(`Keys clash: ${fromCamelot} into ${effectiveCamelot} (${rel || 'unrelated'}).`);
-    level = 'bad';
-  }
-
+  // Tempo first, because it is the only thing here that can make a mix
+  // outright impossible: no amount of taste gets a record past the end of its
+  // pitch fader.
   if (!known) {
-    issues.push(
-      impossible
-        ? `Tempos are too far apart: ${fromBpm!.toFixed(0)} and ${toBpm!.toFixed(0)} BPM ` +
+    if (impossible) {
+      issues.push(
+        `Tempos are too far apart: ${fromBpm!.toFixed(0)} and ${toBpm!.toFixed(0)} BPM ` +
           `can't meet within ±${pitchRange}%.`
-        : 'BPM unknown — beat-matching cannot be checked.'
-    );
-    if (impossible) level = 'bad';
-    else if (level === 'good') level = 'warn';
+      );
+      level = 'bad';
+    } else {
+      issues.push('BPM unknown — beat-matching cannot be checked.');
+      warn();
+    }
   } else {
     // Whichever deck is working hardest decides whether this is playable.
     const worst = Math.abs(percent!) >= Math.abs(fromPercent!) ? percent! : fromPercent!;
@@ -124,8 +130,20 @@ export function evaluateTransitionAt(
       level = 'bad';
     } else if (Math.abs(worst) > pitchRange * 0.75) {
       issues.push(`Needs ${formatPercent(worst)} pitch — near the end of the fader.`);
-      if (level === 'good') level = 'warn';
+      warn();
     }
+  }
+
+  // Keys are only ever a warning. A clash is a musical judgement, not a
+  // physical limit: plenty of them work over a percussive intro, on a quick
+  // cut, or with the offending element EQ'd out — so it is flagged for the
+  // ear to settle, never presented as a mix that cannot happen.
+  if (!from.camelot || !to.camelot) {
+    issues.push('Key unknown — this transition cannot be checked.');
+    warn();
+  } else if (!harmonic) {
+    issues.push(`Keys clash: ${fromCamelot} into ${effectiveCamelot} (${rel || 'unrelated'}).`);
+    warn();
   }
 
   return {

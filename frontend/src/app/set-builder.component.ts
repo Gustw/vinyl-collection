@@ -23,9 +23,17 @@ import { Transition, evaluateSet, formatPercent } from './transitions';
       <span class="spacer"></span>
       @if (crate()) {
         <span class="badge-count">{{ tracks().length }} track(s)</span>
-        @if (problemCount()) {
-          <span class="badge-count err">{{ problemCount() }} problem transition(s)</span>
-        } @else if (tracks().length > 1) {
+        @if (blockedCount()) {
+          <span class="badge-count err" title="The decks can't close the tempo gap">
+            {{ blockedCount() }} unplayable transition(s)
+          </span>
+        }
+        @if (warningCount()) {
+          <span class="badge-count warn-count" title="Playable, but worth listening to first">
+            {{ warningCount() }} to watch
+          </span>
+        }
+        @if (!blockedCount() && !warningCount() && tracks().length > 1) {
           <span class="badge-count ok-count">all transitions work</span>
         }
       }
@@ -131,8 +139,14 @@ export class SetBuilderComponent {
     evaluateSet(this.tracks(), this.pitchRange())
   );
 
-  readonly problemCount = computed(
-    () => this.transitions().filter((t) => t.level !== 'good').length
+  /** Transitions the decks physically cannot make. */
+  readonly blockedCount = computed(
+    () => this.transitions().filter((t) => t.level === 'bad').length
+  );
+
+  /** Transitions that will play but want an ear on them — clashing keys, mostly. */
+  readonly warningCount = computed(
+    () => this.transitions().filter((t) => t.level === 'warn').length
   );
 
   /** "118 – 132" across the set, or '' when no BPMs are known. */

@@ -474,6 +474,7 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .transition.bad .tr-issue { color: #ff9fb0; }
 
 .ok-count { color: #9fe6c4; }
+.warn-count { color: #ffdf9e; }
 
 /* --- Bridge finder --- */
 .bridge-panel { display: block; }
