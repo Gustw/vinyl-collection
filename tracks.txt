@@ -5,8 +5,8 @@
   Year: 2016
   Label: Jungle Cakes
   Art: https://i.discogs.com/3pg6tU3kpv7Io7Ecd4d5Jk9dE8Ks_9dULNF2f5u5bXU/rs:fit/g:sm/q:90/h:583/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMTY0/ODctMTQ3Mzk0Mjc2/Mi00Njc5Lm1wbw.jpeg
-   1. Bad Boys (Benny Page Remix) - Ed Solo And Deekline [Key: E minor (9A) | BPM: 175]
-   2. Pass Me The Dubplate (Benny Page Remix) - Deekline Featuring Tippa Irie [Key: A# minor (3A) | BPM: 175]
+   1. Bad Boys (Benny Page Remix) - Ed Solo And Deekline [Pos: A | Key: E minor (9A) | BPM: 175]
+   2. Pass Me The Dubplate (Benny Page Remix) - Deekline Featuring Tippa Irie [Pos: B | Key: A# minor (3A) | BPM: 175]
 
 === Desolate EP -- Kit ===
   ID: 21004888
@@ -15,10 +15,10 @@
   Year: 2021
   Label: Vibez '93
   Art: https://i.discogs.com/4N0kpR6GmMCom2nSg9S6CB7FnpbM_FrJZmeMIBTJqmU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDA0/ODg4LTE2MzkyOTUy/MzctODcwNS5qcGVn.jpeg
-   1. Desolate - Kit [Key: F# major (2B) | BPM: 170]
-   2. Survive - Kit [Key: F# minor (11A) | BPM: 130]
-   3. Between Us - Kit [Key: B minor (10A) | BPM: 172]
-   4. Out Of Touch - Kit [Key: D major (10B) | BPM: 174]
+   1. Desolate - Kit [Pos: A1 | Time: 5:47 | Key: F# major (2B) | BPM: 170]
+   2. Survive - Kit [Pos: A2 | Time: 5:20 | Key: F# minor (11A) | BPM: 130]
+   3. Between Us - Kit [Pos: B1 | Time: 6:05 | Key: B minor (10A) | BPM: 172]
+   4. Out Of Touch - Kit [Pos: B2 | Time: 5:16 | Key: D major (10B) | BPM: 174]
 
 === Profile -- Desmond Dekker ===
   ID: 2107705
@@ -27,18 +27,18 @@
   Year: 1981
   Label: Trojan Records
   Art: https://i.discogs.com/QIhG6WoJcFUrnNp7woMLg5gOlViZeeOFM9js3oTrb_M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDc3/MDUtMTQyMzkyMTAw/OC04MjcwLmpwZWc.jpeg
-   1. Israelites - Desmond Dekker [Key: Bb major (6B) | BPM: 73]
-   2. Licking Stick - Desmond Dekker [Key: C minor (5A) | BPM: 111]
-   3. Pickney Gal - Desmond Dekker [Key: C major (8B) | BPM: 114]
-   4. It Meek - Desmond Dekker [Key: Ab major (4B) | BPM: 74]
-   5. Life Of Opportunity - Desmond Dekker [Key: C major (8B) | BPM: 98]
-   6. I Believe - Desmond Dekker [Key: Ab major (4B) | BPM: 130]
-   7. Reggae Recipe - Desmond Dekker [Key: C# major (3B) | BPM: 121]
-   8. You Can Get It If You Really Want - Desmond Dekker [Key: C# major (3B) | BPM: 128]
-   9. Where Did It Go - Desmond Dekker [Key: C major (8B) | BPM: 132]
-  10. The More You Live - Desmond Dekker [Key: G major (9B) | BPM: 101]
-  11. Look What They're Doing To Me - Desmond Dekker [Key: Ab major (4B) | BPM: 119]
-  12. 007 Shanty Town - Desmond Dekker [Key: A major (11B) | BPM: 102]
+   1. Israelites - Desmond Dekker [Pos: A1 | Time: 2:31 | Key: Bb major (6B) | BPM: 73]
+   2. Licking Stick - Desmond Dekker [Pos: A2 | Time: 2:14 | Key: C minor (5A) | BPM: 111]
+   3. Pickney Gal - Desmond Dekker [Pos: A3 | Time: 2:57 | Key: C major (8B) | BPM: 114]
+   4. It Meek - Desmond Dekker [Pos: A4 | Time: 2:31 | Key: Ab major (4B) | BPM: 74]
+   5. Life Of Opportunity - Desmond Dekker [Pos: A5 | Time: 2:27 | Key: C major (8B) | BPM: 98]
+   6. I Believe - Desmond Dekker [Pos: A6 | Time: 2:32 | Key: Ab major (4B) | BPM: 130]
+   7. Reggae Recipe - Desmond Dekker [Pos: B1 | Time: 3:02 | Key: C# major (3B) | BPM: 121]
+   8. You Can Get It If You Really Want - Desmond Dekker [Pos: B2 | Time: 2:33 | Key: C# major (3B) | BPM: 128]
+   9. Where Did It Go - Desmond Dekker [Pos: B3 | Time: 3:03 | Key: C major (8B) | BPM: 132]
+  10. The More You Live - Desmond Dekker [Pos: B4 | Time: 3:18 | Key: G major (9B) | BPM: 101]
+  11. Look What They're Doing To Me - Desmond Dekker [Pos: B5 | Time: 3:27 | Key: Ab major (4B) | BPM: 119]
+  12. 007 Shanty Town - Desmond Dekker [Pos: B6 | Time: 2:33 | Key: A major (11B) | BPM: 102]
 
 === Ganja Smuggling -- Eek-A-Mouse ===
   ID: 32473200
@@ -47,8 +47,8 @@
   Year: 2024
   Label: VP Records, Volcano
   Art: https://i.discogs.com/pm31PMrWnhDnA83GDUH-aUscyqA9R5yvLmu3WNYCIZE/rs:fit/g:sm/q:90/h:600/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDcz/MjAwLTE3MzMzMjA5/MDItOTUyMy5qcGVn.jpeg
-   1. Ganja Smuggling - Eek-A-Mouse [Key: F minor (4A) | BPM: 72]
-   2. Smuggling Dub - The Roots Radics [Key: Bb major (6B) | BPM: 142]
+   1. Ganja Smuggling - Eek-A-Mouse [Pos: A | Key: F minor (4A) | BPM: 72]
+   2. Smuggling Dub - The Roots Radics [Pos: B | Key: Bb major (6B) | BPM: 142]
 
 === Welcome To The Jungle Volume 3 (Sampler One) -- Sara Lugo Ft. Protoje / Sizzla ===
   ID: 7853652
@@ -57,8 +57,8 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Key: G major (9B) | BPM: 175]
-   2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Key: B major (1B) | BPM: 88]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G major (9B) | BPM: 175]
+   2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 88]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
   ID: 6154793
@@ -67,8 +67,8 @@
   Year: 2014
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
-   1. Here I Come - Ed Solo [Key: E minor (9A) | BPM: 175]
-   2. Ganja Smuggling - Ed Solo [Key: A# minor (3A) | BPM: 176]
+   1. Here I Come - Ed Solo [Pos: A1 | Key: E minor (9A) | BPM: 175]
+   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: A# minor (3A) | BPM: 176]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
@@ -77,8 +77,8 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/FdvlQLYITfJ3PieS1Ql78jVkDt7fw0yEbjbN9lFlFgc/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDI1/NjEtMTM4MTQ3NzQ3/Mi0yMTkyLmpwZWc.jpeg
-   1. Smoke The Weed - Ed Solo And Stickybuds [Key: A# minor (3A) | BPM: 175]
-   2. Joker Smoker - Ed Solo And Stickybuds [Key: A# minor (3A) | BPM: 88]
+   1. Smoke The Weed - Ed Solo And Stickybuds [Pos: a1 | Time: 4:50 | Key: A# minor (3A) | BPM: 175]
+   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: A# minor (3A) | BPM: 88]
 
 === Too Greedy (Rmx) / Murder Style -- Stalefish ===
   ID: 689940
@@ -87,8 +87,8 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/1gAJD-oNOVOpLajXjU9n03tnccygX4NoVx5taUsASFI/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4OTk0/MC0xMTQ5OTQzMTk3/LmpwZWc.jpeg
-   1. Too Greedy (Rmx) - Stalefish [Key: F# minor (11A) | BPM: 73]
-   2. Murder Style - Stalefish [Key: B major (1B) | BPM: 100]
+   1. Too Greedy (Rmx) - Stalefish [Pos: A | Key: F# minor (11A) | BPM: 73]
+   2. Murder Style - Stalefish [Pos: AA | Key: B major (1B) | BPM: 100]
 
 === Amen In Session / Seek And Find -- Jinx (In Dub) ===
   ID: 4346095
@@ -97,8 +97,8 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/VBdKS4MvllF9feke2lthzcHctsz-Bp6x2TdJlOP9cZI/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDYw/OTUtMTM2MjM5MDQ3/NC05MTc4LmpwZWc.jpeg
-   1. Amen In Session - Jinx In Dub [Key: F major (7B) | BPM: 86]
-   2. Seek And Find (Jinx In Dub Meets Kanjah) - Jinx In Dub [Key: C# minor (12A) | BPM: 110]
+   1. Amen In Session - Jinx In Dub [Pos: A1 | Key: F major (7B) | BPM: 86]
+   2. Seek And Find (Jinx In Dub Meets Kanjah) - Jinx In Dub [Pos: B1 | Key: C# minor (12A) | BPM: 110]
 
 === Fit / I'm The Devil -- Vendetta (2) & Barber (3) & Bad Kid ===
   ID: 2239262
@@ -107,8 +107,8 @@
   Year: 2010
   Label: Delacroix Records
   Art: https://i.discogs.com/0110MoSqhjMQEJAAmaODi4QBSmlRqO5YUQzjN2c4wo0/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzky/NjItMTM3MjI3Mzgy/NS0yODg2LmpwZWc.jpeg
-   1. Fit - Vendetta & Barber & Bad Kid [Key: A# minor (3A) | BPM: 88]
-   2. I'm The Devil - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 87]
+   1. Fit - Vendetta & Barber & Bad Kid [Pos: A | Key: A# minor (3A) | BPM: 88]
+   2. I'm The Devil - Vendetta & Barber & Bad Kid [Pos: AA | Key: C# minor (12A) | BPM: 87]
 
 === French Connection EP -- Various ===
   ID: 1061433
