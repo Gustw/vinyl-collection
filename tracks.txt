@@ -669,8 +669,8 @@
   Year: 2009
   Label: Nu Urban Music France
   Art: https://i.discogs.com/LVZ9q8sBHYHV-v3JDlOjxyLcz8rz1GqsGqV3vEgapg0/rs:fit/g:sm/q:90/h:225/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTQy/MTEtMTMyMzc2NTc0/MS5qcGVn.jpeg
-   1. 18 & Over - Dj Panik & M-Rode [Key: C# major (3B) | BPM: 156]
-   2. Shine Eyes Girl - Dj Panik & M-Rode [Key: C# major (3B) | BPM: 131]
+   1. 18 & Over - Dj Panik & M-Rode [Pos: A | Key: C# major (3B) | BPM: 156]
+   2. Shine Eyes Girl - Dj Panik & M-Rode [Pos: AA | Key: C# major (3B) | BPM: 131]
 
 === Talking Roots -- U-Roy ===
   ID: 12151359
@@ -679,16 +679,16 @@
   Year: 2018
   Label: Ariwa
   Art: https://i.discogs.com/4jinKokIohDdU8Nkw4FbiSurIDxWKmDG0E3MrvCWQBs/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTUx/MzU5LTE1Mjk3NTMw/MTktNTEwMy5qcGVn.jpeg
-   1. Repatriation - U-Roy [Key: E minor (9A) | BPM: 137]
-   2. Teacher Morris - U-Roy [Key: G major (9B) | BPM: 74]
-   3. 3 Minutes Of Talk - U-Roy [Key: A minor (8A) | BPM: 136]
-   4. Bitter Nut - U-Roy [Key: Ab major (4B) | BPM: 146]
-   5. Mother Of Civilisation - U-Roy [Key: A major (11B) | BPM: 130]
-   6. Jamaica - U-Roy [Key: D major (10B) | BPM: 84]
-   7. Black Man - U-Roy [Key: C major (8B) | BPM: 91]
-   8. Dog And The Bone - U-Roy [Key: C major (8B) | BPM: 148]
-   9. Brimstone & Fire - U-Roy [Key: E minor (9A) | BPM: 145]
-  10. Follow Me - U-Roy [Key: E major (12B) | BPM: 101]
+   1. Repatriation - U-Roy [Pos: A1 | Key: E minor (9A) | BPM: 137]
+   2. Teacher Morris - U-Roy [Pos: A2 | Key: G major (9B) | BPM: 74]
+   3. 3 Minutes Of Talk - U-Roy [Pos: A3 | Key: A minor (8A) | BPM: 136]
+   4. Bitter Nut - U-Roy [Pos: A4 | Key: Ab major (4B) | BPM: 146]
+   5. Mother Of Civilisation - U-Roy [Pos: A5 | Key: A major (11B) | BPM: 130]
+   6. Jamaica - U-Roy [Pos: B1 | Key: D major (10B) | BPM: 84]
+   7. Black Man - U-Roy [Pos: B2 | Key: C major (8B) | BPM: 91]
+   8. Dog And The Bone - U-Roy [Pos: B3 | Key: C major (8B) | BPM: 148]
+   9. Brimstone & Fire - U-Roy [Pos: B4 | Key: E minor (9A) | BPM: 145]
+  10. Follow Me - U-Roy [Pos: B5 | Key: E major (12B) | BPM: 101]
 
 === Midnight Walkers -- Stand High Patrol ===
   ID: 15630839
@@ -697,15 +697,15 @@
   Year: 2020
   Label: Stand High
   Art: https://i.discogs.com/M8aaD_KyihupXUfzpsB1CoDlxSsrXEaqYP4p-oApWSY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjMw/ODM5LTE2MDc5NjAw/MDItODgwOC5tcG8.jpeg
-   1. Commando - Stand High Patrol [Key: C# minor (12A) | BPM: 81]
-   2. Brest Bay - Stand High Patrol [Key: A# minor (3A) | BPM: 87]
-   3. Boat People - Stand High Patrol [Key: D major (10B) | BPM: 81]
-   4. Home Made - Stand High Patrol [Key: B minor (10A) | BPM: 96]
-   5. Entertainer - Stand High Patrol [Key: F minor (4A) | BPM: 77]
-   6. The Big Tree - Stand High Patrol [Key: D major (10B) | BPM: 167]
-   7. Dub It - Stand High Patrol [Key: A minor (8A) | BPM: 140]
-   8. Holiday Today - Stand High Patrol [Key: D# minor (2A) | BPM: 140]
-   9. Automatic Attack - Stand High Patrol [Key: F# minor (11A) | BPM: 140]
+   1. Commando - Stand High Patrol [Pos: A1 | Key: C# minor (12A) | BPM: 81]
+   2. Brest Bay - Stand High Patrol [Pos: A2 | Key: A# minor (3A) | BPM: 87]
+   3. Boat People - Stand High Patrol [Pos: A3 | Key: D major (10B) | BPM: 81]
+   4. Home Made - Stand High Patrol [Pos: A4 | Key: B minor (10A) | BPM: 96]
+   5. Entertainer - Stand High Patrol [Pos: A5 | Key: F minor (4A) | BPM: 77]
+   6. The Big Tree - Stand High Patrol [Pos: B1 | Key: D major (10B) | BPM: 167]
+   7. Dub It - Stand High Patrol [Pos: B2 | Key: A minor (8A) | BPM: 140]
+   8. Holiday Today - Stand High Patrol [Pos: B3 | Key: D# minor (2A) | BPM: 140]
+   9. Automatic Attack - Stand High Patrol [Pos: B4 | Key: F# minor (11A) | BPM: 140]
 
 === Pa Tol Mundo -- Shiva Skank & Señor R ===
   ID: 17342536
@@ -714,8 +714,8 @@
   Year: 2021
   Label: South Yard, Boombass Music
   Art: https://i.discogs.com/6ZYnu_2bVru5ROlgI8ggwN1odykDL4Z-Z__T2lJ7wWA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MzQy/NTM2LTE2MTI5MTYx/NDgtOTczNC5qcGVn.jpeg
-   1. Pa Tol Mundo - Shiva Skank & Señor R [Key: C# major (3B) | BPM: 176]
-   2. Pa Tol Mundo (Boombassbrothers Remix) - Shiva Skank & Señor R [Key: C# major (3B) | BPM: 176]
+   1. Pa Tol Mundo - Shiva Skank & Señor R [Pos: A1 | Time: 3:10 | Key: C# major (3B) | BPM: 176]
+   2. Pa Tol Mundo (Boombassbrothers Remix) - Shiva Skank & Señor R [Pos: B1 | Time: 4:25 | Key: C# major (3B) | BPM: 176]
 
 === Psychodynamik 05 -- Various ===
   ID: 9652785
@@ -724,10 +724,10 @@
   Year: 2017
   Label: PSychoDynamiK
   Art: https://i.discogs.com/E0PVx509xQDJcvYZ7Klwozwt_Y5eulf1_yt9GGGEDLc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2NTI3/ODUtMTQ4NDI0ODQ0/OC0zMTIxLmpwZWc.jpeg
-   1. Jungleman - La Phaze [Key: C# minor (12A) | BPM: 176]
-   2. Pass Me The Rizzla - DJ Dee Kline [Key: C minor (5A) | BPM: 106]
-   3. Paper Planes - Phibes [Key: G minor (6A) | BPM: 128]
-   4. Give It To Me - Kursiva [Key: G major (9B) | BPM: 176]
+   1. Jungleman - La Phaze [Pos: A1 | Time: 5:43 | Key: C# minor (12A) | BPM: 176]
+   2. Pass Me The Rizzla - DJ Dee Kline [Pos: A2 | Time: 4:40 | Key: C minor (5A) | BPM: 106]
+   3. Paper Planes - Phibes [Pos: B1 | Time: 4:25 | Key: G minor (6A) | BPM: 128]
+   4. Give It To Me - Kursiva [Pos: B2 | Time: 5:10 | Key: G major (9B) | BPM: 176]
 
 === Psychodynamik 03 -- Various ===
   ID: 7417304
@@ -736,10 +736,10 @@
   Year: 2015
   Label: PSychoDynamiK
   Art: https://i.discogs.com/Ore2MfwSiVekhBVkLuyr_dcXlugEljcfl35SDmYXC1Y/rs:fit/g:sm/q:90/h:300/w:298/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MTcz/MDQtMTU3MjM4NTI4/Mi01MjM5LmpwZWc.jpeg
-   1. The Coming Storm (Ed Solo Remix) - Freestylers & StereoType Featuring Takura [Key: F major (7B) | BPM: 126]
-   2. Who Knows (Turntable Dubbers Remix) - Protoje Feat Chronixx [Key: F minor (4A) | BPM: 81]
-   3. King Of Jungle - Isaac Maya Feat. Biga Ranx [Key: F minor (4A) | BPM: 66]
-   4. Alright (Benny Page Remix) - MCD Feat. Ragga Twins & Myesha [Key: G# minor (1A) | BPM: 90]
+   1. The Coming Storm (Ed Solo Remix) - Freestylers & StereoType Featuring Takura [Pos: A1 | Time: 4:12 | Key: F major (7B) | BPM: 126]
+   2. Who Knows (Turntable Dubbers Remix) - Protoje Feat Chronixx [Pos: A2 | Time: 3:51 | Key: F minor (4A) | BPM: 81]
+   3. King Of Jungle - Isaac Maya Feat. Biga Ranx [Pos: B1 | Time: 5:28 | Key: F minor (4A) | BPM: 66]
+   4. Alright (Benny Page Remix) - MCD Feat. Ragga Twins & Myesha [Pos: B2 | Time: 5:06 | Key: G# minor (1A) | BPM: 90]
 
 === Mr. Mista / Lion Youth -- Camo & Khan (5) / Dancing Djedi ===
   ID: 992476
@@ -748,8 +748,8 @@
   Year: 2007
   Label: Soul
   Art: https://i.discogs.com/cyT6UQhDHxUxjH3HcJdJkdewO7qYhJMDF1g0jVBI2bg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5MjQ3/Ni0xMTg2ODY0MTg0/LmpwZWc.jpeg
-   1. Mr. Mista - Camo & Khan [Key: B major (1B) | BPM: 178]
-   2. Lion Youth - Dancing Djedi [Key: C# minor (12A) | BPM: 130]
+   1. Mr. Mista - Camo & Khan [Pos: A | Key: B major (1B) | BPM: 178]
+   2. Lion Youth - Dancing Djedi [Pos: B | Key: C# minor (12A) | BPM: 130]
 
 === Offbeat Division 3 -- Mikkim ===
   ID: 2182640
@@ -758,10 +758,10 @@
   Year: 2010
   Label: IO.LAB
   Art: https://i.discogs.com/UCfJISqVpBUYSbip7YcEW20781_BAKdDAx4GxsTdXJ0/rs:fit/g:sm/q:90/h:400/w:402/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxODI2/NDAtMTQyMzA4NTEw/OC03ODE1LmpwZWc.jpeg
-   1. Rub A Dub Rock - Mikkim [Key: D major (10B) | BPM: 177]
-   2. Rub A Dub Rock Instrumental - Mikkim [Key: D major (10B) | BPM: 177]
-   3. Break The Chains - Mikkim [Key: E minor (9A) | BPM: 175]
-   4. Break The Chains Instrumental - Mikkim [Key: E minor (9A) | BPM: 175]
+   1. Rub A Dub Rock - Mikkim [Pos: A1 | Key: D major (10B) | BPM: 177]
+   2. Rub A Dub Rock Instrumental - Mikkim [Pos: A2 | Key: D major (10B) | BPM: 177]
+   3. Break The Chains - Mikkim [Pos: B1 | Key: E minor (9A) | BPM: 175]
+   4. Break The Chains Instrumental - Mikkim [Pos: B2 | Key: E minor (9A) | BPM: 175]
 
 === Around The World / Tempest -- Visionary Feat. Peter Ranking ===
   ID: 562358
@@ -770,8 +770,8 @@
   Year: 2005
   Label: Dance Rock
   Art: https://i.discogs.com/FnXRE0BZSzzzuRRi1JiW6MWuIocvrYOsy110mUfonF8/rs:fit/g:sm/q:90/h:401/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2MjM1/OC0xMTQ5MDMzNjkx/LmpwZWc.jpeg
-   1. Around The World - Visionary Feat. Peter Ranking [Key: F# major (2B) | BPM: 115]
-   2. Tempest - Visionary Feat. Peter Ranking [Key: A# minor (3A) | BPM: 94]
+   1. Around The World - Visionary Feat. Peter Ranking [Pos: A | Key: F# major (2B) | BPM: 115]
+   2. Tempest - Visionary Feat. Peter Ranking [Pos: AA | Key: A# minor (3A) | BPM: 94]
 
 === Are You Shpongled? -- Shpongle ===
   ID: 23596322
@@ -780,13 +780,13 @@
   Year: 2022
   Label: Twisted Records
   Art: https://i.discogs.com/AQAyoZhBxkT5qTB9WZYFLYDjo8KyNAjnQT7cX0tErBc/rs:fit/g:sm/q:90/h:585/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTk2/MzIyLTE2NTU1OTgx/NDctNzQ1MC5qcGVn.jpeg
-   1. Shpongle Falls - Shpongle [Key: C# major (3B) | BPM: 130]
-   2. Shpongle Spores - Shpongle [Key: Ab major (4B) | BPM: 157]
-   3. Vapour Rumours - Shpongle [Key: A# minor (3A) | BPM: 122]
-   4. Monster Hit - Shpongle [Key: G major (9B) | BPM: 80]
-   5. Behind Closed Eyelids - Shpongle [Key: A major (11B) | BPM: 122]
-   6. Divine Moments Of Truth - Shpongle [Key: F# major (2B) | BPM: 91]
-   7. ...And The Day Turned To Night - Shpongle [Key: A# minor (3A) | BPM: 165]
+   1. Shpongle Falls - Shpongle [Pos: A1 | Time: 8:33 | Key: C# major (3B) | BPM: 130]
+   2. Shpongle Spores - Shpongle [Pos: A2 | Time: 7:16 | Key: Ab major (4B) | BPM: 157]
+   3. Vapour Rumours - Shpongle [Pos: B | Time: 10:26 | Key: A# minor (3A) | BPM: 122]
+   4. Monster Hit - Shpongle [Pos: C | Time: 8:57 | Key: G major (9B) | BPM: 80]
+   5. Behind Closed Eyelids - Shpongle [Pos: D | Time: 12:29 | Key: A major (11B) | BPM: 122]
+   6. Divine Moments Of Truth - Shpongle [Pos: E | Time: 10:20 | Key: F# major (2B) | BPM: 91]
+   7. ...And The Day Turned To Night - Shpongle [Pos: F | Time: 14:42 | Key: A# minor (3A) | BPM: 165]
 
 === Running Over / The Sound -- Gunmen ===
   ID: 23369369
