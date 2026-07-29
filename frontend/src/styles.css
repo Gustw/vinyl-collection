@@ -748,8 +748,7 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .settings-grid input:focus { outline: none; border-color: var(--accent); }
 .settings-help { margin-top: 12px; font-size: 12px; }
 
-/* --- Sticker sheet modal ---
-   Reuses .settings-grid, but its rows hold selects and toggle buttons as well
+/* --- Sticker sheet modal ---   Reuses .settings-grid, but its rows hold selects and toggle buttons as well
    as plain inputs. */
 .settings-grid select {
   width: 100%;
@@ -762,6 +761,62 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 }
 .settings-grid select:focus { outline: none; border-color: var(--accent); }
 .settings-grid .seg { display: flex; gap: 8px; }
+
+/* --- Key & pitch cheat sheet ---
+   A reference card rather than a form: rows of "badge, badge, sentence" that
+   collapse to stacked blocks once there isn't room for the sentence alongside. */
+.modal.cheat { width: min(880px, 100%); max-height: 88vh; }
+.cheat-body { padding-top: 4px; }
+.cheat-h {
+  margin: 18px 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+.cheat-h:first-child { margin-top: 6px; }
+.cheat-note { margin: 0 0 10px; font-size: 13px; color: var(--text); line-height: 1.5; }
+
+.cheat-picker {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--panel);
+  padding: 8px 0 10px;
+  border-bottom: 1px solid var(--border);
+}
+.cheat-keys { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0; }
+.cheat-key { min-width: 0; cursor: pointer; padding: 4px 9px; }
+.key-badge.active { outline: 2px solid var(--accent); outline-offset: 1px; }
+.cheat-picker .big-key { font-size: 18px; }
+
+.cheat-rows { display: flex; flex-direction: column; }
+.cheat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 2px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.cheat-row:last-child { border-bottom: 0; }
+.cheat-row .key-badge { min-width: 132px; cursor: default; }
+.cheat-why { flex: 1 1 260px; color: var(--muted); line-height: 1.45; }
+
+.cheat-wheel {
+  display: grid;
+  grid-template-columns: 28px 1fr 1fr;
+  gap: 6px 10px;
+  align-items: center;
+}
+.cheat-wheel .cw-head {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+.cheat-wheel .cw-num { color: var(--muted); font-size: 12px; }
+.cheat-wheel .key-badge { display: block; min-width: 0; cursor: pointer; }
 
 
 /* ==========================================================================
@@ -982,6 +1037,31 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   /* --- Settings: label above field, not beside it --- */
   .settings-grid { grid-template-columns: minmax(0, 1fr); gap: 4px; }
   .settings-grid label { margin-top: 8px; }
+
+  /*
+   * --- Cheat sheet ---
+   * Each row becomes a small block: badges on the first line, the explanation
+   * beneath them. Squeezing a sentence into the last third of a phone-width
+   * row would leave a column two words wide.
+   */
+  .modal.cheat { max-height: 94vh; }
+  .cheat-row { flex-wrap: wrap; gap: 6px 8px; padding: 10px 2px; }
+  .cheat-row .key-badge,
+  .cheat-row .rel-badge,
+  .cheat-row .pitch-badge,
+  .cheat-row .tag { font-size: 11px; padding: 2px 6px; min-width: 0; }
+  .cheat-why { flex: 1 1 100%; font-size: 12px; }
+
+  /* Bigger tap targets, and the picker keeps its own scroll on a short screen. */
+  .cheat-key { padding: 7px 10px; font-size: 12px; }
+  .cheat-keys { gap: 6px; max-height: 132px; overflow-y: auto; }
+  .cheat-picker .big-key { font-size: 16px; }
+  .cheat-h { margin: 16px 0 6px; font-size: 13px; }
+
+  /* The wheel stacks: number, then its minor and major keys full width. */
+  .cheat-wheel { grid-template-columns: 22px 1fr 1fr; gap: 5px 6px; }
+  .cheat-wheel .key-badge { font-size: 11px; padding: 5px 6px; }
+  .cheat-wheel .cw-head { font-size: 10px; }
 }
 
 

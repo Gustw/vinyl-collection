@@ -14,6 +14,22 @@ produced by the Java tool and lets you browse and mix your collection.
 Filters on both screens are **remembered** (kept when navigating between screens
 and persisted to `localStorage` across reloads). Each screen keeps its own set.
 
+## Key & pitch cheat sheet (🎹 on both screens)
+A reference card, not a calculator. Opens on the current track's key from the
+detail screen, or 8A from the list; tap any key to re-point it. Three parts:
+
+- **What mixes with this key, and why** — every compatible key with its
+  relationship (same key, ±1 energy, relative, same root, ±1/±2 semitones) and a
+  sentence on what that move actually does to a set.
+- **What the pitch fader does to the key** — the table that motivates the whole
+  thing: **±6% per semitone**, and a semitone is **seven positions** round the
+  Camelot wheel, not one. Rungs beyond your configured pitch range are marked
+  unreachable.
+- **The wheel** — all 24 codes against their musical key names.
+
+On a phone each row breaks so the badges sit on one line and the explanation
+below them, rather than being squeezed into a column two words wide.
+
 ## Sticker sheets (🏷 on screen 1)
 Generates a print-ready PDF of sleeve labels from the **filtered** track list —
 whatever the list is showing is what gets printed, so narrow it down first

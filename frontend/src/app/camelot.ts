@@ -5,8 +5,16 @@
 
 const CAMELOT_RE = /^(\d{1,2})([AB])$/;
 
+/**
+ * Folds any wheel number back into 1..12.
+ *
+ * The `+ 12` is not enough on its own: `shiftCamelot` moves seven positions per
+ * semitone, so a two-semitone drop asks for position -13 and JavaScript's `%`
+ * keeps the sign. Taking the modulo twice makes it safe for any input, and
+ * without it a record pitched down two semitones was labelled "0A" or "-1A".
+ */
 function wrap(n: number): number {
-  return ((n - 1 + 12) % 12) + 1;
+  return ((((n - 1) % 12) + 12) % 12) + 1;
 }
 
 /**
@@ -117,6 +125,20 @@ export function pitchPercent(fromBpm: number, toBpm: number): number {
 /** True when `percent` is within a turntable offering ±`range`%. */
 export function withinPitchRange(percent: number, range: number): boolean {
   return Math.abs(percent) <= range + 1e-9;
+}
+
+/**
+ * Fader position, in percent, that transposes a record by `semitones`.
+ * Equal temperament, so +1 semitone is +5.95% — the "6% per semitone" rule of
+ * thumb DJs use, stated exactly.
+ */
+export function percentForSemitones(semitones: number): number {
+  return (Math.pow(2, semitones / 12) - 1) * 100;
+}
+
+/** Semitones a record is transposed by at `percent` on the fader. */
+export function semitonesForPercent(percent: number): number {
+  return 12 * Math.log2(1 + percent / 100);
 }
 
 /**

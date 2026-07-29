@@ -21,6 +21,7 @@ import { Track } from './models';
 import { ConfigService } from './config.service';
 import { Bridge, RouteRecord, findBridges } from './bridge';
 import { Transition, formatPercent } from './transitions';
+import { KeyCheatsheetComponent } from './key-cheatsheet.component';
 
 const REL_ORDER: Record<string, number> = {
   'Same key': 0,
@@ -63,7 +64,7 @@ interface Row {
 @Component({
   selector: 'app-track-detail',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, KeyCheatsheetComponent],
   template: `
     <div class="topbar">
       <a routerLink="/" class="btn">← Back to list</a>
@@ -72,7 +73,18 @@ interface Row {
       @if (track()) {
         <span class="badge-count">{{ shown() }} mixable track(s)</span>
       }
+      <button
+        class="btn"
+        title="How pitch changes the key, and what mixes with what"
+        (click)="showCheatsheet.set(true)"
+      >
+        🎹 Keys
+      </button>
     </div>
+
+    @if (showCheatsheet()) {
+      <app-key-cheatsheet [startKey]="track()?.camelot || '8A'" (closed)="showCheatsheet.set(false)" />
+    }
 
     <div class="container">
       @if (!col.loaded()) {
@@ -478,6 +490,9 @@ export class TrackDetailComponent {
   private readonly config = inject(ConfigService);
   private readonly router = inject(Router);
   private readonly route = inject(ActivatedRoute);
+
+  /** Harmonic mixing reference card (modal), seeded with this track's key. */
+  readonly showCheatsheet = signal(false);
 
   /** Turntable pitch range (± percent) from the settings. */
   readonly pitchRange = computed(() => {

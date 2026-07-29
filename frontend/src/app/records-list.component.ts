@@ -8,6 +8,7 @@ import { camelotClass } from './camelot';
 import { Rec, Track } from './models';
 import { UpdaterService, TrackChange } from './updater.service';
 import { ConfigService } from './config.service';
+import { KeyCheatsheetComponent } from './key-cheatsheet.component';
 import { downloadBlob } from './pdf';
 import {
   SHEETS,
@@ -48,7 +49,7 @@ function formatDuration(ms: number): string {
 @Component({
   selector: 'app-records-list',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, KeyCheatsheetComponent],
   template: `
     <div class="topbar">
       <h1>🎵 Vinyl Collection</h1>
@@ -71,6 +72,13 @@ function formatDuration(ms: number): string {
         {{ updater.resumePoint() ? '↻ Resume keys / BPM' : '↻ Re-fetch keys / BPM' }}
       </button>
       <button class="btn" title="Manage crates" (click)="openCrates()">🗃 Crates</button>
+      <button
+        class="btn"
+        title="How pitch changes the key, and what mixes with what"
+        (click)="showCheatsheet.set(true)"
+      >
+        🎹 Keys
+      </button>
       <button
         class="btn"
         title="Print sticker sheets for the tracks matching the current filters"
@@ -504,6 +512,10 @@ function formatDuration(ms: number): string {
         </div>
       }
 
+      @if (showCheatsheet()) {
+        <app-key-cheatsheet (closed)="showCheatsheet.set(false)" />
+      }
+
       @if (showStickers()) {
         <div class="modal-backdrop" (click)="closeStickers()">
           <div class="modal" (click)="$event.stopPropagation()">
@@ -821,6 +833,9 @@ export class RecordsListComponent {
   toggle(facet: 'genres' | 'styles' | 'keys' | 'crates', value: string): void {
     this.fs.toggle(this.filters, facet, value);
   }
+
+  /** Harmonic mixing reference card (modal). */
+  readonly showCheatsheet = signal(false);
 
   // --- Stickers -----------------------------------------------------------
 

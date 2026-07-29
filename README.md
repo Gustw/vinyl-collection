@@ -33,6 +33,9 @@ updates back through the GitHub API.
 - **Sticker sheets** — prints whatever the filters currently show onto a 24-up A4
   label sheet (2 or 4 tracks per sticker, with key and BPM), so the work done in
   here is readable on the sleeve in a dark room.
+- **Key & pitch cheat sheet** — 🎹 on the list and detail screens: what mixes
+  with a given key and *why*, and what the pitch fader does to that key
+  (±6% per semitone, and a semitone is seven positions round the wheel).
 
 ## Running it
 
