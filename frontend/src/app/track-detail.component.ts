@@ -342,6 +342,11 @@ interface Row {
               <div class="bridge-options">
                 @for (t of bridgeMatches(); track t.id) {
                   <div class="popover-item" (click)="pickBridge(t)">
+                    @if (t.artwork) {
+                      <img class="cover-sm" [src]="t.artwork" alt="" loading="lazy" referrerpolicy="no-referrer" />
+                    } @else {
+                      <span class="cover-sm cover-none" aria-hidden="true">♪</span>
+                    }
                     <span class="track-title">{{ t.title }}</span>
                     <span class="track-artist">{{ t.artist }}</span>
                     @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }

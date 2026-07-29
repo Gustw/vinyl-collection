@@ -386,6 +386,24 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   border: 1px solid var(--border);
   background: var(--panel-2);
 }
+/* Thumbnail for dense lists, where a 48px sleeve would dominate the row. */
+.cover-sm {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  flex: 0 0 auto;
+}
+/* Stand-in for a record with no sleeve, so titles stay on one vertical line. */
+.cover-none {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 15px;
+}
 .record-head-row { display: flex; align-items: center; gap: 12px; }
 .detail-head { display: flex; gap: 16px; align-items: flex-start; }
 
