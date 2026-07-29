@@ -509,6 +509,16 @@ function formatDuration(ms: number): string {
               }
             </div>
 
+            @if (updater.unconfirmed() > 0) {
+              <div class="pitch-hidden-note">
+                <b>{{ updater.unconfirmed() }}</b> track(s) kept a key/BPM that could not be
+                confirmed: tunebat returned nothing that was convincingly the same recording
+                (often a remix or dubplate it doesn't carry). Those values came from before
+                match-checking existed, so they are the ones most likely to still be wrong —
+                worth spot-checking by hand.
+              </div>
+            }
+
             @if (updater.changes().length === 0) {
               <div class="empty">No corrections were made — nothing was changed.</div>
             } @else {

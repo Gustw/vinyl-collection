@@ -66,6 +66,8 @@ export interface RefetchProgress {
   total: number;
   /** Corrections made across the whole pass so far, not just this segment. */
   corrected: number;
+  /** Tracks whose existing value this pass could not confirm. */
+  unconfirmed?: number;
   /** The corrections themselves, so the report covers the whole pass. */
   changes: TrackChange[];
   updatedAt: number;
@@ -133,6 +135,14 @@ export class UpdaterService {
 
   /** How many tracks the current re-fetch pass actually corrected. */
   readonly corrected = signal(0);
+  /**
+   * Tracks that already had a key/BPM but which this pass could not confirm —
+   * tunebat offered nothing convincingly the same recording (or was
+   * unreachable). Their existing value is left alone, so it is worth surfacing:
+   * those are the ones most likely to still be wrong, since the values in
+   * tracks.txt predate match verification.
+   */
+  readonly unconfirmed = signal(0);
   /** What the re-fetch pass changed, for the summary shown when it finishes. */
   readonly changes = signal<TrackChange[]>([]);
   /** Set once a re-fetch pass has finished, so the UI can show its report. */
@@ -464,6 +474,7 @@ export class UpdaterService {
     this.total.set(jobs.length);
     this.processed.set(startAt);
     this.corrected.set(resuming ? saved!.corrected : 0);
+    this.unconfirmed.set(resuming ? saved!.unconfirmed ?? 0 : 0);
     this.changes.set(resuming ? this.rehydrateChanges(saved!.changes ?? [], jobs) : []);
     this.reportReady.set(false);
     this.rateLimitedMs.set(0);
@@ -511,6 +522,10 @@ export class UpdaterService {
             this.changes.update((list) => [...list, change]);
             this.corrected.update((n) => n + 1);
             sinceCommit++;
+          } else if (!info.keyName && !info.bpm && (t.keyName || t.bpm)) {
+            // Nothing came back that was convincingly this recording, so the
+            // existing value stands — unverified rather than confirmed.
+            this.unconfirmed.update((n) => n + 1);
           }
         } catch (e) {
           console.warn('re-fetch failed for', t.artist, t.title, e);
@@ -525,6 +540,7 @@ export class UpdaterService {
           index: i,
           total: jobs.length,
           corrected: this.corrected(),
+          unconfirmed: this.unconfirmed(),
           changes: this.changes().slice(-MAX_REMEMBERED_CHANGES),
           updatedAt: Date.now(),
         });

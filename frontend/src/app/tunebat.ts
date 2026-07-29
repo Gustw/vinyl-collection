@@ -1,15 +1,31 @@
 import { AppConfig } from './config.service';
+import { Candidate, MatchQuery, pickBestMatch } from './matching';
 
 export interface KeyInfo {
   keyName: string; // e.g. "A minor"
   camelot: string; // e.g. "8A"
   keyText: string; // e.g. "A minor (8A)"
   bpm: string; // e.g. "128"
+  /**
+   * The track tunebat actually matched, e.g. "Original Nuttah - Shy FX".
+   * Empty when nothing matched, or when the answer predates verification.
+   */
+  matched?: string;
+  /** Confidence of that match, 0..1. Absent when unverified (see lookupKey). */
+  confidence?: number;
 }
 
 const EMPTY: KeyInfo = { keyName: '', camelot: '', keyText: '', bpm: '' };
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/**
+ * Cache namespace. Bumped to v2 when match verification was added: entries
+ * written by the old "trust the first hit" code cannot be told apart from
+ * verified ones, and measurably ~40% of them were wrong, so they are abandoned
+ * rather than trusted. Old `tunebat.*` keys are simply never read again.
+ */
+const CACHE_PREFIX = 'tunebat.v2.';
 
 /**
  * Parses a Retry-After header (delta-seconds or HTTP-date) into ms, clamped to
@@ -40,7 +56,7 @@ function proxied(url: string, cfg: AppConfig): string {
 
 function cacheGet(term: string): KeyInfo | null {
   try {
-    const raw = localStorage.getItem('tunebat.' + term);
+    const raw = localStorage.getItem(CACHE_PREFIX + term);
     if (!raw) return null;
     return JSON.parse(raw) as KeyInfo;
   } catch {
@@ -50,7 +66,7 @@ function cacheGet(term: string): KeyInfo | null {
 
 function cacheSet(term: string, info: KeyInfo): void {
   try {
-    localStorage.setItem('tunebat.' + term, JSON.stringify(info));
+    localStorage.setItem(CACHE_PREFIX + term, JSON.stringify(info));
   } catch {
     /* ignore */
   }
@@ -65,10 +81,36 @@ export function cachedKeyInfo(artist: string, title: string): KeyInfo | null {
   return cacheGet(`${artist} ${title}`.trim());
 }
 
-function parseKeyInfo(json: any): KeyInfo {
-  const items = json?.data?.items;
-  if (!Array.isArray(items) || !items.length) return { ...EMPTY };
-  const item = items[0];
+function textOf(v: unknown): string {
+  return typeof v === 'string' ? v.trim() : '';
+}
+
+function namesOf(v: unknown): string[] {
+  if (Array.isArray(v)) {
+    return v.filter((x): x is string => typeof x === 'string').map((s) => s.trim()).filter(Boolean);
+  }
+  const one = textOf(v);
+  return one ? [one] : [];
+}
+
+/**
+ * Reads a search hit's identity. tunebat abbreviates its fields (`n` for name,
+ * `as` for artists, alongside the `k`/`c`/`b` this file already relies on);
+ * the alternatives are accepted defensively so a schema change degrades
+ * gracefully instead of rejecting every result.
+ */
+function identityOf(item: any): Candidate {
+  const name =
+    textOf(item?.n) || textOf(item?.name) || textOf(item?.title) || textOf(item?.trackName);
+  let artists = namesOf(item?.as);
+  if (!artists.length) artists = namesOf(item?.artists);
+  if (!artists.length) artists = namesOf(item?.artistName);
+  if (!artists.length) artists = namesOf(item?.ar);
+  return { name, artists };
+}
+
+/** Pulls key/BPM out of one search hit. */
+function keyInfoOf(item: any): KeyInfo {
   let key = String(item?.k || '').trim();
   const camelot = String(item?.c || '').trim();
   let bpm = '';
@@ -83,6 +125,46 @@ function parseKeyInfo(json: any): KeyInfo {
   const keyText = camelot ? `${key} (${camelot})` : key;
   return { keyName: key, camelot, keyText, bpm };
 }
+
+/** Warned once per session — a schema surprise is worth noticing, not spamming. */
+let warnedNoIdentity = false;
+
+/**
+ * Chooses the right hit from a search response, or none.
+ *
+ * Falls back to the old "first hit" behaviour only when *no* result exposes a
+ * readable title: that means the response schema is not what is expected, and
+ * silently returning nothing for every track would be a worse failure than the
+ * one being fixed. Such answers are flagged unverified rather than cached as
+ * confident.
+ */
+function selectMatch(json: any, query: MatchQuery): KeyInfo {
+  const items = json?.data?.items;
+  if (!Array.isArray(items) || !items.length) return { ...EMPTY };
+
+  const readable = items.some((it: any) => !!identityOf(it).name);
+  if (!readable) {
+    if (!warnedNoIdentity) {
+      warnedNoIdentity = true;
+      console.warn(
+        'tunebat: no readable track titles in the search response — falling back ' +
+          'to the first hit unverified. Check the API response shape.'
+      );
+    }
+    return { ...keyInfoOf(items[0]), matched: '', confidence: undefined };
+  }
+
+  const best = pickBestMatch(query, items as any[], identityOf);
+  if (!best.item || !best.candidate) return { ...EMPTY };
+
+  const who = best.candidate.artists.join(', ');
+  return {
+    ...keyInfoOf(best.item),
+    matched: who ? `${best.candidate.name} - ${who}` : best.candidate.name,
+    confidence: best.score ? Number(best.score.score.toFixed(3)) : undefined,
+  };
+}
+
 
 /** Optional behaviour for a lookup. */
 export interface LookupOptions {
@@ -113,9 +195,15 @@ export interface LookupOptions {
  * re-runs skip them. Returns empty fields when nothing is found or the
  * request is blocked (e.g. CORS without a proxy).
  *
- * On HTTP 429 it backs off (honouring Retry-After, else 60s like the Java
- * tool) and retries the same term instead of hammering the API, reporting the
- * wait via onStatus and its length via onRateLimitWait.
+ * Every hit is checked against the artist, title and version asked for before
+ * it is accepted (see ./matching). When nothing in the response is convincingly
+ * the right track this returns empty rather than the closest thing tunebat had
+ * — a missing key only drops the track out of the mixable list, whereas a wrong
+ * one silently corrupts every transition and bridge computed from it.
+ *
+ * On HTTP 429 it backs off (honouring Retry-After, else 60s) and retries the
+ * same term instead of hammering the API, reporting the wait via onStatus and
+ * its length via onRateLimitWait.
  */
 export async function lookupKey(
   cfg: AppConfig,
@@ -125,12 +213,16 @@ export async function lookupKey(
 ): Promise<KeyInfo> {
   const { onStatus, force = false, isCancelled, onRateLimitWait } = opts;
   const term = `${artist} ${title}`.trim();
+  const query: MatchQuery = { artist, title };
   const cached = cacheGet(term);
   if (!force && cached && cached.bpm) return cached; // fully cached
   // A forced re-fetch must not fall back to the (possibly wrong) cached value.
   const fallback = force ? { ...EMPTY } : cached ?? { ...EMPTY };
   const keep = () => (fallback.keyName ? { ...fallback, bpm: '' } : { ...EMPTY });
 
+  // The version stays in the query: it is what lets the right pressing rank at
+  // all when tunebat has it. Anything it drags in is filtered out by the match
+  // check, which scans the whole result list rather than just the top hit.
   const url =
     'https://api.tunebat.com/api/tracks/search?term=' + encodeURIComponent(term);
   const target = proxied(url, cfg);
@@ -177,7 +269,7 @@ export async function lookupKey(
     } catch {
       return keep();
     }
-    const info = parseKeyInfo(json);
+    const info = selectMatch(json, query);
     // Merge onto anything we already had so we never drop a known field, and
     // cache whenever we learned a key OR a BPM so a page reload can restore it.
     if (info.keyName || info.bpm) {
@@ -186,12 +278,16 @@ export async function lookupKey(
         camelot: info.camelot || fallback.camelot,
         keyText: info.keyText || fallback.keyText,
         bpm: info.bpm || fallback.bpm,
+        matched: info.matched || fallback.matched,
+        confidence: info.confidence ?? fallback.confidence,
       };
       cacheSet(term, merged);
       return merged;
     }
-    // Empty result: keep any key we already had, don't cache the miss.
-    return fallback.keyName ? { ...fallback, bpm: '' } : info;
+    // Nothing in the response was convincingly this track. Keep any key we
+    // already had, and don't cache the miss so it is retried next run.
+    onStatus?.(`No confident tunebat match for ${artist} - ${title}`);
+    return fallback.keyName ? { ...fallback, bpm: '' } : { ...EMPTY };
   }
 }
 
