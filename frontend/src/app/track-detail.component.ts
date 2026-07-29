@@ -106,6 +106,13 @@ interface Row {
                 <div class="k">Title</div><div>{{ track()!.title }}</div>
                 <div class="k">Artist</div><div>{{ track()!.artist }}</div>
                 <div class="k">Record</div><div>{{ track()!.recordTitle }} — {{ track()!.recordArtist }}</div>
+                <div class="k">Position</div>
+                <div>
+                  @if (track()!.position) {
+                    <span class="pos-badge" title="Side and cut on the record">{{ track()!.position }}</span>
+                  } @else { — }
+                </div>
+                <div class="k">Length</div><div>{{ track()!.duration || '—' }}</div>
                 <div class="k">Year</div><div>{{ track()!.year || '—' }}</div>
                 <div class="k">Label</div><div>{{ track()!.labels.join(', ') || '—' }}</div>
                 <div class="k">Key</div><div>{{ track()!.keyName || '—' }}</div>
@@ -459,6 +466,9 @@ interface Row {
                   }
                   <span class="track-artist">{{ r.track.artist }}</span>
                   <span class="track-title">{{ r.track.title }}</span>
+                  @if (r.track.position) {
+                    <span class="pos-badge" title="Side and cut on the record">{{ r.track.position }}</span>
+                  }
                   @if (r.track.bpm) { <span class="bpm-badge">{{ r.track.bpm }} BPM</span> }
                   <span
                     class="pitch-badge"

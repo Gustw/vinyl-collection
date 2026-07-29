@@ -97,6 +97,8 @@ function newTrack(title: string, artist: string): Track {
     id: 0,
     title,
     artist,
+    position: '',
+    duration: '',
     keyName: '',
     camelot: '',
     keyText: '',
@@ -619,8 +621,16 @@ export class UpdaterService {
 
     // Fast path: nothing to do. If we already have tracks and every one has a
     // key + BPM, skip the release fetch and tunebat lookups entirely (caching).
+    //
+    // Positions are part of that test: without it, a collection whose keys and
+    // BPMs were all filled in before positions existed would be "complete"
+    // forever and would never pick them up. Records Discogs has no positions
+    // for do get re-examined each run, but the release JSON is cached in
+    // localStorage so that costs a local read rather than an API call.
     const complete =
-      rec.tracks.length > 0 && rec.tracks.every((t) => t.keyName && t.bpm);
+      rec.tracks.length > 0 &&
+      rec.tracks.every((t) => t.keyName && t.bpm) &&
+      rec.tracks.some((t) => t.position);
     if (complete) return;
 
     const cachedBefore = wasReleaseCached(rec.releaseId);
@@ -643,6 +653,9 @@ export class UpdaterService {
       const t = prev ?? newTrack(dt.title, dt.artist);
       t.title = dt.title;
       t.artist = dt.artist || t.artist;
+      // Discogs is authoritative for the pressing's own facts.
+      if (dt.position) t.position = dt.position;
+      if (dt.duration) t.duration = dt.duration;
       return t;
     });
     rec.tracks = merged;

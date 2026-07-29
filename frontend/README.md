@@ -45,6 +45,10 @@ whatever the list is showing is what gets printed, so narrow it down first
   record name in bold. No artist — on a sleeve you already know whose record it
   is, and the space buys a readable title. Only the first imprint is shown, and
   it is capped at 45% of the line so a long label can't crowd out the name.
+- **Each track row:** position (`A1`) · key badge · title · BPM, with the artist
+  and printed length on a second line. The position column sizes itself to the
+  widest code on that sticker and disappears entirely when none of its tracks
+  have one, so a record without positions doesn't pay for the column.
 - **Sheets:** the gapless 70 × 37 mm 24-up sheet (most own-brand packs) and
   Avery L7159 / J8159 (63.5 × 33.9 mm). Both are 3 × 8 on A4.
 - **Edge safety margin** (default 2 mm) keeps text away from the die-cut edge,

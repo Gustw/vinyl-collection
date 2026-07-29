@@ -14,7 +14,7 @@ export interface CollectionEntry {
 
 /** Release detail we need: tracklist plus the record-level facets. */
 export interface ReleaseDetail {
-  tracks: { title: string; artist: string }[];
+  tracks: { title: string; artist: string; position: string; duration: string }[];
   genres: string[];
   styles: string[];
   year: number;
@@ -145,7 +145,7 @@ export async function fetchReleaseDetail(
   }
 
   const releaseArtist = joinArtists(release?.artists);
-  const tracks: { title: string; artist: string }[] = [];
+  const tracks: ReleaseDetail['tracks'] = [];
   const tl = release?.tracklist;
   if (Array.isArray(tl)) {
     for (const entry of tl) {
@@ -153,7 +153,12 @@ export async function fetchReleaseDetail(
       if (type && type !== 'track') continue;
       const title = String(entry?.title || '').trim();
       if (!title) continue;
-      tracks.push({ title, artist: joinArtists(entry?.artists, releaseArtist) });
+      tracks.push({
+        title,
+        artist: joinArtists(entry?.artists, releaseArtist),
+        position: String(entry?.position || '').trim(),
+        duration: String(entry?.duration || '').trim(),
+      });
     }
   }
   (release as any).__fromNetwork = fromNetwork;

@@ -1,6 +1,13 @@
 import { Rec } from './models';
 
-/** Renders records to the tracks.txt plain-text format (mirrors the Java tool). */
+/**
+ * Renders records to the tracks.txt plain-text format (mirrors the Java tool).
+ *
+ * Per-track metadata lives in a single trailing bracket block of `Name: value`
+ * pairs separated by `|`. Older files carry only `Key` and `BPM`; `Pos` and
+ * `Time` were added later and every field is optional on the way back in, so
+ * files written by either version read correctly in both.
+ */
 export function renderTracksTxt(records: Rec[]): string {
   const lines: string[] = [];
   for (const r of records) {
@@ -18,14 +25,12 @@ export function renderTracksTxt(records: Rec[]): string {
       for (const t of r.tracks) {
         n++;
         let s = `  ${String(n).padStart(2, ' ')}. ${t.title} - ${t.artist}`;
-        const hasKey = !!t.keyText;
-        const hasBpm = !!t.bpm;
-        if (hasKey || hasBpm) {
-          s += ' [';
-          if (hasKey) s += `Key: ${t.keyText}`;
-          if (hasBpm) s += (hasKey ? ' | ' : '') + `BPM: ${t.bpm}`;
-          s += ']';
-        }
+        const meta: string[] = [];
+        if (t.position) meta.push(`Pos: ${t.position}`);
+        if (t.duration) meta.push(`Time: ${t.duration}`);
+        if (t.keyText) meta.push(`Key: ${t.keyText}`);
+        if (t.bpm) meta.push(`BPM: ${t.bpm}`);
+        if (meta.length) s += ` [${meta.join(' | ')}]`;
         lines.push(s);
       }
     }

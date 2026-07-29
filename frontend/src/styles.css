@@ -314,6 +314,39 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 }
 .key-badge.none { background: #2a2530; border-color: #443a4a; color: #b79ac2; }
 
+/*
+ * Where the track sits on the record ("A1", "B2", "AA"). Monospaced and
+ * fixed-width so a column of them lines up down a tracklist — the point of the
+ * badge is scanning for the cut, not reading it.
+ */
+.pos-badge {
+  min-width: 34px;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: #2b2f24;
+  border: 1px solid #55603c;
+  color: #d6e6a8;
+  white-space: nowrap;
+}
+
+/** Printed track length, deliberately quieter than the BPM next to it. */
+.dur-badge {
+  min-width: 44px;
+  text-align: center;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 /* Camelot wheel colour-coding: hue = (n-1) * 30° around the wheel. */
 .key-badge.cam-1  { background: hsl(0,   40%, 20%); border-color: hsl(0,   45%, 42%); color: hsl(0,   85%, 80%); }
 .key-badge.cam-2  { background: hsl(30,  42%, 20%); border-color: hsl(30,  48%, 42%); color: hsl(30,  90%, 78%); }
@@ -896,6 +929,9 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
    * columns on desktop are exactly what overflows the row on a phone.
    */
   .rel-badge, .key-badge, .bpm-badge, .pitch-badge { min-width: 0; }
+  /* The position keeps a little width so the column still reads as a column. */
+  .pos-badge { min-width: 28px; font-size: 10px; padding: 2px 5px; }
+  .dur-badge { min-width: 0; font-size: 11px; padding: 2px 6px; }
 
   /*
    * Dense lists carry up to four badges per row. Shrinking them slightly is

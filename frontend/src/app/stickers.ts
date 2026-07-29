@@ -133,6 +133,10 @@ export function stickerOptions(p: StickerPrefs): StickerOptions {
 export interface StickerTrack {
   title: string;
   artist: string;
+  /** Side and cut on the record, e.g. "A1" ("" if unknown). */
+  position: string;
+  /** Printed length, e.g. "6:32" ("" if unknown). */
+  duration: string;
   camelot: string;
   keyName: string;
   bpm: string;
@@ -175,6 +179,8 @@ export function buildStickers(rows: StickerSource[], perSticker: PerSticker): St
         tracks: row.tracks.slice(i * perSticker, (i + 1) * perSticker).map((t) => ({
           title: t.title,
           artist: t.artist,
+          position: t.position,
+          duration: t.duration,
           camelot: t.camelot,
           keyName: t.keyName,
           bpm: t.bpm,
@@ -298,6 +304,23 @@ function drawSticker(
   const bpmW = textWidth('188', keySize, true) + 2;
   /** Leading between the track title and the artist beneath it. */
   const subGap = 1.5;
+
+  /**
+   * The position column ("A1", "B2") is sized to the widest position on *this*
+   * sticker and disappears entirely when none of its tracks have one, so a
+   * record Discogs has no positions for doesn't pay for the column. Sizing it
+   * per sticker rather than per sheet keeps the codes aligned down the label,
+   * which is the whole point of a column.
+   */
+  const posText = s.tracks.map((t) => t.position).filter(Boolean);
+  const posW = posText.length
+    ? Math.min(Math.max(...posText.map((p) => textWidth(p, keySize, true))), badgeW) + 3
+    : 0;
+  /** Widest printed duration, used to reserve the right-hand edge of the sub-line. */
+  const durText = s.tracks.map((t) => t.duration).filter(Boolean);
+  const durW = durText.length
+    ? Math.max(...durText.map((d) => textWidth(d, artistSize, false))) + 3
+    : 0;
   s.tracks.forEach((t, i) => {
     const rowY = listTop + i * rowH;
     if (i > 0) doc.line(x, rowY - 1, x + w, rowY - 1, RULE, 0.25);
@@ -316,29 +339,40 @@ function drawSticker(
     const titleBase = rowY + pad + titleSize;
     const subBase = titleBase + artistSize + subGap;
 
-    // Key badge, left.
+    // Position ("A1"), then the key badge, at the left.
+    if (posW) {
+      doc.text(x + posW - 3, titleBase, ellipsize(t.position, posW - 3, keySize, true), {
+        size: keySize,
+        bold: true,
+        align: 'right',
+      });
+    }
+    const badgeX = x + posW;
     const badgeY = rowY + (rowH - badgeH) / 2 - 1;
     const { fill, text } = keyColours(t.camelot, colour);
-    doc.rect(x, badgeY, badgeW, badgeH, { fill });
-    doc.text(x + badgeW / 2, badgeY + badgeH - 3, t.camelot || '—', {
+    doc.rect(badgeX, badgeY, badgeW, badgeH, { fill });
+    doc.text(badgeX + badgeW / 2, badgeY + badgeH - 3, t.camelot || '—', {
       size: keySize,
       bold: true,
       color: text,
       align: 'center',
     });
 
-    // BPM, right.
+    // BPM top right, printed length beneath it.
     doc.text(x + w, titleBase, t.bpm || '—', { size: keySize, bold: true, align: 'right' });
+    if (t.duration) {
+      doc.text(x + w, subBase, t.duration, { size: artistSize, color: GREY, align: 'right' });
+    }
 
     // Title + artist, between the two.
-    const textX = x + badgeW + 4;
-    const textW = w - (badgeW + 4) - bpmW - 3;
+    const textX = badgeX + badgeW + 4;
+    const textW = x + w - textX - bpmW - 3;
     doc.text(textX, titleBase, ellipsize(t.title, textW, titleSize, true), {
       size: titleSize,
       bold: true,
     });
     if (sub && subBase <= y + h) {
-      doc.text(textX, subBase, ellipsize(sub, textW + bpmW, artistSize), {
+      doc.text(textX, subBase, ellipsize(sub, textW + bpmW - durW, artistSize), {
         size: artistSize,
         color: GREY,
       });

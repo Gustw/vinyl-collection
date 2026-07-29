@@ -3,7 +3,7 @@ import { RouterLink, Router } from '@angular/router';
 import { CollectionService } from './collection.service';
 import { CrateService } from './crate.service';
 import { ConfigService } from './config.service';
-import { Track, trackKey } from './models';
+import { Track, durationSeconds, formatRuntime, totalRuntime, trackKey } from './models';
 import { camelotClass } from './camelot';
 import { Transition, evaluateSet, formatPercent } from './transitions';
 
@@ -23,6 +23,9 @@ import { Transition, evaluateSet, formatPercent } from './transitions';
       <span class="spacer"></span>
       @if (crate()) {
         <span class="badge-count">{{ tracks().length }} track(s)</span>
+        @if (runtime(); as rt) {
+          <span class="badge-count" [title]="runtimeTitle()">⏱ {{ rt }}</span>
+        }
         @if (blockedCount()) {
           <span class="badge-count err" title="The decks can't close the tempo gap">
             {{ blockedCount() }} unplayable transition(s)
@@ -80,6 +83,10 @@ import { Transition, evaluateSet, formatPercent } from './transitions';
                   <div class="track-title">{{ t.title }}</div>
                   <div class="muted">{{ t.artist }} · {{ t.recordTitle }}</div>
                 </div>
+                @if (t.position) {
+                  <span class="pos-badge" title="Side and cut on the record">{{ t.position }}</span>
+                }
+                @if (t.duration) { <span class="dur-badge">{{ t.duration }}</span> }
                 @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
                 <span [class]="'key-badge ' + keyClass(t.camelot)">{{ t.keyText || 'no key' }}</span>
                 <div class="set-actions">
@@ -140,6 +147,25 @@ export class SetBuilderComponent {
   readonly transitions = computed<Transition[]>(() =>
     evaluateSet(this.tracks(), this.pitchRange())
   );
+
+  /**
+   * Printed runtime of the set, or '' when no track has a length.
+   *
+   * This is the *records'* total, not the set's: you rarely play a 12" end to
+   * end, and mixing overlaps the ends anyway. It answers "have I packed enough
+   * for two hours?", which is the question you ask while filling the bag.
+   */
+  readonly runtime = computed(() => {
+    const total = totalRuntime(this.tracks());
+    return total > 0 ? formatRuntime(total) : '';
+  });
+
+  runtimeTitle(): string {
+    const known = this.tracks().filter((t) => durationSeconds(t.duration) > 0).length;
+    const all = this.tracks().length;
+    const caveat = known < all ? ` — ${all - known} track(s) have no printed length` : '';
+    return `Total printed runtime of ${known} of ${all} track(s)${caveat}. Played end to end; mixing will shorten it.`;
+  }
 
   /** Transitions the decks physically cannot make. */
   readonly blockedCount = computed(

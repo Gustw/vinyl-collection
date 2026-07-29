@@ -36,6 +36,9 @@ updates back through the GitHub API.
 - **Key & pitch cheat sheet** — 🎹 on the list and detail screens: what mixes
   with a given key and *why*, and what the pitch fader does to that key
   (±6% per semitone, and a semitone is seven positions round the wheel).
+- **Positions & lengths** — every track carries its side and cut (`A1`, `B2`)
+  and its printed length, so you can find the cut on the record and see what a
+  crate adds up to.
 
 ## Running it
 
@@ -75,9 +78,20 @@ diffable:
   Year: 2016
   Label: Jungle Cakes
   Art: https://i.discogs.com/...jpeg
-   1. Bad Boys (Benny Page Remix) - Ed Solo And Deekline [Key: D major (10B) | BPM: 105]
-   2. Pass Me The Dubplate - Deekline Featuring Tippa Irie [Key: A# minor (3A) | BPM: 175]
+   1. Bad Boys (Benny Page Remix) - Ed Solo And Deekline [Pos: A1 | Time: 6:32 | Key: D major (10B) | BPM: 105]
+   2. Pass Me The Dubplate - Deekline Featuring Tippa Irie [Pos: B1 | Key: A# minor (3A) | BPM: 175]
 ```
+
+Per-track metadata is a single trailing bracket block of `Name: value` pairs
+separated by `|`. **Every field is optional**, and a block is only recognised
+when *all* of its segments are known fields — so a title that merely ends in
+brackets ("Bad Boys [VIP]") is left alone.
+
+`Pos` (side and cut) and `Time` (printed length) were added after `Key`/`BPM`.
+Files written before they existed parse unchanged and re-render byte-identical,
+so upgrading produces no spurious diff; the fields fill in as records are
+re-fetched from Discogs. **The Java tool needs the matching change** if it is
+still used to write the file, otherwise it will drop `Pos`/`Time` on rewrite.
 
 Keys and BPMs are best-effort lookups and can be corrected by hand in the app;
 an edit is written straight back to `tracks.txt`.

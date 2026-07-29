@@ -323,8 +323,12 @@ function formatDuration(ms: number): string {
               <div style="margin-top:8px">
                 @for (t of row.tracks; track t.id) {
                   <div class="track-row" (click)="open(t)">
+                    @if (t.position) {
+                      <span class="pos-badge" title="Side and cut on the record">{{ t.position }}</span>
+                    }
                     <span class="track-title">{{ t.title }}</span>
                     <span class="track-artist">{{ t.artist }}</span>
+                    @if (t.duration) { <span class="dur-badge">{{ t.duration }}</span> }
                     @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
                     <span [class]="keyBadgeClass(t)">{{ t.keyText || 'no key' }}</span>
                   </div>
@@ -383,7 +387,11 @@ function formatDuration(ms: number): string {
             } @else {
               @for (t of pop.tracks; track t.id) {
                 <div class="popover-item">
+                  @if (t.position) {
+                    <span class="pos-badge" title="Side and cut on the record">{{ t.position }}</span>
+                  }
                   <span class="track-title" (click)="open(t)">{{ t.title }}</span>
+                  @if (t.duration) { <span class="dur-badge">{{ t.duration }}</span> }
                   @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
                   <span [class]="keyBadgeClass(t)" (click)="open(t)">{{ t.keyText || 'no key' }}</span>
                   <button

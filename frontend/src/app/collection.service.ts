@@ -7,8 +7,48 @@ import { cachedKeyInfo } from './tunebat';
 
 const HEADER_RE = /^===\s(.*)\s===$/;
 const TRACK_RE = /^\s*\d+\.\s+(.*)$/;
-const KEY_RE = /\s*\[Key:\s*([^\]]+)\]\s*$/;
+/**
+ * The trailing metadata block: `[Pos: A1 | Time: 6:32 | Key: A minor (8A) | BPM: 175]`.
+ * Every field is optional and older files carry only Key/BPM.
+ */
+const META_RE = /\s*\[([^\]]+)]\s*$/;
+const META_FIELD_RE = /^(Pos|Time|Key|BPM)\s*:\s*(.*)$/i;
 const CAMELOT_RE = /\((\d{1,2}[AB])\)/;
+
+/** Per-track fields parsed out of the trailing bracket block. */
+interface TrackMeta {
+  position: string;
+  duration: string;
+  keyText: string;
+  bpm: string;
+}
+
+/**
+ * Splits a track line into its title/artist body and its metadata block.
+ *
+ * The block is only recognised when *every* `|` segment is a known
+ * `Name: value` pair, so a title that merely ends in brackets — "Bad Boys
+ * [VIP]" — is left alone instead of being eaten as metadata.
+ */
+function splitTrackMeta(body: string): { body: string; meta: TrackMeta } {
+  const meta: TrackMeta = { position: '', duration: '', keyText: '', bpm: '' };
+  const m = META_RE.exec(body);
+  if (!m) return { body, meta };
+
+  const segments = m[1].split('|').map((s) => s.trim());
+  const fields = segments.map((s) => META_FIELD_RE.exec(s));
+  if (fields.some((f) => !f)) return { body, meta }; // not a metadata block
+
+  for (const f of fields) {
+    const name = f![1].toLowerCase();
+    const value = f![2].trim();
+    if (name === 'pos') meta.position = value;
+    else if (name === 'time') meta.duration = value;
+    else if (name === 'key') meta.keyText = value;
+    else if (name === 'bpm') meta.bpm = value;
+  }
+  return { body: body.replace(META_RE, '').trim(), meta };
+}
 
 /** Parses the plain-text export produced by the Java tool into records/tracks. */
 export function parseTracksTxt(text: string): Rec[] {
@@ -62,25 +102,14 @@ export function parseTracksTxt(text: string): Rec[] {
 
     const tr = TRACK_RE.exec(line);
     if (tr) {
-      let body = tr[1].trim();
-      let keyText = '';
-      let keyName = '';
-      let camelot = '';
-      let bpm = '';
-      const km = KEY_RE.exec(body);
-      if (km) {
-        let content = km[1].trim();
-        body = body.replace(KEY_RE, '').trim();
-        const bm = /\|\s*BPM:\s*([\d.]+)/i.exec(content);
-        if (bm) {
-          bpm = bm[1];
-          content = content.replace(/\s*\|\s*BPM:.*$/i, '').trim();
-        }
-        keyText = content;
-        const cm = CAMELOT_RE.exec(keyText);
-        camelot = cm ? cm[1] : '';
-        keyName = keyText.replace(/\s*\([^)]*\)\s*$/, '').trim();
-      }
+      const split = splitTrackMeta(tr[1].trim());
+      const body = split.body;
+      const keyText = split.meta.keyText;
+      const bpm = split.meta.bpm;
+      const cm = keyText ? CAMELOT_RE.exec(keyText) : null;
+      const camelot = cm ? cm[1] : '';
+      const keyName = keyText ? keyText.replace(/\s*\([^)]*\)\s*$/, '').trim() : '';
+
       // Split "Title - Artist" on the LAST " - " (artists rarely contain it).
       const idx = body.lastIndexOf(' - ');
       const title = idx >= 0 ? body.slice(0, idx).trim() : body.trim();
@@ -90,6 +119,8 @@ export function parseTracksTxt(text: string): Rec[] {
         id: id++,
         title,
         artist,
+        position: split.meta.position,
+        duration: split.meta.duration,
         keyName,
         camelot,
         keyText,
