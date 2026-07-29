@@ -3071,7 +3071,7 @@
    6. You Wish - Nightmares On Wax [Key: A minor (8A) | BPM: 103]
    7. Deepdown - Nightmares On Wax [Key: C major (8B) | BPM: 150]
    8. Chime Out - Nightmares On Wax [Key: C major (8B) | BPM: 120]
-   9. Me! - Nightmares On Wax [Key: A major (11B) | BPM: 75]
+   9. Me! - Nightmares On Wax [Key: D major (10B) | BPM: 123]
   10. I Am You - Nightmares On Wax [Key: E major (12B) | BPM: 75]
   11. Soul Purpose - Nightmares On Wax [Key: F# major (2B) | BPM: 83]
   12. African Pirates - Nightmares On Wax [Key: F# minor (11A) | BPM: 115]
@@ -3194,7 +3194,7 @@
   Label: Global Aura Records
   Art: https://i.discogs.com/xtRZIqjnyaV3upC8AluBQE5F5YJDew9oLlLinZ5pSKc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYx/NzM0LTE1ODc0ODcw/ODYtNTA5NC5qcGVn.jpeg
    1. Dog Days Bliss - Filteria [Key: Ab major (4B) | BPM: 144]
-   2. Voyager - Triquetra [Key: F# major (2B) | BPM: 99]
+   2. Voyager - Triquetra [Key: D minor (7A) | BPM: 148]
    3. 1001 Nights - Agneton [Key: D major (10B) | BPM: 152]
    4. Dream Shaper - Psilocybe Project [Key: A major (11B) | BPM: 145]
    5. Rise Above This - DJ Jape du Marie & Jack Wax [Key: C minor (5A) | BPM: 126]
@@ -3280,7 +3280,7 @@
    7. Who Say Jah No Dread - Jacob Miller [Key: B minor (10A) | BPM: 77]
    8. Jah Dread - Jacob Miller [Key: B minor (10A) | BPM: 77]
    9. Each One Teach One - Jacob Miller [Key: C major (8B) | BPM: 133]
-  10. Each One Teach One Version - Jacob Miller [Key: F minor (4A) | BPM: 93]
+  10. Each One Teach One Version - Jacob Miller [Key: Ab major (4B) | BPM: 130]
   11. Girl Name Pat - Jacob Miller [Key: Ab major (4B) | BPM: 138]
   12. Girl Name Pat Version - Jacob Miller [Key: Ab major (4B) | BPM: 138]
 
@@ -3294,7 +3294,7 @@
    1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A) | BPM: 79]
    2. John Public - Gregory Isaacs [Key: B major (1B) | BPM: 135]
    3. Mr. Brown - Gregory Isaacs [Key: A major (11B) | BPM: 75]
-   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 119]
+   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 136]
    5. Raving Tonight - Gregory Isaacs [Key: G major (9B) | BPM: 144]
    6. One More Time - Gregory Isaacs [Key: G minor (6A) | BPM: 128]
    7. Let's Dance - Gregory Isaacs [Key: Eb major (5B) | BPM: 77]
@@ -3344,7 +3344,7 @@
   Art: https://i.discogs.com/0LOIpvxKxKVqNmSQPncpHp7Tlyl8OrTlZwXW21Hc-9Y/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1NDE2/NTYtMTU1MjczODA5/OC03NzIzLmpwZWc.jpeg
    1. Positive Vibration - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 132]
    2. Roots, Rock, Reggae - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 139]
-   3. Johnny Was - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 87]
+   3. Johnny Was - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 152]
    4. Cry To Me - Bob Marley & The Wailers [Key: G major (9B) | BPM: 188]
    5. Want More - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 134]
    6. Crazy Baldhead - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 126]
@@ -3426,7 +3426,7 @@
    6. Get Ready - Gregory Isaacs [Key: C major (8B) | BPM: 176]
    7. Set The Captive Free - Gregory Isaacs [Key: G major (9B) | BPM: 133]
    8. The Winner - Gregory Isaacs [Key: A major (11B) | BPM: 139]
-   9. Smile - Gregory Isaacs [Key: F minor (4A) | BPM: 148]
+   9. Smile - Gregory Isaacs [Key: F minor (4A) | BPM: 145]
 
 === Bush Doctor -- Peter Tosh ===
   ID: 6226299
@@ -3458,15 +3458,15 @@
    4. Arabian Rock - Augustus Pablo [Key: C minor (5A) | BPM: 132]
    5. Pretty Baby - Augustus Pablo [Key: Bb major (6B) | BPM: 134]
    6. Pablo In Dub - Augustus Pablo [Key: Ab major (4B) | BPM: 144]
-   7. Marabi (Bonus Track) - Augustus Pablo [Key: G# minor (1A) | BPM: 81]
-   8. Java (Bonus Track) - Augustus Pablo [Key: F# major (2B) | BPM: 136]
+   7. Marabi (Bonus Track) - Augustus Pablo [Key: E major (12B) | BPM: 136]
+   8. Java (Bonus Track) - Augustus Pablo [Key: E major (12B) | BPM: 136]
    9. Skateland Rock - Augustus Pablo [Key: F minor (4A) | BPM: 141]
   10. Dread Eye - Augustus Pablo [Key: E major (12B) | BPM: 136]
   11. Too Late - Augustus Pablo [Key: C# minor (12A) | BPM: 115]
   12. Assignment No 1 - Augustus Pablo [Key: G minor (6A) | BPM: 142]
   13. Jah Rock - Augustus Pablo [Key: C major (8B) | BPM: 140]
   14. Lover's Mood - Augustus Pablo [Key: G# minor (1A) | BPM: 135]
-  15. Guiding Red (Bonus Track) - Augustus Pablo [Key: A minor (8A) | BPM: 160]
+  15. Guiding Red (Bonus Track) - Augustus Pablo [Key: E major (12B) | BPM: 136]
 
 === Dub Sampler Vol 2 -- Various ===
   ID: 570537
@@ -3475,7 +3475,7 @@
   Year: 2004
   Label: Jamaican Recordings
   Art: https://i.discogs.com/QplXF9iHk5RW1r5PzoaVIERbXRULddUkLKw4UEFJXWI/rs:fit/g:sm/q:90/h:208/w:208/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MDUz/Ny0xMTMyODA1ODAw/LmpwZWc.jpeg
-   1. No Lick No Dub - Johnny Clarke [Key: F# major (2B) | BPM: 126]
+   1. No Lick No Dub - Johnny Clarke [Key: C major (8B) | BPM: 122]
    2. Bosrock Dub - Don Carlos [Key: D major (10B) | BPM: 78]
    3. Take 5 Dub - King Tubby [Key: Ab major (4B) | BPM: 159]
    4. Some Good Dub - Locksley Castell [Key: A major (11B) | BPM: 172]
