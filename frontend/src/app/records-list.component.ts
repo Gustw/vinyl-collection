@@ -278,6 +278,8 @@ function formatDuration(ms: number): string {
               <div class="record-head-row">
                 @if (row.record.artwork) {
                   <img class="cover" [src]="row.record.artwork" alt="" loading="lazy" referrerpolicy="no-referrer" />
+                } @else {
+                  <span class="cover cover-none" aria-hidden="true">♪</span>
                 }
                 <div>
                   <div class="record-head">
@@ -316,6 +318,8 @@ function formatDuration(ms: number): string {
               <div class="rec-card clickable" (click)="openRecord($event, row)">
                 @if (row.record.artwork) {
                   <img class="cover" [src]="row.record.artwork" alt="" loading="lazy" referrerpolicy="no-referrer" />
+                } @else {
+                  <span class="cover cover-none" aria-hidden="true">♪</span>
                 }
                 <div class="rec-card-body">
                   <div class="record-title">{{ row.record.title }}</div>

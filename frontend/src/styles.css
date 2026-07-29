@@ -264,6 +264,26 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .track-title { flex: 1; }
 .track-artist { color: var(--muted); }
 
+/*
+ * Mixable-tracks list on the detail screen: artist first, then title, both
+ * left-aligned. Elsewhere a track row sits under the record it belongs to, so
+ * the artist is a trailing footnote; here the rows come from all over the
+ * collection and the artist is what you scan by.
+ *
+ * The artist gets a fixed column rather than half the row, so the title starts
+ * close to the left and every title lines up at the same x down the list.
+ */
+.mixable-list .track-artist,
+.mixable-list .track-title {
+  min-width: 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mixable-list .track-artist { flex: 0 1 180px; }
+.mixable-list .track-title { flex: 1 1 0; }
+
 /* "+ N more tracks hidden by filters" note under a partially filtered tracklist. */
 .hidden-note {
   padding: 7px 10px;
@@ -396,14 +416,21 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   background: var(--panel-2);
   flex: 0 0 auto;
 }
-/* Stand-in for a record with no sleeve, so titles stay on one vertical line. */
+/*
+ * Stand-in for a record with no sleeve. Combined with .cover / .cover-sm /
+ * .cover-lg it inherits that size, so the image slot stays occupied and rows
+ * and tiles keep their alignment instead of collapsing to different widths.
+ */
 .cover-none {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 18px;
+  user-select: none;
 }
+.cover-sm.cover-none { font-size: 15px; }
+.cover-lg.cover-none { font-size: 56px; }
 .record-head-row { display: flex; align-items: center; gap: 12px; }
 .detail-head { display: flex; gap: 16px; align-items: flex-start; }
 

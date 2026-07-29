@@ -73,6 +73,8 @@ import { Transition, evaluateSet, formatPercent } from './transitions';
                 <span class="set-pos">{{ i + 1 }}</span>
                 @if (t.artwork) {
                   <img class="cover" [src]="t.artwork" alt="" loading="lazy" referrerpolicy="no-referrer" />
+                } @else {
+                  <span class="cover cover-none" aria-hidden="true">♪</span>
                 }
                 <div class="set-track" (click)="open(t)">
                   <div class="track-title">{{ t.title }}</div>

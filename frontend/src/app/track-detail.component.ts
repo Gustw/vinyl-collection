@@ -84,6 +84,8 @@ interface Row {
           <div class="detail-head">
             @if (track()!.artwork) {
               <img class="cover-lg" [src]="track()!.artwork" alt="" referrerpolicy="no-referrer" />
+            } @else {
+              <span class="cover-lg cover-none" aria-hidden="true">♪</span>
             }
             <div style="flex:1">
               <div [class]="'big-key ' + keyClass(track()!.camelot)">{{ track()!.keyText || 'No key detected' }}</div>
@@ -434,15 +436,17 @@ interface Row {
 
           @if (rows().length === 0) {
             <div class="panel empty">No mixable tracks match the current filters.</div>
-          } @else {            <div class="panel">
+          } @else {            <div class="panel mixable-list">
               @for (r of rows(); track r.track.id) {
                 <div class="track-row" (click)="open(r.track)">
                   <span [class]="'rel-badge ' + relClass(r.camelot)">{{ rel(r.camelot) }}</span>
                   @if (r.track.artwork) {
                     <img class="cover" [src]="r.track.artwork" alt="" loading="lazy" referrerpolicy="no-referrer" />
+                  } @else {
+                    <span class="cover cover-none" aria-hidden="true">♪</span>
                   }
-                  <span class="track-title">{{ r.track.title }}</span>
                   <span class="track-artist">{{ r.track.artist }}</span>
+                  <span class="track-title">{{ r.track.title }}</span>
                   @if (r.track.bpm) { <span class="bpm-badge">{{ r.track.bpm }} BPM</span> }
                   <span
                     class="pitch-badge"
