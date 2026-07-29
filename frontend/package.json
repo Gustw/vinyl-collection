@@ -1,14 +1,14 @@
 {
   "name": "vinyl-frontend",
   "version": "1.0.0",
-  "description": "Angular front-end for the Discogs vinyl tracklist + key export",
+  "description": "Browser-based harmonic mixing tool over a Discogs vinyl collection",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build",
     "build:pages": "ng build --base-href ./",
-    "backfill-ids": "node scripts/backfill-ids.mjs",
-    "sync-data": "node scripts/sync-tracks.mjs"
+    "sync-data": "node scripts/sync-tracks.mjs",
+    "dedupe-data": "node scripts/dedupe-tracks.mjs"
   },
   "private": true,
   "dependencies": {

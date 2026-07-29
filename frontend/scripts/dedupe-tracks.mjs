@@ -1,10 +1,14 @@
 // Deduplicate records in tracks.txt. Records are blocks starting with a
 // "=== Title -- Artist ===" header. If the same header appears more than once
-// (e.g. two tool runs wrote concurrently), keep the most complete copy:
+// (e.g. two updater runs wrote concurrently), keep the most complete copy:
 // most track lines, then most lines containing a [Key: ...].
+// Usage: npm run dedupe-data [-- <path-to-tracks.txt>]
 import { readFileSync, writeFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const path = process.argv[2] ?? 'C:/DEV/testing/tracks.txt';
+const here = dirname(fileURLToPath(import.meta.url));
+const path = process.argv[2] ?? resolve(here, '..', '..', 'tracks.txt');
 const text = readFileSync(path, 'utf8').replace(/^\uFEFF/, '');
 const lines = text.split(/\r?\n/);
 
