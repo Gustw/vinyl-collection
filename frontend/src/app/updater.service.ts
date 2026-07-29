@@ -1,7 +1,7 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { CollectionService } from './collection.service';
 import { ConfigService } from './config.service';
-import { Rec, Track } from './models';
+import { Rec, Track, trackKey } from './models';
 import {
   CollectionEntry,
   fetchCollection,
@@ -13,6 +13,16 @@ import { renderTracksTxt } from './tracks-format';
 import { getTracksFile, githubConfigured, putTracksFile } from './github';
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** Where an unfinished re-fetch pass got to, kept across cancels and reloads. */
+const REFETCH_PROGRESS_KEY = 'app.refetch.progress';
+
+/**
+ * Cap on the corrections carried between segments of one pass. A full re-check
+ * of a large collection could in principle correct thousands of tracks, and the
+ * report is a review aid rather than an audit log, so it is bounded.
+ */
+const MAX_REMEMBERED_CHANGES = 300;
 
 /** Thrown internally to unwind a pipeline when the user cancels it. */
 class CancelledError extends Error {
@@ -35,6 +45,30 @@ export interface TrackChange {
   /** Which fields actually differ (drives the highlighting in the report). */
   keyChanged: boolean;
   bpmChanged: boolean;
+}
+
+/**
+ * How far an interrupted re-fetch pass got, so the next run carries on instead
+ * of re-checking thousands of tracks that were already done.
+ *
+ * The cursor is a *track key*, not a bare index: track ids are reassigned every
+ * time tracks.txt is parsed, and positions shift whenever the collection grows,
+ * so a stored number alone would silently skip or repeat work. The index is
+ * kept only as a hint, to pick the right one when the same artist/title appears
+ * more than once.
+ */
+export interface RefetchProgress {
+  /** Key of the last track completed. */
+  lastKey: string;
+  /** Index it sat at when saved. */
+  index: number;
+  /** Length of the job list at the time, for the "N of M" display. */
+  total: number;
+  /** Corrections made across the whole pass so far, not just this segment. */
+  corrected: number;
+  /** The corrections themselves, so the report covers the whole pass. */
+  changes: TrackChange[];
+  updatedAt: number;
 }
 
 function entryToRec(e: CollectionEntry): Rec {
@@ -114,15 +148,90 @@ export class UpdaterService {
   readonly etaMs = signal<number | null>(null);
   /** Wall-clock start of the current run, for the ETA. */
   private runStart = 0;
+  /**
+   * How many items were already done when this run started. A resumed run has
+   * only been going for a few seconds, so the pace must be measured over the
+   * items *it* has processed, not everything the pass has ever done.
+   */
+  private runOffset = 0;
 
   /** Recomputes the ETA from observed pace (including any 429 waits). */
   private updateEta(done: number, total: number): void {
-    if (done <= 0 || done >= total) {
+    const doneThisRun = done - this.runOffset;
+    if (doneThisRun <= 0 || done >= total) {
       this.etaMs.set(null);
       return;
     }
-    const perItem = (Date.now() - this.runStart) / done;
+    const perItem = (Date.now() - this.runStart) / doneThisRun;
     this.etaMs.set(Math.round(perItem * (total - done)));
+  }
+
+  // --- Resumable re-fetch progress ---------------------------------------
+
+  private loadProgress(): RefetchProgress | null {
+    try {
+      const raw = localStorage.getItem(REFETCH_PROGRESS_KEY);
+      if (!raw) return null;
+      const p = JSON.parse(raw) as RefetchProgress;
+      return p && typeof p.lastKey === 'string' && typeof p.index === 'number' ? p : null;
+    } catch {
+      return null;
+    }
+  }
+
+  private saveProgress(p: RefetchProgress): void {
+    try {
+      localStorage.setItem(REFETCH_PROGRESS_KEY, JSON.stringify(p));
+    } catch {
+      /* ignore quota errors — losing the cursor only costs repeated work */
+    }
+    this.resumePoint.set(p);
+  }
+
+  private clearProgress(): void {
+    try {
+      localStorage.removeItem(REFETCH_PROGRESS_KEY);
+    } catch {
+      /* ignore */
+    }
+    this.resumePoint.set(null);
+  }
+
+  /**
+   * Where an interrupted re-fetch will pick up, or null when the next run
+   * starts from the top. Drives the button label and its confirmation.
+   */
+  readonly resumePoint = signal<RefetchProgress | null>(this.loadProgress());
+
+  /** Discards a saved position so the next pass starts from track 1. */
+  forgetProgress(): void {
+    this.clearProgress();
+  }
+
+  /**
+   * First index to process, given a saved cursor. Falls back to the start when
+   * the remembered track can no longer be found — the collection has changed
+   * enough that a position from the old list means nothing.
+   */
+  private resumeIndex(jobs: Track[], progress: RefetchProgress | null): number {
+    if (!progress) return 0;
+    const hint = progress.index;
+    if (hint >= 0 && hint < jobs.length && trackKey(jobs[hint]) === progress.lastKey) {
+      return hint + 1;
+    }
+    const found = jobs.findIndex((t) => trackKey(t) === progress.lastKey);
+    return found >= 0 ? found + 1 : 0;
+  }
+
+  /**
+   * Re-points remembered corrections at the current track ids, which are
+   * reassigned on every parse — without this the report's links would open
+   * whatever track happens to hold that id now.
+   */
+  private rehydrateChanges(changes: TrackChange[], jobs: Track[]): TrackChange[] {
+    const idByKey = new Map<string, number>();
+    for (const t of jobs) idByKey.set(trackKey(t), t.id);
+    return changes.map((c) => ({ ...c, trackId: idByKey.get(trackKey(c)) ?? c.trackId }));
   }
 
   /**
@@ -176,6 +285,7 @@ export class UpdaterService {
     this.rateLimitedMs.set(0);
     this.etaMs.set(null);
     this.runStart = Date.now();
+    this.runOffset = 0;
     this.canCommit = githubConfigured(cfg) && !!cfg.githubToken;
 
     const paceMs = cfg.discogsToken.trim() ? 1100 : 2500;
@@ -318,27 +428,54 @@ export class UpdaterService {
    * repair values that were looked up wrong. A track is only changed when
    * tunebat actually returns something, so an empty or unreachable answer
    * never wipes existing data.
+   *
+   * A pass that is cancelled (or cut short by a closed tab) remembers where it
+   * got to and the next run carries on from there. The position is only cleared
+   * once the end of the list is reached, so the pass then starts over.
    */
-  async refetchAll(): Promise<void> {
+  async refetchAll(opts: { restart?: boolean } = {}): Promise<void> {
     if (this.running()) return;
     const cfg = this.config.config();
+
+    const records = this.col.records();
+    const jobs = records.flatMap((r) => r.tracks);
+    // Guard: with no collection loaded every cursor would look "past the end"
+    // and a saved position would be thrown away for nothing.
+    if (!jobs.length) {
+      this.message.set('Nothing to re-fetch — the collection is still loading.');
+      return;
+    }
+
+    // Work out where to begin before touching any of the progress signals.
+    if (opts.restart) this.clearProgress();
+    const saved = opts.restart ? null : this.loadProgress();
+    let startAt = this.resumeIndex(jobs, saved);
+    if (startAt >= jobs.length) {
+      // The saved cursor sat on the last track: the pass is finished, so this
+      // run is a fresh one.
+      startAt = 0;
+      this.clearProgress();
+    }
+    const resuming = startAt > 0 && !!saved;
+
     this.running.set(true);
     this.cancelling.set(false);
     this.error.set(null);
-    this.processed.set(0);
-    this.corrected.set(0);
-    this.changes.set([]);
+    this.total.set(jobs.length);
+    this.processed.set(startAt);
+    this.corrected.set(resuming ? saved!.corrected : 0);
+    this.changes.set(resuming ? this.rehydrateChanges(saved!.changes ?? [], jobs) : []);
     this.reportReady.set(false);
     this.rateLimitedMs.set(0);
     this.etaMs.set(null);
     this.runStart = Date.now();
+    this.runOffset = startAt;
     this.canCommit = githubConfigured(cfg) && !!cfg.githubToken;
 
-    const records = this.col.records();
-
     try {
-      const jobs = records.flatMap((r) => r.tracks);
       this.total.set(jobs.length);
+      if (resuming) {        this.message.set(`Resuming re-fetch at track ${startAt + 1} of ${jobs.length}…`);
+      }
 
       if (this.canCommit) {
         try {
@@ -351,11 +488,16 @@ export class UpdaterService {
       }
 
       let sinceCommit = 0;
-      for (const t of jobs) {
-        if (this.cancelling()) break; // stop cleanly, then save below
+      let finished = true;
+      for (let i = startAt; i < jobs.length; i++) {
+        const t = jobs[i];
+        if (this.cancelling()) {
+          finished = false;
+          break; // stop cleanly, then save below
+        }
         this.message.set(
           `Re-checking ${t.artist} - ${t.title}… ` +
-            `(${this.processed() + 1}/${jobs.length}, ${this.corrected()} corrected)`
+            `(${i + 1}/${jobs.length}, ${this.corrected()} corrected)`
         );
         try {
           const info = await lookupKey(cfg, t.artist, t.title, {
@@ -376,6 +518,16 @@ export class UpdaterService {
         this.processed.update((n) => n + 1);
         this.updateEta(this.processed(), jobs.length);
         this.push(records);
+        // Recorded after the track is done, so the cursor always points at
+        // completed work and resuming never skips a track.
+        this.saveProgress({
+          lastKey: trackKey(t),
+          index: i,
+          total: jobs.length,
+          corrected: this.corrected(),
+          changes: this.changes().slice(-MAX_REMEMBERED_CHANGES),
+          updatedAt: Date.now(),
+        });
         await this.wait(500); // be polite to tunebat (reduces 429s)
         if (sinceCommit >= 10) {
           sinceCommit = 0;
@@ -383,11 +535,17 @@ export class UpdaterService {
         }
       }
 
+      // Reaching the end retires the cursor, so the next run starts over.
+      if (finished) this.clearProgress();
+
       // Always commit: this is also the save-on-cancel path.
       await this.commit(records, cfg);
       const n = this.corrected();
       const fixed = n === 0 ? 'nothing needed correcting' : `${n} track(s) corrected`;
-      this.message.set(this.finishMessage('Re-fetch', this.cancelling(), fixed));
+      const note = finished
+        ? fixed
+        : `${fixed}; will resume at track ${this.processed() + 1} of ${jobs.length}`;
+      this.message.set(this.finishMessage('Re-fetch', !finished, note));
     } catch (e) {
       this.error.set(String(e));
       this.message.set('Re-fetch failed: ' + e);

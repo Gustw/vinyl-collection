@@ -55,10 +55,10 @@ function formatDuration(ms: number): string {
       <button
         class="btn"
         [disabled]="updater.running()"
-        title="Ask tunebat again for every track's key + BPM and correct the wrong ones (ignores the local cache)"
+        [title]="refetchTooltip()"
         (click)="refetch()"
       >
-        ↻ Re-fetch keys / BPM
+        {{ updater.resumePoint() ? '↻ Resume keys / BPM' : '↻ Re-fetch keys / BPM' }}
       </button>
       <button class="btn" title="Manage crates" (click)="openCrates()">🗃 Crates</button>
       <a class="btn" routerLink="/set" title="Build a set from a crate and check every transition">▶ Set builder</a>
@@ -793,9 +793,45 @@ export class RecordsListComponent {
     void this.updater.start();
   }
 
-  /** Re-asks tunebat for every track's key/BPM and corrects the wrong ones. */
+  /** Tooltip for the re-fetch button, which doubles as a resume button. */
+  readonly refetchTooltip = computed(() => {
+    const p = this.updater.resumePoint();
+    return p
+      ? `The last pass stopped after ${p.index + 1} of ${p.total} tracks ` +
+        `(${p.corrected} corrected). Carries on from there — or start over.`
+      : "Ask tunebat again for every track's key + BPM and correct the wrong " +
+        'ones (ignores the local cache)';
+  });
+
+  /**
+   * Re-asks tunebat for every track's key/BPM and corrects the wrong ones.
+   * Offers to carry on when an earlier pass was interrupted, since re-checking
+   * thousands of already-checked tracks costs an hour or more of rate limiting.
+   */
   refetch(): void {
     const n = this.totalTracks();
+    const resume = this.updater.resumePoint();
+
+    if (resume) {
+      const done = Math.min(resume.index + 1, resume.total);
+      const carryOn = confirm(
+        `Resume the re-fetch?\n\n` +
+          `The last pass stopped after ${done} of ${resume.total} tracks, ` +
+          `having corrected ${resume.corrected}.\n\n` +
+          `OK — carry on from track ${done + 1}.\n` +
+          `Cancel — start again from the beginning instead.`
+      );
+      if (carryOn) {
+        void this.updater.refetchAll();
+        return;
+      }
+      const startOver = confirm(
+        `Start again from track 1 of ${n}?\n\nThe saved position is discarded.`
+      );
+      if (startOver) void this.updater.refetchAll({ restart: true });
+      return;
+    }
+
     // ~500ms pacing plus a typical request, so about a second per track. The
     // real figure is whatever the live ETA settles on once tunebat's
     // throttling (if any) shows itself.
@@ -807,7 +843,8 @@ export class RecordsListComponent {
         `Roughly ${bestCase} minute(s) if tunebat doesn't rate-limit. It will ` +
         `back off for up to a minute each time it does, so the run can take ` +
         `considerably longer — a live estimate is shown while it runs, and you ` +
-        `can cancel at any point without losing corrections already made.`
+        `can cancel at any point without losing corrections already made. ` +
+        `A cancelled pass remembers its place and resumes next time.`
     );
     if (ok) void this.updater.refetchAll();
   }
