@@ -1097,8 +1097,8 @@
   Year: 2008
   Label: Pure Pirate
   Art: https://i.discogs.com/zEQslw3Qhsk4tTt23jPuoUfXr_E4dsl1Xvx76-a3j0M/rs:fit/g:sm/q:90/h:348/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTI3/MjctMTI1NTg3NTI4/OS5qcGVn.jpeg
-   1. Intergalactic (Prisoners Of Technology TMS 1 Remix) - Biscuit Boys [Key: D major (10B) | BPM: 106]
-   2. Rockafeller Skank (Mulders Urban Takeover Mix) - Fatboy Fat [Key: G major (9B) | BPM: 175]
+   1. Intergalactic (Prisoners Of Technology TMS 1 Remix) - Biscuit Boys [Pos: X | Key: D major (10B) | BPM: 106]
+   2. Rockafeller Skank (Mulders Urban Takeover Mix) - Fatboy Fat [Pos: XX | Key: G major (9B) | BPM: 175]
 
 === Crazy World LP - Pt 2 -- J Majik & Wickaman ===
   ID: 998188
@@ -1107,8 +1107,8 @@
   Year: 2007
   Label: Infrared, Black Widow
   Art: https://i.discogs.com/1MnnvFhciWCgtUIImnv10YVttCxa8Yz7qYQkOR9tSig/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5ODE4/OC0xMjA0MDY2Mjk2/LmpwZWc.jpeg
-   1. Cassanova - Wickaman & J.Majik [Key: Ab major (4B) | BPM: 99]
-   2. C-Style - J.Majik & Wickaman [Key: G minor (6A) | BPM: 110]
+   1. Cassanova - Wickaman & J.Majik [Pos: A | Key: Ab major (4B) | BPM: 99]
+   2. C-Style - J.Majik & Wickaman [Pos: AA | Key: G minor (6A) | BPM: 110]
 
 === Turn Down The Lights / Soundboy Burial -- Benny Page / Visionary Featuring Peter Ranking ===
   ID: 2771571
@@ -1116,8 +1116,8 @@
   Style: Drum n Bass
   Year: 2006
   Label: Digital Soundboy Recording Co.
-   1. Turn Down The Lights - Benny Page [Key: A minor (8A) | BPM: 175]
-   2. Soundboy Burial - Visionary Featuring Peter Ranking [Key: G major (9B) | BPM: 170]
+   1. Turn Down The Lights - Benny Page [Pos: A | Time: 5:44 | Key: A minor (8A) | BPM: 175]
+   2. Soundboy Burial - Visionary Featuring Peter Ranking [Pos: AA | Time: 5:36 | Key: G major (9B) | BPM: 170]
 
 === Skaface / So Good Tonight -- E-Z Rollers ===
   ID: 1513879
@@ -1125,8 +1125,8 @@
   Style: Drum n Bass
   Year: 2005
   Label: Intercom Recordings
-   1. Skaface - E-Z Rollers [Key: C# major (3B) | BPM: 177]
-   2. So Good Tonight - E-Z Rollers [Key: C major (8B) | BPM: 178]
+   1. Skaface - E-Z Rollers [Pos: A | Key: C# major (3B) | BPM: 177]
+   2. So Good Tonight - E-Z Rollers [Pos: B | Key: C major (8B) | BPM: 178]
 
 === My Sound A Champion / Walk Like A Champion -- Serial Killaz ===
   ID: 2092484
@@ -1135,8 +1135,8 @@
   Year: 2010
   Label: Killa Dubz
   Art: https://i.discogs.com/Oy4wLywGRS3kjcQjulZcIRPOr57Mx0aObtUwKYylkXk/rs:fit/g:sm/q:90/h:600/w:517/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwOTI0/ODQtMTI2NzcyMjUx/OC5qcGVn.jpeg
-   1. My Sound A Champion - Serial Killaz [Key: B major (1B) | BPM: 93]
-   2. Walk Like A Champion - Serial Killaz [Key: E minor (9A) | BPM: 180]
+   1. My Sound A Champion - Serial Killaz [Pos: A | Key: B major (1B) | BPM: 93]
+   2. Walk Like A Champion - Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 180]
 
 === Feelings -- Shy FX & T Power ===
   ID: 533106
@@ -1145,8 +1145,8 @@
   Year: 2005
   Label: Digital Soundboy Recording Co.
   Art: https://i.discogs.com/MOgGGemlFyCZq2y9eQNr9FP2LBCQoHcxOlh8BWcfZBg/rs:fit/g:sm/q:90/h:445/w:448/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMzEw/Ni0xMTI4NDU0Nzk2/LmpwZWc.jpeg
-   1. Feelings - Shy FX & T Power [Key: E minor (9A) | BPM: 178]
-   2. Ruling Sound - Visionary
+   1. Feelings - Shy FX & T Power [Pos: A | Key: E minor (9A) | BPM: 178]
+   2. Ruling Sound - Visionary [Pos: B]
 
 === Everyday -- Shy FX & T Power ===
   ID: 599991
@@ -1155,8 +1155,8 @@
   Year: 2006
   Label: Digital Soundboy Recording Co.
   Art: https://i.discogs.com/mkLjAdpws9dJzMNmi6jgS87PUPCOP0svqFhFmAjf2ow/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5OTk5/MS0xNTI3NDQ1Njg2/LTMzNTcuanBlZw.jpeg
-   1. Everyday - Shy FX & T Power [Key: Eb major (5B) | BPM: 89]
-   2. Feelings (Instrumental) - Shy FX & T Power [Key: F major (7B) | BPM: 126]
+   1. Everyday - Shy FX & T Power [Pos: A | Key: Eb major (5B) | BPM: 89]
+   2. Feelings (Instrumental) - Shy FX & T Power [Pos: AA | Key: F major (7B) | BPM: 126]
 
 === Raggamuffin / Crying Out -- Soundclash ===
   ID: 762824
@@ -1165,8 +1165,8 @@
   Year: 2006
   Label: Dirty Dubs
   Art: https://i.discogs.com/9I2bh8maunKa7t76dEmtOQknYeDoPXKYPqmFxUBur_c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2Mjgy/NC0xMzQ5NjM5MTEw/LTQ0NzguanBlZw.jpeg
-   1. Raggamuffin - Soundclash [Key: G major (9B) | BPM: 86]
-   2. Crying Out - Soundclash [Key: D major (10B) | BPM: 176]
+   1. Raggamuffin - Soundclash [Pos: A | Time: 5:22 | Key: G major (9B) | BPM: 86]
+   2. Crying Out - Soundclash [Pos: AA | Time: 6:31 | Key: D major (10B) | BPM: 176]
 
 === Dub Rock Sound / Thousand Miles -- Visionary Featuring King ===
   ID: 561298
@@ -1175,8 +1175,8 @@
   Year: 2005
   Label: Dance Rock
   Art: https://i.discogs.com/AKA1elS2vV3bh494Ap8pXdK_MEl231soRuof2q56V_8/rs:fit/g:sm/q:90/h:399/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2MTI5/OC0xMTQxMjMzMzE2/LmpwZWc.jpeg
-   1. Dub Rock Sound - Visionary Featuring King [Key: G major (9B) | BPM: 106]
-   2. Thousand Miles - Visionary Featuring King [Key: G major (9B) | BPM: 106]
+   1. Dub Rock Sound - Visionary Featuring King [Pos: A | Key: G major (9B) | BPM: 106]
+   2. Thousand Miles - Visionary Featuring King [Pos: B | Key: G major (9B) | BPM: 106]
 
 === Dear Friend -- Alpha Steppa ===
   ID: 15509278
@@ -1185,10 +1185,10 @@
   Year: 2020
   Label: Steppas
   Art: https://i.discogs.com/_LZEfa6huW30o1orHBEulfHxeg3zC71yBwNmqT8C-iA/rs:fit/g:sm/q:90/h:540/w:540/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTA5/Mjc4LTE1OTI3MjU5/NjUtMTUyNy5qcGVn.jpeg
-   1. Dear Friend (feat. Pupajim) - Pupajim, Alpha Steppa [Key: C minor (5A) | BPM: 130]
-   2. Dear Dub (feat. Pupajim) - Pupajim, Alpha Steppa [Key: C minor (5A) | BPM: 130]
-   3. Dear Friend (feat. King David Horns) [Trombone Mix] - King David Horns, Alpha Steppa [Key: C minor (5A) | BPM: 130]
-   4. Dear Friend (feat. Ras Divarius) [Violin Mix] - Ras Divarius, Alpha Steppa [Key: C minor (5A) | BPM: 130]
+   1. Dear Friend (feat. Pupajim) - Pupajim, Alpha Steppa [Pos: A1 | Key: C minor (5A) | BPM: 130]
+   2. Dear Dub (feat. Pupajim) - Pupajim, Alpha Steppa [Pos: A2 | Key: C minor (5A) | BPM: 130]
+   3. Dear Friend (feat. King David Horns) [Trombone Mix] - King David Horns, Alpha Steppa [Pos: B3 | Key: C minor (5A) | BPM: 130]
+   4. Dear Friend (feat. Ras Divarius) [Violin Mix] - Ras Divarius, Alpha Steppa [Pos: B4 | Key: C minor (5A) | BPM: 130]
 
 === Wave Of Nostalgia EP -- Tim Tama ===
   ID: 15231419
