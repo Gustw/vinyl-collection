@@ -19,8 +19,8 @@ import {
 } from './camelot';
 import { Track } from './models';
 import { ConfigService } from './config.service';
-import { Bridge, findBridges } from './bridge';
-import { formatPercent } from './transitions';
+import { Bridge, RouteRecord, findBridges } from './bridge';
+import { Transition, formatPercent } from './transitions';
 
 const REL_ORDER: Record<string, number> = {
   'Same key': 0,
@@ -357,9 +357,15 @@ interface Row {
               @if (bridges().length === 0) {
                 <div class="empty">
                   No route found within {{ maxBridges }} record(s). Try widening the crate
-                  selection, or raising the pitch range in Settings.
+                  selection, or raising the pitch range / set tempo drift in Settings.
                 </div>
               } @else {
+                <div class="muted bridge-goal">
+                  Routes keep every deck inside ±{{ pitchRange() }}% and let the set tempo
+                  drift at most ±{{ tempoDrift() }}% from {{ track()!.bpm || '—' }} BPM.
+                  Keys shown are the keys each record <b>sounds in</b> at the tempo it is
+                  played at.
+                </div>
                 @for (b of bridges(); track b.path[1] ? b.path[1].id + '-' + b.hops : b.hops) {
                   <div class="bridge-route">
                     <div class="bridge-route-head">
@@ -368,22 +374,41 @@ interface Row {
                       } @else {
                         <span class="rel-badge rel-relative">via {{ b.hops }} record(s)</span>
                       }
+                      <span class="muted">{{ routeTempoLabel(b) }}</span>
+                      <span class="spacer"></span>
+                      <span
+                        class="pitch-badge"
+                        [class.out]="b.maxPitch > pitchRange()"
+                        title="The furthest any pitch fader has to travel on this route"
+                      >max {{ stepPct(b.maxPitch) }}</span>
                     </div>
-                    @for (t of b.path; track t.id; let i = $index) {
-                      <div class="bridge-step" (click)="open(t)">
+                    @for (r of b.records; track r.track.id; let i = $index) {
+                      <div class="bridge-step" (click)="open(r.track)">
                         <span class="set-pos">{{ i + 1 }}</span>
-                        <span class="track-title">{{ t.title }}</span>
-                        <span class="track-artist">{{ t.artist }}</span>
-                        @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
-                        <span [class]="'key-badge ' + keyClass(t.camelot)">{{ t.keyText || 'no key' }}</span>
+                        <span class="track-title">{{ r.track.title }}</span>
+                        <span class="track-artist">{{ r.track.artist }}</span>
+                        @if (r.track.bpm) { <span class="bpm-badge">{{ r.track.bpm }} BPM</span> }
+                        <span class="pitch-badge" [title]="faderTitle(r)">{{ faderLabel(r) }}</span>
+                        @if (r.entryCamelot && r.entryCamelot !== r.track.camelot) {
+                          <span
+                            class="key-badge adjusted"
+                            [title]="'Printed key: ' + (r.track.keyText || '—')"
+                          >
+                            {{ r.entryCamelot }}
+                            <span class="pitch-tag">pitched</span>
+                          </span>
+                        } @else {
+                          <span [class]="'key-badge ' + keyClass(r.track.camelot)">{{ r.track.keyText || 'no key' }}</span>
+                        }
                       </div>
                       @if (b.steps[i]; as st) {
                         <div [class]="'transition ' + st.level">
                           <span class="tr-icon">↓</span>
                           <span class="tr-main">
-                            {{ st.from.camelot }} → {{ st.effectiveCamelot }}
+                            {{ st.fromCamelot }} → {{ st.effectiveCamelot }}
                             @if (st.relation) { <span class="muted">({{ st.relation }})</span> }
                           </span>
+                          <span class="bpm-badge">{{ mixTempoLabel(st) }}</span>
                           @if (st.percent !== null) {
                             <span class="pitch-badge" [class.out]="!st.reachable">{{ stepPct(st.percent) }}</span>
                           }
@@ -443,6 +468,12 @@ export class TrackDetailComponent {
   readonly pitchRange = computed(() => {
     const r = Number(this.config.config().pitchRange);
     return Number.isFinite(r) && r > 0 ? r : 8;
+  });
+
+  /** How far a route may ride the set tempo from this record's own tempo (± %). */
+  readonly tempoDrift = computed(() => {
+    const d = Number(this.config.config().tempoDrift);
+    return Number.isFinite(d) && d >= 0 ? d : this.pitchRange();
   });
 
   readonly filters = this.fs.detail;
@@ -780,6 +811,7 @@ export class TrackDetailComponent {
     if (!from || !to) return [];
     return findBridges(from, to, this.bridgePool(), {
       pitchRange: this.pitchRange(),
+      tempoDrift: this.tempoDrift(),
       maxBridges: this.maxBridges,
       limit: 5,
     });
@@ -797,6 +829,38 @@ export class TrackDetailComponent {
 
   stepPct(percent: number): string {
     return formatPercent(percent);
+  }
+
+  /** Where the set tempo starts and ends on a route, e.g. "126 → 131 BPM (+4.3%)". */
+  routeTempoLabel(b: Bridge): string {
+    if (b.startTempo === null || b.endTempo === null) return 'tempo unknown';
+    if (Math.abs(b.tempoShift) < 0.05) return `holds ${b.startTempo.toFixed(1)} BPM`;
+    return (
+      `${b.startTempo.toFixed(1)} → ${b.endTempo.toFixed(1)} BPM ` +
+      `(${formatPercent(b.tempoShift)})`
+    );
+  }
+
+  /** The tempo a blend happens at, e.g. "@ 128.4 BPM". */
+  mixTempoLabel(st: Transition): string {
+    return st.mixTempo === null ? '@ ? BPM' : `@ ${st.mixTempo.toFixed(1)} BPM`;
+  }
+
+  /** Fader position a record is brought in at, e.g. "+2.4%". */
+  faderLabel(r: RouteRecord): string {
+    return r.entryPitch === null ? '—' : formatPercent(r.entryPitch);
+  }
+
+  /** Explains a record's fader position, including any ride before it goes out. */
+  faderTitle(r: RouteRecord): string {
+    if (r.entryPitch === null || r.exitPitch === null) return 'BPM unknown — pitch cannot be calculated';
+    const enter = `Comes in at ${formatPercent(r.entryPitch)}`;
+    const key =
+      r.entryCamelot && r.entryCamelot !== r.track.camelot
+        ? `, sounding in ${r.entryCamelot} rather than ${r.track.camelot}`
+        : '';
+    if (Math.abs(r.exitPitch - r.entryPitch) < 0.05) return `${enter}${key}.`;
+    return `${enter}${key}; ride it to ${formatPercent(r.exitPitch)} before the next mix.`;
   }
 }
 

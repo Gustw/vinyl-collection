@@ -119,6 +119,58 @@ export function withinPitchRange(percent: number, range: number): boolean {
   return Math.abs(percent) <= range + 1e-9;
 }
 
+/**
+ * Restates `bpm` in the octave nearest `referenceBpm`, e.g. a 70 BPM record
+ * against a 138 BPM set becomes 140.
+ *
+ * Once every record in a route has been folded into the *same* frame, tempo
+ * becomes a single number the whole route shares, so pitch amounts can be
+ * added up across several mixes instead of being recomputed pair by pair.
+ * Returns null when either BPM is unusable.
+ */
+export function foldBpmTo(bpm: number, referenceBpm: number): number | null {
+  if (!(bpm > 0) || !(referenceBpm > 0)) return null;
+  return referenceBpm * foldTempoRatio(bpm / referenceBpm);
+}
+
+/**
+ * Fader position, in percent, for a record whose (already folded) BPM is
+ * `nominalBpm` when it has to play at `tempo`.
+ */
+export function pitchToTempo(nominalBpm: number, tempo: number): number {
+  if (!(nominalBpm > 0) || !(tempo > 0)) return 0;
+  return (tempo / nominalBpm - 1) * 100;
+}
+
+/** Semitones a record at (folded) `nominalBpm` is transposed by at `tempo`. */
+export function semitonesToTempo(nominalBpm: number, tempo: number): number {
+  if (!(nominalBpm > 0) || !(tempo > 0)) return 0;
+  return 12 * Math.log2(tempo / nominalBpm);
+}
+
+/** An inclusive tempo window, in BPM. */
+export interface TempoWindow {
+  lo: number;
+  hi: number;
+}
+
+/** The tempos a record with (folded) `nominalBpm` can be played at on ±`range`% decks. */
+export function tempoWindow(nominalBpm: number, range: number): TempoWindow {
+  return { lo: nominalBpm * (1 - range / 100), hi: nominalBpm * (1 + range / 100) };
+}
+
+/** Intersection of two tempo windows, or null when they don't overlap. */
+export function intersectWindows(a: TempoWindow, b: TempoWindow): TempoWindow | null {
+  const lo = Math.max(a.lo, b.lo);
+  const hi = Math.min(a.hi, b.hi);
+  return lo <= hi + 1e-9 ? { lo, hi } : null;
+}
+
+/** Clamps a tempo into a window. */
+export function clampToWindow(tempo: number, w: TempoWindow): number {
+  return Math.min(Math.max(tempo, w.lo), w.hi);
+}
+
 /** Shifts a Camelot code by a whole number of semitones (+1 semitone = +7 wheel steps). */
 export function shiftCamelot(code: string, semitones: number): string {
   const m = CAMELOT_RE.exec(code);

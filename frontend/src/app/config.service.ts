@@ -27,6 +27,14 @@ export interface AppConfig {
    * 50 for most digital decks.
    */
   pitchRange: number;
+  /**
+   * How far the tempo of a set may wander from where it started, in ± percent.
+   * Bridging between two records with distant BPMs means riding the tempo up or
+   * down through the records in between, so this is what decides how far the
+   * bridge finder is willing to travel: 0 pins the set to one tempo, 8 lets it
+   * move a fader's worth over the course of a route.
+   */
+  tempoDrift: number;
 }
 
 const STORAGE_KEY = 'app.config';
@@ -55,6 +63,7 @@ export function defaultConfig(): AppConfig {
     githubToken: '',
     corsProxy: '',
     pitchRange: 8,
+    tempoDrift: 6,
     ...detect(),
   };
 }

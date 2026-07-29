@@ -130,12 +130,24 @@ function formatDuration(ms: number): string {
               [value]="cfg().pitchRange"
               (input)="setPitchRange($any($event.target).value)"
             />
+            <label>Set tempo drift <span class="muted">(± %)</span></label>
+            <input
+              type="number"
+              min="0"
+              max="50"
+              step="1"
+              placeholder="6"
+              [value]="cfg().tempoDrift"
+              (input)="setTempoDrift($any($event.target).value)"
+            />
           </div>
           <div class="muted settings-help">
             Tokens are stored only in your browser (localStorage). The GitHub token needs
             write access to the repo above so updates can be saved to <b>{{ cfg().tracksPath }}</b>.
             The pitch range decides which mixes count as reachable — 8 for a stock Technics,
-            16 for wide-range mode, 50 for most digital decks.
+            16 for wide-range mode, 50 for most digital decks. The tempo drift decides how far
+            the bridge finder may ride the tempo of a set away from where it started; 0 keeps
+            the set locked to one tempo.
           </div>
         </div>
       }
@@ -830,6 +842,12 @@ export class RecordsListComponent {
   setPitchRange(value: string): void {
     const n = parseFloat(value);
     this.config.update({ pitchRange: Number.isFinite(n) && n > 0 ? n : 8 });
+  }
+
+  /** Tempo drift is numeric and may legitimately be 0 (a tempo-locked set). */
+  setTempoDrift(value: string): void {
+    const n = parseFloat(value);
+    this.config.update({ tempoDrift: Number.isFinite(n) && n >= 0 ? n : 6 });
   }
 }
 

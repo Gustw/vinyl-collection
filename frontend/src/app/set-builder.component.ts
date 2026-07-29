@@ -83,11 +83,16 @@ import { Transition, evaluateSet, formatPercent } from './transitions';
                 <div [class]="'transition ' + tr.level">
                   <span class="tr-icon">{{ icon(tr) }}</span>
                   <span class="tr-main">
-                    {{ tr.from.camelot || '?' }} → {{ tr.effectiveCamelot || '?' }}
+                    {{ tr.fromCamelot || '?' }} → {{ tr.effectiveCamelot || '?' }}
                     @if (tr.relation) { <span class="muted">({{ tr.relation }})</span> }
                   </span>
-                  @if (tr.percent !== null) {
-                    <span class="pitch-badge" [class.out]="!tr.reachable">{{ pct(tr.percent) }}</span>
+                  <span class="muted">{{ mixTempoLabel(tr) }}</span>
+                  @if (tr.fromPercent !== null) {
+                    <span
+                      class="pitch-badge"
+                      [class.out]="!tr.reachable"
+                      title="Where each fader sits during the blend: outgoing → incoming"
+                    >{{ pct(tr.fromPercent) }} → {{ pct(tr.percent!) }}</span>
                   }
                   @if (tr.bpmDelta !== null) {
                     <span class="muted">{{ bpmDeltaLabel(tr.bpmDelta) }}</span>
@@ -152,6 +157,11 @@ export class SetBuilderComponent {
 
   pct(percent: number): string {
     return formatPercent(percent);
+  }
+
+  /** The tempo a blend happens at, e.g. "@ 128.4 BPM". */
+  mixTempoLabel(t: Transition): string {
+    return t.mixTempo === null ? '' : `@ ${t.mixTempo.toFixed(1)} BPM`;
   }
 
   bpmDeltaLabel(delta: number): string {
@@ -221,7 +231,9 @@ export class SetBuilderComponent {
     if (tr.harmonic) score += 40;
     if (tr.relation === 'Same key') score += 10;
     // Prefer small tempo moves, and nudge the set upward rather than downward.
-    if (tr.percent !== null) score -= Math.abs(tr.percent) * 2;
+    if (tr.percent !== null) {
+      score -= Math.max(Math.abs(tr.percent), Math.abs(tr.fromPercent ?? 0)) * 2;
+    }
     if (tr.bpmDelta !== null && tr.bpmDelta >= 0) score += 3;
     return score;
   }

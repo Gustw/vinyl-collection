@@ -1,9 +1,13 @@
 import { Track } from './models';
 import {
-  pitchPercent,
-  pitchShiftSemitones,
+  clampToWindow,
+  foldBpmTo,
+  intersectWindows,
+  pitchToTempo,
+  semitonesToTempo,
   relation,
   shiftCamelot,
+  tempoWindow,
   withinPitchRange,
   mixableCamelot,
 } from './camelot';
@@ -15,15 +19,21 @@ export type TransitionLevel = 'good' | 'warn' | 'bad';
 export interface Transition {
   from: Track;
   to: Track;
-  /** Relationship of the keys once `to` is pitched to match `from`. */
+  /** Relationship of the keys as both records actually sound during the blend. */
   relation: string;
-  /** Camelot code `to` actually sounds in after beat-matching. */
+  /** Camelot code `to` actually sounds in while it is being mixed in. */
   effectiveCamelot: string;
+  /** Camelot code `from` actually sounds in while it is being mixed out. */
+  fromCamelot: string;
   /** Platter pitch `to` needs, in percent (null when a BPM is unknown). */
   percent: number | null;
-  /** Raw BPM difference, or null when a BPM is unknown. */
+  /** Platter pitch `from` is sitting at during the blend, in percent. */
+  fromPercent: number | null;
+  /** The tempo both records run at during the blend, in BPM (null if unknown). */
+  mixTempo: number | null;
+  /** BPM difference between the two records, octaves folded away. */
   bpmDelta: number | null;
-  /** True when the pitch needed is within the decks' range. */
+  /** True when the pitch needed by *both* records is within the decks' range. */
   reachable: boolean;
   /** True when the (pitched) keys are harmonically compatible. */
   harmonic: boolean;
@@ -32,29 +42,56 @@ export interface Transition {
   issues: string[];
 }
 
+/** How a transition sits in tempo: which BPMs apply, and where the set is running. */
+export interface TempoContext {
+  /** The outgoing record's BPM, folded into the set's octave (null if unknown). */
+  fromBpm: number | null;
+  /** The incoming record's BPM, folded into the set's octave (null if unknown). */
+  toBpm: number | null;
+  /** The tempo the blend happens at (null if unknown). */
+  mixTempo: number | null;
+}
+
 /**
- * Evaluates one transition of a set.
+ * Evaluates one transition, given the tempo the blend actually happens at.
  *
- * The check is done on the key each record *actually sounds in* once it has
- * been pitched to match the outgoing tempo — pitching to beat-match shifts the
- * pitch of the whole record, so a pair that looks compatible on paper can drift
- * out of key in practice (and occasionally the reverse).
+ * The check is done on the key each record *sounds in at that tempo*, not its
+ * printed key: pitching to beat-match transposes the whole record, so a pair
+ * that looks compatible on paper can drift out of key in practice. Because the
+ * outgoing record may itself already be pitched — it was beat-matched into the
+ * record before it — *both* sides are transposed here, and *both* faders have
+ * to be within the decks' range for the mix to be possible at all.
  */
-export function evaluateTransition(from: Track, to: Track, pitchRange: number): Transition {
-  const fromBpm = parseFloat(from.bpm);
-  const toBpm = parseFloat(to.bpm);
-  const known = !Number.isNaN(fromBpm) && fromBpm > 0 && !Number.isNaN(toBpm) && toBpm > 0;
+export function evaluateTransitionAt(
+  from: Track,
+  to: Track,
+  ctx: TempoContext,
+  pitchRange: number
+): Transition {
+  const { fromBpm, toBpm, mixTempo } = ctx;
+  const known = fromBpm !== null && toBpm !== null && mixTempo !== null;
+  /** Both BPMs are known, yet no tempo exists that both decks can hold. */
+  const impossible = fromBpm !== null && toBpm !== null && mixTempo === null;
 
-  const percent = known ? pitchPercent(toBpm, fromBpm) : null;
-  const bpmDelta = known ? toBpm - fromBpm : null;
-  const reachable = percent === null || withinPitchRange(percent, pitchRange);
+  const fromPercent = known ? pitchToTempo(fromBpm!, mixTempo!) : null;
+  const percent = known ? pitchToTempo(toBpm!, mixTempo!) : null;
+  const bpmDelta = fromBpm !== null && toBpm !== null ? toBpm - fromBpm : null;
 
-  // Key the incoming record ends up in after being pitched to match.
-  const semis = known ? pitchShiftSemitones(toBpm, fromBpm) : 0;
-  const effectiveCamelot = known ? shiftCamelot(to.camelot, semis) : to.camelot;
+  const reachable =
+    !impossible &&
+    (!known ||
+      (withinPitchRange(fromPercent!, pitchRange) && withinPitchRange(percent!, pitchRange)));
 
-  const rel = from.camelot && effectiveCamelot ? relation(from.camelot, effectiveCamelot) : '';
-  const harmonic = !!from.camelot && mixableCamelot(from.camelot).includes(effectiveCamelot);
+  // The keys the two records end up in once pitched to the blend tempo.
+  const fromCamelot = known
+    ? shiftCamelot(from.camelot, semitonesToTempo(fromBpm!, mixTempo!))
+    : from.camelot;
+  const effectiveCamelot = known
+    ? shiftCamelot(to.camelot, semitonesToTempo(toBpm!, mixTempo!))
+    : to.camelot;
+
+  const rel = fromCamelot && effectiveCamelot ? relation(fromCamelot, effectiveCamelot) : '';
+  const harmonic = !!fromCamelot && mixableCamelot(fromCamelot).includes(effectiveCamelot);
 
   const issues: string[] = [];
   let level: TransitionLevel = 'good';
@@ -63,21 +100,32 @@ export function evaluateTransition(from: Track, to: Track, pitchRange: number): 
     issues.push('Key unknown — this transition cannot be checked.');
     level = 'warn';
   } else if (!harmonic) {
-    issues.push(`Keys clash: ${from.camelot} into ${effectiveCamelot} (${rel || 'unrelated'}).`);
+    issues.push(`Keys clash: ${fromCamelot} into ${effectiveCamelot} (${rel || 'unrelated'}).`);
     level = 'bad';
   }
 
   if (!known) {
-    issues.push('BPM unknown — beat-matching cannot be checked.');
-    if (level === 'good') level = 'warn';
-  } else if (!reachable) {
     issues.push(
-      `Needs ${formatPercent(percent!)} pitch — beyond the ±${pitchRange}% your decks offer.`
+      impossible
+        ? `Tempos are too far apart: ${fromBpm!.toFixed(0)} and ${toBpm!.toFixed(0)} BPM ` +
+          `can't meet within ±${pitchRange}%.`
+        : 'BPM unknown — beat-matching cannot be checked.'
     );
-    level = 'bad';
-  } else if (Math.abs(percent!) > pitchRange * 0.75) {
-    issues.push(`Needs ${formatPercent(percent!)} pitch — near the end of the fader.`);
-    if (level === 'good') level = 'warn';
+    if (impossible) level = 'bad';
+    else if (level === 'good') level = 'warn';
+  } else {
+    // Whichever deck is working hardest decides whether this is playable.
+    const worst = Math.abs(percent!) >= Math.abs(fromPercent!) ? percent! : fromPercent!;
+    if (!reachable) {
+      issues.push(
+        `Needs ${formatPercent(worst)} pitch to hold ${mixTempo!.toFixed(1)} BPM — beyond ` +
+          `the ±${pitchRange}% your decks offer.`
+      );
+      level = 'bad';
+    } else if (Math.abs(worst) > pitchRange * 0.75) {
+      issues.push(`Needs ${formatPercent(worst)} pitch — near the end of the fader.`);
+      if (level === 'good') level = 'warn';
+    }
   }
 
   return {
@@ -85,7 +133,10 @@ export function evaluateTransition(from: Track, to: Track, pitchRange: number): 
     to,
     relation: rel,
     effectiveCamelot,
+    fromCamelot,
     percent,
+    fromPercent,
+    mixTempo,
     bpmDelta,
     reachable,
     harmonic,
@@ -100,11 +151,36 @@ export function formatPercent(percent: number): string {
   return `${sign}${Math.abs(percent).toFixed(1)}%`;
 }
 
-/** Evaluates every consecutive pair in an ordered set. */
+/**
+ * Evaluates every consecutive pair in an ordered set.
+ *
+ * The set is treated as one continuous tempo rather than a series of unrelated
+ * pairs: every BPM is restated in the first known record's octave, and each
+ * blend is placed at the tempo that splits the pitching between the two decks,
+ * pulled into the window both of them can physically reach. A record therefore
+ * comes in already pitched, is ridden to the next blend tempo, and is judged on
+ * the key it sounds in at each point — which is what actually happens on the
+ * night, and what makes a long climb in tempo run out of fader eventually.
+ */
 export function evaluateSet(tracks: Track[], pitchRange: number): Transition[] {
+  const raw = tracks.map((t) => parseFloat(t.bpm));
+  const first = raw.find((b) => b > 0) ?? null;
+  const bpms = raw.map((b) => (first !== null && b > 0 ? foldBpmTo(b, first) : null));
+
   const out: Transition[] = [];
   for (let i = 0; i < tracks.length - 1; i++) {
-    out.push(evaluateTransition(tracks[i], tracks[i + 1], pitchRange));
+    const a = bpms[i];
+    const b = bpms[i + 1];
+    let mixTempo: number | null;
+    if (a !== null && b !== null) {
+      const both = intersectWindows(tempoWindow(a, pitchRange), tempoWindow(b, pitchRange));
+      mixTempo = both ? clampToWindow(Math.sqrt(a * b), both) : null;
+    } else {
+      mixTempo = a ?? b ?? null;
+    }
+    out.push(
+      evaluateTransitionAt(tracks[i], tracks[i + 1], { fromBpm: a, toBpm: b, mixTempo }, pitchRange)
+    );
   }
   return out;
 }
