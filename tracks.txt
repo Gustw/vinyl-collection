@@ -1329,10 +1329,10 @@
   Year: 2018
   Label: PSychoDynamiK
   Art: https://i.discogs.com/jVvRMMtTTb67qaSB3XkM3jNFP_ZLDZCETtop5iTCdBk/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTk5/NzYzLTE1NTY2MTYx/NzctNzIxNC5qcGVn.jpeg
-   1. Girls Dem Dada - Chopstick Dubplate, Mr Williamz, Dope Ammo [Key: G major (9B) | BPM: 175]
-   2. Rock Steady - Dub Pistols, Turntable Dubbers [Key: G major (9B) | BPM: 88]
-   3. Rebel for life - Naâman, Cutty Ranks, Stevens Kbosh [Key: Ab major (4B) | BPM: 175]
-   4. Jailhouse Rock Remix - Rulo Smoka [Key: A# minor (3A) | BPM: 154]
+   1. Girls Dem Dada - Chopstick Dubplate, Mr Williamz, Dope Ammo [Pos: 1 | Time: 3:50 | Key: G major (9B) | BPM: 175]
+   2. Rock Steady - Dub Pistols, Turntable Dubbers [Pos: 2 | Time: 4:43 | Key: G major (9B) | BPM: 88]
+   3. Rebel for life - Naâman, Cutty Ranks, Stevens Kbosh [Pos: 3 | Time: 5:44 | Key: Ab major (4B) | BPM: 175]
+   4. Jailhouse Rock Remix - Rulo Smoka [Pos: 4 | Time: 4:52 | Key: A# minor (3A) | BPM: 154]
 
 === Sonic Iration 001 -- Jah Scoop / Benji303 ===
   ID: 19007248
@@ -1341,10 +1341,10 @@
   Year: 2021
   Label: Sonic Iration
   Art: https://i.discogs.com/OaunHImSJSYRR30uifa6eRGx6teObIwSNZzmzkctNj4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDA3/MjQ4LTE2MzQ1NTYw/MjItMTU1My5qcGVn.jpeg
-   1. The Techno Ragga - Jah Scoop Feat. Jago and Natty Campbell [Key: A minor (8A) | BPM: 132]
-   2. Difference Of Time - Jah Scoop Meets RDF [Key: C# major (3B) | BPM: 128]
-   3. Horns Of Jericho - Benji303 [Key: B minor (10A) | BPM: 166]
-   4. That Day Must Come - Benji303 [Key: C minor (5A) | BPM: 191]
+   1. The Techno Ragga - Jah Scoop Feat. Jago and Natty Campbell [Pos: A1 | Key: A minor (8A) | BPM: 132]
+   2. Difference Of Time - Jah Scoop Meets RDF [Pos: A2 | Key: C# major (3B) | BPM: 128]
+   3. Horns Of Jericho - Benji303 [Pos: B1 | Key: B minor (10A) | BPM: 166]
+   4. That Day Must Come - Benji303 [Pos: B2 | Key: C minor (5A) | BPM: 191]
 
 === 2 Short / Blast1 -- Krak In Dub ===
   ID: 2104839
@@ -1353,8 +1353,8 @@
   Year: 2010
   Label: Znootpoch
   Art: https://i.discogs.com/WVmOfaNNPQgQjUvUsoItTiek-Eo8okc0HiG9Uv3phVc/rs:fit/g:sm/q:90/h:200/w:199/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDQ4/MzktMTI2OTM0MTU2/Ni5qcGVn.jpeg
-   1. 2 Short - Krak In Dub [Key: A# minor (3A) | BPM: 175]
-   2. Blast1 - Krak In Dub [Key: F minor (4A) | BPM: 170]
+   1. 2 Short - Krak In Dub [Pos: A | Key: A# minor (3A) | BPM: 175]
+   2. Blast1 - Krak In Dub [Pos: B | Key: F minor (4A) | BPM: 170]
 
 === PSychoDynamiK 02 -- Various ===
   ID: 5302169
@@ -1363,8 +1363,8 @@
   Year: 2013
   Label: PSychoDynamiK
   Art: https://i.discogs.com/dUg4An38Dk63JXg5UXMqpm9oOv3iqnhfLF-buBLsifU/rs:fit/g:sm/q:90/h:300/w:295/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMDIx/NjktMTU3MjM4NTM1/NC04MjcwLmpwZWc.jpeg
-   1. Blaze Up Di Fire (Dj Panik Remix) - U.Stone, Vini Selecta, Fu-Steps [Key: B minor (10A) | BPM: 90]
-   2. I Was Born In The Ghetto - Isaac Maya, Nfunk [Key: C major (8B) | BPM: 171]
+   1. Blaze Up Di Fire (Dj Panik Remix) - U.Stone, Vini Selecta, Fu-Steps [Pos: A1 | Key: B minor (10A) | BPM: 90]
+   2. I Was Born In The Ghetto - Isaac Maya, Nfunk [Pos: B1 | Key: C major (8B) | BPM: 171]
 
 === Nothing Lasts... But Nothing Is Lost -- Shpongle ===
   ID: 13469646
@@ -1373,26 +1373,26 @@
   Year: 2019
   Label: Twisted Records
   Art: https://i.discogs.com/ub23K_aaFLkHORo8Tu3Qbkjmez8ckr-DT3K1ZT1b0HQ/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDY5/NjQ2LTE1NTQ4NTkw/NDctMzM4NC5qcGVn.jpeg
-   1. Botanical Dimensions - Shpongle [Key: B minor (10A) | BPM: 135]
-   2. Outer Shpongolia - Shpongle [Key: E minor (9A) | BPM: 135]
-   3. Levitation Nation - Shpongle [Key: B minor (10A) | BPM: 135]
-   4. Periscopes Of Consciousness - Shpongle [Key: E major (12B) | BPM: 135]
-   5. Schmaltz Herring - Shpongle [Key: E minor (9A) | BPM: 135]
-   6. Nothing Lasts... - Shpongle [Key: B minor (10A) | BPM: 150]
-   7. Shnitzled In The Negev - Shpongle [Key: B minor (10A) | BPM: 150]
-   8. ...But Nothing Is Lost - Shpongle [Key: D major (10B) | BPM: 150]
-   9. When Shall I Be Free? - Shpongle [Key: F major (7B) | BPM: 90]
-  10. The Stamen Of The Shamen - Shpongle [Key: D major (10B) | BPM: 90]
-  11. Circuits Of The Imagination - Shpongle [Key: G major (9B) | BPM: 90]
-  12. Linguistic Mystic - Shpongle [Key: G major (9B) | BPM: 90]
-  13. Mentalism - Shpongle [Key: F minor (4A) | BPM: 90]
-  14. Invocation - Shpongle [Key: G minor (6A) | BPM: 90]
-  15. Molecular Superstructure - Shpongle [Key: C# major (3B) | BPM: 107]
-  16. Turn Up The Silence - Shpongle [Key: D major (10B) | BPM: 130]
-  17. Exhalation - Shpongle [Key: Eb major (5B) | BPM: 68]
-  18. Connoisseur Of Hallucinations - Shpongle [Key: B minor (10A) | BPM: 165]
-  19. The Nebbish Route - Shpongle [Key: B minor (10A) | BPM: 165]
-  20. Falling Awake - Shpongle [Key: E minor (9A) | BPM: 83]
+   1. Botanical Dimensions - Shpongle [Pos: A1 | Key: B minor (10A) | BPM: 135]
+   2. Outer Shpongolia - Shpongle [Pos: A2 | Key: E minor (9A) | BPM: 135]
+   3. Levitation Nation - Shpongle [Pos: A3 | Key: B minor (10A) | BPM: 135]
+   4. Periscopes Of Consciousness - Shpongle [Pos: A4 | Key: E major (12B) | BPM: 135]
+   5. Schmaltz Herring - Shpongle [Pos: A5 | Key: E minor (9A) | BPM: 135]
+   6. Nothing Lasts... - Shpongle [Pos: B6 | Key: B minor (10A) | BPM: 150]
+   7. Shnitzled In The Negev - Shpongle [Pos: B7 | Key: B minor (10A) | BPM: 150]
+   8. ...But Nothing Is Lost - Shpongle [Pos: B8 | Key: D major (10B) | BPM: 150]
+   9. When Shall I Be Free? - Shpongle [Pos: C9 | Key: F major (7B) | BPM: 90]
+  10. The Stamen Of The Shamen - Shpongle [Pos: C10 | Key: D major (10B) | BPM: 90]
+  11. Circuits Of The Imagination - Shpongle [Pos: C11 | Key: G major (9B) | BPM: 90]
+  12. Linguistic Mystic - Shpongle [Pos: C12 | Key: G major (9B) | BPM: 90]
+  13. Mentalism - Shpongle [Pos: C13 | Key: F minor (4A) | BPM: 90]
+  14. Invocation - Shpongle [Pos: D14 | Key: G minor (6A) | BPM: 90]
+  15. Molecular Superstructure - Shpongle [Pos: D15 | Key: C# major (3B) | BPM: 107]
+  16. Turn Up The Silence - Shpongle [Pos: D16 | Key: D major (10B) | BPM: 130]
+  17. Exhalation - Shpongle [Pos: D17 | Key: Eb major (5B) | BPM: 68]
+  18. Connoisseur Of Hallucinations - Shpongle [Pos: D18 | Key: B minor (10A) | BPM: 165]
+  19. The Nebbish Route - Shpongle [Pos: D19 | Key: B minor (10A) | BPM: 165]
+  20. Falling Awake - Shpongle [Pos: D20 | Key: E minor (9A) | BPM: 83]
 
 === Rub A Dub / Urban Tribe -- Benny Page ===
   ID: 778089
@@ -1401,8 +1401,8 @@
   Year: 2006
   Label: Digital Soundboy Recording Co.
   Art: https://i.discogs.com/dxfaLm9gObKsmYXfkoo1JTg_DBPmDdjmjdwxccrrOxw/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3ODA4/OS0xMTYzOTMzNTY5/LmpwZWc.jpeg
-   1. Rub A Dub - Benny Page [Key: C# major (3B) | BPM: 87]
-   2. Urban Tribe - Benny Page [Key: G major (9B) | BPM: 175]
+   1. Rub A Dub - Benny Page [Pos: A | Key: C# major (3B) | BPM: 87]
+   2. Urban Tribe - Benny Page [Pos: AA | Key: G major (9B) | BPM: 175]
 
 === No More War -- Daddy Teacha & Uptones ===
   ID: 5554319
@@ -1410,8 +1410,8 @@
   Style: Roots Reggae, Dub
   Label: Ire Hi-Fi
   Art: https://i.discogs.com/Tu0zm7lFjCqDOothhtkv5T5xfmcCOYWaAB1mP9pg1IQ/rs:fit/g:sm/q:90/h:247/w:248/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NTQz/MTktMTQ2Nzk4NTgw/Mi01MzM1LnBuZw.jpeg
-   1. No More War - Daddy Teacha & Uptones [Key: Ab major (4B) | BPM: 146]
-   2. Mother Of All Versions - Daddy Teacha [Key: A major (11B) | BPM: 142]
+   1. No More War - Daddy Teacha & Uptones [Pos: A | Key: Ab major (4B) | BPM: 146]
+   2. Mother Of All Versions - Daddy Teacha [Pos: B | Key: A major (11B) | BPM: 142]
 
 === Man Down / Untold -- DJ Deekline & Ed Solo ===
   ID: 3244880
@@ -1420,8 +1420,8 @@
   Year: 2011
   Label: Jungle Cakes
   Art: https://i.discogs.com/it-lMg3whZQ8D7cnXG7WDDxqSjSOCZaAz6hP3rtWsCk/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDQ4/ODAtMTMyMzYxNTI3/NS5qcGVn.jpeg
-   1. Man Down - Ed Solo and Deekline [Key: F minor (4A) | BPM: 175]
-   2. Untold - Ed Solo and Deekline [Key: F major (7B) | BPM: 175]
+   1. Man Down - Ed Solo and Deekline [Pos: A | Key: F minor (4A) | BPM: 175]
+   2. Untold - Ed Solo and Deekline [Pos: B | Key: F major (7B) | BPM: 175]
 
 === Super Skank / Warrior Chant -- DJ Panik (3) / DJ Origin ===
   ID: 1410403
@@ -1430,8 +1430,8 @@
   Year: 2008
   Label: Roots Records
   Art: https://i.discogs.com/1bJWEXBMVeLTmDyVjC_SRJYDySK8nu2FuEqllPbCnew/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTA0/MDMtMTIxNzMzMjE3/MS5qcGVn.jpeg
-   1. Super Skank - DJ Panik [Key: G major (9B) | BPM: 175]
-   2. Warrior Chant - DJ Origin [Key: B major (1B) | BPM: 90]
+   1. Super Skank - DJ Panik [Pos: A | Key: G major (9B) | BPM: 175]
+   2. Warrior Chant - DJ Origin [Pos: AA | Key: B major (1B) | BPM: 90]
 
 === Truth & Rights / Precious /  Good Sensi -- DJ Panik (3) & M-Rode / Jera (4) / Dijeyow ===
   ID: 2453369
@@ -1440,9 +1440,9 @@
   Year: 2010
   Label: Dubnest
   Art: https://i.discogs.com/i4D7aCOLV12jxKFU0wmfwXaOsNq2WztOBj6zdPSczjU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTMz/NjktMTI4NDkwNDM4/MC5qcGVn.jpeg
-   1. Truth & Rights - DJ Panik & M-Rode [Key: C# major (3B) | BPM: 156]
-   2. Precious - Jera [Key: D major (10B) | BPM: 180]
-   3. Good Sensi - Dijeyow [Key: G major (9B) | BPM: 175]
+   1. Truth & Rights - DJ Panik & M-Rode [Pos: A | Key: C# major (3B) | BPM: 156]
+   2. Precious - Jera [Pos: B1 | Key: D major (10B) | BPM: 180]
+   3. Good Sensi - Dijeyow [Pos: B2 | Key: G major (9B) | BPM: 175]
 
 === Roots + Future / Dub Criminal -- Dope Ammo vs Soundclash ===
   ID: 1361931
