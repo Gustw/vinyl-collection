@@ -1037,9 +1037,9 @@ export class RecordsListComponent {
   /** Opens the track popover next to the pointer, clamped to the viewport. */
   openRecord(ev: MouseEvent, row: Row): void {
     ev.stopPropagation();
-    // Initial estimate matching the CSS (width 300, max-height 60vh); the
-    // measure effect below refines this exactly once the popover has rendered.
-    const w = 300;
+    // Initial estimate matching the CSS (width min(560, 100vw-24), max-height
+    // 60vh); the measure effect below refines this exactly once rendered.
+    const w = Math.min(560, window.innerWidth - 24);
     const estH = 80 + row.tracks.length * 40 + (row.hidden ? 28 : 0);
     const h = Math.min(estH, Math.round(window.innerHeight * 0.6));
     const pos = this.clampToViewport(ev.clientX + 4, ev.clientY + 4, w, h);

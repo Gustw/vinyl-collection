@@ -231,12 +231,19 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 
 /* --- Record track popover (opens near the pointer) --- */
 .popover-backdrop { position: fixed; inset: 0; z-index: 40; background: transparent; }
+/*
+ * Wide enough that a tracklist row (position, title, duration, BPM, key, crate)
+ * fits on one line: a track title squeezed into a 300px popover wrapped into a
+ * one-word column and pushed the badges into a horizontal scrollbar.
+ * Capped against the viewport so it can never overflow a narrow window.
+ */
 .popover {
   position: fixed;
   z-index: 41;
-  width: 300px;
+  width: min(560px, calc(100vw - 24px));
   max-height: 60vh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -262,6 +269,10 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 }
 .popover-item:hover { background: var(--panel-2); }
 .popover-empty { padding: 8px; }
+/* The title takes the slack so the badges keep their natural width. */
+.popover-item .track-title { flex: 1 1 auto; min-width: 0; }
+/* The crate picker is a short list of names — it stays narrow. */
+.popover.crate-picker { width: min(320px, calc(100vw - 24px)); }
 
 .track-row {
   display: flex;
@@ -934,6 +945,16 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   .dur-badge { min-width: 0; font-size: 11px; padding: 2px 6px; }
 
   /*
+   * Record tracklists (overview list and the track popover) drop the position
+   * and duration on a phone: they are the least useful of the four badges and
+   * dropping them is what keeps title + BPM + key on one line.
+   */
+  .record .track-row > .pos-badge,
+  .record .track-row > .dur-badge,
+  .popover-item > .pos-badge,
+  .popover-item > .dur-badge { display: none; }
+
+  /*
    * Dense lists carry up to four badges per row. Shrinking them slightly is
    * what lets a record's numbers stay together on one line instead of wrapping
    * onto a second and making every row a third taller.
@@ -1052,7 +1073,8 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   .set-item .set-actions { margin-left: auto; }
 
   /* --- Popovers: never wider than the screen --- */
-  .popover { width: min(320px, calc(100vw - 16px)); max-height: 70vh; }
+  .popover { width: calc(100vw - 16px); max-height: 70vh; }
+  .popover.crate-picker { width: min(320px, calc(100vw - 16px)); }
   .crate-row { flex-wrap: wrap; row-gap: 8px; }
   .crate-name { min-width: 0; width: 100%; }
 
