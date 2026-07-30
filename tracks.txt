@@ -1674,8 +1674,8 @@
   Year: 2009
   Label: Jungle Cakes
   Art: https://i.discogs.com/HbRId2klGnAr6q2-BGudi3YXjZT9toH1sQJYIdlBhlk/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDc0/ODQtMTQxNTYzNjE4/NS04MDcyLmpwZWc.jpeg
-   1. No No No (You Don't Love Me) - The Wildlife Collective [Key: G major (9B) | BPM: 81]
-   2. Hail Up The Lion - The Wildlife Collective [Key: G major (9B) | BPM: 176]
+   1. No No No (You Don't Love Me) - The Wildlife Collective [Pos: A | Key: G major (9B) | BPM: 81]
+   2. Hail Up The Lion - The Wildlife Collective [Pos: B | Key: G major (9B) | BPM: 176]
 
 === Paella / Blaze It Up -- DJ Deekline & Ed Solo ===
   ID: 3346966
@@ -1684,8 +1684,8 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/xFgbDOcbgkzDkUwxt-LEjMv_yEH9w0nNnnqSoVMKzSM/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNDY5/NjYtMTU0MTUzMzg3/MS05MzExLmpwZWc.jpeg
-   1. Paella / Blaze It Up - Deekline And Ed Solo [Key: F# minor (11A) | BPM: 88]
-   2. Soundclash (Deekline & Ed Solo Rmx) - RackNRuin [Key: F major (7B) | BPM: 77]
+   1. Paella / Blaze It Up - Deekline And Ed Solo [Pos: A | Key: F# minor (11A) | BPM: 88]
+   2. Soundclash (Deekline & Ed Solo Rmx) - RackNRuin [Pos: B | Key: F major (7B) | BPM: 77]
 
 === Five On It / Tequila Sunrise -- JFB ===
   ID: 3951392
@@ -1694,8 +1694,8 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/R50e153DLkN6VMKm65_YTbJWqGy9MqReRgD8Xl3KOLo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTEz/OTItMTYxNTkxMjgx/NS05NTU3LmpwZWc.jpeg
-   1. Five On It - JFB [Key: A# minor (3A) | BPM: 174]
-   2. Tequila Sunrise - JFB [Key: C major (8B) | BPM: 174]
+   1. Five On It - JFB [Pos: A | Key: A# minor (3A) | BPM: 174]
+   2. Tequila Sunrise - JFB [Pos: AA | Key: C major (8B) | BPM: 174]
 
 === Kaotik 05 -- Mandidextrous / Vandal (16) / Suburbass ===
   ID: 4996344
@@ -1704,9 +1704,9 @@
   Year: 2013
   Label: Kaotik Soundsystem
   Art: https://i.discogs.com/yHDFh_7HBSOyDwWFeaef5aMInRlXbnTbJZEd2aLa9e0/rs:fit/g:sm/q:90/h:250/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5OTYz/NDQtMTM4MTY3MzA0/Ni0zMjk3LmpwZWc.jpeg
-   1. Gals Dem Sugar - Mandidextrous & Vandal [Key: C# major (3B) | BPM: 95]
-   2. Run Off Ya Mouth - Vandal [Key: B minor (10A) | BPM: 80]
-   3. Swing My Brain - Suburbass [Key: B minor (10A) | BPM: 185]
+   1. Gals Dem Sugar - Mandidextrous & Vandal [Pos: A1 | Key: C# major (3B) | BPM: 95]
+   2. Run Off Ya Mouth - Vandal [Pos: B1 | Key: B minor (10A) | BPM: 80]
+   3. Swing My Brain - Suburbass [Pos: B2 | Key: B minor (10A) | BPM: 185]
 
 === PsychoDynamik 04 -- Various ===
   ID: 8922013
@@ -1715,10 +1715,10 @@
   Year: 2016
   Label: PSychoDynamiK
   Art: https://i.discogs.com/K3AAIoNYhmFlS_3-nNI6djxM6fgwYULRB6uWTdt2pBM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5MjIw/MTMtMTQ3MTUyOTA4/Ni01ODc1LnBuZw.jpeg
-   1. Monkey Dance - Krafty Kuts & Featurecast [Key: F major (7B) | BPM: 128]
-   2. Time Fi Dance - Dope Ammo & Run Tingz Cru Featuring Virgo Don [Key: C minor (5A) | BPM: 105]
-   3. High Vibes - Kursiva Featuring Jahba & Clasiko [Key: A minor (8A) | BPM: 92]
-   4. Baba Boom - Isaac Maya Featuring Blackout J.a. [Key: C minor (5A) | BPM: 90]
+   1. Monkey Dance - Krafty Kuts & Featurecast [Pos: A1 | Time: 4:09 | Key: F major (7B) | BPM: 128]
+   2. Time Fi Dance - Dope Ammo & Run Tingz Cru Featuring Virgo Don [Pos: A2 | Time: 3:22 | Key: C minor (5A) | BPM: 105]
+   3. High Vibes - Kursiva Featuring Jahba & Clasiko [Pos: B1 | Time: 5:10 | Key: A minor (8A) | BPM: 92]
+   4. Baba Boom - Isaac Maya Featuring Blackout J.a. [Pos: B2 | Time: 6:33 | Key: C minor (5A) | BPM: 90]
 
 === Truth & Right / Come On Home -- Candy ===
   ID: 2104842
@@ -1727,8 +1727,8 @@
   Year: 2010
   Label: Znootpoch
   Art: https://i.discogs.com/voV-U3WP7Iwyfbo12ZhWMvHFO5wOcp0N-Rjem4cWZ8E/rs:fit/g:sm/q:90/h:196/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDQ4/NDItMTI2OTM0MTc2/MC5qcGVn.jpeg
-   1. Truth & Right - Candy [Key: C# minor (12A) | BPM: 180]
-   2. Come On Home - Candy [Key: Ab major (4B) | BPM: 180]
+   1. Truth & Right - Candy [Pos: A | Key: C# minor (12A) | BPM: 180]
+   2. Come On Home - Candy [Pos: B | Key: Ab major (4B) | BPM: 180]
 
 === King Of The Bongo / Stickybuds Guaranteed -- DJ Deekline & Ed Solo ===
   ID: 2664480
@@ -1737,8 +1737,8 @@
   Year: 2011
   Label: Jungle Cakes
   Art: https://i.discogs.com/mIjL6t9-3vZlmZgBsXN_5ecv9iM8OMAu1W-GAvYdu8Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NjQ0/ODAtMTYxNTgxMTk0/Ni0yMTEyLmpwZWc.jpeg
-   1. King Of The Bongo - Deekline and Ed Solo [Key: G major (9B) | BPM: 130]
-   2. Stickybuds Guaranteed - Deekline and Ed Solo [Key: A# minor (3A) | BPM: 176]
+   1. King Of The Bongo - Deekline and Ed Solo [Pos: A | Key: G major (9B) | BPM: 130]
+   2. Stickybuds Guaranteed - Deekline and Ed Solo [Pos: B | Key: A# minor (3A) | BPM: 176]
 
 === Phaze Din E.P. -- Rotatum ===
   ID: 94177
@@ -1747,8 +1747,8 @@
   Year: 1996
   Label: Matsuri Productions
   Art: https://i.discogs.com/2jdXaENWtusoSnkj_otRFb-nXb_oQlk16gu3GF1aNBk/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MTc3/LTEyMDE3NzI0ODAu/anBlZw.jpeg
-   1. Phaze Din - Rotatum [Key: Eb major (5B) | BPM: 170]
-   2. Phaze Dub - Rotatum [Key: C# major (3B) | BPM: 98]
+   1. Phaze Din - Rotatum [Pos: A | Time: 9:22 | Key: Eb major (5B) | BPM: 170]
+   2. Phaze Dub - Rotatum [Pos: B | Time: 9:21 | Key: C# major (3B) | BPM: 98]
 
 === Pumpking -- Dijeyow ===
   ID: 2972969
