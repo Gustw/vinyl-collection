@@ -58,7 +58,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
    1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G major (9B) | BPM: 175]
-   2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 88]
+   2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 176]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
   ID: 6154793
@@ -2411,8 +2411,8 @@
   Year: 1997
   Label: Transient Records
   Art: https://i.discogs.com/p5C-9ChxH1-uu4BMgzXBSjeC0Ry_Ct8eke-iQWp9ksk/rs:fit/g:sm/q:90/h:497/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODE3/Ni0xMTU5Nzg3MzQ1/LmpwZWc.jpeg
-   1. Joker - Hypnosys [Key: Ab major (4B) | BPM: 141]
-   2. Fantasian - Hypnosys [Key: C# major (3B) | BPM: 162]
+   1. Joker - Hypnosys [Pos: A | Key: Ab major (4B) | BPM: 141]
+   2. Fantasian - Hypnosys [Pos: B | Key: C# major (3B) | BPM: 162]
 
 === Your Own Reality -- Kai Tracid ===
   ID: 248785
@@ -2421,10 +2421,10 @@
   Year: 1997
   Label: Dance Pool
   Art: https://i.discogs.com/aoKI3lzl1TmWPACcGKavlyy4zUOuhF6j4FE35a6NUL0/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0ODc4/NS0xMzA1NzMzNDU2/LmpwZWc.jpeg
-   1. Your Own Reality (Energy Mix) - Kai Tracid [Key: G major (9B) | BPM: 140]
-   2. Your Own Reality (Single Mix) - Kai Tracid [Key: B minor (10A) | BPM: 138]
-   3. Your Own Reality (Tracid Mix) - Kai Tracid [Key: B minor (10A) | BPM: 136]
-   4. Your Own Reality (Vocal Mix) - Kai Tracid [Key: B minor (10A) | BPM: 138]
+   1. Your Own Reality (Energy Mix) - Kai Tracid [Pos: A1 | Time: 7:25 | Key: G major (9B) | BPM: 140]
+   2. Your Own Reality (Single Mix) - Kai Tracid [Pos: A2 | Time: 3:46 | Key: B minor (10A) | BPM: 138]
+   3. Your Own Reality (Tracid Mix) - Kai Tracid [Pos: B1 | Time: 6:48 | Key: B minor (10A) | BPM: 136]
+   4. Your Own Reality (Vocal Mix) - Kai Tracid [Pos: B2 | Time: 7:31 | Key: B minor (10A) | BPM: 138]
 
 === Dancing Galaxy -- Astral Projection ===
   ID: 209697
@@ -2433,14 +2433,14 @@
   Year: 1997
   Label: Transient Records
   Art: https://i.discogs.com/pjPAAoZcIWQxUhiiZvNIc7zYhjZ_XviMldzDoPFnshU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwOTY5/Ny0xNjEzMzk5MzIz/LTY0NTUuanBlZw.jpeg
-   1. Dancing Galaxy - Astral Projection [Key: G major (9B) | BPM: 139]
-   2. Soundform - Astral Projection [Key: C# minor (12A) | BPM: 140]
-   3. Flying Into A Star - Astral Projection [Key: A major (11B) | BPM: 142]
-   4. No-One Ever Dreams - Astral Projection [Key: A# minor (3A) | BPM: 138]
-   5. Cosmic Ascension - Astral Projection Featuring D.J. Jorg [Key: E minor (9A) | BPM: 105]
-   6. Life On Mars - Astral Projection [Key: F# major (2B) | BPM: 144]
-   7. Liquid Sun - Astral Projection [Key: E major (12B) | BPM: 138]
-   8. Ambient Galaxy (Disco Valley Mix) - Astral Projection [Key: G major (9B) | BPM: 140]
+   1. Dancing Galaxy - Astral Projection [Pos: A1 | Time: 9:18 | Key: G major (9B) | BPM: 139]
+   2. Soundform - Astral Projection [Pos: A2 | Time: 8:12 | Key: C# minor (12A) | BPM: 140]
+   3. Flying Into A Star - Astral Projection [Pos: B1 | Time: 9:44 | Key: A major (11B) | BPM: 142]
+   4. No-One Ever Dreams - Astral Projection [Pos: B2 | Time: 8:25 | Key: A# minor (3A) | BPM: 138]
+   5. Cosmic Ascension - Astral Projection Featuring D.J. Jorg [Pos: C1 | Time: 10:18 | Key: E minor (9A) | BPM: 105]
+   6. Life On Mars - Astral Projection [Pos: C2 | Time: 9:09 | Key: F# major (2B) | BPM: 144]
+   7. Liquid Sun - Astral Projection [Pos: D1 | Time: 11:01 | Key: E major (12B) | BPM: 138]
+   8. Ambient Galaxy (Disco Valley Mix) - Astral Projection [Pos: D2 | Time: 13:44 | Key: G major (9B) | BPM: 140]
 
 === Aja -- Steely Dan ===
   ID: 1842334
