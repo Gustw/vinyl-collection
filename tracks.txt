@@ -2112,14 +2112,14 @@
   Year: 2018
   Label: Scoops
   Art: https://i.discogs.com/BjGvfXORA3Z87Zv1_fFLPKRyQL6IKg2gQLGhL-4yJyc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTEw/NzczLTE1NDQwOTg3/NjItNTQwNy5qcGVn.jpeg
-   1. All Sisters Unite - Nia Songbird [Key: G major (9B) | BPM: 120]
-   2. Each One Teach One - Nish Wadada [Key: G major (9B) | BPM: 120]
-   3. Rise Up - Boney L [Key: F major (7B) | BPM: 98]
-   4. One Dub Nation - Vanya O [Key: C# minor (12A) | BPM: 110]
-   5. Ghetto Yout Nah Give Up - Trilla Jenna [Key: B major (1B) | BPM: 115]
-   6. More Love - Saralène [Key: Bb major (6B) | BPM: 85]
-   7. Peaceful Warriors - Sis I-Leen [Key: C# major (3B) | BPM: 90]
-   8. Woman Is Divine - Nãnci Correia [Key: C# minor (12A) | BPM: 98]
+   1. All Sisters Unite - Nia Songbird [Pos: A1 | Key: G major (9B) | BPM: 120]
+   2. Each One Teach One - Nish Wadada [Pos: A2 | Key: G major (9B) | BPM: 120]
+   3. Rise Up - Boney L [Pos: B1 | Key: F major (7B) | BPM: 98]
+   4. One Dub Nation - Vanya O [Pos: B2 | Key: C# minor (12A) | BPM: 110]
+   5. Ghetto Yout Nah Give Up - Trilla Jenna [Pos: C1 | Key: B major (1B) | BPM: 115]
+   6. More Love - Saralène [Pos: C2 | Key: Bb major (6B) | BPM: 85]
+   7. Peaceful Warriors - Sis I-Leen [Pos: D1 | Key: C# major (3B) | BPM: 90]
+   8. Woman Is Divine - Nãnci Correia [Pos: D2 | Key: C# minor (12A) | BPM: 98]
 
 === Love Over Gold -- Dire Straits ===
   ID: 14578522
@@ -2128,11 +2128,11 @@
   Year: 2019
   Label: Vertigo, Phonogram
   Art: https://i.discogs.com/_TQODMJWRAJKA2lZ-2xJwrR6KsHrXSF85K1-pGR5YSU/rs:fit/g:sm/q:90/h:600/w:564/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTc4/NTIyLTE1Nzc1MTE1/NTktODUxOC5qcGVn.jpeg
-   1. Telegraph Road - Dire Straits [Key: D minor (7A) | BPM: 125]
-   2. Private Investigations - Dire Straits [Key: E minor (9A) | BPM: 84]
-   3. Industrial Disease - Dire Straits [Key: A major (11B) | BPM: 150]
-   4. Love Over Gold - Dire Straits [Key: F major (7B) | BPM: 96]
-   5. It Never Rains - Dire Straits [Key: D major (10B) | BPM: 120]
+   1. Telegraph Road - Dire Straits [Pos: A1 | Time: 14:20 | Key: D minor (7A) | BPM: 125]
+   2. Private Investigations - Dire Straits [Pos: A2 | Time: 7:00 | Key: E minor (9A) | BPM: 84]
+   3. Industrial Disease - Dire Straits [Pos: B1 | Time: 5:50 | Key: A major (11B) | BPM: 150]
+   4. Love Over Gold - Dire Straits [Pos: B2 | Time: 6:15 | Key: F major (7B) | BPM: 96]
+   5. It Never Rains - Dire Straits [Pos: B3 | Time: 7:55 | Key: D major (10B) | BPM: 120]
 
 === Prima Materia -- Bluetech ===
   ID: 13115883
@@ -2141,17 +2141,17 @@
   Year: 2018
   Label: Behind the Sky Music
   Art: https://i.discogs.com/cnvj8z4wfEel5TYE2MT2kQVcayha5QI7ZqZavoCuEyY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTE1/ODgzLTE2MzI3MjYx/MjMtMjY3Mi5qcGVn.jpeg
-   1. Leaving Babylon - Bluetech [Key: F# minor (11A) | BPM: 152]
-   2. Prophetic Sines - Bluetech [Key: F minor (4A) | BPM: 176]
-   3. Triangle (Retriangulated) - Bluetech [Key: G minor (6A) | BPM: 176]
-   4. Rubicon - Bluetech [Key: E minor (9A) | BPM: 92]
-   5. Prayers For Rain (Dub Mix) - Bluetech [Key: A minor (8A) | BPM: 156]
-   6. White Magnesia - Bluetech [Key: G minor (6A) | BPM: 106]
-   7. 7th Phase Dub - Bluetech [Key: G minor (6A) | BPM: 152]
-   8. Burning Waters - Bluetech [Key: D major (10B) | BPM: 168]
-   9. Mezzamorphic - Bluetech [Key: C# major (3B) | BPM: 120]
-  10. Desperate Ends - Bluetech [Key: B minor (10A) | BPM: 152]
-  11. Cliffdiving - Bluetech [Key: F minor (4A) | BPM: 79]
+   1. Leaving Babylon - Bluetech [Pos: A1 | Time: 6:43 | Key: F# minor (11A) | BPM: 152]
+   2. Prophetic Sines - Bluetech [Pos: A2 | Time: 6:16 | Key: F minor (4A) | BPM: 176]
+   3. Triangle (Retriangulated) - Bluetech [Pos: A3 | Time: 7:02 | Key: G minor (6A) | BPM: 176]
+   4. Rubicon - Bluetech [Pos: B1 | Time: 5:57 | Key: E minor (9A) | BPM: 92]
+   5. Prayers For Rain (Dub Mix) - Bluetech [Pos: B2 | Time: 6:52 | Key: A minor (8A) | BPM: 156]
+   6. White Magnesia - Bluetech [Pos: B3 | Time: 5:40 | Key: G minor (6A) | BPM: 106]
+   7. 7th Phase Dub - Bluetech [Pos: C1 | Time: 6:28 | Key: G minor (6A) | BPM: 152]
+   8. Burning Waters - Bluetech [Pos: C2 | Time: 6:33 | Key: D major (10B) | BPM: 168]
+   9. Mezzamorphic - Bluetech [Pos: D1 | Time: 7:58 | Key: C# major (3B) | BPM: 120]
+  10. Desperate Ends - Bluetech [Pos: D2 | Time: 5:32 | Key: B minor (10A) | BPM: 152]
+  11. Cliffdiving - Bluetech [Pos: D3 | Key: F minor (4A) | BPM: 79]
 
 === Underwater Cities -- Bluetech ===
   ID: 16580985
@@ -2160,12 +2160,12 @@
   Year: 2020
   Label: Behind The Sky Music
   Art: https://i.discogs.com/4Q8deW3-10XUlFNhQfdX9CsJdChpXAcFwhyn3GastsY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTgw/OTg1LTE2MzI4MDU0/NzYtOTM1OS5qcGVn.jpeg
-   1. Submerge - Bluetech [Key: F# major (2B) | BPM: 120]
-   2. Underwater Cities - Bluetech [Key: G major (9B) | BPM: 120]
-   3. Lights From Mariana - Bluetech [Key: F minor (4A) | BPM: 120]
-   4. Emerald Prisms - Bluetech [Key: Ab major (4B) | BPM: 120]
-   5. Lights From Mariana (Pleasure Corporation Remix) - Bluetech [Key: D major (10B) | BPM: 131]
-   6. Surface Radiance - Bluetech [Key: C minor (5A) | BPM: 180]
+   1. Submerge - Bluetech [Pos: A1 | Time: 3:27 | Key: F# major (2B) | BPM: 120]
+   2. Underwater Cities - Bluetech [Pos: A2 | Time: 5:29 | Key: G major (9B) | BPM: 120]
+   3. Lights From Mariana - Bluetech [Pos: A3 | Time: 7:06 | Key: F minor (4A) | BPM: 120]
+   4. Emerald Prisms - Bluetech [Pos: B1 | Time: 5:37 | Key: Ab major (4B) | BPM: 120]
+   5. Lights From Mariana (Pleasure Corporation Remix) - Bluetech [Pos: B2 | Time: 6:38 | Key: D major (10B) | BPM: 131]
+   6. Surface Radiance - Bluetech [Pos: B3 | Time: 3:20 | Key: C minor (5A) | BPM: 180]
 
 === Searching For Jah -- Vibronics Feat. Michael Prophet ===
   ID: 16339839
@@ -2174,8 +2174,8 @@
   Year: 2020
   Label: Scoops
   Art: https://i.discogs.com/-_v3-r5xrO0XoxJHV5w2eU3E1jbomV29QpyUeBchrWM/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MzM5/ODM5LTE2MDc1NTUy/MDEtNjEzNC5qcGVn.jpeg
-   1. Searching For Jah - Vibronics Feat. Michael Prophet [Key: D# minor (2A) | BPM: 139]
-   2. Searching For Jah (Version) - Vibronics [Key: Eb major (5B) | BPM: 139]
+   1. Searching For Jah - Vibronics Feat. Michael Prophet [Pos: A | Time: 3:50 | Key: D# minor (2A) | BPM: 139]
+   2. Searching For Jah (Version) - Vibronics [Pos: B | Time: 4:08 | Key: Eb major (5B) | BPM: 139]
 
 === Tralalalala /  Dirty Babylon -- Jah Marnyah, Vibronics ===
   ID: 9015811
@@ -2184,10 +2184,10 @@
   Year: 2016
   Label: Scoops
   Art: https://i.discogs.com/dWpEJNNTT9z-wjs2lKKOjOaJ1LqgoMTPaxTzCXO9F0A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMTU4/MTEtMTY1Mjk5MDA0/Ny0xMjIwLmpwZWc.jpeg
-   1. Tralalalala - Jah Marnyah [Key: B minor (10A) | BPM: 139]
-   2. Tralalalala (Version) - Vibronics [Key: F# major (2B) | BPM: 139]
-   3. Dirty Babylon - Jah Marnyah [Key: D major (10B) | BPM: 98]
-   4. Dirty Babylon (Version) - Vibronics [Key: B minor (10A) | BPM: 150]
+   1. Tralalalala - Jah Marnyah [Pos: A1 | Key: B minor (10A) | BPM: 139]
+   2. Tralalalala (Version) - Vibronics [Pos: A2 | Key: F# major (2B) | BPM: 139]
+   3. Dirty Babylon - Jah Marnyah [Pos: AA1 | Key: D major (10B) | BPM: 98]
+   4. Dirty Babylon (Version) - Vibronics [Pos: AA2 | Key: B minor (10A) | BPM: 150]
 
 === Summer On Mars -- Marina P, Stand High Patrol ===
   ID: 12791487
@@ -2196,15 +2196,15 @@
   Year: 2018
   Label: Stand High
   Art: https://i.discogs.com/TEkPEfde6_nGWQE8aQvtUwPGSOB2poi_0gpgiuUdj8Y/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzkx/NDg3LTE1NDIwMjYw/MDAtNTUwNC5wbmc.jpeg
-   1. Working Class - Marina P, Stand High Patrol [Key: G major (9B) | BPM: 120]
-   2. Atmosphere - Marina P, Stand High Patrol [Key: C# major (3B) | BPM: 75]
-   3. Landlord - Marina P, Stand High Patrol [Key: Bb major (6B) | BPM: 144]
-   4. Fragile - Marina P, Stand High Patrol [Key: C major (8B) | BPM: 136]
-   5. Spring Rain - Marina P, Stand High Patrol [Key: C major (8B) | BPM: 140]
-   6. Dreamcatcher - Marina P, Stand High Patrol [Key: C# minor (12A) | BPM: 86]
-   7. Raw Lines - Marina P, Stand High Patrol [Key: Eb major (5B) | BPM: 156]
-   8. Summer On Mars - Marina P, Stand High Patrol [Key: C# minor (12A) | BPM: 86]
-   9. Rosetta - Marina P, Stand High Patrol [Key: D minor (7A) | BPM: 145]
+   1. Working Class - Marina P, Stand High Patrol [Pos: A1 | Time: 2:05 | Key: G major (9B) | BPM: 120]
+   2. Atmosphere - Marina P, Stand High Patrol [Pos: A2 | Time: 3:44 | Key: C# major (3B) | BPM: 75]
+   3. Landlord - Marina P, Stand High Patrol [Pos: A3 | Time: 2:51 | Key: Bb major (6B) | BPM: 144]
+   4. Fragile - Marina P, Stand High Patrol [Pos: A4 | Time: 3:45 | Key: C major (8B) | BPM: 136]
+   5. Spring Rain - Marina P, Stand High Patrol [Pos: A5 | Time: 3:21 | Key: C major (8B) | BPM: 140]
+   6. Dreamcatcher - Marina P, Stand High Patrol [Pos: B1 | Time: 3:01 | Key: C# minor (12A) | BPM: 86]
+   7. Raw Lines - Marina P, Stand High Patrol [Pos: B2 | Time: 4:24 | Key: Eb major (5B) | BPM: 156]
+   8. Summer On Mars - Marina P, Stand High Patrol [Pos: B3 | Time: 3:29 | Key: C# minor (12A) | BPM: 86]
+   9. Rosetta - Marina P, Stand High Patrol [Pos: B4 | Time: 4:08 | Key: D minor (7A) | BPM: 145]
 
 === Foundations -- The Architect ===
   ID: 11621872
@@ -2213,14 +2213,14 @@
   Year: 2019
   Label: X-Ray Production
   Art: https://i.discogs.com/7bUjqjmrOKZvxaA9v6llSdqvxGKwrryTMG4RBsXhHVE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjIx/ODcyLTE3Mjg1OTI3/ODAtNjE3OC5qcGVn.jpeg
-   1. Les Pensées - The Architect [Key: A# minor (3A) | BPM: 98]
-   2. L'usine À Disques (Rmx Duke Ellington & Louis Armstrong) - The Architect [Key: Ab major (4B) | BPM: 98]
-   3. Dreader Than Dread - The Architect [Key: A# minor (3A) | BPM: 95]
-   4. Who's The Real Skinhead ? (Ska Edit) - The Architect [Key: F minor (4A) | BPM: 120]
-   5. Old Mob Blues - The Architect [Key: B minor (10A) | BPM: 100]
-   6. Design Of The Future - The Architect [Key: G# minor (1A) | BPM: 98]
-   7. Streets Of Neryhi - The Architect [Key: D major (10B) | BPM: 110]
-   8. The Earth Is My Witness - The Architect [Key: F# minor (11A) | BPM: 80]
+   1. Les Pensées - The Architect [Pos: A1 | Time: 3:58 | Key: A# minor (3A) | BPM: 98]
+   2. L'usine À Disques (Rmx Duke Ellington & Louis Armstrong) - The Architect [Pos: A2 | Time: 3:40 | Key: Ab major (4B) | BPM: 98]
+   3. Dreader Than Dread - The Architect [Pos: A3 | Time: 3:04 | Key: A# minor (3A) | BPM: 95]
+   4. Who's The Real Skinhead ? (Ska Edit) - The Architect [Pos: A4 | Time: 3:31 | Key: F minor (4A) | BPM: 120]
+   5. Old Mob Blues - The Architect [Pos: B1 | Time: 3:25 | Key: B minor (10A) | BPM: 100]
+   6. Design Of The Future - The Architect [Pos: B2 | Time: 3:16 | Key: G# minor (1A) | BPM: 98]
+   7. Streets Of Neryhi - The Architect [Pos: B3 | Time: 4:24 | Key: D major (10B) | BPM: 110]
+   8. The Earth Is My Witness - The Architect [Pos: B4 | Time: 3:11 | Key: F# minor (11A) | BPM: 80]
 
 === Le Savoir Faire -- L'Entourloop ===
   ID: 10838657
@@ -2229,24 +2229,24 @@
   Year: 2017
   Label: X-Ray Production
   Art: https://i.discogs.com/4AIci-ZT9N-zt1b0UHT_OvkEXDo6axgf5WO4TLedRIE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODM4/NjU3LTE1MDUxNDE4/ODEtNzg4Ni5qcGVn.jpeg
-   1. Le Savoir Faire - L'Entourloop [Key: E minor (9A) | BPM: 96]
-   2. Weh U Come From - L'Entourloop [Key: A minor (8A) | BPM: 176]
-   3. Johnny A Bad Man - L'Entourloop [Key: A major (11B) | BPM: 98]
-   4. Shoefiti - L'Entourloop [Key: A# minor (3A) | BPM: 94]
-   5. La Main A La Pâte - L'Entourloop [Key: C major (8B) | BPM: 246]
-   6. Boomblast - L'Entourloop [Key: F major (7B) | BPM: 90]
-   7. Push The Limits - L'Entourloop [Key: F# minor (11A) | BPM: 166]
-   8. Le Rendez-Vous - L'Entourloop [Key: A# minor (3A) | BPM: 168]
-   9. Forgotten Skank - L'Entourloop [Key: G major (9B) | BPM: 91]
-  10. Mississippi Slang - L'Entourloop [Key: G# minor (1A) | BPM: 85]
-  11. Soundbwoy - L'Entourloop [Key: D major (10B) | BPM: 170]
-  12. L'Amour Propre - L'Entourloop [Key: Bb major (6B) | BPM: 86]
-  13. Fonk Monk - L'Entourloop [Key: C major (8B) | BPM: 184]
-  14. The People And The Police - L'Entourloop [Key: E minor (9A) | BPM: 87]
-  15. Le Tour De Force - L'Entourloop [Key: D major (10B) | BPM: 98]
-  16. Sounds To Wake The Kids Up - L'Entourloop [Key: F# minor (11A) | BPM: 172]
-  17. One & Only - L'Entourloop [Key: D major (10B) | BPM: 107]
-  18. Le Bonheur - L'Entourloop [Key: E minor (9A) | BPM: 140]
+   1. Le Savoir Faire - L'Entourloop [Pos: A1 | Time: 4:01 | Key: E minor (9A) | BPM: 96]
+   2. Weh U Come From - L'Entourloop [Pos: A2 | Time: 3:15 | Key: A minor (8A) | BPM: 176]
+   3. Johnny A Bad Man - L'Entourloop [Pos: A3 | Time: 3:46 | Key: A major (11B) | BPM: 98]
+   4. Shoefiti - L'Entourloop [Pos: A4 | Time: 3:49 | Key: A# minor (3A) | BPM: 94]
+   5. La Main A La Pâte - L'Entourloop [Pos: B1 | Time: 2:27 | Key: C major (8B) | BPM: 246]
+   6. Boomblast - L'Entourloop [Pos: B2 | Time: 3:07 | Key: F major (7B) | BPM: 90]
+   7. Push The Limits - L'Entourloop [Pos: B3 | Time: 3:42 | Key: F# minor (11A) | BPM: 166]
+   8. Le Rendez-Vous - L'Entourloop [Pos: B4 | Time: 4:07 | Key: A# minor (3A) | BPM: 168]
+   9. Forgotten Skank - L'Entourloop [Pos: C1 | Time: 3:14 | Key: G major (9B) | BPM: 91]
+  10. Mississippi Slang - L'Entourloop [Pos: C2 | Time: 0:36 | Key: G# minor (1A) | BPM: 85]
+  11. Soundbwoy - L'Entourloop [Pos: C3 | Time: 3:54 | Key: D major (10B) | BPM: 170]
+  12. L'Amour Propre - L'Entourloop [Pos: C4 | Time: 3:01 | Key: Bb major (6B) | BPM: 86]
+  13. Fonk Monk - L'Entourloop [Pos: C5 | Time: 2:46 | Key: C major (8B) | BPM: 184]
+  14. The People And The Police - L'Entourloop [Pos: D1 | Time: 3:37 | Key: E minor (9A) | BPM: 87]
+  15. Le Tour De Force - L'Entourloop [Pos: D2 | Time: 5:02 | Key: D major (10B) | BPM: 98]
+  16. Sounds To Wake The Kids Up - L'Entourloop [Pos: D3 | Time: 4:05 | Key: F# minor (11A) | BPM: 172]
+  17. One & Only - L'Entourloop [Pos: D4 | Time: 4:23 | Key: D major (10B) | BPM: 107]
+  18. Le Bonheur - L'Entourloop [Pos: D5 | Time: 4:01 | Key: E minor (9A) | BPM: 140]
 
 === I Robot -- The Alan Parsons Project ===
   ID: 9763329
@@ -2255,16 +2255,16 @@
   Year: 2017
   Label: Arista, Sony Music, Legacy
   Art: https://i.discogs.com/-dHIglYpwfA6krkFFuNNSHLMJxuZWVmOVIfJ-lBomSM/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3NjMz/MjktMTQ4ODM2MjYz/MS03OTg5LmpwZWc.jpeg
-   1. I Robot - The Alan Parsons Project [Key: G major (9B) | BPM: 91]
-   2. I Wouldn't Want To Be Like You - The Alan Parsons Project [Key: C# major (3B) | BPM: 101]
-   3. Some Other Time - The Alan Parsons Project [Key: A minor (8A) | BPM: 126]
-   4. Breakdown - The Alan Parsons Project [Key: D major (10B) | BPM: 170]
-   5. Don't Let It Show - The Alan Parsons Project [Key: C# major (3B) | BPM: 132]
-   6. The Voice - The Alan Parsons Project [Key: Ab major (4B) | BPM: 114]
-   7. Nucleus - The Alan Parsons Project [Key: C# minor (12A) | BPM: 125]
-   8. Day After Day (The Show Must Go On) - The Alan Parsons Project [Key: C major (8B) | BPM: 112]
-   9. Total Eclipse - The Alan Parsons Project [Key: Ab major (4B) | BPM: 66]
-  10. Genesis CH.1. V.32 - The Alan Parsons Project [Key: D minor (7A) | BPM: 127]
+   1. I Robot - The Alan Parsons Project [Pos: A1 | Time: 6:06 | Key: G major (9B) | BPM: 91]
+   2. I Wouldn't Want To Be Like You - The Alan Parsons Project [Pos: A2 | Time: 3:19 | Key: C# major (3B) | BPM: 101]
+   3. Some Other Time - The Alan Parsons Project [Pos: A3 | Time: 4:05 | Key: A minor (8A) | BPM: 126]
+   4. Breakdown - The Alan Parsons Project [Pos: A4 | Time: 3:50 | Key: D major (10B) | BPM: 170]
+   5. Don't Let It Show - The Alan Parsons Project [Pos: A5 | Time: 4:21 | Key: C# major (3B) | BPM: 132]
+   6. The Voice - The Alan Parsons Project [Pos: B1 | Time: 5:21 | Key: Ab major (4B) | BPM: 114]
+   7. Nucleus - The Alan Parsons Project [Pos: B2 | Time: 3:35 | Key: C# minor (12A) | BPM: 125]
+   8. Day After Day (The Show Must Go On) - The Alan Parsons Project [Pos: B3 | Time: 3:43 | Key: C major (8B) | BPM: 112]
+   9. Total Eclipse - The Alan Parsons Project [Pos: B4 | Time: 3:05 | Key: Ab major (4B) | BPM: 66]
+  10. Genesis CH.1. V.32 - The Alan Parsons Project [Pos: B5 | Time: 3:37 | Key: D minor (7A) | BPM: 127]
 
 === L.A. Woman -- The Doors ===
   ID: 8815490
