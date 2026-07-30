@@ -1652,8 +1652,8 @@
   Year: 2020
   Label: Melting Pot
   Art: https://i.discogs.com/aZX21vEf5bI6woMBgof9b13sXo2Vo6exZhngXYQCf7I/rs:fit/g:sm/q:90/h:449/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQ4/MTY0LTE2MDA3MzA2/OTgtNDI4OS5qcGVn.jpeg
-   1. Ready Or Not - Fak Scratch, Mooncat [Key: E minor (9A) | BPM: 175]
-   2. Wissen - Kursiva, Mooncat [Key: A# minor (3A) | BPM: 174]
+   1. Ready Or Not - Fak Scratch, Mooncat [Pos: A | Time: 4:21 | Key: E minor (9A) | BPM: 175]
+   2. Wissen - Kursiva, Mooncat [Pos: B | Time: 5:20 | Key: A# minor (3A) | BPM: 174]
 
 === Kaotik Soundsystem 02 -- Various ===
   ID: 3182455
@@ -1662,10 +1662,10 @@
   Year: 2011
   Label: Kaotik Soundsystem
   Art: https://i.discogs.com/ZEq2E1JyPfWEFVFckXfgfe1VV7KTUYEtDM5BKzEnrSU/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxODI0/NTUtMTQzMjk4OTk2/MS04NDU5LmpwZWc.jpeg
-   1. Mr. Politician - Vandal [Key: F minor (4A) | BPM: 100]
-   2. Fyah Burn - Vandal [Key: D major (10B) | BPM: 137]
-   3. Haffi Get Gal - The DSC [Key: C major (8B) | BPM: 82]
-   4. Paradise - Danger Marc [Key: E major (12B) | BPM: 78]
+   1. Mr. Politician - Vandal [Pos: A1 | Key: F minor (4A) | BPM: 100]
+   2. Fyah Burn - Vandal [Pos: A2 | Key: D major (10B) | BPM: 137]
+   3. Haffi Get Gal - The DSC [Pos: B1 | Key: C major (8B) | BPM: 82]
+   4. Paradise - Danger Marc [Pos: B2 | Key: E major (12B) | BPM: 78]
 
 === No No No (You Don't Love Me) / Hail Up The Lion -- Wildlife ===
   ID: 1907484
