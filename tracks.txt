@@ -2272,16 +2272,16 @@
   Style: Blues Rock, Classic Rock
   Label: Elektra
   Art: https://i.discogs.com/XqnTxrdUH-ah68Qmkmxj-Iw3zhla2iCgbcfYbYISPDM/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg4MTU0/OTAtMTQ2OTM2NzYy/NC04Mjk5LmpwZWc.jpeg
-   1. The Changeling - The Doors [Key: G# minor (1A) | BPM: 118]
-   2. Love Her Madly - The Doors [Key: E minor (9A) | BPM: 147]
-   3. Been Down So Long - The Doors [Key: E major (12B) | BPM: 123]
-   4. Cars Hiss By My Window - The Doors [Key: E major (12B) | BPM: 72]
-   5. L.A. Woman - The Doors [Key: D major (10B) | BPM: 171]
-   6. L'America - The Doors [Key: F# major (2B) | BPM: 132]
-   7. Hyacinth House - The Doors [Key: G major (9B) | BPM: 172]
-   8. Crawling King Snake - The Doors [Key: A major (11B) | BPM: 80]
-   9. The WASP (Texas Radio And The Big Beat) - The Doors [Key: A major (11B) | BPM: 119]
-  10. Riders On The Storm - The Doors [Key: B minor (10A) | BPM: 104]
+   1. The Changeling - The Doors [Pos: A1 | Time: 4:20 | Key: G# minor (1A) | BPM: 118]
+   2. Love Her Madly - The Doors [Pos: A2 | Time: 3:18 | Key: E minor (9A) | BPM: 147]
+   3. Been Down So Long - The Doors [Pos: A3 | Time: 4:40 | Key: E major (12B) | BPM: 123]
+   4. Cars Hiss By My Window - The Doors [Pos: A4 | Time: 4:10 | Key: E major (12B) | BPM: 72]
+   5. L.A. Woman - The Doors [Pos: A5 | Time: 7:49 | Key: D major (10B) | BPM: 171]
+   6. L'America - The Doors [Pos: B1 | Time: 4:35 | Key: F# major (2B) | BPM: 132]
+   7. Hyacinth House - The Doors [Pos: B2 | Time: 3:10 | Key: G major (9B) | BPM: 172]
+   8. Crawling King Snake - The Doors [Pos: B3 | Time: 4:57 | Key: A major (11B) | BPM: 80]
+   9. The WASP (Texas Radio And The Big Beat) - The Doors [Pos: B4 | Time: 4:12 | Key: A major (11B) | BPM: 119]
+  10. Riders On The Storm - The Doors [Pos: B5 | Time: 7:14 | Key: B minor (10A) | BPM: 104]
 
 === Sound System Champions -- Mungo's Hi-Fi ===
   ID: 2283191
@@ -2290,22 +2290,22 @@
   Year: 2009
   Label: Scotch Bonnet
   Art: https://i.discogs.com/ZjmmXIw5n0piy7Uc8Ewt_imcRDmXeqAbih2sOVy_H7A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODMx/OTEtMTM1MjY0MDcx/My03NjY5LmpwZWc.jpeg
-   1. Divorce A L'Italienne - Mungo's HiFi [Key: D# minor (2A) | BPM: 124]
-   2. Don't Let Them Break Your Heart - Mungo's HiFi [Key: C major (8B) | BPM: 172]
-   3. Herbalist - Mungo's HiFi [Key: B minor (10A) | BPM: 90]
-   4. Herbalist Dub - Mungo's HiFi [Key: B minor (10A) | BPM: 90]
-   5. How You Bad So - Mungo's HiFi [Key: E minor (9A) | BPM: 78]
-   6. Under Arrest - Mungo's HiFi [Key: C# major (3B) | BPM: 98]
-   7. Old Time Dance - Mungo's HiFi [Key: G major (9B) | BPM: 161]
-   8. Old Time Dub - Mungo's HiFi [Key: G major (9B) | BPM: 161]
-   9. Ruff Mi Tuff - Mungo's HiFi [Key: Ab major (4B) | BPM: 80]
-  10. Rasta Meditation - Mungo's HiFi [Key: C major (8B) | BPM: 145]
-  11. Rooster Inna Coup - Mungo's HiFi [Key: G minor (6A) | BPM: 120]
-  12. Rooster Dub - Mungo's HiFi [Key: F minor (4A) | BPM: 170]
-  13. Songs Of Zion - Mungo's HiFi [Key: C minor (5A) | BPM: 160]
-  14. Did You Really Know - Mungo's HiFi [Key: B minor (10A) | BPM: 180]
-  15. Around The World - Mungo's HiFi [Key: F# major (2B) | BPM: 129]
-  16. Around The Redub - Mungo's HiFi [Key: A minor (8A) | BPM: 132]
+   1. Divorce A L'Italienne - Mungo's HiFi [Pos: A1 | Key: D# minor (2A) | BPM: 124]
+   2. Don't Let Them Break Your Heart - Mungo's HiFi [Pos: A2 | Key: C major (8B) | BPM: 172]
+   3. Herbalist - Mungo's HiFi [Pos: A3 | Key: B minor (10A) | BPM: 90]
+   4. Herbalist Dub - Mungo's HiFi [Pos: A4 | Key: B minor (10A) | BPM: 90]
+   5. How You Bad So - Mungo's HiFi [Pos: B1 | Key: E minor (9A) | BPM: 78]
+   6. Under Arrest - Mungo's HiFi [Pos: B2 | Key: C# major (3B) | BPM: 98]
+   7. Old Time Dance - Mungo's HiFi [Pos: B3 | Key: G major (9B) | BPM: 161]
+   8. Old Time Dub - Mungo's HiFi [Pos: B4 | Key: G major (9B) | BPM: 161]
+   9. Ruff Mi Tuff - Mungo's HiFi [Pos: C1 | Key: Ab major (4B) | BPM: 80]
+  10. Rasta Meditation - Mungo's HiFi [Pos: C2 | Key: C major (8B) | BPM: 145]
+  11. Rooster Inna Coup - Mungo's HiFi [Pos: C3 | Key: G minor (6A) | BPM: 120]
+  12. Rooster Dub - Mungo's HiFi [Pos: C4 | Key: F minor (4A) | BPM: 170]
+  13. Songs Of Zion - Mungo's HiFi [Pos: D1 | Key: C minor (5A) | BPM: 160]
+  14. Did You Really Know - Mungo's HiFi [Pos: D2 | Key: B minor (10A) | BPM: 180]
+  15. Around The World - Mungo's HiFi [Pos: D3 | Key: F# major (2B) | BPM: 129]
+  16. Around The Redub - Mungo's HiFi [Pos: D4 | Key: A minor (8A) | BPM: 132]
 
 === Play -- Moby ===
   ID: 8465720
@@ -2314,24 +2314,24 @@
   Year: 2016
   Label: Mute, BMG
   Art: https://i.discogs.com/ASPPf9jVqyQzMdJuVpjXOwvqNOU_lR0PjlqdcqJ1XKw/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NjU3/MjAtMTUwMDYzNDkx/OS05Mjc2LmpwZWc.jpeg
-   1. Honey - Moby [Key: Ab major (4B) | BPM: 102]
-   2. Find My Baby - Moby [Key: G major (9B) | BPM: 94]
-   3. Porcelain - Moby [Key: C minor (5A) | BPM: 95]
-   4. Why Does My Heart Feel So Bad? - Moby [Key: G major (9B) | BPM: 98]
-   5. South Side - Moby [Key: E major (12B) | BPM: 97]
-   6. Rushing - Moby [Key: G major (9B) | BPM: 170]
-   7. Bodyrock - Moby [Key: F# minor (11A) | BPM: 108]
-   8. Natural Blues - Moby [Key: D# minor (2A) | BPM: 108]
-   9. Machete - Moby [Key: F# minor (11A) | BPM: 134]
-  10. 7 - Moby [Key: B minor (10A) | BPM: 89]
-  11. Run On - Moby [Key: B major (1B) | BPM: 97]
-  12. Down Slow - Moby [Key: E major (12B) | BPM: 82]
-  13. If Things Were Perfect - Moby [Key: F major (7B) | BPM: 166]
-  14. Everloving - Moby [Key: E minor (9A) | BPM: 84]
-  15. Inside - Moby [Key: D major (10B) | BPM: 95]
-  16. Guitar Flute & String - Moby [Key: E minor (9A) | BPM: 125]
-  17. The Sky Is Broken - Moby [Key: E minor (9A) | BPM: 82]
-  18. My Weakness - Moby [Key: E major (12B) | BPM: 85]
+   1. Honey - Moby [Pos: A1 | Time: 3:27 | Key: Ab major (4B) | BPM: 102]
+   2. Find My Baby - Moby [Pos: A2 | Time: 3:58 | Key: G major (9B) | BPM: 94]
+   3. Porcelain - Moby [Pos: A3 | Time: 4:01 | Key: C minor (5A) | BPM: 95]
+   4. Why Does My Heart Feel So Bad? - Moby [Pos: A4 | Time: 4:23 | Key: G major (9B) | BPM: 98]
+   5. South Side - Moby [Pos: B1 | Time: 3:48 | Key: E major (12B) | BPM: 97]
+   6. Rushing - Moby [Pos: B2 | Time: 2:58 | Key: G major (9B) | BPM: 170]
+   7. Bodyrock - Moby [Pos: B3 | Time: 3:34 | Key: F# minor (11A) | BPM: 108]
+   8. Natural Blues - Moby [Pos: B4 | Time: 4:12 | Key: D# minor (2A) | BPM: 108]
+   9. Machete - Moby [Pos: C1 | Time: 3:36 | Key: F# minor (11A) | BPM: 134]
+  10. 7 - Moby [Pos: C2 | Time: 1:00 | Key: B minor (10A) | BPM: 89]
+  11. Run On - Moby [Pos: C3 | Time: 3:43 | Key: B major (1B) | BPM: 97]
+  12. Down Slow - Moby [Pos: C4 | Time: 1:34 | Key: E major (12B) | BPM: 82]
+  13. If Things Were Perfect - Moby [Pos: C5 | Time: 4:17 | Key: F major (7B) | BPM: 166]
+  14. Everloving - Moby [Pos: C6 | Time: 3:24 | Key: E minor (9A) | BPM: 84]
+  15. Inside - Moby [Pos: D1 | Time: 4:47 | Key: D major (10B) | BPM: 95]
+  16. Guitar Flute & String - Moby [Pos: D2 | Time: 2:07 | Key: E minor (9A) | BPM: 125]
+  17. The Sky Is Broken - Moby [Pos: D3 | Time: 4:17 | Key: E minor (9A) | BPM: 82]
+  18. My Weakness - Moby [Pos: D4 | Time: 3:37 | Key: E major (12B) | BPM: 85]
 
 === Ionised / Kabalah (New Age Mix) -- Astral Projection ===
   ID: 73631
@@ -2340,8 +2340,8 @@
   Year: 1997
   Label: Transient Records
   Art: https://i.discogs.com/-Dn0Zmt8MJhOkjN2y8QBrt1-49SGITIANRBXSrUR2uc/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczNjMx/LTEyMDE1MTg2ODAu/anBlZw.jpeg
-   1. Ionised - Astral Projection [Key: C major (8B) | BPM: 129]
-   2. Kabalah (New Age Mix) - Astral Projection [Key: Ab major (4B) | BPM: 141]
+   1. Ionised - Astral Projection [Pos: A | Time: 7:13 | Key: C major (8B) | BPM: 129]
+   2. Kabalah (New Age Mix) - Astral Projection [Pos: AA | Time: 8:35 | Key: Ab major (4B) | BPM: 141]
 
 === Snake Dance / Two Worlds -- Nemesis ===
   ID: 136734
@@ -2350,8 +2350,8 @@
   Year: 1997
   Label: Transient Records
   Art: https://i.discogs.com/CiQkBv9ex7_ZQbMg4liss0DMX0GyomTue50c9sxUJDw/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjcz/NC0xMjAxNTE5MTI3/LmpwZWc.jpeg
-   1. Snake Dance - Nemesis [Key: G major (9B) | BPM: 144]
-   2. Two Worlds - Nemesis [Key: C major (8B) | BPM: 68]
+   1. Snake Dance - Nemesis [Pos: A | Time: 8:25 | Key: G major (9B) | BPM: 144]
+   2. Two Worlds - Nemesis [Pos: AA | Time: 7:41 | Key: C major (8B) | BPM: 68]
 
 === Scatterbomb -- The Sneaker ===
   ID: 170143
@@ -2360,8 +2360,8 @@
   Year: 1999
   Label: Flammable Records
   Art: https://i.discogs.com/LHtbyho20cr4_7wtKLISe3Q9VFJWl-fLeAltXe0GDqw/rs:fit/g:sm/q:90/h:569/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDE0/My0xNzYyNTAwMTYx/LTU2NjguanBlZw.jpeg
-   1. Scatterbomb (String Mix) - The Sneaker [Key: B minor (10A) | BPM: 106]
-   2. Scatterbomb (Trance Mix) - The Sneaker [Key: C major (8B) | BPM: 137]
+   1. Scatterbomb (String Mix) - The Sneaker [Pos: A | Key: B minor (10A) | BPM: 106]
+   2. Scatterbomb (Trance Mix) - The Sneaker [Pos: B | Key: C major (8B) | BPM: 137]
 
 === Double Barrel / Spice Invader -- Fuzzy Logic ===
   ID: 203738
@@ -2370,8 +2370,8 @@
   Year: 1997
   Label: Organic Records
   Art: https://i.discogs.com/Ghg_Hx_9a9GTqn0nyaj6XVbWnP7enBi--tzrHz9olrA/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzcz/OC0xMjAxNTI4ODc5/LmpwZWc.jpeg
-   1. Double Barrel - Fuzzy Logic [Key: E major (12B) | BPM: 147]
-   2. Spice Invader - Fuzzy Logic [Key: F major (7B) | BPM: 75]
+   1. Double Barrel - Fuzzy Logic [Pos: A | Time: 8:08 | Key: E major (12B) | BPM: 147]
+   2. Spice Invader - Fuzzy Logic [Pos: B | Time: 8:11 | Key: F major (7B) | BPM: 75]
 
 === Alien Hitmen / The Search -- Slide ===
   ID: 103616
@@ -2380,8 +2380,8 @@
   Year: 1997
   Label: Transient Records
   Art: https://i.discogs.com/oBAPtbouCOm3TJvQldRKmKtOh3QFAgKgiUy4oRiFKaw/rs:fit/g:sm/q:90/h:500/w:495/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzYx/Ni0xMTU5Nzg3MDQ5/LmpwZWc.jpeg
-   1. Alien Hitmen - Slide [Key: D major (10B) | BPM: 142]
-   2. The Search - Slide [Key: C# major (3B) | BPM: 143]
+   1. Alien Hitmen - Slide [Pos: A | Time: 8:10 | Key: D major (10B) | BPM: 142]
+   2. The Search - Slide [Pos: AA | Time: 8:43 | Key: C# major (3B) | BPM: 143]
 
 === The Prophet -- CJ Bolland ===
   ID: 40779
@@ -2390,9 +2390,9 @@
   Year: 1997
   Label: FFRR
   Art: https://i.discogs.com/jU0llm__ChYRLKtLpXUAKbAz8ACI58cX5Vmgn9JBXTY/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzc5/LTEzMjk2NjM2NjYu/anBlZw.jpeg
-   1. The Prophet (Jericho Mania) - CJ Bolland [Key: E minor (9A) | BPM: 152]
-   2. The Prophet (Original Mix) - CJ Bolland [Key: F major (7B) | BPM: 126]
-   3. The Prophet (Hardknox Mix) - CJ Bolland [Key: A major (11B) | BPM: 125]
+   1. The Prophet (Jericho Mania) - CJ Bolland [Pos: A | Key: E minor (9A) | BPM: 152]
+   2. The Prophet (Original Mix) - CJ Bolland [Pos: B1 | Key: F major (7B) | BPM: 126]
+   3. The Prophet (Hardknox Mix) - CJ Bolland [Pos: B2 | Key: A major (11B) | BPM: 125]
 
 === Compass Error (Disc 2) -- Atlas ===
   ID: 84726
@@ -2401,8 +2401,8 @@
   Year: 2002
   Label: Plastica RED, Rip Records
   Art: https://i.discogs.com/pXm3fZhxFkhsx2OerdJ-W27cwFTZWYRreArc67V9EZA/rs:fit/g:sm/q:90/h:301/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NzI2/LTAwMS5qcGc.jpeg
-   1. Compass Error (Fluke Remix) - Atlas [Key: G major (9B) | BPM: 170]
-   2. Compass Error (Menace Remix) - Atlas [Key: G major (9B) | BPM: 170]
+   1. Compass Error (Fluke Remix) - Atlas [Pos: A | Time: 8:08 | Key: G major (9B) | BPM: 170]
+   2. Compass Error (Menace Remix) - Atlas [Pos: B | Time: 8:09 | Key: G major (9B) | BPM: 170]
 
 === Joker / Fantasian -- Hypnosys ===
   ID: 258176
