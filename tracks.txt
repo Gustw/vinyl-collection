@@ -1757,8 +1757,8 @@
   Year: 2011
   Label: Dubnest
   Art: https://i.discogs.com/rUgCO3uVFoUnmoIqde5pdf8g9Jizi_2wHZyxUoyeJjw/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NzI5/NjktMTMwOTg2NTM1/OS5qcGVn.jpeg
-   1. Pumpking - Dijeyow [Key: C major (8B) | BPM: 85]
-   2. Sleng Teng - Isaac Maya feat. Wayne Smith [Key: B major (1B) | BPM: 174]
+   1. Pumpking - Dijeyow [Pos: A | Key: C major (8B) | BPM: 85]
+   2. Sleng Teng - Isaac Maya feat. Wayne Smith [Pos: B | Key: B major (1B) | BPM: 174]
 
 === Have Some Fun -- DJ Deekline & Ed Solo, Specimen A, General Levy ===
   ID: 16018088
@@ -1767,8 +1767,8 @@
   Year: 2020
   Label: Jungle Cakes
   Art: https://i.discogs.com/bZUZ4J8WbWRrdACqPU5E-bZ7RGFniR8BCLpsY9FTQsI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDE4/MDg4LTE2MTYwNzE2/OTAtNzc4NS5qcGVn.jpeg
-   1. Have Some Fun (Club Mix) - DJ Deekline & Ed Solo, Specimen A [Key: C# minor (12A) | BPM: 175]
-   2. Let The Music Play - DJ Deekline & Ed Solo, Specimen A [Key: F major (7B) | BPM: 98]
+   1. Have Some Fun (Club Mix) - DJ Deekline & Ed Solo, Specimen A [Pos: A | Key: C# minor (12A) | BPM: 175]
+   2. Let The Music Play - DJ Deekline & Ed Solo, Specimen A [Pos: B | Key: F major (7B) | BPM: 98]
 
 === Move Ur Body / Gangster -- DJ Panik (3), Dijeyow, Isaac Maya, Nfunk, Daddy Freddy ===
   ID: 5493812
@@ -1777,8 +1777,8 @@
   Year: 2014
   Label: Dubnest
   Art: https://i.discogs.com/hNc09yeNL_6vxRf3SyPWb7JTDh5o6ZlJ-hLnZYgtGtI/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0OTM4/MTItMTM5NDgyMDU2/NS00NTg4LmpwZWc.jpeg
-   1. Move Ur Body - Isaac Maya, Daddy Freddy [Key: F# major (2B) | BPM: 176]
-   2. Gangster - DJ Panik Feat Dijeyow [Key: F# major (2B) | BPM: 108]
+   1. Move Ur Body - Isaac Maya, Daddy Freddy [Pos: A1 | Key: F# major (2B) | BPM: 176]
+   2. Gangster - DJ Panik Feat Dijeyow [Pos: A2 | Key: F# major (2B) | BPM: 108]
 
 === Higher E.P. -- Kailash ===
   ID: 106788
@@ -1787,8 +1787,8 @@
   Year: 1996
   Label: Matsuri Productions
   Art: https://i.discogs.com/x1lDOt4PKIVlDf1BKfJUnmU_sBx-DWpAGC1Ne4XcqQw/rs:fit/g:sm/q:90/h:600/w:566/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjc4/OC0xMjAxNzcxNTIx/LmpwZWc.jpeg
-   1. Higher (Original) - Kailash [Key: C# major (3B) | BPM: 142]
-   2. Higher (Bamboo Mix) - Kailash [Key: Ab major (4B) | BPM: 180]
+   1. Higher (Original) - Kailash [Pos: A | Time: 7:35 | Key: C# major (3B) | BPM: 142]
+   2. Higher (Bamboo Mix) - Kailash [Pos: B | Time: 7:28 | Key: Ab major (4B) | BPM: 180]
 
 === Boom Bey Bey -- Pixel ===
   ID: 8439647
@@ -1797,8 +1797,8 @@
   Year: 2016
   Label: Rasta Vibez
   Art: https://i.discogs.com/lqJREkufvCwoR-W1bdGJppZDK1HvUrwpXgzrZc1LnRo/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0Mzk2/NDctMTQ4OTY4NTU3/MS04MjUyLmpwZWc.jpeg
-   1. Boom Bey Bey - Pixel [Key: G major (9B) | BPM: 124]
-   2. Hank Marvin - Pixel [Key: B minor (10A) | BPM: 140]
+   1. Boom Bey Bey - Pixel [Pos: A | Key: G major (9B) | BPM: 124]
+   2. Hank Marvin - Pixel [Pos: B | Key: B minor (10A) | BPM: 140]
 
 === Kaotik Soundsystem 06 -- Vandal ===
   ID: 4996380
@@ -1807,9 +1807,9 @@
   Year: 2013
   Label: Kaotik Soundsystem
   Art: https://i.discogs.com/4ywRbJG-M0Sj1xzW75JwdcVTgkwKP5nT6wh19KIExGY/rs:fit/g:sm/q:90/h:299/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5OTYz/ODAtMTYzODczNTU0/Ny0yMDMzLmpwZWc.jpeg
-   1. Fatty Fatty - Vandal & Radium [Key: F# minor (11A) | BPM: 98]
-   2. Ghetto Thief - Vandal [Key: G major (9B) | BPM: 187]
-   3. Infiltrate - Vandal [Key: C# major (3B) | BPM: 191]
+   1. Fatty Fatty - Vandal & Radium [Pos: A | Key: F# minor (11A) | BPM: 98]
+   2. Ghetto Thief - Vandal [Pos: B1 | Key: G major (9B) | BPM: 187]
+   3. Infiltrate - Vandal [Pos: B2 | Key: C# major (3B) | BPM: 191]
 
 === Raggatek Power 07 -- Various ===
   ID: 12488139
@@ -1818,11 +1818,11 @@
   Year: 2018
   Label: Raggatek Power
   Art: https://i.discogs.com/vueKZSzhxBNDdc00EOMjjB1y6GiO5CNQcYMjtAXIRoM/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDg4/MTM5LTE1MzcyNjU0/NzUtMjg4MS5qcGVn.jpeg
-   1. Mary Jane - Pitch Madattak [Key: G major (9B) | BPM: 185]
-   2. Raggastorm - SKRY [Key: A minor (8A) | BPM: 95]
-   3. Stamp Your Feet - Pitch Madattak [Key: C# major (3B) | BPM: 190]
-   4. Bun It - Maotai & Monkey Selektah [Key: B minor (10A) | BPM: 95]
-   5. Body & Soul (Maotai & Monkey Selektah Remix) - MikkiM & MC Turner [Key: G major (9B) | BPM: 102]
+   1. Mary Jane - Pitch Madattak [Pos: A1 | Time: 3:49 | Key: G major (9B) | BPM: 185]
+   2. Raggastorm - SKRY [Pos: A2 | Time: 4:15 | Key: A minor (8A) | BPM: 95]
+   3. Stamp Your Feet - Pitch Madattak [Pos: A3 | Time: 3:26 | Key: C# major (3B) | BPM: 190]
+   4. Bun It - Maotai & Monkey Selektah [Pos: B1 | Time: 4:32 | Key: B minor (10A) | BPM: 95]
+   5. Body & Soul (Maotai & Monkey Selektah Remix) - MikkiM & MC Turner [Pos: B2 | Time: 4:28 | Key: G major (9B) | BPM: 102]
 
 === Organic Roots Records -- Various ===
   ID: 6233706
@@ -1831,10 +1831,10 @@
   Year: 2014
   Label: Organic Roots Records
   Art: https://i.discogs.com/6gow3KgTwx-YUvq8yAHdNsdOZ2pGMAvIuPtKg8QgaNU/rs:fit/g:sm/q:90/h:361/w:360/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMzM3/MDYtMTUzNjMzODQw/MS02NzMyLnBuZw.jpeg
-   1. Long River - Makom.Rion / Mahom [Key: Bb major (6B) | BPM: 82]
-   2. Long River (Vibronics Remix) - Makom.Rion / Mahom [Key: G minor (6A) | BPM: 110]
-   3. Mektoub - Otmane Laamari / Mahom [Key: G major (9B) | BPM: 138]
-   4. Nay El Mektoub - Don Fe / Mahom [Key: G major (9B) | BPM: 138]
+   1. Long River - Makom.Rion / Mahom [Pos: A1 | Key: Bb major (6B) | BPM: 82]
+   2. Long River (Vibronics Remix) - Makom.Rion / Mahom [Pos: A2 | Key: G minor (6A) | BPM: 110]
+   3. Mektoub - Otmane Laamari / Mahom [Pos: B1 | Key: G major (9B) | BPM: 138]
+   4. Nay El Mektoub - Don Fe / Mahom [Pos: B2 | Key: G major (9B) | BPM: 138]
 
 === Kaotik Soundsystem 12 -- Various ===
   ID: 9734596
@@ -1843,10 +1843,10 @@
   Year: 2016
   Label: Kaotik Soundsystem
   Art: https://i.discogs.com/VHupy-S3S5rtjbN36lHI3XccvEJlOpJcMz2v2-3od9A/rs:fit/g:sm/q:90/h:298/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3MzQ1/OTYtMTYzODczNTQ5/Mi02NzY2LmpwZWc.jpeg
-   1. Fire 2016 - Vandal & Demolition Man [Key: D major (10B) | BPM: 174]
-   2. Sweat Trough The Night - Vandal & Shaggy [Key: D major (10B) | BPM: 96]
-   3. Get Back - Vandal & C3B [Key: F# minor (11A) | BPM: 184]
-   4. More Fire - Vandal & Beenie Man [Key: B minor (10A) | BPM: 102]
+   1. Fire 2016 - Vandal & Demolition Man [Pos: A | Key: D major (10B) | BPM: 174]
+   2. Sweat Trough The Night - Vandal & Shaggy [Pos: B | Key: D major (10B) | BPM: 96]
+   3. Get Back - Vandal & C3B [Pos: C | Key: F# minor (11A) | BPM: 184]
+   4. More Fire - Vandal & Beenie Man [Pos: D | Key: B minor (10A) | BPM: 102]
 
 === Glock - War Gun War / Herbalist -- Various ===
   ID: 4342026
@@ -1855,8 +1855,8 @@
   Year: 2012
   Label: Dubnest
   Art: https://i.discogs.com/SusqZiOmGD7eDKhvAz6rzx-JeCm5xuJKSTPt1vgoI50/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDIw/MjYtMTM2MjI2ODk3/Mi00Nzc2LmpwZWc.jpeg
-   1. Glock - War Gun War - Mooncat & Dijeyow [Key: C# minor (12A) | BPM: 135]
-   2. Herbalist - Ricky Tuff Feat. Dijeyow [Key: E minor (9A) | BPM: 175]
+   1. Glock - War Gun War - Mooncat & Dijeyow [Pos: A | Key: C# minor (12A) | BPM: 135]
+   2. Herbalist - Ricky Tuff Feat. Dijeyow [Pos: B | Key: E minor (9A) | BPM: 175]
 
 === Bam !! -- Various ===
   ID: 10884397
