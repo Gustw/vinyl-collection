@@ -1197,10 +1197,10 @@
   Year: 2020
   Label: Artscore
   Art: https://i.discogs.com/yYp0ti6lFQE3coFWP12h8ZPKCHw-Nxb6mMSJTAL8wwQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjMx/NDE5LTE1ODg1MDk4/NzYtNjM2OC5qcGVn.jpeg
-   1. Something True - Tim Tama [Key: A major (11B) | BPM: 134]
-   2. Wave Of Nostalgia - Tim Tama [Key: C# minor (12A) | BPM: 137]
-   3. Designed 4da Mind - Tim Tama [Key: D major (10B) | BPM: 134]
-   4. Lavender - Tim Tama [Key: C# major (3B) | BPM: 133]
+   1. Something True - Tim Tama [Pos: A1 | Key: A major (11B) | BPM: 134]
+   2. Wave Of Nostalgia - Tim Tama [Pos: A2 | Key: C# minor (12A) | BPM: 137]
+   3. Designed 4da Mind - Tim Tama [Pos: B1 | Key: D major (10B) | BPM: 134]
+   4. Lavender - Tim Tama [Pos: B2 | Key: C# major (3B) | BPM: 133]
 
 === Acid Science -- Anetha / Cadency ===
   ID: 16258898
@@ -1209,10 +1209,10 @@
   Year: 2020
   Label: Oaks
   Art: https://i.discogs.com/7CSDgkiNeUbhq9UXzULVRCzGib0gRz6zaZFOWyqiKMI/rs:fit/g:sm/q:90/h:394/w:391/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjU4/ODk4LTE2MDYxMzM4/MTYtODUwOS5qcGVn.jpeg
-   1. Dishinibition - Anetha [Key: B major (1B) | BPM: 144]
-   2. Return Ticket - Anetha [Key: B minor (10A) | BPM: 135]
-   3. In Your Mind - Cadency [Key: C major (8B) | BPM: 134]
-   4. Unbroken - Cadency [Key: A# minor (3A) | BPM: 134]
+   1. Dishinibition - Anetha [Pos: A1 | Key: B major (1B) | BPM: 144]
+   2. Return Ticket - Anetha [Pos: A2 | Key: B minor (10A) | BPM: 135]
+   3. In Your Mind - Cadency [Pos: B1 | Key: C major (8B) | BPM: 134]
+   4. Unbroken - Cadency [Pos: B2 | Key: A# minor (3A) | BPM: 134]
 
 === Trans Europe Express -- Kraftwerk ===
   ID: 16033721
@@ -1221,14 +1221,14 @@
   Year: 2020
   Label: Kling Klang, Parlophone
   Art: https://i.discogs.com/3vl4PvCH591-pQKwNonO5gZUxpx5iCTvYprHT6drXbs/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDMz/NzIxLTE3NTMwODg1/MjktNzM2My5qcGVn.jpeg
-   1. Europe Endless - Kraftwerk [Key: B major (1B) | BPM: 110]
-   2. The Hall Of Mirrors - Kraftwerk [Key: E major (12B) | BPM: 189]
-   3. Showroom Dummies - Kraftwerk [Key: C minor (5A) | BPM: 125]
-   4. Trans Europe Express - Kraftwerk [Key: C# major (3B) | BPM: 108]
-   5. Metal On Metal - Kraftwerk [Key: A# minor (3A) | BPM: 107]
-   6. Abzug - Kraftwerk [Key: C# major (3B) | BPM: 107]
-   7. Franz Schubert - Kraftwerk [Key: D major (10B) | BPM: 112]
-   8. Endless Endless - Kraftwerk [Key: G major (9B) | BPM: 111]
+   1. Europe Endless - Kraftwerk [Pos: A1 | Time: 9:41 | Key: B major (1B) | BPM: 110]
+   2. The Hall Of Mirrors - Kraftwerk [Pos: A2 | Time: 7:57 | Key: E major (12B) | BPM: 189]
+   3. Showroom Dummies - Kraftwerk [Pos: A3 | Time: 6:15 | Key: C minor (5A) | BPM: 125]
+   4. Trans Europe Express - Kraftwerk [Pos: B1 | Time: 6:32 | Key: C# major (3B) | BPM: 108]
+   5. Metal On Metal - Kraftwerk [Pos: B2 | Time: 2:12 | Key: A# minor (3A) | BPM: 107]
+   6. Abzug - Kraftwerk [Pos: B3 | Time: 4:54 | Key: C# major (3B) | BPM: 107]
+   7. Franz Schubert - Kraftwerk [Pos: B4 | Time: 4:26 | Key: D major (10B) | BPM: 112]
+   8. Endless Endless - Kraftwerk [Pos: B5 | Time: 0:55 | Key: G major (9B) | BPM: 111]
 
 === Enter The Wu-Tang (36 Chambers) -- Wu-Tang Clan ===
   ID: 12647200
@@ -1237,18 +1237,18 @@
   Year: 2018
   Label: RCA, Loud Records, Legacy, Sony Music
   Art: https://i.discogs.com/Ua9TT1bOJfAZ7tBSraP2Bo2t8aDwZcqjVqwULY8DgAY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjQ3/MjAwLTE1MzkyNzY5/MDgtNzEwNy5qcGVn.jpeg
-   1. Bring Da Ruckus - Wu-Tang Clan [Key: B major (1B) | BPM: 88]
-   2. Shame On A Nigga - Wu-Tang Clan [Key: C# major (3B) | BPM: 100]
-   3. Clan In Da Front - Wu-Tang Clan [Key: F# major (2B) | BPM: 96]
-   4. Wu-Tang: 7th Chamber - Wu-Tang Clan [Key: F# major (2B) | BPM: 92]
-   5. Can It Be All So Simple - Wu-Tang Clan [Key: A minor (8A) | BPM: 92]
-   6. Protect Ya Neck (Intermission) - Wu-Tang Clan [Key: G# minor (1A) | BPM: 102]
-   7. Da Mystery Of Chessboxin' - Wu-Tang Clan [Key: D major (10B) | BPM: 105]
-   8. Wu-Tang Clan Ain't Nuthing Ta F' Wit - Wu-Tang Clan [Key: C# major (3B) | BPM: 99]
-   9. C.R.E.A.M. - Wu-Tang Clan [Key: B minor (10A) | BPM: 181]
-  10. Method Man - Wu-Tang Clan [Key: B minor (10A) | BPM: 102]
-  11. Tearz - Wu-Tang Clan [Key: G# minor (1A) | BPM: 92]
-  12. Wu-Tang: 7th Chamber - Part II - Wu-Tang Clan [Key: F# major (2B) | BPM: 92]
+   1. Bring Da Ruckus - Wu-Tang Clan [Pos: A1 | Time: 4:10 | Key: B major (1B) | BPM: 88]
+   2. Shame On A Nigga - Wu-Tang Clan [Pos: A2 | Time: 2:57 | Key: C# major (3B) | BPM: 100]
+   3. Clan In Da Front - Wu-Tang Clan [Pos: A3 | Time: 4:33 | Key: F# major (2B) | BPM: 96]
+   4. Wu-Tang: 7th Chamber - Wu-Tang Clan [Pos: A4 | Time: 6:05 | Key: F# major (2B) | BPM: 92]
+   5. Can It Be All So Simple - Wu-Tang Clan [Pos: A5 | Time: 4:46 | Key: A minor (8A) | BPM: 92]
+   6. Protect Ya Neck (Intermission) - Wu-Tang Clan [Pos: A6 | Time: 6:48 | Key: G# minor (1A) | BPM: 102]
+   7. Da Mystery Of Chessboxin' - Wu-Tang Clan [Pos: B1 | Time: 4:48 | Key: D major (10B) | BPM: 105]
+   8. Wu-Tang Clan Ain't Nuthing Ta F' Wit - Wu-Tang Clan [Pos: B2 | Time: 3:36 | Key: C# major (3B) | BPM: 99]
+   9. C.R.E.A.M. - Wu-Tang Clan [Pos: B3 | Time: 4:12 | Key: B minor (10A) | BPM: 181]
+  10. Method Man - Wu-Tang Clan [Pos: B4 | Time: 5:50 | Key: B minor (10A) | BPM: 102]
+  11. Tearz - Wu-Tang Clan [Pos: B5 | Time: 4:17 | Key: G# minor (1A) | BPM: 92]
+  12. Wu-Tang: 7th Chamber - Part II - Wu-Tang Clan [Pos: B6 | Time: 5:08 | Key: F# major (2B) | BPM: 92]
 
 === Radio-Activity -- Kraftwerk ===
   ID: 2016901
@@ -1257,18 +1257,18 @@
   Year: 2009
   Label: Kling Klang, Mute
   Art: https://i.discogs.com/Nfcr6f1WP3gtVFDSMmidW0nCURprytzKcrKfsNIZHRI/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTY5/MDEtMTI4MTY0NTE0/MC5qcGVn.jpeg
-   1. Geiger Counter - Kraftwerk [Key: A# minor (3A) | BPM: 210]
-   2. Radioactivity - Kraftwerk [Key: A minor (8A) | BPM: 122]
-   3. Radioland - Kraftwerk [Key: B major (1B) | BPM: 78]
-   4. Airwaves - Kraftwerk [Key: F minor (4A) | BPM: 154]
-   5. Intermission - Kraftwerk [Key: F minor (4A) | BPM: 63]
-   6. News - Kraftwerk [Key: C# major (3B) | BPM: 105]
-   7. The Voice Of Energy - Kraftwerk [Key: A# minor (3A) | BPM: 68]
-   8. Antenna - Kraftwerk [Key: D major (10B) | BPM: 144]
-   9. Radio Stars - Kraftwerk [Key: F# major (2B) | BPM: 119]
-  10. Uranium - Kraftwerk [Key: C# minor (12A) | BPM: 91]
-  11. Transistor - Kraftwerk [Key: C# major (3B) | BPM: 110]
-  12. Ohm Sweet Ohm - Kraftwerk [Key: Ab major (4B) | BPM: 114]
+   1. Geiger Counter - Kraftwerk [Pos: A1 | Time: 1:07 | Key: A# minor (3A) | BPM: 210]
+   2. Radioactivity - Kraftwerk [Pos: A2 | Time: 6:42 | Key: A minor (8A) | BPM: 122]
+   3. Radioland - Kraftwerk [Pos: A3 | Time: 5:52 | Key: B major (1B) | BPM: 78]
+   4. Airwaves - Kraftwerk [Pos: A4 | Time: 4:40 | Key: F minor (4A) | BPM: 154]
+   5. Intermission - Kraftwerk [Pos: A5 | Time: 0:39 | Key: F minor (4A) | BPM: 63]
+   6. News - Kraftwerk [Pos: A6 | Time: 1:17 | Key: C# major (3B) | BPM: 105]
+   7. The Voice Of Energy - Kraftwerk [Pos: B1 | Time: 0:55 | Key: A# minor (3A) | BPM: 68]
+   8. Antenna - Kraftwerk [Pos: B2 | Time: 3:42 | Key: D major (10B) | BPM: 144]
+   9. Radio Stars - Kraftwerk [Pos: B3 | Time: 3:34 | Key: F# major (2B) | BPM: 119]
+  10. Uranium - Kraftwerk [Pos: B4 | Time: 1:27 | Key: C# minor (12A) | BPM: 91]
+  11. Transistor - Kraftwerk [Pos: B5 | Time: 2:14 | Key: C# major (3B) | BPM: 110]
+  12. Ohm Sweet Ohm - Kraftwerk [Pos: B6 | Time: 5:38 | Key: Ab major (4B) | BPM: 114]
 
 === Footwork Skank / Gunshot -- Brian Brainstorm ===
   ID: 16427895
@@ -1277,8 +1277,8 @@
   Year: 2020
   Label: Jungle Cakes
   Art: https://i.discogs.com/ATJeuT5IooOf-hmCjmSQDqBKrmq8ZThGv-61ghRiwPc/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDI3/ODk1LTE2MDc2OTE2/MDAtMTM3Ny5qcGVn.jpeg
-   1. Footwork Skank - Brian Brainstorm [Key: C# major (3B) | BPM: 175]
-   2. Gunshot - Brian Brainstorm [Key: A major (11B) | BPM: 176]
+   1. Footwork Skank - Brian Brainstorm [Pos: a1 | Key: C# major (3B) | BPM: 175]
+   2. Gunshot - Brian Brainstorm [Pos: b1 | Key: A major (11B) | BPM: 176]
 
 === Bad Boys (Ben Snow & Jappa Remix) / Bam Bam (Benny Page & Deekline Remix) -- DJ Deekline & Ed Solo ===
   ID: 16249717
@@ -1287,8 +1287,8 @@
   Year: 2020
   Label: Jungle Cakes
   Art: https://i.discogs.com/N8wjrg9KqNXmOJO6NIGPoBjISE8OsUxYQUC4XGwJLd8/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjQ5/NzE3LTE2MDU5NzYy/OTMtMjI2OC5qcGVn.jpeg
-   1. Bad Boys (Ben Snow & Jappa Remix) - Deekline & Ed Solo [Key: E minor (9A) | BPM: 88]
-   2. Bam Bam (Benny Page & Deekline Remix) - Deekline & Ed Solo [Key: F major (7B) | BPM: 88]
+   1. Bad Boys (Ben Snow & Jappa Remix) - Deekline & Ed Solo [Pos: A | Key: E minor (9A) | BPM: 88]
+   2. Bam Bam (Benny Page & Deekline Remix) - Deekline & Ed Solo [Pos: B | Key: F major (7B) | BPM: 88]
 
 === Chant Down Babylon / Steppin' Razor -- Gunmen ===
   ID: 9478559
@@ -1297,8 +1297,8 @@
   Year: 2016
   Label: Gunmen Music
   Art: https://i.discogs.com/MrjNEuQClLZL3i9IniVHtgGkg_z47P2WooxSSecOHiA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0Nzg1/NTktMTQ4OTUwMzcy/MC0yMjE2LmpwZWc.jpeg
-   1. Chant Down Babylon - Gunmen [Key: E minor (9A) | BPM: 176]
-   2. Steppin Razor - Gunmen [Key: G major (9B) | BPM: 179]
+   1. Chant Down Babylon - Gunmen [Pos: A | Key: E minor (9A) | BPM: 176]
+   2. Steppin Razor - Gunmen [Pos: B | Key: G major (9B) | BPM: 179]
 
 === Jack It Operator -- Missing ===
   ID: 16167842
@@ -1307,8 +1307,8 @@
   Year: 2020
   Label: Sub System Recordings
   Art: https://i.discogs.com/y2J6wej6ERKC8kooU01NiOMTCKm39W60jm9v0w_iUZs/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTY3/ODQyLTE2MDk0Mjk2/MDQtNjA4My5qcGVn.jpeg
-   1. Jack It Operator (Fracture's 'Jacket Operator' Remix) - Missing [Key: E major (12B) | BPM: 160]
-   2. Jack It Operator - Missing [Key: C# major (3B) | BPM: 174]
+   1. Jack It Operator (Fracture's 'Jacket Operator' Remix) - Missing [Pos: A | Key: E major (12B) | BPM: 160]
+   2. Jack It Operator - Missing [Pos: AA | Key: C# major (3B) | BPM: 174]
 
 === Psychodynamik 07 -- Aphrodite, Kursiva, Benny Page, Isaac Maya ===
   ID: 12557942
@@ -1317,10 +1317,10 @@
   Year: 2018
   Label: PSychoDynamiK
   Art: https://i.discogs.com/Zjx4W2k_0vcpISoKSoUi6B6nkWNukW7SeyMF-yE6AXI/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTU3/OTQyLTE1NzMwNTY5/NzAtNDU0NS5qcGVn.jpeg
-   1. No Escape - Le Peuple De L'Herbe, UK Apachi, Aphrodite [Key: B major (1B) | BPM: 172]
-   2. Party Time - Tomawok, Kursiva [Key: C# major (3B) | BPM: 178]
-   3. My Sound - Tomawok, Benny Page [Key: G major (9B) | BPM: 89]
-   4. Bad Inna Dance - Isaac Maya, Ranking Diximal [Key: E minor (9A) | BPM: 85]
+   1. No Escape - Le Peuple De L'Herbe, UK Apachi, Aphrodite [Pos: 1 | Time: 6:00 | Key: B major (1B) | BPM: 172]
+   2. Party Time - Tomawok, Kursiva [Pos: 2 | Time: 4:04 | Key: C# major (3B) | BPM: 178]
+   3. My Sound - Tomawok, Benny Page [Pos: 3 | Time: 3:45 | Key: G major (9B) | BPM: 89]
+   4. Bad Inna Dance - Isaac Maya, Ranking Diximal [Pos: 4 | Time: 6:19 | Key: E minor (9A) | BPM: 85]
 
 === Psychodynamik 06 -- Dope Ammo, Turntable Dubbers, Stevens Kbosh, Rulo Smoka ===
   ID: 11599763
