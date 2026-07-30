@@ -1865,10 +1865,10 @@
   Year: 2017
   Label: Raggatek Force
   Art: https://i.discogs.com/LVvcELu4XXcf5BLedDCDQaoWXZqr0leNoiqEp50wuoc/rs:fit/g:sm/q:90/h:600/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODg0/Mzk3LTE1MDU5MjUz/OTktNzE2NC5qcGVn.jpeg
-   1. Raggatek Fayah Burn - Miltatek [Key: G# minor (1A) | BPM: 196]
-   2. Inked Body - Sparks [Key: C# major (3B) | BPM: 100]
-   3. Cocaine Amplifier - Paranoiak [Key: C# minor (12A) | BPM: 160]
-   4. Big Mouth - Ritchy VS Psylotribe [Key: B major (1B) | BPM: 82]
+   1. Raggatek Fayah Burn - Miltatek [Pos: A1 | Key: G# minor (1A) | BPM: 196]
+   2. Inked Body - Sparks [Pos: A2 | Key: C# major (3B) | BPM: 100]
+   3. Cocaine Amplifier - Paranoiak [Pos: B1 | Key: C# minor (12A) | BPM: 160]
+   4. Big Mouth - Ritchy VS Psylotribe [Pos: B2 | Key: B major (1B) | BPM: 82]
 
 === Burning Marijuana / Lonely -- Candy ===
   ID: 1939637
@@ -1877,8 +1877,8 @@
   Year: 2009
   Label: Znootpoch
   Art: https://i.discogs.com/HBQwrU54XMZLL8dw3J3cNXbDPdDuNHto-0458UUzxpA/rs:fit/g:sm/q:90/h:200/w:195/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzk2/MzctMTI2OTM0MTQ0/Mi5qcGVn.jpeg
-   1. Burning Marijuana - Candy [Key: C# major (3B) | BPM: 180]
-   2. Lonely - Candy [Key: F minor (4A) | BPM: 120]
+   1. Burning Marijuana - Candy [Pos: A | Key: C# major (3B) | BPM: 180]
+   2. Lonely - Candy [Pos: B | Key: F minor (4A) | BPM: 120]
 
 === Hot This Year / Remember -- DJ Deekline & Ed Solo ===
   ID: 5846178
@@ -1887,8 +1887,8 @@
   Year: 2014
   Label: Jungle Cakes
   Art: https://i.discogs.com/dxhGNZm2UOg9b28qsLuvdb-SFjuHCxnKszdb0AQ_Hh4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4NDYx/NzgtMTQwODIzMDMx/NC05MDc3LmpwZWc.jpeg
-   1. Hot This Year - DJ Deekline & Ed Solo [Key: G major (9B) | BPM: 175]
-   2. Remember - DJ Deekline & Ed Solo [Key: C# major (3B) | BPM: 175]
+   1. Hot This Year - DJ Deekline & Ed Solo [Pos: A1 | Key: G major (9B) | BPM: 175]
+   2. Remember - DJ Deekline & Ed Solo [Pos: B1 | Key: C# major (3B) | BPM: 175]
 
 === Cosmic Watergate -- MJ12 ===
   ID: 220485
@@ -1897,8 +1897,8 @@
   Year: 1998
   Label: Input Records
   Art: https://i.discogs.com/24P1Kg53frQimsc2MNv0oLk1AEnF8qtPmIcVsm6C_-0/rs:fit/g:sm/q:90/h:398/w:394/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDQ4/NS0xMTI4OTQwMTEz/LmpwZWc.jpeg
-   1. Cosmic Watergate - MJ12 [Key: G# minor (1A) | BPM: 138]
-   2. Recovered Technologies - MJ12 [Key: B minor (10A) | BPM: 119]
+   1. Cosmic Watergate - MJ12 [Pos: A | Key: G# minor (1A) | BPM: 138]
+   2. Recovered Technologies - MJ12 [Pos: B | Key: B minor (10A) | BPM: 119]
 
 === Scarab E.P. -- Prana ===
   ID: 40755
@@ -1907,8 +1907,8 @@
   Year: 1995
   Label: Matsuri Productions
   Art: https://i.discogs.com/j3rx-XVqL3a_L5mOA40GEfrUwwZ6pGTERJu6OrmihmI/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzU1/LTExNzI0MDQ0NDMu/anBlZw.jpeg
-   1. Scarab - Prānā [Key: C# major (3B) | BPM: 145]
-   2. Pneumatic - Prānā [Key: G major (9B) | BPM: 144]
+   1. Scarab - Prānā [Pos: A | Time: 7:35 | Key: C# major (3B) | BPM: 145]
+   2. Pneumatic - Prānā [Pos: B | Time: 7:48 | Key: G major (9B) | BPM: 144]
 
 === PSychoDynamiK01 -- Various ===
   ID: 5302146
@@ -1917,8 +1917,8 @@
   Year: 2013
   Label: PSychoDynamiK
   Art: https://i.discogs.com/ISFom3ujMb18XsqkUvZTUdufLl1fVXtRdfPVJhzCrUI/rs:fit/g:sm/q:90/h:300/w:295/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMDIx/NDYtMTU3MjM4NTM3/Ny04MjU1LmpwZWc.jpeg
-   1. Flashback - Bad Joke [Key: C# minor (12A) | BPM: 79]
-   2. Me Want - Dreadsquad Featuring Skarra Mucci, Mandinka Warrior & Alex Hudson [Key: F minor (4A) | BPM: 70]
+   1. Flashback - Bad Joke [Pos: A1 | Key: C# minor (12A) | BPM: 79]
+   2. Me Want - Dreadsquad Featuring Skarra Mucci, Mandinka Warrior & Alex Hudson [Pos: B1 | Key: F minor (4A) | BPM: 70]
 
 === Psychic Orient / Sin Gravity -- Sky Distortion ===
   ID: 198326
@@ -1927,8 +1927,8 @@
   Year: 2000
   Label: Micro Psy'c
   Art: https://i.discogs.com/yuJuGnqr2kYjx-XW-Uit5xvPcJmD6aPfxFEKx1ZVBq8/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5ODMy/Ni0xNDIyOTQ4MTM4/LTI4MjguanBlZw.jpeg
-   1. Psychic Orient - Sky Distortion 2 [Key: Bb major (6B) | BPM: 122]
-   2. Sin Gravity - Sky Distortion 2 [Key: A# minor (3A) | BPM: 198]
+   1. Psychic Orient - Sky Distortion 2 [Pos: A | Key: Bb major (6B) | BPM: 122]
+   2. Sin Gravity - Sky Distortion 2 [Pos: B | Key: A# minor (3A) | BPM: 198]
 
 === The Revolution -- K.U.R.O. ===
   ID: 902575
@@ -1937,8 +1937,8 @@
   Year: 1995
   Label: Tokyo Tekno Tribe
   Art: https://i.discogs.com/Yh3JrgIkYzVYAWLxRM0vqR2cQnV5NMz3mBViAuJ50-s/rs:fit/g:sm/q:90/h:600/w:373/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMjU3/NS0xMTcxMDQ5NjUz/LmpwZWc.jpeg
-   1. The Revolution - KURO [Key: C major (8B) | BPM: 125]
-   2. Into Space - KURO [Key: A minor (8A) | BPM: 143]
+   1. The Revolution - KURO [Pos: A | Time: 6:54 | Key: C major (8B) | BPM: 125]
+   2. Into Space - KURO [Pos: B | Time: 7:53 | Key: A minor (8A) | BPM: 143]
 
 === Let's Get Stoned And Watch The Freaks / Green Worm -- Mindfield ===
   ID: 94018
@@ -1947,8 +1947,8 @@
   Year: 1995
   Label: Phantasm Records
   Art: https://i.discogs.com/rrlzklysQNnnjq9uboHrlworMaYjBaG1Bwo2elNJ80k/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MDE4/LTE2MjcxNTE1MjUt/NTgzNC5qcGVn.jpeg
-   1. Let's Get Stoned And Watch The Freaks - Mindfield [Key: C major (8B) | BPM: 142]
-   2. Green Worm - Mindfield [Key: G major (9B) | BPM: 147]
+   1. Let's Get Stoned And Watch The Freaks - Mindfield [Pos: A | Time: 8:38 | Key: C major (8B) | BPM: 142]
+   2. Green Worm - Mindfield [Pos: AA | Time: 8:35 | Key: G major (9B) | BPM: 147]
 
 === Freedom EP -- MK-Ultra ===
   ID: 243960
@@ -1957,10 +1957,10 @@
   Year: 1995
   Label: Step 2 House Records
   Art: https://i.discogs.com/ZUogW_7lo7Kj3Q-5sDhNib61jtdegRHjemA55hfQ97E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0Mzk2/MC0xNjAzMzMwNTMy/LTU2OTIuanBlZw.jpeg
-   1. Freedom - M-K Ultra [Key: D# minor (2A) | BPM: 140]
-   2. Nebadon - M-K Ultra [Key: C# major (3B) | BPM: 102]
-   3. Polarizion - M-K Ultra [Key: A# minor (3A) | BPM: 93]
-   4. Neurocosmik - M-K Ultra [Key: G# minor (1A) | BPM: 138]
+   1. Freedom - M-K Ultra [Pos: A1 | Time: 7:48 | Key: D# minor (2A) | BPM: 140]
+   2. Nebadon - M-K Ultra [Pos: A2 | Time: 6:40 | Key: C# major (3B) | BPM: 102]
+   3. Polarizion - M-K Ultra [Pos: B1 | Time: 6:55 | Key: A# minor (3A) | BPM: 93]
+   4. Neurocosmik - M-K Ultra [Pos: B2 | Time: 8:40 | Key: G# minor (1A) | BPM: 138]
 
 === Kiba E.P. -- Prana ===
   ID: 94051
