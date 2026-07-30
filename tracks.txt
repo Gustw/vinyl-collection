@@ -1451,8 +1451,8 @@
   Year: 2008
   Label: Dope Ammo Records
   Art: https://i.discogs.com/U27QgZyqh-hSvOheob1lnQ5cNbtNSLcRJUbjBtjnljU/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjE5/MzEtMTIxMjg4MjQy/MS5qcGVn.jpeg
-   1. Roots + Future - Dope Ammo vs Soundclash [Key: A# minor (3A) | BPM: 89]
-   2. Dub Criminal - Dope Ammo [Key: F# major (2B) | BPM: 175]
+   1. Roots + Future - Dope Ammo vs Soundclash [Pos: a | Key: A# minor (3A) | BPM: 89]
+   2. Dub Criminal - Dope Ammo [Pos: aa | Key: F# major (2B) | BPM: 175]
 
 === Oh Natty / Skankin' Dub -- Ghetto Fabulous / Dub Street ===
   ID: 656986
@@ -1461,8 +1461,8 @@
   Year: 2006
   Label: Lion Dubs
   Art: https://i.discogs.com/0vlxZfysomQXutbSWmDFBifb6tnuNRthyUtNdF4aHqc/rs:fit/g:sm/q:90/h:397/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1Njk4/Ni0xMTQ5MDMzODA5/LmpwZWc.jpeg
-   1. Oh Natty - Ghetto Fabulous [Key: C# minor (12A) | BPM: 92]
-   2. Skankin' Dub - Dub Street [Key: G major (9B) | BPM: 164]
+   1. Oh Natty - Ghetto Fabulous [Pos: A | Key: C# minor (12A) | BPM: 92]
+   2. Skankin' Dub - Dub Street [Pos: AA | Key: G major (9B) | BPM: 164]
 
 === No Gun / Be Careful -- Rub-A-Dub Soldiers / Stalefish ===
   ID: 1788546
@@ -1471,8 +1471,8 @@
   Year: 2009
   Label: Smokers
   Art: https://i.discogs.com/ZhyfYNtdS2-Ppgp7Iv0apt5KbbP2Xr-p0eeXEx9hE5w/rs:fit/g:sm/q:90/h:546/w:364/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3ODg1/NDYtMTMwMTM2Nzc5/MC5qcGVn.jpeg
-   1. No Gun - Rub-A-Dub Soldiers [Key: F# major (2B) | BPM: 108]
-   2. Be Careful - Stalefish [Key: F# minor (11A) | BPM: 152]
+   1. No Gun - Rub-A-Dub Soldiers [Pos: A | Key: F# major (2B) | BPM: 108]
+   2. Be Careful - Stalefish [Pos: AA | Key: F# minor (11A) | BPM: 152]
 
 === Rudeboy / Herbalist -- Stalefish / Dimension Of Soundz ===
   ID: 951252
@@ -1481,8 +1481,8 @@
   Year: 2007
   Label: Tough Express
   Art: https://i.discogs.com/L4-_yktEsnZDYMlfoPXob7nYlzo7LTCPrXkIqlCfnis/rs:fit/g:sm/q:90/h:235/w:235/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1MTI1/Mi0xMjcyNTgwMDM0/LmdpZg.jpeg
-   1. Rudeboy - Stalefish [Key: B minor (10A) | BPM: 175]
-   2. Herbalist - Dimension Of Soundz [Key: D major (10B) | BPM: 140]
+   1. Rudeboy - Stalefish [Pos: A | Key: B minor (10A) | BPM: 175]
+   2. Herbalist - Dimension Of Soundz [Pos: B | Key: D major (10B) | BPM: 140]
 
 === I Say Yeah / Rasta Be Good -- Turntable Dubbers ===
   ID: 2318983
@@ -1491,8 +1491,8 @@
   Year: 2010
   Label: Nice Up!
   Art: https://i.discogs.com/AKVa_swIRnjvPpdCS2ispdAdhVjHyo5RxBKYjw2Nfao/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTg5/ODMtMTI3NjYwNjgy/My5qcGVn.jpeg
-   1. I Say Yeah - Turntable Dubbers [Key: D major (10B) | BPM: 105]
-   2. Rasta Be Good - Turntable Dubbers [Key: B minor (10A) | BPM: 115]
+   1. I Say Yeah - Turntable Dubbers [Pos: A | Key: D major (10B) | BPM: 105]
+   2. Rasta Be Good - Turntable Dubbers [Pos: AA | Key: B minor (10A) | BPM: 115]
 
 === Soundboy Dead / Try To Conquer I -- Vendetta (2) & Barber (3) & Bad Kid ===
   ID: 1860845
@@ -1501,8 +1501,8 @@
   Year: 2009
   Label: Delacroix Records
   Art: https://i.discogs.com/_py3_vdilspnpbKwKHG1-HkitIjVV6L937Eywi8ZsRQ/rs:fit/g:sm/q:90/h:285/w:289/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NjA4/NDUtMTI0ODQzODYw/OS5naWY.jpeg
-   1. Soundboy Dead - Vendetta & Barber & Bad Kid [Key: C# major (3B) | BPM: 125]
-   2. Try To Conquer I - Vendetta & Barber & Bad Kid [Key: C# minor (12A) | BPM: 150]
+   1. Soundboy Dead - Vendetta & Barber & Bad Kid [Pos: A | Time: 5:36 | Key: C# major (3B) | BPM: 125]
+   2. Try To Conquer I - Vendetta & Barber & Bad Kid [Pos: AA | Time: 5:28 | Key: C# minor (12A) | BPM: 150]
 
 === You Can't Surrender -- Visionary ===
   ID: 1858695
@@ -1510,8 +1510,8 @@
   Style: Breakbeat, Dub, Drum n Bass
   Year: 2005
   Label: Lion Dubs
-   1. You Can't Surrender - Visionary [Key: B minor (10A) | BPM: 158]
-   2. I Know A Girl - Visionary [Key: Bb major (6B) | BPM: 149]
+   1. You Can't Surrender - Visionary [Pos: A | Key: B minor (10A) | BPM: 158]
+   2. I Know A Girl - Visionary [Pos: AA | Key: Bb major (6B) | BPM: 149]
 
 === Gimme Your Love / Jungle Rock -- Visionary ===
   ID: 709202
@@ -1520,8 +1520,8 @@
   Year: 2006
   Label: Digital Soundboy Recording Co.
   Art: https://i.discogs.com/46KADAW_PLiq8MKjC29qjW9onNDgq7BJarcoUcWByGU/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwOTIw/Mi0xMTYwMjI4NzA0/LmpwZWc.jpeg
-   1. Gimme Your Love - Visionary [Key: A# minor (3A) | BPM: 88]
-   2. Jungle Rock - Visionary [Key: C# major (3B) | BPM: 175]
+   1. Gimme Your Love - Visionary [Pos: A | Key: A# minor (3A) | BPM: 88]
+   2. Jungle Rock - Visionary [Pos: AA | Key: C# major (3B) | BPM: 175]
 
 === Whip Them Soundboy / Another Meditation -- Visionary / Isaac Maya ===
   ID: 1657631
@@ -1530,8 +1530,8 @@
   Year: 2009
   Label: On Point Music
   Art: https://i.discogs.com/tD28cL9kCa6kXxQtOa7U00gYyYatpCBImLCofZtUUhc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTc2/MzEtMTI5ODA2MDY2/NS5qcGVn.jpeg
-   1. Whip Them Soundboy - Visionary [Key: Bb major (6B) | BPM: 75]
-   2. Another Meditation - Isaac Maya [Key: C# minor (12A) | BPM: 128]
+   1. Whip Them Soundboy - Visionary [Pos: A | Key: Bb major (6B) | BPM: 75]
+   2. Another Meditation - Isaac Maya [Pos: B | Key: C# minor (12A) | BPM: 128]
 
 === Sugar Me / Wadodem -- Wildlife ===
   ID: 1686257
@@ -1540,8 +1540,8 @@
   Year: 2009
   Label: Jungle Cakes
   Art: https://i.discogs.com/RTX_KWlHmtvL0fQ779KNss_VseS2RBfj3fOX-XwQ0KU/rs:fit/g:sm/q:90/h:590/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODYy/NTctMTIzNzU3Nzc5/Ny5qcGVn.jpeg
-   1. Sugar Me - The Wildlife Collective [Key: F# minor (11A) | BPM: 92]
-   2. Wadodem - The Wildlife Collective [Key: G# minor (1A) | BPM: 114]
+   1. Sugar Me - The Wildlife Collective [Pos: A | Key: F# minor (11A) | BPM: 92]
+   2. Wadodem - The Wildlife Collective [Pos: B | Key: G# minor (1A) | BPM: 114]
 
 === Ragga Tip (Walk And Skank) / Ragga Muffin -- Wildlife ===
   ID: 2223396
