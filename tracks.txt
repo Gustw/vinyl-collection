@@ -1969,8 +1969,8 @@
   Year: 1995
   Label: Matsuri Productions
   Art: https://i.discogs.com/VNEe5aDfgQLUeVxoHBmAsHBiee2hS8Z6ZYV98miUdWc/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MDUx/LTEzNjY1NjkzMjIt/MzI1Mi5qcGVn.jpeg
-   1. Kiba - Prānā [Key: B major (1B) | BPM: 143]
-   2. Starchild - Prānā [Key: A minor (8A) | BPM: 145]
+   1. Kiba - Prānā [Pos: A | Key: B major (1B) | BPM: 143]
+   2. Starchild - Prānā [Pos: B | Key: A minor (8A) | BPM: 145]
 
 === Hopium -- Z-Plane ===
   ID: 183107
@@ -1979,8 +1979,8 @@
   Year: 1995
   Label: Trans'Pact Productions
   Art: https://i.discogs.com/wTtmCMOuZuaFDhtbdcmwvzc6x1pxT7c00OiotIcF1ao/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MzEw/Ny0xMjAwMzkzMTA2/LmpwZWc.jpeg
-   1. Hopium (Goa Voice Mix) - Z-Plane [Key: Ab major (4B) | BPM: 136]
-   2. Hopium - Z-Plane [Key: C# major (3B) | BPM: 134]
+   1. Hopium (Goa Voice Mix) - Z-Plane [Pos: A | Time: 8:00 | Key: Ab major (4B) | BPM: 136]
+   2. Hopium - Z-Plane [Pos: B | Time: 6:46 | Key: C# major (3B) | BPM: 134]
 
 === Objectif Mercury -- Ariane ===
   ID: 141496
@@ -1989,8 +1989,8 @@
   Year: 1995
   Label: X-DR Production
   Art: https://i.discogs.com/17MrnU6NGgOytFd79AZ4fFy-f4MatCAQbIX6YhhQRxA/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTQ5/Ni0xNTIyMDExNzIw/LTg2NDMuanBlZw.jpeg
-   1. Objectif Mercury (Ignition Mix) - Ariane [Key: A# minor (3A) | BPM: 142]
-   2. Dolphins Orbital - Ariane [Key: E minor (9A) | BPM: 135]
+   1. Objectif Mercury (Ignition Mix) - Ariane [Pos: A | Key: A# minor (3A) | BPM: 142]
+   2. Dolphins Orbital - Ariane [Pos: B | Key: E minor (9A) | BPM: 135]
 
 === Corolle -- Khetzal ===
   ID: 17476666
@@ -1999,14 +1999,14 @@
   Year: 2021
   Label: Suntrip Records
   Art: https://i.discogs.com/KexQy18k0j0CAgh_2CGBKQAhDIvrar8GAEk6PTpkxz0/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NDc2/NjY2LTE2MjU1MDYx/MTctNTI1OS5qcGVn.jpeg
-   1. Listening Winds - Khetzal [Key: G minor (6A) | BPM: 110]
-   2. Anamatha (Remix) - DJ Zen [Key: F major (7B) | BPM: 194]
-   3. Bells Of Sarnath - Khetzal [Key: C major (8B) | BPM: 150]
-   4. Narayana - Khetzal [Key: C major (8B) | BPM: 140]
-   5. Ganesha Pramana - Khetzal [Key: C# major (3B) | BPM: 160]
-   6. Indian Attic - Khetzal [Key: C major (8B) | BPM: 145]
-   7. Djaningar - Khetzal [Key: A minor (8A) | BPM: 130]
-   8. Avasari - Khetzal [Key: F# major (2B) | BPM: 100]
+   1. Listening Winds - Khetzal [Pos: A1 | Time: 8:58 | Key: G minor (6A) | BPM: 110]
+   2. Anamatha (Remix) - DJ Zen [Pos: A2 | Time: 8:54 | Key: F major (7B) | BPM: 194]
+   3. Bells Of Sarnath - Khetzal [Pos: B1 | Time: 8:09 | Key: C major (8B) | BPM: 150]
+   4. Narayana - Khetzal [Pos: B2 | Time: 7:37 | Key: C major (8B) | BPM: 140]
+   5. Ganesha Pramana - Khetzal [Pos: C1 | Time: 7:57 | Key: C# major (3B) | BPM: 160]
+   6. Indian Attic - Khetzal [Pos: C2 | Time: 8:57 | Key: C major (8B) | BPM: 145]
+   7. Djaningar - Khetzal [Pos: D1 | Time: 9:09 | Key: A minor (8A) | BPM: 130]
+   8. Avasari - Khetzal [Pos: D2 | Time: 8:04 | Key: F# major (2B) | BPM: 100]
 
 === Tasito -- Guelewar Band Of Banjul ===
   ID: 2187146
@@ -2015,11 +2015,11 @@
   Year: 1980
   Label: Productions Jambaar PJ, Le Kiosque d'Orphée
   Art: https://i.discogs.com/rRwDDWUilBfunzdJ8p55AqS3b8IZJJgD2do8EUE4AiA/rs:fit/g:sm/q:90/h:420/w:420/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxODcx/NDYtMTI2ODY5Nzgw/OS5qcGVn.jpeg
-   1. Tasito - Guelewars Band Of Banjul [Key: F# minor (11A) | BPM: 147]
-   2. Honda - Guelewars Band Of Banjul [Key: F# minor (11A) | BPM: 147]
-   3. Wollou - Guelewars Band Of Banjul [Key: C# minor (12A) | BPM: 110]
-   4. Djaraama - Guelewars Band Of Banjul [Key: Ab major (4B) | BPM: 127]
-   5. Kele Fasane - Guelewars Band Of Banjul [Key: C# major (3B) | BPM: 101]
+   1. Tasito - Guelewars Band Of Banjul [Pos: A1 | Key: F# minor (11A) | BPM: 147]
+   2. Honda - Guelewars Band Of Banjul [Pos: A2 | Key: F# minor (11A) | BPM: 147]
+   3. Wollou - Guelewars Band Of Banjul [Pos: A3 | Key: C# minor (12A) | BPM: 110]
+   4. Djaraama - Guelewars Band Of Banjul [Pos: B1 | Key: Ab major (4B) | BPM: 127]
+   5. Kele Fasane - Guelewars Band Of Banjul [Pos: B2 | Key: C# major (3B) | BPM: 101]
 
 === Waves -- Pale Grey ===
   ID: 11839676
@@ -2028,17 +2028,17 @@
   Year: 2017
   Label: JauneOrange
   Art: https://i.discogs.com/HIb74iezfcngTfajLbflS3xWcYdI07malhaEPJVuN1k/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODM5/Njc2LTE1MjMyNjM2/NDctMzgzOC5qcGVn.jpeg
-   1. Billy - Pale Grey [Key: Bb major (6B) | BPM: 150]
-   2. Hunter - Pale Grey [Key: C# major (3B) | BPM: 140]
-   3. Loss - Pale Grey [Key: F minor (4A) | BPM: 100]
-   4. Grace - Pale Grey [Key: C# major (3B) | BPM: 115]
-   5. Late Night - Pale Grey [Key: A minor (8A) | BPM: 92]
-   6. Ghost - Pale Grey [Key: F minor (4A) | BPM: 102]
-   7. Blizzard - Pale Grey [Key: Ab major (4B) | BPM: 106]
-   8. Light - Pale Grey [Key: C major (8B) | BPM: 64]
-   9. Crow - Pale Grey [Key: A minor (8A) | BPM: 150]
-  10. Seasons - Pale Grey [Key: G minor (6A) | BPM: 135]
-  11. Wave - Pale Grey [Key: D major (10B) | BPM: 112]
+   1. Billy - Pale Grey [Pos: A1 | Time: 3:14 | Key: Bb major (6B) | BPM: 150]
+   2. Hunter - Pale Grey [Pos: A2 | Time: 3:10 | Key: C# major (3B) | BPM: 140]
+   3. Loss - Pale Grey [Pos: A3 | Time: 3:47 | Key: F minor (4A) | BPM: 100]
+   4. Grace - Pale Grey [Pos: A4 | Time: 4:02 | Key: C# major (3B) | BPM: 115]
+   5. Late Night - Pale Grey [Pos: A5 | Time: 4:37 | Key: A minor (8A) | BPM: 92]
+   6. Ghost - Pale Grey [Pos: B1 | Time: 3:44 | Key: F minor (4A) | BPM: 102]
+   7. Blizzard - Pale Grey [Pos: B2 | Time: 3:27 | Key: Ab major (4B) | BPM: 106]
+   8. Light - Pale Grey [Pos: B3 | Time: 2:09 | Key: C major (8B) | BPM: 64]
+   9. Crow - Pale Grey [Pos: B4 | Time: 3:23 | Key: A minor (8A) | BPM: 150]
+  10. Seasons - Pale Grey [Pos: B5 | Time: 2:22 | Key: G minor (6A) | BPM: 135]
+  11. Wave - Pale Grey [Pos: B6 | Time: 12:42 | Key: D major (10B) | BPM: 112]
 
 === Clockwork Wizards -- Nuts One ===
   ID: 10665890
@@ -2047,23 +2047,23 @@
   Year: 2017
   Label: Soundtrackers
   Art: https://i.discogs.com/wrRoEN6_ZZ8ml8delHt5vlxPfeetcMPgB7EJ_nsKJKA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjY1/ODkwLTE1MDIwMDM5/NDAtODkwNS5qcGVn.jpeg
-   1. Light Tunnel - Nuts One [Key: C major (8B) | BPM: 173]
-   2. Metamorphosis - Nuts One [Key: C# major (3B) | BPM: 174]
-   3. Bad Dream - Nuts One [Key: A# minor (3A) | BPM: 112]
-   4. Angel Dust - Nuts One [Key: D major (10B) | BPM: 170]
-   5. The Crypt - Nuts One [Key: B major (1B) | BPM: 176]
-   6. Ghost Yard - Nuts One [Key: A# minor (3A) | BPM: 94]
-   7. Short-Circuit - Nuts One [Key: C# major (3B) | BPM: 168]
-   8. Capricorn - Nuts One [Key: G# minor (1A) | BPM: 97]
-   9. Bubble Gum - Nuts One [Key: F# minor (11A) | BPM: 120]
-  10. Acid Hazes - Nuts One [Key: Ab major (4B) | BPM: 76]
-  11. Strange Places - Nuts One [Key: D major (10B) | BPM: 62]
-  12. Cumulonimbus - Nuts One [Key: A major (11B) | BPM: 160]
-  13. Rusty Trombone - Nuts One [Key: C# major (3B) | BPM: 198]
-  14. Sinister Practices - Nuts One [Key: C major (8B) | BPM: 83]
-  15. Clockwork Wizards - Nuts One [Key: D minor (7A) | BPM: 175]
-  16. Astral Journey - Nuts One [Key: E minor (9A) | BPM: 105]
-  17. Disgrace - Nuts One [Key: C# minor (12A) | BPM: 129]
+   1. Light Tunnel - Nuts One [Pos: A1 | Key: C major (8B) | BPM: 173]
+   2. Metamorphosis - Nuts One [Pos: A2 | Key: C# major (3B) | BPM: 174]
+   3. Bad Dream - Nuts One [Pos: A3 | Key: A# minor (3A) | BPM: 112]
+   4. Angel Dust - Nuts One [Pos: A4 | Key: D major (10B) | BPM: 170]
+   5. The Crypt - Nuts One [Pos: A5 | Key: B major (1B) | BPM: 176]
+   6. Ghost Yard - Nuts One [Pos: A6 | Key: A# minor (3A) | BPM: 94]
+   7. Short-Circuit - Nuts One [Pos: A7 | Key: C# major (3B) | BPM: 168]
+   8. Capricorn - Nuts One [Pos: A8 | Key: G# minor (1A) | BPM: 97]
+   9. Bubble Gum - Nuts One [Pos: A9 | Key: F# minor (11A) | BPM: 120]
+  10. Acid Hazes - Nuts One [Pos: B1 | Key: Ab major (4B) | BPM: 76]
+  11. Strange Places - Nuts One [Pos: B2 | Key: D major (10B) | BPM: 62]
+  12. Cumulonimbus - Nuts One [Pos: B3 | Key: A major (11B) | BPM: 160]
+  13. Rusty Trombone - Nuts One [Pos: B4 | Key: C# major (3B) | BPM: 198]
+  14. Sinister Practices - Nuts One [Pos: B5 | Key: C major (8B) | BPM: 83]
+  15. Clockwork Wizards - Nuts One [Pos: B6 | Key: D minor (7A) | BPM: 175]
+  16. Astral Journey - Nuts One [Pos: B7 | Key: E minor (9A) | BPM: 105]
+  17. Disgrace - Nuts One [Pos: B8 | Key: C# minor (12A) | BPM: 129]
 
 === The Manasseh Files -- Danny Red ===
   ID: 10508424
@@ -2072,18 +2072,18 @@
   Year: 2017
   Label: Ababajahnoi
   Art: https://i.discogs.com/qIrURpKOnKtxis2V-KX2FDGcav3iM3tiDMiNMjcJDtU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTA4/NDI0LTE0OTg5MDA4/NDMtOTk2OS5qcGVn.jpeg
-   1. Original Formula - Danny Red [Key: F minor (4A) | BPM: 97]
-   2. Solution Dub - Manasseh [Key: C major (8B) | BPM: 150]
-   3. Dance Get Overload - Danny Red [Key: C# major (3B) | BPM: 167]
-   4. Loaded Dub - Manasseh [Key: C# minor (12A) | BPM: 160]
-   5. Smoke My Chalwa - Danny Red [Key: A minor (8A) | BPM: 137]
-   6. Chilum Dub - Manasseh [Key: C# minor (12A) | BPM: 160]
-   7. Nobody - Danny Red [Key: A minor (8A) | BPM: 121]
-   8. Somebody Version - Manasseh [Key: D major (10B) | BPM: 170]
-   9. You Don't Know - Danny Red [Key: Ab major (4B) | BPM: 130]
-  10. Knowing Version - Manasseh [Key: Ab major (4B) | BPM: 130]
-  11. Babylon Sick - Danny Red [Key: B minor (10A) | BPM: 135]
-  12. Medicine Version - Manasseh [Key: C major (8B) | BPM: 108]
+   1. Original Formula - Danny Red [Pos: A1 | Key: F minor (4A) | BPM: 97]
+   2. Solution Dub - Manasseh [Pos: A2 | Key: C major (8B) | BPM: 150]
+   3. Dance Get Overload - Danny Red [Pos: A3 | Key: C# major (3B) | BPM: 167]
+   4. Loaded Dub - Manasseh [Pos: A4 | Key: C# minor (12A) | BPM: 160]
+   5. Smoke My Chalwa - Danny Red [Pos: A5 | Key: A minor (8A) | BPM: 137]
+   6. Chilum Dub - Manasseh [Pos: A6 | Key: C# minor (12A) | BPM: 160]
+   7. Nobody - Danny Red [Pos: B1 | Key: A minor (8A) | BPM: 121]
+   8. Somebody Version - Manasseh [Pos: B2 | Key: D major (10B) | BPM: 170]
+   9. You Don't Know - Danny Red [Pos: B3 | Key: Ab major (4B) | BPM: 130]
+  10. Knowing Version - Manasseh [Pos: B4 | Key: Ab major (4B) | BPM: 130]
+  11. Babylon Sick - Danny Red [Pos: B5 | Key: B minor (10A) | BPM: 135]
+  12. Medicine Version - Manasseh [Pos: B6 | Key: C major (8B) | BPM: 108]
 
 === History Dub -- Vibronics ===
   ID: 15888482
@@ -2092,8 +2092,8 @@
   Year: 2020
   Label: Scoops
   Art: https://i.discogs.com/LlA9TIDd1T2aAQAleRFspWkE5kKq_P8mkUkQjJNkriU/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODg4/NDgyLTE1OTk2Mzk4/ODItMjY3My5qcGVn.jpeg
-   1. History Dub - Vibronics [Key: C# minor (12A) | BPM: 140]
-   2. History Dub (Version) - Vibronics [Key: C# minor (12A) | BPM: 140]
+   1. History Dub - Vibronics [Pos: A | Key: C# minor (12A) | BPM: 140]
+   2. History Dub (Version) - Vibronics [Pos: B | Key: C# minor (12A) | BPM: 140]
 
 === R.A.S.T.A.F.A.R.I. -- Vibronics Feat. Prof. Natty ===
   ID: 16100711
@@ -2102,8 +2102,8 @@
   Year: 2020
   Label: Scoops
   Art: https://i.discogs.com/whUZHsmChzNt8wGiDqkWgYLDH822MZw8T48aulYoOOo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTAw/NzExLTE2MDM0NDMw/MjItODcwOS5qcGVn.jpeg
-   1. R.A.S.T.A.F.A.R.I. - Vibronics Feat. Professa Natti [Key: C# major (3B) | BPM: 170]
-   2. R.A.S.T.A.F.A.R.I. Version - Vibronics Feat. Professa Natti [Key: C# major (3B) | BPM: 170]
+   1. R.A.S.T.A.F.A.R.I. - Vibronics Feat. Professa Natti [Pos: A | Time: 3:34 | Key: C# major (3B) | BPM: 170]
+   2. R.A.S.T.A.F.A.R.I. Version - Vibronics Feat. Professa Natti [Pos: B | Time: 3:18 | Key: C# major (3B) | BPM: 170]
 
 === Woman On A Mission -- Vibronics ===
   ID: 11910773
