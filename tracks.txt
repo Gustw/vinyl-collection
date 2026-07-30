@@ -1550,8 +1550,8 @@
   Year: 2010
   Label: Jungle Cakes
   Art: https://i.discogs.com/raGjnn1wIF7qUvqxfCRn8Ohdc_Mfm_MFohEShUHZjhY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMjMz/OTYtMTI4MDg1NTE0/Ni5qcGVn.jpeg
-   1. Ragga Tip (Walk And Skank) - The Wildlife Collective [Key: C# major (3B) | BPM: 103]
-   2. Ragga Muffin - The Wildlife Collective [Key: F# minor (11A) | BPM: 151]
+   1. Ragga Tip (Walk And Skank) - The Wildlife Collective [Pos: A | Time: 4:47 | Key: C# major (3B) | BPM: 103]
+   2. Ragga Muffin - The Wildlife Collective [Pos: B | Time: 4:50 | Key: F# minor (11A) | BPM: 151]
 
 === I Need A Dollar / Bad Bwoy -- Wildlife ===
   ID: 2568058
@@ -1560,8 +1560,8 @@
   Year: 2010
   Label: Jungle Cakes
   Art: https://i.discogs.com/qo-10_h-afpumUvSYUnL_oW3tdKNNwxpK8W3exUAvxs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Njgw/NTgtMTMyNTU0Mjk5/Mi5qcGVn.jpeg
-   1. I Need A Dollar - The Wildlife Collective [Key: F# minor (11A) | BPM: 95]
-   2. Bad Bwoy - The Wildlife Collective [Key: G minor (6A) | BPM: 111]
+   1. I Need A Dollar - The Wildlife Collective [Pos: A | Time: 5:09 | Key: F# minor (11A) | BPM: 95]
+   2. Bad Bwoy - The Wildlife Collective [Pos: AA | Time: 5:32 | Key: G minor (6A) | BPM: 111]
 
 === Solid As A Rock -- Bone Crusher (2) vs. Sizzla ===
   ID: 4088694
@@ -1570,8 +1570,8 @@
   Year: 2005
   Label: Hot Cakes
   Art: https://i.discogs.com/iA75mKaIYzyx7MLKPOH02JW9HxSKf4rTSOpWdcizxTU/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwODg2/OTQtMTQ4ODUyMTkw/Ny0zNzU0LmpwZWc.jpeg
-   1. Solid As A Rock (Breaks Mix) - Bonecrusher vs. Sizzla [Key: A minor (8A) | BPM: 132]
-   2. Solid As A Rock (DnB Mix) - Bonecrusher vs. Sizzla [Key: A minor (8A) | BPM: 132]
+   1. Solid As A Rock (Breaks Mix) - Bonecrusher vs. Sizzla [Pos: A | Key: A minor (8A) | BPM: 132]
+   2. Solid As A Rock (DnB Mix) - Bonecrusher vs. Sizzla [Pos: AA | Key: A minor (8A) | BPM: 132]
 
 === Night Nurse / Bad Duppy Walk -- Cain.1 and DJ Wakcutt / Slynk ===
   ID: 3455382
@@ -1580,8 +1580,8 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/iA6o-dCGuS4lx2aFSsAOjHR1ZH41w7-Ia01pC0ayx84/rs:fit/g:sm/q:90/h:287/w:286/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NTUz/ODItMTMzMTEzNDQ5/Ni5qcGVn.jpeg
-   1. Night Nurse - Cain.1 and Wakcutt [Key: D major (10B) | BPM: 173]
-   2. Bad Duppy Walk - Slynk [Key: A# minor (3A) | BPM: 174]
+   1. Night Nurse - Cain.1 and Wakcutt [Pos: A | Key: D major (10B) | BPM: 173]
+   2. Bad Duppy Walk - Slynk [Pos: B | Key: A# minor (3A) | BPM: 174]
 
 === 19/2000 -- Gorillaz ===
   ID: 163317
@@ -1590,9 +1590,9 @@
   Year: 2001
   Label: Parlophone
   Art: https://i.discogs.com/jwVUW7E_2RXQLITW-mx-DZwuwduluHVmHP7agcLd3wA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MzMx/Ny0xNTQ4NzI5Nzc1/LTIzNjQuanBlZw.jpeg
-   1. 19/2000 (Original Mix) - Gorillaz [Key: G major (9B) | BPM: 90]
-   2. Left Hand Suzuki Method - Gorillaz [Key: C# major (3B) | BPM: 94]
-   3. 19-2000 (The Wiseguys House Of Wisdom Remix) - Gorillaz [Key: F minor (4A) | BPM: 130]
+   1. 19/2000 (Original Mix) - Gorillaz [Pos: A1 | Key: G major (9B) | BPM: 90]
+   2. Left Hand Suzuki Method - Gorillaz [Pos: A2 | Key: C# major (3B) | BPM: 94]
+   3. 19-2000 (The Wiseguys House Of Wisdom Remix) - Gorillaz [Pos: B | Key: F minor (4A) | BPM: 130]
 
 === Tempa -- Run Tingz Cru Ft. Blackout Ja ===
   ID: 3396287
@@ -1601,8 +1601,8 @@
   Year: 2012
   Label: Dubnest
   Art: https://i.discogs.com/Zm95QFohweXd9EFuCysaFmROJSHulgswKVG2k_ybO2A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzOTYy/ODctMTMyODc4NjM1/NS5qcGVn.jpeg
-   1. Tempa - Run Tingz Cru [Key: G major (9B) | BPM: 88]
-   2. Feel Good - Dijeyow & Jera [Key: G major (9B) | BPM: 175]
+   1. Tempa - Run Tingz Cru [Pos: A | Key: G major (9B) | BPM: 88]
+   2. Feel Good - Dijeyow & Jera [Pos: B | Key: G major (9B) | BPM: 175]
 
 === Worries Inna Dance -- Serial Killaz ===
   ID: 2331749
@@ -1611,8 +1611,8 @@
   Year: 2010
   Label: Killa Dubz
   Art: https://i.discogs.com/apzVQ0xQhAJ2Z9vo2B7y-JRV-u9BgG7-JUuEUP071qk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzE3/NDktMTI3NzgwMjU2/Mi5qcGVn.jpeg
-   1. Worries Inna Dance (Revival Mix) - Serial Killaz [Key: C# major (3B) | BPM: 100]
-   2. Worries Inna Dance (Rockers Mix) - Serial Killaz [Key: D minor (7A) | BPM: 112]
+   1. Worries Inna Dance (Revival Mix) - Serial Killaz [Pos: A | Key: C# major (3B) | BPM: 100]
+   2. Worries Inna Dance (Rockers Mix) - Serial Killaz [Pos: AA | Key: D minor (7A) | BPM: 112]
 
 === Bunn The Sensi (Remixes) -- Top Cat ===
   ID: 1683569
@@ -1621,8 +1621,8 @@
   Year: 2009
   Label: Rude Bwoy Plastic
   Art: https://i.discogs.com/b18LSLXapNXS9IhPaPfrcJy4iCnBE_QnL92wHqvJzUM/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODM1/NjktMTI1OTQzNTA2/MC5qcGVn.jpeg
-   1. Bunn The Sensi (Serial Killaz Remix) - Top Cat [Key: C# major (3B) | BPM: 176]
-   2. Bunn The Sensi (Heretic Remix) - Top Cat [Key: Ab major (4B) | BPM: 140]
+   1. Bunn The Sensi (Serial Killaz Remix) - Top Cat [Pos: A | Key: C# major (3B) | BPM: 176]
+   2. Bunn The Sensi (Heretic Remix) - Top Cat [Pos: AA | Key: Ab major (4B) | BPM: 140]
 
 === Born Inna Babylon (The Remixes) -- YT ===
   ID: 2648478
@@ -1631,8 +1631,8 @@
   Year: 2010
   Label: Run Tingz Recordings
   Art: https://i.discogs.com/c0BFIpMIQNrVXXyoTta6l12iCPpiC35vKLI8T1YkCHc/rs:fit/g:sm/q:90/h:396/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NDg0/NzgtMTM2MzAyNTg1/NS02MzgwLmpwZWc.jpeg
-   1. Born Inna Babylon (Run Tingz Remix) - YT [Key: E minor (9A) | BPM: 175]
-   2. Born Inna Babylon (Chopstick Remix) - YT [Key: E minor (9A) | BPM: 175]
+   1. Born Inna Babylon (Run Tingz Remix) - YT [Pos: A1 | Key: E minor (9A) | BPM: 175]
+   2. Born Inna Babylon (Chopstick Remix) - YT [Pos: AA | Key: E minor (9A) | BPM: 175]
 
 === Raggatek Power 06 -- Guigoo / Vandal ===
   ID: 11597948
@@ -1641,9 +1641,9 @@
   Year: 2018
   Label: Raggatek Power
   Art: https://i.discogs.com/NBUOxfO5Myokej3OukOv2r6ikQ9E6JddgWmrVutCPtU/rs:fit/g:sm/q:90/h:300/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTk3/OTQ4LTE1NzUzMTY2/ODMtNzYzOS5qcGVn.jpeg
-   1. Bongotek - Guigoo [Key: F minor (4A) | BPM: 122]
-   2. The Youth Of Today - Vandal [Key: A# minor (3A) | BPM: 190]
-   3. Sensitek - Guigoo [Key: D major (10B) | BPM: 127]
+   1. Bongotek - Guigoo [Pos: AA | Time: 7:04 | Key: F minor (4A) | BPM: 122]
+   2. The Youth Of Today - Vandal [Pos: B1 | Time: 3:49 | Key: A# minor (3A) | BPM: 190]
+   3. Sensitek - Guigoo [Pos: B2 | Time: 4:01 | Key: D major (10B) | BPM: 127]
 
 === Melting Pot 17 Ragga Jungle Series Vol. 3 -- Mooncat (3), Fak Scratch, Kursiva ===
   ID: 15948164
