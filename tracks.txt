@@ -3924,22 +3924,22 @@
   Year: 2019
   Label: Mania Dub
   Art: https://i.discogs.com/tWqjEARm0834shPBfY2ERYom-kdFTCuRkueGi2WxBkU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzI3/NjgxLTE1ODA5Mjg1/NzItMzQ0MS5qcGVn.jpeg
-   1. Rastaman's Story - Vibronics [Key: Bb major (6B) | BPM: 139]
-   2. Dub Advance - Vibronics [Key: G major (9B) | BPM: 125]
-   3. Jah Music - Vibronics [Key: E minor (9A) | BPM: 125]
-   4. Jah Dub - Vibronics [Key: B minor (10A) | BPM: 125]
-   5. Samsara - Vibronics [Key: C# major (3B) | BPM: 126]
-   6. Vintage Dub - Vibronics [Key: A major (11B) | BPM: 77]
-   7. Positive Direction - Vibronics [Key: G# minor (1A) | BPM: 77]
-   8. Positive Dub - Vibronics [Key: A major (11B) | BPM: 154]
-   9. Beat Down Babylon - Vibronics [Key: E major (12B) | BPM: 134]
-  10. Dub Crisis - Vibronics [Key: B minor (10A) | BPM: 116]
-  11. Kali Mountain - Vibronics [Key: A minor (8A) | BPM: 138]
-  12. Rosetta Stone - Vibronics [Key: A# minor (3A) | BPM: 133]
-  13. Congo Natty - Vibronics [Key: A minor (8A) | BPM: 131]
-  14. On Jah Side - Vibronics [Key: A minor (8A) | BPM: 135]
-  15. On Jah Dub - Vibronics [Key: C major (8B) | BPM: 135]
-  16. Mother Earth - Vibronics [Key: B minor (10A) | BPM: 125]
+   1. Rastaman's Story - Vibronics [Pos: A1 | Time: 5:20 | Key: Bb major (6B) | BPM: 139]
+   2. Dub Advance - Vibronics [Pos: A2 | Time: 4:01 | Key: G major (9B) | BPM: 125]
+   3. Jah Music - Vibronics [Pos: A3 | Time: 3:40 | Key: E minor (9A) | BPM: 125]
+   4. Jah Dub - Vibronics [Pos: A4 | Time: 3:39 | Key: B minor (10A) | BPM: 125]
+   5. Samsara - Vibronics [Pos: B1 | Time: 4:12 | Key: C# major (3B) | BPM: 126]
+   6. Vintage Dub - Vibronics [Pos: B2 | Time: 4:16 | Key: A major (11B) | BPM: 77]
+   7. Positive Direction - Vibronics [Pos: B3 | Time: 3:27 | Key: G# minor (1A) | BPM: 77]
+   8. Positive Dub - Vibronics [Pos: B4 | Time: 3:28 | Key: A major (11B) | BPM: 154]
+   9. Beat Down Babylon - Vibronics [Pos: C1 | Time: 4:50 | Key: E major (12B) | BPM: 134]
+  10. Dub Crisis - Vibronics [Pos: C2 | Time: 4:07 | Key: B minor (10A) | BPM: 116]
+  11. Kali Mountain - Vibronics [Pos: C3 | Time: 4:58 | Key: A minor (8A) | BPM: 138]
+  12. Rosetta Stone - Vibronics [Pos: C4 | Time: 5:08 | Key: A# minor (3A) | BPM: 133]
+  13. Congo Natty - Vibronics [Pos: D1 | Time: 4:18 | Key: A minor (8A) | BPM: 131]
+  14. On Jah Side - Vibronics [Pos: D2 | Time: 3:20 | Key: A minor (8A) | BPM: 135]
+  15. On Jah Dub - Vibronics [Pos: D3 | Time: 2:57 | Key: C major (8B) | BPM: 135]
+  16. Mother Earth - Vibronics [Pos: D4 | Time: 4:49 | Key: B minor (10A) | BPM: 125]
 
 === Rasta Mission / Animal Rights -- Tenastelin & King Alpha ===
   ID: 11220825
@@ -3948,12 +3948,12 @@
   Year: 2017
   Label: Akashic Records
   Art: https://i.discogs.com/Ph9152mVPyYD-dKXRhFaG-ryiPuaKO0ZJVGfN_KXl5s/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjIw/ODI1LTE1MTIzNzk0/NDUtODU5MS5wbmc.jpeg
-   1. Rasta Mission - Tenastelin & King Alpha [Key: A minor (8A) | BPM: 144]
-   2. Rasta Mission (Dub 1) - Tenastelin & King Alpha [Key: A minor (8A) | BPM: 144]
-   3. Rasta Mission (Dub 2) - Tenastelin & King Alpha [Key: D major (10B) | BPM: 144]
-   4. Animal Rights - Tenastelin & King Alpha [Key: Ab major (4B) | BPM: 144]
-   5. Animal Rights (Dub 1) - Tenastelin & King Alpha [Key: A minor (8A) | BPM: 144]
-   6. Animal Rights (Dub 2) - Tenastelin & King Alpha [Key: A minor (8A) | BPM: 144]
+   1. Rasta Mission - Tenastelin & King Alpha [Pos: A1 | Key: A minor (8A) | BPM: 144]
+   2. Rasta Mission (Dub 1) - Tenastelin & King Alpha [Pos: A2 | Key: A minor (8A) | BPM: 144]
+   3. Rasta Mission (Dub 2) - Tenastelin & King Alpha [Pos: A3 | Key: D major (10B) | BPM: 144]
+   4. Animal Rights - Tenastelin & King Alpha [Pos: B1 | Key: Ab major (4B) | BPM: 144]
+   5. Animal Rights (Dub 1) - Tenastelin & King Alpha [Pos: B2 | Key: A minor (8A) | BPM: 144]
+   6. Animal Rights (Dub 2) - Tenastelin & King Alpha [Pos: B3 | Key: A minor (8A) | BPM: 144]
 
 === Freedom -- Irie Ilodica ===
   ID: 15683011
@@ -3962,25 +3962,25 @@
   Year: 2020
   Label: Irie-I Productions
   Art: https://i.discogs.com/cHMJbmA9KEaWCuQ9lmu7ohHNE5NiBE7RC2slFqbk-JE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Njgz/MDExLTE2NjkzNTU4/ODQtNjI4Ni5qcGVn.jpeg
-   1. Can't School Me (Melodica Cut) - Irie Ilodica [Key: G# minor (1A) | BPM: 138]
-   2. Can't School Me Dub - Irie Ilodica [Key: C# minor (12A) | BPM: 110]
-   3. Don't Judge Verse 1 - Irie Ilodica [Key: E minor (9A) | BPM: 156]
-   4. Don't Judge Verse 3 - Irie Ilodica [Key: B minor (10A) | BPM: 144]
-   5. Save The Tree Verse 1 - Irie Ilodica [Key: A major (11B) | BPM: 120]
-   6. Save The Tree Verse 3 - Irie Ilodica [Key: D# minor (2A) | BPM: 89]
-   7. Blazin Verse 1 - Irie Ilodica [Key: B minor (10A) | BPM: 126]
-   8. Blazin Verse 3 - Irie Ilodica [Key: B minor (10A) | BPM: 126]
-   9. Dreadwise Verse 1 - Irie Ilodica [Key: C major (8B) | BPM: 92]
-  10. Dreadwise Verse 5 - Irie Ilodica [Key: B minor (10A) | BPM: 125]
-  11. Mystical Journey - Jah Works Ft. Irie Ilodica [Key: B minor (10A) | BPM: 128]
-  12. Journey In Dub - Jah Works Ft. Irie Ilodica [Key: C# minor (12A) | BPM: 110]
-  13. I N I (Extended Mix) - Echo Vault & Jah Timothy [Key: D major (10B) | BPM: 128]
-  14. Hungry Lion (Extended Mix) - Forward Fever Ft Jah Timothy & Cyndica [Key: A# minor (3A) | BPM: 126]
-  15. Self Confidence - Jah Embassy Players Ft Jah Timothy [Key: D# minor (2A) | BPM: 125]
-  16. Self Confidub - Jah Embassy Players Ft Jah Timothy [Key: D# minor (2A) | BPM: 125]
-  17. Tim's Piano - Ionyouth Ft Jah Timothy [Key: F major (7B) | BPM: 141]
-  18. Verse 2 - Ionyouth Ft Jah Timothy [Key: A major (11B) | BPM: 154]
-  19. Dreadical Dance (Extended Mix) - Dubtown Abbey Ft Irie ilodica [Key: C major (8B) | BPM: 132]
+   1. Can't School Me (Melodica Cut) - Irie Ilodica [Pos: A1 | Key: G# minor (1A) | BPM: 138]
+   2. Can't School Me Dub - Irie Ilodica [Pos: A2 | Key: C# minor (12A) | BPM: 110]
+   3. Don't Judge Verse 1 - Irie Ilodica [Pos: A3 | Key: E minor (9A) | BPM: 156]
+   4. Don't Judge Verse 3 - Irie Ilodica [Pos: A4 | Key: B minor (10A) | BPM: 144]
+   5. Save The Tree Verse 1 - Irie Ilodica [Pos: A5 | Key: A major (11B) | BPM: 120]
+   6. Save The Tree Verse 3 - Irie Ilodica [Pos: B1 | Key: D# minor (2A) | BPM: 89]
+   7. Blazin Verse 1 - Irie Ilodica [Pos: B2 | Key: B minor (10A) | BPM: 126]
+   8. Blazin Verse 3 - Irie Ilodica [Pos: B3 | Key: B minor (10A) | BPM: 126]
+   9. Dreadwise Verse 1 - Irie Ilodica [Pos: B4 | Key: C major (8B) | BPM: 92]
+  10. Dreadwise Verse 5 - Irie Ilodica [Pos: B5 | Key: B minor (10A) | BPM: 125]
+  11. Mystical Journey - Jah Works Ft. Irie Ilodica [Pos: C1 | Key: B minor (10A) | BPM: 128]
+  12. Journey In Dub - Jah Works Ft. Irie Ilodica [Pos: C2 | Key: C# minor (12A) | BPM: 110]
+  13. I N I (Extended Mix) - Echo Vault & Jah Timothy [Pos: C3 | Key: D major (10B) | BPM: 128]
+  14. Hungry Lion (Extended Mix) - Forward Fever Ft Jah Timothy & Cyndica [Pos: C4 | Key: A# minor (3A) | BPM: 126]
+  15. Self Confidence - Jah Embassy Players Ft Jah Timothy [Pos: D1 | Key: D# minor (2A) | BPM: 125]
+  16. Self Confidub - Jah Embassy Players Ft Jah Timothy [Pos: D2 | Key: D# minor (2A) | BPM: 125]
+  17. Tim's Piano - Ionyouth Ft Jah Timothy [Pos: D3 | Key: F major (7B) | BPM: 141]
+  18. Verse 2 - Ionyouth Ft Jah Timothy [Pos: D4 | Key: A major (11B) | BPM: 154]
+  19. Dreadical Dance (Extended Mix) - Dubtown Abbey Ft Irie ilodica [Pos: D5 | Key: C major (8B) | BPM: 132]
 
 === Book Of Dub Series Chapter 2 of 3 -- Indica Dubs Meets Shiloh Ites ===
   ID: 11757970
@@ -3989,10 +3989,10 @@
   Year: 2018
   Label: Indica Dubs
   Art: https://i.discogs.com/Xi9mnVJCi1MYYaWvtds8c1G6-h7puE4JfCn2XNSdVf4/rs:fit/g:sm/q:90/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzU3/OTcwLTE1MjE5NjY0/NTItOTY3OC5qcGVn.jpeg
-   1. A New Flower - Indica Dubs Meets Shiloh Ites [Key: B minor (10A) | BPM: 125]
-   2. A New Flower (Alternate Dubplate Mix) - Indica Dubs Meets Shiloh Ites [Key: C# minor (12A) | BPM: 110]
-   3. A New Flower (Dub Mix 3) - Indica Dubs Meets Shiloh Ites [Key: G# minor (1A) | BPM: 128]
-   4. A New Flower (Dub Mix 4) - Indica Dubs Meets Shiloh Ites [Key: G# minor (1A) | BPM: 128]
+   1. A New Flower - Indica Dubs Meets Shiloh Ites [Pos: A1 | Key: B minor (10A) | BPM: 125]
+   2. A New Flower (Alternate Dubplate Mix) - Indica Dubs Meets Shiloh Ites [Pos: A2 | Key: C# minor (12A) | BPM: 110]
+   3. A New Flower (Dub Mix 3) - Indica Dubs Meets Shiloh Ites [Pos: B1 | Key: G# minor (1A) | BPM: 128]
+   4. A New Flower (Dub Mix 4) - Indica Dubs Meets Shiloh Ites [Pos: B2 | Key: G# minor (1A) | BPM: 128]
 
 === The Sacred Art Of Dub Vol 2 -- Alpha & Omega meets The Disciples ===
   ID: 14616880
@@ -4001,14 +4001,14 @@
   Year: 2020
   Label: Mania Dub
   Art: https://i.discogs.com/150CS0I-ElVqDc60vFDkKS5tS_muvRStjvfqBu9uxLk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjE2/ODgwLTE1OTkxMzI5/NTktMjgzMy5qcGVn.jpeg
-   1. Many Stories To Be Told - Alpha & Omega [Key: C# minor (12A) | BPM: 121]
-   2. Book Of Dub - Alpha & Omega [Key: C# minor (12A) | BPM: 121]
-   3. Poor Man's Prayer - The Disciples [Key: G major (9B) | BPM: 140]
-   4. Poor Man's Dub - The Disciples [Key: G major (9B) | BPM: 140]
-   5. The Oracle - Alpha & Omega [Key: C# minor (12A) | BPM: 119]
-   6. The Tabernacle - Alpha & Omega [Key: C# minor (12A) | BPM: 119]
-   7. Roaring Lion - The Disciples [Key: Eb major (5B) | BPM: 143]
-   8. Jah Is Calling - Alpha & Omega vs The Disciples [Key: B minor (10A) | BPM: 131]
+   1. Many Stories To Be Told - Alpha & Omega [Pos: A1 | Time: 4:22 | Key: C# minor (12A) | BPM: 121]
+   2. Book Of Dub - Alpha & Omega [Pos: A2 | Time: 4:18 | Key: C# minor (12A) | BPM: 121]
+   3. Poor Man's Prayer - The Disciples [Pos: A3 | Time: 4:09 | Key: G major (9B) | BPM: 140]
+   4. Poor Man's Dub - The Disciples [Pos: A4 | Time: 4:14 | Key: G major (9B) | BPM: 140]
+   5. The Oracle - Alpha & Omega [Pos: B1 | Time: 4:24 | Key: C# minor (12A) | BPM: 119]
+   6. The Tabernacle - Alpha & Omega [Pos: B2 | Time: 4:25 | Key: C# minor (12A) | BPM: 119]
+   7. Roaring Lion - The Disciples [Pos: B3 | Time: 4:23 | Key: Eb major (5B) | BPM: 143]
+   8. Jah Is Calling - Alpha & Omega vs The Disciples [Pos: B4 | Time: 4:04 | Key: B minor (10A) | BPM: 131]
 
 === One By One -- Alpha & Omega ===
   ID: 11344344
@@ -4017,16 +4017,16 @@
   Year: 2017
   Label: Steppas
   Art: https://i.discogs.com/fmg_evFrEl4obr-eclIrTmEMslChbQqJF0AygKHnvcs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzQ0/MzQ0LTE1MTQ2MzQ5/OTktNTcwOC5qcGVn.jpeg
-   1. Poormans Style - Alpha & Omega [Key: C# major (3B) | BPM: 122]
-   2. Walk Like A Warrior - Alpha & Omega [Key: Eb major (5B) | BPM: 148]
-   3. Rough And Tough - Alpha & Omega [Key: C# major (3B) | BPM: 125]
-   4. Creation - Alpha & Omega [Key: F# major (2B) | BPM: 102]
-   5. Love Rastafari - Alpha & Omega [Key: F# minor (11A) | BPM: 130]
-   6. Poormans Dub - Alpha & Omega [Key: G major (9B) | BPM: 162]
-   7. Dub Like A Warrior - Alpha & Omega [Key: G major (9B) | BPM: 143]
-   8. Tough Dub - Alpha & Omega [Key: C# major (3B) | BPM: 125]
-   9. Dub Creation - Alpha & Omega [Key: B minor (10A) | BPM: 121]
-  10. Love Dub - Alpha & Omega [Key: A# minor (3A) | BPM: 130]
+   1. Poormans Style - Alpha & Omega [Pos: A1 | Key: C# major (3B) | BPM: 122]
+   2. Walk Like A Warrior - Alpha & Omega [Pos: A2 | Key: Eb major (5B) | BPM: 148]
+   3. Rough And Tough - Alpha & Omega [Pos: A3 | Key: C# major (3B) | BPM: 125]
+   4. Creation - Alpha & Omega [Pos: A4 | Key: F# major (2B) | BPM: 102]
+   5. Love Rastafari - Alpha & Omega [Pos: A5 | Key: F# minor (11A) | BPM: 130]
+   6. Poormans Dub - Alpha & Omega [Pos: B1 | Key: G major (9B) | BPM: 162]
+   7. Dub Like A Warrior - Alpha & Omega [Pos: B2 | Key: G major (9B) | BPM: 143]
+   8. Tough Dub - Alpha & Omega [Pos: B3 | Key: C# major (3B) | BPM: 125]
+   9. Dub Creation - Alpha & Omega [Pos: B4 | Key: B minor (10A) | BPM: 121]
+  10. Love Dub - Alpha & Omega [Pos: B5 | Key: A# minor (3A) | BPM: 130]
 
 === King & Queen -- Alpha & Omega ===
   ID: 12601356
@@ -4035,15 +4035,15 @@
   Year: 2018
   Label: Alpha & Omega Records
   Art: https://i.discogs.com/8tjyHvZhXdzqahX1xrjPVKYDbfi-Wd2m5bDov43CvjA/rs:fit/g:sm/q:90/h:540/w:540/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjAx/MzU2LTE1MzkyNTYy/MDUtMTEyNy5qcGVn.jpeg
-   1. King And Queen - Alpha & Omega [Key: A minor (8A) | BPM: 131]
-   2. Mankind See - Alpha & Omega [Key: A major (11B) | BPM: 74]
-   3. The Lions Den - Alpha & Omega [Key: A major (11B) | BPM: 153]
-   4. The Vibration - Alpha & Omega [Key: F major (7B) | BPM: 76]
-   5. Majesty - Alpha & Omega [Key: C major (8B) | BPM: 163]
-   6. Jubilation - Alpha & Omega [Key: G major (9B) | BPM: 143]
-   7. Rasta Woman - Alpha & Omega [Key: A minor (8A) | BPM: 147]
-   8. Pure And Clean - Alpha & Omega [Key: F minor (4A) | BPM: 142]
-   9. Sharu Att Our Aunt (Beginning And End) - Alpha & Omega [Key: C# major (3B) | BPM: 122]
+   1. King And Queen - Alpha & Omega [Pos: A1 | Time: 3:26 | Key: A minor (8A) | BPM: 131]
+   2. Mankind See - Alpha & Omega [Pos: A2 | Time: 3:30 | Key: A major (11B) | BPM: 74]
+   3. The Lions Den - Alpha & Omega [Pos: A3 | Time: 3:28 | Key: A major (11B) | BPM: 153]
+   4. The Vibration - Alpha & Omega [Pos: A4 | Time: 3:24 | Key: F major (7B) | BPM: 76]
+   5. Majesty - Alpha & Omega [Pos: A5 | Time: 3:11 | Key: C major (8B) | BPM: 163]
+   6. Jubilation - Alpha & Omega [Pos: B1 | Time: 3:34 | Key: G major (9B) | BPM: 143]
+   7. Rasta Woman - Alpha & Omega [Pos: B2 | Time: 3:18 | Key: A minor (8A) | BPM: 147]
+   8. Pure And Clean - Alpha & Omega [Pos: B3 | Time: 3:30 | Key: F minor (4A) | BPM: 142]
+   9. Sharu Att Our Aunt (Beginning And End) - Alpha & Omega [Pos: B4 | Time: 4:56 | Key: C# major (3B) | BPM: 122]
 
 === 100 Years of Theremin (The Dub Chapter) -- Gaudi ===
   ID: 15729412
@@ -4052,17 +4052,17 @@
   Year: 2020
   Label: Dubmission Records
   Art: https://i.discogs.com/hRx7rZrEp9oDq8dqjd4QhVoKbxhnnoHTPQR21aywFhA/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NzI5/NDEyLTE1OTY3MTU5/OTItOTYzOC5qcGVn.jpeg
-   1. Cinematic Dub - Gaudi With Mad Professor [Key: C# minor (12A) | BPM: 110]
-   2. Dub’s Nine Lives - Gaudi With Adrian Sherwood [Key: B major (1B) | BPM: 105]
-   3. Cross To Theremin - Gaudi With Dennis Bovell [Key: A# minor (3A) | BPM: 175]
-   4. Smokin Dub - Gaudi With The Scientist [Key: C# minor (12A) | BPM: 110]
-   5. Theremin Dub Mafia - Gaudi With Prince Fatty [Key: C# minor (12A) | BPM: 110]
-   6. Kumo Dub - Gaudi With Mad Professor [Key: C# minor (12A) | BPM: 110]
-   7. Dub Out Of Theremin - Gaudi With Adrian Sherwood [Key: D major (10B) | BPM: 78]
-   8. Secret Service Dub - Gaudi With Dennis Bovell [Key: B minor (10A) | BPM: 137]
-   9. Future Sound Of Theremin - Gaudi With Mad Professor [Key: G major (9B) | BPM: 110]
-  10. Butterfly Dub - Gaudi With Adrian Sherwood [Key: B major (1B) | BPM: 105]
-  11. Heying Dub - Gaudi With Dennis Bovell [Key: F minor (4A) | BPM: 155]
+   1. Cinematic Dub - Gaudi With Mad Professor [Pos: A1 | Key: C# minor (12A) | BPM: 110]
+   2. Dub’s Nine Lives - Gaudi With Adrian Sherwood [Pos: A2 | Key: B major (1B) | BPM: 105]
+   3. Cross To Theremin - Gaudi With Dennis Bovell [Pos: A3 | Key: A# minor (3A) | BPM: 175]
+   4. Smokin Dub - Gaudi With The Scientist [Pos: A4 | Key: C# minor (12A) | BPM: 110]
+   5. Theremin Dub Mafia - Gaudi With Prince Fatty [Pos: A5 | Key: C# minor (12A) | BPM: 110]
+   6. Kumo Dub - Gaudi With Mad Professor [Pos: B1 | Key: C# minor (12A) | BPM: 110]
+   7. Dub Out Of Theremin - Gaudi With Adrian Sherwood [Pos: B2 | Key: D major (10B) | BPM: 78]
+   8. Secret Service Dub - Gaudi With Dennis Bovell [Pos: B3 | Key: B minor (10A) | BPM: 137]
+   9. Future Sound Of Theremin - Gaudi With Mad Professor [Pos: B4 | Key: G major (9B) | BPM: 110]
+  10. Butterfly Dub - Gaudi With Adrian Sherwood [Pos: B5 | Key: B major (1B) | BPM: 105]
+  11. Heying Dub - Gaudi With Dennis Bovell [Pos: B6 | Key: F minor (4A) | BPM: 155]
 
 === Codex VI -- Shpongle ===
   ID: 11242859
@@ -4071,16 +4071,16 @@
   Year: 2017
   Label: Twisted Records
   Art: https://i.discogs.com/uFabeg-qqiIKinkx4rh4erV9BurkCZgj-ARWuieC6Dc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjQy/ODU5LTE1MTQ1MzM0/NzQtNDIyMi5qcGVn.jpeg
-   1. Remember The Future - Shpongle [Key: E minor (9A) | BPM: 168]
-   2. The Magumba State - Shpongle [Key: G major (9B) | BPM: 168]
-   3. Empty Branes - Shpongle [Key: F major (7B) | BPM: 155]
-   4. Are We There Yet? - Shpongle [Key: F# major (2B) | BPM: 134]
-   5. Herr Gringleflapper's Secret Stash Box - Shpongle [Key: D major (10B) | BPM: 144]
-   6. Strange Planet... - Shpongle [Key: D major (10B) | BPM: 110]
-   7. I Woke Up As A Shlummutz - Shpongle [Key: C major (8B) | BPM: 140]
-   8. A Series Of Heads - Shpongle [Key: F# major (2B) | BPM: 92]
-   9. Celestial Intoxication - Shpongle [Key: A minor (8A) | BPM: 135]
-  10. Hammock Therapy - Shpongle [Key: G major (9B) | BPM: 146]
+   1. Remember The Future - Shpongle [Pos: A1 | Time: 7:18 | Key: E minor (9A) | BPM: 168]
+   2. The Magumba State - Shpongle [Pos: A2 | Time: 9:32 | Key: G major (9B) | BPM: 168]
+   3. Empty Branes - Shpongle [Pos: B1 | Time: 10:18 | Key: F major (7B) | BPM: 155]
+   4. Are We There Yet? - Shpongle [Pos: C1 | Time: 6:12 | Key: F# major (2B) | BPM: 134]
+   5. Herr Gringleflapper's Secret Stash Box - Shpongle [Pos: C2 | Time: 9:33 | Key: D major (10B) | BPM: 144]
+   6. Strange Planet... - Shpongle [Pos: D1 | Time: 8:55 | Key: D major (10B) | BPM: 110]
+   7. I Woke Up As A Shlummutz - Shpongle [Pos: E1 | Time: 6:48 | Key: C major (8B) | BPM: 140]
+   8. A Series Of Heads - Shpongle [Pos: E2 | Time: 5:11 | Key: F# major (2B) | BPM: 92]
+   9. Celestial Intoxication - Shpongle [Pos: F1 | Time: 9:09 | Key: A minor (8A) | BPM: 135]
+  10. Hammock Therapy - Shpongle [Pos: F2 | Time: 2:15 | Key: G major (9B) | BPM: 146]
 
 === Deck Wizards - Aural Sect -- Sid Shanti ===
   ID: 215146
@@ -4089,17 +4089,17 @@
   Year: 1996
   Label: Psychic Deli
   Art: https://i.discogs.com/tR0VrxaxrYuZm9ZRO8vG9GVAiDUq4pMepxyRjhC5rOM/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNTE0/Ni0xNjczNzczOTA5/LTQ1MDQuanBlZw.jpeg
-   1. Monzoon (Edit) - Elysium [Key: E major (12B) | BPM: 69]
-   2. Joy - Endora [Key: C# major (3B) | BPM: 140]
-   3. Donovan's Brain - Nervasystem [Key: G major (9B) | BPM: 140]
-   4. CS Gas - Nüw Idol [Key: C# minor (12A) | BPM: 166]
-   5. Life Support System (Mindscape Mix) - Syb Unity Nettwerk [Key: A# minor (3A) | BPM: 98]
-   6. S.T.C. (Edit) - The Deviant [Key: D major (10B) | BPM: 128]
-   7. Semsis - Semsis [Key: A minor (8A) | BPM: 103]
-   8. Our Own Happiness - X Dream [Key: Bb major (6B) | BPM: 139]
-   9. Liquid Sky - Satori [Key: A# minor (3A) | BPM: 124]
-  10. Full On (Edit) - Etnica [Key: C# major (3B) | BPM: 160]
-  11. Insect-A-Traction - Shanti Druid [Key: B major (1B) | BPM: 140]
+   1. Monzoon (Edit) - Elysium [Pos: A1 | Time: 6:34 | Key: E major (12B) | BPM: 69]
+   2. Joy - Endora [Pos: A2 | Time: 7:04 | Key: C# major (3B) | BPM: 140]
+   3. Donovan's Brain - Nervasystem [Pos: A3 | Time: 8:21 | Key: G major (9B) | BPM: 140]
+   4. CS Gas - Nüw Idol [Pos: B1 | Time: 8:39 | Key: C# minor (12A) | BPM: 166]
+   5. Life Support System (Mindscape Mix) - Syb Unity Nettwerk [Pos: B2 | Time: 12:56 | Key: A# minor (3A) | BPM: 98]
+   6. S.T.C. (Edit) - The Deviant [Pos: C1 | Time: 6:41 | Key: D major (10B) | BPM: 128]
+   7. Semsis - Semsis [Pos: C2 | Time: 6:53 | Key: A minor (8A) | BPM: 103]
+   8. Our Own Happiness - X Dream [Pos: C3 | Time: 9:16 | Key: Bb major (6B) | BPM: 139]
+   9. Liquid Sky - Satori [Pos: D1 | Time: 6:00 | Key: A# minor (3A) | BPM: 124]
+  10. Full On (Edit) - Etnica [Pos: D2 | Time: 8:27 | Key: C# major (3B) | BPM: 160]
+  11. Insect-A-Traction - Shanti Druid [Pos: D3 | Time: 7:42 | Key: B major (1B) | BPM: 140]
 
 === A Bigger Picture -- The James Taylor Quartet ===
   ID: 14320475
