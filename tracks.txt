@@ -4622,8 +4622,8 @@
   Year: 2018
   Label: Ababajahnoi
   Art: https://i.discogs.com/nGyqRUZxa5JC9RVbTRgAUINtozC7l2ab3oQyvAJjEAU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzM2/NDc0LTE3NTA5ODA5/NDUtNTUzNC5qcGVn.jpeg
-   1. Rasta We Rasta - Danny Red [Key: B minor (10A) | BPM: 140]
-   2. Africa To Hollywood Dub - Forward Fever [Key: Eb major (5B) | BPM: 77]
+   1. Rasta We Rasta - Danny Red [Pos: A | Key: B minor (10A) | BPM: 140]
+   2. Africa To Hollywood Dub - Forward Fever [Pos: B | Key: Eb major (5B) | BPM: 77]
 
 === Victory! -- Dubkasm ===
   ID: 5101082
@@ -4632,7 +4632,7 @@
   Year: 2013
   Label: Sufferah's Choice Recordings
   Art: https://i.discogs.com/k5z_rfcDWoO3XEnA7phEHMmEzY5PLtOfhxTwXIpnnZg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxMDEw/ODItMTM4ODY1OTIz/Ni04NTY2LmpwZWc.jpeg
-   1. Victory! - Dubkasm [Key: E minor (9A) | BPM: 68]
-   2. Victory! (Verse II) - Dubkasm [Key: E minor (9A) | BPM: 68]
-   3. Victory! (Verse III) - Dubkasm [Key: E minor (9A) | BPM: 68]
-   4. Victory! (Verse IV) (Raw Piece) - Dubkasm [Key: D major (10B) | BPM: 137]
+   1. Victory! - Dubkasm [Pos: A1 | Key: E minor (9A) | BPM: 68]
+   2. Victory! (Verse II) - Dubkasm [Pos: A2 | Key: E minor (9A) | BPM: 68]
+   3. Victory! (Verse III) - Dubkasm [Pos: B1 | Key: E minor (9A) | BPM: 68]
+   4. Victory! (Verse IV) (Raw Piece) - Dubkasm [Pos: B2 | Key: D major (10B) | BPM: 137]
