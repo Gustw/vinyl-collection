@@ -209,7 +209,7 @@
   Year: 2000
   Label: Rude Bwoy Plastic
   Art: https://i.discogs.com/osAvtKdXWHrGCLxo9UHa04z_FB3VI8g4jApC3q73R6c/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzM1/Ni0xMDk4ODEzNDkx/LmpwZw.jpeg
-  (no tracks found)
+   1. Bunn The Sensi - DJ Heretic Feat. Top Cat [Pos: A]
 
 === Dub Plate Spilling / Kill Dem Sound -- Krak In Dub ===
   ID: 6368054
@@ -218,7 +218,9 @@
   Year: 2014
   Label: Krak In Dub Ltd
   Art: https://i.discogs.com/ULDg61BcAk29qTimxGc5zwYhHNld_w9rhMxe6h3z8U4/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNjgw/NTQtMTQxNzUzNzM1/MC02NzU0LmpwZWc.jpeg
-  (no tracks found)
+   1. Dub Plate Spilling - Krak In Dub Rmx - Krak In Dub [Pos: A1]
+   2. Dub Plate Spilling - Krak In Dub Riddim - Krak In Dub [Pos: A2]
+   3. Kill Dem Sound - Lutan Fyah & Spectacular [Pos: B | Key: G major (9B) | BPM: 96]
 
 === Dub War -- Krak In Dub / LiquidWicked ===
   ID: 1366729
@@ -227,7 +229,8 @@
   Year: 2008
   Label: Znootpoch
   Art: https://i.discogs.com/rGxA6vBayx3a9Byyi7jwRtT3hSr-tKMABnrfTvgaUf8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjY3/MjktMTMyNzA1NTM2/My5qcGVn.jpeg
-  (no tracks found)
+   1. Dub War Rmx - Krak In Dub [Pos: A]
+   2. Dub War Version - LiquidWicked [Pos: B]
 
 === Melting Pot Ragga Jungle Series Volume 2 -- Mooncat ===
   ID: 1820372
@@ -236,7 +239,8 @@
   Year: 2009
   Label: Melting Pot
   Art: https://i.discogs.com/D2Ibr7KPNKOKBctNck0vrceOpWzh5xDq8ZzazmH-tF4/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MjAz/NzItMTI0NTU0MDk2/OS5qcGVn.jpeg
-  (no tracks found)
+   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: Ab major (4B) | BPM: 174]
+   2. Strictly Roots - Mooncat [Pos: B | Key: G major (9B) | BPM: 174]
 
 === One Of These Days / River Jordan -- Mutt & Tedder / Deeper Connection & Scott Allen ===
   ID: 4162601
@@ -245,7 +249,8 @@
   Year: 2012
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/jsw3stLlGS4bZI-K66srLzg7IrQ8989O6-TLFsskxFg/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjI2/MDEtMTM3ODkwNjE0/OS02ODQ5LmpwZWc.jpeg
-  (no tracks found)
+   1. One Of These Days - Mutt & Tedder [Pos: A | Key: D major (10B) | BPM: 174]
+   2. River Jordan - Deeper Connection & Scott Allen [Pos: AA | Key: G# minor (1A) | BPM: 176]
 
 === Live Up EP -- Mystic Pulse ===
   ID: 7528292
@@ -254,7 +259,8 @@
   Year: 2015
   Label: Rasta Vibez
   Art: https://i.discogs.com/1DsyZsOroxvh7Bol1ebRaZOLYJAJ3fooGz37JdRpMdQ/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1Mjgy/OTItMTQ0MzM1NDM0/Ni00OTg1LmpwZWc.jpeg
-  (no tracks found)
+   1. Live Up - Mystic Pulse [Pos: A | Key: D major (10B) | BPM: 174]
+   2. D&B Selecta - Mystic Pulse [Pos: B | Key: F# minor (11A) | BPM: 174]
 
 === Junglist (Serial Killaz Remixes) -- Rebel MC feat Peter Bouncer ===
   ID: 3085641
@@ -263,7 +269,8 @@
   Year: 2006
   Label: Congo Natty
   Art: https://i.discogs.com/xpcSqU3oTKiV_OVXmUw016YPHgtBgzQJjQV9Wpkvkbc/rs:fit/g:sm/q:90/h:580/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwODU2/NDEtMTU0MTQ1MDQz/OS0yMTE2LmpwZWc.jpeg
-  (no tracks found)
+   1. Junglist (Serial Killaz Remix) - Rebel MC feat Peter Bouncer [Pos: A]
+   2. Junglist (Serial Killaz VIP Mix) - Rebel MC feat Peter Bouncer [Pos: AA]
 
 === Barriobeat Remixes Vol. 1 (World Beat Sound System) -- Rude Hi-Fi, Barriobeaterz ===
   ID: 8161551
@@ -272,7 +279,8 @@
   Year: 2015
   Label: Not On Label
   Art: https://i.discogs.com/MZRDFJMPAC41ltveUTjKxPoNVMKrEgeHnOjw11A9-zU/rs:fit/g:sm/q:90/h:206/w:206/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxNjE1/NTEtMTQ1NjI4Mjg5/OC04MjQ0LmpwZWc.jpeg
-  (no tracks found)
+   1. King Of Bongo (Drum'n'Bass Rude Mix) - Rude Hi-Fi, Barriobeaterz [Pos: A]
+   2. Compay Rude Plays Funk Cubano - Rude Hi-Fi, Barriobeaterz [Pos: B]
 
 === We Nah Run / Toonz Ragga -- Scott Allen / Joakuim ===
   ID: 4569138
@@ -281,7 +289,8 @@
   Year: 2013
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/Et5RogZBm5DOAPAplnKG92WHwgT9S_WVnkXfgi_oFr4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Njkx/MzgtMTUwOTUxODc5/Ny04Mjc1LmpwZWc.jpeg
-  (no tracks found)
+   1. We Nah Run - Scott Allen [Pos: A | Key: E minor (9A) | BPM: 173]
+   2. Toonz Ragga - Joakuim [Pos: AA]
 
 === Love Is The Key / Slumbery -- Scott Allen & Deeper Connection / Incident ===
   ID: 4685149
@@ -290,7 +299,8 @@
   Year: 2013
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/_D9LhcKcegd-ueq-xr0glz_6c3Sf6KgCaBZhOl0Z9SQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODUx/NDktMTUwOTUxODgy/NS0zNjAxLmpwZWc.jpeg
-  (no tracks found)
+   1. Love Is The Key - Scott Allen & Deeper Connection [Pos: A | Key: E minor (9A) | BPM: 173]
+   2. Slumbery - Incident [Pos: AA | Key: C major (8B) | BPM: 88]
 
 === Babylon EP -- Scott Allen, Pixel ===
   ID: 5699595
