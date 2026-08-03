@@ -3571,10 +3571,10 @@
   Year: 2017
   Label: Suntrip Records
   Art: https://i.discogs.com/K2sMKABiZcmt9IQhlwIF3ozvf-zKYV0bCoZ2_162zAQ/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTE5/NTgxLTE1MDY1NDA0/MjEtNjU4MC5qcGVn.jpeg
-   1. Filtertraces (Astral Projection Remix) - Filteria [Key: A# minor (3A) | BPM: 143]
-   2. Let There Be Light (Filteria Remix) - Astral Projection [Key: C# major (3B) | BPM: 144]
-   3. Enlightened Evolution (Morphic Resonance Remix) - Astral Projection [Key: C# major (3B) | BPM: 144]
-   4. Another World (2017 Remix) - Astral Projection [Key: A major (11B) | BPM: 143]
+   1. Filtertraces (Astral Projection Remix) - Filteria [Pos: A1 | Time: 10:09 | Key: A# minor (3A) | BPM: 143]
+   2. Let There Be Light (Filteria Remix) - Astral Projection [Pos: A2 | Time: 8:55 | Key: C# major (3B) | BPM: 144]
+   3. Enlightened Evolution (Morphic Resonance Remix) - Astral Projection [Pos: B1 | Time: 10:21 | Key: C# major (3B) | BPM: 144]
+   4. Another World (2017 Remix) - Astral Projection [Pos: B2 | Time: 9:22 | Key: A major (11B) | BPM: 143]
 
 === 10 Years Of Global Aura -- Various ===
   ID: 15161734
@@ -3583,12 +3583,12 @@
   Year: 2020
   Label: Global Aura Records
   Art: https://i.discogs.com/xtRZIqjnyaV3upC8AluBQE5F5YJDew9oLlLinZ5pSKc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTYx/NzM0LTE1ODc0ODcw/ODYtNTA5NC5qcGVn.jpeg
-   1. Dog Days Bliss - Filteria [Key: Ab major (4B) | BPM: 144]
-   2. Voyager - Triquetra [Key: D minor (7A) | BPM: 148]
-   3. 1001 Nights - Agneton [Key: D major (10B) | BPM: 152]
-   4. Dream Shaper - Psilocybe Project [Key: A major (11B) | BPM: 145]
-   5. Rise Above This - DJ Jape du Marie & Jack Wax [Key: C minor (5A) | BPM: 126]
-   6. Supernatural - Shivax [Key: C# major (3B) | BPM: 145]
+   1. Dog Days Bliss - Filteria [Pos: A1 | Time: 8:53 | Key: Ab major (4B) | BPM: 144]
+   2. Voyager - Triquetra [Pos: A2 | Time: 6:22 | Key: D minor (7A) | BPM: 148]
+   3. 1001 Nights - Agneton [Pos: A3 | Time: 7:46 | Key: D major (10B) | BPM: 152]
+   4. Dream Shaper - Psilocybe Project [Pos: B1 | Time: 6:57 | Key: A major (11B) | BPM: 145]
+   5. Rise Above This - DJ Jape du Marie & Jack Wax [Pos: B2 | Time: 7:44 | Key: C minor (5A) | BPM: 126]
+   6. Supernatural - Shivax [Pos: B3 | Time: 7:12 | Key: C# major (3B) | BPM: 145]
 
 === Gamma Draconis -- Various ===
   ID: 16094486
@@ -3597,14 +3597,14 @@
   Year: 2020
   Label: Suntrip Records
   Art: https://i.discogs.com/rWfHGF_MB08Y-jJ8lzVvzjxJRXUCLd3AVIdeMDrEjZY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDk0/NDg2LTE2MDQyMzI2/ODYtNjIzOC5qcGVn.jpeg
-   1. Dying Sun - Xenomorph [Key: B minor (10A) | BPM: 138]
-   2. Shinechaser - Battle Of The Future Buddhas [Key: G major (9B) | BPM: 145]
-   3. Expedition To Earth - Shakta [Key: F# major (2B) | BPM: 146]
-   4. Dominion - Astral Projection [Key: F major (7B) | BPM: 146]
-   5. Global Light (Retro Version) - MFG [Key: A minor (8A) | BPM: 140]
-   6. Emotionally Charged Memories - Oforia [Key: D major (10B) | BPM: 138]
-   7. Mentalogue - Roy Sasson [Key: C# major (3B) | BPM: 140]
-   8. Eikon - RA [Key: D minor (7A) | BPM: 80]
+   1. Dying Sun - Xenomorph [Pos: A1 | Time: 8:01 | Key: B minor (10A) | BPM: 138]
+   2. Shinechaser - Battle Of The Future Buddhas [Pos: A2 | Time: 8:37 | Key: G major (9B) | BPM: 145]
+   3. Expedition To Earth - Shakta [Pos: B1 | Time: 6:12 | Key: F# major (2B) | BPM: 146]
+   4. Dominion - Astral Projection [Pos: B2 | Time: 8:45 | Key: F major (7B) | BPM: 146]
+   5. Global Light (Retro Version) - MFG [Pos: C1 | Time: 8:12 | Key: A minor (8A) | BPM: 140]
+   6. Emotionally Charged Memories - Oforia [Pos: C2 | Time: 8:02 | Key: D major (10B) | BPM: 138]
+   7. Mentalogue - Roy Sasson [Pos: D1 | Time: 7:29 | Key: C# major (3B) | BPM: 140]
+   8. Eikon - RA [Pos: D2 | Time: 11:48 | Key: D minor (7A) | BPM: 80]
 
 === Let's Turn On -- Doof ===
   ID: 61361
@@ -3613,14 +3613,14 @@
   Year: 1996
   Label: TIP Records
   Art: https://i.discogs.com/Z-wHuj5Obperjf1f90BP68IsZgluU7EJYA7KchXOkO0/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMzYx/LTEyMDEzNzYwNjMu/anBlZw.jpeg
-   1. Let's Turn On - Doof [Key: C# major (3B) | BPM: 142]
-   2. Angelina - Doof [Key: F minor (4A) | BPM: 145]
-   3. Youth Of The Galaxy (Final Demand Mix) - Doof [Key: B minor (10A) | BPM: 145]
-   4. Double Dragons - Doof [Key: E major (12B) | BPM: 140]
-   5. Sunshrine - Doof [Key: A# minor (3A) | BPM: 145]
-   6. Secret Sun (Sunbeam Mix) - Doof [Key: B minor (10A) | BPM: 150]
-   7. Mars Needs Women (96 Mix) - Doof [Key: G major (9B) | BPM: 145]
-   8. Destination Bom - Doof [Key: B major (1B) | BPM: 148]
+   1. Let's Turn On - Doof [Pos: A1 | Time: 7:10 | Key: C# major (3B) | BPM: 142]
+   2. Angelina - Doof [Pos: A2 | Time: 8:00 | Key: F minor (4A) | BPM: 145]
+   3. Youth Of The Galaxy (Final Demand Mix) - Doof [Pos: B1 | Time: 7:59 | Key: B minor (10A) | BPM: 145]
+   4. Double Dragons - Doof [Pos: B2 | Time: 7:36 | Key: E major (12B) | BPM: 140]
+   5. Sunshrine - Doof [Pos: C1 | Time: 7:45 | Key: A# minor (3A) | BPM: 145]
+   6. Secret Sun (Sunbeam Mix) - Doof [Pos: C2 | Time: 7:29 | Key: B minor (10A) | BPM: 150]
+   7. Mars Needs Women (96 Mix) - Doof [Pos: D1 | Time: 6:13 | Key: G major (9B) | BPM: 145]
+   8. Destination Bom - Doof [Pos: D2 | Time: 8:21 | Key: B major (1B) | BPM: 148]
 
 === Moment Of Truth -- Man With No Name ===
   ID: 138426
@@ -3629,14 +3629,14 @@
   Year: 1996
   Label: Concept In Dance
   Art: https://i.discogs.com/nBQskFWYB2KoU8cCVYeNH8FdQxf2j9yZZ1HLKe425J4/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODQy/Ni0xMjAwNjY1ODQ0/LmpwZWc.jpeg
-   1. Moment Of Truth - Man With No Name [Key: G major (9B) | BPM: 140]
-   2. Evolution - Man With No Name [Key: D major (10B) | BPM: 134]
-   3. Low Commotion - Man With No Name [Key: F# major (2B) | BPM: 138]
-   4. Subterfuge - Man With No Name [Key: F# minor (11A) | BPM: 145]
-   5. Dawn Chorus - Man With No Name [Key: C# major (3B) | BPM: 135]
-   6. Floor-Essence (Dayglo Mix) - Man With No Name [Key: C major (8B) | BPM: 134]
-   7. Sugar Rush (Refined Mix) - Man With No Name [Key: A minor (8A) | BPM: 140]
-   8. Cosmic Echoes - Man With No Name [Key: A# minor (3A) | BPM: 136]
+   1. Moment Of Truth - Man With No Name [Pos: A1 | Time: 6:56 | Key: G major (9B) | BPM: 140]
+   2. Evolution - Man With No Name [Pos: A2 | Time: 6:47 | Key: D major (10B) | BPM: 134]
+   3. Low Commotion - Man With No Name [Pos: B1 | Time: 6:52 | Key: F# major (2B) | BPM: 138]
+   4. Subterfuge - Man With No Name [Pos: B2 | Time: 5:52 | Key: F# minor (11A) | BPM: 145]
+   5. Dawn Chorus - Man With No Name [Pos: C1 | Time: 6:30 | Key: C# major (3B) | BPM: 135]
+   6. Floor-Essence (Dayglo Mix) - Man With No Name [Pos: C2 | Time: 6:06 | Key: C major (8B) | BPM: 134]
+   7. Sugar Rush (Refined Mix) - Man With No Name [Pos: D1 | Time: 6:08 | Key: A minor (8A) | BPM: 140]
+   8. Cosmic Echoes - Man With No Name [Pos: D2 | Time: 6:45 | Key: A# minor (3A) | BPM: 136]
 
 === Canopy -- Spoonbill ===
   ID: 14531046
@@ -3645,14 +3645,14 @@
   Year: 2019
   Label: Omelette
   Art: https://i.discogs.com/8SYZN2jisYPdJImLfFQEih6Mqhb5GsYz490X2roQTKM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTMx/MDQ2LTE2ODAwMjA5/NjctMTgzMS5qcGVn.jpeg
-   1. Open Misère - Spoonbill [Key: F minor (4A) | BPM: 79]
-   2. Gullydupling - Spoonbill [Key: C minor (5A) | BPM: 108]
-   3. Skyview - Spoonbill, Eastward [Key: G major (9B) | BPM: 160]
-   4. Menagerie - Spoonbill [Key: C major (8B) | BPM: 79]
-   5. Coolabah - Spoonbill [Key: F minor (4A) | BPM: 100]
-   6. Chewy Onya Boot - Spoonbill [Key: F minor (4A) | BPM: 93]
-   7. Nodding Greenhood - Spoonbill [Key: A minor (8A) | BPM: 82]
-   8. Thermal Ride - Spoonbill [Key: F minor (4A) | BPM: 92]
+   1. Open Misère - Spoonbill [Pos: A1 | Time: 5:40 | Key: F minor (4A) | BPM: 79]
+   2. Gullydupling - Spoonbill [Pos: A2 | Time: 4:40 | Key: C minor (5A) | BPM: 108]
+   3. Skyview - Spoonbill, Eastward [Pos: A3 | Time: 4:16 | Key: G major (9B) | BPM: 160]
+   4. Menagerie - Spoonbill [Pos: A4 | Time: 1:24 | Key: C major (8B) | BPM: 79]
+   5. Coolabah - Spoonbill [Pos: B1 | Time: 4:46 | Key: F minor (4A) | BPM: 100]
+   6. Chewy Onya Boot - Spoonbill [Pos: B2 | Time: 4:20 | Key: F minor (4A) | BPM: 93]
+   7. Nodding Greenhood - Spoonbill [Pos: B3 | Time: 5:44 | Key: A minor (8A) | BPM: 82]
+   8. Thermal Ride - Spoonbill [Pos: B4 | Time: 6:13 | Key: F minor (4A) | BPM: 92]
 
 === Who Say Jah No Dread (The Classic Augustus Pablo Sessions 1974-75) -- Jacob Miller ===
   ID: 12615690
@@ -3661,18 +3661,18 @@
   Year: 2018
   Label: Greensleeves Records
   Art: https://i.discogs.com/u9Hk8Caj4JBxxmDRjflsFnvZMSDYYcgrff8cv0VC1w0/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjE1/NjkwLTE1Mzg2NTk2/NjMtOTM3OC5qcGVn.jpeg
-   1. Keep On Knocking - Jacob Miller [Key: D major (10B) | BPM: 137]
-   2. Knocking Version - Jacob Miller [Key: B minor (10A) | BPM: 139]
-   3. False Rasta - Jacob Miller [Key: A# minor (3A) | BPM: 123]
-   4. Hungry Town Scanc - Jacob Miller [Key: F minor (4A) | BPM: 102]
-   5. Baby I Love You So - Jacob Miller [Key: G# minor (1A) | BPM: 133]
-   6. King Tubby Meets Rockers Uptown - Jacob Miller [Key: G major (9B) | BPM: 97]
-   7. Who Say Jah No Dread - Jacob Miller [Key: B minor (10A) | BPM: 77]
-   8. Jah Dread - Jacob Miller [Key: B minor (10A) | BPM: 77]
-   9. Each One Teach One - Jacob Miller [Key: C major (8B) | BPM: 133]
-  10. Each One Teach One Version - Jacob Miller [Key: Ab major (4B) | BPM: 130]
-  11. Girl Name Pat - Jacob Miller [Key: Ab major (4B) | BPM: 138]
-  12. Girl Name Pat Version - Jacob Miller [Key: Ab major (4B) | BPM: 138]
+   1. Keep On Knocking - Jacob Miller [Pos: A1 | Key: D major (10B) | BPM: 137]
+   2. Knocking Version - Jacob Miller [Pos: A2 | Key: B minor (10A) | BPM: 139]
+   3. False Rasta - Jacob Miller [Pos: A3 | Key: A# minor (3A) | BPM: 123]
+   4. Hungry Town Scanc - Jacob Miller [Pos: A4 | Key: F minor (4A) | BPM: 102]
+   5. Baby I Love You So - Jacob Miller [Pos: A5 | Key: G# minor (1A) | BPM: 133]
+   6. King Tubby Meets Rockers Uptown - Jacob Miller [Pos: A6 | Key: G major (9B) | BPM: 97]
+   7. Who Say Jah No Dread - Jacob Miller [Pos: B1 | Key: B minor (10A) | BPM: 77]
+   8. Jah Dread - Jacob Miller [Pos: B2 | Key: B minor (10A) | BPM: 77]
+   9. Each One Teach One - Jacob Miller [Pos: B3 | Key: C major (8B) | BPM: 133]
+  10. Each One Teach One Version - Jacob Miller [Pos: B4 | Key: Ab major (4B) | BPM: 130]
+  11. Girl Name Pat - Jacob Miller [Pos: B5 | Key: Ab major (4B) | BPM: 138]
+  12. Girl Name Pat Version - Jacob Miller [Pos: B6 | Key: Ab major (4B) | BPM: 138]
 
 === Crucial Cuts -- Gregory Isaacs ===
   ID: 1499521
@@ -3681,16 +3681,16 @@
   Year: 1983
   Label: Virgin
   Art: https://i.discogs.com/YdYyOTuNPdYy0b9hf9bqTUDr4nt7zcTed3h3GDFoZzw/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTk1/MjEtMTI2NjY5ODk5/OC5qcGVn.jpeg
-   1. Universal Tribulation - Gregory Isaacs [Key: C minor (5A) | BPM: 79]
-   2. John Public - Gregory Isaacs [Key: B major (1B) | BPM: 135]
-   3. Mr. Brown - Gregory Isaacs [Key: A major (11B) | BPM: 75]
-   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Key: G major (9B) | BPM: 136]
-   5. Raving Tonight - Gregory Isaacs [Key: G major (9B) | BPM: 144]
-   6. One More Time - Gregory Isaacs [Key: G minor (6A) | BPM: 128]
-   7. Let's Dance - Gregory Isaacs [Key: Eb major (5B) | BPM: 77]
-   8. Lonely Girl - Gregory Isaacs [Key: G major (9B) | BPM: 79]
-   9. Slave Market - Gregory Isaacs [Key: A major (11B) | BPM: 135]
-  10. Soon Forward - Gregory Isaacs [Key: C major (8B) | BPM: 148]
+   1. Universal Tribulation - Gregory Isaacs [Pos: A1 | Time: 3:46 | Key: C minor (5A) | BPM: 79]
+   2. John Public - Gregory Isaacs [Pos: A2 | Time: 3:03 | Key: B major (1B) | BPM: 135]
+   3. Mr. Brown - Gregory Isaacs [Pos: A3 | Time: 3:07 | Key: A major (11B) | BPM: 75]
+   4. Uncle Joe / Come Off Mi Toe - Gregory Isaacs [Pos: A4 | Time: 6:17 | Key: G major (9B) | BPM: 136]
+   5. Raving Tonight - Gregory Isaacs [Pos: A5 | Time: 3:56 | Key: G major (9B) | BPM: 144]
+   6. One More Time - Gregory Isaacs [Pos: B1 | Time: 3:11 | Key: G minor (6A) | BPM: 128]
+   7. Let's Dance - Gregory Isaacs [Pos: B2 | Time: 2:53 | Key: Eb major (5B) | BPM: 77]
+   8. Lonely Girl - Gregory Isaacs [Pos: B3 | Time: 3:59 | Key: G major (9B) | BPM: 79]
+   9. Slave Market - Gregory Isaacs [Pos: B4 | Time: 3:42 | Key: A major (11B) | BPM: 135]
+  10. Soon Forward - Gregory Isaacs [Pos: B5 | Time: 6:30 | Key: C major (8B) | BPM: 148]
 
 === Live In Boston 1973 -- Bob Marley & The Wailers ===
   ID: 14394456
@@ -3698,14 +3698,14 @@
   Year: 2019
   Label: Cult Legends
   Art: https://i.discogs.com/86CWamIOAN8YjnKjMXRNtlXzqasP88SkjzQ6FPvrJkI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Mzk0/NDU2LTE1Nzc0Nzc2/OTEtNTAyNS5qcGVn.jpeg
-   1. Lively Up Yourself - Bob Marley And The Wailers [Key: G major (9B) | BPM: 129]
-   2. Stop That Train - Bob Marley And The Wailers [Key: G major (9B) | BPM: 148]
-   3. Kinky Reggae - Bob Marley And The Wailers [Key: F major (7B) | BPM: 139]
-   4. Slave Driver - Bob Marley And The Wailers [Key: B minor (10A) | BPM: 136]
-   5. Stir It Up - Bob Marley And The Wailers [Key: A major (11B) | BPM: 150]
-   6. 400 Years - Bob Marley And The Wailers [Key: G minor (6A) | BPM: 146]
-   7. Concrete Jungle - Bob Marley And The Wailers [Key: D major (10B) | BPM: 96]
-   8. Get Up, Stand Up - Bob Marley And The Wailers [Key: Bb major (6B) | BPM: 78]
+   1. Lively Up Yourself - Bob Marley And The Wailers [Pos: A1 | Time: 5:49 | Key: G major (9B) | BPM: 129]
+   2. Stop That Train - Bob Marley And The Wailers [Pos: A2 | Time: 4:08 | Key: G major (9B) | BPM: 148]
+   3. Kinky Reggae - Bob Marley And The Wailers [Pos: A3 | Time: 5:14 | Key: F major (7B) | BPM: 139]
+   4. Slave Driver - Bob Marley And The Wailers [Pos: A4 | Time: 3:38 | Key: B minor (10A) | BPM: 136]
+   5. Stir It Up - Bob Marley And The Wailers [Pos: B1 | Time: 4:30 | Key: A major (11B) | BPM: 150]
+   6. 400 Years - Bob Marley And The Wailers [Pos: B2 | Time: 3:40 | Key: G minor (6A) | BPM: 146]
+   7. Concrete Jungle - Bob Marley And The Wailers [Pos: B3 | Time: 6:02 | Key: D major (10B) | BPM: 96]
+   8. Get Up, Stand Up - Bob Marley And The Wailers [Pos: B4 | Time: 6:09 | Key: Bb major (6B) | BPM: 78]
 
 === Kaya -- Bob Marley & The Wailers ===
   ID: 7541890
@@ -3714,16 +3714,16 @@
   Year: 2015
   Label: Tuff Gong, Island Records, Universal Music Group International
   Art: https://i.discogs.com/s4Pk_nYEZY9bzz4LAsoQ4-7Id-CM94E3tBEMzW4altg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1NDE4/OTAtMTU3OTc4NDYw/MC02MTA5LmpwZWc.jpeg
-   1. Easy Skanking - Bob Marley & The Wailers [Key: Bb major (6B) | BPM: 126]
-   2. Kaya - Bob Marley & The Wailers [Key: B major (1B) | BPM: 98]
-   3. Is This Love - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 122]
-   4. Sun Is Shining - Bob Marley & The Wailers [Key: A# minor (3A) | BPM: 129]
-   5. Satisfy My Soul - Bob Marley & The Wailers [Key: G major (9B) | BPM: 128]
-   6. She's Gone - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 148]
-   7. Misty Morning - Bob Marley & The Wailers [Key: B minor (10A) | BPM: 125]
-   8. Crisis - Bob Marley & The Wailers [Key: F# minor (11A) | BPM: 123]
-   9. Running Away - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 119]
-  10. Time Will Tell - Bob Marley & The Wailers [Key: Ab major (4B) | BPM: 161]
+   1. Easy Skanking - Bob Marley & The Wailers [Pos: A1 | Key: Bb major (6B) | BPM: 126]
+   2. Kaya - Bob Marley & The Wailers [Pos: A2 | Key: B major (1B) | BPM: 98]
+   3. Is This Love - Bob Marley & The Wailers [Pos: A3 | Key: F# minor (11A) | BPM: 122]
+   4. Sun Is Shining - Bob Marley & The Wailers [Pos: A4 | Key: A# minor (3A) | BPM: 129]
+   5. Satisfy My Soul - Bob Marley & The Wailers [Pos: A5 | Key: G major (9B) | BPM: 128]
+   6. She's Gone - Bob Marley & The Wailers [Pos: B1 | Key: F# minor (11A) | BPM: 148]
+   7. Misty Morning - Bob Marley & The Wailers [Pos: B2 | Key: B minor (10A) | BPM: 125]
+   8. Crisis - Bob Marley & The Wailers [Pos: B3 | Key: F# minor (11A) | BPM: 123]
+   9. Running Away - Bob Marley & The Wailers [Pos: B4 | Key: Ab major (4B) | BPM: 119]
+  10. Time Will Tell - Bob Marley & The Wailers [Pos: B5 | Key: Ab major (4B) | BPM: 161]
 
 === Rastaman Vibration -- Bob Marley & The Wailers ===
   ID: 7541656
