@@ -3391,18 +3391,18 @@
   Year: 1978
   Label: Tornado
   Art: https://i.discogs.com/-okHy1YvixEgfTI7OM-91oG8L_sXZxkLz0FXQdsouio/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMDkx/NjItMTQ1MjQzMzM0/Ni04NDgyLmpwZWc.jpeg
-   1. Summertime - The Shake Spears [Key: G minor (6A) | BPM: 131]
-   2. I'll Go Crazy - The Shake Spears [Key: E major (12B) | BPM: 135]
-   3. Give It To Me - The Shake Spears [Key: B minor (10A) | BPM: 159]
-   4. Stop Playing That Song - The Shake Spears [Key: F major (7B) | BPM: 121]
-   5. Summertime Blues - The Shake Spears [Key: G major (9B) | BPM: 161]
-   6. Lucifer - The Shake Spears [Key: E major (12B) | BPM: 149]
-   7. The Shake Spears - The Shake Spears [Key: A major (11B) | BPM: 146]
-   8. Do That Again - The Shake Spears [Key: D minor (7A) | BPM: 89]
-   9. Don't Play Funny Games! - The Shake Spears [Key: F major (7B) | BPM: 128]
-  10. What Happened - The Shake Spears [Key: D major (10B) | BPM: 206]
-  11. Shake It Over - The Shake Spears [Key: G major (9B) | BPM: 103]
-  12. Main Theme From The Saint - The Shake Spears [Key: Eb major (5B) | BPM: 143]
+   1. Summertime - The Shake Spears [Pos: A1 | Key: G minor (6A) | BPM: 131]
+   2. I'll Go Crazy - The Shake Spears [Pos: A2 | Key: E major (12B) | BPM: 135]
+   3. Give It To Me - The Shake Spears [Pos: A3 | Key: B minor (10A) | BPM: 159]
+   4. Stop Playing That Song - The Shake Spears [Pos: A4 | Key: F major (7B) | BPM: 121]
+   5. Summertime Blues - The Shake Spears [Pos: A5 | Key: G major (9B) | BPM: 161]
+   6. Lucifer - The Shake Spears [Pos: A6 | Key: E major (12B) | BPM: 149]
+   7. The Shake Spears - The Shake Spears [Pos: B1 | Key: A major (11B) | BPM: 146]
+   8. Do That Again - The Shake Spears [Pos: B2 | Key: D minor (7A) | BPM: 89]
+   9. Don't Play Funny Games! - The Shake Spears [Pos: B3 | Key: F major (7B) | BPM: 128]
+  10. What Happened - The Shake Spears [Pos: B4 | Key: D major (10B) | BPM: 206]
+  11. Shake It Over - The Shake Spears [Pos: B5 | Key: G major (9B) | BPM: 103]
+  12. Main Theme From The Saint - The Shake Spears [Pos: B6 | Key: Eb major (5B) | BPM: 143]
 
 === The Art Of Sampling -- Parov Stelar ===
   ID: 4996861
@@ -3411,20 +3411,20 @@
   Year: 2013
   Label: Universal Music Group, Island Records, Etage Noir Recordings
   Art: https://i.discogs.com/QXhMZiTWmj0s1lXU6JJttWkXKDGheUoSrseSTHDzGkw/rs:fit/g:sm/q:90/h:600/w:580/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5OTY4/NjEtMTQ2OTA2MjIw/Mi00NzQ5LmpwZWc.jpeg
-   1. Keep On Dancing - Parov Stelar [Key: B minor (10A) | BPM: 117]
-   2. Josephine - Parov Stelar [Key: C# major (3B) | BPM: 120]
-   3. Heavens Radio - Parov Stelar [Key: E minor (9A) | BPM: 105]
-   4. She Ain't Got No Money - Parov Stelar [Key: B minor (10A) | BPM: 102]
-   5. All Night - Parov Stelar [Key: G minor (6A) | BPM: 125]
-   6. Catgroove - Parov Stelar [Key: D major (10B) | BPM: 128]
-   7. The Phantom (1930 Version) - Parov Stelar [Key: F major (7B) | BPM: 128]
-   8. Libella Swing - Parov Stelar [Key: A major (11B) | BPM: 124]
-   9. The Mojo Radio Gang (Radio Version) - Parov Stelar [Key: Ab major (4B) | BPM: 128]
-  10. Love Remix - Parov Stelar [Key: E minor (9A) | BPM: 124]
-  11. Faith - Parov Stelar [Key: G# minor (1A) | BPM: 112]
-  12. Matilda (Radio Edit) - Parov Stelar [Key: E minor (9A) | BPM: 130]
-  13. Shine - Parov Stelar [Key: F# major (2B) | BPM: 104]
-  14. Jimmy's Gang (Radio Edit) - Parov Stelar [Key: A minor (8A) | BPM: 125]
+   1. Keep On Dancing - Parov Stelar [Pos: A1 | Time: 3:06 | Key: B minor (10A) | BPM: 117]
+   2. Josephine - Parov Stelar [Pos: A2 | Time: 3:07 | Key: C# major (3B) | BPM: 120]
+   3. Heavens Radio - Parov Stelar [Pos: A3 | Time: 3:08 | Key: E minor (9A) | BPM: 105]
+   4. She Ain't Got No Money - Parov Stelar [Pos: A4 | Time: 3:20 | Key: B minor (10A) | BPM: 102]
+   5. All Night - Parov Stelar [Pos: B1 | Time: 2:45 | Key: G minor (6A) | BPM: 125]
+   6. Catgroove - Parov Stelar [Pos: B2 | Time: 3:56 | Key: D major (10B) | BPM: 128]
+   7. The Phantom (1930 Version) - Parov Stelar [Pos: B3 | Time: 4:31 | Key: F major (7B) | BPM: 128]
+   8. Libella Swing - Parov Stelar [Pos: C1 | Time: 4:05 | Key: A major (11B) | BPM: 124]
+   9. The Mojo Radio Gang (Radio Version) - Parov Stelar [Pos: C2 | Time: 2:39 | Key: Ab major (4B) | BPM: 128]
+  10. Love Remix - Parov Stelar [Pos: C3 | Time: 4:28 | Key: E minor (9A) | BPM: 124]
+  11. Faith - Parov Stelar [Pos: D1 | Time: 3:47 | Key: G# minor (1A) | BPM: 112]
+  12. Matilda (Radio Edit) - Parov Stelar [Pos: D2 | Time: 3:20 | Key: E minor (9A) | BPM: 130]
+  13. Shine - Parov Stelar [Pos: D3 | Time: 3:37 | Key: F# major (2B) | BPM: 104]
+  14. Jimmy's Gang (Radio Edit) - Parov Stelar [Pos: D4 | Time: 3:15 | Key: A minor (8A) | BPM: 125]
 
 === The Groove Sessions Vol. 1 : 2004-2007 -- Chinese Man ===
   ID: 1340285
@@ -3433,18 +3433,18 @@
   Year: 2008
   Label: Chinese Man Records
   Art: https://i.discogs.com/AibMuQ_5zvEUAUXnfSfr0Es1y3y5_kL9f03mrnhKFf0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDAy/ODUtMTMyNzAxMzA4/OS5qcGVn.jpeg
-   1. Pandi Groove - Chinese Man [Key: A# minor (3A) | BPM: 127]
-   2. Searching For The Space Monkey - Chinese Man [Key: B major (1B) | BPM: 92]
-   3. Eight Y Cinco - Chinese Man [Key: D major (10B) | BPM: 170]
-   4. Bunni Groove - Chinese Man [Key: F# minor (11A) | BPM: 125]
-   5. Washington Square - Leo Le Bug [Key: Ab major (4B) | BPM: 76]
-   6. I've Got That Tune - Chinese Man [Key: E minor (9A) | BPM: 90]
-   7. You Suck Me - Chinese Man [Key: B minor (10A) | BPM: 168]
-   8. Indi Groove - Chinese Man, Leo Le Bug [Key: F minor (4A) | BPM: 144]
-   9. Skank In The Air - Chinese Man [Key: G major (9B) | BPM: 164]
-  10. Artichaut - Chinese Man, Le Yan [Key: D# minor (2A) | BPM: 204]
-  11. More - Chinese Man [Key: F# minor (11A) | BPM: 96]
-  12. Chinese Man - Chinese Man [Key: F# major (2B) | BPM: 84]
+   1. Pandi Groove - Chinese Man [Pos: A1 | Time: 5:00 | Key: A# minor (3A) | BPM: 127]
+   2. Searching For The Space Monkey - Chinese Man [Pos: A2 | Time: 4:53 | Key: B major (1B) | BPM: 92]
+   3. Eight Y Cinco - Chinese Man [Pos: A3 | Time: 3:54 | Key: D major (10B) | BPM: 170]
+   4. Bunni Groove - Chinese Man [Pos: B1 | Time: 4:25 | Key: F# minor (11A) | BPM: 125]
+   5. Washington Square - Leo Le Bug [Pos: B2 | Time: 4:11 | Key: Ab major (4B) | BPM: 76]
+   6. I've Got That Tune - Chinese Man [Pos: B3 | Time: 4:30 | Key: E minor (9A) | BPM: 90]
+   7. You Suck Me - Chinese Man [Pos: C1 | Time: 5:10 | Key: B minor (10A) | BPM: 168]
+   8. Indi Groove - Chinese Man, Leo Le Bug [Pos: C2 | Time: 4:43 | Key: F minor (4A) | BPM: 144]
+   9. Skank In The Air - Chinese Man [Pos: C3 | Time: 4:46 | Key: G major (9B) | BPM: 164]
+  10. Artichaut - Chinese Man, Le Yan [Pos: D1 | Time: 4:27 | Key: D# minor (2A) | BPM: 204]
+  11. More - Chinese Man [Pos: D2 | Time: 4:45 | Key: F# minor (11A) | BPM: 96]
+  12. Chinese Man - Chinese Man [Pos: D3 | Time: 3:39 | Key: F# major (2B) | BPM: 84]
 
 === In A Space Outta Sound -- Nightmares On Wax ===
   ID: 6194329
@@ -3453,18 +3453,18 @@
   Year: 2014
   Label: Warp Records
   Art: https://i.discogs.com/OZG-emm1_ynyx7oXh1HQhnAzuDb9VX4fHG89P1CKRDY/rs:fit/g:sm/q:90/h:599/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxOTQz/MjktMTUzODYxMjA2/NC00MjYzLmpwZWc.jpeg
-   1. Passion - Nightmares On Wax [Key: C# major (3B) | BPM: 213]
-   2. The Sweetest - Nightmares On Wax [Key: G major (9B) | BPM: 90]
-   3. Flip Ya Lid - Nightmares On Wax [Key: E minor (9A) | BPM: 90]
-   4. Pudpots - Nightmares On Wax [Key: B major (1B) | BPM: 95]
-   5. Damn - Nightmares On Wax [Key: A# minor (3A) | BPM: 94]
-   6. You Wish - Nightmares On Wax [Key: A minor (8A) | BPM: 103]
-   7. Deepdown - Nightmares On Wax [Key: C major (8B) | BPM: 150]
-   8. Chime Out - Nightmares On Wax [Key: C major (8B) | BPM: 120]
-   9. Me! - Nightmares On Wax [Key: D major (10B) | BPM: 123]
-  10. I Am You - Nightmares On Wax [Key: E major (12B) | BPM: 75]
-  11. Soul Purpose - Nightmares On Wax [Key: F# major (2B) | BPM: 83]
-  12. African Pirates - Nightmares On Wax [Key: F# minor (11A) | BPM: 115]
+   1. Passion - Nightmares On Wax [Pos: A1 | Key: C# major (3B) | BPM: 213]
+   2. The Sweetest - Nightmares On Wax [Pos: A2 | Key: G major (9B) | BPM: 90]
+   3. Flip Ya Lid - Nightmares On Wax [Pos: B1 | Key: E minor (9A) | BPM: 90]
+   4. Pudpots - Nightmares On Wax [Pos: B2 | Key: B major (1B) | BPM: 95]
+   5. Damn - Nightmares On Wax [Pos: B3 | Key: A# minor (3A) | BPM: 94]
+   6. You Wish - Nightmares On Wax [Pos: C1 | Key: A minor (8A) | BPM: 103]
+   7. Deepdown - Nightmares On Wax [Pos: C2 | Key: C major (8B) | BPM: 150]
+   8. Chime Out - Nightmares On Wax [Pos: C3 | Key: C major (8B) | BPM: 120]
+   9. Me! - Nightmares On Wax [Pos: C4 | Key: D major (10B) | BPM: 123]
+  10. I Am You - Nightmares On Wax [Pos: D1 | Key: E major (12B) | BPM: 75]
+  11. Soul Purpose - Nightmares On Wax [Pos: D2 | Key: F# major (2B) | BPM: 83]
+  12. African Pirates - Nightmares On Wax [Pos: D3 | Key: F# minor (11A) | BPM: 115]
 
 === Boulevard (The Complete Series) -- St Germain ===
   ID: 4180576
@@ -3473,14 +3473,14 @@
   Year: 2012
   Label: F Communications
   Art: https://i.discogs.com/3pmbA7IXSq8IwKfu0jkPwkylrFwKDBspnzb5Y863yX8/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxODA1/NzYtMTUyMzQwNTg1/MS0yNTI4LmpwZWc.jpeg
-   1. Deep In It - St Germain [Key: Bb major (6B) | BPM: 122]
-   2. Thank U Mum (4 Everything You Did) - St Germain [Key: F# minor (11A) | BPM: 121]
-   3. Street Scene (4 Shazz) (Jazz-Hop Remix) - St Germain [Key: G# minor (1A) | BPM: 88]
-   4. Easy To Remember - St Germain [Key: A# minor (3A) | BPM: 122]
-   5. Sentimental Mood - St Germain [Key: C# major (3B) | BPM: 122]
-   6. What’s New? - St Germain [Key: C major (8B) | BPM: 124]
-   7. Dub Experience II - St Germain [Key: G# minor (1A) | BPM: 129]
-   8. Forget It - St Germain [Key: G major (9B) | BPM: 192]
+   1. Deep In It - St Germain [Pos: A1 | Time: 7:18 | Key: Bb major (6B) | BPM: 122]
+   2. Thank U Mum (4 Everything You Did) - St Germain [Pos: A2 | Time: 12:35 | Key: F# minor (11A) | BPM: 121]
+   3. Street Scene (4 Shazz) (Jazz-Hop Remix) - St Germain [Pos: B1 | Time: 10:50 | Key: G# minor (1A) | BPM: 88]
+   4. Easy To Remember - St Germain [Pos: B2 | Time: 9:46 | Key: A# minor (3A) | BPM: 122]
+   5. Sentimental Mood - St Germain [Pos: C1 | Time: 10:20 | Key: C# major (3B) | BPM: 122]
+   6. What’s New? - St Germain [Pos: C2 | Time: 7:50 | Key: C major (8B) | BPM: 124]
+   7. Dub Experience II - St Germain [Pos: D1 | Time: 3:47 | Key: G# minor (1A) | BPM: 129]
+   8. Forget It - St Germain [Pos: D2 | Time: 8:05 | Key: G major (9B) | BPM: 192]
 
 === Road To Knowhere -- Tommy Guerrero ===
   ID: 13336494
@@ -3489,17 +3489,17 @@
   Year: 2019
   Label: Too Good
   Art: https://i.discogs.com/W6Tl9_qTpgcOsIs3KsK7ZEq3QplntDn_uGQr6WzTTIg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzM2/NDk0LTE1NjIwMDMw/MTctNzY5My5qcGVn.jpeg
-   1. El Camino Negro - Tommy Guerrero [Key: D major (10B) | BPM: 97]
-   2. White Sands - Tommy Guerrero [Key: B minor (10A) | BPM: 91]
-   3. Highway Hustle - Tommy Guerrero [Key: D minor (7A) | BPM: 113]
-   4. A Distant Closeness - Tommy Guerrero [Key: D major (10B) | BPM: 186]
-   5. Postcard Home - Tommy Guerrero [Key: B minor (10A) | BPM: 118]
-   6. Heat In The Streets - Tommy Guerrero [Key: F major (7B) | BPM: 118]
-   7. Sidewalk Soul - Tommy Guerrero [Key: F minor (4A) | BPM: 116]
-   8. Slow Roll - Tommy Guerrero [Key: A minor (8A) | BPM: 79]
-   9. Los Padres - Tommy Guerrero [Key: C# minor (12A) | BPM: 175]
-  10. Where Water Once Was - Tommy Guerrero [Key: A minor (8A) | BPM: 106]
-  11. The Endless Road - Tommy Guerrero [Key: E minor (9A) | BPM: 102]
+   1. El Camino Negro - Tommy Guerrero [Pos: Α1 | Key: D major (10B) | BPM: 97]
+   2. White Sands - Tommy Guerrero [Pos: A2 | Key: B minor (10A) | BPM: 91]
+   3. Highway Hustle - Tommy Guerrero [Pos: A3 | Key: D minor (7A) | BPM: 113]
+   4. A Distant Closeness - Tommy Guerrero [Pos: A4 | Key: D major (10B) | BPM: 186]
+   5. Postcard Home - Tommy Guerrero [Pos: A5 | Key: B minor (10A) | BPM: 118]
+   6. Heat In The Streets - Tommy Guerrero [Pos: A6 | Key: F major (7B) | BPM: 118]
+   7. Sidewalk Soul - Tommy Guerrero [Pos: B1 | Key: F minor (4A) | BPM: 116]
+   8. Slow Roll - Tommy Guerrero [Pos: B2 | Key: A minor (8A) | BPM: 79]
+   9. Los Padres - Tommy Guerrero [Pos: B3 | Key: C# minor (12A) | BPM: 175]
+  10. Where Water Once Was - Tommy Guerrero [Pos: B4 | Key: A minor (8A) | BPM: 106]
+  11. The Endless Road - Tommy Guerrero [Pos: B5 | Key: E minor (9A) | BPM: 102]
 
 === The Age Of Reason -- Gramatik ===
   ID: 15839206
@@ -3508,21 +3508,21 @@
   Year: 2020
   Label: Vinyl Digital
   Art: https://i.discogs.com/lK-dfrIrOLAy4qbaRUAskq95inJIYwLvuiNaTWYcOD8/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODM5/MjA2LTE1OTg3MzMx/ODctNDg1OC5qcGVn.jpeg
-   1. Brave Men - Gramatik [Key: E major (12B) | BPM: 75]
-   2. Torture - Gramatik [Key: D major (10B) | BPM: 96]
-   3. Bluestep - Gramatik [Key: E minor (9A) | BPM: 142]
-   4. Pardon My French - Gramatik [Key: C# minor (12A) | BPM: 120]
-   5. We Used To Dream - Gramatik [Key: G minor (6A) | BPM: 85]
-   6. You Don't Understand - Gramatik [Key: A major (11B) | BPM: 145]
-   7. Obviously - Gramatik [Key: G major (9B) | BPM: 97]
-   8. Control Room Before You - Gramatik [Key: C# major (3B) | BPM: 152]
-   9. Prime Time - Gramatik [Key: B minor (10A) | BPM: 100]
-  10. Get A Grip - Gramatik [Key: F# major (2B) | BPM: 100]
-  11. Just Jammin' NYC - Gramatik [Key: G major (9B) | BPM: 170]
-  12. Expect Us - Gramatik [Key: B major (1B) | BPM: 104]
-  13. Faraway - Gramatik [Key: C# major (3B) | BPM: 94]
-  14. No Turning Back - Gramatik [Key: E minor (9A) | BPM: 82]
-  15. It's Just A Ride - Gramatik [Key: B minor (10A) | BPM: 95]
+   1. Brave Men - Gramatik [Pos: A1 | Key: E major (12B) | BPM: 75]
+   2. Torture - Gramatik [Pos: A2 | Key: D major (10B) | BPM: 96]
+   3. Bluestep - Gramatik [Pos: A3 | Key: E minor (9A) | BPM: 142]
+   4. Pardon My French - Gramatik [Pos: B1 | Key: C# minor (12A) | BPM: 120]
+   5. We Used To Dream - Gramatik [Pos: B2 | Key: G minor (6A) | BPM: 85]
+   6. You Don't Understand - Gramatik [Pos: B3 | Key: A major (11B) | BPM: 145]
+   7. Obviously - Gramatik [Pos: B4 | Key: G major (9B) | BPM: 97]
+   8. Control Room Before You - Gramatik [Pos: C1 | Key: C# major (3B) | BPM: 152]
+   9. Prime Time - Gramatik [Pos: C2 | Key: B minor (10A) | BPM: 100]
+  10. Get A Grip - Gramatik [Pos: C3 | Key: F# major (2B) | BPM: 100]
+  11. Just Jammin' NYC - Gramatik [Pos: C4 | Key: G major (9B) | BPM: 170]
+  12. Expect Us - Gramatik [Pos: D1 | Key: B major (1B) | BPM: 104]
+  13. Faraway - Gramatik [Pos: D2 | Key: C# major (3B) | BPM: 94]
+  14. No Turning Back - Gramatik [Pos: D3 | Key: E minor (9A) | BPM: 82]
+  15. It's Just A Ride - Gramatik [Pos: D4 | Key: B minor (10A) | BPM: 95]
 
 === Umoja -- Skinshape ===
   ID: 15478998
@@ -3531,16 +3531,16 @@
   Year: 2020
   Label: Lewis Recordings
   Art: https://i.discogs.com/iakSbkStkfM0R6pslpFA3UrtwrtrLIJpWeGnOI3Nods/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDc4/OTk4LTE2MTUyOTMy/ODYtMjc0NC5qcGVn.jpeg
-   1. Sua Alma - Skinshape [Key: F major (7B) | BPM: 103]
-   2. In The End - Skinshape [Key: Eb major (5B) | BPM: 138]
-   3. Afande - Skinshape [Key: F minor (4A) | BPM: 170]
-   4. Kourou - Skinshape [Key: D minor (7A) | BPM: 90]
-   5. Azon De Ma Gnin - Skinshape [Key: C major (8B) | BPM: 128]
-   6. Amigos E Inimigos - Skinshape [Key: C minor (5A) | BPM: 150]
-   7. Sun - Skinshape [Key: C major (8B) | BPM: 141]
-   8. Sudan - Skinshape [Key: G minor (6A) | BPM: 114]
-   9. Dourlé - Skinshape [Key: E minor (9A) | BPM: 101]
-  10. Lehin Ti Aye Ba Iku - Skinshape [Key: A major (11B) | BPM: 131]
+   1. Sua Alma - Skinshape [Pos: A1 | Time: 4:42 | Key: F major (7B) | BPM: 103]
+   2. In The End - Skinshape [Pos: A2 | Time: 4:27 | Key: Eb major (5B) | BPM: 138]
+   3. Afande - Skinshape [Pos: A3 | Time: 5:22 | Key: F minor (4A) | BPM: 170]
+   4. Kourou - Skinshape [Pos: A4 | Time: 4:50 | Key: D minor (7A) | BPM: 90]
+   5. Azon De Ma Gnin - Skinshape [Pos: A5 | Time: 3:04 | Key: C major (8B) | BPM: 128]
+   6. Amigos E Inimigos - Skinshape [Pos: B1 | Time: 3:18 | Key: C minor (5A) | BPM: 150]
+   7. Sun - Skinshape [Pos: B2 | Time: 3:39 | Key: C major (8B) | BPM: 141]
+   8. Sudan - Skinshape [Pos: B3 | Time: 3:47 | Key: G minor (6A) | BPM: 114]
+   9. Dourlé - Skinshape [Pos: B4 | Time: 6:23 | Key: E minor (9A) | BPM: 101]
+  10. Lehin Ti Aye Ba Iku - Skinshape [Pos: B5 | Time: 3:42 | Key: A major (11B) | BPM: 131]
 
 === Hypnotech 02 -- Various ===
   ID: 13370530
@@ -3549,10 +3549,10 @@
   Year: 2019
   Label: Hypnotech Records
   Art: https://i.discogs.com/0yZERntj6j-Q_Bdb-39mwo4iILJI6OM95tIRFUJBBBw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzcw/NTMwLTE1NTM1MzA0/OTItMzcwMy5qcGVn.jpeg
-   1. Up A Height - John Rowe [Key: F# minor (11A) | BPM: 103]
-   2. Dirt Bomb - Manarchy [Key: B minor (10A) | BPM: 112]
-   3. AMP VAR - Suibom Serum Feat. Kranium Filtron [Key: C# major (3B) | BPM: 100]
-   4. Moonlight Acid - Odic Force [Key: E minor (9A) | BPM: 124]
+   1. Up A Height - John Rowe [Pos: A1 | Time: 6:53 | Key: F# minor (11A) | BPM: 103]
+   2. Dirt Bomb - Manarchy [Pos: A2 | Time: 6:01 | Key: B minor (10A) | BPM: 112]
+   3. AMP VAR - Suibom Serum Feat. Kranium Filtron [Pos: B1 | Time: 6:25 | Key: C# major (3B) | BPM: 100]
+   4. Moonlight Acid - Odic Force [Pos: B2 | Time: 5:53 | Key: E minor (9A) | BPM: 124]
 
 === Planet Gone Mad -- Mad Tribe ===
   ID: 11884137
@@ -3561,8 +3561,8 @@
   Year: 2018
   Label: TIP Records
   Art: https://i.discogs.com/hovk4CC6qsj0c8ks-KAVi5M8gj4kH6PAL2AB8yUkY04/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODg0/MTM3LTE1ODY3NzUx/OTYtOTIxMy5qcGVn.jpeg
-   1. Planet Gone Mad - Mad Tribe [Key: G# minor (1A) | BPM: 145]
-   2. Rocket Power - Mad Tribe [Key: C# major (3B) | BPM: 146]
+   1. Planet Gone Mad - Mad Tribe [Pos: A | Time: 7:57 | Key: G# minor (1A) | BPM: 145]
+   2. Rocket Power - Mad Tribe [Pos: AA | Time: 7:40 | Key: C# major (3B) | BPM: 146]
 
 === Let There Be Light -- Astral Projection ===
   ID: 10919581
