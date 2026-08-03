@@ -309,7 +309,8 @@
   Year: 2014
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/EsMG3eVdSHiEF1z_Ac2d3Lg9TKUbQHmYR3thNy-QXFw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2OTk1/OTUtMTQ0NjQ0OTky/Ni00OTI3LmpwZWc.jpeg
-  (no tracks found)
+   1. Jah Is Coming - Scott Allen [Pos: A | Key: F# major (2B) | BPM: 175]
+   2. Babylon Fall - Pixel [Pos: AA]
 
 === Good Enough / Jamaican Boy -- Serial Killaz ===
   ID: 2671460
@@ -318,7 +319,8 @@
   Year: 2011
   Label: Killa Dubz
   Art: https://i.discogs.com/wilFAEyYlreL3Hud-fc1qkjx6DuanBqXCTdHHoCtChI/rs:fit/g:sm/q:90/h:600/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzE0/NjAtMTQ4ODgxOTM5/NC01NDQyLmpwZWc.jpeg
-  (no tracks found)
+   1. Good Enough - Serial Killaz [Pos: A]
+   2. Jamaican Boy - Serial Killaz [Pos: AA]
 
 === Murder Ya Sound -- Serial Killaz & Run Tingz Cru Featuring Tenor Fly & Blackout J.A ===
   ID: 3209639
@@ -327,7 +329,9 @@
   Year: 2011
   Label: Run Tingz Recordings
   Art: https://i.discogs.com/NOFzgT3yZ7kdSsRLow5hSMlZTUeYgvRo-aVKYdD1c84/rs:fit/g:sm/q:90/h:556/w:567/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMDk2/MzktMTMyMDU5NzIy/OS5qcGVn.jpeg
-  (no tracks found)
+   1. Murder Ya Sound (UK Jungle Mix) - Serial Killaz & Run Tingz Cru [Pos: A1 | Key: D major (10B) | BPM: 175]
+   2. Murder Ya Sound (Jump Up Mix) - Serial Killaz & Run Tingz Cru [Pos: B1 | Key: A major (11B) | BPM: 175]
+   3. Sound Clash Toolz - Serial Killaz & Run Tingz Cru [Pos: B2]
 
 === Get The Fuck Up / Drop Suey -- Unknown Artist ===
   ID: 955673
@@ -336,7 +340,8 @@
   Year: 2006
   Label: Not On Label
   Art: https://i.discogs.com/JRt_77gcueoKo-kzMpCUaHnVLrJ0UVdLCBFtvQEb69Y/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1NTY3/My0xNzgxOTg5NTM1/LTI2MDIuanBlZw.jpeg
-  (no tracks found)
+   1. Get The Fuck Up - Unknown Artist [Pos: A]
+   2. Drop Suey - Unknown Artist [Pos: B]
 
 === Toxic 03 -- Various ===
   ID: 782608
@@ -345,7 +350,11 @@
   Year: 2006
   Label: Toxic
   Art: https://i.discogs.com/-sjaIc_UeowCD4t_J0fq82WN55YbrqTlOpVe01EE65Y/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MjYw/OC0xMzMzMTI4NDY3/LmpwZWc.jpeg
-  (no tracks found)
+   1. Resk vs. Bach - Resk [Pos: A1]
+   2. Requiem For A Crime - +2H-2N & Kaldosh [Pos: A2]
+   3. Pass Me That Fuckin Dubplate - Killilae [Pos: B1]
+   4. Badness - Soul Soldier [Pos: B2]
+   5. Biometrie Laterale - Suredj [Pos: B3]
 
 === Astrofonik Drum And Bass 10 -- Various ===
   ID: 4164463
@@ -354,7 +363,10 @@
   Year: 2012
   Label: Astrofonik Drum n' Bass
   Art: https://i.discogs.com/ha9PKZQ85ljUxeKPvpoXqfHkNL-QbHxdEyYw-R7YH5Q/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjQ0/NjMtMTM1NzQwNzg5/Mi01OTgyLmpwZWc.jpeg
-  (no tracks found)
+   1. Everyday - Stevens Kbosh [Pos: A1 | Key: F# major (2B) | BPM: 180]
+   2. Peace Of Jungle - MBR Connexion [Pos: A2 | Key: G major (9B) | BPM: 175]
+   3. Man Down - Dijeyow [Pos: B1 | Key: G# minor (1A) | BPM: 170]
+   4. Fast´N Break Bass - Strez [Pos: B2 | Key: A# minor (3A) | BPM: 95]
 
 === Revolution Pt7 / A Murda -- Vendetta / Barber / Bad Kid ===
   ID: 2940539
@@ -363,7 +375,8 @@
   Year: 2011
   Label: Delacroix Records
   Art: https://i.discogs.com/lG4J-hWKlhDw2G_PMFKHBgwHSNisiql1bD1IErcRtjI/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NDA1/MzktMTMwODMwODk0/OC5qcGVn.jpeg
-  (no tracks found)
+   1. Revolution Pt7 - Vendetta / Barber / Bad Kid [Pos: A]
+   2. A Murda - Vendetta / Barber / Bad Kid [Pos: AA]
 
 === Babylon System / Roots Of All Evil -- Yami Bolo / Million Stylez ===
   ID: 4013565
@@ -372,7 +385,8 @@
   Year: 2012
   Label: Epeak Kid
   Art: https://i.discogs.com/1AgaU_Ndia1MAdQZw5YJGawrRipzVrPK4JEzmYWU_j0/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMTM1/NjUtMTM2NDM0MTQw/NC0yNTE1LmpwZWc.jpeg
-  (no tracks found)
+   1. Babylon System (Epeak Rmx) - Yami Bolo [Pos: A]
+   2. Roots Of All Evil (Krak In Dub Rmx) - Million Stylez [Pos: B]
 
 === You Never Know / Lonely Dub -- Serial Killaz ===
   ID: 2014743
@@ -381,7 +395,8 @@
   Year: 2009
   Label: Serial Killaz
   Art: https://i.discogs.com/17tjvpgmRBHCUk3zVF9c1pvK2qUEIU02x17YiPIZFK4/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTQ3/NDMtMTI2MDYxMzU4/OS5qcGVn.jpeg
-  (no tracks found)
+   1. You Never Know - Serial Killaz [Pos: A]
+   2. Lonely Dub - Serial Killaz [Pos: AA | Key: C minor (5A) | BPM: 176]
 
 === Welcome To The Jungle Volume 4 (Sampler One) -- DJ Deekline & Ed Solo / DJ Dee Kline Featuring Tippa Irie ===
   ID: 9016487
