@@ -107,7 +107,8 @@
   Year: 2005
   Label: Znootpoch
   Art: https://i.discogs.com/e09W7dYedTws7wtsMj6kQBF6wvHwLPV6z6vY6LbbhGg/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyMTA0/Mi0xMTI3MDUwNTIy/LmpwZWc.jpeg
-  (no tracks found)
+   1. No No No - Candy [Pos: A]
+   2. Anscient Music - Candy [Pos: B]
 
 === Bellyfull / Breeze -- Candy ===
   ID: 1939586
@@ -116,7 +117,8 @@
   Year: 2009
   Label: Znootpoch
   Art: https://i.discogs.com/VpJqoeqJcU12Njc98ahgrWxrTXy9uD6nPhp6KaVg3xM/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzk1/ODYtMTMxNTEzMzIy/Ny5qcGVn.jpeg
-  (no tracks found)
+   1. Bellyfull - Candy [Pos: A | Key: G# minor (1A) | BPM: 175]
+   2. Breeze - Candy [Pos: B | Key: F# minor (11A) | BPM: 180]
 
 === Duppy Man / Top Shotta -- Chase & Status ===
   ID: 541608
@@ -125,7 +127,8 @@
   Year: 2005
   Label: Breakbeat Kaos
   Art: https://i.discogs.com/nd-LzRiASteiRJmcpp7sS28EVmmbNtiQcwYM-N6TIaY/rs:fit/g:sm/q:90/h:479/w:490/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0MTYw/OC0xMTI5NTczNTAz/LmpwZWc.jpeg
-  (no tracks found)
+   1. Duppy Man - Chase & Status [Pos: A | Key: C# minor (12A) | BPM: 110]
+   2. Top Shotta - Chase & Status [Pos: AA | Key: G major (9B) | BPM: 140]
 
 === Champion (Benny Page Remix) / Champion Dub (Benny Page Remix) -- Curtis Lynch Jr Featuring Million Stylez & Mr Williamz ===
   ID: 4553446
@@ -134,7 +137,8 @@
   Year: 2013
   Label: Necessary Bass
   Art: https://i.discogs.com/WHSUUvBWsprnKG7WIeHvqiR_z_4YGSdtKLHEYaTaQIw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NTM0/NDYtMTM4ODAxNjg2/NS00NDY4LmpwZWc.jpeg
-  (no tracks found)
+   1. Champion - Curtis Lynch Jr Featuring Million Stylez & Mr Williamz [Pos: A]
+   2. Champion Dub - Curtis Lynch Jr Featuring Million Stylez & Mr Williamz [Pos: B]
 
 === "Ring The Alarm" Relick / "You Don't Know" Relick -- Deja Gambino / Heretic ===
   ID: 977098
@@ -143,7 +147,8 @@
   Year: 2007
   Label: Rude Bwoy Plastic
   Art: https://i.discogs.com/5sQ4h4mewejXSgoC1Plc_8nPl54nBROe2e-JiG1031k/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3NzA5/OC0xMjA2NTQ2MDE0/LmpwZWc.jpeg
-  (no tracks found)
+   1. "Ring The Alarm" Relick - Deja Gambino [Pos: A]
+   2. "You Don't Know" Relick - Heretic [Pos: AA]
 
 === Zunga / No No No (Remix) -- DJ Deekline & Ed Solo ===
   ID: 4715884
@@ -152,7 +157,8 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/WzdKT7b5bwSIarzSduHmhrfIm5jxw3Javy7F1-fOYHg/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTU4/ODQtMTM3MzIwMjI3/NC05MDg5LmpwZWc.jpeg
-  (no tracks found)
+   1. Zunga - DJ Deekline & Ed Solo [Pos: A1 | Key: A# minor (3A) | BPM: 87]
+   2. No No No - DJ Deekline & Ed Solo [Pos: B1 | Key: E minor (9A) | BPM: 108]
 
 === Bad Boyz / You Can Be My Night -- Deekline And Ed Solo ===
   ID: 3951449
@@ -161,7 +167,8 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/prmwD5RJ-OUy3z0GepH--4EMzoPU5Xz5tKZn2bRlSnI/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTE0/NDktMTM1MDg4NTgy/MC05ODgwLmpwZWc.jpeg
-  (no tracks found)
+   1. Bad Boyz - Deekline And Ed Solo [Pos: A]
+   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA]
 
 === Super Skank / Nervous -- DJ Panik ===
   ID: 2041969
@@ -170,7 +177,8 @@
   Year: 2009
   Label: Drum Orange, ES Production
   Art: https://i.discogs.com/9U3uBYxzkRWnFXnkEgoeQcreIy-O73SRnIzY5cC2a74/rs:fit/g:sm/q:90/h:250/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDE5/NjktMTI2MDk2NDc3/MC5naWY.jpeg
-  (no tracks found)
+   1. Super Skank (Phetsta Rmx) - DJ Panik [Pos: A]
+   2. Nervous - DJ Panik [Pos: B]
 
 === Wheel Up -- DJ Panik, Dijeyow, Psychofreud ===
   ID: 4882233
@@ -179,7 +187,8 @@
   Year: 2013
   Label: Dubnest
   Art: https://i.discogs.com/o3G-n7Kvv38M0_iW3AaswVgYzfglS1TDgGQ9dOBYvWI/rs:fit/g:sm/q:90/h:366/w:366/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4ODIy/MzMtMTM3ODM2Nzcw/My0xMTg2LmpwZWc.jpeg
-  (no tracks found)
+   1. Wheel Up - DJ Panik, Dijeyow [Pos: A | Key: B minor (10A) | BPM: 176]
+   2. Jah Jah See Dem A Come - Psychofreud, Dijeyow [Pos: B | Key: B major (1B) | BPM: 175]
 
 === Lose Control E.P. -- Fak Scratch & Sr. Wilson ===
   ID: 7830328
@@ -188,7 +197,10 @@
   Year: 2015
   Label: Melting Pot
   Art: https://i.discogs.com/qyiH9LRro7hu0xL30dfw2IB-LxL97BE3dFz7L1a4GHM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MzAz/MjgtMTQ0OTc0ODQw/Ni01MjgzLmpwZWc.jpeg
-  (no tracks found)
+   1. Lose Control - Fak Scratch & Sr. Wilson [Pos: A1 | Key: D major (10B) | BPM: 89]
+   2. Pablo Dread Remix - Fak Scratch & Sr. Wilson [Pos: A2 | Key: D major (10B) | BPM: 178]
+   3. Dj Panik Remix - Fak Scratch & Sr. Wilson [Pos: B1 | Key: F# minor (11A) | BPM: 178]
+   4. Variedub Remix - Fak Scratch & Sr. Wilson [Pos: B2]
 
 === Bunn The Sensi -- DJ Heretic Feat. Top Cat ===
   ID: 133356
