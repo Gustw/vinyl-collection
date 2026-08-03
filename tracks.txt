@@ -4108,19 +4108,19 @@
   Year: 2019
   Label: Demon Records
   Art: https://i.discogs.com/4MxcFwhsd0EsxDUkCzaaXQjDnUrPralYt0ml08aDBWc/rs:fit/g:sm/q:90/h:512/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzIw/NDc1LTE3MTcxOTQz/OTEtNjY1MS5qcGVn.jpeg
-   1. Believe - The James Taylor Quartet [Key: Ab major (4B) | BPM: 100]
-   2. Leads Me Back To You - The James Taylor Quartet [Key: C major (8B) | BPM: 143]
-   3. Decoding The Pyramids - The James Taylor Quartet [Key: C# major (3B) | BPM: 141]
-   4. Send Me - The James Taylor Quartet [Key: A major (11B) | BPM: 189]
-   5. Living - The James Taylor Quartet [Key: A major (11B) | BPM: 119]
-   6. Chasing Dragons - The James Taylor Quartet [Key: A minor (8A) | BPM: 152]
-   7. Can't Buy Joy - The James Taylor Quartet [Key: C major (8B) | BPM: 178]
-   8. First Time - The James Taylor Quartet [Key: C# major (3B) | BPM: 117]
-   9. Outta Sight - The James Taylor Quartet [Key: G major (9B) | BPM: 80]
-  10. Change Your Mind - The James Taylor Quartet [Key: E major (12B) | BPM: 117]
-  11. Starship - The James Taylor Quartet [Key: D minor (7A) | BPM: 123]
-  12. Tko - The James Taylor Quartet [Key: C# major (3B) | BPM: 115]
-  13. Mr C - The James Taylor Quartet [Key: D minor (7A) | BPM: 147]
+   1. Believe - The James Taylor Quartet [Pos: A1 | Key: Ab major (4B) | BPM: 100]
+   2. Leads Me Back To You - The James Taylor Quartet [Pos: A2 | Key: C major (8B) | BPM: 143]
+   3. Decoding The Pyramids - The James Taylor Quartet [Pos: A3 | Key: C# major (3B) | BPM: 141]
+   4. Send Me - The James Taylor Quartet [Pos: A4 | Key: A major (11B) | BPM: 189]
+   5. Living - The James Taylor Quartet [Pos: A5 | Key: A major (11B) | BPM: 119]
+   6. Chasing Dragons - The James Taylor Quartet [Pos: B1 | Key: A minor (8A) | BPM: 152]
+   7. Can't Buy Joy - The James Taylor Quartet [Pos: B2 | Key: C major (8B) | BPM: 178]
+   8. First Time - The James Taylor Quartet [Pos: B3 | Key: C# major (3B) | BPM: 117]
+   9. Outta Sight - The James Taylor Quartet [Pos: B4 | Key: G major (9B) | BPM: 80]
+  10. Change Your Mind - The James Taylor Quartet [Pos: C1 | Key: E major (12B) | BPM: 117]
+  11. Starship - The James Taylor Quartet [Pos: C2 | Key: D minor (7A) | BPM: 123]
+  12. Tko - The James Taylor Quartet [Pos: C3 | Key: C# major (3B) | BPM: 115]
+  13. Mr C - The James Taylor Quartet [Pos: C4 | Key: D minor (7A) | BPM: 147]
 
 === Cascade Street -- Yann Tiersen ===
   ID: 9214013
@@ -4129,26 +4129,26 @@
   Year: 2016
   Label: Ici D'Ailleurs
   Art: https://i.discogs.com/HRLz29kIchImdg46lUsS747Hk19K7P-3TyXRjwyEDzg/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyMTQw/MTMtMTQ3Njc4NTc2/OC0zNTcwLmpwZWc.jpeg
-   1. I've Never Been There - Yann Tiersen [Key: G major (9B) | BPM: 100]
-   2. Cascade Street - Yann Tiersen [Key: C# minor (12A) | BPM: 110]
-   3. Not That Simple - Yann Tiersen [Key: G major (9B) | BPM: 180]
-   4. Summer Nursery Rhyme No. 2 - Yann Tiersen [Key: E minor (9A) | BPM: 124]
-   5. Summer Nursery Rhyme No. 3 - Yann Tiersen [Key: G major (9B) | BPM: 117]
-   6. Already Gone - Yann Tiersen [Key: D minor (7A) | BPM: 104]
-   7. The Room - Yann Tiersen [Key: A# minor (3A) | BPM: 122]
-   8. Introductory Movement - Yann Tiersen [Key: C major (8B) | BPM: 106]
-   9. The Mute Girl - Yann Tiersen [Key: G major (9B) | BPM: 94]
-  10. Naomi - Yann Tiersen [Key: G major (9B) | BPM: 73]
-  11. Evening Party - Yann Tiersen [Key: E minor (9A) | BPM: 103]
-  12. The Old Man Still Wants It - Yann Tiersen [Key: E major (12B) | BPM: 124]
-  13. Still Here - Yann Tiersen [Key: E minor (9A) | BPM: 125]
-  14. It Was There... - Yann Tiersen [Key: B minor (10A) | BPM: 82]
-  15. Prayer No. 2 - Yann Tiersen [Key: E minor (9A) | BPM: 104]
-  16. Summer Nursery Rhyme No. 1 - Yann Tiersen [Key: E minor (9A) | BPM: 124]
-  17. The Window - Yann Tiersen [Key: A minor (8A) | BPM: 100]
-  18. Prayer No. 3 - Yann Tiersen [Key: G minor (6A) | BPM: 101]
-  19. The Empty Room - Yann Tiersen [Key: A minor (8A) | BPM: 113]
-  20. Everyday Life - Yann Tiersen [Key: D minor (7A) | BPM: 140]
+   1. I've Never Been There - Yann Tiersen [Pos: A1 | Time: 1:31 | Key: G major (9B) | BPM: 100]
+   2. Cascade Street - Yann Tiersen [Pos: A2 | Time: 4:01 | Key: C# minor (12A) | BPM: 110]
+   3. Not That Simple - Yann Tiersen [Pos: A3 | Time: 1:51 | Key: G major (9B) | BPM: 180]
+   4. Summer Nursery Rhyme No. 2 - Yann Tiersen [Pos: A4 | Time: 2:12 | Key: E minor (9A) | BPM: 124]
+   5. Summer Nursery Rhyme No. 3 - Yann Tiersen [Pos: A5 | Time: 1:49 | Key: G major (9B) | BPM: 117]
+   6. Already Gone - Yann Tiersen [Pos: B1 | Time: 2:53 | Key: D minor (7A) | BPM: 104]
+   7. The Room - Yann Tiersen [Pos: B2 | Time: 1:47 | Key: A# minor (3A) | BPM: 122]
+   8. Introductory Movement - Yann Tiersen [Pos: B3 | Time: 2:22 | Key: C major (8B) | BPM: 106]
+   9. The Mute Girl - Yann Tiersen [Pos: B4 | Time: 3:37 | Key: G major (9B) | BPM: 94]
+  10. Naomi - Yann Tiersen [Pos: B5 | Time: 4:06 | Key: G major (9B) | BPM: 73]
+  11. Evening Party - Yann Tiersen [Pos: C1 | Time: 2:52 | Key: E minor (9A) | BPM: 103]
+  12. The Old Man Still Wants It - Yann Tiersen [Pos: C2 | Time: 1:42 | Key: E major (12B) | BPM: 124]
+  13. Still Here - Yann Tiersen [Pos: C3 | Time: 1:10 | Key: E minor (9A) | BPM: 125]
+  14. It Was There... - Yann Tiersen [Pos: C4 | Time: 1:33 | Key: B minor (10A) | BPM: 82]
+  15. Prayer No. 2 - Yann Tiersen [Pos: C5 | Time: 1:22 | Key: E minor (9A) | BPM: 104]
+  16. Summer Nursery Rhyme No. 1 - Yann Tiersen [Pos: D1 | Time: 2:15 | Key: E minor (9A) | BPM: 124]
+  17. The Window - Yann Tiersen [Pos: D2 | Time: 2:48 | Key: A minor (8A) | BPM: 100]
+  18. Prayer No. 3 - Yann Tiersen [Pos: D3 | Time: 1:00 | Key: G minor (6A) | BPM: 101]
+  19. The Empty Room - Yann Tiersen [Pos: D4 | Time: 1:36 | Key: A minor (8A) | BPM: 113]
+  20. Everyday Life - Yann Tiersen [Pos: D5 | Time: 7:38 | Key: D minor (7A) | BPM: 140]
 
 === Don't Worry Be Groovy! -- Alien Project ===
   ID: 246820
@@ -4157,14 +4157,14 @@
   Year: 2004
   Label: TIP.World
   Art: https://i.discogs.com/PEzJCTKHWlfMNuQGjX5qYwqFEC8pinuZc-Li4N2hXJc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0Njgy/MC0xNTg2Nzc1NDI4/LTE3MDQuanBlZw.jpeg
-   1. Magic - Alien Project [Key: C major (8B) | BPM: 145]
-   2. Groovy - Alien Project [Key: C# minor (12A) | BPM: 145]
-   3. Who Has The Marijuana? - Alien Project [Key: G major (9B) | BPM: 145]
-   4. I Remember The First Time - Alien Project [Key: B minor (10A) | BPM: 148]
-   5. One Good (Remix) - Alien Project [Key: G major (9B) | BPM: 145]
-   6. Fantasy - Alien Project [Key: G major (9B) | BPM: 145]
-   7. Nitro Punch - Alien Project [Key: C major (8B) | BPM: 145]
-   8. Rapiginio - Alien Project [Key: B major (1B) | BPM: 142]
+   1. Magic - Alien Project [Pos: A1 | Key: C major (8B) | BPM: 145]
+   2. Groovy - Alien Project [Pos: A2 | Key: C# minor (12A) | BPM: 145]
+   3. Who Has The Marijuana? - Alien Project [Pos: B1 | Key: G major (9B) | BPM: 145]
+   4. I Remember The First Time - Alien Project [Pos: B2 | Key: B minor (10A) | BPM: 148]
+   5. One Good (Remix) - Alien Project [Pos: C1 | Key: G major (9B) | BPM: 145]
+   6. Fantasy - Alien Project [Pos: C2 | Key: G major (9B) | BPM: 145]
+   7. Nitro Punch - Alien Project [Pos: D1 | Key: C major (8B) | BPM: 145]
+   8. Rapiginio - Alien Project [Pos: D2 | Key: B major (1B) | BPM: 142]
 
 === Evolution Of Expanded Consciousness -- Various ===
   ID: 713854
@@ -4173,12 +4173,12 @@
   Year: 2006
   Label: TIP.World
   Art: https://i.discogs.com/D_tcrRYMcJLw8wokjiZUteFzH4KEsunE79Apm0K2CPc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMzg1/NC0xNTEzODA5OTI3/LTU4NzMuanBlZw.jpeg
-   1. Vine Of Souls (Australia) - Cyberbabas [Key: D major (10B) | BPM: 65]
-   2. Ancient Teachers Of Mankind (England) - Eat Static [Key: F minor (4A) | BPM: 140]
-   3. Dances Between Worlds (South America) - 1200 Micrograms [Key: G# minor (1A) | BPM: 138]
-   4. Voyages Into The Supernatural (Africa) - Hujaboy [Key: G# minor (1A) | BPM: 94]
-   5. Flesh Of The Gods (India) - GMS [Key: D major (10B) | BPM: 97]
-   6. The Serpent (Europe) - Bullet Proof [Key: G major (9B) | BPM: 81]
+   1. Vine Of Souls (Australia) - Cyberbabas [Pos: A | Key: D major (10B) | BPM: 65]
+   2. Ancient Teachers Of Mankind (England) - Eat Static [Pos: B1 | Key: F minor (4A) | BPM: 140]
+   3. Dances Between Worlds (South America) - 1200 Micrograms [Pos: B2 | Key: G# minor (1A) | BPM: 138]
+   4. Voyages Into The Supernatural (Africa) - Hujaboy [Pos: C1 | Key: G# minor (1A) | BPM: 94]
+   5. Flesh Of The Gods (India) - GMS [Pos: C2 | Key: D major (10B) | BPM: 97]
+   6. The Serpent (Europe) - Bullet Proof [Pos: D | Key: G major (9B) | BPM: 81]
 
 === Aries Tunes 002 -- Various ===
   ID: 193973
@@ -4187,12 +4187,12 @@
   Year: 2000
   Label: Aries Tunes
   Art: https://i.discogs.com/FsU9b-sZKDqVGVDluG6V9AD_ciPG3IUkGV5ykmt3Vbk/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzk3/My0wMDEuanBn.jpeg
-   1. Rumburak - Eargear [Key: D# minor (2A) | BPM: 128]
-   2. Matrix - Amphasis [Key: C# major (3B) | BPM: 111]
-   3. MDMA Test - Alegria [Key: G major (9B) | BPM: 122]
-   4. Time - Peternity Test [Key: G major (9B) | BPM: 108]
-   5. Control - Eric Elser [Key: D major (10B) | BPM: 125]
-   6. Shrooms'n Fishfingers - Phony Orphants [Key: G minor (6A) | BPM: 120]
+   1. Rumburak - Eargear [Pos: A | Time: 7:49 | Key: D# minor (2A) | BPM: 128]
+   2. Matrix - Amphasis [Pos: B1 | Time: 6:05 | Key: C# major (3B) | BPM: 111]
+   3. MDMA Test - Alegria [Pos: B2 | Time: 7:22 | Key: G major (9B) | BPM: 122]
+   4. Time - Peternity Test [Pos: C | Time: 9:36 | Key: G major (9B) | BPM: 108]
+   5. Control - Eric Elser [Pos: D1 | Time: 8:11 | Key: D major (10B) | BPM: 125]
+   6. Shrooms'n Fishfingers - Phony Orphants [Pos: D2 | Time: 8:07 | Key: G minor (6A) | BPM: 120]
 
 === Freestyle -- Rastaliens ===
   ID: 206402
@@ -4201,14 +4201,14 @@
   Year: 2002
   Label: Balloonia Ltd.
   Art: https://i.discogs.com/YcZKikLLsXTAT-L9WUifvsjnTJcQe_pHfHm6UzZoiYU/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjQw/Mi0xNzE2MjMyNDM0/LTQxMjEuanBlZw.jpeg
-   1. Bodyspeaker - Rastaliens [Key: F# minor (11A) | BPM: 140]
-   2. Weird Condios - Rastaliens [Key: F# minor (11A) | BPM: 143]
-   3. Grumble - Rastaliens [Key: G major (9B) | BPM: 143]
-   4. Fitz Fatz - Rastaliens [Key: G# minor (1A) | BPM: 143]
-   5. Mission Not Possible - Rastaliens [Key: C major (8B) | BPM: 140]
-   6. Twister - Rastaliens [Key: G major (9B) | BPM: 142]
-   7. Fat Flip - Rastaliens [Key: G major (9B) | BPM: 140]
-   8. Mr. Sandman - Rastaliens [Key: C# minor (12A) | BPM: 143]
+   1. Bodyspeaker - Rastaliens [Pos: A1 | Time: 7:52 | Key: F# minor (11A) | BPM: 140]
+   2. Weird Condios - Rastaliens [Pos: A2 | Time: 9:02 | Key: F# minor (11A) | BPM: 143]
+   3. Grumble - Rastaliens [Pos: B1 | Time: 7:39 | Key: G major (9B) | BPM: 143]
+   4. Fitz Fatz - Rastaliens [Pos: B2 | Time: 8:08 | Key: G# minor (1A) | BPM: 143]
+   5. Mission Not Possible - Rastaliens [Pos: C1 | Time: 7:05 | Key: C major (8B) | BPM: 140]
+   6. Twister - Rastaliens [Pos: C2 | Time: 8:28 | Key: G major (9B) | BPM: 142]
+   7. Fat Flip - Rastaliens [Pos: D1 | Time: 8:29 | Key: G major (9B) | BPM: 140]
+   8. Mr. Sandman - Rastaliens [Pos: D2 | Time: 8:15 | Key: C# minor (12A) | BPM: 143]
 
 === Balagan -- Various ===
   ID: 227032
@@ -4217,14 +4217,14 @@
   Year: 1996
   Label: Symbiosis Records
   Art: https://i.discogs.com/_DrgS82iQ72Ua_e8yyiwiyrQg4dpuf2VaA2DSrSKwHM/rs:fit/g:sm/q:90/h:566/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNzAz/Mi0xMTM5MTY5MTI0/LmpwZWc.jpeg
-   1. Desert Sun - MFG [Key: C major (8B) | BPM: 140]
-   2. Aurora Borealis - Astral Projection [Key: B minor (10A) | BPM: 138]
-   3. Paranormal Activity - Phreaky [Key: C major (8B) | BPM: 150]
-   4. Hallucinator - Chakra [Key: Bb major (6B) | BPM: 141]
-   5. Tripulogic - Sandman [Key: G# minor (1A) | BPM: 147]
-   6. G-Force - Sandman [Key: A major (11B) | BPM: 152]
-   7. Shape The Future - MFG [Key: E minor (9A) | BPM: 145]
-   8. Atlantis - Inscape [Key: G# minor (1A) | BPM: 116]
+   1. Desert Sun - MFG [Pos: A1 | Time: 8:12 | Key: C major (8B) | BPM: 140]
+   2. Aurora Borealis - Astral Projection [Pos: A2 | Time: 7:57 | Key: B minor (10A) | BPM: 138]
+   3. Paranormal Activity - Phreaky [Pos: B1 | Time: 7:35 | Key: C major (8B) | BPM: 150]
+   4. Hallucinator - Chakra [Pos: B2 | Time: 8:56 | Key: Bb major (6B) | BPM: 141]
+   5. Tripulogic - Sandman [Pos: C1 | Time: 10:30 | Key: G# minor (1A) | BPM: 147]
+   6. G-Force - Sandman [Pos: C2 | Time: 10:44 | Key: A major (11B) | BPM: 152]
+   7. Shape The Future - MFG [Pos: D1 | Time: 9:45 | Key: E minor (9A) | BPM: 145]
+   8. Atlantis - Inscape [Pos: D2 | Time: 7:42 | Key: G# minor (1A) | BPM: 116]
 
 === Lovetechnology -- Manmademan ===
   ID: 96453
@@ -4233,12 +4233,12 @@
   Year: 2000
   Label: Flying Rhino Records
   Art: https://i.discogs.com/ho4azd2LfXUUlccpozkaKw3WJdGQ7pyqLL5Xw9RHsyA/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2NDUz/LTEyMDEzMzk5Mzgu/anBlZw.jpeg
-   1. Lunar Lammas - Manmademan [Key: G# minor (1A) | BPM: 138]
-   2. CircleMakers - Manmademan [Key: Ab major (4B) | BPM: 92]
-   3. Breathless - Manmademan [Key: D major (10B) | BPM: 81]
-   4. Bad Seed - Manmademan [Key: A major (11B) | BPM: 143]
-   5. 1920 - Manmademan [Key: G major (9B) | BPM: 98]
-   6. Won't Belong - Manmademan [Key: F major (7B) | BPM: 80]
+   1. Lunar Lammas - Manmademan [Pos: A1 | Time: 7:45 | Key: G# minor (1A) | BPM: 138]
+   2. CircleMakers - Manmademan [Pos: A2 | Time: 5:48 | Key: Ab major (4B) | BPM: 92]
+   3. Breathless - Manmademan [Pos: B | Time: 8:19 | Key: D major (10B) | BPM: 81]
+   4. Bad Seed - Manmademan [Pos: C | Time: 8:53 | Key: A major (11B) | BPM: 143]
+   5. 1920 - Manmademan [Pos: D1 | Time: 7:55 | Key: G major (9B) | BPM: 98]
+   6. Won't Belong - Manmademan [Pos: D2 | Time: 7:23 | Key: F major (7B) | BPM: 80]
 
 === Serial Killaz -- Various ===
   ID: 93837
@@ -4247,14 +4247,14 @@
   Year: 2000
   Label: Atomic Records
   Art: https://i.discogs.com/s5padd6pGRT_xyAjdrnbUm3JybGzKcNFUFBfS2ojqH4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzODM3/LTE2MjQxOTE0NjIt/MTgwMy5qcGVn.jpeg
-   1. Second Sight - Eat Static [Key: C# major (3B) | BPM: 139]
-   2. Moodadjuster - Viper [Key: F# minor (11A) | BPM: 106]
-   3. Uncut (Badangmix) - Dope [Key: D major (10B) | BPM: 120]
-   4. Bug Thing - Wasp vs. Steriliser [Key: D major (10B) | BPM: 98]
-   5. Impact (Ad Mix) - N-Tropic [Key: E minor (9A) | BPM: 97]
-   6. Darkling Baby - Noise [Key: C major (8B) | BPM: 147]
-   7. Professor Hastig - Four Carry Nuts [Key: B minor (10A) | BPM: 145]
-   8. Big Block - Snug [Key: B minor (10A) | BPM: 144]
+   1. Second Sight - Eat Static [Pos: A1 | Time: 8:41 | Key: C# major (3B) | BPM: 139]
+   2. Moodadjuster - Viper [Pos: A2 | Time: 6:18 | Key: F# minor (11A) | BPM: 106]
+   3. Uncut (Badangmix) - Dope [Pos: B1 | Time: 7:59 | Key: D major (10B) | BPM: 120]
+   4. Bug Thing - Wasp vs. Steriliser [Pos: B2 | Time: 6:02 | Key: D major (10B) | BPM: 98]
+   5. Impact (Ad Mix) - N-Tropic [Pos: C1 | Time: 7:48 | Key: E minor (9A) | BPM: 97]
+   6. Darkling Baby - Noise [Pos: C2 | Time: 7:51 | Key: C major (8B) | BPM: 147]
+   7. Professor Hastig - Four Carry Nuts [Pos: D1 | Time: 9:17 | Key: B minor (10A) | BPM: 145]
+   8. Big Block - Snug [Pos: D2 | Time: 7:08 | Key: B minor (10A) | BPM: 144]
 
 === Brothers In Arms -- Dire Straits ===
   ID: 15174524
@@ -4263,15 +4263,15 @@
   Year: 2019
   Label: Vertigo, Phonogram
   Art: https://i.discogs.com/_PccCUX7cY6vtzgWNvrk0wcTVnxiklhVqttn-w6tcyo/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTc0/NTI0LTE3NTU0NjI5/NzItODM3Ni5qcGVn.jpeg
-   1. So Far Away - Dire Straits [Key: E major (12B) | BPM: 114]
-   2. Money For Nothing - Dire Straits [Key: D minor (7A) | BPM: 134]
-   3. Walk Of Life - Dire Straits [Key: E major (12B) | BPM: 172]
-   4. Your Latest Trick - Dire Straits [Key: E major (12B) | BPM: 123]
-   5. Why Worry - Dire Straits [Key: E major (12B) | BPM: 94]
-   6. Ride Across The River - Dire Straits [Key: E minor (9A) | BPM: 143]
-   7. The Man's Too Strong - Dire Straits [Key: G major (9B) | BPM: 98]
-   8. One World - Dire Straits [Key: B minor (10A) | BPM: 108]
-   9. Brothers In Arms - Dire Straits [Key: G# minor (1A) | BPM: 79]
+   1. So Far Away - Dire Straits [Pos: A1 | Key: E major (12B) | BPM: 114]
+   2. Money For Nothing - Dire Straits [Pos: A2 | Key: D minor (7A) | BPM: 134]
+   3. Walk Of Life - Dire Straits [Pos: B1 | Key: E major (12B) | BPM: 172]
+   4. Your Latest Trick - Dire Straits [Pos: B2 | Key: E major (12B) | BPM: 123]
+   5. Why Worry - Dire Straits [Pos: C1 | Key: E major (12B) | BPM: 94]
+   6. Ride Across The River - Dire Straits [Pos: C2 | Key: E minor (9A) | BPM: 143]
+   7. The Man's Too Strong - Dire Straits [Pos: D1 | Key: G major (9B) | BPM: 98]
+   8. One World - Dire Straits [Pos: D2 | Key: B minor (10A) | BPM: 108]
+   9. Brothers In Arms - Dire Straits [Pos: D3 | Key: G# minor (1A) | BPM: 79]
 
 === Transformer -- Lou Reed ===
   ID: 14642092
