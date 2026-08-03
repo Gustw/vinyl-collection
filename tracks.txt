@@ -3021,18 +3021,18 @@
   Style: Psychedelic Rock
   Label: Big Beat Records
   Art: https://i.discogs.com/4B2ISgEAEX7dbR4YmAIZwc2ox2xeNXNaT7BUxvCr3GI/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTU5/NzUyLTE1NDkxNDEz/MTgtMzY4NC5qcGVn.jpeg
-   1. Care Of Cell 44 - The Zombies [Key: G major (9B) | BPM: 130]
-   2. A Rose For Emily - The Zombies [Key: D major (10B) | BPM: 141]
-   3. Maybe After He's Gone - The Zombies [Key: D major (10B) | BPM: 121]
-   4. Beechwood Park - The Zombies [Key: Eb major (5B) | BPM: 148]
-   5. Brief Candles - The Zombies [Key: F# minor (11A) | BPM: 135]
-   6. Hung Up On A Dream - The Zombies [Key: C major (8B) | BPM: 101]
-   7. Changes - The Zombies [Key: G major (9B) | BPM: 127]
-   8. I Want Her She Wants Me - The Zombies [Key: G major (9B) | BPM: 129]
-   9. This Will Be Our Year - The Zombies [Key: A major (11B) | BPM: 97]
-  10. Butcher's Tale (Western Front 1914) - The Zombies [Key: A minor (8A) | BPM: 114]
-  11. Friends Of Mine - The Zombies [Key: C major (8B) | BPM: 126]
-  12. Time Of The Season - The Zombies [Key: E minor (9A) | BPM: 118]
+   1. Care Of Cell 44 - The Zombies [Pos: A1 | Key: G major (9B) | BPM: 130]
+   2. A Rose For Emily - The Zombies [Pos: A2 | Key: D major (10B) | BPM: 141]
+   3. Maybe After He's Gone - The Zombies [Pos: A3 | Key: D major (10B) | BPM: 121]
+   4. Beechwood Park - The Zombies [Pos: A4 | Key: Eb major (5B) | BPM: 148]
+   5. Brief Candles - The Zombies [Pos: A5 | Key: F# minor (11A) | BPM: 135]
+   6. Hung Up On A Dream - The Zombies [Pos: A6 | Key: C major (8B) | BPM: 101]
+   7. Changes - The Zombies [Pos: B1 | Key: G major (9B) | BPM: 127]
+   8. I Want Her She Wants Me - The Zombies [Pos: B2 | Key: G major (9B) | BPM: 129]
+   9. This Will Be Our Year - The Zombies [Pos: B3 | Key: A major (11B) | BPM: 97]
+  10. Butcher's Tale (Western Front 1914) - The Zombies [Pos: B4 | Key: A minor (8A) | BPM: 114]
+  11. Friends Of Mine - The Zombies [Pos: B5 | Key: C major (8B) | BPM: 126]
+  12. Time Of The Season - The Zombies [Pos: B6 | Key: E minor (9A) | BPM: 118]
 
 === Smash Hits -- The Jimi Hendrix Experience ===
   ID: 8394977
@@ -3041,18 +3041,18 @@
   Year: 2016
   Label: Experience Hendrix, Legacy, Sony Music
   Art: https://i.discogs.com/0HwjnnsE9twNHqJ1bJSxztmDrL7hneE5clAnD9CqaKY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzOTQ5/NzctMTQ2MDc5Mzk4/OS03MzU5LmpwZWc.jpeg
-   1. Purple Haze - The Jimi Hendrix Experience [Key: D major (10B) | BPM: 109]
-   2. Fire - The Jimi Hendrix Experience [Key: A major (11B) | BPM: 153]
-   3. The Wind Cries Mary - The Jimi Hendrix Experience [Key: F major (7B) | BPM: 80]
-   4. Can You See Me - The Jimi Hendrix Experience [Key: F# minor (11A) | BPM: 134]
-   5. Hey Joe - The Jimi Hendrix Experience [Key: A major (11B) | BPM: 169]
-   6. All Along The Watchtower - The Jimi Hendrix Experience [Key: Ab major (4B) | BPM: 113]
-   7. Stone Free - The Jimi Hendrix Experience [Key: D major (10B) | BPM: 133]
-   8. Crosstown Traffic - The Jimi Hendrix Experience [Key: C minor (5A) | BPM: 113]
-   9. Manic Depression - The Jimi Hendrix Experience [Key: C# major (3B) | BPM: 150]
-  10. Remember - The Jimi Hendrix Experience [Key: C# major (3B) | BPM: 99]
-  11. Red House - The Jimi Hendrix Experience [Key: F minor (4A) | BPM: 54]
-  12. Foxey Lady - The Jimi Hendrix Experience [Key: C# minor (12A) | BPM: 98]
+   1. Purple Haze - The Jimi Hendrix Experience [Pos: A1 | Time: 2:50 | Key: D major (10B) | BPM: 109]
+   2. Fire - The Jimi Hendrix Experience [Pos: A2 | Time: 2:43 | Key: A major (11B) | BPM: 153]
+   3. The Wind Cries Mary - The Jimi Hendrix Experience [Pos: A3 | Time: 3:20 | Key: F major (7B) | BPM: 80]
+   4. Can You See Me - The Jimi Hendrix Experience [Pos: A4 | Time: 2:33 | Key: F# minor (11A) | BPM: 134]
+   5. Hey Joe - The Jimi Hendrix Experience [Pos: A5 | Time: 3:30 | Key: A major (11B) | BPM: 169]
+   6. All Along The Watchtower - The Jimi Hendrix Experience [Pos: A6 | Time: 3:59 | Key: Ab major (4B) | BPM: 113]
+   7. Stone Free - The Jimi Hendrix Experience [Pos: B1 | Time: 3:36 | Key: D major (10B) | BPM: 133]
+   8. Crosstown Traffic - The Jimi Hendrix Experience [Pos: B2 | Time: 2:12 | Key: C minor (5A) | BPM: 113]
+   9. Manic Depression - The Jimi Hendrix Experience [Pos: B3 | Time: 3:42 | Key: C# major (3B) | BPM: 150]
+  10. Remember - The Jimi Hendrix Experience [Pos: B4 | Time: 2:48 | Key: C# major (3B) | BPM: 99]
+  11. Red House - The Jimi Hendrix Experience [Pos: B5 | Time: 3:50 | Key: F minor (4A) | BPM: 54]
+  12. Foxey Lady - The Jimi Hendrix Experience [Pos: B6 | Time: 3:18 | Key: C# minor (12A) | BPM: 98]
 
 === Disraeli Gears -- Cream ===
   ID: 13712296
@@ -3061,17 +3061,17 @@
   Year: 2019
   Label: Polydor, Universal
   Art: https://i.discogs.com/E4Ag0KIhX0Qz4Mm1lOzcCb4jNdnKkIjCoLiQ9T5eFkM/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzEy/Mjk2LTE1NTk1NTU3/OTYtNTA5My5qcGVn.jpeg
-   1. Strange Brew - Cream [Key: D major (10B) | BPM: 106]
-   2. Sunshine Of Your Love - Cream [Key: D major (10B) | BPM: 115]
-   3. World Of Pain - Cream [Key: D major (10B) | BPM: 107]
-   4. Dance The Night Away - Cream [Key: A minor (8A) | BPM: 128]
-   5. Blue Condition - Cream [Key: C major (8B) | BPM: 80]
-   6. Tales Of Brave Ulysses - Cream [Key: C minor (5A) | BPM: 106]
-   7. Swlabr - Cream [Key: E minor (9A) | BPM: 124]
-   8. We're Going Wrong - Cream [Key: B minor (10A) | BPM: 132]
-   9. Outside Woman Blues - Cream [Key: A major (11B) | BPM: 113]
-  10. Take It Back - Cream [Key: D major (10B) | BPM: 121]
-  11. Mother's Lament - Cream [Key: G major (9B) | BPM: 95]
+   1. Strange Brew - Cream [Pos: A1 | Key: D major (10B) | BPM: 106]
+   2. Sunshine Of Your Love - Cream [Pos: A2 | Key: D major (10B) | BPM: 115]
+   3. World Of Pain - Cream [Pos: A3 | Key: D major (10B) | BPM: 107]
+   4. Dance The Night Away - Cream [Pos: A4 | Key: A minor (8A) | BPM: 128]
+   5. Blue Condition - Cream [Pos: A5 | Key: C major (8B) | BPM: 80]
+   6. Tales Of Brave Ulysses - Cream [Pos: B1 | Key: C minor (5A) | BPM: 106]
+   7. Swlabr - Cream [Pos: B2 | Key: E minor (9A) | BPM: 124]
+   8. We're Going Wrong - Cream [Pos: B3 | Key: B minor (10A) | BPM: 132]
+   9. Outside Woman Blues - Cream [Pos: B4 | Key: A major (11B) | BPM: 113]
+  10. Take It Back - Cream [Pos: B5 | Key: D major (10B) | BPM: 121]
+  11. Mother's Lament - Cream [Pos: B6 | Key: G major (9B) | BPM: 95]
 
 === Abraxas -- Santana ===
   ID: 3481603
@@ -3080,15 +3080,15 @@
   Year: 1973
   Label: Columbia
   Art: https://i.discogs.com/_kXY8pF_QTKkwFhBPO91N3EYNqGpXPJA8tCALPyea_M/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0ODE2/MDMtMTM3NzgwNTI1/NC05ODI1LmpwZWc.jpeg
-   1. Singing Winds, Crying Beasts - Santana [Key: C major (8B) | BPM: 120]
-   2. Black Magic Woman / Gypsy Queen - Santana [Key: D minor (7A) | BPM: 124]
-   3. Oye Como Va - Santana [Key: G major (9B) | BPM: 128]
-   4. Incident At Neshabur - Santana [Key: C major (8B) | BPM: 136]
-   5. Se A Cabo - Santana [Key: A# minor (3A) | BPM: 137]
-   6. Mother's Daughter - Santana [Key: Bb major (6B) | BPM: 139]
-   7. Samba Pa Ti - Santana [Key: A minor (8A) | BPM: 92]
-   8. Hope You're Feeling Better - Santana [Key: D major (10B) | BPM: 94]
-   9. El Nicoya - Santana [Key: A# minor (3A) | BPM: 146]
+   1. Singing Winds, Crying Beasts - Santana [Pos: A1 | Time: 4:48 | Key: C major (8B) | BPM: 120]
+   2. Black Magic Woman / Gypsy Queen - Santana [Pos: A2 | Time: 5:24 | Key: D minor (7A) | BPM: 124]
+   3. Oye Como Va - Santana [Pos: A3 | Time: 4:19 | Key: G major (9B) | BPM: 128]
+   4. Incident At Neshabur - Santana [Pos: A4 | Time: 5:02 | Key: C major (8B) | BPM: 136]
+   5. Se A Cabo - Santana [Pos: B1 | Time: 2:51 | Key: A# minor (3A) | BPM: 137]
+   6. Mother's Daughter - Santana [Pos: B2 | Time: 4:28 | Key: Bb major (6B) | BPM: 139]
+   7. Samba Pa Ti - Santana [Pos: B3 | Time: 4:47 | Key: A minor (8A) | BPM: 92]
+   8. Hope You're Feeling Better - Santana [Pos: B4 | Time: 4:07 | Key: D major (10B) | BPM: 94]
+   9. El Nicoya - Santana [Pos: B5 | Time: 1:32 | Key: A# minor (3A) | BPM: 146]
 
 === Amigos -- Santana ===
   ID: 13854143
@@ -3097,13 +3097,13 @@
   Year: 1976
   Label: CBS
   Art: https://i.discogs.com/yN-SrzNg15d62XOUFzroV5Pw2kp0uw2xhZvjq9xdzrY/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODU0/MTQzLTE1NjI2Njg0/NzQtNTk0MS5qcGVn.jpeg
-   1. Dance Sister Dance (Baila Mi Hermana) - Santana [Key: F minor (4A) | BPM: 142]
-   2. Take Me With You - Santana [Key: A minor (8A) | BPM: 118]
-   3. Let Me - Santana [Key: D minor (7A) | BPM: 96]
-   4. Gitano - Santana [Key: A minor (8A) | BPM: 118]
-   5. Tell Me Are You Tired - Santana [Key: Ab major (4B) | BPM: 116]
-   6. Europa (Earth's Cry Heaven's Smile) - Santana [Key: C minor (5A) | BPM: 75]
-   7. Let It Shine - Santana [Key: D major (10B) | BPM: 107]
+   1. Dance Sister Dance (Baila Mi Hermana) - Santana [Pos: A1 | Key: F minor (4A) | BPM: 142]
+   2. Take Me With You - Santana [Pos: A2 | Key: A minor (8A) | BPM: 118]
+   3. Let Me - Santana [Pos: A3 | Key: D minor (7A) | BPM: 96]
+   4. Gitano - Santana [Pos: B1 | Key: A minor (8A) | BPM: 118]
+   5. Tell Me Are You Tired - Santana [Pos: B2 | Key: Ab major (4B) | BPM: 116]
+   6. Europa (Earth's Cry Heaven's Smile) - Santana [Pos: B3 | Key: C minor (5A) | BPM: 75]
+   7. Let It Shine - Santana [Pos: B4 | Key: D major (10B) | BPM: 107]
 
 === Psychedelic Journey -- Santana ===
   ID: 12034417
@@ -3112,15 +3112,15 @@
   Year: 2015
   Label: Cuvmusic
   Art: https://i.discogs.com/Mgk9UHsNSTkPvNj4zqk9uYFizbgkkACQPaO8N9IluHo/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMDM0/NDE3LTE1MjY5NzQ5/MjUtOTE0MC5qcGVn.jpeg
-   1. Jingo - Santana [Key: G major (9B) | BPM: 127]
-   2. Soul Sacrifice - Santana [Key: G major (9B) | BPM: 136]
-   3. With A Liitle Help From My Friends - Santana [Key: E major (12B) | BPM: 161]
-   4. Persuasion - Santana [Key: F# major (2B) | BPM: 131]
-   5. Latin Tropical - Santana [Key: D major (10B) | BPM: 109]
-   6. Acapulco Sunrise - Santana [Key: F major (7B) | BPM: 140]
-   7. Coconut Grove - Santana [Key: C major (8B) | BPM: 119]
-   8. Travellin' Blues - Santana [Key: C minor (5A) | BPM: 86]
-   9. Fried Neckbones And Some Home Fries - Santana [Key: Bb major (6B) | BPM: 118]
+   1. Jingo - Santana [Pos: A1 | Key: G major (9B) | BPM: 127]
+   2. Soul Sacrifice - Santana [Pos: A2 | Key: G major (9B) | BPM: 136]
+   3. With A Liitle Help From My Friends - Santana [Pos: A3 | Key: E major (12B) | BPM: 161]
+   4. Persuasion - Santana [Pos: A4 | Key: F# major (2B) | BPM: 131]
+   5. Latin Tropical - Santana [Pos: B1 | Key: D major (10B) | BPM: 109]
+   6. Acapulco Sunrise - Santana [Pos: B2 | Key: F major (7B) | BPM: 140]
+   7. Coconut Grove - Santana [Pos: B3 | Key: C major (8B) | BPM: 119]
+   8. Travellin' Blues - Santana [Pos: B4 | Key: C minor (5A) | BPM: 86]
+   9. Fried Neckbones And Some Home Fries - Santana [Pos: B5 | Key: Bb major (6B) | BPM: 118]
 
 === Clandestino -- Manu Chao ===
   ID: 14869294
@@ -3129,38 +3129,38 @@
   Year: 2020
   Label: Because Music, Radio Bemba
   Art: https://i.discogs.com/KIWhheo-Ds8z-CSbilEnMo8t7CmcIDX1rQ3jMnC3G0w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODY5/Mjk0LTE1ODMxNTEw/MDEtOTQ5Mi5qcGVn.jpeg
-   1. Clandestino - Manu Chao [Key: F# minor (11A) | BPM: 85]
-   2. Desaparecido - Manu Chao [Key: A minor (8A) | BPM: 192]
-   3. Bongo Bong - Manu Chao [Key: A minor (8A) | BPM: 150]
-   4. Je Ne T'Aime Plus - Manu Chao [Key: A minor (8A) | BPM: 150]
-   5. Mentira... - Manu Chao [Key: F minor (4A) | BPM: 76]
-   6. Lagrimas De Oro - Manu Chao [Key: A major (11B) | BPM: 96]
-   7. Mama Call - Manu Chao [Key: F# minor (11A) | BPM: 82]
-   8. Luna Y Sol - Manu Chao [Key: A minor (8A) | BPM: 122]
-   9. Por El Suelo - Manu Chao [Key: A# minor (3A) | BPM: 79]
-  10. Welcome To Tijuana - Manu Chao [Key: D minor (7A) | BPM: 142]
-  11. Dia Luna... Dia Pena - Manu Chao [Key: E minor (9A) | BPM: 122]
-  12. Malegria - Manu Chao [Key: A minor (8A) | BPM: 122]
-  13. La Vie À 2 - Manu Chao [Key: F minor (4A) | BPM: 158]
-  14. Minha Galera - Manu Chao [Key: E major (12B) | BPM: 130]
-  15. La Despedida - Manu Chao [Key: B minor (10A) | BPM: 164]
-  16. El Viento - Manu Chao [Key: E major (12B) | BPM: 129]
-  17. Clandestino - Manu Chao [Key: F# minor (11A) | BPM: 85]
-  18. Desaparecido - Manu Chao [Key: A minor (8A) | BPM: 192]
-  19. Bongo Bong - Manu Chao [Key: A minor (8A) | BPM: 150]
-  20. Je Ne T'Aime Plus - Manu Chao [Key: A minor (8A) | BPM: 150]
-  21. Mentira... - Manu Chao [Key: F minor (4A) | BPM: 76]
-  22. Lagrimas De Oro - Manu Chao [Key: A major (11B) | BPM: 96]
-  23. Mama Call - Manu Chao [Key: F# minor (11A) | BPM: 82]
-  24. Luna Y Sol - Manu Chao [Key: A minor (8A) | BPM: 122]
-  25. Por El Suelo - Manu Chao [Key: A# minor (3A) | BPM: 79]
-  26. Welcome To Tijuana - Manu Chao [Key: D minor (7A) | BPM: 142]
-  27. Dia Luna... Dia Pena - Manu Chao [Key: E minor (9A) | BPM: 122]
-  28. Malegria - Manu Chao [Key: A minor (8A) | BPM: 122]
-  29. La Vie À 2 - Manu Chao [Key: F minor (4A) | BPM: 158]
-  30. Minha Galera - Manu Chao [Key: E major (12B) | BPM: 130]
-  31. La Despedida - Manu Chao [Key: B minor (10A) | BPM: 164]
-  32. El Viento - Manu Chao [Key: E major (12B) | BPM: 129]
+   1. Clandestino - Manu Chao [Pos: CD-1 | Time: 2:30 | Key: F# minor (11A) | BPM: 85]
+   2. Desaparecido - Manu Chao [Pos: CD-2 | Time: 3:47 | Key: A minor (8A) | BPM: 192]
+   3. Bongo Bong - Manu Chao [Pos: CD-3 | Time: 2:38 | Key: A minor (8A) | BPM: 150]
+   4. Je Ne T'Aime Plus - Manu Chao [Pos: CD-4 | Time: 2:02 | Key: A minor (8A) | BPM: 150]
+   5. Mentira... - Manu Chao [Pos: CD-5 | Time: 4:37 | Key: F minor (4A) | BPM: 76]
+   6. Lagrimas De Oro - Manu Chao [Pos: CD-6 | Time: 2:57 | Key: A major (11B) | BPM: 96]
+   7. Mama Call - Manu Chao [Pos: CD-7 | Time: 2:21 | Key: F# minor (11A) | BPM: 82]
+   8. Luna Y Sol - Manu Chao [Pos: CD-8 | Time: 3:07 | Key: A minor (8A) | BPM: 122]
+   9. Por El Suelo - Manu Chao [Pos: CD-9 | Time: 2:21 | Key: A# minor (3A) | BPM: 79]
+  10. Welcome To Tijuana - Manu Chao [Pos: CD-10 | Time: 4:04 | Key: D minor (7A) | BPM: 142]
+  11. Dia Luna... Dia Pena - Manu Chao [Pos: CD-11 | Time: 1:30 | Key: E minor (9A) | BPM: 122]
+  12. Malegria - Manu Chao [Pos: CD-12 | Time: 2:55 | Key: A minor (8A) | BPM: 122]
+  13. La Vie À 2 - Manu Chao [Pos: CD-13 | Time: 3:00 | Key: F minor (4A) | BPM: 158]
+  14. Minha Galera - Manu Chao [Pos: CD-14 | Time: 2:21 | Key: E major (12B) | BPM: 130]
+  15. La Despedida - Manu Chao [Pos: CD-15 | Time: 3:09 | Key: B minor (10A) | BPM: 164]
+  16. El Viento - Manu Chao [Pos: CD-16 | Time: 2:26 | Key: E major (12B) | BPM: 129]
+  17. Clandestino - Manu Chao [Pos: CD-1 | Time: 2:30 | Key: F# minor (11A) | BPM: 85]
+  18. Desaparecido - Manu Chao [Pos: CD-2 | Time: 3:47 | Key: A minor (8A) | BPM: 192]
+  19. Bongo Bong - Manu Chao [Pos: CD-3 | Time: 2:38 | Key: A minor (8A) | BPM: 150]
+  20. Je Ne T'Aime Plus - Manu Chao [Pos: CD-4 | Time: 2:02 | Key: A minor (8A) | BPM: 150]
+  21. Mentira... - Manu Chao [Pos: CD-5 | Time: 4:37 | Key: F minor (4A) | BPM: 76]
+  22. Lagrimas De Oro - Manu Chao [Pos: CD-6 | Time: 2:57 | Key: A major (11B) | BPM: 96]
+  23. Mama Call - Manu Chao [Pos: CD-7 | Time: 2:21 | Key: F# minor (11A) | BPM: 82]
+  24. Luna Y Sol - Manu Chao [Pos: CD-8 | Time: 3:07 | Key: A minor (8A) | BPM: 122]
+  25. Por El Suelo - Manu Chao [Pos: CD-9 | Time: 2:21 | Key: A# minor (3A) | BPM: 79]
+  26. Welcome To Tijuana - Manu Chao [Pos: CD-10 | Time: 4:04 | Key: D minor (7A) | BPM: 142]
+  27. Dia Luna... Dia Pena - Manu Chao [Pos: CD-11 | Time: 1:30 | Key: E minor (9A) | BPM: 122]
+  28. Malegria - Manu Chao [Pos: CD-12 | Time: 2:55 | Key: A minor (8A) | BPM: 122]
+  29. La Vie À 2 - Manu Chao [Pos: CD-13 | Time: 3:00 | Key: F minor (4A) | BPM: 158]
+  30. Minha Galera - Manu Chao [Pos: CD-14 | Time: 2:21 | Key: E major (12B) | BPM: 130]
+  31. La Despedida - Manu Chao [Pos: CD-15 | Time: 3:09 | Key: B minor (10A) | BPM: 164]
+  32. El Viento - Manu Chao [Pos: CD-16 | Time: 2:26 | Key: E major (12B) | BPM: 129]
 
 === Lost In The Dream -- The War On Drugs ===
   ID: 7323643
@@ -3168,16 +3168,16 @@
   Style: Indie Rock
   Label: Secretly Canadian
   Art: https://i.discogs.com/tuyrukUltbv_8SMxPToeugGG1yofB30U1zbQBquiebk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczMjM2/NDMtMTUwODIwMTA2/Mi0yNDMxLmpwZWc.jpeg
-   1. Under The Pressure - The War On Drugs [Key: F# major (2B) | BPM: 134]
-   2. Red Eyes - The War On Drugs [Key: Bb major (6B) | BPM: 162]
-   3. Suffering - The War On Drugs [Key: C major (8B) | BPM: 138]
-   4. An Ocean In Between The Waves - The War On Drugs [Key: F major (7B) | BPM: 167]
-   5. Disappearing - The War On Drugs [Key: G# minor (1A) | BPM: 108]
-   6. Eyes To The Wind - The War On Drugs [Key: D major (10B) | BPM: 117]
-   7. The Haunting Idle - The War On Drugs [Key: A minor (8A) | BPM: 64]
-   8. Burning - The War On Drugs [Key: A major (11B) | BPM: 155]
-   9. Lost In The Dream - The War On Drugs [Key: G major (9B) | BPM: 113]
-  10. In Reverse - The War On Drugs [Key: C# major (3B) | BPM: 114]
+   1. Under The Pressure - The War On Drugs [Pos: A1 | Key: F# major (2B) | BPM: 134]
+   2. Red Eyes - The War On Drugs [Pos: A2 | Key: Bb major (6B) | BPM: 162]
+   3. Suffering - The War On Drugs [Pos: A3 | Key: C major (8B) | BPM: 138]
+   4. An Ocean In Between The Waves - The War On Drugs [Pos: B1 | Key: F major (7B) | BPM: 167]
+   5. Disappearing - The War On Drugs [Pos: B2 | Key: G# minor (1A) | BPM: 108]
+   6. Eyes To The Wind - The War On Drugs [Pos: C1 | Key: D major (10B) | BPM: 117]
+   7. The Haunting Idle - The War On Drugs [Pos: C2 | Key: A minor (8A) | BPM: 64]
+   8. Burning - The War On Drugs [Pos: C3 | Key: A major (11B) | BPM: 155]
+   9. Lost In The Dream - The War On Drugs [Pos: D1 | Key: G major (9B) | BPM: 113]
+  10. In Reverse - The War On Drugs [Pos: D2 | Key: C# major (3B) | BPM: 114]
 
 === A Deeper Understanding -- The War On Drugs ===
   ID: 10755142
@@ -3186,16 +3186,16 @@
   Year: 2017
   Label: Atlantic
   Art: https://i.discogs.com/jqj15NQtoc9FefEZVE_jh-5epa7Pii1WHRrrpSbUIAg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzU1/MTQyLTE1MDM3NjU1/MTEtNDk0NS5qcGVn.jpeg
-   1. Up All Night - The War On Drugs [Key: D major (10B) | BPM: 127]
-   2. Pain - The War On Drugs [Key: G minor (6A) | BPM: 116]
-   3. Holding On - The War On Drugs [Key: F# major (2B) | BPM: 150]
-   4. Strangest Thing - The War On Drugs [Key: E major (12B) | BPM: 75]
-   5. Knocked Down - The War On Drugs [Key: C major (8B) | BPM: 120]
-   6. Nothing To Find - The War On Drugs [Key: C major (8B) | BPM: 158]
-   7. Thinking Of A Place - The War On Drugs [Key: B major (1B) | BPM: 103]
-   8. In Chains - The War On Drugs [Key: B major (1B) | BPM: 138]
-   9. Clean Living - The War On Drugs [Key: C# major (3B) | BPM: 87]
-  10. You Don't Have To Go - The War On Drugs [Key: E major (12B) | BPM: 134]
+   1. Up All Night - The War On Drugs [Pos: A1 | Time: 6:24 | Key: D major (10B) | BPM: 127]
+   2. Pain - The War On Drugs [Pos: A2 | Time: 5:31 | Key: G minor (6A) | BPM: 116]
+   3. Holding On - The War On Drugs [Pos: A3 | Time: 5:51 | Key: F# major (2B) | BPM: 150]
+   4. Strangest Thing - The War On Drugs [Pos: B1 | Time: 6:41 | Key: E major (12B) | BPM: 75]
+   5. Knocked Down - The War On Drugs [Pos: B2 | Time: 4:00 | Key: C major (8B) | BPM: 120]
+   6. Nothing To Find - The War On Drugs [Pos: B3 | Time: 6:10 | Key: C major (8B) | BPM: 158]
+   7. Thinking Of A Place - The War On Drugs [Pos: C1 | Time: 11:10 | Key: B major (1B) | BPM: 103]
+   8. In Chains - The War On Drugs [Pos: C2 | Time: 7:21 | Key: B major (1B) | BPM: 138]
+   9. Clean Living - The War On Drugs [Pos: D1 | Time: 6:28 | Key: C# major (3B) | BPM: 87]
+  10. You Don't Have To Go - The War On Drugs [Pos: D2 | Time: 6:43 | Key: E major (12B) | BPM: 134]
 
 === The Division Bell -- Pink Floyd ===
   ID: 8984837
@@ -3204,17 +3204,17 @@
   Year: 2016
   Label: Pink Floyd Records, Columbia
   Art: https://i.discogs.com/b2rubAKOFqm9niTvXrmaRmBnsPppUxrrsz8GKJcts6k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5ODQ4/MzctMTQ3NzIzNjg2/Ni03NzUwLmpwZWc.jpeg
-   1. Cluster One - Pink Floyd [Key: C major (8B) | BPM: 104]
-   2. What Do You Want From Me - Pink Floyd [Key: E major (12B) | BPM: 104]
-   3. Poles Apart - Pink Floyd [Key: G major (9B) | BPM: 61]
-   4. Marooned - Pink Floyd [Key: G major (9B) | BPM: 74]
-   5. A Great Day For Freedom - Pink Floyd [Key: C major (8B) | BPM: 84]
-   6. Wearing The Inside Out - Pink Floyd [Key: Bb major (6B) | BPM: 122]
-   7. Take It Back - Pink Floyd [Key: G major (9B) | BPM: 112]
-   8. Coming Back To Life - Pink Floyd [Key: C major (8B) | BPM: 176]
-   9. Keep Talking - Pink Floyd [Key: E minor (9A) | BPM: 100]
-  10. Lost For Words - Pink Floyd [Key: C major (8B) | BPM: 96]
-  11. High Hopes - Pink Floyd [Key: C minor (5A) | BPM: 75]
+   1. Cluster One - Pink Floyd [Pos: A1 | Time: 5:58 | Key: C major (8B) | BPM: 104]
+   2. What Do You Want From Me - Pink Floyd [Pos: A2 | Time: 4:21 | Key: E major (12B) | BPM: 104]
+   3. Poles Apart - Pink Floyd [Pos: A3 | Time: 7:04 | Key: G major (9B) | BPM: 61]
+   4. Marooned - Pink Floyd [Pos: B1 | Time: 5:29 | Key: G major (9B) | BPM: 74]
+   5. A Great Day For Freedom - Pink Floyd [Pos: B2 | Time: 4:17 | Key: C major (8B) | BPM: 84]
+   6. Wearing The Inside Out - Pink Floyd [Pos: B3 | Time: 6:49 | Key: Bb major (6B) | BPM: 122]
+   7. Take It Back - Pink Floyd [Pos: C1 | Time: 6:12 | Key: G major (9B) | BPM: 112]
+   8. Coming Back To Life - Pink Floyd [Pos: C2 | Time: 6:19 | Key: C major (8B) | BPM: 176]
+   9. Keep Talking - Pink Floyd [Pos: C3 | Time: 6:11 | Key: E minor (9A) | BPM: 100]
+  10. Lost For Words - Pink Floyd [Pos: D1 | Time: 5:14 | Key: C major (8B) | BPM: 96]
+  11. High Hopes - Pink Floyd [Pos: D2 | Time: 8:31 | Key: C minor (5A) | BPM: 75]
 
 === Music Has The Right To Children -- Boards Of Canada ===
   ID: 5006908
