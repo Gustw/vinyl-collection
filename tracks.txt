@@ -2839,13 +2839,13 @@
   Year: 1977
   Label: ABC Records
   Art: https://i.discogs.com/3Pxzvua2yABfdbcOVeiTdXiLvIYxULvquQzSG6Cj-ak/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDIz/MzQtMTMxOTU5NTc4/NC5qcGVn.jpeg
-   1. Black Cow - Steely Dan [Key: D major (10B) | BPM: 189]
-   2. Aja - Steely Dan [Key: G major (9B) | BPM: 117]
-   3. Deacon Blues - Steely Dan [Key: C major (8B) | BPM: 116]
-   4. Peg - Steely Dan [Key: G major (9B) | BPM: 117]
-   5. Home At Last - Steely Dan [Key: G minor (6A) | BPM: 63]
-   6. I Got The News - Steely Dan [Key: A minor (8A) | BPM: 121]
-   7. Josie - Steely Dan [Key: E minor (9A) | BPM: 122]
+   1. Black Cow - Steely Dan [Pos: A1 | Time: 5:07 | Key: D major (10B) | BPM: 189]
+   2. Aja - Steely Dan [Pos: A2 | Time: 7:56 | Key: G major (9B) | BPM: 117]
+   3. Deacon Blues - Steely Dan [Pos: A3 | Time: 7:26 | Key: C major (8B) | BPM: 116]
+   4. Peg - Steely Dan [Pos: B1 | Time: 3:58 | Key: G major (9B) | BPM: 117]
+   5. Home At Last - Steely Dan [Pos: B2 | Time: 5:31 | Key: G minor (6A) | BPM: 63]
+   6. I Got The News - Steely Dan [Pos: B3 | Time: 5:03 | Key: A minor (8A) | BPM: 121]
+   7. Josie - Steely Dan [Pos: B4 | Time: 4:30 | Key: E minor (9A) | BPM: 122]
 
 === Sounds Of Silence -- Simon & Garfunkel ===
   ID: 4475328
@@ -2853,18 +2853,18 @@
   Style: Folk Rock
   Label: CBS
   Art: https://i.discogs.com/RNYbPXTNt1UFddc4EpcRr-BmU6L7eAFs_fpPEn6jOOg/rs:fit/g:sm/q:90/h:421/w:438/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NzUz/MjgtMTM3MzcyNDY0/NC04NzM3LmpwZWc.jpeg
-   1. The Sounds Of Silence - Simon & Garfunkel [Key: F# major (2B) | BPM: 107]
-   2. Leaves That Are Green - Simon & Garfunkel [Key: E major (12B) | BPM: 106]
-   3. Blessed - Simon & Garfunkel [Key: G major (9B) | BPM: 203]
-   4. Kathy's Song - Simon & Garfunkel [Key: F# major (2B) | BPM: 102]
-   5. Somewhere They Can't Find Me - Simon & Garfunkel [Key: B minor (10A) | BPM: 81]
-   6. Anji - Simon & Garfunkel [Key: B minor (10A) | BPM: 168]
-   7. Homeward Bound - Simon & Garfunkel [Key: Eb major (5B) | BPM: 93]
-   8. Richard Cory - Simon & Garfunkel [Key: B major (1B) | BPM: 81]
-   9. Most Peculiar Man - Simon & Garfunkel [Key: C# major (3B) | BPM: 65]
-  10. April Come She Will - Simon & Garfunkel [Key: A major (11B) | BPM: 102]
-  11. We've Got A Groovey Thing Goin' - Simon & Garfunkel [Key: C minor (5A) | BPM: 94]
-  12. I Am A Rock - Simon & Garfunkel [Key: C major (8B) | BPM: 114]
+   1. The Sounds Of Silence - Simon & Garfunkel [Pos: A1 | Key: F# major (2B) | BPM: 107]
+   2. Leaves That Are Green - Simon & Garfunkel [Pos: A2 | Key: E major (12B) | BPM: 106]
+   3. Blessed - Simon & Garfunkel [Pos: A3 | Key: G major (9B) | BPM: 203]
+   4. Kathy's Song - Simon & Garfunkel [Pos: A4 | Key: F# major (2B) | BPM: 102]
+   5. Somewhere They Can't Find Me - Simon & Garfunkel [Pos: A5 | Key: B minor (10A) | BPM: 81]
+   6. Anji - Simon & Garfunkel [Pos: A6 | Key: B minor (10A) | BPM: 168]
+   7. Homeward Bound - Simon & Garfunkel [Pos: B1 | Key: Eb major (5B) | BPM: 93]
+   8. Richard Cory - Simon & Garfunkel [Pos: B2 | Key: B major (1B) | BPM: 81]
+   9. Most Peculiar Man - Simon & Garfunkel [Pos: B3 | Key: C# major (3B) | BPM: 65]
+  10. April Come She Will - Simon & Garfunkel [Pos: B4 | Key: A major (11B) | BPM: 102]
+  11. We've Got A Groovey Thing Goin' - Simon & Garfunkel [Pos: B5 | Key: C minor (5A) | BPM: 94]
+  12. I Am A Rock - Simon & Garfunkel [Pos: B6 | Key: C major (8B) | BPM: 114]
 
 === His Ultimate Collection -- Bob Dylan ===
   ID: 14664115
@@ -2873,22 +2873,22 @@
   Year: 2019
   Label: Columbia, Sony Music
   Art: https://i.discogs.com/bimK593y_c8Y6X10bttcBbegRzgMY6FDYEvJI5hSlz4/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjY0/MTE1LTE1NzkyNjY4/NTAtOTMxMC5qcGVn.jpeg
-   1. Like A Rolling Stone - Bob Dylan [Key: C major (8B) | BPM: 95]
-   2. Blowin' In The Wind - Bob Dylan [Key: D major (10B) | BPM: 175]
-   3. The Times They Are A-Changin' - Bob Dylan [Key: G major (9B) | BPM: 172]
-   4. Subterranean Homesick Blues - Bob Dylan [Key: E minor (9A) | BPM: 174]
-   5. Positively 4th Street - Bob Dylan [Key: F# major (2B) | BPM: 109]
-   6. Rainy Day Woman # 12 & 35 - Bob Dylan [Key: F major (7B) | BPM: 95]
-   7. All Along The Watchtower - Bob Dylan [Key: C# minor (12A) | BPM: 129]
-   8. If Not For You - Bob Dylan [Key: A major (11B) | BPM: 139]
-   9. Hurricane (Part 1) - Bob Dylan [Key: C major (8B) | BPM: 136]
-  10. Knockin' On Heaven's Door - Bob Dylan [Key: G major (9B) | BPM: 140]
-  11. Make You Feel My Love - Bob Dylan [Key: C# major (3B) | BPM: 143]
-  12. I Want You - Bob Dylan [Key: F major (7B) | BPM: 100]
-  13. Lay Lady Lay - Bob Dylan [Key: B minor (10A) | BPM: 156]
-  14. Tangled Up In Blue - Bob Dylan [Key: A major (11B) | BPM: 101]
-  15. You Ain't Goin Nowhere - Bob Dylan [Key: G major (9B) | BPM: 116]
-  16. Wigwam - Bob Dylan [Key: C major (8B) | BPM: 138]
+   1. Like A Rolling Stone - Bob Dylan [Pos: A1 | Key: C major (8B) | BPM: 95]
+   2. Blowin' In The Wind - Bob Dylan [Pos: A2 | Key: D major (10B) | BPM: 175]
+   3. The Times They Are A-Changin' - Bob Dylan [Pos: A3 | Key: G major (9B) | BPM: 172]
+   4. Subterranean Homesick Blues - Bob Dylan [Pos: A4 | Key: E minor (9A) | BPM: 174]
+   5. Positively 4th Street - Bob Dylan [Pos: A5 | Key: F# major (2B) | BPM: 109]
+   6. Rainy Day Woman # 12 & 35 - Bob Dylan [Pos: A6 | Key: F major (7B) | BPM: 95]
+   7. All Along The Watchtower - Bob Dylan [Pos: A7 | Key: C# minor (12A) | BPM: 129]
+   8. If Not For You - Bob Dylan [Pos: A8 | Key: A major (11B) | BPM: 139]
+   9. Hurricane (Part 1) - Bob Dylan [Pos: B1 | Key: C major (8B) | BPM: 136]
+  10. Knockin' On Heaven's Door - Bob Dylan [Pos: B2 | Key: G major (9B) | BPM: 140]
+  11. Make You Feel My Love - Bob Dylan [Pos: B3 | Key: C# major (3B) | BPM: 143]
+  12. I Want You - Bob Dylan [Pos: B4 | Key: F major (7B) | BPM: 100]
+  13. Lay Lady Lay - Bob Dylan [Pos: B5 | Key: B minor (10A) | BPM: 156]
+  14. Tangled Up In Blue - Bob Dylan [Pos: B6 | Key: A major (11B) | BPM: 101]
+  15. You Ain't Goin Nowhere - Bob Dylan [Pos: B7 | Key: G major (9B) | BPM: 116]
+  16. Wigwam - Bob Dylan [Pos: B8 | Key: C major (8B) | BPM: 138]
 
 === The Velvet Underground & Nico -- The Velvet Underground & Nico ===
   ID: 7101649
@@ -2897,17 +2897,17 @@
   Year: 2015
   Label: Verve Records
   Art: https://i.discogs.com/FSvLta9SaXksy2OBqqPK5F6nJAstlIyx3EupHGzzZqU/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMDE2/NDktMTY0ODMwNDA1/MC05NTk4LnBuZw.jpeg
-   1. Sunday Morning - The Velvet Underground & Nico [Key: F minor (4A) | BPM: 106]
-   2. I'm Waiting For The Man - The Velvet Underground & Nico [Key: G major (9B) | BPM: 126]
-   3. Femme Fatale - The Velvet Underground & Nico [Key: C major (8B) | BPM: 104]
-   4. Venus In Furs - The Velvet Underground & Nico [Key: G# minor (1A) | BPM: 145]
-   5. Run Run Run - The Velvet Underground & Nico [Key: G major (9B) | BPM: 144]
-   6. All Tomorrow's Parties - The Velvet Underground & Nico [Key: D major (10B) | BPM: 93]
-   7. Heroin - The Velvet Underground & Nico [Key: C# major (3B) | BPM: 146]
-   8. There She Goes Again - The Velvet Underground & Nico [Key: G major (9B) | BPM: 124]
-   9. I'll Be Your Mirror - The Velvet Underground & Nico [Key: G major (9B) | BPM: 109]
-  10. The Black Angel's Death Song - The Velvet Underground & Nico [Key: G major (9B) | BPM: 122]
-  11. European Son - The Velvet Underground & Nico [Key: G major (9B) | BPM: 77]
+   1. Sunday Morning - The Velvet Underground & Nico [Pos: A1 | Time: 2:53 | Key: F minor (4A) | BPM: 106]
+   2. I'm Waiting For The Man - The Velvet Underground & Nico [Pos: A2 | Time: 4:37 | Key: G major (9B) | BPM: 126]
+   3. Femme Fatale - The Velvet Underground & Nico [Pos: A3 | Time: 2:35 | Key: C major (8B) | BPM: 104]
+   4. Venus In Furs - The Velvet Underground & Nico [Pos: A4 | Time: 5:07 | Key: G# minor (1A) | BPM: 145]
+   5. Run Run Run - The Velvet Underground & Nico [Pos: A5 | Time: 4:18 | Key: G major (9B) | BPM: 144]
+   6. All Tomorrow's Parties - The Velvet Underground & Nico [Pos: A6 | Time: 5:55 | Key: D major (10B) | BPM: 93]
+   7. Heroin - The Velvet Underground & Nico [Pos: B1 | Time: 7:05 | Key: C# major (3B) | BPM: 146]
+   8. There She Goes Again - The Velvet Underground & Nico [Pos: B2 | Time: 2:30 | Key: G major (9B) | BPM: 124]
+   9. I'll Be Your Mirror - The Velvet Underground & Nico [Pos: B3 | Time: 2:01 | Key: G major (9B) | BPM: 109]
+  10. The Black Angel's Death Song - The Velvet Underground & Nico [Pos: B4 | Time: 3:10 | Key: G major (9B) | BPM: 122]
+  11. European Son - The Velvet Underground & Nico [Pos: B5 | Time: 7:40 | Key: G major (9B) | BPM: 77]
 
 === Greatest Hits -- Queen ===
   ID: 9371072
@@ -2916,23 +2916,23 @@
   Year: 2016
   Label: Virgin EMI Records
   Art: https://i.discogs.com/k7Q4X_bVGADYJW5-ib7-Hoyl-xNxeog22e0Ufnur9zc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNzEw/NzItMTQ4MzE4MTU2/My05MjgwLmpwZWc.jpeg
-   1. Bohemian Rhapsody - Queen [Key: C minor (5A) | BPM: 144]
-   2. Another One Bites The Dust - Queen [Key: F minor (4A) | BPM: 110]
-   3. Killer Queen - Queen [Key: Bb major (6B) | BPM: 117]
-   4. Fat Bottomed Girls - Queen [Key: D major (10B) | BPM: 88]
-   5. Bicycle Race - Queen [Key: Eb major (5B) | BPM: 83]
-   6. You're My Best Friend - Queen [Key: C major (8B) | BPM: 119]
-   7. Don't Stop Me Now - Queen [Key: F major (7B) | BPM: 156]
-   8. Save Me - Queen [Key: G major (9B) | BPM: 82]
-   9. Crazy Little Thing Called Love - Queen [Key: C major (8B) | BPM: 77]
-  10. Somebody To Love - Queen [Key: Ab major (4B) | BPM: 109]
-  11. Now I'm Here - Queen [Key: E major (12B) | BPM: 133]
-  12. Good Old-Fashioned Lover Boy - Queen [Key: Eb major (5B) | BPM: 97]
-  13. Play The Game - Queen [Key: F major (7B) | BPM: 79]
-  14. Flash - Queen [Key: E minor (9A) | BPM: 108]
-  15. Seven Seas Of Rhye - Queen [Key: D major (10B) | BPM: 126]
-  16. We Will Rock You - Queen [Key: D major (10B) | BPM: 81]
-  17. We Are The Champions - Queen [Key: G minor (6A) | BPM: 64]
+   1. Bohemian Rhapsody - Queen [Pos: A1 | Time: 5:54 | Key: C minor (5A) | BPM: 144]
+   2. Another One Bites The Dust - Queen [Pos: A2 | Time: 3:36 | Key: F minor (4A) | BPM: 110]
+   3. Killer Queen - Queen [Pos: A3 | Time: 2:59 | Key: Bb major (6B) | BPM: 117]
+   4. Fat Bottomed Girls - Queen [Pos: A4 | Time: 3:21 | Key: D major (10B) | BPM: 88]
+   5. Bicycle Race - Queen [Pos: B1 | Time: 3:02 | Key: Eb major (5B) | BPM: 83]
+   6. You're My Best Friend - Queen [Pos: B2 | Time: 2:51 | Key: C major (8B) | BPM: 119]
+   7. Don't Stop Me Now - Queen [Pos: B3 | Time: 3:29 | Key: F major (7B) | BPM: 156]
+   8. Save Me - Queen [Pos: B4 | Time: 3:48 | Key: G major (9B) | BPM: 82]
+   9. Crazy Little Thing Called Love - Queen [Pos: C1 | Time: 2:43 | Key: C major (8B) | BPM: 77]
+  10. Somebody To Love - Queen [Pos: C2 | Time: 4:55 | Key: Ab major (4B) | BPM: 109]
+  11. Now I'm Here - Queen [Pos: C3 | Time: 4:13 | Key: E major (12B) | BPM: 133]
+  12. Good Old-Fashioned Lover Boy - Queen [Pos: C4 | Time: 2:54 | Key: Eb major (5B) | BPM: 97]
+  13. Play The Game - Queen [Pos: D1 | Time: 3:31 | Key: F major (7B) | BPM: 79]
+  14. Flash - Queen [Pos: D2 | Time: 2:47 | Key: E minor (9A) | BPM: 108]
+  15. Seven Seas Of Rhye - Queen [Pos: D3 | Time: 2:48 | Key: D major (10B) | BPM: 126]
+  16. We Will Rock You - Queen [Pos: D4 | Time: 2:01 | Key: D major (10B) | BPM: 81]
+  17. We Are The Champions - Queen [Pos: D5 | Time: 2:59 | Key: G minor (6A) | BPM: 64]
 
 === Sigh No More -- Mumford & Sons ===
   ID: 7371826
@@ -2941,18 +2941,18 @@
   Year: 2009
   Label: Island Records, Gentlemen Of The Road
   Art: https://i.discogs.com/sEOmcNtojDeQMx0fbVC3Elb0eJhho-TI7oYVKuGYCJo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczNzE4/MjYtMTQ0MDA1MDU5/MC01ODAxLmpwZWc.jpeg
-   1. Sigh No More - Mumford & Sons [Key: C major (8B) | BPM: 148]
-   2. The Cave - Mumford & Sons [Key: E major (12B) | BPM: 142]
-   3. Winter WInds - Mumford & Sons [Key: G major (9B) | BPM: 84]
-   4. Roll Away Your Stone - Mumford & Sons [Key: E major (12B) | BPM: 137]
-   5. White Blank Page - Mumford & Sons [Key: F# minor (11A) | BPM: 124]
-   6. I Gave You All - Mumford & Sons [Key: D minor (7A) | BPM: 115]
-   7. Little Lion Man - Mumford & Sons [Key: F major (7B) | BPM: 139]
-   8. Timshel - Mumford & Sons [Key: F major (7B) | BPM: 83]
-   9. Thistle & Weeds - Mumford & Sons [Key: D minor (7A) | BPM: 175]
-  10. Awake My Soul - Mumford & Sons [Key: D major (10B) | BPM: 87]
-  11. Dust Bowl Dance - Mumford & Sons [Key: F minor (4A) | BPM: 115]
-  12. After The Storm - Mumford & Sons [Key: G major (9B) | BPM: 152]
+   1. Sigh No More - Mumford & Sons [Pos: A1 | Key: C major (8B) | BPM: 148]
+   2. The Cave - Mumford & Sons [Pos: A2 | Key: E major (12B) | BPM: 142]
+   3. Winter WInds - Mumford & Sons [Pos: A3 | Key: G major (9B) | BPM: 84]
+   4. Roll Away Your Stone - Mumford & Sons [Pos: A4 | Key: E major (12B) | BPM: 137]
+   5. White Blank Page - Mumford & Sons [Pos: A5 | Key: F# minor (11A) | BPM: 124]
+   6. I Gave You All - Mumford & Sons [Pos: A6 | Key: D minor (7A) | BPM: 115]
+   7. Little Lion Man - Mumford & Sons [Pos: B1 | Key: F major (7B) | BPM: 139]
+   8. Timshel - Mumford & Sons [Pos: B2 | Key: F major (7B) | BPM: 83]
+   9. Thistle & Weeds - Mumford & Sons [Pos: B3 | Key: D minor (7A) | BPM: 175]
+  10. Awake My Soul - Mumford & Sons [Pos: B4 | Key: D major (10B) | BPM: 87]
+  11. Dust Bowl Dance - Mumford & Sons [Pos: B5 | Key: F minor (4A) | BPM: 115]
+  12. After The Storm - Mumford & Sons [Pos: B6 | Key: G major (9B) | BPM: 152]
 
 === Nevermind -- Nirvana ===
   ID: 10859343
@@ -2961,18 +2961,18 @@
   Year: 2017
   Label: DGC, Sub Pop
   Art: https://i.discogs.com/xBs-XUF6etPdjfnkq03tN3hs2ZJC5th6x---MuO7r8s/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODU5/MzQzLTE1MzczNjM2/MTQtNjk4MC5tcG8.jpeg
-   1. Smells Like Teen Spirit - Nirvana [Key: C# major (3B) | BPM: 117]
-   2. In Bloom - Nirvana [Key: A# minor (3A) | BPM: 157]
-   3. Come As You Are - Nirvana [Key: E minor (9A) | BPM: 120]
-   4. Breed - Nirvana [Key: E major (12B) | BPM: 158]
-   5. Lithium - Nirvana [Key: G major (9B) | BPM: 123]
-   6. Polly - Nirvana [Key: D minor (7A) | BPM: 121]
-   7. Territorial Pissings - Nirvana [Key: D major (10B) | BPM: 183]
-   8. Drain You - Nirvana [Key: B minor (10A) | BPM: 133]
-   9. Lounge Act - Nirvana [Key: B minor (10A) | BPM: 152]
-  10. Stay Away - Nirvana [Key: B minor (10A) | BPM: 165]
-  11. On A Plain - Nirvana [Key: D major (10B) | BPM: 133]
-  12. Something In The Way - Nirvana [Key: Ab major (4B) | BPM: 105]
+   1. Smells Like Teen Spirit - Nirvana [Pos: A1 | Time: 5:00 | Key: C# major (3B) | BPM: 117]
+   2. In Bloom - Nirvana [Pos: A2 | Time: 4:13 | Key: A# minor (3A) | BPM: 157]
+   3. Come As You Are - Nirvana [Pos: A3 | Time: 3:38 | Key: E minor (9A) | BPM: 120]
+   4. Breed - Nirvana [Pos: A4 | Time: 3:03 | Key: E major (12B) | BPM: 158]
+   5. Lithium - Nirvana [Pos: A5 | Time: 4:16 | Key: G major (9B) | BPM: 123]
+   6. Polly - Nirvana [Pos: A6 | Time: 2:56 | Key: D minor (7A) | BPM: 121]
+   7. Territorial Pissings - Nirvana [Pos: B1 | Time: 2:22 | Key: D major (10B) | BPM: 183]
+   8. Drain You - Nirvana [Pos: B2 | Time: 3:43 | Key: B minor (10A) | BPM: 133]
+   9. Lounge Act - Nirvana [Pos: B3 | Time: 2:35 | Key: B minor (10A) | BPM: 152]
+  10. Stay Away - Nirvana [Pos: B4 | Time: 3:30 | Key: B minor (10A) | BPM: 165]
+  11. On A Plain - Nirvana [Pos: B5 | Time: 3:12 | Key: D major (10B) | BPM: 133]
+  12. Something In The Way - Nirvana [Pos: B6 | Time: 3:43 | Key: Ab major (4B) | BPM: 105]
 
 === MTV Unplugged In New York -- Nirvana ===
   ID: 1901246
@@ -2981,20 +2981,20 @@
   Year: 2008
   Label: Geffen Records
   Art: https://i.discogs.com/gX_tcFGLZEGKRI6NiYw9Gk7ZxhG6o0ExgwSGen81it8/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDEy/NDYtMTc1NzcwMzMx/MC0yMTI5LmpwZWc.jpeg
-   1. About A Girl - Nirvana [Key: F# minor (11A) | BPM: 132]
-   2. Come As You Are - Nirvana [Key: E minor (9A) | BPM: 120]
-   3. Jesus Doesn't Want Me For A Sunbeam - Nirvana [Key: Ab major (4B) | BPM: 114]
-   4. The Man Who Sold The World - Nirvana [Key: C# minor (12A) | BPM: 115]
-   5. Pennyroyal Tea - Nirvana [Key: C# minor (12A) | BPM: 113]
-   6. Dumb - Nirvana [Key: F# major (2B) | BPM: 114]
-   7. Polly - Nirvana [Key: D minor (7A) | BPM: 121]
-   8. On A Plain - Nirvana [Key: D major (10B) | BPM: 133]
-   9. Something In The Way - Nirvana [Key: Ab major (4B) | BPM: 105]
-  10. Plateau - Nirvana [Key: E major (12B) | BPM: 85]
-  11. Oh Me - Nirvana [Key: Ab major (4B) | BPM: 72]
-  12. Lake Of Fire - Nirvana [Key: C# minor (12A) | BPM: 145]
-  13. All Apologies - Nirvana [Key: C# major (3B) | BPM: 113]
-  14. Where Did You Sleep Last Night - Nirvana [Key: Eb major (5B) | BPM: 109]
+   1. About A Girl - Nirvana [Pos: A1 | Time: 3:37 | Key: F# minor (11A) | BPM: 132]
+   2. Come As You Are - Nirvana [Pos: A2 | Time: 4:14 | Key: E minor (9A) | BPM: 120]
+   3. Jesus Doesn't Want Me For A Sunbeam - Nirvana [Pos: A3 | Time: 4:37 | Key: Ab major (4B) | BPM: 114]
+   4. The Man Who Sold The World - Nirvana [Pos: A4 | Time: 4:20 | Key: C# minor (12A) | BPM: 115]
+   5. Pennyroyal Tea - Nirvana [Pos: A5 | Time: 3:40 | Key: C# minor (12A) | BPM: 113]
+   6. Dumb - Nirvana [Pos: A6 | Time: 2:52 | Key: F# major (2B) | BPM: 114]
+   7. Polly - Nirvana [Pos: A7 | Time: 3:16 | Key: D minor (7A) | BPM: 121]
+   8. On A Plain - Nirvana [Pos: B1 | Time: 3:44 | Key: D major (10B) | BPM: 133]
+   9. Something In The Way - Nirvana [Pos: B2 | Time: 4:01 | Key: Ab major (4B) | BPM: 105]
+  10. Plateau - Nirvana [Pos: B3 | Time: 3:38 | Key: E major (12B) | BPM: 85]
+  11. Oh Me - Nirvana [Pos: B4 | Time: 3:26 | Key: Ab major (4B) | BPM: 72]
+  12. Lake Of Fire - Nirvana [Pos: B5 | Time: 2:55 | Key: C# minor (12A) | BPM: 145]
+  13. All Apologies - Nirvana [Pos: B6 | Time: 4:23 | Key: C# major (3B) | BPM: 113]
+  14. Where Did You Sleep Last Night - Nirvana [Pos: B7 | Time: 5:07 | Key: Eb major (5B) | BPM: 109]
 
 === The Doors -- The Doors ===
   ID: 2548932
@@ -3003,17 +3003,17 @@
   Year: 2009
   Label: Elektra, Rhino Vinyl
   Art: https://i.discogs.com/RgwvEQj9d-c-ZZwTTQd_51liBGDGx-1Mwi4slUyacI0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDg5/MzItMTUyNTM3Mjcz/NC01MzAxLmpwZWc.jpeg
-   1. Break On Through (To The Other Side) - The Doors [Key: A major (11B) | BPM: 90]
-   2. Soul Kitchen - The Doors [Key: A major (11B) | BPM: 116]
-   3. The Crystal Ship - The Doors [Key: Bb major (6B) | BPM: 179]
-   4. Twentieth Century Fox - The Doors [Key: A major (11B) | BPM: 114]
-   5. Alabama Song (Whisky Bar) - The Doors [Key: F major (7B) | BPM: 171]
-   6. Light My Fire - The Doors [Key: D# minor (2A) | BPM: 125]
-   7. Back Door Man - The Doors [Key: A major (11B) | BPM: 177]
-   8. I Looked At You - The Doors [Key: C major (8B) | BPM: 149]
-   9. End Of The Night - The Doors [Key: B minor (10A) | BPM: 72]
-  10. Take It As It Comes - The Doors [Key: E minor (9A) | BPM: 149]
-  11. The End - The Doors [Key: C major (8B) | BPM: 106]
+   1. Break On Through (To The Other Side) - The Doors [Pos: A1 | Time: 2:25 | Key: A major (11B) | BPM: 90]
+   2. Soul Kitchen - The Doors [Pos: A2 | Time: 3:30 | Key: A major (11B) | BPM: 116]
+   3. The Crystal Ship - The Doors [Pos: A3 | Time: 2:30 | Key: Bb major (6B) | BPM: 179]
+   4. Twentieth Century Fox - The Doors [Pos: A4 | Time: 2:30 | Key: A major (11B) | BPM: 114]
+   5. Alabama Song (Whisky Bar) - The Doors [Pos: A5 | Time: 3:15 | Key: F major (7B) | BPM: 171]
+   6. Light My Fire - The Doors [Pos: A6 | Time: 6:50 | Key: D# minor (2A) | BPM: 125]
+   7. Back Door Man - The Doors [Pos: B1 | Time: 3:30 | Key: A major (11B) | BPM: 177]
+   8. I Looked At You - The Doors [Pos: B2 | Time: 2:18 | Key: C major (8B) | BPM: 149]
+   9. End Of The Night - The Doors [Pos: B3 | Time: 2:49 | Key: B minor (10A) | BPM: 72]
+  10. Take It As It Comes - The Doors [Pos: B4 | Time: 2:13 | Key: E minor (9A) | BPM: 149]
+  11. The End - The Doors [Pos: B5 | Time: 11:35 | Key: C major (8B) | BPM: 106]
 
 === Odessey And Oracle -- The Zombies ===
   ID: 13159752
