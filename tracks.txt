@@ -4280,17 +4280,17 @@
   Year: 2016
   Label: RCA Victor
   Art: https://i.discogs.com/pHjdmcCLiIdbc2koQgE8YT9Zycud8vxvHL9rNHXWwg0/rs:fit/g:sm/q:90/h:579/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjQy/MDkyLTE1Nzg3NTY4/NjctOTg2OS5qcGVn.jpeg
-   1. Vicious - Lou Reed [Key: D major (10B) | BPM: 124]
-   2. Andy's Chest - Lou Reed [Key: C major (8B) | BPM: 79]
-   3. Perfect Day - Lou Reed [Key: Bb major (6B) | BPM: 145]
-   4. Hangin' Around - Lou Reed [Key: G major (9B) | BPM: 146]
-   5. Walk On The Wild Side - Lou Reed [Key: C major (8B) | BPM: 105]
-   6. Make Up - Lou Reed [Key: Bb major (6B) | BPM: 97]
-   7. Satellite Of Love - Lou Reed [Key: F major (7B) | BPM: 122]
-   8. Wagon Wheel - Lou Reed [Key: G major (9B) | BPM: 135]
-   9. New York Telephone Conversation - Lou Reed [Key: D major (10B) | BPM: 87]
-  10. I'm So Free - Lou Reed [Key: F major (7B) | BPM: 162]
-  11. Goodnight Ladies - Lou Reed [Key: Bb major (6B) | BPM: 89]
+   1. Vicious - Lou Reed [Pos: A1 | Time: 2:55 | Key: D major (10B) | BPM: 124]
+   2. Andy's Chest - Lou Reed [Pos: A2 | Time: 3:17 | Key: C major (8B) | BPM: 79]
+   3. Perfect Day - Lou Reed [Pos: A3 | Time: 3:43 | Key: Bb major (6B) | BPM: 145]
+   4. Hangin' Around - Lou Reed [Pos: A4 | Time: 3:39 | Key: G major (9B) | BPM: 146]
+   5. Walk On The Wild Side - Lou Reed [Pos: A5 | Time: 4:12 | Key: C major (8B) | BPM: 105]
+   6. Make Up - Lou Reed [Pos: B1 | Time: 2:58 | Key: Bb major (6B) | BPM: 97]
+   7. Satellite Of Love - Lou Reed [Pos: B2 | Time: 3:40 | Key: F major (7B) | BPM: 122]
+   8. Wagon Wheel - Lou Reed [Pos: B3 | Time: 3:19 | Key: G major (9B) | BPM: 135]
+   9. New York Telephone Conversation - Lou Reed [Pos: B4 | Time: 1:31 | Key: D major (10B) | BPM: 87]
+  10. I'm So Free - Lou Reed [Pos: B5 | Time: 3:07 | Key: F major (7B) | BPM: 162]
+  11. Goodnight Ladies - Lou Reed [Pos: B6 | Time: 4:19 | Key: Bb major (6B) | BPM: 89]
 
 === Smokers Delight -- Nightmares On Wax ===
   ID: 6202910
@@ -4299,23 +4299,23 @@
   Year: 2014
   Label: Warp Records
   Art: https://i.discogs.com/Iy1WvXmpt1kUQLXYFJMuHqr78OVl6P3uv4JW-3nGcl0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMDI5/MTAtMTQyMzM1NTg5/MC00MDEzLmpwZWc.jpeg
-   1. Nights Introlude - Nightmares On Wax [Key: G major (9B) | BPM: 94]
-   2. Dreddoverboard - Nightmares On Wax [Key: G major (9B) | BPM: 115]
-   3. Pipes Honour - Nightmares On Wax [Key: C# major (3B) | BPM: 159]
-   4. Me + You - Nightmares On Wax [Key: C# major (3B) | BPM: 154]
-   5. Stars - Nightmares On Wax [Key: B minor (10A) | BPM: 157]
-   6. Wait A Minute - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
-   7. Praying For A Jeepbeat - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
-   8. Groove St. - Nightmares On Wax [Key: A# minor (3A) | BPM: 97]
-   9. Time (To Listen) - Nightmares On Wax [Key: Ab major (4B) | BPM: 170]
-  10. (Man) Tha Journey - Nightmares On Wax [Key: C# minor (12A) | BPM: 95]
-  11. Bless My Soul - Nightmares On Wax [Key: C# major (3B) | BPM: 100]
-  12. Cruise (Don't Stop) - Nightmares On Wax [Key: B minor (10A) | BPM: 94]
-  13. Mission Venice - Nightmares On Wax [Key: A minor (8A) | BPM: 126]
-  14. What I'm Feelin (Good) - Nightmares On Wax [Key: Bb major (6B) | BPM: 101]
-  15. Rise - Nightmares On Wax [Key: C# minor (12A) | BPM: 170]
-  16. Rise (Reprise) - Nightmares On Wax [Key: B minor (10A) | BPM: 85]
-  17. Gambia Via Vagatorbeach - Nightmares On Wax [Key: C major (8B) | BPM: 150]
+   1. Nights Introlude - Nightmares On Wax [Pos: A1 | Time: 4:40 | Key: G major (9B) | BPM: 94]
+   2. Dreddoverboard - Nightmares On Wax [Pos: A2 | Time: 5:48 | Key: G major (9B) | BPM: 115]
+   3. Pipes Honour - Nightmares On Wax [Pos: A3 | Time: 9:05 | Key: C# major (3B) | BPM: 159]
+   4. Me + You - Nightmares On Wax [Pos: B1 | Time: 0:56 | Key: C# major (3B) | BPM: 154]
+   5. Stars - Nightmares On Wax [Pos: B2 | Time: 6:59 | Key: B minor (10A) | BPM: 157]
+   6. Wait A Minute - Nightmares On Wax [Pos: B3 | Time: 2:44 | Key: C# major (3B) | BPM: 100]
+   7. Praying For A Jeepbeat - Nightmares On Wax [Pos: B4 | Time: 2:44 | Key: C# major (3B) | BPM: 100]
+   8. Groove St. - Nightmares On Wax [Pos: B5 | Time: 7:29 | Key: A# minor (3A) | BPM: 97]
+   9. Time (To Listen) - Nightmares On Wax [Pos: C1 | Time: 0:25 | Key: Ab major (4B) | BPM: 170]
+  10. (Man) Tha Journey - Nightmares On Wax [Pos: C2 | Time: 6:19 | Key: C# minor (12A) | BPM: 95]
+  11. Bless My Soul - Nightmares On Wax [Pos: C3 | Time: 5:57 | Key: C# major (3B) | BPM: 100]
+  12. Cruise (Don't Stop) - Nightmares On Wax [Pos: C4 | Time: 7:05 | Key: B minor (10A) | BPM: 94]
+  13. Mission Venice - Nightmares On Wax [Pos: D1 | Time: 2:50 | Key: A minor (8A) | BPM: 126]
+  14. What I'm Feelin (Good) - Nightmares On Wax [Pos: D2 | Time: 2:26 | Key: Bb major (6B) | BPM: 101]
+  15. Rise - Nightmares On Wax [Pos: D3 | Time: 5:14 | Key: C# minor (12A) | BPM: 170]
+  16. Rise (Reprise) - Nightmares On Wax [Pos: D4 | Time: 1:46 | Key: B minor (10A) | BPM: 85]
+  17. Gambia Via Vagatorbeach - Nightmares On Wax [Pos: D5 | Time: 4:41 | Key: C major (8B) | BPM: 150]
 
 === Sci​-​Fi Lullabies -- Bluetech ===
   ID: 13968661
@@ -4324,14 +4324,14 @@
   Year: 2019
   Label: Behind The Sky Music
   Art: https://i.discogs.com/7y0cGzt-vygMitVaMzY2zpjztyn-W8Md8z1Ihcv4rbc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTY4/NjYxLTE1NjU4OTU5/MjgtMjgxMy5wbmc.jpeg
-   1. Lusitania - Bluetech [Key: E minor (9A) | BPM: 176]
-   2. Nightvale - Bluetech [Key: D major (10B) | BPM: 160]
-   3. Ambergris - Bluetech [Key: G major (9B) | BPM: 112]
-   4. Darwinia - Bluetech [Key: D major (10B) | BPM: 152]
-   5. Embassytown - Bluetech [Key: F minor (4A) | BPM: 160]
-   6. Hyperion - Bluetech [Key: D major (10B) | BPM: 160]
-   7. Gethen - Bluetech [Key: A major (11B) | BPM: 80]
-   8. Caladan - Bluetech [Key: A minor (8A) | BPM: 178]
+   1. Lusitania - Bluetech [Pos: A1 | Time: 5:15 | Key: E minor (9A) | BPM: 176]
+   2. Nightvale - Bluetech [Pos: A2 | Time: 4:53 | Key: D major (10B) | BPM: 160]
+   3. Ambergris - Bluetech [Pos: A3 | Time: 5:18 | Key: G major (9B) | BPM: 112]
+   4. Darwinia - Bluetech [Pos: A4 | Time: 5:12 | Key: D major (10B) | BPM: 152]
+   5. Embassytown - Bluetech [Pos: B1 | Time: 4:58 | Key: F minor (4A) | BPM: 160]
+   6. Hyperion - Bluetech [Pos: B2 | Time: 5:13 | Key: D major (10B) | BPM: 160]
+   7. Gethen - Bluetech [Pos: B3 | Time: 5:27 | Key: A major (11B) | BPM: 80]
+   8. Caladan - Bluetech [Pos: B4 | Time: 4:32 | Key: A minor (8A) | BPM: 178]
 
 === A Load Up At Nunney Catch / Scilly Automatic -- Ott ===
   ID: 12938159
@@ -4340,8 +4340,8 @@
   Year: 2018
   Label: Ottsonic Music
   Art: https://i.discogs.com/kn3MghVbRQa-zkfbHTzh75bDPonQU-UpS2Xj-_BBrFs/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTM4/MTU5LTE2NjU5MzE4/MzItNDY4Mi5qcGVn.jpeg
-   1. A Load Up At Nunney Catch - Ott [Key: E major (12B) | BPM: 142]
-   2. Scilly Automatic - Ott [Key: B minor (10A) | BPM: 140]
+   1. A Load Up At Nunney Catch - Ott [Pos: A | Time: 7:22 | Key: E major (12B) | BPM: 142]
+   2. Scilly Automatic - Ott [Pos: AA | Time: 7:42 | Key: B minor (10A) | BPM: 140]
 
 === Blumenkraft -- Ott ===
   ID: 12938125
@@ -4350,14 +4350,14 @@
   Year: 2018
   Label: Ottsonic Music
   Art: https://i.discogs.com/3s6ZbktxpMtVnHXev4FMx-f31TgtAe8S095BG3bGuYU/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTM4/MTI1LTE2MTg3Nzg5/NTgtOTA0My5qcGVn.jpeg
-   1. Jack's Cheese And Bread Snack - Ott [Key: C major (8B) | BPM: 144]
-   2. Somersettler - Ott [Key: A# minor (3A) | BPM: 140]
-   3. Splitting An Atom - Ott [Key: A minor (8A) | BPM: 190]
-   4. Escape From Tulse Hell - Ott [Key: E minor (9A) | BPM: 144]
-   5. Cley Hill - Ott [Key: C# minor (12A) | BPM: 76]
-   6. Billy The Kid Strikes Back - Ott [Key: F major (7B) | BPM: 196]
-   7. Spannered In Pilton - Ott [Key: F# minor (11A) | BPM: 154]
-   8. Smoked Glass And Chrome - Ott [Key: Bb major (6B) | BPM: 104]
+   1. Jack's Cheese And Bread Snack - Ott [Pos: A1 | Key: C major (8B) | BPM: 144]
+   2. Somersettler - Ott [Pos: A2 | Key: A# minor (3A) | BPM: 140]
+   3. Splitting An Atom - Ott [Pos: B1 | Key: A minor (8A) | BPM: 190]
+   4. Escape From Tulse Hell - Ott [Pos: B2 | Key: E minor (9A) | BPM: 144]
+   5. Cley Hill - Ott [Pos: C1 | Key: C# minor (12A) | BPM: 76]
+   6. Billy The Kid Strikes Back - Ott [Pos: C2 | Key: F major (7B) | BPM: 196]
+   7. Spannered In Pilton - Ott [Pos: D1 | Key: F# minor (11A) | BPM: 154]
+   8. Smoked Glass And Chrome - Ott [Pos: D2 | Key: Bb major (6B) | BPM: 104]
 
 === Skylon -- Ott ===
   ID: 11593205
@@ -4366,14 +4366,14 @@
   Year: 2018
   Label: Ottsonic Music
   Art: https://i.discogs.com/w_93tRCotsPwPJ_KvwUsPXKxeOV6pD7wVW-htTO-as8/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTkz/MjA1LTE2MTg3Nzcz/NjQtOTQ0MS5qcGVn.jpeg
-   1. From Trunch To Stromness - Ott [Key: Bb major (6B) | BPM: 135]
-   2. The Queen Of All Everything - Ott [Key: B minor (10A) | BPM: 134]
-   3. Rogue Bagel - Ott [Key: Ab major (4B) | BPM: 98]
-   4. Daisies And Rubies - Ott [Key: A minor (8A) | BPM: 126]
-   5. Signals From Bob - Ott [Key: C# major (3B) | BPM: 142]
-   6. 382 Seaside - Ott [Key: D major (10B) | BPM: 180]
-   7. Roflcopter - Ott [Key: G# minor (1A) | BPM: 137]
-   8. A Shower Of Sparks - Ott [Key: E minor (9A) | BPM: 115]
+   1. From Trunch To Stromness - Ott [Pos: A1 | Time: 11:58 | Key: Bb major (6B) | BPM: 135]
+   2. The Queen Of All Everything - Ott [Pos: A2 | Time: 7:52 | Key: B minor (10A) | BPM: 134]
+   3. Rogue Bagel - Ott [Pos: B1 | Time: 8:29 | Key: Ab major (4B) | BPM: 98]
+   4. Daisies And Rubies - Ott [Pos: B2 | Time: 10:18 | Key: A minor (8A) | BPM: 126]
+   5. Signals From Bob - Ott [Pos: C1 | Time: 7:48 | Key: C# major (3B) | BPM: 142]
+   6. 382 Seaside - Ott [Pos: C2 | Time: 6:45 | Key: D major (10B) | BPM: 180]
+   7. Roflcopter - Ott [Pos: D1 | Time: 7:22 | Key: G# minor (1A) | BPM: 137]
+   8. A Shower Of Sparks - Ott [Pos: D2 | Time: 9:00 | Key: E minor (9A) | BPM: 115]
 
 === Mir -- Ott ===
   ID: 10288453
@@ -4382,13 +4382,13 @@
   Year: 2017
   Label: Ottsonic Music
   Art: https://i.discogs.com/YcvC_JTCTUhGICL_xXtveFeTh-J9YywpW-x0esbCR6Q/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjg4/NDUzLTE2MTc0MDc5/NTYtNDI0Ni5qcGVn.jpeg
-   1. One Day I Wish To Have This Kind Of Time - Ott [Key: F major (7B) | BPM: 136]
-   2. Adrift In Hilbert Space - Ott [Key: D major (10B) | BPM: 140]
-   3. Owl Stretching Time - Ott [Key: F# minor (11A) | BPM: 146]
-   4. Squirrel And Biscuits - Ott [Key: G major (9B) | BPM: 170]
-   5. A Nice Little Place - Ott [Key: Bb major (6B) | BPM: 106]
-   6. Mouse Eating Cheese - Ott
-   7. The Aubergine Of The Sun - Ott [Key: C major (8B) | BPM: 91]
+   1. One Day I Wish To Have This Kind Of Time - Ott [Pos: A1 | Time: 8:33 | Key: F major (7B) | BPM: 136]
+   2. Adrift In Hilbert Space - Ott [Pos: A2 | Time: 8:10 | Key: D major (10B) | BPM: 140]
+   3. Owl Stretching Time - Ott [Pos: B1 | Time: 7:41 | Key: F# minor (11A) | BPM: 146]
+   4. Squirrel And Biscuits - Ott [Pos: B2 | Time: 6:02 | Key: G major (9B) | BPM: 170]
+   5. A Nice Little Place - Ott [Pos: C1 | Time: 7:13 | Key: Bb major (6B) | BPM: 106]
+   6. Mouse Eating Cheese - Ott [Pos: C2 | Time: 7:38]
+   7. The Aubergine Of The Sun - Ott [Pos: D | Time: 10:09 | Key: C major (8B) | BPM: 91]
 
 === Fairchildren -- Ott ===
   ID: 8848344
@@ -4397,14 +4397,14 @@
   Year: 2016
   Label: Ottsonic Music
   Art: https://i.discogs.com/O0HYEVIx7i0Z1DKufTJtdE-D__b_jgUkWJlDFks559c/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg4NDgz/NDQtMTYxNzQwNzQz/Mi03NzQ5LmpwZWc.jpeg
-   1. A Gentle Place By Birth Is You - Ott [Key: E major (12B) | BPM: 83]
-   2. 16mm Summer Day - Ott [Key: B minor (10A) | BPM: 135]
-   3. Coursing Batch - Ott [Key: A minor (8A) | BPM: 132]
-   4. Harwell Dekatron - Ott [Key: G major (9B) | BPM: 128]
-   5. Unit Delta Plus - Ott [Key: C major (8B) | BPM: 154]
-   6. Hello, My Name Is... - Ott [Key: G major (9B) | BPM: 93]
-   7. The Bicycle Of The Sky - Ott [Key: E minor (9A) | BPM: 103]
-   8. Ship Is Not A Child - Ott [Key: G major (9B) | BPM: 138]
+   1. A Gentle Place By Birth Is You - Ott [Pos: A1 | Time: 2:41 | Key: E major (12B) | BPM: 83]
+   2. 16mm Summer Day - Ott [Pos: A2 | Time: 7:16 | Key: B minor (10A) | BPM: 135]
+   3. Coursing Batch - Ott [Pos: A3 | Time: 9:15 | Key: A minor (8A) | BPM: 132]
+   4. Harwell Dekatron - Ott [Pos: B1 | Time: 6:53 | Key: G major (9B) | BPM: 128]
+   5. Unit Delta Plus - Ott [Pos: B2 | Time: 8:10 | Key: C major (8B) | BPM: 154]
+   6. Hello, My Name Is... - Ott [Pos: C1 | Time: 6:32 | Key: G major (9B) | BPM: 93]
+   7. The Bicycle Of The Sky - Ott [Pos: C2 | Time: 6:10 | Key: E minor (9A) | BPM: 103]
+   8. Ship Is Not A Child - Ott [Pos: D1 | Time: 10:42 | Key: G major (9B) | BPM: 138]
 
 === Currents -- Tame Impala ===
   ID: 7252111
@@ -4413,19 +4413,19 @@
   Year: 2015
   Label: Fiction Records, Caroline International, Universal Music
   Art: https://i.discogs.com/0m9adSJO-pWPRlWpwczRCUJfTokcREPbsmZMprEs1-o/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTIx/MTEtMTY5NzM4MTkw/MS0yMjg3LmpwZWc.jpeg
-   1. Let It Happen - Tame Impala [Key: C# minor (12A) | BPM: 125]
-   2. Nangs - Tame Impala [Key: C major (8B) | BPM: 168]
-   3. The Moment - Tame Impala [Key: G major (9B) | BPM: 119]
-   4. Yes I'm Changing - Tame Impala [Key: C major (8B) | BPM: 180]
-   5. Eventually - Tame Impala [Key: A minor (8A) | BPM: 78]
-   6. Gossip - Tame Impala [Key: B minor (10A) | BPM: 119]
-   7. The Less I Know The Better - Tame Impala [Key: E major (12B) | BPM: 117]
-   8. Past Life - Tame Impala [Key: G minor (6A) | BPM: 146]
-   9. Disciples - Tame Impala [Key: F major (7B) | BPM: 127]
-  10. Cause I'm A Man - Tame Impala [Key: A major (11B) | BPM: 145]
-  11. Reality In Motion - Tame Impala [Key: D major (10B) | BPM: 115]
-  12. Love / Paranoia - Tame Impala [Key: F major (7B) | BPM: 111]
-  13. New Person, Same Old Mistakes - Tame Impala [Key: Ab major (4B) | BPM: 152]
+   1. Let It Happen - Tame Impala [Pos: A1 | Key: C# minor (12A) | BPM: 125]
+   2. Nangs - Tame Impala [Pos: A2 | Key: C major (8B) | BPM: 168]
+   3. The Moment - Tame Impala [Pos: A3 | Key: G major (9B) | BPM: 119]
+   4. Yes I'm Changing - Tame Impala [Pos: B1 | Key: C major (8B) | BPM: 180]
+   5. Eventually - Tame Impala [Pos: B2 | Key: A minor (8A) | BPM: 78]
+   6. Gossip - Tame Impala [Pos: B3 | Key: B minor (10A) | BPM: 119]
+   7. The Less I Know The Better - Tame Impala [Pos: C1 | Key: E major (12B) | BPM: 117]
+   8. Past Life - Tame Impala [Pos: C2 | Key: G minor (6A) | BPM: 146]
+   9. Disciples - Tame Impala [Pos: C3 | Key: F major (7B) | BPM: 127]
+  10. Cause I'm A Man - Tame Impala [Pos: C4 | Key: A major (11B) | BPM: 145]
+  11. Reality In Motion - Tame Impala [Pos: D1 | Key: D major (10B) | BPM: 115]
+  12. Love / Paranoia - Tame Impala [Pos: D2 | Key: F major (7B) | BPM: 111]
+  13. New Person, Same Old Mistakes - Tame Impala [Pos: D3 | Key: Ab major (4B) | BPM: 152]
 
 === Oracular Spectacular -- MGMT ===
   ID: 5614113
@@ -4434,16 +4434,16 @@
   Year: 2014
   Label: Music On Vinyl
   Art: https://i.discogs.com/-dlJSy75mGqup2CFICg-oYg9ytFe-l0xy218vf5pyp8/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2MTQx/MTMtMTM5OTA1NTQy/NC0xMzA1LmpwZWc.jpeg
-   1. Time To Pretend - MGMT [Key: D major (10B) | BPM: 101]
-   2. Weekend Wars - MGMT [Key: F major (7B) | BPM: 77]
-   3. The Youth - MGMT [Key: F major (7B) | BPM: 111]
-   4. Electric Feel - MGMT [Key: C# major (3B) | BPM: 103]
-   5. Kids - MGMT [Key: A major (11B) | BPM: 123]
-   6. 4th Dimensional Transition - MGMT [Key: A major (11B) | BPM: 160]
-   7. Pieces Of What - MGMT [Key: E minor (9A) | BPM: 108]
-   8. Of Moons, Birds & Monsters - MGMT [Key: C# minor (12A) | BPM: 124]
-   9. The Handshake - MGMT [Key: B minor (10A) | BPM: 140]
-  10. Future Reflections - MGMT [Key: F major (7B) | BPM: 140]
+   1. Time To Pretend - MGMT [Pos: A1 | Time: 4:21 | Key: D major (10B) | BPM: 101]
+   2. Weekend Wars - MGMT [Pos: A2 | Time: 4:12 | Key: F major (7B) | BPM: 77]
+   3. The Youth - MGMT [Pos: A3 | Time: 3:48 | Key: F major (7B) | BPM: 111]
+   4. Electric Feel - MGMT [Pos: A4 | Time: 3:50 | Key: C# major (3B) | BPM: 103]
+   5. Kids - MGMT [Pos: A5 | Time: 5:03 | Key: A major (11B) | BPM: 123]
+   6. 4th Dimensional Transition - MGMT [Pos: B1 | Time: 3:58 | Key: A major (11B) | BPM: 160]
+   7. Pieces Of What - MGMT [Pos: B2 | Time: 2:44 | Key: E minor (9A) | BPM: 108]
+   8. Of Moons, Birds & Monsters - MGMT [Pos: B3 | Time: 4:47 | Key: C# minor (12A) | BPM: 124]
+   9. The Handshake - MGMT [Pos: B4 | Time: 3:40 | Key: B minor (10A) | BPM: 140]
+  10. Future Reflections - MGMT [Pos: B5 | Time: 4:00 | Key: F major (7B) | BPM: 140]
 
 === Salad Days -- Mac DeMarco ===
   ID: 5552990
