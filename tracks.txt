@@ -217,7 +217,9 @@
   Year: 2012
   Label: TSS Records
   Art: https://i.discogs.com/tzZ8_WczAl1IiQ774xzzh7KcKe7FnYkLhJrJ_7kZTEY/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1OTgw/ODMtMTMzNjgyMjc4/OC01NTA2LmpwZWc.jpeg
-  (no tracks found)
+   1. My God (Vocal) - Trojan Sound System Vs. Toddla T [Pos: A]
+   2. My God (Dancehall Vocal) - Trojan Sound System Vs. Toddla T [Pos: B1]
+   3. My God (Dancehall Instrumental) - Trojan Sound System Vs. Toddla T [Pos: B2]
 
 === Vampire -- Jungle Neck ===
   ID: 495451
