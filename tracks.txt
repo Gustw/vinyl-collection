@@ -542,7 +542,7 @@
   Year: 2011
   Label: Killa Dubz
   Art: https://i.discogs.com/wilFAEyYlreL3Hud-fc1qkjx6DuanBqXCTdHHoCtChI/rs:fit/g:sm/q:90/h:600/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzE0/NjAtMTQ4ODgxOTM5/NC01NDQyLmpwZWc.jpeg
-   1. Good Enough - Serial Killaz [Pos: A | Key: C minor (5A) | BPM: 176]
+   1. Good Enough - Serial Killaz [Pos: A | Key: Ab major (4B) | BPM: 176]
    2. Jamaican Boy - Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 180]
 
 === Murder Ya Sound -- Serial Killaz & Run Tingz Cru Featuring Tenor Fly & Blackout J.A ===
@@ -638,7 +638,7 @@
   Year: 2021
   Label: Vibez '93
   Art: https://i.discogs.com/4N0kpR6GmMCom2nSg9S6CB7FnpbM_FrJZmeMIBTJqmU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDA0/ODg4LTE2MzkyOTUy/MzctODcwNS5qcGVn.jpeg
-   1. Desolate - Kit [Pos: A1 | Time: 5:47 | Key: Bb minor (3A) | BPM: 127]
+   1. Desolate - Kit [Pos: A1 | Time: 5:47 | Key: A# minor (3A) | BPM: 170]
    2. Survive - Kit [Pos: A2 | Time: 5:20 | Key: G major (9B) | BPM: 172]
    3. Between Us - Kit [Pos: B1 | Time: 6:05 | Key: E minor (9A) | BPM: 172]
    4. Out Of Touch - Kit [Pos: B2 | Time: 5:16 | Key: E minor (9A) | BPM: 174]
