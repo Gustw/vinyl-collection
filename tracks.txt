@@ -904,14 +904,14 @@
   Art: https://i.discogs.com/4olT0rIhaV_TyCSGqjCvuo6NRL9ZTbGByGFywk2Eo_M/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNDE3/NDYtMTM4NTYyNDQz/Ny0xODI0LmpwZWc.jpeg
    1. Earthwalker - Radikal Guru [Pos: A1 | Key: C minor (5A) | BPM: 140]
    2. Stay Calm - Radikal Guru [Pos: A2 | Key: G minor (6A) | BPM: 140]
-   3. Different Dub - Radikal Guru [Pos: B1 | Key: C# major (3B) | BPM: 82]
-   4. Know Yourself - Radikal Guru [Pos: B2 | Key: C# major (3B) | BPM: 140]
+   3. Different Dub - Radikal Guru [Pos: B1 | Key: C minor (5A) | BPM: 82]
+   4. Know Yourself - Radikal Guru [Pos: B2 | Key: F minor (4A) | BPM: 140]
    5. Spaced Out - Radikal Guru [Pos: B3 | Key: D major (10B) | BPM: 140]
-   6. Subconscious - Radikal Guru [Pos: C1 | Key: G major (9B) | BPM: 158]
-   7. Warning! - Radikal Guru [Pos: C2 | Key: D major (10B) | BPM: 142]
-   8. Outernational - Radikal Guru [Pos: C3 | Key: D major (10B) | BPM: 140]
-   9. Indra - Radikal Guru [Pos: D1 | Key: Ab major (4B) | BPM: 140]
-  10. Wicked Dub - Radikal Guru [Pos: D2 | Key: E minor (9A) | BPM: 155]
+   6. Subconscious - Radikal Guru [Pos: C1 | Key: Gb minor (11A) | BPM: 158]
+   7. Warning! - Radikal Guru [Pos: C2 | Key: A major (11B) | BPM: 142]
+   8. Outernational - Radikal Guru [Pos: C3 | Key: G minor (6A) | BPM: 140]
+   9. Indra - Radikal Guru [Pos: D1 | Key: G minor (6A) | BPM: 140]
+  10. Wicked Dub - Radikal Guru [Pos: D2 | Key: A minor (8A) | BPM: 155]
 
 === Wicked Ones / Zion Dub -- Scott Allen (11) & Deeper Connection ===
   ID: 5184669
@@ -921,7 +921,7 @@
   Label: Fokuz Recordings
   Art: https://i.discogs.com/FrNsgztvse2dr6Kw03BxWH4hvwvn5ul9Im4Rfu6pu24/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxODQ2/NjktMTM4OTk2NTQz/MS0yMzM3LmpwZWc.jpeg
    1. Wicked Ones - Scott Allen [Pos: A | Key: A# minor (3A) | BPM: 174]
-   2. Zion Dub - Scott Allen & Deeper Connection [Pos: AA | Key: C# minor (12A) | BPM: 88]
+   2. Zion Dub - Scott Allen & Deeper Connection [Pos: AA | Key: G minor (6A) | BPM: 88]
 
 === Chem Trails / Fall In Love -- Various ===
   ID: 5837089
@@ -930,7 +930,7 @@
   Year: 2014
   Label: Born On Road Records
   Art: https://i.discogs.com/8i91qdie6lEwM_g0CbfwlHsFcO1Hf3MWMWXPUmn233k/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mzcw/ODktMTQwNDMzNDI4/MS03NTM2LmpwZWc.jpeg
-   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Pos: A | Key: B minor (10A) | BPM: 175]
+   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Pos: A | Key: B minor (10A) | BPM: 218]
    2. Chem Trails - Aries, Gold Dubs, Bevan & Andy Sim ft Lion Art [Pos: AA | Key: A minor (8A) | BPM: 135]
 
 === Wicked Vinyl 01 -- Wickedsquad ===
@@ -951,7 +951,7 @@
   Year: 1996
   Label: Urban Takeover
   Art: https://i.discogs.com/8xPyc_StApef1z8EbXs44lKyyMfWOELD9mMmhAoeRSQ/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTY2/LTE1OTcyNjM3MTQt/NzYyMi5qcGVn.jpeg
-   1. Bad Ass ! - Mickey Finn And Aphrodite [Pos: A | Time: 6:41 | Key: C# major (3B) | BPM: 84]
+   1. Bad Ass ! - Mickey Finn And Aphrodite [Pos: A | Time: 6:41 | Key: C major (8B) | BPM: 174]
    2. Drop Top Caddy - Mickey Finn And Aphrodite [Pos: B | Time: 6:07 | Key: A major (11B) | BPM: 89]
 
 === Rukus / Vibration -- Gang Related ===
