@@ -654,13 +654,13 @@
    2. Licking Stick - Desmond Dekker [Pos: A2 | Time: 2:14 | Key: Eb major (5B) | BPM: 110]
    3. Pickney Gal - Desmond Dekker [Pos: A3 | Time: 2:57 | Key: C major (8B) | BPM: 113]
    4. It Meek - Desmond Dekker [Pos: A4 | Time: 2:31 | Key: Ab major (4B) | BPM: 84]
-   5. Life Of Opportunity - Desmond Dekker [Pos: A5 | Time: 2:27 | Key: C major (8B) | BPM: 98]
+   5. Life Of Opportunity - Desmond Dekker [Pos: A5 | Time: 2:27 | Key: F major (7B) | BPM: 99]
    6. I Believe - Desmond Dekker [Pos: A6 | Time: 2:32 | Key: Ab major (4B) | BPM: 130]
-   7. Reggae Recipe - Desmond Dekker [Pos: B1 | Time: 3:02 | Key: C# major (3B) | BPM: 121]
+   7. Reggae Recipe - Desmond Dekker [Pos: B1 | Time: 3:02 | Key: C# major (3B) | BPM: 120]
    8. You Can Get It If You Really Want - Desmond Dekker [Pos: B2 | Time: 2:33 | Key: C# major (3B) | BPM: 128]
-   9. Where Did It Go - Desmond Dekker [Pos: B3 | Time: 3:03 | Key: C major (8B) | BPM: 132]
-  10. The More You Live - Desmond Dekker [Pos: B4 | Time: 3:18 | Key: G major (9B) | BPM: 101]
-  11. Look What They're Doing To Me - Desmond Dekker [Pos: B5 | Time: 3:27 | Key: Ab major (4B) | BPM: 119]
+   9. Where Did It Go - Desmond Dekker [Pos: B3 | Time: 3:03 | Key: Db major (3B) | BPM: 134]
+  10. The More You Live - Desmond Dekker [Pos: B4 | Time: 3:18 | Key: G major (9B) | BPM: 103]
+  11. Look What They're Doing To Me - Desmond Dekker [Pos: B5 | Time: 3:27 | Key: Ab major (4B) | BPM: 121]
   12. 007 Shanty Town - Desmond Dekker [Pos: B6 | Time: 2:33 | Key: A major (11B) | BPM: 102]
 
 === Ganja Smuggling -- Eek-A-Mouse ===
@@ -670,8 +670,8 @@
   Year: 2024
   Label: VP Records, Volcano
   Art: https://i.discogs.com/pm31PMrWnhDnA83GDUH-aUscyqA9R5yvLmu3WNYCIZE/rs:fit/g:sm/q:90/h:600/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDcz/MjAwLTE3MzMzMjA5/MDItOTUyMy5qcGVn.jpeg
-   1. Ganja Smuggling - Eek-A-Mouse [Pos: A | Key: F minor (4A) | BPM: 72]
-   2. Smuggling Dub - The Roots Radics [Pos: B | Key: Bb major (6B) | BPM: 142]
+   1. Ganja Smuggling - Eek-A-Mouse [Pos: A | Key: C minor (5A) | BPM: 72]
+   2. Smuggling Dub - The Roots Radics [Pos: B | Key: C minor (5A) | BPM: 142]
 
 === Welcome To The Jungle Volume 3 (Sampler One) -- Sara Lugo Ft. Protoje / Sizzla ===
   ID: 7853652
@@ -680,7 +680,7 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G major (9B) | BPM: 175]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G minor (6A) | BPM: 176]
    2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 176]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
@@ -690,8 +690,8 @@
   Year: 2014
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
-   1. Here I Come - Ed Solo [Pos: A1 | Key: E minor (9A) | BPM: 175]
-   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: A# minor (3A) | BPM: 176]
+   1. Here I Come - Ed Solo [Pos: A1 | Key: E minor (9A) | BPM: 176]
+   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: C minor (5A) | BPM: 176]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
