@@ -700,8 +700,8 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/FdvlQLYITfJ3PieS1Ql78jVkDt7fw0yEbjbN9lFlFgc/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDI1/NjEtMTM4MTQ3NzQ3/Mi0yMTkyLmpwZWc.jpeg
-   1. Smoke The Weed - Ed Solo And Stickybuds [Pos: A1 | Time: 4:50 | Key: A# minor (3A) | BPM: 175]
-   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: A# minor (3A) | BPM: 88]
+   1. Smoke The Weed - Ed Solo And Stickybuds [Pos: A1 | Time: 4:50 | Key: F minor (4A) | BPM: 174]
+   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: F minor (4A) | BPM: 132]
 
 === Too Greedy (Rmx) / Murder Style -- Stalefish ===
   ID: 689940
@@ -720,7 +720,7 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/VBdKS4MvllF9feke2lthzcHctsz-Bp6x2TdJlOP9cZI/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDYw/OTUtMTM2MjM5MDQ3/NC05MTc4LmpwZWc.jpeg
-   1. Amen In Session - Jinx In Dub [Pos: A1 | Key: F major (7B) | BPM: 86]
+   1. Amen In Session - Jinx In Dub [Pos: A1 | Key: G minor (6A) | BPM: 86]
    2. Seek And Find (Jinx In Dub Meets Kanjah) - Jinx In Dub [Pos: B1 | Key: C# minor (12A) | BPM: 110]
 
 === French Connection EP -- Various ===
@@ -730,10 +730,10 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/JUib6Gr_PX4nBy2NdleGpIT9adpmo3edg-R9UUCkNq0/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjE0/MzMtMTI5MTgyNTk5/NC5qcGVn.jpeg
-   1. Woman Dub - FX909 [Pos: A1 | Key: F minor (4A) | BPM: 127]
-   2. Soundboy - Lord Bitum & Metod MC [Pos: A2 | Key: G major (9B) | BPM: 130]
-   3. Promise Land - Alix Perez & Youthman [Pos: B1 | Key: E minor (9A) | BPM: 112]
-   4. Dub Riddim - 2D [Pos: B2 | Key: F# major (2B) | BPM: 147]
+   1. Woman Dub - FX909 [Pos: A1 | Key: B minor (10A) | BPM: 174]
+   2. Soundboy - Lord Bitum & Metod MC [Pos: A2 | Key: G minor (6A) | BPM: 178]
+   3. Promise Land - Alix Perez & Youthman [Pos: B1 | Key: D minor (7A) | BPM: 174]
+   4. Dub Riddim - 2D [Pos: B2 | Key: E minor (9A) | BPM: 135]
 
 === World A Jungle Music -- Pixel ===
   ID: 9184651
@@ -742,8 +742,8 @@
   Year: 2014
   Label: Rasta Vibez
   Art: https://i.discogs.com/8twJ0Cmewwfjb5XMCs2wqbaVJ2eEMN5ig-2tu_2A85c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxODQ2/NTEtMTQ3NjI2NTEw/MS01MTUyLmpwZWc.jpeg
-   1. Ice Cream Sound - Pixel [Pos: A | Key: C major (8B) | BPM: 126]
-   2. World A Jungle Music - Pixel [Pos: B | Key: D major (10B) | BPM: 175]
+   1. Ice Cream Sound - Pixel [Pos: A | Key: Db minor (12A) | BPM: 176]
+   2. World A Jungle Music - Pixel [Pos: B | Key: Gb minor (11A) | BPM: 174]
 
 === Call Di Doctor / Running Over -- Mystic Pulse / Gunmen ===
   ID: 8770838
@@ -752,7 +752,7 @@
   Year: 2016
   Label: Rasta Vibez
   Art: https://i.discogs.com/ad5bOsUFa5aQzFmtYurS9bM7IdpwQTsCeGnM3wiYwf8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3NzA4/MzgtMTQ2ODQzOTk3/Mi04NDkzLmpwZWc.jpeg
-   1. Call Di Doctor - Mystic Pulse [Pos: A | Key: D major (10B) | BPM: 176]
+   1. Call Di Doctor - Mystic Pulse [Pos: A | Key: G major (9B) | BPM: 110]
    2. Running Over - Gunmen [Pos: B | Key: C# major (3B) | BPM: 88]
 
 === Lineage Of The Sun -- Jahyu ===
