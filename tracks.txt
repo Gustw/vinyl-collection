@@ -15,7 +15,7 @@
   Year: 2012
   Label: Asbo Audio
   Art: https://i.discogs.com/dNlWpkrw5S17OhieWGsZONHzCQJVPNkKXH6WcKq5YZg/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTkw/MTItMTM1MDU1NDIy/My05ODIyLnBuZw.jpeg
-   1. Oh Yeah! - Daffy [Pos: A | Key: B minor (10A) | BPM: 174]
+   1. Oh Yeah! - Daffy [Pos: A | Key: E major (12B) | BPM: 174]
    2. Use Dem Brain - Rassterlin [Pos: B]
 
 === Optic Nerve / Under Threat -- DJ Ruffneck / Edge Harmonics 'N Ancronix ===
@@ -35,7 +35,7 @@
   Year: 1996
   Label: Blue Room Released
   Art: https://i.discogs.com/D1qWzpas69cKU-S82LQ0y4cajX-K0w5qVSHMQ4NWC_Y/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2NDY3/LTE1Mzk2Njc0NTIt/NzU3Ny5qcGVn.jpeg
-   1. Starship 101 - Etnica [Pos: A | Time: 8:42 | Key: C# major (3B) | BPM: 147]
+   1. Starship 101 - Etnica [Pos: A | Time: 8:42 | Key: F major (7B) | BPM: 147]
    2. Full On - Etnica [Pos: B | Time: 11:38]
 
 === Nuttin A Gwan -- Ray Keith ===
@@ -55,8 +55,8 @@
   Year: 2012
   Label: Run Tingz Recordings
   Art: https://i.discogs.com/W02AGnesO_h9zU5cjh6Dw77LxbEtJr7kUpdpK18pUzA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4Njcx/OTgtMTM0NzQ0NzE3/OC02MDI5LmpwZWc.jpeg
-   1. Took My Breath - Run Tingz Cru [Pos: A1 | Key: C# major (3B) | BPM: 176]
-   2. Drop Call - Run Tingz Cru [Pos: B1 | Key: G major (9B) | BPM: 175]
+   1. Took My Breath - Run Tingz Cru [Pos: A1 | Key: F minor (4A) | BPM: 176]
+   2. Drop Call - Run Tingz Cru [Pos: B1 | Key: A minor (8A) | BPM: 175]
    3. Sound Clash Toolz - Run Tingz Cru [Pos: B2 | Key: A minor (8A) | BPM: 86]
 
 === Jam Da' Mace / Reservoir Dogs -- Subject 13 ===
@@ -86,8 +86,8 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/uAG2bepfH6RkE7qaXYLcPovxbbi0YHOWElOz3DBR6dQ/rs:fit/g:sm/q:90/h:239/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MDQ3/MDItMTQyNjk4MDMx/Ni0xODQyLmpwZWc.jpeg
-   1. Good To Have The Feeling - Deekline & Tippa Irie [Pos: A | Key: D major (10B) | BPM: 88]
-   2. Another One For The Road - Cocoa Tea [Pos: B | Key: F# major (2B) | BPM: 173]
+   1. Good To Have The Feeling - Deekline & Tippa Irie [Pos: A | Key: G major (9B) | BPM: 88]
+   2. Another One For The Road - Cocoa Tea [Pos: B | Key: Bb minor (3A) | BPM: 173]
 
 === #SMR007 -- Dial-M, Msymiakos ===
   ID: 34454533
@@ -108,8 +108,8 @@
   Year: 2016
   Label: Gunmen Music
   Art: https://i.discogs.com/DuvXcEAcnd_-vY9DGRiwbx9_Q2kwtSNt7i3f2MQy9q4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNTU5/MDQtMTQ3NTk0MTM4/Mi05NDgwLmpwZWc.jpeg
-   1. Chase The Devil - Gunmen [Pos: A | Key: E minor (9A) | BPM: 175]
-   2. So Mi Like It - Gunmen [Pos: B | Key: G major (9B) | BPM: 176]
+   1. Chase The Devil - Gunmen [Pos: A | Key: E minor (9A) | BPM: 132]
+   2. So Mi Like It - Gunmen [Pos: B | Key: G minor (6A) | BPM: 176]
 
 === Greetings From Jamaica -- Gunmen / Mystic Pulse ===
   ID: 8687967
@@ -119,7 +119,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/-5cKZcJbgP4igh9CiHVhyopB0HK2hWj1PGw6SzIqcRo/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2ODc5/NjctMTQ2Njc2MzA4/NS00NDMxLmpwZWc.jpeg
    1. Greetings - Gunmen [Pos: A | Time: 4:54 | Key: C major (8B) | BPM: 175]
-   2. Babylon Pressure - Mystic Pulse [Pos: B | Time: 4:33 | Key: F# major (2B) | BPM: 174]
+   2. Babylon Pressure - Mystic Pulse [Pos: B | Time: 4:33 | Key: Ab minor (1A) | BPM: 174]
 
 === Jungle Mode EP -- Juxi Demus & Drum 'n' Black ===
   ID: 26459354
@@ -151,7 +151,7 @@
   Year: 2007
   Label: Not On Label (Sizzla), Not On Label (Damian Marley)
   Art: https://i.discogs.com/QMIRqVzjvAY70Crc-YOH338wsA6rnC6Ot2ddmBEa178/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTM0/MzYtMTIxNzYyMzU4/NC5qcGVn.jpeg
-   1. Solid As A Rock - Sizzla [Pos: A | Key: A minor (8A) | BPM: 132]
+   1. Solid As A Rock - Sizzla [Pos: A | Key: D minor (7A) | BPM: 100]
    2. Jamrock - Damian Marley [Pos: B | Key: G minor (6A) | BPM: 77]
 
 === Africa -- Trojan Sound System ===
