@@ -6,3 +6,6 @@
 npm-debug.log*
 .DS_Store
 
+# Copied out of node_modules by scripts/copy-essentia.mjs on install/build.
+/src/assets/essentia
+

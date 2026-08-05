@@ -22,6 +22,7 @@ import { ConfigService } from './config.service';
 import { Bridge, RouteRecord, findBridges } from './bridge';
 import { Transition, formatPercent } from './transitions';
 import { KeyCheatsheetComponent } from './key-cheatsheet.component';
+import { AnalysisApply, MicAnalyzeComponent } from './mic-analyze.component';
 
 const REL_ORDER: Record<string, number> = {
   'Same key': 0,
@@ -64,7 +65,7 @@ interface Row {
 @Component({
   selector: 'app-track-detail',
   standalone: true,
-  imports: [RouterLink, KeyCheatsheetComponent],
+  imports: [RouterLink, KeyCheatsheetComponent, MicAnalyzeComponent],
   template: `
     <div class="topbar">
       <a routerLink="/" class="btn">← Back to list</a>
@@ -84,6 +85,14 @@ interface Row {
 
     @if (showCheatsheet()) {
       <app-key-cheatsheet [startKey]="track()?.camelot || '8A'" (closed)="showCheatsheet.set(false)" />
+    }
+
+    @if (showMic()) {
+      <app-mic-analyze
+        [track]="track()"
+        (applied)="applyAnalysis($event)"
+        (closed)="showMic.set(false)"
+      />
     }
 
     <div class="container">
@@ -125,6 +134,11 @@ interface Row {
               @if (!editing()) {
                 <div class="edit-row">
                   <button class="btn" (click)="startEdit()">✎ Edit key / BPM</button>
+                  <button
+                    class="btn"
+                    title="Play the record and let the app work out the key and BPM by ear"
+                    (click)="openMic()"
+                  >🎤 Detect by listening</button>
                   @if (manualLock().key || manualLock().bpm) {
                     <span
                       class="chip active"
@@ -181,6 +195,12 @@ interface Row {
                     <button class="btn primary" [disabled]="saving()" (click)="save()">
                       {{ saving() ? 'Saving…' : 'Save' }}
                     </button>
+                    <button
+                      class="btn"
+                      [disabled]="saving()"
+                      title="Play the record and let the app work out the key and BPM by ear"
+                      (click)="openMic()"
+                    >🎤 Detect by listening</button>
                     <button class="btn" [disabled]="saving()" (click)="cancelEdit()">Cancel</button>
                   </div>
                   @if (saveMsg(); as m) {
@@ -515,6 +535,9 @@ export class TrackDetailComponent {
   /** Harmonic mixing reference card (modal), seeded with this track's key. */
   readonly showCheatsheet = signal(false);
 
+  /** Microphone key/BPM detection (modal). */
+  readonly showMic = signal(false);
+
   /** Turntable pitch range (± percent) from the settings. */
   readonly pitchRange = computed(() => {
     const r = Number(this.config.config().pitchRange);
@@ -622,6 +645,36 @@ export class TrackDetailComponent {
     this.saveMsg.set(
       'Unlocked — the next Beatport/tunebat pass may update this track again.'
     );
+  }
+
+  /**
+   * Opens the "listen to the record" analyser.
+   *
+   * Detection is offered from both the read-only row and the edit form, and in
+   * both cases the result goes straight through `save()` — a value the user has
+   * just confirmed against the record in front of them is a hand correction,
+   * and gets the same protection from the automated passes as one typed in.
+   */
+  openMic(): void {
+    this.saveMsg.set(null);
+    this.saveErr.set(false);
+    this.showMic.set(true);
+  }
+
+  /**
+   * Writes the confirmed findings.
+   *
+   * Fields the user left un-ticked come back as null and keep whatever the
+   * track already had: `save()` writes key and BPM together, so an unconfirmed
+   * field must be carried over explicitly or it would be wiped.
+   */
+  async applyAnalysis(a: AnalysisApply): Promise<void> {
+    const t = this.track();
+    if (!t) return;
+    this.showMic.set(false);
+    this.editCamelot.set(a.camelot ?? (t.camelot || '').trim().toUpperCase());
+    this.editBpm.set(a.bpm ?? (t.bpm || '').trim());
+    await this.save();
   }
 
   /** Applies the edit locally, then commits tracks.txt to GitHub. */

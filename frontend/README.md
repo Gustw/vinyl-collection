@@ -100,6 +100,54 @@ Both are cancellable, commit as they go, and remember where they stopped so the
 next run resumes instead of re-checking thousands of tracks. Each keeps its own
 cursor. Neither will touch a key or BPM you corrected by hand — see below.
 
+### Detect key & BPM by listening (🎤 on the track page)
+
+For records the online sources have never heard of — white labels, private
+presses, anything pre-internet — the track page can work the key and tempo out
+by ear. Play the record, press **🎤 Detect by listening**, and it records a
+fragment through the device microphone and analyses it.
+
+Nothing is ever saved automatically: the dialog *proposes*, showing its own
+confidence and every caveat, and you confirm. Key and BPM are ticked
+separately, so you can accept the tempo and reject the key.
+
+The engine is [essentia.js](https://mtg.github.io/essentia.js/) — the
+WebAssembly build of Essentia, the music information retrieval library from the
+Music Technology Group at UPF. Because any single estimator will occasionally be
+confidently wrong, nothing here trusts one answer:
+
+- **Key** is estimated with three chroma profiles (`edma`, trained on electronic
+  dance music, plus `bgate` and `temperley`), again over each third of the
+  fragment, and once more restricted to the low register — where the bassline
+  settles the tonic. Those seven estimates then vote in two stages: first *which
+  notes* (the Camelot number, which is what harmonic mixing is computed from),
+  then *which mode* (the A/B letter). Counting them separately means the dialog
+  can say "certainly an 8, probably 8A" instead of one muddy number.
+- **Tempo** comes from `RhythmExtractor2013` in multifeature mode — a committee
+  of five beat trackers that reports how much they agreed — cross-checked
+  against `PercivalBpmEstimator` over the whole fragment and each half.
+  Half/double-time disagreement is reconciled rather than counted as a conflict,
+  and offered as a one-click alternative.
+
+Anything the analysis is not sure about arrives **un-ticked**, so accepting the
+defaults is always the cautious choice. Silent, clipped or too-short recordings
+are refused outright rather than guessed at.
+
+For a usable reading: drop the needle on a steady part of the track (past the
+intro, not on a breakdown), **set the pitch fader to zero** — otherwise you are
+measuring the pitched key and tempo — and record for 30 seconds or more. All
+browser voice processing (echo cancellation, noise suppression, automatic gain
+control) is switched off during capture, because it is tuned for speech and
+wrecks music analysis.
+
+Accepting a result saves it exactly like a hand edit, so it is protected from
+the automatic passes (see below).
+
+Microphone capture needs a secure page: **https://** or `localhost`.
+
+`npm run check:analysis` runs the whole pipeline offline against a synthetic
+signal of known key and tempo, plus the silent and too-short cases.
+
 ### Manual corrections win
 Editing a track's key/BPM stores an override (in `localStorage`, keyed by
 release + title + artist) that the automatic passes treat as authoritative and
@@ -141,6 +189,12 @@ npm install
 npm start        # opens http://localhost:4200
 ```
 
+`npm install`, `npm start` and `npm run build` each copy the essentia.js
+WebAssembly runtime into `src/assets/essentia/` (see
+`scripts/copy-essentia.mjs`). It is served as a static asset rather than
+bundled, so it is not committed — the copy step keeps it in step with the
+version in `package.json`.
+
 ## Deploy to GitHub Pages
 
 ```powershell
@@ -158,4 +212,7 @@ links work without any server rewrites.
   shift if the export is regenerated with a different track order.
 - Harmonic-mix rules live in `src/app/camelot.ts` if you want to widen/narrow the
   compatible set.
+- essentia.js (the microphone analysis engine) is **AGPL-3.0**. It is loaded as a
+  separate, unmodified asset and only when you actually use the 🎤 feature, but
+  if you redistribute a build, that licence applies to it.
 

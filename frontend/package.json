@@ -4,15 +4,18 @@
   "description": "Browser-based harmonic mixing tool over a Discogs vinyl collection",
   "scripts": {
     "ng": "ng",
+    "postinstall": "node scripts/copy-essentia.mjs",
+    "prestart": "node scripts/copy-essentia.mjs",
+    "prebuild": "node scripts/copy-essentia.mjs",
     "start": "ng serve --open",
     "build": "ng build",
-    "build:pages": "ng build --base-href ./",
+    "build:pages": "npm run prebuild && ng build --base-href ./",
     "sync-data": "node scripts/sync-tracks.mjs",
     "dedupe-data": "node scripts/dedupe-tracks.mjs",
     "check:beatport": "esbuild scripts/beatport-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/beatport-check.mjs && node node_modules/.cache/beatport-check.mjs",
     "check:manual": "esbuild scripts/manual-lock-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/manual-lock-check.mjs && node node_modules/.cache/manual-lock-check.mjs",
-    "check:timers": "esbuild scripts/timer-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/timer-check.mjs && node node_modules/.cache/timer-check.mjs"
-
+    "check:timers": "esbuild scripts/timer-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/timer-check.mjs && node node_modules/.cache/timer-check.mjs",
+    "check:analysis": "esbuild scripts/analysis-check.ts --bundle --platform=node --format=esm --external:essentia.js --outfile=node_modules/.cache/analysis-check.mjs && node node_modules/.cache/analysis-check.mjs"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +26,7 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "essentia.js": "^0.1.3",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.0",
     "zone.js": "~0.14.10"
@@ -34,4 +38,3 @@
     "typescript": "~5.5.4"
   }
 }
-
