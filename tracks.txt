@@ -523,7 +523,7 @@
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/_D9LhcKcegd-ueq-xr0glz_6c3Sf6KgCaBZhOl0Z9SQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODUx/NDktMTUwOTUxODgy/NS0zNjAxLmpwZWc.jpeg
    1. Love Is The Key - Scott Allen & Deeper Connection [Pos: A | Key: Gb minor (11A) | BPM: 174]
-   2. Slumbery - Incident [Pos: AA | Key: C major (8B) | BPM: 88]
+   2. Slumbery - Incident [Pos: AA | Key: D minor (7A) | BPM: 88]
 
 === Babylon EP -- Scott Allen, Pixel ===
   ID: 5699595
@@ -532,7 +532,7 @@
   Year: 2014
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/EsMG3eVdSHiEF1z_Ac2d3Lg9TKUbQHmYR3thNy-QXFw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2OTk1/OTUtMTQ0NjQ0OTky/Ni00OTI3LmpwZWc.jpeg
-   1. Jah Is Coming - Scott Allen [Pos: A | Key: F# major (2B) | BPM: 175]
+   1. Jah Is Coming - Scott Allen [Pos: A | Key: Bb minor (3A) | BPM: 175]
    2. Babylon Fall - Pixel [Pos: AA]
 
 === Good Enough / Jamaican Boy -- Serial Killaz ===
@@ -542,7 +542,7 @@
   Year: 2011
   Label: Killa Dubz
   Art: https://i.discogs.com/wilFAEyYlreL3Hud-fc1qkjx6DuanBqXCTdHHoCtChI/rs:fit/g:sm/q:90/h:600/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzE0/NjAtMTQ4ODgxOTM5/NC01NDQyLmpwZWc.jpeg
-   1. Good Enough - Serial Killaz [Pos: A | Key: Ab major (4B) | BPM: 176]
+   1. Good Enough - Serial Killaz [Pos: A | Key: C minor (5A) | BPM: 154]
    2. Jamaican Boy - Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 180]
 
 === Murder Ya Sound -- Serial Killaz & Run Tingz Cru Featuring Tenor Fly & Blackout J.A ===
@@ -552,8 +552,8 @@
   Year: 2011
   Label: Run Tingz Recordings
   Art: https://i.discogs.com/NOFzgT3yZ7kdSsRLow5hSMlZTUeYgvRo-aVKYdD1c84/rs:fit/g:sm/q:90/h:556/w:567/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMDk2/MzktMTMyMDU5NzIy/OS5qcGVn.jpeg
-   1. Murder Ya Sound (UK Jungle Mix) - Serial Killaz & Run Tingz Cru [Pos: A1 | Key: D major (10B) | BPM: 175]
-   2. Murder Ya Sound (Jump Up Mix) - Serial Killaz & Run Tingz Cru [Pos: B1 | Key: A major (11B) | BPM: 175]
+   1. Murder Ya Sound (UK Jungle Mix) - Serial Killaz & Run Tingz Cru [Pos: A1 | Key: A major (11B) | BPM: 174]
+   2. Murder Ya Sound (Jump Up Mix) - Serial Killaz & Run Tingz Cru [Pos: B1 | Key: A minor (8A) | BPM: 174]
    3. Sound Clash Toolz - Serial Killaz & Run Tingz Cru [Pos: B2]
 
 === Get The Fuck Up / Drop Suey -- Unknown Artist ===
@@ -586,10 +586,10 @@
   Year: 2012
   Label: Astrofonik Drum n' Bass
   Art: https://i.discogs.com/ha9PKZQ85ljUxeKPvpoXqfHkNL-QbHxdEyYw-R7YH5Q/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjQ0/NjMtMTM1NzQwNzg5/Mi01OTgyLmpwZWc.jpeg
-   1. Everyday - Stevens Kbosh [Pos: A1 | Key: F# major (2B) | BPM: 180]
-   2. Peace Of Jungle - MBR Connexion [Pos: A2 | Key: G major (9B) | BPM: 175]
-   3. Man Down - Dijeyow [Pos: B1 | Key: G# minor (1A) | BPM: 170]
-   4. Fast´N Break Bass - Strez [Pos: B2 | Key: A# minor (3A) | BPM: 95]
+   1. Everyday - Stevens Kbosh [Pos: A1 | Key: Ab minor (1A) | BPM: 180]
+   2. Peace Of Jungle - MBR Connexion [Pos: A2 | Key: B minor (10A) | BPM: 176]
+   3. Man Down - Dijeyow [Pos: B1 | Key: Bb major (6B) | BPM: 170]
+   4. Fast´N Break Bass - Strez [Pos: B2 | Key: F minor (4A) | BPM: 95]
 
 === Revolution Pt7 / A Murda -- Vendetta / Barber / Bad Kid ===
   ID: 2940539
@@ -618,7 +618,7 @@
   Year: 2009
   Label: Serial Killaz
   Art: https://i.discogs.com/17tjvpgmRBHCUk3zVF9c1pvK2qUEIU02x17YiPIZFK4/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTQ3/NDMtMTI2MDYxMzU4/OS5qcGVn.jpeg
-   1. You Never Know - Serial Killaz [Pos: A]
+   1. You Never Know - Serial Killaz [Pos: A | Key: G minor (6A) | BPM: 178]
    2. Lonely Dub - Serial Killaz [Pos: AA | Key: C minor (5A) | BPM: 176]
 
 === Welcome To The Jungle Volume 4 (Sampler One) -- DJ Deekline & Ed Solo / DJ Dee Kline Featuring Tippa Irie ===
