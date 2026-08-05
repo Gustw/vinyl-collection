@@ -42,6 +42,11 @@ const REL_ORDER: Record<string, number> = {
   Compatible: 14,
 };
 
+/** A doubled tempo as text, keeping a half-BPM but never inventing precision. */
+function doubledText(bpm: number): string {
+  return String(Math.round(bpm * 2 * 10) / 10);
+}
+
 /** A mixable candidate together with its (optionally pitch-adjusted) key. */
 interface Row {
   track: Track;
@@ -181,15 +186,29 @@ interface Row {
                   </div>
                   <div class="ef-field">
                     <label>BPM</label>
-                    <input
-                      class="ef-input"
-                      type="number"
-                      min="0"
-                      step="1"
-                      placeholder="e.g. 128"
-                      [value]="editBpm()"
-                      (input)="editBpm.set($any($event.target).value)"
-                    />
+                    <div class="ef-bpm">
+                      <input
+                        class="ef-input"
+                        type="number"
+                        min="0"
+                        step="1"
+                        placeholder="e.g. 128"
+                        [value]="editBpm()"
+                        (input)="editBpm.set($any($event.target).value)"
+                      />
+                      <!--
+                        The one-tap fix for a half-time reading. Catalogues list
+                        a 172 BPM roller as 86, and retyping the number by hand
+                        is the sort of friction that leaves it wrong forever.
+                      -->
+                      <button
+                        class="btn ef-x2"
+                        type="button"
+                        [disabled]="!canDoubleBpm()"
+                        [title]="doubleBpmTitle()"
+                        (click)="doubleBpm()"
+                      >×2</button>
+                    </div>
                   </div>
                   <div class="edit-actions">
                     <button class="btn primary" [disabled]="saving()" (click)="save()">
@@ -612,6 +631,42 @@ export class TrackDetailComponent {
 
   cancelEdit(): void {
     this.editing.set(false);
+  }
+
+  // --- doubling a half-time tempo ------------------------------------------
+
+  /** The BPM being edited as a number, or null while it isn't one. */
+  private readonly editBpmValue = computed(() => {
+    const n = Number(this.editBpm().trim());
+    return Number.isFinite(n) && n > 0 ? n : null;
+  });
+
+  /** Only offered over a tempo that is actually there and would stay sane. */
+  readonly canDoubleBpm = computed(() => {
+    const n = this.editBpmValue();
+    return n !== null && n * 2 <= 300;
+  });
+
+  readonly doubleBpmTitle = computed(() => {
+    const n = this.editBpmValue();
+    if (n === null) return 'Enter a BPM first';
+    if (n * 2 > 300) return `${doubledText(n)} would be faster than any record`;
+    return (
+      `Double it to ${doubledText(n)} — catalogues often list a fast record at ` +
+      `half its played tempo, which hides it from every beat-matched list`
+    );
+  });
+
+  /**
+   * Doubles the tempo in the editor (it is not saved until Save is pressed).
+   *
+   * Nothing else changes: the key is unaffected, because playing a record at
+   * its true speed rather than mis-counting it does not transpose anything.
+   */
+  doubleBpm(): void {
+    const n = this.editBpmValue();
+    if (n === null) return;
+    this.editBpm.set(doubledText(n));
   }
 
   /**

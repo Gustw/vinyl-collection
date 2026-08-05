@@ -709,6 +709,10 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
 .ef-select { min-width: 190px; }
 .ef-input { width: 120px; }
 .ef-select:focus, .ef-input:focus { outline: none; border-color: var(--accent); }
+/* The BPM field and its ×2 shortcut, kept on one line as a single control. */
+.ef-bpm { display: flex; align-items: stretch; gap: 6px; }
+.ef-bpm .ef-input { width: 96px; }
+.ef-x2 { padding: 8px 10px; font-variant-numeric: tabular-nums; }
 .edit-actions { display: flex; gap: 8px; }
 .err { color: #ff9fb0; }
 
