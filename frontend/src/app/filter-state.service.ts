@@ -27,10 +27,16 @@ export interface Filters {
   yearMin: number | null;
   /** Overview: inclusive release-year upper bound (null = no bound). */
   yearMax: number | null;
+  /**
+   * Overview: show only entries that still need work — see `TrackIssue`
+   * ('no-key' | 'no-bpm' | 'odd-bpm'). Empty means "don't filter on this".
+   * Several selected match any of them, as the genre and style facets do.
+   */
+  issues: string[];
 }
 
 export function emptyFilters(): Filters {
-  return { search: '', genres: [], styles: [], keys: [], crates: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: true, pitchAdjust: false, pitchLimit: true, hiddenTypes: [], yearMin: null, yearMax: null };
+  return { search: '', genres: [], styles: [], keys: [], crates: [], bpmEnabled: true, bpmRange: 10, bpmDoubleHalf: true, pitchAdjust: false, pitchLimit: true, hiddenTypes: [], yearMin: null, yearMax: null, issues: [] };
 }
 
 export function hasActiveFilters(f: Filters): boolean {
@@ -41,6 +47,7 @@ export function hasActiveFilters(f: Filters): boolean {
     f.keys.length > 0 ||
     f.crates.length > 0 ||
     f.hiddenTypes.length > 0 ||
+    f.issues.length > 0 ||
     f.yearMin != null ||
     f.yearMax != null
   );
@@ -53,6 +60,7 @@ export function hasActiveFilters(f: Filters): boolean {
 export function activeFilterCount(f: Filters, scope: 'list' | 'detail'): number {
   let n = f.genres.length + f.styles.length + f.keys.length + f.crates.length;
   if (scope === 'list') {
+    n += f.issues.length;
     if (f.yearMin != null) n++;
     if (f.yearMax != null) n++;
   } else {
@@ -189,7 +197,7 @@ export class FilterStateService {
   }
 
   /** Immutable toggle of a value inside one of the array facets. */
-  toggle(target: WritableSignal<Filters>, facet: 'genres' | 'styles' | 'keys' | 'crates', value: string): void {
+  toggle(target: WritableSignal<Filters>, facet: 'genres' | 'styles' | 'keys' | 'crates' | 'issues', value: string): void {
     const f = target();
     const set = new Set(f[facet]);
     set.has(value) ? set.delete(value) : set.add(value);
@@ -244,6 +252,11 @@ export class FilterStateService {
 
   setYearMax(target: WritableSignal<Filters>, year: number | null): void {
     target.set({ ...target(), yearMax: Number.isFinite(year as number) ? year : null });
+  }
+
+  /** Drops the "needs attention" selection without touching the other facets. */
+  clearIssues(target: WritableSignal<Filters>): void {
+    target.set({ ...target(), issues: [] });
   }
 
   clear(target: WritableSignal<Filters>): void {

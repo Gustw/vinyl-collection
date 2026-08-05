@@ -1,6 +1,7 @@
 import { Track } from './models';
 import { Filters } from './filter-state.service';
 import { camelotOfQuery } from './camelot';
+import { hasAnyIssue } from './quality';
 
 /**
  * True if `trackBpm` is within `range` of `refBpm`. When `doubleHalf` is set,
@@ -57,6 +58,10 @@ export function matchesTrack(t: Track, f: Filters, refBpm?: number, effectiveCam
   if (f.genres.length && !f.genres.some((g) => t.genres.includes(g))) return false;
   if (f.styles.length && !f.styles.some((s) => t.styles.includes(s))) return false;
   if (f.keys.length && !f.keys.includes(effectiveCamelot ?? t.camelot)) return false;
+  // The maintenance facet: keep only entries that still need work. Judged on
+  // the track's own stored key, never the pitch-adjusted one — the question is
+  // what is written in tracks.txt, not how it would sound at +6%.
+  if (f.issues.length && !hasAnyIssue(t, f.issues)) return false;
   if (f.yearMin != null || f.yearMax != null) {
     if (!t.year) return false; // unknown year excluded while a year bound is set
     if (f.yearMin != null && t.year < f.yearMin) return false;

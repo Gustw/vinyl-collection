@@ -501,6 +501,39 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   white-space: nowrap;
 }
 .bpm-badge.none { opacity: .35; }
+/*
+ * A tempo that doesn't fit any genre on the record — nearly always a half- or
+ * double-time reading. Only marked while the "needs attention" filter is on:
+ * off duty it would be a permanent accusation against values that are merely
+ * unusual, and the point of the colour is to be believed when it appears.
+ */
+.bpm-badge.suspect {
+  background: #3a1c22;
+  border-color: #b9455a;
+  color: #ff9fb0;
+}
+
+/*
+ * The "this entry needs work" marker, carrying the reason in its tooltip.
+ * Deliberately last on the row and no wider than the glyph: it is a footnote on
+ * a track, not a column of its own.
+ */
+.issue-badge {
+  font-size: 13px;
+  line-height: 1;
+  padding: 3px 5px;
+  border-radius: 6px;
+  background: #3a2f14;
+  border: 1px solid #7a6320;
+  color: #ffc857;
+  cursor: help;
+  white-space: nowrap;
+}
+
+/* The maintenance facet's chips, so they don't read as another genre. */
+.chip.issue { border-color: #7a6320; color: #ffc857; }
+.chip.issue:hover { border-color: #ffc857; }
+.chip.issue.active { background: #3a2f14; border-color: #ffc857; color: #ffe0a3; }
 
 /*
  * Platter pitch needed to beat-match, e.g. "+2.4%". Turns red when it exceeds

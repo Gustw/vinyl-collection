@@ -4,6 +4,15 @@ import { CollectionService } from './collection.service';
 import { CrateService, inAnyCrate } from './crate.service';
 import { FilterStateService, activeFilterCount, hasActiveFilters } from './filter-state.service';
 import { matchesTrack } from './filtering';
+import {
+  ISSUE_HELP,
+  ISSUE_LABEL,
+  ISSUE_ORDER,
+  TrackIssue,
+  bpmProblem,
+  issueReasons,
+  trackIssues,
+} from './quality';
 import { camelotClass } from './camelot';
 import { Rec, Track, durationSeconds, formatRuntime, trackKey } from './models';
 import { UpdaterService, TrackChange, RefetchSource } from './updater.service';
@@ -290,6 +299,24 @@ function formatDuration(ms: number): string {
               />
             </div>
 
+            <label>
+              Needs attention
+              <span class="muted" style="text-transform:none">— entries that are still missing something, or look wrong</span>
+            </label>
+            <div class="chips">
+              @for (i of issueKinds; track i) {
+                <span
+                  class="chip issue"
+                  [class.active]="filters().issues.includes(i)"
+                  [title]="issueHelp(i)"
+                  (click)="toggle('issues', i)"
+                >⚠ {{ issueLabel(i) }} <span class="chip-count">{{ issueCount(i) }}</span></span>
+              }
+              @if (filters().issues.length) {
+                <span class="chip ghost" (click)="clearIssues()">✕ show all</span>
+              }
+            </div>
+
             @if (active()) {
               <div style="margin-top:12px">
                 <button class="btn" (click)="clear()">Clear filters</button>
@@ -354,8 +381,11 @@ function formatDuration(ms: number): string {
                     <span class="track-title">{{ t.title }}</span>
                     <span class="track-artist">{{ t.artist }}</span>
                     @if (t.duration) { <span class="dur-badge">{{ t.duration }}</span> }
-                    @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
+                    @if (t.bpm) { <span class="bpm-badge" [class.suspect]="bpmSuspect(t)">{{ t.bpm }} BPM</span> }
                     <span [class]="keyBadgeClass(t)">{{ t.keyText || 'no key' }}</span>
+                    @if (issueNote(t); as note) {
+                      <span class="issue-badge" [title]="note">⚠</span>
+                    }
                   </div>
                 }
                 @if (row.hidden) {
@@ -417,8 +447,11 @@ function formatDuration(ms: number): string {
                   }
                   <span class="track-title" (click)="open(t)">{{ t.title }}</span>
                   @if (t.duration) { <span class="dur-badge">{{ t.duration }}</span> }
-                  @if (t.bpm) { <span class="bpm-badge">{{ t.bpm }} BPM</span> }
+                  @if (t.bpm) { <span class="bpm-badge" [class.suspect]="bpmSuspect(t)">{{ t.bpm }} BPM</span> }
                   <span [class]="keyBadgeClass(t)" (click)="open(t)">{{ t.keyText || 'no key' }}</span>
+                  @if (issueNote(t); as note) {
+                    <span class="issue-badge" [title]="note">⚠</span>
+                  }
                   <button
                     class="crate-btn"
                     [class.on]="crateSvc.cratesOf(t).length"
@@ -866,7 +899,62 @@ export class RecordsListComponent {
     this.fs.setYearMax(this.filters, Number.isNaN(y) ? null : y);
   }
 
-  toggle(facet: 'genres' | 'styles' | 'keys' | 'crates', value: string): void {
+  // --- "needs attention" facet ---------------------------------------------
+
+  readonly issueKinds = ISSUE_ORDER;
+
+  issueLabel(i: TrackIssue): string {
+    return ISSUE_LABEL[i];
+  }
+
+  issueHelp(i: TrackIssue): string {
+    return ISSUE_HELP[i];
+  }
+
+  /**
+   * How many tracks in the whole collection have each problem.
+   *
+   * Counted across everything rather than within the current filters, like the
+   * crate counts are: the number is there to tell you how much work is left,
+   * and a figure that shrank as you filtered would answer a question nobody
+   * asked. Computed once per collection change and shared by all three chips,
+   * because the tempo test is the most expensive predicate in the app.
+   */
+  private readonly issueCounts = computed<Record<TrackIssue, number>>(() => {
+    const counts: Record<TrackIssue, number> = { 'no-key': 0, 'no-bpm': 0, 'odd-bpm': 0 };
+    for (const t of this.col.tracks()) {
+      for (const i of trackIssues(t)) counts[i]++;
+    }
+    return counts;
+  });
+
+  issueCount(i: TrackIssue): number {
+    return this.issueCounts()[i];
+  }
+
+  clearIssues(): void {
+    this.fs.clearIssues(this.filters);
+  }
+
+  /**
+   * The warning tooltip for a track, or '' when there is nothing wrong.
+   *
+   * Only shown while the "needs attention" filter is on. Off duty the badges
+   * would be noise on the two-thirds of the collection that has a gap
+   * somewhere; on duty they are the whole point, because they say *which*
+   * problem this row was caught for.
+   */
+  issueNote(t: Track): string {
+    if (!this.filters().issues.length) return '';
+    return issueReasons(t).join('\n');
+  }
+
+  /** True when the stored tempo doesn't fit any genre on the record. */
+  bpmSuspect(t: Track): boolean {
+    return !!this.filters().issues.length && !!bpmProblem(t);
+  }
+
+  toggle(facet: 'genres' | 'styles' | 'keys' | 'crates' | 'issues', value: string): void {
     this.fs.toggle(this.filters, facet, value);
   }
 

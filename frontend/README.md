@@ -148,6 +148,54 @@ Microphone capture needs a secure page: **https://** or `localhost`.
 `npm run check:analysis` runs the whole pipeline offline against a synthetic
 signal of known key and tempo, plus the silent and too-short cases.
 
+### Needs attention (filter on screen 1)
+
+A maintenance facet for finding entries that still need work. Three chips, each
+showing how many tracks in the whole collection it matches; selecting several
+matches any of them, as the genre and style chips do:
+
+- **⚠ No key** — no Camelot code, so the track can't appear in any mixable list
+  or harmonic route.
+- **⚠ No BPM** — no tempo, so it can't be beat-matched or pitch-checked.
+- **⚠ Odd BPM** — a tempo that *cannot* be right.
+
+While the facet is on, matching rows get a ⚠ badge whose tooltip says exactly
+what's wrong, and a suspect tempo turns red. Click through to the track page to
+fix it by hand or with the 🎤 analysis.
+
+A wrong tempo is worse than a missing one: a blank gets ignored, while a wrong
+value is quietly believed by every pitch calculation and every beat-matched
+route built on top of it. The commonest by far is the **half-time reading** —
+catalogues routinely list a 172 BPM jungle roller as 86, because that's where
+the kick sits if you count it as hip-hop. On a turntable that isn't a matter of
+taste: you beat-match at 172, so the stored 86 hides the record from everything
+it actually mixes with.
+
+**Odd BPM only claims what it can prove.** Genres are *record-level* Discogs
+tags and this collection is full of records carrying several at once — a ragga
+jungle 12" is tagged Reggae *and* Jungle and legitimately holds a 78 BPM dub on
+one side and a 170 BPM roller on the other. Measured against the real
+collection, a naive "outside the range for its genre" test condemned a third of
+every track, nearly all of them simply a different kind of cut sharing a sleeve.
+That test was dropped. What's left flags 2.8%:
+
+- **Impossible tempos** — under 40 or over 220 BPM, or not a number.
+- **Half-time readings** — outside every band the record's tags imply, *and*
+  doubling lands in the heart of a fast genre it's actually tagged with.
+
+The half-time test runs one way only. There's no convention that turns a 78 BPM
+dub into 156, so slow genres carry no half-time window and are never accused —
+without that asymmetry every remix on a reggae compilation would "halve" neatly
+into the reggae band and be reported as an error. Umbrella tags that span the
+whole tempo range (Electronic, Rock, Jazz) carry no band at all, so they never
+contribute an opinion.
+
+Bands live in `src/app/quality.ts` if you want to add a genre or widen one.
+`npm run check:quality` tests the rules against hand-written cases and then
+reports what they flag across the real `tracks.txt` — a band that suddenly
+condemns a tenth of the collection is wrong about the music, and the only way to
+notice is to watch that number.
+
 ### Manual corrections win
 Editing a track's key/BPM — by hand or by confirming a 🎤 analysis — marks those
 fields as **hand-set**, and the automatic passes treat them as authoritative and
