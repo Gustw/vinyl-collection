@@ -108,7 +108,7 @@
   Year: 2016
   Label: Gunmen Music
   Art: https://i.discogs.com/DuvXcEAcnd_-vY9DGRiwbx9_Q2kwtSNt7i3f2MQy9q4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNTU5/MDQtMTQ3NTk0MTM4/Mi05NDgwLmpwZWc.jpeg
-   1. Chase The Devil - Gunmen [Pos: A | Key: E minor (9A) | BPM: 132]
+   1. Chase The Devil - Gunmen [Pos: A | Key: E minor (9A) | BPM: 175]
    2. So Mi Like It - Gunmen [Pos: B | Key: G minor (6A) | BPM: 176]
 
 === Greetings From Jamaica -- Gunmen / Mystic Pulse ===
