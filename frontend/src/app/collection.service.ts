@@ -228,6 +228,25 @@ interface TrackOverride {
   bpm: string;
 }
 
+/**
+ * Which of a track's values the user has set by hand.
+ *
+ * A manual correction is the most authoritative thing in the collection: it is
+ * someone who owns the record saying what is actually cut into it, against
+ * whatever a catalogue or an audio analysis guessed. So the automated passes
+ * must leave those fields alone — otherwise the next re-fetch silently reverts
+ * the edit and commits the reversion to tracks.txt.
+ *
+ * The lock is per-field, because the two are edited independently: correcting a
+ * BPM shouldn't stop a key being filled in later.
+ */
+export interface ManualLock {
+  key: boolean;
+  bpm: boolean;
+}
+
+const NO_LOCK: ManualLock = { key: false, bpm: false };
+
 const OVERRIDES_KEY = 'overrides.tracks';
 
 /** Stable id for a track across reloads (numeric ids are reassigned each load). */
@@ -343,6 +362,46 @@ export class CollectionService {
   }
 
   /**
+   * Which of this track's values were set by hand, and so must not be
+   * overwritten by a Beatport/tunebat pass.
+   *
+   * Only fields the user actually filled in are locked: someone who corrected
+   * a BPM and left the key blank still wants the key looked up.
+   */
+  manualLock(t: Pick<Track, 'releaseId' | 'title' | 'artist'>): ManualLock {
+    const o = this.overrides[overrideId(t.releaseId, t.title, t.artist)];
+    if (!o) return NO_LOCK;
+    return { key: !!(o.keyName || o.camelot), bpm: !!o.bpm };
+  }
+
+  /** True when any part of this track was corrected by hand. */
+  isManuallySet(t: Pick<Track, 'releaseId' | 'title' | 'artist'>): boolean {
+    const lock = this.manualLock(t);
+    return lock.key || lock.bpm;
+  }
+
+  /**
+   * Drops the manual correction for a track, handing it back to the automated
+   * lookups. The current values stay as they are until the next pass re-fetches
+   * them, so nothing disappears from the screen.
+   */
+  clearManual(track: Track): void {
+    const id = overrideId(track.releaseId, track.title, track.artist);
+    if (!this.overrides[id]) return;
+    delete this.overrides[id];
+    this.persistOverrides();
+    this.records.set([...this.records()]);
+  }
+
+  private persistOverrides(): void {
+    try {
+      localStorage.setItem(OVERRIDES_KEY, JSON.stringify(this.overrides));
+    } catch {
+      /* ignore quota errors */
+    }
+  }
+
+  /**
    * Sets a manual key/BPM correction for a track: updates it in memory and
    * persists the override to localStorage (re-applied on reload). Blank key +
    * blank BPM clears any existing override. Call `commitToGithub` to persist
@@ -366,11 +425,7 @@ export class CollectionService {
     } else {
       this.overrides[id] = { keyName, camelot, keyText, bpm };
     }
-    try {
-      localStorage.setItem(OVERRIDES_KEY, JSON.stringify(this.overrides));
-    } catch {
-      /* ignore quota errors */
-    }
+    this.persistOverrides();
     // New array reference so signals (tracks/records) recompute.
     this.records.set([...this.records()]);
   }

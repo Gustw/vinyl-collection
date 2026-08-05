@@ -206,6 +206,12 @@ export class UpdaterService {
    * tracks.txt predate match verification.
    */
   readonly unconfirmed = signal(0);
+  /**
+   * Tracks this pass deliberately skipped because their key and BPM were both
+   * corrected by hand. Surfaced so a run that "corrected nothing" is not
+   * mistaken for a run that failed.
+   */
+  readonly manuallyLocked = signal(0);
   /** What the re-fetch pass changed, for the summary shown when it finishes. */
   readonly changes = signal<TrackChange[]>([]);
   /** Set once a re-fetch pass has finished, so the UI can show its report. */
@@ -555,6 +561,7 @@ export class UpdaterService {
     this.processed.set(startAt);
     this.corrected.set(resuming ? saved!.corrected : 0);
     this.unconfirmed.set(resuming ? saved!.unconfirmed ?? 0 : 0);
+    this.manuallyLocked.set(0);
     this.changes.set(resuming ? this.rehydrateChanges(saved!.changes ?? [], jobs) : []);
     this.reportReady.set(false);
     this.rateLimitedMs.set(0);
@@ -589,6 +596,27 @@ export class UpdaterService {
           finished = false;
           break; // stop cleanly, then save below
         }
+
+        // A track whose key *and* BPM were both set by hand has nothing this
+        // pass may change, so don't spend a request (or a rate-limit slot) on
+        // asking a question whose answer must be discarded.
+        const lock = this.col.manualLock(t);
+        if (lock.key && lock.bpm) {
+          this.manuallyLocked.update((n) => n + 1);
+          this.processed.update((n) => n + 1);
+          this.updateEta(this.processed(), jobs.length);
+          this.saveProgress(source, {
+            lastKey: trackKey(t),
+            index: i,
+            total: jobs.length,
+            corrected: this.corrected(),
+            unconfirmed: this.unconfirmed(),
+            changes: this.changes().slice(-MAX_REMEMBERED_CHANGES),
+            updatedAt: Date.now(),
+          });
+          continue;
+        }
+
         this.message.set(
           `Re-checking ${t.artist} - ${t.title} on ${who}… ` +
             `(${i + 1}/${jobs.length}, ${this.corrected()} corrected)`
@@ -645,9 +673,12 @@ export class UpdaterService {
       await this.commit(records, cfg);
       const n = this.corrected();
       const fixed = n === 0 ? 'nothing needed correcting' : `${n} track(s) corrected`;
+      const locked = this.manuallyLocked()
+        ? `; ${this.manuallyLocked()} left alone (corrected by hand)`
+        : '';
       const note = finished
-        ? `${who}: ${fixed}`
-        : `${who}: ${fixed}; will resume at track ${this.processed() + 1} of ${jobs.length}`;
+        ? `${who}: ${fixed}${locked}`
+        : `${who}: ${fixed}${locked}; will resume at track ${this.processed() + 1} of ${jobs.length}`;
       this.message.set(this.finishMessage('Re-fetch', !finished, note));
     } catch (e) {
       this.error.set(String(e));
@@ -671,14 +702,19 @@ export class UpdaterService {
    * treated as a correction: it is the two sources counting the same record
    * differently. Overwriting on that basis would quietly halve the BPM of a
    * jungle collection, and every mixable pair and bridge computed from it.
-   * A key that is merely spelled differently (F# minor vs Gb minor) is left
+   * A key that is merely spelled differently (A# minor vs Bb minor) is left
    * alone for the same reason.
+   *
+   * Fields the user has corrected by hand are never touched at all: a manual
+   * edit outranks any catalogue, and silently reverting one — then committing
+   * the reversion — is the worst thing this pass could do.
    */
   private applyFresh(t: Track, info: KeyInfo): TrackChange | null {
+    const lock = this.col.manualLock(t);
     const keyChanged =
-      !!info.keyName && !sameKey(t.keyName, t.camelot, info.keyName, info.camelot);
+      !lock.key && !!info.keyName && !sameKey(t.keyName, t.camelot, info.keyName, info.camelot);
     const tempoClash = isTempoConventionClash(t.bpm, info.bpm);
-    const bpmChanged = !!info.bpm && info.bpm !== t.bpm && !tempoClash;
+    const bpmChanged = !lock.bpm && !!info.bpm && info.bpm !== t.bpm && !tempoClash;
     if (!keyChanged && !bpmChanged) return null;
 
     const change: TrackChange = {
@@ -755,21 +791,26 @@ export class UpdaterService {
     onProgress();
 
     // Fill gaps from Beatport (falling back to tunebat). Only blanks are
-    // filled, so a value that is already there is never replaced.
+    // filled, so a value that is already there is never replaced — which also
+    // means a manual correction is safe here. The lock is still consulted for
+    // the case of a hand-cleared field: someone who deleted a bogus BPM meant
+    // it to stay empty, not to be refilled on the next pass.
     for (const t of rec.tracks) {
       if (t.keyName && t.bpm) continue;
+      const lock = this.col.manualLock(t);
+      if ((t.keyName || lock.key) && (t.bpm || lock.bpm)) continue;
       this.throwIfCancelled(); // the record keeps whatever we filled so far
       const info = await lookupKeyData(cfg, t.artist, t.title, {
         onStatus: (s) => this.message.set(s),
         isCancelled: () => this.cancelling(),
         onRateLimitWait: (ms) => this.rateLimitedMs.update((n) => n + ms),
       });
-      if (info.keyName && !t.keyName) {
+      if (info.keyName && !t.keyName && !lock.key) {
         t.keyName = info.keyName;
         t.camelot = info.camelot;
         t.keyText = info.keyText;
       }
-      if (info.bpm && !t.bpm) t.bpm = info.bpm;
+      if (info.bpm && !t.bpm && !lock.bpm) t.bpm = info.bpm;
       onProgress();
       await this.wait(500); // be polite to the APIs (reduces 429s)
     }

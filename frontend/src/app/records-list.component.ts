@@ -117,6 +117,11 @@ function formatDuration(ms: number): string {
             @if (updater.corrected()) {
               <span class="badge-count corrected-count">{{ updater.corrected() }} corrected</span>
             }
+            @if (updater.manuallyLocked()) {
+              <span class="badge-count" title="Corrected by hand, so this pass leaves them alone">
+                ✎ {{ updater.manuallyLocked() }} manual
+              </span>
+            }
           }
           <span class="muted">{{ updater.message() }}</span>
           @if (updater.error(); as e) { <span class="err"> — {{ e }}</span> }

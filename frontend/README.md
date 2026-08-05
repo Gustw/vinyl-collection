@@ -98,7 +98,15 @@ Two repair passes sit next to it:
 
 Both are cancellable, commit as they go, and remember where they stopped so the
 next run resumes instead of re-checking thousands of tracks. Each keeps its own
-cursor.
+cursor. Neither will touch a key or BPM you corrected by hand — see below.
+
+### Manual corrections win
+Editing a track's key/BPM stores an override (in `localStorage`, keyed by
+release + title + artist) that the automatic passes treat as authoritative and
+never overwrite. Protection is per-field: correcting only the BPM still lets a
+key be looked up. A track with both set by hand is skipped without a request.
+The track page shows a **✎ set by hand** badge and an **↺ Unlock** button to
+hand it back to the lookups.
 
 ### Configuration (⚙ settings)
 Open the ⚙ panel and set:

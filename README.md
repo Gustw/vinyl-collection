@@ -100,6 +100,16 @@ still used to write the file, otherwise it will drop `Pos`/`Time` on rewrite.
 Keys and BPMs are best-effort lookups and can be corrected by hand in the app;
 an edit is written straight back to `tracks.txt`.
 
+**A hand-corrected value is never overwritten by a lookup.** A manual edit is
+the most authoritative thing in the collection — someone holding the record,
+against whatever a catalogue or an audio analysis guessed — so the Beatport and
+tunebat passes skip those fields entirely. The lock is per-field, so correcting a
+BPM doesn't stop the key being filled in later, and a track whose key *and* BPM
+are both set by hand is skipped without spending a request at all. The track page
+shows a **✎ set by hand** badge with an **↺ Unlock** button that hands the track
+back to the automatic lookups, and a re-fetch reports how many tracks it left
+alone so a run that "corrected nothing" isn't mistaken for one that failed.
+
 **`Pos` is reliable, `Time` often isn't.** Both come from Discogs, and Discogs
 contributors fill them in very unevenly: across a sample of this collection,
 positions were present for 100% of tracks but durations for only ~44% — and

@@ -125,6 +125,17 @@ interface Row {
               @if (!editing()) {
                 <div class="edit-row">
                   <button class="btn" (click)="startEdit()">✎ Edit key / BPM</button>
+                  @if (manualLock().key || manualLock().bpm) {
+                    <span
+                      class="chip active"
+                      [title]="manualNote()"
+                    >✎ {{ manualLabel() }} set by hand</span>
+                    <button
+                      class="btn"
+                      title="Hand this track back to the automatic Beatport/tunebat lookups"
+                      (click)="clearManual()"
+                    >↺ Unlock</button>
+                  }
                   @for (c of crateSvc.crates(); track c.id) {
                     <span
                       class="chip"
@@ -578,6 +589,39 @@ export class TrackDetailComponent {
 
   cancelEdit(): void {
     this.editing.set(false);
+  }
+
+  /**
+   * Which of this track's values were set by hand. Recomputed from the records
+   * signal so it refreshes as soon as an edit is saved or released.
+   */
+  readonly manualLock = computed(() => {
+    const t = this.track();
+    this.col.records(); // establish the dependency
+    return t ? this.col.manualLock(t) : { key: false, bpm: false };
+  });
+
+  /** "Key and BPM" / "Key" / "BPM", for the badge. */
+  readonly manualLabel = computed(() => {
+    const l = this.manualLock();
+    return l.key && l.bpm ? 'Key and BPM' : l.key ? 'Key' : 'BPM';
+  });
+
+  readonly manualNote = computed(
+    () =>
+      `${this.manualLabel()} was corrected by hand, so the Beatport/tunebat ` +
+      `passes leave it alone. Unlock to let them fill it in again.`
+  );
+
+  /** Hands the track back to the automated lookups. */
+  clearManual(): void {
+    const t = this.track();
+    if (!t) return;
+    this.col.clearManual(t);
+    this.saveErr.set(false);
+    this.saveMsg.set(
+      'Unlocked — the next Beatport/tunebat pass may update this track again.'
+    );
   }
 
   /** Applies the edit locally, then commits tracks.txt to GitHub. */
