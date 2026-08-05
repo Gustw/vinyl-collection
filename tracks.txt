@@ -753,7 +753,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/ad5bOsUFa5aQzFmtYurS9bM7IdpwQTsCeGnM3wiYwf8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3NzA4/MzgtMTQ2ODQzOTk3/Mi04NDkzLmpwZWc.jpeg
    1. Call Di Doctor - Mystic Pulse [Pos: A | Key: G major (9B) | BPM: 110]
-   2. Running Over - Gunmen [Pos: B | Key: C# major (3B) | BPM: 88]
+   2. Running Over - Gunmen [Pos: B | Key: F minor (4A) | BPM: 88]
 
 === Lineage Of The Sun -- Jahyu ===
   ID: 11888391
@@ -823,7 +823,7 @@
   Year: 2007
   Label: Znootpoch
   Art: https://i.discogs.com/Z91Ks9fP31dNr2TPbqWiBeXZ-ZlVbzv-0ZseZAUaaNQ/rs:fit/g:sm/q:90/h:495/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjM5/NzgtMTIwMDUxOTA0/NS5qcGVn.jpeg
-   1. Ghost Town - Krumble [Pos: A | Key: C# major (3B) | BPM: 92]
+   1. Ghost Town - Krumble [Pos: A | Key: D minor (7A) | BPM: 92]
    2. Angel City - Krumble [Pos: B | Key: A minor (8A) | BPM: 180]
 
 === Burning Babylon / Empty Words -- Alix Perez ===
@@ -833,8 +833,8 @@
   Year: 2021
   Label: 1985 Music
   Art: https://i.discogs.com/rEIewHJG3po1VAhwXjj3gr_k_EH9D0qEVSdzxQAfWY8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5ODQ1/MTY2LTE2MzM3Njgz/NzAtMjk2Mi5qcGVn.jpeg
-   1. Burning Babylon - Alix Perez [Pos: A | Key: B major (1B) | BPM: 175]
-   2. Empty Words - Alix Perez [Pos: B | Key: C# major (3B) | BPM: 87]
+   1. Burning Babylon - Alix Perez [Pos: A | Key: B minor (10A) | BPM: 166]
+   2. Empty Words - Alix Perez [Pos: B | Key: Db minor (12A) | BPM: 87]
 
 === Mr. Majestic / The Other Side -- Calibre & High Contrast ===
   ID: 19351834
@@ -844,7 +844,7 @@
   Label: Signature Records
   Art: https://i.discogs.com/BnkXOgXDH9nfpKArghqW9w_Wa0_zuHZztg75gdG6dok/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MzUx/ODM0LTE2MjUyMjg1/MTItNTI0My5qcGVn.jpeg
    1. Mr. Majestic - Calibre & High Contrast [Pos: A | Key: E minor (9A) | BPM: 173]
-   2. The Other Side - Calibre & High Contrast [Pos: B | Key: C# major (3B) | BPM: 173]
+   2. The Other Side - Calibre & High Contrast [Pos: B | Key: Ab major (4B) | BPM: 174]
 
 === Slow Motion -- Demolition Man & Krak In Dub ===
   ID: 2037635
@@ -872,7 +872,7 @@
   Year: 2022
   Label: Rasta Vibez
   Art: https://i.discogs.com/Gli3QFTsVCVF0z2lydex8C5EL2VEZFmcsbdO2Wp-hsM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMjkw/MjgzLTE2NDU3Nzgy/MDYtMTI3NS5qcGVn.jpeg
-   1. Jah Is Coming - Scott Allen, Pixel [Pos: A | Key: D minor (7A) | BPM: 180]
+   1. Jah Is Coming - Scott Allen, Pixel [Pos: A | Key: Bb minor (3A) | BPM: 175]
    2. Babylon Fall - Scott Allen, Pixel [Pos: B | Key: D minor (7A) | BPM: 88]
 
 === Red Light / Little Man -- St.Cal ===
@@ -882,8 +882,8 @@
   Year: 2022
   Label: Soul:r
   Art: https://i.discogs.com/yZ-qcewfHQX_G85A674DOeEtcISxFUotjzMIncJcX3M/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjAy/NDE4LTE2NjAxMTY5/MjItMTI2My5qcGVn.jpeg
-   1. Red Light - St.Cal [Pos: A | Key: E minor (9A) | BPM: 115]
-   2. Little Man - St.Cal [Pos: B | Key: C# major (3B) | BPM: 174]
+   1. Red Light - St.Cal [Pos: A | Key: E minor (9A) | BPM: 130]
+   2. Little Man - St.Cal [Pos: B | Key: F minor (4A) | BPM: 174]
 
 === Wicked & Wild (Dancehall Style) / Police In Helicopter (Frisk Mix) -- Tippa Irie / Million Stylez ===
   ID: 3328008
@@ -902,8 +902,8 @@
   Year: 2013
   Label: Moonshine Recordings
   Art: https://i.discogs.com/4olT0rIhaV_TyCSGqjCvuo6NRL9ZTbGByGFywk2Eo_M/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNDE3/NDYtMTM4NTYyNDQz/Ny0xODI0LmpwZWc.jpeg
-   1. Earthwalker - Radikal Guru [Pos: A1 | Key: G major (9B) | BPM: 140]
-   2. Stay Calm - Radikal Guru [Pos: A2 | Key: D major (10B) | BPM: 140]
+   1. Earthwalker - Radikal Guru [Pos: A1 | Key: C minor (5A) | BPM: 140]
+   2. Stay Calm - Radikal Guru [Pos: A2 | Key: G minor (6A) | BPM: 140]
    3. Different Dub - Radikal Guru [Pos: B1 | Key: C# major (3B) | BPM: 82]
    4. Know Yourself - Radikal Guru [Pos: B2 | Key: C# major (3B) | BPM: 140]
    5. Spaced Out - Radikal Guru [Pos: B3 | Key: D major (10B) | BPM: 140]
