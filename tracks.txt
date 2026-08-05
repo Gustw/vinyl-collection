@@ -701,7 +701,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/FdvlQLYITfJ3PieS1Ql78jVkDt7fw0yEbjbN9lFlFgc/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDI1/NjEtMTM4MTQ3NzQ3/Mi0yMTkyLmpwZWc.jpeg
    1. Smoke The Weed - Ed Solo And Stickybuds [Pos: A1 | Time: 4:50 | Key: F minor (4A) | BPM: 174]
-   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: F minor (4A) | BPM: 132]
+   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: F minor (4A) | BPM: 176]
 
 === Too Greedy (Rmx) / Murder Style -- Stalefish ===
   ID: 689940
