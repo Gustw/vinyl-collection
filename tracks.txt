@@ -391,7 +391,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/prmwD5RJ-OUy3z0GepH--4EMzoPU5Xz5tKZn2bRlSnI/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTE0/NDktMTM1MDg4NTgy/MC05ODgwLmpwZWc.jpeg
    1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A minor (8A) | BPM: 88]
-   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA | Key: E minor (9A) | BPM: 132]
+   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA | Key: C major (8B) | BPM: 175]
 
 === Super Skank / Nervous -- DJ Panik ===
   ID: 2041969
@@ -542,7 +542,7 @@
   Year: 2011
   Label: Killa Dubz
   Art: https://i.discogs.com/wilFAEyYlreL3Hud-fc1qkjx6DuanBqXCTdHHoCtChI/rs:fit/g:sm/q:90/h:600/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzE0/NjAtMTQ4ODgxOTM5/NC01NDQyLmpwZWc.jpeg
-   1. Good Enough - Serial Killaz [Pos: A | Key: C minor (5A) | BPM: 154]
+   1. Good Enough - Serial Killaz [Pos: A | Key: C minor (5A) | BPM: 176]
    2. Jamaican Boy - Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 180]
 
 === Murder Ya Sound -- Serial Killaz & Run Tingz Cru Featuring Tenor Fly & Blackout J.A ===
