@@ -37,7 +37,6 @@ export function hasAnswer(info: KeyInfo | null | undefined): boolean {
   return !!info && (!!info.bpm || !!info.keyName);
 }
 
-export const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 /**
  * Parses a Retry-After header (delta-seconds or HTTP-date) into ms, clamped to

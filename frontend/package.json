@@ -10,7 +10,9 @@
     "sync-data": "node scripts/sync-tracks.mjs",
     "dedupe-data": "node scripts/dedupe-tracks.mjs",
     "check:beatport": "esbuild scripts/beatport-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/beatport-check.mjs && node node_modules/.cache/beatport-check.mjs",
-    "check:manual": "esbuild scripts/manual-lock-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/manual-lock-check.mjs && node node_modules/.cache/manual-lock-check.mjs"
+    "check:manual": "esbuild scripts/manual-lock-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/manual-lock-check.mjs && node node_modules/.cache/manual-lock-check.mjs",
+    "check:timers": "esbuild scripts/timer-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/timer-check.mjs && node node_modules/.cache/timer-check.mjs"
+
   },
   "private": true,
   "dependencies": {

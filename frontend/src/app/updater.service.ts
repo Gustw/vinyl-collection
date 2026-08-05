@@ -13,8 +13,7 @@ import { lookupKeyBeatport } from './beatport';
 import { KeyInfo, lookupKeyData } from './keydata';
 import { renderTracksTxt } from './tracks-format';
 import { getTracksFile, githubConfigured, putTracksFile } from './github';
-
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+import { waitFor } from './timers';
 
 /**
  * Which service a re-fetch pass asks.
@@ -338,17 +337,14 @@ export class UpdaterService {
   }
 
   /**
-   * Sleeps in small slices so a cancellation is noticed quickly instead of
-   * after a full pacing delay.
+   * Pauses for `ms`, noticing a cancellation promptly.
+   *
+   * Deliberately deadline-driven (see ./timers): counting fixed slices would
+   * multiply every pacing delay by the browser's background-tab throttling,
+   * turning a half-second pause into minutes whenever the tab isn't in front.
    */
   private async wait(ms: number): Promise<void> {
-    const step = 100;
-    let left = ms;
-    while (left > 0 && !this.cancelling()) {
-      const slice = Math.min(step, left);
-      await sleep(slice);
-      left -= slice;
-    }
+    await waitFor(ms, () => this.cancelling());
   }
 
   /** Throws to unwind the pipeline when the user asked to stop. */

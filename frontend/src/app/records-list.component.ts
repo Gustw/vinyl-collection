@@ -127,6 +127,12 @@ function formatDuration(ms: number): string {
           @if (updater.error(); as e) { <span class="err"> — {{ e }}</span> }
           @if (updater.running()) {
             <span class="spacer"></span>
+            <span
+              class="muted"
+              title="Timers run in a Web Worker so the job keeps its pace in a background tab, but a browser reclaiming memory can still unload the page. Progress is saved after every track, so a lost run resumes where it stopped."
+            >
+              Runs in the background — safe to switch tabs
+            </span>
             <button
               class="btn danger"
               [disabled]="updater.cancelling()"

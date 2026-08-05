@@ -165,6 +165,15 @@ npm run dedupe-data   # collapse duplicate record blocks, keeping the fullest co
   older `tracks.txt` supplies a key name but no Camelot code, it is derived from
   the name — otherwise the track would silently vanish from every key filter and
   mixable list.
+- **Long runs keep going in a background tab.** Browsers throttle timers in
+  hidden pages — Chrome to roughly once a minute for chained timers after about
+  five minutes — so pacing and rate-limit backoffs are deadline-driven and run
+  off a Web Worker clock rather than counting `setTimeout` slices on the main
+  thread. Counting slices multiplied the throttle by the number of slices, which
+  turned a 60-second backoff into about four hours and made a run look like it
+  had hung. What no code can prevent is the browser *discarding* the tab to
+  reclaim memory; every pass checkpoints after each track, so that costs a few
+  seconds of repeated work rather than the run.
 - **Both services rate-limit** (HTTP 429, tunebat with a 60s `Retry-After`). The
   updater honours it and backs off, so a first full import takes a while. Results
   are cached in localStorage, and tracks without a match are simply listed without

@@ -36,8 +36,8 @@ import {
   normaliseKeyName,
   proxied,
   retryAfterMs,
-  sleep,
 } from './keyinfo';
+import { waitFor } from './timers';
 
 const API_BASE = 'https://api.beatport.com/v4';
 const WEB_SEARCH = 'https://www.beatport.com/search/tracks';
@@ -260,18 +260,11 @@ async function fetchWithBackoff(
       `Rate limited by Beatport — waiting ${Math.round(wait / 1000)}s ` +
         `(${rateWaits}/${MAX_RATE_WAITS})…`
     );
-    // Sleep in slices so a cancellation isn't stuck behind a long backoff.
-    let waited = 0;
-    for (let left = wait; left > 0; left -= 250) {
-      if (isCancelled?.()) {
-        onRateLimitWait?.(waited);
-        return null;
-      }
-      const slice = Math.min(250, left);
-      await sleep(slice);
-      waited += slice;
-    }
+    // Deadline-driven so a throttled background tab can't turn a 30s backoff
+    // into hours (see ./timers), while still noticing a cancellation promptly.
+    const { waited, cancelled } = await waitFor(wait, isCancelled);
     onRateLimitWait?.(waited);
+    if (cancelled) return null;
   }
 }
 

@@ -11,8 +11,8 @@ import {
   normaliseKeyName,
   proxied,
   retryAfterMs,
-  sleep,
 } from './keyinfo';
+import { waitFor } from './timers';
 
 export type { KeyInfo, LookupOptions } from './keyinfo';
 
@@ -173,18 +173,11 @@ export async function lookupKey(
         `Rate limited by tunebat — waiting ${Math.round(wait / 1000)}s ` +
           `(${rateWaits}/${MAX_RATE_WAITS})…`
       );
-      // Sleep in slices so a cancellation isn't stuck behind a long backoff.
-      let waited = 0;
-      for (let left = wait; left > 0; left -= 250) {
-        if (isCancelled?.()) {
-          onRateLimitWait?.(waited);
-          return keep();
-        }
-        const slice = Math.min(250, left);
-        await sleep(slice);
-        waited += slice;
-      }
+      // Deadline-driven so a throttled background tab can't turn a 60s backoff
+      // into hours (see ./timers), while still noticing a cancellation promptly.
+      const { waited, cancelled } = await waitFor(wait, isCancelled);
       onRateLimitWait?.(waited);
+      if (cancelled) return keep();
       continue; // retry the same term
     }
 
