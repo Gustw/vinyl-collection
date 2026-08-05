@@ -19,6 +19,20 @@ export interface Track {
   keyText: string;
   /** beats per minute as text, e.g. "117" ("" if unknown) */
   bpm: string;
+  /**
+   * True when the key was set by a human — typed in, or confirmed from a
+   * microphone analysis — rather than fetched from a catalogue.
+   *
+   * This is the most authoritative thing the collection knows: someone who owns
+   * the record saying what is actually cut into it. The automatic passes must
+   * leave such a field alone, so the flag travels with the value in tracks.txt
+   * (`Manual: key`) rather than living only in one browser's localStorage —
+   * otherwise a re-fetch run from a different device would silently revert the
+   * correction and commit the reversion.
+   */
+  manualKey: boolean;
+  /** True when the BPM was set by hand. Independent of {@link manualKey}. */
+  manualBpm: boolean;
   recordTitle: string;
   recordArtist: string;
   genres: string[];

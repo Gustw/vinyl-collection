@@ -163,6 +163,8 @@ function newTrack(title: string, artist: string): Track {
     camelot: '',
     keyText: '',
     bpm: '',
+    manualKey: false,
+    manualBpm: false,
     recordTitle: '',
     recordArtist: '',
     genres: [],

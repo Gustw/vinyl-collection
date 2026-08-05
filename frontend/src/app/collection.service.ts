@@ -9,11 +9,15 @@ import { cachedKeyInfoAny } from './keydata';
 const HEADER_RE = /^===\s(.*)\s===$/;
 const TRACK_RE = /^\s*\d+\.\s+(.*)$/;
 /**
- * The trailing metadata block: `[Pos: A1 | Time: 6:32 | Key: A minor (8A) | BPM: 175]`.
+ * The trailing metadata block:
+ * `[Pos: A1 | Time: 6:32 | Key: A minor (8A) | BPM: 175 | Manual: key,bpm]`.
  * Every field is optional and older files carry only Key/BPM.
  */
 const META_RE = /\s*\[([^\]]+)]\s*$/;
-const META_FIELD_RE = /^(Pos|Time|Key|BPM)\s*:\s*(.*)$/i;
+/** Any `Name: value` pair inside the block, known to this version or not. */
+const META_PAIR_RE = /^([A-Za-z][A-Za-z ]*?)\s*:\s*(.*)$/;
+/** The fields this version understands. Others are read past, not choked on. */
+const KNOWN_META = new Set(['pos', 'time', 'key', 'bpm', 'manual']);
 const CAMELOT_RE = /\((\d{1,2}[AB])\)/;
 
 /** Per-track fields parsed out of the trailing bracket block. */
@@ -22,33 +26,53 @@ interface TrackMeta {
   duration: string;
   keyText: string;
   bpm: string;
+  manualKey: boolean;
+  manualBpm: boolean;
 }
 
 /**
  * Splits a track line into its title/artist body and its metadata block.
  *
- * The block is only recognised when *every* `|` segment is a known
- * `Name: value` pair, so a title that merely ends in brackets — "Bad Boys
- * [VIP]" — is left alone instead of being eaten as metadata.
+ * A block is only recognised when *every* `|` segment is a `Name: value` pair
+ * and at least one of those names is a field we know. That pair of tests is
+ * what keeps a title which merely ends in brackets — "Bad Boys [VIP]", or even
+ * "Remix: Foo" — from being eaten as metadata, while still letting a file
+ * written by a newer version (with fields this one has never heard of) be read
+ * rather than silently losing its key and BPM.
  */
 function splitTrackMeta(body: string): { body: string; meta: TrackMeta } {
-  const meta: TrackMeta = { position: '', duration: '', keyText: '', bpm: '' };
+  const meta: TrackMeta = {
+    position: '',
+    duration: '',
+    keyText: '',
+    bpm: '',
+    manualKey: false,
+    manualBpm: false,
+  };
   const m = META_RE.exec(body);
   if (!m) return { body, meta };
 
   const segments = m[1].split('|').map((s) => s.trim());
-  const fields = segments.map((s) => META_FIELD_RE.exec(s));
+  const fields = segments.map((s) => META_PAIR_RE.exec(s));
   if (fields.some((f) => !f)) return { body, meta }; // not a metadata block
+  const names = fields.map((f) => f![1].trim().toLowerCase());
+  if (!names.some((n) => KNOWN_META.has(n))) return { body, meta };
 
-  for (const f of fields) {
-    const name = f![1].toLowerCase();
-    const value = f![2].trim();
+  for (let i = 0; i < fields.length; i++) {
+    const name = names[i];
+    const value = fields[i]![2].trim();
     // Positions are folded up on the way in as well as on the way out of
     // Discogs, so a file written before that was done still displays evenly.
     if (name === 'pos') meta.position = value.toUpperCase();
     else if (name === 'time') meta.duration = value;
     else if (name === 'key') meta.keyText = value;
     else if (name === 'bpm') meta.bpm = value;
+    else if (name === 'manual') {
+      // "key", "bpm", or both in either order and any of the obvious spellings.
+      const parts = value.toLowerCase().split(/[,+;\s]+/).filter(Boolean);
+      meta.manualKey = parts.includes('key');
+      meta.manualBpm = parts.includes('bpm');
+    }
   }
   return { body: body.replace(META_RE, '').trim(), meta };
 }
@@ -131,6 +155,11 @@ export function parseTracksTxt(text: string): Rec[] {
         camelot,
         keyText,
         bpm,
+        // A lock is only meaningful over a value that is actually there: a
+        // "Manual: bpm" left behind on a track whose BPM was later cleared
+        // would otherwise freeze the field as permanently empty.
+        manualKey: split.meta.manualKey && !!keyText,
+        manualBpm: split.meta.manualBpm && !!bpm,
         recordTitle: current.title,
         recordArtist: current.artist,
         genres: current.genres,
@@ -203,6 +232,10 @@ function splitList(s: string): string[] {
  * localStorage caches. This restores update progress after a page reload even
  * when it hasn't been committed to GitHub yet (e.g. no token configured, or a
  * refresh between commit checkpoints). Existing values are never overwritten.
+ *
+ * Hand-set fields are skipped outright. A field can be blank *because someone
+ * deliberately emptied it* — a bogus BPM deleted on purpose — and refilling it
+ * from a cache would undo that just as surely as overwriting a value would.
  */
 export function hydrateFromKeyCache(records: Rec[]): void {
   for (const r of records) {
@@ -210,12 +243,12 @@ export function hydrateFromKeyCache(records: Rec[]): void {
       if (t.keyName && t.bpm) continue;
       const cached = cachedKeyInfoAny(t.artist, t.title);
       if (!cached) continue;
-      if (!t.keyName && cached.keyName) {
+      if (!t.keyName && !t.manualKey && cached.keyName) {
         t.keyName = cached.keyName;
         t.camelot = cached.camelot;
         t.keyText = cached.keyText;
       }
-      if (!t.bpm && cached.bpm) t.bpm = cached.bpm;
+      if (!t.bpm && !t.manualBpm && cached.bpm) t.bpm = cached.bpm;
     }
   }
 }
@@ -239,6 +272,10 @@ interface TrackOverride {
  *
  * The lock is per-field, because the two are edited independently: correcting a
  * BPM shouldn't stop a key being filled in later.
+ *
+ * It is carried on the track itself, having been read from tracks.txt (or set
+ * by an edit in this session), so it is shared with every device that reads the
+ * file rather than being one browser's private opinion.
  */
 export interface ManualLock {
   key: boolean;
@@ -347,7 +384,15 @@ export class CollectionService {
     return this.tracks().find((t) => t.id === id);
   }
 
-  /** Applies stored manual overrides on top of parsed/cached values. */
+  /**
+   * Applies stored manual overrides on top of parsed/cached values.
+   *
+   * The local override and the file's own `Manual:` flag are two records of the
+   * same fact, and they are unioned rather than one replacing the other: an
+   * edit made on this machine may not have reached GitHub yet, and a flag in
+   * the file may have been committed from another machine that this browser has
+   * never seen.
+   */
   private applyOverrides(records: Rec[]): void {
     for (const r of records) {
       for (const t of r.tracks) {
@@ -357,6 +402,8 @@ export class CollectionService {
         t.camelot = o.camelot;
         t.keyText = o.keyText;
         t.bpm = o.bpm;
+        t.manualKey = t.manualKey || !!(o.keyName || o.camelot);
+        t.manualBpm = t.manualBpm || !!o.bpm;
       }
     }
   }
@@ -368,14 +415,13 @@ export class CollectionService {
    * Only fields the user actually filled in are locked: someone who corrected
    * a BPM and left the key blank still wants the key looked up.
    */
-  manualLock(t: Pick<Track, 'releaseId' | 'title' | 'artist'>): ManualLock {
-    const o = this.overrides[overrideId(t.releaseId, t.title, t.artist)];
-    if (!o) return NO_LOCK;
-    return { key: !!(o.keyName || o.camelot), bpm: !!o.bpm };
+  manualLock(t: Pick<Track, 'manualKey' | 'manualBpm'>): ManualLock {
+    if (!t.manualKey && !t.manualBpm) return NO_LOCK;
+    return { key: t.manualKey, bpm: t.manualBpm };
   }
 
   /** True when any part of this track was corrected by hand. */
-  isManuallySet(t: Pick<Track, 'releaseId' | 'title' | 'artist'>): boolean {
+  isManuallySet(t: Pick<Track, 'manualKey' | 'manualBpm'>): boolean {
     const lock = this.manualLock(t);
     return lock.key || lock.bpm;
   }
@@ -384,11 +430,18 @@ export class CollectionService {
    * Drops the manual correction for a track, handing it back to the automated
    * lookups. The current values stay as they are until the next pass re-fetches
    * them, so nothing disappears from the screen.
+   *
+   * The flag has to be cleared in both places it lives — this browser's
+   * overrides and the track itself — or the next commit would write the lock
+   * straight back into tracks.txt.
    */
   clearManual(track: Track): void {
     const id = overrideId(track.releaseId, track.title, track.artist);
-    if (!this.overrides[id]) return;
+    const had = !!this.overrides[id] || track.manualKey || track.manualBpm;
+    if (!had) return;
     delete this.overrides[id];
+    track.manualKey = false;
+    track.manualBpm = false;
     this.persistOverrides();
     this.records.set([...this.records()]);
   }
@@ -402,10 +455,11 @@ export class CollectionService {
   }
 
   /**
-   * Sets a manual key/BPM correction for a track: updates it in memory and
-   * persists the override to localStorage (re-applied on reload). Blank key +
-   * blank BPM clears any existing override. Call `commitToGithub` to persist
-   * remotely.
+   * Sets a manual key/BPM correction for a track: updates it in memory, marks
+   * the corrected fields as hand-set, and persists the override to localStorage
+   * (re-applied on reload). Blank key + blank BPM clears any existing override.
+   * Call `commitToGithub` to persist remotely — that is what carries the flag,
+   * along with the value, to every other device.
    */
   setTrackKeyBpm(track: Track, keyName: string, camelot: string, bpm: string): void {
     keyName = (keyName || '').trim();
@@ -418,6 +472,8 @@ export class CollectionService {
     track.camelot = camelot;
     track.keyText = keyText;
     track.bpm = bpm;
+    track.manualKey = !!keyText;
+    track.manualBpm = !!bpm;
 
     const id = overrideId(track.releaseId, track.title, track.artist);
     if (!keyName && !camelot && !bpm) {

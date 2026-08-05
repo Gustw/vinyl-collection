@@ -141,7 +141,7 @@ control) is switched off during capture, because it is tuned for speech and
 wrecks music analysis.
 
 Accepting a result saves it exactly like a hand edit, so it is protected from
-the automatic passes (see below).
+the automatic passes on every device (see below).
 
 Microphone capture needs a secure page: **https://** or `localhost`.
 
@@ -149,12 +149,33 @@ Microphone capture needs a secure page: **https://** or `localhost`.
 signal of known key and tempo, plus the silent and too-short cases.
 
 ### Manual corrections win
-Editing a track's key/BPM stores an override (in `localStorage`, keyed by
-release + title + artist) that the automatic passes treat as authoritative and
-never overwrite. Protection is per-field: correcting only the BPM still lets a
-key be looked up. A track with both set by hand is skipped without a request.
-The track page shows a **✎ set by hand** badge and an **↺ Unlock** button to
-hand it back to the lookups.
+Editing a track's key/BPM — by hand or by confirming a 🎤 analysis — marks those
+fields as **hand-set**, and the automatic passes treat them as authoritative and
+never overwrite them. Protection is per-field: correcting only the BPM still
+lets a key be looked up. A track with both set by hand is skipped without a
+request. The track page shows a **✎ set by hand** badge and an **↺ Unlock**
+button to hand it back to the lookups.
+
+The flag is written into `tracks.txt` next to the value, as a `Manual` field in
+the track's metadata block:
+
+```
+   1. Original Nuttah - Shy FX [Pos: A1 | Time: 5:23 | Key: A minor (8A) | BPM: 175 | Manual: key,bpm]
+```
+
+so it travels with the collection: a re-fetch run from a different browser or
+device sees the lock too and leaves the correction alone. (Before this, the flag
+lived only in `localStorage`, so another device would happily "correct" a
+hand-checked value and commit the reversion.)
+
+The edit is *also* kept in `localStorage` — keyed by release + title + artist —
+which covers the window before it reaches GitHub: no token configured, a failed
+commit, or a reload in between. The two are unioned on load, so neither can lose
+a lock the other knows about.
+
+Every field in the metadata block is optional in both directions, and unknown
+fields are read past rather than choked on, so files written by older or newer
+versions all still read correctly.
 
 ### Configuration (⚙ settings)
 Open the ⚙ panel and set:

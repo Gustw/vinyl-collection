@@ -6,10 +6,16 @@
  * commits that to tracks.txt, so the correction is lost from the file even
  * though the local override would still mask it until the cache is cleared.
  *
+ * Since the lock is written into tracks.txt itself (`Manual: key,bpm`), the
+ * round trip through the file is checked here too — that is what carries the
+ * protection to a second browser, where there is no local override to fall
+ * back on and a re-fetch would otherwise revert the edit for everyone.
+ *
  * Run with: npm run check:manual
  */
-import { CollectionService } from '../src/app/collection.service';
+import { CollectionService, parseTracksTxt } from '../src/app/collection.service';
 import { UpdaterService } from '../src/app/updater.service';
+import { renderTracksTxt } from '../src/app/tracks-format';
 import { Rec, Track } from '../src/app/models';
 
 // --- stubs ---------------------------------------------------------------
@@ -107,9 +113,9 @@ function check(label: string, actual: unknown, expected: unknown) {
 function track(o: Partial<Track>): Track {
   return {
     id: 0, title: 'Test Track', artist: 'Tester', position: '', duration: '',
-    keyName: '', camelot: '', keyText: '', bpm: '', recordTitle: 'Rec',
-    recordArtist: 'Tester', genres: [], styles: [], year: 0, labels: [],
-    artwork: '', releaseId: '123', ...o,
+    keyName: '', camelot: '', keyText: '', bpm: '', manualKey: false,
+    manualBpm: false, recordTitle: 'Rec', recordArtist: 'Tester', genres: [],
+    styles: [], year: 0, labels: [], artwork: '', releaseId: '123', ...o,
   };
 }
 
@@ -196,18 +202,85 @@ async function main() {
     check('now updated', t.bpm, '128');
   }
 
-  console.log('\nThe lock survives a reload (it lives in localStorage)');
+  console.log('\nThe lock survives a reload from this browser (localStorage)');
   {
     store.clear();
     (col as any).overrides = {};
     const t = track({ title: 'Persist Me', keyName: 'A minor', camelot: '8A', keyText: 'A minor (8A)', bpm: '175' });
     col.setRecords(recordsWith([t]));
     col.setTrackKeyBpm(t, 'A minor', '8A', '175');
-    // A fresh service reads the same storage, as it would after a page load.
-    const fresh = injector.get(CollectionService, null, { optional: true }) as CollectionService;
-    const reloaded = Object.create(Object.getPrototypeOf(fresh)) as CollectionService;
-    (reloaded as any).overrides = JSON.parse(store.get('overrides.tracks') || '{}');
-    check('still locked', reloaded.manualLock(t), { key: true, bpm: true });
+
+    // A fresh parse, as after a page load: the stored override is re-applied on
+    // top and must restore both flags.
+    const reloaded = parseTracksTxt(renderTracksTxt(recordsWith([track({ title: 'Persist Me' })])));
+    (col as any).overrides = JSON.parse(store.get('overrides.tracks') || '{}');
+    (col as any).applyOverrides(reloaded);
+    check('key restored', reloaded[0].tracks[0].keyText, 'A minor (8A)');
+    check('still locked', col.manualLock(reloaded[0].tracks[0]), { key: true, bpm: true });
+  }
+
+  console.log('\nThe lock travels in tracks.txt, so another device sees it too');
+  {
+    store.clear();
+    (col as any).overrides = {};
+    const t = track({ title: 'Shared Lock' });
+    col.setRecords(recordsWith([t]));
+    col.setTrackKeyBpm(t, 'A minor', '8A', '175');
+
+    const text = renderTracksTxt(col.records());
+    check('written into the metadata block', /\| Manual: key,bpm]/.test(text), true);
+
+    // The other device: same file, empty localStorage.
+    store.clear();
+    const fresh = parseTracksTxt(text);
+    (col as any).overrides = {};
+    const other = fresh[0].tracks[0];
+    check('read back with no local override', col.manualLock(other), { key: true, bpm: true });
+
+    // …and a re-fetch run there must still leave the correction alone.
+    col.setRecords(fresh);
+    await run(col, up, fresh[0].tracks);
+    check('key kept on the other device', other.keyText, 'A minor (8A)');
+    check('bpm kept on the other device', other.bpm, '175');
+    check('no request was made', lookups.length, 0);
+  }
+
+  console.log('\nOnly the hand-set field is flagged, and unlocking clears the flag');
+  {
+    store.clear();
+    (col as any).overrides = {};
+    const t = track({ title: 'Bpm Only', keyName: 'G major', camelot: '9B', keyText: 'G major (9B)' });
+    col.setRecords(recordsWith([t]));
+    col.setTrackKeyBpm(t, '', '', '175'); // BPM only
+
+    const text = renderTracksTxt(col.records());
+    check('only bpm is flagged', /\| Manual: bpm]/.test(text), true);
+
+    const back = parseTracksTxt(text)[0].tracks[0];
+    check('round-trips', col.manualLock(back), { key: false, bpm: true });
+
+    col.clearManual(t);
+    check('flag gone after unlock', /Manual:/.test(renderTracksTxt(col.records())), false);
+  }
+
+  console.log('\nA file from a newer version is still readable');
+  {
+    // An unknown field must not make the whole block unrecognisable — that
+    // would silently drop the key and BPM of every track in the file.
+    const text =
+      '=== Rec -- Tester ===\n  ID: 123\n' +
+      '   1. Future Track - Tester [Pos: A1 | Key: A minor (8A) | BPM: 175 | Mood: dark | Manual: key]\n';
+    const t = parseTracksTxt(text)[0].tracks[0];
+    check('key survived', t.keyText, 'A minor (8A)');
+    check('bpm survived', t.bpm, '175');
+    check('known flag still read', col.manualLock(t), { key: true, bpm: false });
+  }
+
+  console.log('\nA title that merely ends in brackets is left alone');
+  {
+    const text = '=== Rec -- Tester ===\n   1. Bad Boys [VIP] - Tester\n';
+    const t = parseTracksTxt(text)[0].tracks[0];
+    check('title intact', t.title, 'Bad Boys [VIP]');
   }
 
   console.log(failures ? `\n${failures} check(s) FAILED\n` : '\nAll checks passed\n');

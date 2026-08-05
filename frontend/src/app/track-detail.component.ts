@@ -633,7 +633,9 @@ export class TrackDetailComponent {
   readonly manualNote = computed(
     () =>
       `${this.manualLabel()} was corrected by hand, so the Beatport/tunebat ` +
-      `passes leave it alone. Unlock to let them fill it in again.`
+      `passes leave it alone. The flag is saved in tracks.txt alongside the ` +
+      `value, so it protects the correction on every device. Unlock to let the ` +
+      `lookups fill it in again.`
   );
 
   /** Hands the track back to the automated lookups. */
