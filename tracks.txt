@@ -15,7 +15,7 @@
   Year: 2012
   Label: Asbo Audio
   Art: https://i.discogs.com/dNlWpkrw5S17OhieWGsZONHzCQJVPNkKXH6WcKq5YZg/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTkw/MTItMTM1MDU1NDIy/My05ODIyLnBuZw.jpeg
-   1. Oh Yeah! - Daffy [Pos: A | Key: B minor (10A) | BPM: 174]
+   1. Oh Yeah! - Daffy [Pos: A | Key: E major (12B) | BPM: 174]
    2. Use Dem Brain - Rassterlin [Pos: B]
 
 === Optic Nerve / Under Threat -- DJ Ruffneck / Edge Harmonics 'N Ancronix ===
@@ -35,7 +35,7 @@
   Year: 1996
   Label: Blue Room Released
   Art: https://i.discogs.com/D1qWzpas69cKU-S82LQ0y4cajX-K0w5qVSHMQ4NWC_Y/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2NDY3/LTE1Mzk2Njc0NTIt/NzU3Ny5qcGVn.jpeg
-   1. Starship 101 - Etnica [Pos: A | Time: 8:42 | Key: C# major (3B) | BPM: 147]
+   1. Starship 101 - Etnica [Pos: A | Time: 8:42 | Key: F major (7B) | BPM: 147]
    2. Full On - Etnica [Pos: B | Time: 11:38]
 
 === Nuttin A Gwan -- Ray Keith ===
@@ -55,8 +55,8 @@
   Year: 2012
   Label: Run Tingz Recordings
   Art: https://i.discogs.com/W02AGnesO_h9zU5cjh6Dw77LxbEtJr7kUpdpK18pUzA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4Njcx/OTgtMTM0NzQ0NzE3/OC02MDI5LmpwZWc.jpeg
-   1. Took My Breath - Run Tingz Cru [Pos: A1 | Key: C# major (3B) | BPM: 176]
-   2. Drop Call - Run Tingz Cru [Pos: B1 | Key: G major (9B) | BPM: 175]
+   1. Took My Breath - Run Tingz Cru [Pos: A1 | Key: F minor (4A) | BPM: 176]
+   2. Drop Call - Run Tingz Cru [Pos: B1 | Key: A minor (8A) | BPM: 175]
    3. Sound Clash Toolz - Run Tingz Cru [Pos: B2 | Key: A minor (8A) | BPM: 86]
 
 === Jam Da' Mace / Reservoir Dogs -- Subject 13 ===
@@ -86,8 +86,8 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/uAG2bepfH6RkE7qaXYLcPovxbbi0YHOWElOz3DBR6dQ/rs:fit/g:sm/q:90/h:239/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MDQ3/MDItMTQyNjk4MDMx/Ni0xODQyLmpwZWc.jpeg
-   1. Good To Have The Feeling - Deekline & Tippa Irie [Pos: A | Key: D major (10B) | BPM: 88]
-   2. Another One For The Road - Cocoa Tea [Pos: B | Key: F# major (2B) | BPM: 173]
+   1. Good To Have The Feeling - Deekline & Tippa Irie [Pos: A | Key: G major (9B) | BPM: 88]
+   2. Another One For The Road - Cocoa Tea [Pos: B | Key: Bb minor (3A) | BPM: 173]
 
 === #SMR007 -- Dial-M, Msymiakos ===
   ID: 34454533
@@ -109,7 +109,7 @@
   Label: Gunmen Music
   Art: https://i.discogs.com/DuvXcEAcnd_-vY9DGRiwbx9_Q2kwtSNt7i3f2MQy9q4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNTU5/MDQtMTQ3NTk0MTM4/Mi05NDgwLmpwZWc.jpeg
    1. Chase The Devil - Gunmen [Pos: A | Key: E minor (9A) | BPM: 175]
-   2. So Mi Like It - Gunmen [Pos: B | Key: G major (9B) | BPM: 176]
+   2. So Mi Like It - Gunmen [Pos: B | Key: G minor (6A) | BPM: 176]
 
 === Greetings From Jamaica -- Gunmen / Mystic Pulse ===
   ID: 8687967
@@ -119,7 +119,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/-5cKZcJbgP4igh9CiHVhyopB0HK2hWj1PGw6SzIqcRo/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2ODc5/NjctMTQ2Njc2MzA4/NS00NDMxLmpwZWc.jpeg
    1. Greetings - Gunmen [Pos: A | Time: 4:54 | Key: C major (8B) | BPM: 175]
-   2. Babylon Pressure - Mystic Pulse [Pos: B | Time: 4:33 | Key: F# major (2B) | BPM: 174]
+   2. Babylon Pressure - Mystic Pulse [Pos: B | Time: 4:33 | Key: Ab minor (1A) | BPM: 174]
 
 === Jungle Mode EP -- Juxi Demus & Drum 'n' Black ===
   ID: 26459354
@@ -151,7 +151,7 @@
   Year: 2007
   Label: Not On Label (Sizzla), Not On Label (Damian Marley)
   Art: https://i.discogs.com/QMIRqVzjvAY70Crc-YOH338wsA6rnC6Ot2ddmBEa178/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTM0/MzYtMTIxNzYyMzU4/NC5qcGVn.jpeg
-   1. Solid As A Rock - Sizzla [Pos: A | Key: A minor (8A) | BPM: 132]
+   1. Solid As A Rock - Sizzla [Pos: A | Key: D minor (7A) | BPM: 100]
    2. Jamrock - Damian Marley [Pos: B | Key: G minor (6A) | BPM: 77]
 
 === Africa -- Trojan Sound System ===
@@ -173,10 +173,10 @@
   Year: 2025
   Label: Vibez '93
   Art: https://i.discogs.com/hy3LkQ1YiDZMLZChiHwv47pjAAotDzCZGqcq_oxDC-Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNjU0/NDE3LTE3NDYwNjQ5/OTMtOTE3Ny5qcGVn.jpeg
-   1. Electric Relaxin - Unknown Artist [Pos: A1 | Key: B major (1B) | BPM: 176]
-   2. Check The Rhyme - Unknown Artist [Pos: A2 | Key: B minor (10A) | BPM: 175]
+   1. Electric Relaxin - Unknown Artist [Pos: A1 | Key: Eb minor (2A) | BPM: 176]
+   2. Check The Rhyme - Unknown Artist [Pos: A2 | Key: E minor (9A) | BPM: 174]
    3. Cool Like That - Unknown Artist [Pos: B1 | Key: B minor (10A) | BPM: 176]
-   4. All Night Long - Unknown Artist [Pos: B2 | Key: A# minor (3A) | BPM: 88]
+   4. All Night Long - Unknown Artist [Pos: B2 | Key: C minor (5A) | BPM: 88]
 
 === Top Rankin / Good Looking Gal -- The Wildlife Collective ===
   ID: 2116925
@@ -311,7 +311,7 @@
   Label: Ganja Records
   Art: https://i.discogs.com/tQGSFWfKWhlfiTR4iqZnOP9-cv_GvkiRS8IUFNhdJH8/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNTg0/My0xMDk4ODgyNzY1/LmpwZw.jpeg
    1. Gimme Da Gal (Vocal Mix) - Phantasy & Shodan & UK Apache [Pos: A | Time: 7:05]
-   2. Gimme Da Gal (Dub Mix) - Phantasy & Shodan & UK Apache [Pos: B | Time: 7:03 | Key: G major (9B) | BPM: 173]
+   2. Gimme Da Gal (Dub Mix) - Phantasy & Shodan & UK Apache [Pos: B | Time: 7:03 | Key: E major (12B) | BPM: 174]
 
 === Rootsman / Better Believe (Benny Page Rmx) -- Soundclash / Dope Ammo ===
   ID: 798390
@@ -320,7 +320,7 @@
   Year: 2006
   Label: Dope Ammo Records
   Art: https://i.discogs.com/OaBFA7dg2sS3xS4EpPGaxEfdL2UDd6vslTl75Un64kU/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5ODM5/MC0xNDMyMTM0MTc1/LTI3NjkuanBlZw.jpeg
-   1. Rootsman - Soundclash [Pos: A]
+   1. Rootsman - Soundclash [Pos: A | Key: F minor (4A) | BPM: 113]
    2. Better Believe (Benny Page Rmx) - Dope Ammo [Pos: AA]
 
 === No No No / Anscient Music -- Candy ===
@@ -340,8 +340,8 @@
   Year: 2009
   Label: Znootpoch
   Art: https://i.discogs.com/VpJqoeqJcU12Njc98ahgrWxrTXy9uD6nPhp6KaVg3xM/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzk1/ODYtMTMxNTEzMzIy/Ny5qcGVn.jpeg
-   1. Bellyfull - Candy [Pos: A | Key: G# minor (1A) | BPM: 175]
-   2. Breeze - Candy [Pos: B | Key: F# minor (11A) | BPM: 180]
+   1. Bellyfull - Candy [Pos: A | Key: Db minor (12A) | BPM: 132]
+   2. Breeze - Candy [Pos: B | Key: Db minor (12A) | BPM: 180]
 
 === Duppy Man / Top Shotta -- Chase & Status ===
   ID: 541608
@@ -380,7 +380,7 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/WzdKT7b5bwSIarzSduHmhrfIm5jxw3Javy7F1-fOYHg/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTU4/ODQtMTM3MzIwMjI3/NC05MDg5LmpwZWc.jpeg
-   1. Zunga - DJ Deekline & Ed Solo [Pos: A1 | Key: A# minor (3A) | BPM: 87]
+   1. Zunga - DJ Deekline & Ed Solo [Pos: A1 | Key: Ab minor (1A) | BPM: 131]
    2. No No No - DJ Deekline & Ed Solo [Pos: B1 | Key: E minor (9A) | BPM: 108]
 
 === Bad Boyz / You Can Be My Night -- Deekline And Ed Solo ===
@@ -390,8 +390,8 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/prmwD5RJ-OUy3z0GepH--4EMzoPU5Xz5tKZn2bRlSnI/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTE0/NDktMTM1MDg4NTgy/MC05ODgwLmpwZWc.jpeg
-   1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A major (11B) | BPM: 88]
-   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA]
+   1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A minor (8A) | BPM: 88]
+   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA | Key: E minor (9A) | BPM: 132]
 
 === Super Skank / Nervous -- DJ Panik ===
   ID: 2041969
@@ -401,7 +401,7 @@
   Label: Drum Orange, ES Production
   Art: https://i.discogs.com/9U3uBYxzkRWnFXnkEgoeQcreIy-O73SRnIzY5cC2a74/rs:fit/g:sm/q:90/h:250/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDE5/NjktMTI2MDk2NDc3/MC5naWY.jpeg
    1. Super Skank (Phetsta Rmx) - DJ Panik [Pos: A]
-   2. Nervous - DJ Panik [Pos: B | Key: F# minor (11A) | BPM: 176]
+   2. Nervous - DJ Panik [Pos: B | Key: A minor (8A) | BPM: 176]
 
 === Wheel Up -- DJ Panik, Dijeyow, Psychofreud ===
   ID: 4882233
@@ -410,8 +410,8 @@
   Year: 2013
   Label: Dubnest
   Art: https://i.discogs.com/o3G-n7Kvv38M0_iW3AaswVgYzfglS1TDgGQ9dOBYvWI/rs:fit/g:sm/q:90/h:366/w:366/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4ODIy/MzMtMTM3ODM2Nzcw/My0xMTg2LmpwZWc.jpeg
-   1. Wheel Up - DJ Panik, Dijeyow [Pos: A | Key: B minor (10A) | BPM: 176]
-   2. Jah Jah See Dem A Come - Psychofreud, Dijeyow [Pos: B | Key: B major (1B) | BPM: 175]
+   1. Wheel Up - DJ Panik, Dijeyow [Pos: A | Key: E minor (9A) | BPM: 176]
+   2. Jah Jah See Dem A Come - Psychofreud, Dijeyow [Pos: B | Key: Gb minor (11A) | BPM: 176]
 
 === Lose Control E.P. -- Fak Scratch & Sr. Wilson ===
   ID: 7830328
@@ -462,8 +462,8 @@
   Year: 2009
   Label: Melting Pot
   Art: https://i.discogs.com/D2Ibr7KPNKOKBctNck0vrceOpWzh5xDq8ZzazmH-tF4/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MjAz/NzItMTI0NTU0MDk2/OS5qcGVn.jpeg
-   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: Ab major (4B) | BPM: 174]
-   2. Strictly Roots - Mooncat [Pos: B | Key: G major (9B) | BPM: 174]
+   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: G minor (6A) | BPM: 130]
+   2. Strictly Roots - Mooncat [Pos: B | Key: E minor (9A) | BPM: 174]
 
 === One Of These Days / River Jordan -- Mutt & Tedder / Deeper Connection & Scott Allen ===
   ID: 4162601
@@ -472,8 +472,8 @@
   Year: 2012
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/jsw3stLlGS4bZI-K66srLzg7IrQ8989O6-TLFsskxFg/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjI2/MDEtMTM3ODkwNjE0/OS02ODQ5LmpwZWc.jpeg
-   1. One Of These Days - Mutt & Tedder [Pos: A | Key: D major (10B) | BPM: 174]
-   2. River Jordan - Deeper Connection & Scott Allen [Pos: AA | Key: G# minor (1A) | BPM: 176]
+   1. One Of These Days - Mutt & Tedder [Pos: A | Key: G major (9B) | BPM: 174]
+   2. River Jordan - Deeper Connection & Scott Allen [Pos: AA | Key: A minor (8A) | BPM: 176]
 
 === Live Up EP -- Mystic Pulse ===
   ID: 7528292
@@ -482,7 +482,7 @@
   Year: 2015
   Label: Rasta Vibez
   Art: https://i.discogs.com/1DsyZsOroxvh7Bol1ebRaZOLYJAJ3fooGz37JdRpMdQ/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1Mjgy/OTItMTQ0MzM1NDM0/Ni00OTg1LmpwZWc.jpeg
-   1. Live Up - Mystic Pulse [Pos: A | Key: D major (10B) | BPM: 174]
+   1. Live Up - Mystic Pulse [Pos: A | Key: E minor (9A) | BPM: 174]
    2. D&B Selecta - Mystic Pulse [Pos: B | Key: F# minor (11A) | BPM: 174]
 
 === Junglist (Serial Killaz Remixes) -- Rebel MC feat Peter Bouncer ===
@@ -512,7 +512,7 @@
   Year: 2013
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/Et5RogZBm5DOAPAplnKG92WHwgT9S_WVnkXfgi_oFr4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Njkx/MzgtMTUwOTUxODc5/Ny04Mjc1LmpwZWc.jpeg
-   1. We Nah Run - Scott Allen [Pos: A | Key: E minor (9A) | BPM: 173]
+   1. We Nah Run - Scott Allen [Pos: A | Key: E major (12B) | BPM: 172]
    2. Toonz Ragga - Joakuim [Pos: AA]
 
 === Love Is The Key / Slumbery -- Scott Allen & Deeper Connection / Incident ===
@@ -522,8 +522,8 @@
   Year: 2013
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/_D9LhcKcegd-ueq-xr0glz_6c3Sf6KgCaBZhOl0Z9SQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODUx/NDktMTUwOTUxODgy/NS0zNjAxLmpwZWc.jpeg
-   1. Love Is The Key - Scott Allen & Deeper Connection [Pos: A | Key: E minor (9A) | BPM: 173]
-   2. Slumbery - Incident [Pos: AA | Key: C major (8B) | BPM: 88]
+   1. Love Is The Key - Scott Allen & Deeper Connection [Pos: A | Key: Gb minor (11A) | BPM: 174]
+   2. Slumbery - Incident [Pos: AA | Key: D minor (7A) | BPM: 88]
 
 === Babylon EP -- Scott Allen, Pixel ===
   ID: 5699595
@@ -532,7 +532,7 @@
   Year: 2014
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/EsMG3eVdSHiEF1z_Ac2d3Lg9TKUbQHmYR3thNy-QXFw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2OTk1/OTUtMTQ0NjQ0OTky/Ni00OTI3LmpwZWc.jpeg
-   1. Jah Is Coming - Scott Allen [Pos: A | Key: F# major (2B) | BPM: 175]
+   1. Jah Is Coming - Scott Allen [Pos: A | Key: Bb minor (3A) | BPM: 175]
    2. Babylon Fall - Pixel [Pos: AA]
 
 === Good Enough / Jamaican Boy -- Serial Killaz ===
@@ -542,7 +542,7 @@
   Year: 2011
   Label: Killa Dubz
   Art: https://i.discogs.com/wilFAEyYlreL3Hud-fc1qkjx6DuanBqXCTdHHoCtChI/rs:fit/g:sm/q:90/h:600/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzE0/NjAtMTQ4ODgxOTM5/NC01NDQyLmpwZWc.jpeg
-   1. Good Enough - Serial Killaz [Pos: A | Key: Ab major (4B) | BPM: 176]
+   1. Good Enough - Serial Killaz [Pos: A | Key: C minor (5A) | BPM: 154]
    2. Jamaican Boy - Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 180]
 
 === Murder Ya Sound -- Serial Killaz & Run Tingz Cru Featuring Tenor Fly & Blackout J.A ===
@@ -552,8 +552,8 @@
   Year: 2011
   Label: Run Tingz Recordings
   Art: https://i.discogs.com/NOFzgT3yZ7kdSsRLow5hSMlZTUeYgvRo-aVKYdD1c84/rs:fit/g:sm/q:90/h:556/w:567/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMDk2/MzktMTMyMDU5NzIy/OS5qcGVn.jpeg
-   1. Murder Ya Sound (UK Jungle Mix) - Serial Killaz & Run Tingz Cru [Pos: A1 | Key: D major (10B) | BPM: 175]
-   2. Murder Ya Sound (Jump Up Mix) - Serial Killaz & Run Tingz Cru [Pos: B1 | Key: A major (11B) | BPM: 175]
+   1. Murder Ya Sound (UK Jungle Mix) - Serial Killaz & Run Tingz Cru [Pos: A1 | Key: A major (11B) | BPM: 174]
+   2. Murder Ya Sound (Jump Up Mix) - Serial Killaz & Run Tingz Cru [Pos: B1 | Key: A minor (8A) | BPM: 174]
    3. Sound Clash Toolz - Serial Killaz & Run Tingz Cru [Pos: B2]
 
 === Get The Fuck Up / Drop Suey -- Unknown Artist ===
@@ -586,10 +586,10 @@
   Year: 2012
   Label: Astrofonik Drum n' Bass
   Art: https://i.discogs.com/ha9PKZQ85ljUxeKPvpoXqfHkNL-QbHxdEyYw-R7YH5Q/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjQ0/NjMtMTM1NzQwNzg5/Mi01OTgyLmpwZWc.jpeg
-   1. Everyday - Stevens Kbosh [Pos: A1 | Key: F# major (2B) | BPM: 180]
-   2. Peace Of Jungle - MBR Connexion [Pos: A2 | Key: G major (9B) | BPM: 175]
-   3. Man Down - Dijeyow [Pos: B1 | Key: G# minor (1A) | BPM: 170]
-   4. Fast´N Break Bass - Strez [Pos: B2 | Key: A# minor (3A) | BPM: 95]
+   1. Everyday - Stevens Kbosh [Pos: A1 | Key: Ab minor (1A) | BPM: 180]
+   2. Peace Of Jungle - MBR Connexion [Pos: A2 | Key: B minor (10A) | BPM: 176]
+   3. Man Down - Dijeyow [Pos: B1 | Key: Bb major (6B) | BPM: 170]
+   4. Fast´N Break Bass - Strez [Pos: B2 | Key: F minor (4A) | BPM: 95]
 
 === Revolution Pt7 / A Murda -- Vendetta / Barber / Bad Kid ===
   ID: 2940539
@@ -618,8 +618,8 @@
   Year: 2009
   Label: Serial Killaz
   Art: https://i.discogs.com/17tjvpgmRBHCUk3zVF9c1pvK2qUEIU02x17YiPIZFK4/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTQ3/NDMtMTI2MDYxMzU4/OS5qcGVn.jpeg
-   1. You Never Know - Serial Killaz [Pos: A]
-   2. Lonely Dub - Serial Killaz [Pos: AA | Key: C minor (5A) | BPM: 176]
+   1. You Never Know - Serial Killaz [Pos: A | Key: G minor (6A) | BPM: 178]
+   2. Lonely Dub - Serial Killaz [Pos: AA | Key: G minor (6A) | BPM: 176]
 
 === Welcome To The Jungle Volume 4 (Sampler One) -- DJ Deekline & Ed Solo / DJ Dee Kline Featuring Tippa Irie ===
   ID: 9016487
@@ -629,7 +629,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/3pg6tU3kpv7Io7Ecd4d5Jk9dE8Ks_9dULNF2f5u5bXU/rs:fit/g:sm/q:90/h:583/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwMTY0/ODctMTQ3Mzk0Mjc2/Mi00Njc5Lm1wbw.jpeg
    1. Bad Boys (Benny Page Remix) - Ed Solo And Deekline [Pos: A | Key: E minor (9A) | BPM: 175]
-   2. Pass Me The Dubplate (Benny Page Remix) - Deekline Featuring Tippa Irie [Pos: B | Key: A# minor (3A) | BPM: 175]
+   2. Pass Me The Dubplate (Benny Page Remix) - Deekline Featuring Tippa Irie [Pos: B | Key: F minor (4A) | BPM: 175]
 
 === Desolate EP -- Kit ===
   ID: 21004888
@@ -638,10 +638,10 @@
   Year: 2021
   Label: Vibez '93
   Art: https://i.discogs.com/4N0kpR6GmMCom2nSg9S6CB7FnpbM_FrJZmeMIBTJqmU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDA0/ODg4LTE2MzkyOTUy/MzctODcwNS5qcGVn.jpeg
-   1. Desolate - Kit [Pos: A1 | Time: 5:47 | Key: F# major (2B) | BPM: 170]
-   2. Survive - Kit [Pos: A2 | Time: 5:20 | Key: F# minor (11A) | BPM: 130]
-   3. Between Us - Kit [Pos: B1 | Time: 6:05 | Key: B minor (10A) | BPM: 172]
-   4. Out Of Touch - Kit [Pos: B2 | Time: 5:16 | Key: D major (10B) | BPM: 174]
+   1. Desolate - Kit [Pos: A1 | Time: 5:47 | Key: Bb minor (3A) | BPM: 127]
+   2. Survive - Kit [Pos: A2 | Time: 5:20 | Key: G major (9B) | BPM: 172]
+   3. Between Us - Kit [Pos: B1 | Time: 6:05 | Key: E minor (9A) | BPM: 172]
+   4. Out Of Touch - Kit [Pos: B2 | Time: 5:16 | Key: E minor (9A) | BPM: 174]
 
 === Profile -- Desmond Dekker ===
   ID: 2107705
@@ -650,17 +650,17 @@
   Year: 1981
   Label: Trojan Records
   Art: https://i.discogs.com/QIhG6WoJcFUrnNp7woMLg5gOlViZeeOFM9js3oTrb_M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDc3/MDUtMTQyMzkyMTAw/OC04MjcwLmpwZWc.jpeg
-   1. Israelites - Desmond Dekker [Pos: A1 | Time: 2:31 | Key: Bb major (6B) | BPM: 73]
-   2. Licking Stick - Desmond Dekker [Pos: A2 | Time: 2:14 | Key: C minor (5A) | BPM: 111]
-   3. Pickney Gal - Desmond Dekker [Pos: A3 | Time: 2:57 | Key: C major (8B) | BPM: 114]
-   4. It Meek - Desmond Dekker [Pos: A4 | Time: 2:31 | Key: Ab major (4B) | BPM: 74]
-   5. Life Of Opportunity - Desmond Dekker [Pos: A5 | Time: 2:27 | Key: C major (8B) | BPM: 98]
+   1. Israelites - Desmond Dekker [Pos: A1 | Time: 2:31 | Key: C major (8B) | BPM: 73]
+   2. Licking Stick - Desmond Dekker [Pos: A2 | Time: 2:14 | Key: Eb major (5B) | BPM: 110]
+   3. Pickney Gal - Desmond Dekker [Pos: A3 | Time: 2:57 | Key: C major (8B) | BPM: 113]
+   4. It Meek - Desmond Dekker [Pos: A4 | Time: 2:31 | Key: Ab major (4B) | BPM: 84]
+   5. Life Of Opportunity - Desmond Dekker [Pos: A5 | Time: 2:27 | Key: F major (7B) | BPM: 99]
    6. I Believe - Desmond Dekker [Pos: A6 | Time: 2:32 | Key: Ab major (4B) | BPM: 130]
-   7. Reggae Recipe - Desmond Dekker [Pos: B1 | Time: 3:02 | Key: C# major (3B) | BPM: 121]
+   7. Reggae Recipe - Desmond Dekker [Pos: B1 | Time: 3:02 | Key: C# major (3B) | BPM: 120]
    8. You Can Get It If You Really Want - Desmond Dekker [Pos: B2 | Time: 2:33 | Key: C# major (3B) | BPM: 128]
-   9. Where Did It Go - Desmond Dekker [Pos: B3 | Time: 3:03 | Key: C major (8B) | BPM: 132]
-  10. The More You Live - Desmond Dekker [Pos: B4 | Time: 3:18 | Key: G major (9B) | BPM: 101]
-  11. Look What They're Doing To Me - Desmond Dekker [Pos: B5 | Time: 3:27 | Key: Ab major (4B) | BPM: 119]
+   9. Where Did It Go - Desmond Dekker [Pos: B3 | Time: 3:03 | Key: Db major (3B) | BPM: 134]
+  10. The More You Live - Desmond Dekker [Pos: B4 | Time: 3:18 | Key: G major (9B) | BPM: 103]
+  11. Look What They're Doing To Me - Desmond Dekker [Pos: B5 | Time: 3:27 | Key: Ab major (4B) | BPM: 121]
   12. 007 Shanty Town - Desmond Dekker [Pos: B6 | Time: 2:33 | Key: A major (11B) | BPM: 102]
 
 === Ganja Smuggling -- Eek-A-Mouse ===
@@ -670,8 +670,8 @@
   Year: 2024
   Label: VP Records, Volcano
   Art: https://i.discogs.com/pm31PMrWnhDnA83GDUH-aUscyqA9R5yvLmu3WNYCIZE/rs:fit/g:sm/q:90/h:600/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDcz/MjAwLTE3MzMzMjA5/MDItOTUyMy5qcGVn.jpeg
-   1. Ganja Smuggling - Eek-A-Mouse [Pos: A | Key: F minor (4A) | BPM: 72]
-   2. Smuggling Dub - The Roots Radics [Pos: B | Key: Bb major (6B) | BPM: 142]
+   1. Ganja Smuggling - Eek-A-Mouse [Pos: A | Key: C minor (5A) | BPM: 72]
+   2. Smuggling Dub - The Roots Radics [Pos: B | Key: C minor (5A) | BPM: 142]
 
 === Welcome To The Jungle Volume 3 (Sampler One) -- Sara Lugo Ft. Protoje / Sizzla ===
   ID: 7853652
@@ -680,7 +680,7 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G major (9B) | BPM: 175]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G minor (6A) | BPM: 176]
    2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 176]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
@@ -690,8 +690,8 @@
   Year: 2014
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
-   1. Here I Come - Ed Solo [Pos: A1 | Key: E minor (9A) | BPM: 175]
-   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: A# minor (3A) | BPM: 176]
+   1. Here I Come - Ed Solo [Pos: A1 | Key: E minor (9A) | BPM: 176]
+   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: C minor (5A) | BPM: 176]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
@@ -700,8 +700,8 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/FdvlQLYITfJ3PieS1Ql78jVkDt7fw0yEbjbN9lFlFgc/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDI1/NjEtMTM4MTQ3NzQ3/Mi0yMTkyLmpwZWc.jpeg
-   1. Smoke The Weed - Ed Solo And Stickybuds [Pos: A1 | Time: 4:50 | Key: A# minor (3A) | BPM: 175]
-   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: A# minor (3A) | BPM: 88]
+   1. Smoke The Weed - Ed Solo And Stickybuds [Pos: A1 | Time: 4:50 | Key: F minor (4A) | BPM: 174]
+   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: F minor (4A) | BPM: 132]
 
 === Too Greedy (Rmx) / Murder Style -- Stalefish ===
   ID: 689940
@@ -720,7 +720,7 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/VBdKS4MvllF9feke2lthzcHctsz-Bp6x2TdJlOP9cZI/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDYw/OTUtMTM2MjM5MDQ3/NC05MTc4LmpwZWc.jpeg
-   1. Amen In Session - Jinx In Dub [Pos: A1 | Key: F major (7B) | BPM: 86]
+   1. Amen In Session - Jinx In Dub [Pos: A1 | Key: G minor (6A) | BPM: 86]
    2. Seek And Find (Jinx In Dub Meets Kanjah) - Jinx In Dub [Pos: B1 | Key: C# minor (12A) | BPM: 110]
 
 === French Connection EP -- Various ===
@@ -730,10 +730,10 @@
   Year: 2006
   Label: Step Express
   Art: https://i.discogs.com/JUib6Gr_PX4nBy2NdleGpIT9adpmo3edg-R9UUCkNq0/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjE0/MzMtMTI5MTgyNTk5/NC5qcGVn.jpeg
-   1. Woman Dub - FX909 [Pos: A1 | Key: F minor (4A) | BPM: 127]
-   2. Soundboy - Lord Bitum & Metod MC [Pos: A2 | Key: G major (9B) | BPM: 130]
-   3. Promise Land - Alix Perez & Youthman [Pos: B1 | Key: E minor (9A) | BPM: 112]
-   4. Dub Riddim - 2D [Pos: B2 | Key: F# major (2B) | BPM: 147]
+   1. Woman Dub - FX909 [Pos: A1 | Key: B minor (10A) | BPM: 174]
+   2. Soundboy - Lord Bitum & Metod MC [Pos: A2 | Key: G minor (6A) | BPM: 178]
+   3. Promise Land - Alix Perez & Youthman [Pos: B1 | Key: D minor (7A) | BPM: 174]
+   4. Dub Riddim - 2D [Pos: B2 | Key: E minor (9A) | BPM: 135]
 
 === World A Jungle Music -- Pixel ===
   ID: 9184651
@@ -742,8 +742,8 @@
   Year: 2014
   Label: Rasta Vibez
   Art: https://i.discogs.com/8twJ0Cmewwfjb5XMCs2wqbaVJ2eEMN5ig-2tu_2A85c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxODQ2/NTEtMTQ3NjI2NTEw/MS01MTUyLmpwZWc.jpeg
-   1. Ice Cream Sound - Pixel [Pos: A | Key: C major (8B) | BPM: 126]
-   2. World A Jungle Music - Pixel [Pos: B | Key: D major (10B) | BPM: 175]
+   1. Ice Cream Sound - Pixel [Pos: A | Key: Db minor (12A) | BPM: 176]
+   2. World A Jungle Music - Pixel [Pos: B | Key: Gb minor (11A) | BPM: 174]
 
 === Call Di Doctor / Running Over -- Mystic Pulse / Gunmen ===
   ID: 8770838
@@ -752,8 +752,8 @@
   Year: 2016
   Label: Rasta Vibez
   Art: https://i.discogs.com/ad5bOsUFa5aQzFmtYurS9bM7IdpwQTsCeGnM3wiYwf8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3NzA4/MzgtMTQ2ODQzOTk3/Mi04NDkzLmpwZWc.jpeg
-   1. Call Di Doctor - Mystic Pulse [Pos: A | Key: D major (10B) | BPM: 176]
-   2. Running Over - Gunmen [Pos: B | Key: C# major (3B) | BPM: 88]
+   1. Call Di Doctor - Mystic Pulse [Pos: A | Key: G major (9B) | BPM: 110]
+   2. Running Over - Gunmen [Pos: B | Key: F minor (4A) | BPM: 88]
 
 === Lineage Of The Sun -- Jahyu ===
   ID: 11888391
@@ -823,7 +823,7 @@
   Year: 2007
   Label: Znootpoch
   Art: https://i.discogs.com/Z91Ks9fP31dNr2TPbqWiBeXZ-ZlVbzv-0ZseZAUaaNQ/rs:fit/g:sm/q:90/h:495/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjM5/NzgtMTIwMDUxOTA0/NS5qcGVn.jpeg
-   1. Ghost Town - Krumble [Pos: A | Key: C# major (3B) | BPM: 92]
+   1. Ghost Town - Krumble [Pos: A | Key: D minor (7A) | BPM: 92]
    2. Angel City - Krumble [Pos: B | Key: A minor (8A) | BPM: 180]
 
 === Burning Babylon / Empty Words -- Alix Perez ===
@@ -833,8 +833,8 @@
   Year: 2021
   Label: 1985 Music
   Art: https://i.discogs.com/rEIewHJG3po1VAhwXjj3gr_k_EH9D0qEVSdzxQAfWY8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5ODQ1/MTY2LTE2MzM3Njgz/NzAtMjk2Mi5qcGVn.jpeg
-   1. Burning Babylon - Alix Perez [Pos: A | Key: B major (1B) | BPM: 175]
-   2. Empty Words - Alix Perez [Pos: B | Key: C# major (3B) | BPM: 87]
+   1. Burning Babylon - Alix Perez [Pos: A | Key: B minor (10A) | BPM: 166]
+   2. Empty Words - Alix Perez [Pos: B | Key: Db minor (12A) | BPM: 87]
 
 === Mr. Majestic / The Other Side -- Calibre & High Contrast ===
   ID: 19351834
@@ -844,7 +844,7 @@
   Label: Signature Records
   Art: https://i.discogs.com/BnkXOgXDH9nfpKArghqW9w_Wa0_zuHZztg75gdG6dok/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MzUx/ODM0LTE2MjUyMjg1/MTItNTI0My5qcGVn.jpeg
    1. Mr. Majestic - Calibre & High Contrast [Pos: A | Key: E minor (9A) | BPM: 173]
-   2. The Other Side - Calibre & High Contrast [Pos: B | Key: C# major (3B) | BPM: 173]
+   2. The Other Side - Calibre & High Contrast [Pos: B | Key: Ab major (4B) | BPM: 174]
 
 === Slow Motion -- Demolition Man & Krak In Dub ===
   ID: 2037635
@@ -872,7 +872,7 @@
   Year: 2022
   Label: Rasta Vibez
   Art: https://i.discogs.com/Gli3QFTsVCVF0z2lydex8C5EL2VEZFmcsbdO2Wp-hsM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMjkw/MjgzLTE2NDU3Nzgy/MDYtMTI3NS5qcGVn.jpeg
-   1. Jah Is Coming - Scott Allen, Pixel [Pos: A | Key: D minor (7A) | BPM: 180]
+   1. Jah Is Coming - Scott Allen, Pixel [Pos: A | Key: Bb minor (3A) | BPM: 175]
    2. Babylon Fall - Scott Allen, Pixel [Pos: B | Key: D minor (7A) | BPM: 88]
 
 === Red Light / Little Man -- St.Cal ===
@@ -882,8 +882,8 @@
   Year: 2022
   Label: Soul:r
   Art: https://i.discogs.com/yZ-qcewfHQX_G85A674DOeEtcISxFUotjzMIncJcX3M/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjAy/NDE4LTE2NjAxMTY5/MjItMTI2My5qcGVn.jpeg
-   1. Red Light - St.Cal [Pos: A | Key: E minor (9A) | BPM: 115]
-   2. Little Man - St.Cal [Pos: B | Key: C# major (3B) | BPM: 174]
+   1. Red Light - St.Cal [Pos: A | Key: E minor (9A) | BPM: 130]
+   2. Little Man - St.Cal [Pos: B | Key: F minor (4A) | BPM: 174]
 
 === Wicked & Wild (Dancehall Style) / Police In Helicopter (Frisk Mix) -- Tippa Irie / Million Stylez ===
   ID: 3328008
@@ -902,16 +902,16 @@
   Year: 2013
   Label: Moonshine Recordings
   Art: https://i.discogs.com/4olT0rIhaV_TyCSGqjCvuo6NRL9ZTbGByGFywk2Eo_M/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNDE3/NDYtMTM4NTYyNDQz/Ny0xODI0LmpwZWc.jpeg
-   1. Earthwalker - Radikal Guru [Pos: A1 | Key: G major (9B) | BPM: 140]
-   2. Stay Calm - Radikal Guru [Pos: A2 | Key: D major (10B) | BPM: 140]
-   3. Different Dub - Radikal Guru [Pos: B1 | Key: C# major (3B) | BPM: 82]
-   4. Know Yourself - Radikal Guru [Pos: B2 | Key: C# major (3B) | BPM: 140]
+   1. Earthwalker - Radikal Guru [Pos: A1 | Key: C minor (5A) | BPM: 140]
+   2. Stay Calm - Radikal Guru [Pos: A2 | Key: G minor (6A) | BPM: 140]
+   3. Different Dub - Radikal Guru [Pos: B1 | Key: C minor (5A) | BPM: 82]
+   4. Know Yourself - Radikal Guru [Pos: B2 | Key: F minor (4A) | BPM: 140]
    5. Spaced Out - Radikal Guru [Pos: B3 | Key: D major (10B) | BPM: 140]
-   6. Subconscious - Radikal Guru [Pos: C1 | Key: G major (9B) | BPM: 158]
-   7. Warning! - Radikal Guru [Pos: C2 | Key: D major (10B) | BPM: 142]
-   8. Outernational - Radikal Guru [Pos: C3 | Key: D major (10B) | BPM: 140]
-   9. Indra - Radikal Guru [Pos: D1 | Key: Ab major (4B) | BPM: 140]
-  10. Wicked Dub - Radikal Guru [Pos: D2 | Key: E minor (9A) | BPM: 155]
+   6. Subconscious - Radikal Guru [Pos: C1 | Key: Gb minor (11A) | BPM: 158]
+   7. Warning! - Radikal Guru [Pos: C2 | Key: A major (11B) | BPM: 142]
+   8. Outernational - Radikal Guru [Pos: C3 | Key: G minor (6A) | BPM: 140]
+   9. Indra - Radikal Guru [Pos: D1 | Key: G minor (6A) | BPM: 140]
+  10. Wicked Dub - Radikal Guru [Pos: D2 | Key: A minor (8A) | BPM: 155]
 
 === Wicked Ones / Zion Dub -- Scott Allen (11) & Deeper Connection ===
   ID: 5184669
@@ -921,7 +921,7 @@
   Label: Fokuz Recordings
   Art: https://i.discogs.com/FrNsgztvse2dr6Kw03BxWH4hvwvn5ul9Im4Rfu6pu24/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxODQ2/NjktMTM4OTk2NTQz/MS0yMzM3LmpwZWc.jpeg
    1. Wicked Ones - Scott Allen [Pos: A | Key: A# minor (3A) | BPM: 174]
-   2. Zion Dub - Scott Allen & Deeper Connection [Pos: AA | Key: C# minor (12A) | BPM: 88]
+   2. Zion Dub - Scott Allen & Deeper Connection [Pos: AA | Key: G minor (6A) | BPM: 88]
 
 === Chem Trails / Fall In Love -- Various ===
   ID: 5837089
@@ -930,7 +930,7 @@
   Year: 2014
   Label: Born On Road Records
   Art: https://i.discogs.com/8i91qdie6lEwM_g0CbfwlHsFcO1Hf3MWMWXPUmn233k/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mzcw/ODktMTQwNDMzNDI4/MS03NTM2LmpwZWc.jpeg
-   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Pos: A | Key: B minor (10A) | BPM: 175]
+   1. Fall In Love - Aries, Gold Dubs & Jinx ft Eva Lazarus [Pos: A | Key: B minor (10A) | BPM: 218]
    2. Chem Trails - Aries, Gold Dubs, Bevan & Andy Sim ft Lion Art [Pos: AA | Key: A minor (8A) | BPM: 135]
 
 === Wicked Vinyl 01 -- Wickedsquad ===
@@ -951,8 +951,8 @@
   Year: 1996
   Label: Urban Takeover
   Art: https://i.discogs.com/8xPyc_StApef1z8EbXs44lKyyMfWOELD9mMmhAoeRSQ/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTY2/LTE1OTcyNjM3MTQt/NzYyMi5qcGVn.jpeg
-   1. Bad Ass ! - Mickey Finn And Aphrodite [Pos: A | Time: 6:41 | Key: C# major (3B) | BPM: 84]
-   2. Drop Top Caddy - Mickey Finn And Aphrodite [Pos: B | Time: 6:07 | Key: A major (11B) | BPM: 89]
+   1. Bad Ass ! - Mickey Finn And Aphrodite [Pos: A | Time: 6:41 | Key: C major (8B) | BPM: 174]
+   2. Drop Top Caddy - Mickey Finn And Aphrodite [Pos: B | Time: 6:07 | Key: D minor (7A) | BPM: 89]
 
 === Rukus / Vibration -- Gang Related ===
   ID: 65196
@@ -972,7 +972,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/X16WObwlLadiDm1dSICdkxbk18zSyQ2VJUwE4rMq4j8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDg5/NDM4LTE0OTE0OTMx/NDEtODkwNy5qcGVn.jpeg
    1. Warning - Gunmen [Pos: A | Time: 4:41 | Key: D major (10B) | BPM: 175]
-   2. My Sound - Gunmen [Pos: B | Time: 4:32 | Key: B major (1B) | BPM: 175]
+   2. My Sound - Gunmen [Pos: B | Time: 4:32 | Key: Ab minor (1A) | BPM: 176]
 
 === The Sound / Messed Up -- Gunmen ===
   ID: 11116315
@@ -981,8 +981,8 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/AMlMRvAfBW0zEvKVbNhvb2kAPnRdc-3OUKaAD7q_9sA/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE2/MzE1LTE1MTAzMDE1/OTktODc0Ny5qcGVn.jpeg
-   1. The Sound - Gunmen [Pos: A | Time: 4:21 | Key: D major (10B) | BPM: 175]
-   2. Messed Up - Gunmen [Pos: B | Time: 4:30 | Key: B minor (10A) | BPM: 174]
+   1. The Sound - Gunmen [Pos: A | Time: 4:21 | Key: D minor (7A) | BPM: 176]
+   2. Messed Up - Gunmen [Pos: B | Time: 4:30 | Key: Gb minor (11A) | BPM: 117]
 
 === Another Hit Song / Girls -- Gunmen ===
   ID: 9974991
@@ -991,7 +991,7 @@
   Year: 2016
   Label: Gunmen Music
   Art: https://i.discogs.com/N01o9p54zydl-ZkYn4T-vRnNvXpQah1BgOOsQWSvM_o/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5NzQ5/OTEtMTQ4OTUxMjMz/MC0zNjQ2LmpwZWc.jpeg
-   1. Another Hit Song - Gunmen [Pos: A | Key: G major (9B) | BPM: 176]
+   1. Another Hit Song - Gunmen [Pos: A | Key: C minor (5A) | BPM: 176]
    2. Girls - Gunmen [Pos: B | Key: C# major (3B) | BPM: 176]
 
 === Get Mash Up -- Pixel ===
@@ -1002,7 +1002,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/Vb8NuoXrbaBlsIZ8rYgByqLVKY7ry6_ZLKxQcbeCQU0/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4ODA0/MTMtMTQ4Nzg4MzEy/OC04NjI1LmpwZWc.jpeg
    1. Get Mash Up - Pixel [Pos: A | Key: G major (9B) | BPM: 180]
-   2. Armed & Dangerous - Pixel [Pos: B | Key: C# major (3B) | BPM: 188]
+   2. Armed & Dangerous - Pixel [Pos: B | Key: G minor (6A) | BPM: 176]
 
 === Rastafari Army / Rich Man Dub -- Unknown Artist ===
   ID: 10351290
