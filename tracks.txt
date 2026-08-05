@@ -401,7 +401,7 @@
   Label: Drum Orange, ES Production
   Art: https://i.discogs.com/9U3uBYxzkRWnFXnkEgoeQcreIy-O73SRnIzY5cC2a74/rs:fit/g:sm/q:90/h:250/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDE5/NjktMTI2MDk2NDc3/MC5naWY.jpeg
    1. Super Skank (Phetsta Rmx) - DJ Panik [Pos: A]
-   2. Nervous - DJ Panik [Pos: B | Key: F# minor (11A) | BPM: 176]
+   2. Nervous - DJ Panik [Pos: B | Key: A minor (8A) | BPM: 176]
 
 === Wheel Up -- DJ Panik, Dijeyow, Psychofreud ===
   ID: 4882233
@@ -410,8 +410,8 @@
   Year: 2013
   Label: Dubnest
   Art: https://i.discogs.com/o3G-n7Kvv38M0_iW3AaswVgYzfglS1TDgGQ9dOBYvWI/rs:fit/g:sm/q:90/h:366/w:366/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4ODIy/MzMtMTM3ODM2Nzcw/My0xMTg2LmpwZWc.jpeg
-   1. Wheel Up - DJ Panik, Dijeyow [Pos: A | Key: B minor (10A) | BPM: 176]
-   2. Jah Jah See Dem A Come - Psychofreud, Dijeyow [Pos: B | Key: B major (1B) | BPM: 175]
+   1. Wheel Up - DJ Panik, Dijeyow [Pos: A | Key: E minor (9A) | BPM: 176]
+   2. Jah Jah See Dem A Come - Psychofreud, Dijeyow [Pos: B | Key: Gb minor (11A) | BPM: 176]
 
 === Lose Control E.P. -- Fak Scratch & Sr. Wilson ===
   ID: 7830328
@@ -462,8 +462,8 @@
   Year: 2009
   Label: Melting Pot
   Art: https://i.discogs.com/D2Ibr7KPNKOKBctNck0vrceOpWzh5xDq8ZzazmH-tF4/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MjAz/NzItMTI0NTU0MDk2/OS5qcGVn.jpeg
-   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: Ab major (4B) | BPM: 174]
-   2. Strictly Roots - Mooncat [Pos: B | Key: G major (9B) | BPM: 174]
+   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: G minor (6A) | BPM: 130]
+   2. Strictly Roots - Mooncat [Pos: B | Key: E minor (9A) | BPM: 174]
 
 === One Of These Days / River Jordan -- Mutt & Tedder / Deeper Connection & Scott Allen ===
   ID: 4162601
@@ -472,8 +472,8 @@
   Year: 2012
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/jsw3stLlGS4bZI-K66srLzg7IrQ8989O6-TLFsskxFg/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjI2/MDEtMTM3ODkwNjE0/OS02ODQ5LmpwZWc.jpeg
-   1. One Of These Days - Mutt & Tedder [Pos: A | Key: D major (10B) | BPM: 174]
-   2. River Jordan - Deeper Connection & Scott Allen [Pos: AA | Key: G# minor (1A) | BPM: 176]
+   1. One Of These Days - Mutt & Tedder [Pos: A | Key: G major (9B) | BPM: 174]
+   2. River Jordan - Deeper Connection & Scott Allen [Pos: AA | Key: A minor (8A) | BPM: 176]
 
 === Live Up EP -- Mystic Pulse ===
   ID: 7528292
@@ -482,7 +482,7 @@
   Year: 2015
   Label: Rasta Vibez
   Art: https://i.discogs.com/1DsyZsOroxvh7Bol1ebRaZOLYJAJ3fooGz37JdRpMdQ/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1Mjgy/OTItMTQ0MzM1NDM0/Ni00OTg1LmpwZWc.jpeg
-   1. Live Up - Mystic Pulse [Pos: A | Key: D major (10B) | BPM: 174]
+   1. Live Up - Mystic Pulse [Pos: A | Key: E minor (9A) | BPM: 174]
    2. D&B Selecta - Mystic Pulse [Pos: B | Key: F# minor (11A) | BPM: 174]
 
 === Junglist (Serial Killaz Remixes) -- Rebel MC feat Peter Bouncer ===
@@ -512,7 +512,7 @@
   Year: 2013
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/Et5RogZBm5DOAPAplnKG92WHwgT9S_WVnkXfgi_oFr4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Njkx/MzgtMTUwOTUxODc5/Ny04Mjc1LmpwZWc.jpeg
-   1. We Nah Run - Scott Allen [Pos: A | Key: E minor (9A) | BPM: 173]
+   1. We Nah Run - Scott Allen [Pos: A | Key: E major (12B) | BPM: 172]
    2. Toonz Ragga - Joakuim [Pos: AA]
 
 === Love Is The Key / Slumbery -- Scott Allen & Deeper Connection / Incident ===
@@ -522,7 +522,7 @@
   Year: 2013
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/_D9LhcKcegd-ueq-xr0glz_6c3Sf6KgCaBZhOl0Z9SQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODUx/NDktMTUwOTUxODgy/NS0zNjAxLmpwZWc.jpeg
-   1. Love Is The Key - Scott Allen & Deeper Connection [Pos: A | Key: E minor (9A) | BPM: 173]
+   1. Love Is The Key - Scott Allen & Deeper Connection [Pos: A | Key: Gb minor (11A) | BPM: 174]
    2. Slumbery - Incident [Pos: AA | Key: C major (8B) | BPM: 88]
 
 === Babylon EP -- Scott Allen, Pixel ===
