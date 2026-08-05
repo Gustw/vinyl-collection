@@ -552,7 +552,7 @@
   Year: 2013
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/Et5RogZBm5DOAPAplnKG92WHwgT9S_WVnkXfgi_oFr4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Njkx/MzgtMTUwOTUxODc5/Ny04Mjc1LmpwZWc.jpeg
-   1. We Nah Run - Scott Allen [Pos: A | Key: E major (12B) | BPM: 172]
+   1. We Nah Run - Scott Allen [Pos: A | Key: E minor (9A) | BPM: 174]
    2. Toonz Ragga - Joakuim [Pos: AA]
 
 === Love Is The Key / Slumbery -- Scott Allen & Deeper Connection / Incident ===
@@ -893,7 +893,7 @@
   Year: 2009
   Label: Mas I Mas
   Art: https://i.discogs.com/jFR5_eFJxTOioR8lKmkOVqFVRhhEXahAmZsTVH10Irg/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzc2/MzUtMTI4OTQ4OTk2/MS5qcGVn.jpeg
-   1. Slow Motion - Demolition Man & Krak In Dub [Pos: A | Key: C major (8B) | BPM: 174]
+   1. Slow Motion - Demolition Man & Krak In Dub [Pos: A | Key: D major (10B) | BPM: 174]
    2. Motion Dub - Demolition Man & Krak In Dub [Pos: B | Key: C minor (5A) | BPM: 92]
 
 === Mandela -- O.B.F. & Mr Williamz ===
@@ -1117,7 +1117,7 @@
   Year: 2010
   Label: Chopstick Dubplate
   Art: https://i.discogs.com/0-9uu47LSJDxG3K68CHnnjH7xHyZtaF1hJBWolaw9Qk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjgx/MTYtMTYyMzMwMjI5/MS05Mzg2LmpwZWc.jpeg
-   1. Gundelero - Chopstick Dubplate [Pos: A | Key: A# minor (3A) | BPM: 175]
+   1. Gundelero - Chopstick Dubplate [Pos: A | Key: C# major (3B) | BPM: 175]
    2. Chop Gundelero Riddim - Chopstick Dubplate [Pos: AA | Key: C# major (3B) | BPM: 88]
 
 === Mash You Down / Live From Studio 1 -- Serial Killaz ===
@@ -1127,8 +1127,8 @@
   Year: 2009
   Label: Ganja Records
   Art: https://i.discogs.com/Qru3moKyLdom5KsySj3IGGIn_lO0Hb79ph6qKs048L0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NTgw/NjAtMTI0MTk1NDMz/NC5qcGVn.jpeg
-   1. Mash You Down - Serial Killaz [Pos: A | Key: A major (11B) | BPM: 176]
-   2. Live From Studio 1 - Serial Killaz [Pos: AA | Key: C# minor (12A) | BPM: 176]
+   1. Mash You Down - Serial Killaz [Pos: A | Key: D major (10B) | BPM: 176]
+   2. Live From Studio 1 - Serial Killaz [Pos: AA | Key: Ab minor (1A) | BPM: 176]
 
 === Original Nuttah / Nuttah V.I.P. -- UK Apachi & Shy FX ===
   ID: 149207
@@ -1159,8 +1159,8 @@
   Year: 2013
   Label: Serial Killaz
   Art: https://i.discogs.com/yDyzGqhhl-1UAr2V_DRr9uBbYRLr6s9RCPzJWZXwPnw/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxOTYw/MzAtMTQwNzY5MTM2/Mi01ODA1LmpwZWc.jpeg
-   1. In Your Eyes - Serial Killaz [Pos: A | Key: C# major (3B) | BPM: 176]
-   2. Lovely Woman - Serial Killaz [Pos: AA | Key: C# major (3B) | BPM: 176]
+   1. In Your Eyes - Serial Killaz [Pos: A | Key: C minor (5A) | BPM: 176]
+   2. Lovely Woman - Serial Killaz [Pos: AA | Key: Bb minor (3A) | BPM: 176]
 
 === Informer -- Run Tingz Cru Feat. Blackout Ja & K*Ners ===
   ID: 2835589
@@ -1171,7 +1171,7 @@
   Art: https://i.discogs.com/o8bAPUU8R8BQG6OlNbEXSSkxvvYPtRzAl0N5fsKBiRc/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MzU1/ODktMTMwMzIyNDY2/NS5qcGVn.jpeg
    1. Run Tingz Cru (Original) - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Pos: A1 | Key: A# minor (3A) | BPM: 130]
    2. Aries (Jungle Mix) - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Pos: AA1 | Key: C# major (3B) | BPM: 120]
-   3. DJ/Clash Toolz - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Pos: AA2 | Key: B minor (10A) | BPM: 100]
+   3. DJ/Clash Toolz - Run Tingz Cru Feat. Blackout J.A. & K*Ners [Pos: AA2 | Key: B minor (10A) | BPM: 126]
 
 === Outta Space (Remixes) -- Cut & Run ===
   ID: 243575
@@ -1201,8 +1201,8 @@
   Art: https://i.discogs.com/XA6d0-Z3GHbL9e8WWKga7hpAO2tmQ2aGmadXBbb0YEc/rs:fit/g:sm/q:90/h:454/w:453/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjUy/NTgtMTM4MTkyNjY0/NS02MTA3LmpwZWc.jpeg
    1. Jerilipy Lipy - Mr Quest & Flyin Doc [Pos: A | Key: B minor (10A) | BPM: 98]
    2. One Time - TC IZ & Ed Solo [Pos: B1 | Key: E minor (9A) | BPM: 176]
-   3. Respect - Mr Quest [Pos: B2 | Key: F minor (4A) | BPM: 175]
-   4. Shut Em Down - TC IZ & Ed Solo [Pos: C | Key: A# minor (3A) | BPM: 176]
+   3. Respect - Mr Quest [Pos: B2 | Key: Gb minor (11A) | BPM: 174]
+   4. Shut Em Down - TC IZ & Ed Solo [Pos: C | Key: D major (10B) | BPM: 174]
    5. The Message - Mr Quest ft. Lady MC [Pos: D | Key: F major (7B) | BPM: 178]
 
 === Walk & Skank / Put It On -- Serial Killaz ===
