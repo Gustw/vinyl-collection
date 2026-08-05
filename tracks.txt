@@ -173,10 +173,10 @@
   Year: 2025
   Label: Vibez '93
   Art: https://i.discogs.com/hy3LkQ1YiDZMLZChiHwv47pjAAotDzCZGqcq_oxDC-Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNjU0/NDE3LTE3NDYwNjQ5/OTMtOTE3Ny5qcGVn.jpeg
-   1. Electric Relaxin - Unknown Artist [Pos: A1 | Key: B major (1B) | BPM: 176]
-   2. Check The Rhyme - Unknown Artist [Pos: A2 | Key: B minor (10A) | BPM: 175]
+   1. Electric Relaxin - Unknown Artist [Pos: A1 | Key: Eb minor (2A) | BPM: 176]
+   2. Check The Rhyme - Unknown Artist [Pos: A2 | Key: E minor (9A) | BPM: 174]
    3. Cool Like That - Unknown Artist [Pos: B1 | Key: B minor (10A) | BPM: 176]
-   4. All Night Long - Unknown Artist [Pos: B2 | Key: A# minor (3A) | BPM: 88]
+   4. All Night Long - Unknown Artist [Pos: B2 | Key: C minor (5A) | BPM: 88]
 
 === Top Rankin / Good Looking Gal -- The Wildlife Collective ===
   ID: 2116925
@@ -311,7 +311,7 @@
   Label: Ganja Records
   Art: https://i.discogs.com/tQGSFWfKWhlfiTR4iqZnOP9-cv_GvkiRS8IUFNhdJH8/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNTg0/My0xMDk4ODgyNzY1/LmpwZw.jpeg
    1. Gimme Da Gal (Vocal Mix) - Phantasy & Shodan & UK Apache [Pos: A | Time: 7:05]
-   2. Gimme Da Gal (Dub Mix) - Phantasy & Shodan & UK Apache [Pos: B | Time: 7:03 | Key: G major (9B) | BPM: 173]
+   2. Gimme Da Gal (Dub Mix) - Phantasy & Shodan & UK Apache [Pos: B | Time: 7:03 | Key: E major (12B) | BPM: 174]
 
 === Rootsman / Better Believe (Benny Page Rmx) -- Soundclash / Dope Ammo ===
   ID: 798390
@@ -320,7 +320,7 @@
   Year: 2006
   Label: Dope Ammo Records
   Art: https://i.discogs.com/OaBFA7dg2sS3xS4EpPGaxEfdL2UDd6vslTl75Un64kU/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5ODM5/MC0xNDMyMTM0MTc1/LTI3NjkuanBlZw.jpeg
-   1. Rootsman - Soundclash [Pos: A]
+   1. Rootsman - Soundclash [Pos: A | Key: F minor (4A) | BPM: 113]
    2. Better Believe (Benny Page Rmx) - Dope Ammo [Pos: AA]
 
 === No No No / Anscient Music -- Candy ===
@@ -340,8 +340,8 @@
   Year: 2009
   Label: Znootpoch
   Art: https://i.discogs.com/VpJqoeqJcU12Njc98ahgrWxrTXy9uD6nPhp6KaVg3xM/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzk1/ODYtMTMxNTEzMzIy/Ny5qcGVn.jpeg
-   1. Bellyfull - Candy [Pos: A | Key: G# minor (1A) | BPM: 175]
-   2. Breeze - Candy [Pos: B | Key: F# minor (11A) | BPM: 180]
+   1. Bellyfull - Candy [Pos: A | Key: Db minor (12A) | BPM: 132]
+   2. Breeze - Candy [Pos: B | Key: Db minor (12A) | BPM: 180]
 
 === Duppy Man / Top Shotta -- Chase & Status ===
   ID: 541608
@@ -380,7 +380,7 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/WzdKT7b5bwSIarzSduHmhrfIm5jxw3Javy7F1-fOYHg/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTU4/ODQtMTM3MzIwMjI3/NC05MDg5LmpwZWc.jpeg
-   1. Zunga - DJ Deekline & Ed Solo [Pos: A1 | Key: A# minor (3A) | BPM: 87]
+   1. Zunga - DJ Deekline & Ed Solo [Pos: A1 | Key: Ab minor (1A) | BPM: 131]
    2. No No No - DJ Deekline & Ed Solo [Pos: B1 | Key: E minor (9A) | BPM: 108]
 
 === Bad Boyz / You Can Be My Night -- Deekline And Ed Solo ===
@@ -390,8 +390,8 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/prmwD5RJ-OUy3z0GepH--4EMzoPU5Xz5tKZn2bRlSnI/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTE0/NDktMTM1MDg4NTgy/MC05ODgwLmpwZWc.jpeg
-   1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A major (11B) | BPM: 88]
-   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA]
+   1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A minor (8A) | BPM: 88]
+   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA | Key: E minor (9A) | BPM: 132]
 
 === Super Skank / Nervous -- DJ Panik ===
   ID: 2041969
