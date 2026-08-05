@@ -1212,7 +1212,7 @@
   Year: 2010
   Label: Killa Dubz
   Art: https://i.discogs.com/P6Kf3Vpsl5xtRB8zKnmvkJq4kpEG2NyZJyKQkRVxmcI/rs:fit/g:sm/q:90/h:499/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Njgw/MTEtMTI5MjA2NDcz/NS5qcGVn.jpeg
-   1. Walk & Skank - Serial Killaz [Pos: A | Key: D major (10B) | BPM: 176]
+   1. Walk & Skank - Serial Killaz [Pos: A | Key: A major (11B) | BPM: 176]
    2. Put It On - Serial Killaz [Pos: AA | Key: C# major (3B) | BPM: 176]
 
 === Private Plates - Volume 2 -- Aphrodite ===
@@ -1223,7 +1223,7 @@
   Label: Aphrodite Recordings
   Art: https://i.discogs.com/QoSa9VqhMr52GiTvZCICV3Ysop-9pRnuu2RMvg2GFaE/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1MDM3/LTExNTM0OTk5NjMu/anBlZw.jpeg
    1. Def Jammer - Aphrodite [Pos: A | Key: D major (10B) | BPM: 80]
-   2. Stalker - Aphrodite [Pos: B | Key: B major (1B) | BPM: 174]
+   2. Stalker - Aphrodite [Pos: B | Key: Bb major (6B) | BPM: 152]
 
 === Sound Fi Dead / You've Been Boasting -- Benny Page Feat. Top Cat ===
   ID: 3018564
@@ -1232,8 +1232,8 @@
   Year: 2011
   Label: High Culture
   Art: https://i.discogs.com/GhTkaRqFhxHT_6gllOSFQWMIGuVQoN4LrSR-N6tgU28/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMTg1/NjQtMTMxMjM1MzY2/NC5qcGVn.jpeg
-   1. Sound Fi Dead - Benny Page Feat. Topcat [Pos: A | Key: G major (9B) | BPM: 175]
-   2. You've Been Boasting - Benny Page Feat. Topcat [Pos: B | Key: C# major (3B) | BPM: 175]
+   1. Sound Fi Dead - Benny Page Feat. Topcat [Pos: A | Key: A minor (8A) | BPM: 174]
+   2. You've Been Boasting - Benny Page Feat. Topcat [Pos: B | Key: C minor (5A) | BPM: 174]
 
 === Sensi / Ghost Town -- DJ Deekline & Ed Solo ===
   ID: 3018778
