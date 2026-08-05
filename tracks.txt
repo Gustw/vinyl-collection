@@ -462,7 +462,7 @@
   Year: 2009
   Label: Melting Pot
   Art: https://i.discogs.com/D2Ibr7KPNKOKBctNck0vrceOpWzh5xDq8ZzazmH-tF4/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MjAz/NzItMTI0NTU0MDk2/OS5qcGVn.jpeg
-   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: G minor (6A) | BPM: 130]
+   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: G minor (6A) | BPM: 174]
    2. Strictly Roots - Mooncat [Pos: B | Key: E minor (9A) | BPM: 174]
 
 === One Of These Days / River Jordan -- Mutt & Tedder / Deeper Connection & Scott Allen ===
@@ -680,7 +680,7 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G minor (6A) | BPM: 176]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G major (9B) | BPM: 175]
    2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 176]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
@@ -691,7 +691,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
    1. Here I Come - Ed Solo [Pos: A1 | Key: E minor (9A) | BPM: 176]
-   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: C minor (5A) | BPM: 176]
+   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: A# minor (3A) | BPM: 176]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
@@ -4601,7 +4601,7 @@
    3. Owl Stretching Time - Ott [Pos: B1 | Time: 7:41 | Key: F# minor (11A) | BPM: 146]
    4. Squirrel And Biscuits - Ott [Pos: B2 | Time: 6:02 | Key: G major (9B) | BPM: 170]
    5. A Nice Little Place - Ott [Pos: C1 | Time: 7:13 | Key: Bb major (6B) | BPM: 106]
-   6. Mouse Eating Cheese - Ott [Pos: C2 | Time: 7:38]
+   6. Mouse Eating Cheese - Ott [Pos: C2 | Time: 7:38 | Key: E major (12B) | BPM: 90]
    7. The Aubergine Of The Sun - Ott [Pos: D | Time: 10:09 | Key: C major (8B) | BPM: 91]
 
 === Fairchildren -- Ott ===
