@@ -1,23 +1,20 @@
 import { AppConfig } from './config.service';
+import { keyNameToCamelot } from './camelot';
 import { Candidate, MatchQuery, pickBestMatch } from './matching';
+import {
+  EMPTY,
+  KeyInfo,
+  LookupOptions,
+  bpmText,
+  keyTextOf,
+  makeCache,
+  normaliseKeyName,
+  proxied,
+  retryAfterMs,
+  sleep,
+} from './keyinfo';
 
-export interface KeyInfo {
-  keyName: string; // e.g. "A minor"
-  camelot: string; // e.g. "8A"
-  keyText: string; // e.g. "A minor (8A)"
-  bpm: string; // e.g. "128"
-  /**
-   * The track tunebat actually matched, e.g. "Original Nuttah - Shy FX".
-   * Empty when nothing matched, or when the answer predates verification.
-   */
-  matched?: string;
-  /** Confidence of that match, 0..1. Absent when unverified (see lookupKey). */
-  confidence?: number;
-}
-
-const EMPTY: KeyInfo = { keyName: '', camelot: '', keyText: '', bpm: '' };
-
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+export type { KeyInfo, LookupOptions } from './keyinfo';
 
 /**
  * Cache namespace. Bumped to v2 when match verification was added: entries
@@ -27,50 +24,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
  */
 const CACHE_PREFIX = 'tunebat.v2.';
 
-/**
- * Parses a Retry-After header (delta-seconds or HTTP-date) into ms, clamped to
- * a sane range. Returns null when the header is absent/unreadable (e.g. a proxy
- * that doesn't expose it) so the caller can fall back to a default wait.
- */
-function retryAfterMs(res: Response): number | null {
-  const raw = res.headers.get('Retry-After');
-  if (!raw) return null;
-  const secs = Number(raw);
-  let ms: number;
-  if (Number.isFinite(secs)) ms = secs * 1000;
-  else {
-    const when = Date.parse(raw);
-    if (Number.isNaN(when)) return null;
-    ms = when - Date.now();
-  }
-  return Math.max(1000, Math.min(ms, 120000));
-}
-
-/** Wraps a target URL in the configured CORS proxy (if any). */
-function proxied(url: string, cfg: AppConfig): string {
-  const p = cfg.corsProxy.trim();
-  if (!p) return url;
-  // Convention: proxy prefix expects a URL-encoded target appended.
-  return p + encodeURIComponent(url);
-}
-
-function cacheGet(term: string): KeyInfo | null {
-  try {
-    const raw = localStorage.getItem(CACHE_PREFIX + term);
-    if (!raw) return null;
-    return JSON.parse(raw) as KeyInfo;
-  } catch {
-    return null;
-  }
-}
-
-function cacheSet(term: string, info: KeyInfo): void {
-  try {
-    localStorage.setItem(CACHE_PREFIX + term, JSON.stringify(info));
-  } catch {
-    /* ignore */
-  }
-}
+const cache = makeCache(CACHE_PREFIX);
 
 /**
  * Returns a previously cached lookup for this artist/title, or null. Used to
@@ -78,7 +32,7 @@ function cacheSet(term: string, info: KeyInfo): void {
  * hasn't been committed to GitHub yet.
  */
 export function cachedKeyInfo(artist: string, title: string): KeyInfo | null {
-  return cacheGet(`${artist} ${title}`.trim());
+  return cache.get(`${artist} ${title}`.trim());
 }
 
 function textOf(v: unknown): string {
@@ -111,19 +65,15 @@ function identityOf(item: any): Candidate {
 
 /** Pulls key/BPM out of one search hit. */
 function keyInfoOf(item: any): KeyInfo {
-  let key = String(item?.k || '').trim();
-  const camelot = String(item?.c || '').trim();
-  let bpm = '';
-  const b = Number(item?.b);
-  if (Number.isFinite(b)) {
-    const rounded = Math.round(b);
-    if (rounded > 0) bpm = String(rounded);
-  }
-  if (!key) return { keyName: '', camelot, keyText: '', bpm };
+  const bpm = bpmText(item?.b);
   // Normalise ♭/♯ to ASCII so it matches the rest of the pipeline.
-  key = key.replace(/\u266d/g, 'b').replace(/\u266f/g, '#');
-  const keyText = camelot ? `${key} (${camelot})` : key;
-  return { keyName: key, camelot, keyText, bpm };
+  const key = normaliseKeyName(String(item?.k || '').trim());
+  // Fall back to deriving the wheel position from the key name: without a
+  // Camelot code a track is silently absent from every key filter and mixable
+  // list, so a missing `c` must not cost us the key entirely.
+  const camelot = String(item?.c || '').trim() || keyNameToCamelot(key);
+  if (!key) return { keyName: '', camelot, keyText: '', bpm, source: 'tunebat' };
+  return { keyName: key, camelot, keyText: keyTextOf(key, camelot), bpm, source: 'tunebat' };
 }
 
 /** Warned once per session — a schema surprise is worth noticing, not spamming. */
@@ -166,29 +116,6 @@ function selectMatch(json: any, query: MatchQuery): KeyInfo {
 }
 
 
-/** Optional behaviour for a lookup. */
-export interface LookupOptions {
-  /** Progress/status line for the UI. */
-  onStatus?: (message: string) => void;
-  /**
-   * Ignore the cached answer and re-ask the API — used by the "re-fetch all
-   * keys/BPM" pass that repairs values that were wrong. The fresh answer
-   * replaces the cache entry.
-   */
-  force?: boolean;
-  /**
-   * Polled during the rate-limit backoff so a user-cancelled job doesn't stay
-   * stuck in a minute-long wait.
-   */
-  isCancelled?: () => boolean;
-  /**
-   * Called with how long this lookup actually spent parked on a 429. Lets the
-   * caller separate real work from waiting when estimating how long a run
-   * still has to go.
-   */
-  onRateLimitWait?: (ms: number) => void;
-}
-
 /**
  * Looks up a track's key + BPM on tunebat. Results (including "not found",
  * only when it actually reached the API) are cached in localStorage so
@@ -214,7 +141,7 @@ export async function lookupKey(
   const { onStatus, force = false, isCancelled, onRateLimitWait } = opts;
   const term = `${artist} ${title}`.trim();
   const query: MatchQuery = { artist, title };
-  const cached = cacheGet(term);
+  const cached = cache.get(term);
   if (!force && cached && cached.bpm) return cached; // fully cached
   // A forced re-fetch must not fall back to the (possibly wrong) cached value.
   const fallback = force ? { ...EMPTY } : cached ?? { ...EMPTY };
@@ -280,8 +207,9 @@ export async function lookupKey(
         bpm: info.bpm || fallback.bpm,
         matched: info.matched || fallback.matched,
         confidence: info.confidence ?? fallback.confidence,
+        source: 'tunebat',
       };
-      cacheSet(term, merged);
+      cache.set(term, merged);
       return merged;
     }
     // Nothing in the response was convincingly this track. Keep any key we

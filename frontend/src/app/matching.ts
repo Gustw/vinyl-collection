@@ -122,6 +122,102 @@ export function tokenScore(a: string[], b: string[]): number {
   return hits / small.length;
 }
 
+/** How many tokens of `a` have a partner in `b` (each partner used once). */
+function overlapCount(a: string[], b: string[]): number {
+  const used = new Set<number>();
+  let hits = 0;
+  for (const t of a) {
+    for (let i = 0; i < b.length; i++) {
+      if (used.has(i)) continue;
+      if (sameWord(b[i], t)) {
+        used.add(i);
+        hits++;
+        break;
+      }
+    }
+  }
+  return hits;
+}
+
+/**
+ * Symmetric token agreement (F1), 0..1.
+ *
+ * Titles are scored symmetrically rather than by containment, because for a
+ * title an unmatched word on *either* side is evidence of a different song.
+ * Containment only asks whether the shorter list is covered, which is why
+ * "Pass Me The Rizla" scored 0.75 against "Pass Me The Dubplate" and was
+ * accepted: three of four words agreed and the fourth — the only one carrying
+ * any meaning — was ignored. F1 penalises the leftover on both sides.
+ *
+ * Artists keep containment (see tokenScore): there the two sources genuinely
+ * disagree about how many people to credit, and that is not evidence of a
+ * different record.
+ */
+export function symmetricTokenScore(a: string[], b: string[]): number {
+  if (!a.length || !b.length) return 0;
+  const hits = overlapCount(a, b);
+  if (!hits) return 0;
+  const precision = hits / a.length;
+  const recall = hits / b.length;
+  return (2 * precision * recall) / (precision + recall);
+}
+
+/**
+ * Numbers in a title, which almost always name a different record rather than
+ * a spelling variant: "Original Nuttah" vs "Original Nuttah 25", "Volume 4"
+ * vs "Volume 5", "Warehouse 2" vs "Warehouse". Beatport's catalogue is full of
+ * anniversary re-records and numbered volumes, and a token-overlap score barely
+ * notices a one-token difference, so digits are compared separately and
+ * strictly.
+ */
+function numericTokens(s: string): string[] {
+  return tokens(s)
+    .filter((t) => /^\d+$/.test(t))
+    .sort();
+}
+
+/** True when both titles carry the same numbers (in any order). */
+function numbersAgree(a: string, b: string): boolean {
+  const na = numericTokens(a);
+  const nb = numericTokens(b);
+  return na.length === nb.length && na.every((v, i) => v === nb[i]);
+}
+
+/** Title words too common to distinguish one record from another. */
+const TITLE_NOISE = new Set([
+  'the', 'a', 'an', 'of', 'and', 'to', 'in', 'on', 'my', 'me', 'you', 'it',
+  'is', 'be', 'do', 'we', 'us', 'im', 'its', 'for', 'up', 'go', 'no', 'so',
+]);
+
+/**
+ * The words in a title that actually identify it: long enough to mean
+ * something, and not a grammatical filler.
+ */
+function distinctiveTitleWords(title: string): string[] {
+  return tokens(title).filter((t) => t.length >= 4 && !TITLE_NOISE.has(t));
+}
+
+/**
+ * True when neither title has a meaningful word the other lacks.
+ *
+ * A proportional score cannot separate "Pass Me The Dubplate" from "Pass Me The
+ * Rizla": three words of four agree, which reads as 0.75 — comfortably above
+ * any sane threshold — even though the single word that names the record is
+ * different. Short, common words carry almost no identifying information, so
+ * agreement is judged on the words that do. An unmatched distinctive word on
+ * either side means these are two different records.
+ */
+function distinctiveWordsAgree(want: string, got: string): boolean {
+  const a = distinctiveTitleWords(want);
+  const b = distinctiveTitleWords(got);
+  // Nothing distinctive on either side (e.g. "Go" vs "Go On"): fall back to the
+  // proportional score rather than declaring a match on no evidence.
+  if (!a.length || !b.length) return true;
+  const matches = (x: string[], y: string[]) =>
+    x.every((t) => y.some((u) => sameWord(t, u)));
+  return matches(a, b) && matches(b, a);
+}
+
 /** A title broken into the parts that identify different things. */
 export interface TitleParts {
   /** The title with every bracketed note removed. */
@@ -186,9 +282,14 @@ export interface MatchScore {
 }
 
 /**
- * Both sides must agree about which recording this is. A remix asked for and
- * not offered is a miss; so is the reverse — being handed a remix when the
- * plain track was wanted.
+ * Both sides must agree about which recording this is — in both directions.
+ *
+ * A remix asked for and not offered is a miss; so is the reverse, being handed
+ * a remix when the plain track was wanted. So is being handed a *different*
+ * remix: "Bad Boys (Benny Page ft. Kursiva Remix)" is not "Bad Boys (Benny Page
+ * Remix)", and checking only that the asked-for words appear somewhere in the
+ * candidate accepts it, because "benny", "page" and "remix" all do. The extra
+ * words have to be accounted for too.
  */
 function versionAgrees(want: TitleParts, candidateName: string): boolean {
   const got = splitTitle(candidateName);
@@ -201,15 +302,19 @@ function versionAgrees(want: TitleParts, candidateName: string): boolean {
     return !offered.length;
   }
 
-  // Every distinguishing word we asked for has to be recognisable somewhere in
-  // the candidate's name — tunebat writes versions as "(Dub Mix)", "- Dub Mix"
-  // or plain suffixes, so the whole name is searched rather than its brackets.
+  // Every distinguishing word we asked for has to be recognisable in the
+  // candidate's name — sources write versions as "(Dub Mix)", "- Dub Mix" or
+  // plain suffixes, so the whole name is searched rather than just its brackets.
   const haystack = tokens(candidateName);
-  return wanted.every((note) => {
-    const keywords = versionKeywords(note);
-    if (!keywords.length) return true; // note was pure noise, e.g. "(Mix)"
-    return keywords.every((k) => haystack.some((h) => sameWord(h, k)));
-  });
+  const wantedKeywords = wanted.flatMap(versionKeywords);
+  const allPresent = wantedKeywords.every((k) => haystack.some((h) => sameWord(h, k)));
+  if (!allPresent) return false;
+
+  // …and the candidate must not name anything extra that we didn't ask for.
+  // Only its own version notes are examined: words elsewhere in the title are
+  // the title, not the version.
+  const offeredKeywords = offered.flatMap(versionKeywords);
+  return offeredKeywords.every((k) => wantedKeywords.some((w) => sameWord(w, k)));
 }
 
 /** Minimum artist agreement before a hit can be considered at all. */
@@ -236,14 +341,18 @@ export function scoreCandidate(query: MatchQuery, candidate: Candidate): MatchSc
 
   const wantBase = normalise(want.base);
   const gotBase = normalise(candParts.base);
-  // Token containment handles reordering and extra words; bigram similarity
-  // handles short titles where a single token difference would swamp the score.
+  // Symmetric token agreement handles reordering and punishes leftover words on
+  // either side; bigram similarity rescues short titles where a single token
+  // difference would swamp the score. The weaker of the two is not used — the
+  // stronger is, so a genuine spelling variant still passes.
   const title = Math.max(
-    tokenScore(tokens(want.base), tokens(candParts.base)),
+    symmetricTokenScore(tokens(want.base), tokens(candParts.base)),
     dice(wantBase, gotBase)
   );
 
   const versionOk = versionAgrees(want, candidate.name);
+  const numbersOk = numbersAgree(want.base, candParts.base);
+  const wordsOk = distinctiveWordsAgree(want.base, candParts.base);
   const score = 0.45 * artist + 0.45 * title + 0.1 * (versionOk ? 1 : 0);
 
   let reason = 'ok';
@@ -257,6 +366,12 @@ export function scoreCandidate(query: MatchQuery, candidate: Candidate): MatchSc
   } else if (title < MIN_TITLE) {
     accepted = false;
     reason = `title mismatch (${title.toFixed(2)} < ${MIN_TITLE})`;
+  } else if (!wordsOk) {
+    accepted = false;
+    reason = 'a distinctive word in the title differs';
+  } else if (!numbersOk) {
+    accepted = false;
+    reason = 'different number in the title (e.g. a numbered volume or re-record)';
   } else if (!versionOk) {
     accepted = false;
     reason = 'different version/mix';

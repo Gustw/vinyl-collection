@@ -76,7 +76,8 @@ The **⟳ Update collection** button (top-right of the overview) does everything
 old Java tool did, but client-side:
 1. Fetches the full Discogs collection of the configured user (`dunazov` by default).
 2. For each release, fetches its tracklist/genres/styles/year/labels/artwork from Discogs.
-3. Looks up each track's key + BPM on tunebat.
+3. Looks up each track's key + BPM on Beatport, falling back to tunebat for
+   anything Beatport doesn't carry.
 4. **Merges** into `tracks.txt` (existing records keep their keys/BPM; only new
    records and corrections/additions are applied — the file is never wiped) and
    commits it back to GitHub via the REST API.
@@ -85,19 +86,38 @@ The button is greyed out while running. Hover it to see progress
 (records processed / total, and how many keys/BPM are still missing); when idle
 the tooltip shows the current missing counts. The list updates live as data comes in.
 
+Two repair passes sit next to it:
+
+- **↻ Re-fetch keys / BPM** re-asks both sources for every track, ignoring the
+  cache, and overwrites whatever comes back different.
+- **◆ Beatport keys / BPM** does the same against Beatport *only*. It exists
+  because the values already in the collection were produced by tunebat's audio
+  analysis, so the normal chain would fall back to tunebat on every miss and
+  largely re-confirm them; this pass replaces them with the label's published
+  figures and leaves anything Beatport doesn't carry untouched.
+
+Both are cancellable, commit as they go, and remember where they stopped so the
+next run resumes instead of re-checking thousands of tracks. Each keeps its own
+cursor.
+
 ### Configuration (⚙ settings)
 Open the ⚙ panel and set:
 - **Discogs user** (default `dunazov`) and an optional **Discogs token** (higher rate limit).
 - **GitHub owner / repo / branch / path** — auto-detected on `*.github.io`.
 - **GitHub token** with `contents:write` on the repo (needed to save updates).
-- **CORS proxy for tunebat** — tunebat has no CORS headers, so browser calls are
-  blocked unless routed through a proxy (e.g. `https://api.allorigins.win/raw?url=`).
-  Without one, Discogs data still loads but keys/BPM stay missing.
+- **CORS proxy for Beatport / tunebat** — neither has CORS headers, so browser
+  calls are blocked unless routed through a proxy (e.g.
+  `https://api.allorigins.win/raw?url=`). Without one, Discogs data still loads
+  but keys/BPM stay missing. See [CORS-PROXY.md](../CORS-PROXY.md).
+- **Beatport API token** — optional. With one, Beatport is read through its
+  documented v4 API; without one, through its public search page. Only sent as an
+  `Authorization` header, so the proxy has to forward that header for it to help.
 
 All tokens are stored only in your browser's `localStorage`.
 
-Discogs release JSON and tunebat results are cached in `localStorage`, so re-runs
-only spend time on records/tracks that still need data.
+Discogs release JSON and both sources' results are cached in `localStorage` (under
+separate namespaces, so the two can't be confused), so re-runs only spend time on
+records/tracks that still need data.
 
 To bundle a fresh snapshot into the app assets from a local `tracks.txt`:
 

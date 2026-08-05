@@ -16,11 +16,19 @@ export interface AppConfig {
   /** GitHub token with `contents:write` on the repo (kept only in localStorage). */
   githubToken: string;
   /**
-   * Optional CORS proxy prefix used for tunebat (which lacks CORS headers).
-   * The target URL is appended URL-encoded, e.g.
+   * Optional CORS proxy prefix used for Beatport and tunebat (neither sends
+   * CORS headers). The target URL is appended URL-encoded, e.g.
    * `https://api.allorigins.win/raw?url=`.
    */
   corsProxy: string;
+  /**
+   * Optional Beatport API bearer token. Beatport is the primary key/BPM source;
+   * without a token it is read from the public search page instead, which needs
+   * no credentials but is more fragile. Only ever leaves the browser as an
+   * `Authorization` header, so a CORS proxy has to forward that header for it
+   * to be of any use.
+   */
+  beatportToken: string;
   /**
    * Pitch range of the turntables, in ± percent. Decides which mixes are
    * physically reachable: 8 for a stock Technics, 16 for the wide-range mode,
@@ -62,6 +70,7 @@ export function defaultConfig(): AppConfig {
     cratesPath: 'crates.json',
     githubToken: '',
     corsProxy: '',
+    beatportToken: '',
     pitchRange: 8,
     tempoDrift: 6,
     ...detect(),

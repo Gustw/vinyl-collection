@@ -202,9 +202,19 @@ export function shiftCamelot(code: string, semitones: number): string {
   return `${wrap(n + steps)}${m[2]}`;
 }
 
+/**
+ * Pitch class (0=C .. 11=B) for a root note, in every spelling it turns up in.
+ *
+ * Both spellings of each black key are here because sources disagree: Beatport
+ * writes "Bb Minor" where this collection writes "A# minor", and they are the
+ * same key. The white-key accidentals (Cb, Fb, E#, B#) are rare but legal, and
+ * cost nothing to accept — a key that fails to parse loses its Camelot code,
+ * which quietly drops the track out of every key filter and mixable list.
+ */
 const NOTE_INDEX: Record<string, number> = {
-  C: 0, 'C#': 1, DB: 1, D: 2, 'D#': 3, EB: 3, E: 4, F: 5, 'F#': 6,
-  GB: 6, G: 7, 'G#': 8, AB: 8, A: 9, 'A#': 10, BB: 10, B: 11,
+  C: 0, 'B#': 0, 'C#': 1, DB: 1, D: 2, 'D#': 3, EB: 3, E: 4, FB: 4,
+  F: 5, 'E#': 5, 'F#': 6, GB: 6, G: 7, 'G#': 8, AB: 8, A: 9, 'A#': 10,
+  BB: 10, B: 11, CB: 11,
 };
 const SHARP_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
@@ -225,6 +235,68 @@ function tonicPc(n: number, letter: string): number {
   // 8A = A minor (pc 9), 8B = C major (pc 0); each +1 camelot = +7 semitones.
   const base = letter === 'A' ? 9 : 0;
   return (((base + 7 * (n - 8)) % 12) + 12) % 12;
+}
+
+/**
+ * Camelot code for a musical key name, e.g. "Bb minor" -> "3A". '' when the
+ * name can't be read.
+ *
+ * The inverse of `camelotToKeyName`, and needed because not every source
+ * publishes a wheel position: Beatport's search index gives only a key name
+ * ("Bb Minor"), so the code has to be derived. Going through the pitch class
+ * rather than a lookup table makes it enharmonic-blind, which matters — the
+ * wheel's canonical spelling of 3A is "A# minor", and a table keyed on that
+ * string alone would fail to place the "Bb minor" that Beatport actually sends.
+ *
+ * Derivation: tonicPc inverts to n = 8 + 7·(pc − base) (mod 12), since 7 is its
+ * own multiplicative inverse mod 12 (7·7 = 49 ≡ 1).
+ */
+export function keyNameToCamelot(keyName: string): string {
+  const m = /^\s*([A-Ga-g])\s*([#b]?)\s*(.*)$/.exec(keyName || '');
+  if (!m) return '';
+  const root = m[1].toUpperCase() + (m[2] === 'b' ? 'B' : m[2]);
+  const pc = NOTE_INDEX[root];
+  if (pc === undefined) return '';
+
+  const rest = m[3].trim().toLowerCase();
+  // Anything not explicitly major is treated as minor only when it says so;
+  // an unreadable mode is refused rather than guessed, since picking the wrong
+  // one moves the key three places round the wheel.
+  let letter: 'A' | 'B';
+  if (/^maj/.test(rest)) letter = 'B';
+  else if (/^(min|m$)/.test(rest) || rest === 'm') letter = 'A';
+  else return '';
+
+  const base = letter === 'A' ? 9 : 0;
+  return `${wrap(8 + 7 * (pc - base))}${letter}`;
+}
+
+/**
+ * The Camelot code a search term refers to, whether it is written as a code
+ * ("8A") or as a key name ("A minor", "Bb minor"). '' when it is neither.
+ */
+export function camelotOfQuery(term: string): string {
+  const s = (term || '').trim();
+  if (!s) return '';
+  const m = CAMELOT_RE.exec(s.toUpperCase());
+  if (m) return `${Number(m[1])}${m[2]}`;
+  return keyNameToCamelot(s);
+}
+
+/**
+ * True when two key names mean the same key, whatever their spelling —
+ * "A# minor" and "Bb minor", "C# major" and "Db major".
+ *
+ * Comparison goes through the Camelot code, which is spelling-independent.
+ * Names that can't be parsed fall back to a plain text comparison, so an
+ * unrecognised value is still equal to itself rather than being reported as a
+ * change on every pass.
+ */
+export function sameKeyName(a: string, b: string): boolean {
+  const ca = keyNameToCamelot(a);
+  const cb = keyNameToCamelot(b);
+  if (ca && cb) return ca === cb;
+  return (a || '').trim().toLowerCase() === (b || '').trim().toLowerCase();
 }
 
 /**

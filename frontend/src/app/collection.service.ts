@@ -1,9 +1,10 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { Rec, Track } from './models';
 import { ConfigService } from './config.service';
+import { keyNameToCamelot } from './camelot';
 import { githubConfigured, getTracksFile, putTracksFile, rawUrl } from './github';
 import { renderTracksTxt } from './tracks-format';
-import { cachedKeyInfo } from './tunebat';
+import { cachedKeyInfoAny } from './keydata';
 
 const HEADER_RE = /^===\s(.*)\s===$/;
 const TRACK_RE = /^\s*\d+\.\s+(.*)$/;
@@ -109,8 +110,11 @@ export function parseTracksTxt(text: string): Rec[] {
       const keyText = split.meta.keyText;
       const bpm = split.meta.bpm;
       const cm = keyText ? CAMELOT_RE.exec(keyText) : null;
-      const camelot = cm ? cm[1] : '';
       const keyName = keyText ? keyText.replace(/\s*\([^)]*\)\s*$/, '').trim() : '';
+      // Older files (and hand-edits) can carry a key name with no wheel
+      // position. Deriving it keeps the track in the key filters and the
+      // mixable lists instead of silently dropping out of both.
+      const camelot = cm ? cm[1] : keyNameToCamelot(keyName);
 
       // Split "Title - Artist" on the LAST " - " (artists rarely contain it).
       const idx = body.lastIndexOf(' - ');
@@ -195,16 +199,16 @@ function splitList(s: string): string[] {
 }
 
 /**
- * Fills in any missing key/BPM on parsed records from the tunebat localStorage
- * cache. This restores update progress after a page reload even when it hasn't
- * been committed to GitHub yet (e.g. no token configured, or a refresh between
- * commit checkpoints). Existing values are never overwritten.
+ * Fills in any missing key/BPM on parsed records from the Beatport/tunebat
+ * localStorage caches. This restores update progress after a page reload even
+ * when it hasn't been committed to GitHub yet (e.g. no token configured, or a
+ * refresh between commit checkpoints). Existing values are never overwritten.
  */
 export function hydrateFromKeyCache(records: Rec[]): void {
   for (const r of records) {
     for (const t of r.tracks) {
       if (t.keyName && t.bpm) continue;
-      const cached = cachedKeyInfo(t.artist, t.title);
+      const cached = cachedKeyInfoAny(t.artist, t.title);
       if (!cached) continue;
       if (!t.keyName && cached.keyName) {
         t.keyName = cached.keyName;

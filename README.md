@@ -64,7 +64,8 @@ nothing is committed:
 | Discogs user / token | Whose collection to import; a free token raises the rate limit from ~25 to 60 requests/min. |
 | GitHub owner / repo / branch / path | Where `tracks.txt` is read from and written back to. |
 | GitHub token | Needs `contents:write` so the in-app updater can commit. |
-| CORS proxy | tunebat sends no CORS headers, so key lookups need a proxy — see [CORS-PROXY.md](CORS-PROXY.md). |
+| CORS proxy | Neither Beatport nor tunebat sends CORS headers, so key lookups need a proxy — see [CORS-PROXY.md](CORS-PROXY.md). |
+| Beatport token | Optional. Switches the primary lookup to Beatport's v4 API; without one its public search page is read instead. |
 | Turntable pitch range | Decides which mixes are physically reachable. |
 | Set tempo drift | How far the bridge finder may ride a set's tempo away from where it started. |
 
@@ -117,9 +118,46 @@ npm run dedupe-data   # collapse duplicate record blocks, keeping the fullest co
 
 ## Notes
 
-- **tunebat rate-limits hard** (HTTP 429 with a 60s `Retry-After`). The updater
-  honours it and backs off, so a first full import takes a while. Results are
-  cached in localStorage, and tracks without a match are simply listed without a
-  key.
+- **Keys and BPMs come from Beatport first, tunebat second.** Beatport publishes
+  the label's own metadata and keeps the mix name as its own field, so it is both
+  more accurate and much better at telling a remix from the plain cut. tunebat
+  infers key and tempo from an audio upload, and covers what Beatport's catalogue
+  doesn't — vinyl-only jungle, dubplates, white labels — which is a large slice of
+  a record bag. tunebat is only asked when Beatport returns nothing.
+- **Every hit is verified before it is accepted.** A candidate is scored on
+  artist, title and version agreement, and rejected outright if any of the three
+  disagrees. Beatport's search returns plenty of convincing near-misses, so the
+  checks are deliberately strict: a distinctive word that differs
+  ("Pass Me The **Dubplate**" vs "Pass Me The **Rizla**"), a number that differs
+  ("Original Nuttah" vs "Original Nuttah **25**"), or a remix credit that
+  differs ("Benny Page Remix" vs "Benny Page **ft. Kursiva** Remix") all reject
+  the match. Nothing convincing means the track is left without a key rather
+  than given the wrong one: a missing key only drops a track out of the mixable
+  list, while a wrong one quietly falsifies every transition and bridge built on
+  it.
+- **Beatport lists some drum & bass at half tempo** — jungle at 83 or 91 next to
+  other drum & bass at 155 and 170 — and is not consistent about it. A reading
+  below 110 BPM whose own genre is drum & bass or jungle is doubled to the tempo
+  the record is actually played at. Separately, a fetched BPM that is exactly
+  half or double what is already on file is never treated as a correction: that
+  is the two sources counting the same record differently, and overwriting on
+  that basis would halve the BPM of a whole jungle collection.
+- **Keys are compared by Camelot position, not spelling.** "A# minor" and
+  "Bb minor" are the same key (3A) and the same record, as are "C# major" and
+  "Db major" (3B) — so a source preferring the other accidental doesn't count as
+  a correction. This matters here: 144 tracks in the collection are filed as
+  "C# major" where the wheel's canonical name is "Db major". Both spellings of
+  every black key are accepted on the way in, along with the rarer white-key
+  accidentals (Cb, Fb, E#, B#), the unicode ♭/♯ signs and written-out forms
+  ("A flat minor"). Searching for a key finds it whichever way the track spells
+  it, and a bare Camelot code ("3A") works too.
+- **A key without a wheel position is never left that way.** If a source or an
+  older `tracks.txt` supplies a key name but no Camelot code, it is derived from
+  the name — otherwise the track would silently vanish from every key filter and
+  mixable list.
+- **Both services rate-limit** (HTTP 429, tunebat with a 60s `Retry-After`). The
+  updater honours it and backs off, so a first full import takes a while. Results
+  are cached in localStorage, and tracks without a match are simply listed without
+  a key.
 - **Keys are normalised to ASCII** (`Bb`, `C#`) to avoid encoding issues in
   `tracks.txt`.

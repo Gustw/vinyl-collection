@@ -1,5 +1,6 @@
 import { Track } from './models';
 import { Filters } from './filter-state.service';
+import { camelotOfQuery } from './camelot';
 
 /**
  * True if `trackBpm` is within `range` of `refBpm`. When `doubleHalf` is set,
@@ -44,7 +45,14 @@ export function matchesTrack(t: Track, f: Filters, refBpm?: number, effectiveCam
       ' ' +
       (t.year ? String(t.year) : '')
     ).toLowerCase();
-    if (!hay.includes(q)) return false;
+    if (!hay.includes(q)) {
+      // A search that names a key should find that key however the track spells
+      // it: "Bb minor" and "A# minor" are the same key, and so is "3A". Only
+      // consulted when the plain text search misses, so it can never narrow a
+      // result that already matched.
+      const wanted = camelotOfQuery(f.search);
+      if (!wanted || wanted !== (effectiveCamelot ?? t.camelot)) return false;
+    }
   }
   if (f.genres.length && !f.genres.some((g) => t.genres.includes(g))) return false;
   if (f.styles.length && !f.styles.some((s) => t.styles.includes(s))) return false;

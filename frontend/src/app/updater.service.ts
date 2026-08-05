@@ -2,20 +2,42 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { CollectionService } from './collection.service';
 import { ConfigService } from './config.service';
 import { Rec, Track, trackKey } from './models';
+import { sameKeyName } from './camelot';
 import {
   CollectionEntry,
   fetchCollection,
   fetchReleaseDetail,
   wasReleaseCached,
 } from './discogs';
-import { lookupKey, KeyInfo } from './tunebat';
+import { lookupKeyBeatport } from './beatport';
+import { KeyInfo, lookupKeyData } from './keydata';
 import { renderTracksTxt } from './tracks-format';
 import { getTracksFile, githubConfigured, putTracksFile } from './github';
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/**
+ * Which service a re-fetch pass asks.
+ *
+ * `auto` is the normal pipeline: Beatport, then tunebat for whatever Beatport
+ * doesn't carry. `beatport` asks Beatport alone — the repair pass for a
+ * collection whose values were filled in by tunebat's audio analysis, where
+ * falling back would just re-confirm the very numbers being questioned.
+ */
+export type RefetchSource = 'auto' | 'beatport';
+
 /** Where an unfinished re-fetch pass got to, kept across cancels and reloads. */
 const REFETCH_PROGRESS_KEY = 'app.refetch.progress';
+
+/** Each source keeps its own cursor, so the two passes don't overwrite each other. */
+function progressKey(source: RefetchSource): string {
+  return source === 'auto' ? REFETCH_PROGRESS_KEY : `${REFETCH_PROGRESS_KEY}.${source}`;
+}
+
+/** Human name of a source, for status lines and confirmations. */
+function sourceLabel(source: RefetchSource): string {
+  return source === 'beatport' ? 'Beatport' : 'Beatport/tunebat';
+}
 
 /**
  * Cap on the corrections carried between segments of one pass. A full re-check
@@ -92,6 +114,45 @@ function nameKey(title: string, artist: string): string {
   return `${(title || '').trim()}\u0000${(artist || '').trim()}`.toLowerCase();
 }
 
+/**
+ * True when two key readings name the same key, however they spell it.
+ *
+ * Sources disagree about enharmonics: the collection holds "A# minor" where
+ * Beatport says "Bb minor", and "C# major" against its "Db major". These are
+ * the same key and the same wheel position, so rewriting one into the other is
+ * pure churn — it would report hundreds of "corrections", rewrite tracks.txt on
+ * every pass and bury the handful of real fixes in the report. The Camelot code
+ * is the spelling-independent identity, so it decides whenever one can be had:
+ * from the stored codes if both sides have them, else derived from the names.
+ */
+function sameKey(
+  oldName: string,
+  oldCamelot: string,
+  newName: string,
+  newCamelot: string
+): boolean {
+  if (oldCamelot && newCamelot) return oldCamelot === newCamelot;
+  return sameKeyName(oldName, newName);
+}
+
+/**
+ * True when two tempos are the same count read at different rates — 87 against
+ * 175, say.
+ *
+ * Sources disagree about whether drum & bass is notated at its played tempo or
+ * at half of it, and Beatport is not even consistent with itself: its
+ * catalogue lists jungle at 83 and 91 next to other drum & bass at 155 and 170.
+ * That disagreement says nothing about which of them has the right record, so
+ * it must not be mistaken for a correction.
+ */
+function isTempoConventionClash(oldBpm: string, newBpm: string): boolean {
+  const a = Number(oldBpm);
+  const b = Number(newBpm);
+  if (!Number.isFinite(a) || !Number.isFinite(b) || a <= 0 || b <= 0) return false;
+  const ratio = a > b ? a / b : b / a;
+  return Math.abs(ratio - 2) <= 0.06; // 2x within ~3%, covering rounding
+}
+
 function newTrack(title: string, artist: string): Track {
   return {
     id: 0,
@@ -139,8 +200,8 @@ export class UpdaterService {
   readonly corrected = signal(0);
   /**
    * Tracks that already had a key/BPM but which this pass could not confirm —
-   * tunebat offered nothing convincingly the same recording (or was
-   * unreachable). Their existing value is left alone, so it is worth surfacing:
+   * no source offered anything convincingly the same recording (or none was
+   * reachable). Their existing value is left alone, so it is worth surfacing:
    * those are the ones most likely to still be wrong, since the values in
    * tracks.txt predate match verification.
    */
@@ -180,9 +241,9 @@ export class UpdaterService {
 
   // --- Resumable re-fetch progress ---------------------------------------
 
-  private loadProgress(): RefetchProgress | null {
+  private loadProgress(source: RefetchSource): RefetchProgress | null {
     try {
-      const raw = localStorage.getItem(REFETCH_PROGRESS_KEY);
+      const raw = localStorage.getItem(progressKey(source));
       if (!raw) return null;
       const p = JSON.parse(raw) as RefetchProgress;
       return p && typeof p.lastKey === 'string' && typeof p.index === 'number' ? p : null;
@@ -191,33 +252,39 @@ export class UpdaterService {
     }
   }
 
-  private saveProgress(p: RefetchProgress): void {
+  private saveProgress(source: RefetchSource, p: RefetchProgress): void {
     try {
-      localStorage.setItem(REFETCH_PROGRESS_KEY, JSON.stringify(p));
+      localStorage.setItem(progressKey(source), JSON.stringify(p));
     } catch {
       /* ignore quota errors — losing the cursor only costs repeated work */
     }
-    this.resumePoint.set(p);
+    this.resumeSignal(source).set(p);
   }
 
-  private clearProgress(): void {
+  private clearProgress(source: RefetchSource): void {
     try {
-      localStorage.removeItem(REFETCH_PROGRESS_KEY);
+      localStorage.removeItem(progressKey(source));
     } catch {
       /* ignore */
     }
-    this.resumePoint.set(null);
+    this.resumeSignal(source).set(null);
   }
 
   /**
    * Where an interrupted re-fetch will pick up, or null when the next run
    * starts from the top. Drives the button label and its confirmation.
    */
-  readonly resumePoint = signal<RefetchProgress | null>(this.loadProgress());
+  readonly resumePoint = signal<RefetchProgress | null>(this.loadProgress('auto'));
+  /** The same, for the Beatport-only repair pass. */
+  readonly resumePointBeatport = signal<RefetchProgress | null>(this.loadProgress('beatport'));
+
+  private resumeSignal(source: RefetchSource) {
+    return source === 'beatport' ? this.resumePointBeatport : this.resumePoint;
+  }
 
   /** Discards a saved position so the next pass starts from track 1. */
-  forgetProgress(): void {
-    this.clearProgress();
+  forgetProgress(source: RefetchSource = 'auto'): void {
+    this.clearProgress(source);
   }
 
   /**
@@ -435,19 +502,30 @@ export class UpdaterService {
   }
 
   /**
-   * Re-asks tunebat for the key + BPM of *every* track, ignoring the cached
+   * Re-asks a source for the key + BPM of *every* track, ignoring the cached
    * answers, and overwrites the ones that come back different. Use this to
    * repair values that were looked up wrong. A track is only changed when
-   * tunebat actually returns something, so an empty or unreachable answer
-   * never wipes existing data.
+   * something actually comes back, so an empty or unreachable answer never
+   * wipes existing data.
+   *
+   * `source` picks who is asked: `auto` runs the normal Beatport-then-tunebat
+   * chain, `beatport` asks Beatport alone. The Beatport-only pass exists
+   * because falling back would defeat its purpose — it is there to replace
+   * analysed numbers with the label's published ones, and a tunebat answer is
+   * the very thing being questioned.
    *
    * A pass that is cancelled (or cut short by a closed tab) remembers where it
    * got to and the next run carries on from there. The position is only cleared
-   * once the end of the list is reached, so the pass then starts over.
+   * once the end of the list is reached, so the pass then starts over. Each
+   * source has its own cursor.
    */
-  async refetchAll(opts: { restart?: boolean } = {}): Promise<void> {
+  async refetchAll(
+    opts: { restart?: boolean; source?: RefetchSource } = {}
+  ): Promise<void> {
     if (this.running()) return;
     const cfg = this.config.config();
+    const source: RefetchSource = opts.source ?? 'auto';
+    const who = sourceLabel(source);
 
     const records = this.col.records();
     const jobs = records.flatMap((r) => r.tracks);
@@ -459,14 +537,14 @@ export class UpdaterService {
     }
 
     // Work out where to begin before touching any of the progress signals.
-    if (opts.restart) this.clearProgress();
-    const saved = opts.restart ? null : this.loadProgress();
+    if (opts.restart) this.clearProgress(source);
+    const saved = opts.restart ? null : this.loadProgress(source);
     let startAt = this.resumeIndex(jobs, saved);
     if (startAt >= jobs.length) {
       // The saved cursor sat on the last track: the pass is finished, so this
       // run is a fresh one.
       startAt = 0;
-      this.clearProgress();
+      this.clearProgress(source);
     }
     const resuming = startAt > 0 && !!saved;
 
@@ -487,7 +565,10 @@ export class UpdaterService {
 
     try {
       this.total.set(jobs.length);
-      if (resuming) {        this.message.set(`Resuming re-fetch at track ${startAt + 1} of ${jobs.length}…`);
+      if (resuming) {
+        this.message.set(
+          `Resuming ${who} re-fetch at track ${startAt + 1} of ${jobs.length}…`
+        );
       }
 
       if (this.canCommit) {
@@ -509,16 +590,20 @@ export class UpdaterService {
           break; // stop cleanly, then save below
         }
         this.message.set(
-          `Re-checking ${t.artist} - ${t.title}… ` +
+          `Re-checking ${t.artist} - ${t.title} on ${who}… ` +
             `(${i + 1}/${jobs.length}, ${this.corrected()} corrected)`
         );
         try {
-          const info = await lookupKey(cfg, t.artist, t.title, {
-            onStatus: (s) => this.message.set(s),
+          const lookupOpts = {
+            onStatus: (s: string) => this.message.set(s),
             force: true,
             isCancelled: () => this.cancelling(),
-            onRateLimitWait: (ms) => this.rateLimitedMs.update((n) => n + ms),
-          });
+            onRateLimitWait: (ms: number) => this.rateLimitedMs.update((n) => n + ms),
+          };
+          const info =
+            source === 'beatport'
+              ? await lookupKeyBeatport(cfg, t.artist, t.title, lookupOpts)
+              : await lookupKeyData(cfg, t.artist, t.title, lookupOpts);
           const change = this.applyFresh(t, info);
           if (change) {
             this.changes.update((list) => [...list, change]);
@@ -537,7 +622,7 @@ export class UpdaterService {
         this.push(records);
         // Recorded after the track is done, so the cursor always points at
         // completed work and resuming never skips a track.
-        this.saveProgress({
+        this.saveProgress(source, {
           lastKey: trackKey(t),
           index: i,
           total: jobs.length,
@@ -546,7 +631,7 @@ export class UpdaterService {
           changes: this.changes().slice(-MAX_REMEMBERED_CHANGES),
           updatedAt: Date.now(),
         });
-        await this.wait(500); // be polite to tunebat (reduces 429s)
+        await this.wait(500); // be polite to the API (reduces 429s)
         if (sinceCommit >= 10) {
           sinceCommit = 0;
           await this.commit(records, cfg);
@@ -554,15 +639,15 @@ export class UpdaterService {
       }
 
       // Reaching the end retires the cursor, so the next run starts over.
-      if (finished) this.clearProgress();
+      if (finished) this.clearProgress(source);
 
       // Always commit: this is also the save-on-cancel path.
       await this.commit(records, cfg);
       const n = this.corrected();
       const fixed = n === 0 ? 'nothing needed correcting' : `${n} track(s) corrected`;
       const note = finished
-        ? fixed
-        : `${fixed}; will resume at track ${this.processed() + 1} of ${jobs.length}`;
+        ? `${who}: ${fixed}`
+        : `${who}: ${fixed}; will resume at track ${this.processed() + 1} of ${jobs.length}`;
       this.message.set(this.finishMessage('Re-fetch', !finished, note));
     } catch (e) {
       this.error.set(String(e));
@@ -581,11 +666,19 @@ export class UpdaterService {
    * Returns a change record when something actually changed, else null. Empty
    * fields in `info` are ignored so a failed/blocked lookup can never erase
    * good data.
+   *
+   * A tempo that is exactly half or double what is already recorded is *not*
+   * treated as a correction: it is the two sources counting the same record
+   * differently. Overwriting on that basis would quietly halve the BPM of a
+   * jungle collection, and every mixable pair and bridge computed from it.
+   * A key that is merely spelled differently (F# minor vs Gb minor) is left
+   * alone for the same reason.
    */
   private applyFresh(t: Track, info: KeyInfo): TrackChange | null {
     const keyChanged =
-      !!info.keyName && (info.keyName !== t.keyName || info.camelot !== t.camelot);
-    const bpmChanged = !!info.bpm && info.bpm !== t.bpm;
+      !!info.keyName && !sameKey(t.keyName, t.camelot, info.keyName, info.camelot);
+    const tempoClash = isTempoConventionClash(t.bpm, info.bpm);
+    const bpmChanged = !!info.bpm && info.bpm !== t.bpm && !tempoClash;
     if (!keyChanged && !bpmChanged) return null;
 
     const change: TrackChange = {
@@ -661,12 +754,12 @@ export class UpdaterService {
     rec.tracks = merged;
     onProgress();
 
-    // Fill gaps from tunebat. Only blanks are filled, so a value that is
-    // already there is never replaced.
+    // Fill gaps from Beatport (falling back to tunebat). Only blanks are
+    // filled, so a value that is already there is never replaced.
     for (const t of rec.tracks) {
       if (t.keyName && t.bpm) continue;
       this.throwIfCancelled(); // the record keeps whatever we filled so far
-      const info = await lookupKey(cfg, t.artist, t.title, {
+      const info = await lookupKeyData(cfg, t.artist, t.title, {
         onStatus: (s) => this.message.set(s),
         isCancelled: () => this.cancelling(),
         onRateLimitWait: (ms) => this.rateLimitedMs.update((n) => n + ms),
@@ -678,7 +771,7 @@ export class UpdaterService {
       }
       if (info.bpm && !t.bpm) t.bpm = info.bpm;
       onProgress();
-      await this.wait(500); // be polite to tunebat (reduces 429s)
+      await this.wait(500); // be polite to the APIs (reduces 429s)
     }
   }
 

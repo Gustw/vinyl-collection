@@ -6,7 +6,7 @@ import { FilterStateService, activeFilterCount, hasActiveFilters } from './filte
 import { matchesTrack } from './filtering';
 import { camelotClass } from './camelot';
 import { Rec, Track, durationSeconds, formatRuntime, trackKey } from './models';
-import { UpdaterService, TrackChange } from './updater.service';
+import { UpdaterService, TrackChange, RefetchSource } from './updater.service';
 import { ConfigService } from './config.service';
 import { KeyCheatsheetComponent } from './key-cheatsheet.component';
 import { downloadBlob } from './pdf';
@@ -71,6 +71,14 @@ function formatDuration(ms: number): string {
       >
         {{ updater.resumePoint() ? '↻ Resume keys / BPM' : '↻ Re-fetch keys / BPM' }}
       </button>
+      <button
+        class="btn"
+        [disabled]="updater.running()"
+        [title]="beatportTooltip()"
+        (click)="refetchBeatport()"
+      >
+        {{ updater.resumePointBeatport() ? '◆ Resume Beatport' : '◆ Beatport keys / BPM' }}
+      </button>
       <button class="btn" title="Manage crates" (click)="openCrates()">🗃 Crates</button>
       <button
         class="btn"
@@ -102,7 +110,7 @@ function formatDuration(ms: number): string {
               </span>
             }
             @if (updater.rateLimitedMs() > 0) {
-              <span class="badge-count throttled-count" title="Time this run has spent waiting out tunebat rate limits">
+              <span class="badge-count throttled-count" title="Time this run has spent waiting out Beatport/tunebat rate limits">
                 ⏳ {{ throttledLabel() }} rate limited
               </span>
             }
@@ -143,8 +151,10 @@ function formatDuration(ms: number): string {
             <input [value]="cfg().tracksPath" (input)="set('tracksPath', $any($event.target).value)" />
             <label>GitHub token <span class="muted">(contents:write)</span></label>
             <input type="password" [value]="cfg().githubToken" (input)="set('githubToken', $any($event.target).value)" />
-            <label>CORS proxy for tunebat <span class="muted">(prefix)</span></label>
+            <label>CORS proxy for Beatport / tunebat <span class="muted">(prefix)</span></label>
             <input placeholder="e.g. https://api.allorigins.win/raw?url=" [value]="cfg().corsProxy" (input)="set('corsProxy', $any($event.target).value)" />
+            <label>Beatport API token <span class="muted">(optional)</span></label>
+            <input type="password" placeholder="Bearer token — blank uses the public search page" [value]="cfg().beatportToken" (input)="set('beatportToken', $any($event.target).value)" />
             <label>Turntable pitch range <span class="muted">(± %)</span></label>
             <input
               type="number"
@@ -169,6 +179,10 @@ function formatDuration(ms: number): string {
           <div class="muted settings-help">
             Tokens are stored only in your browser (localStorage). The GitHub token needs
             write access to the repo above so updates can be saved to <b>{{ cfg().tracksPath }}</b>.
+            Keys and BPMs come from Beatport first (the label's own published metadata) and
+            fall back to tunebat for anything Beatport doesn't carry. Neither site allows
+            cross-origin requests, so both need the CORS proxy above. The Beatport token is
+            optional — without one the public search page is read instead.
             The pitch range decides which mixes count as reachable — 8 for a stock Technics,
             16 for wide-range mode, 50 for most digital decks. The tempo drift decides how far
             the bridge finder may ride the tempo of a set away from where it started; 0 keeps
@@ -1073,54 +1087,94 @@ export class RecordsListComponent {
     return p
       ? `The last pass stopped after ${p.index + 1} of ${p.total} tracks ` +
         `(${p.corrected} corrected). Carries on from there — or start over.`
-      : "Ask tunebat again for every track's key + BPM and correct the wrong " +
-        'ones (ignores the local cache)';
+      : "Ask Beatport (then tunebat) again for every track's key + BPM and " +
+        'correct the wrong ones (ignores the local cache)';
+  });
+
+  /** Tooltip for the Beatport-only pass, which also doubles as a resume button. */
+  readonly beatportTooltip = computed(() => {
+    const p = this.updater.resumePointBeatport();
+    return p
+      ? `The last Beatport pass stopped after ${p.index + 1} of ${p.total} tracks ` +
+        `(${p.corrected} corrected). Carries on from there — or start over.`
+      : "Correct every track's key + BPM against Beatport alone — the label's " +
+        'published metadata, with no tunebat fallback';
   });
 
   /**
-   * Re-asks tunebat for every track's key/BPM and corrects the wrong ones.
+   * Re-asks the key/BPM sources for every track and corrects the wrong ones.
    * Offers to carry on when an earlier pass was interrupted, since re-checking
    * thousands of already-checked tracks costs an hour or more of rate limiting.
    */
   refetch(): void {
+    this.runRefetch('auto');
+  }
+
+  /**
+   * The same, asking Beatport only.
+   *
+   * Worth having as its own button because it answers a different question.
+   * The values already in the collection were produced by tunebat's *analysis*
+   * of an audio upload, so re-running the normal chain would fall back to
+   * tunebat for every miss and largely re-confirm them. This pass replaces them
+   * with what the label actually published, and leaves anything Beatport
+   * doesn't carry untouched rather than guessing.
+   */
+  refetchBeatport(): void {
+    this.runRefetch('beatport');
+  }
+
+  /** Shared confirm/resume flow for both re-fetch buttons. */
+  private runRefetch(source: RefetchSource): void {
     const n = this.totalTracks();
-    const resume = this.updater.resumePoint();
+    const beatportOnly = source === 'beatport';
+    const who = beatportOnly ? 'Beatport' : 'Beatport/tunebat';
+    const resume = beatportOnly
+      ? this.updater.resumePointBeatport()
+      : this.updater.resumePoint();
 
     if (resume) {
       const done = Math.min(resume.index + 1, resume.total);
       const carryOn = confirm(
-        `Resume the re-fetch?\n\n` +
+        `Resume the ${who} re-fetch?\n\n` +
           `The last pass stopped after ${done} of ${resume.total} tracks, ` +
           `having corrected ${resume.corrected}.\n\n` +
           `OK — carry on from track ${done + 1}.\n` +
           `Cancel — start again from the beginning instead.`
       );
       if (carryOn) {
-        void this.updater.refetchAll();
+        void this.updater.refetchAll({ source });
         return;
       }
       const startOver = confirm(
         `Start again from track 1 of ${n}?\n\nThe saved position is discarded.`
       );
-      if (startOver) void this.updater.refetchAll({ restart: true });
+      if (startOver) void this.updater.refetchAll({ source, restart: true });
       return;
     }
 
     // ~500ms pacing plus a typical request, so about a second per track. The
-    // real figure is whatever the live ETA settles on once tunebat's
-    // throttling (if any) shows itself.
+    // real figure is whatever the live ETA settles on once any throttling
+    // shows itself.
     const bestCase = Math.ceil(n / 60);
+    const intro = beatportOnly
+      ? `Re-check all ${n} tracks against Beatport only?\n\n` +
+        `Beatport publishes the label's own key and BPM, so this replaces ` +
+        `values that were guessed by audio analysis. Tracks Beatport doesn't ` +
+        `carry are left exactly as they are — there is no tunebat fallback in ` +
+        `this pass.\n\n`
+      : `Re-check all ${n} tracks against Beatport, then tunebat?\n\n`;
     const ok = confirm(
-      `Re-check all ${n} tracks against tunebat?\n\n` +
+      intro +
         `This ignores the local cache and overwrites any key/BPM that comes ` +
         `back different.\n\n` +
-        `Roughly ${bestCase} minute(s) if tunebat doesn't rate-limit. It will ` +
-        `back off for up to a minute each time it does, so the run can take ` +
-        `considerably longer — a live estimate is shown while it runs, and you ` +
-        `can cancel at any point without losing corrections already made. ` +
-        `A cancelled pass remembers its place and resumes next time.`
+        `Roughly ${bestCase} minute(s) if nothing rate-limits. It will back ` +
+        `off each time something does, so the run can take considerably ` +
+        `longer — a live estimate is shown while it runs, and you can cancel ` +
+        `at any point without losing corrections already made. A cancelled ` +
+        `pass remembers its place and resumes next time.`
     );
-    if (ok) void this.updater.refetchAll();
+    if (ok) void this.updater.refetchAll({ source });
   }
 
   /** "3m 20s" / "45s" for the remaining-time badge. */
