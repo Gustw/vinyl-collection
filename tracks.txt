@@ -952,7 +952,7 @@
   Label: Urban Takeover
   Art: https://i.discogs.com/8xPyc_StApef1z8EbXs44lKyyMfWOELD9mMmhAoeRSQ/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTY2/LTE1OTcyNjM3MTQt/NzYyMi5qcGVn.jpeg
    1. Bad Ass ! - Mickey Finn And Aphrodite [Pos: A | Time: 6:41 | Key: C major (8B) | BPM: 174]
-   2. Drop Top Caddy - Mickey Finn And Aphrodite [Pos: B | Time: 6:07 | Key: A major (11B) | BPM: 89]
+   2. Drop Top Caddy - Mickey Finn And Aphrodite [Pos: B | Time: 6:07 | Key: D minor (7A) | BPM: 89]
 
 === Rukus / Vibration -- Gang Related ===
   ID: 65196
@@ -972,7 +972,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/X16WObwlLadiDm1dSICdkxbk18zSyQ2VJUwE4rMq4j8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDg5/NDM4LTE0OTE0OTMx/NDEtODkwNy5qcGVn.jpeg
    1. Warning - Gunmen [Pos: A | Time: 4:41 | Key: D major (10B) | BPM: 175]
-   2. My Sound - Gunmen [Pos: B | Time: 4:32 | Key: B major (1B) | BPM: 175]
+   2. My Sound - Gunmen [Pos: B | Time: 4:32 | Key: Ab minor (1A) | BPM: 176]
 
 === The Sound / Messed Up -- Gunmen ===
   ID: 11116315
@@ -981,8 +981,8 @@
   Year: 2017
   Label: Rasta Vibez
   Art: https://i.discogs.com/AMlMRvAfBW0zEvKVbNhvb2kAPnRdc-3OUKaAD7q_9sA/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE2/MzE1LTE1MTAzMDE1/OTktODc0Ny5qcGVn.jpeg
-   1. The Sound - Gunmen [Pos: A | Time: 4:21 | Key: D major (10B) | BPM: 175]
-   2. Messed Up - Gunmen [Pos: B | Time: 4:30 | Key: B minor (10A) | BPM: 174]
+   1. The Sound - Gunmen [Pos: A | Time: 4:21 | Key: D minor (7A) | BPM: 176]
+   2. Messed Up - Gunmen [Pos: B | Time: 4:30 | Key: Gb minor (11A) | BPM: 117]
 
 === Another Hit Song / Girls -- Gunmen ===
   ID: 9974991
@@ -991,7 +991,7 @@
   Year: 2016
   Label: Gunmen Music
   Art: https://i.discogs.com/N01o9p54zydl-ZkYn4T-vRnNvXpQah1BgOOsQWSvM_o/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5NzQ5/OTEtMTQ4OTUxMjMz/MC0zNjQ2LmpwZWc.jpeg
-   1. Another Hit Song - Gunmen [Pos: A | Key: G major (9B) | BPM: 176]
+   1. Another Hit Song - Gunmen [Pos: A | Key: C minor (5A) | BPM: 176]
    2. Girls - Gunmen [Pos: B | Key: C# major (3B) | BPM: 176]
 
 === Get Mash Up -- Pixel ===
@@ -1002,7 +1002,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/Vb8NuoXrbaBlsIZ8rYgByqLVKY7ry6_ZLKxQcbeCQU0/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4ODA0/MTMtMTQ4Nzg4MzEy/OC04NjI1LmpwZWc.jpeg
    1. Get Mash Up - Pixel [Pos: A | Key: G major (9B) | BPM: 180]
-   2. Armed & Dangerous - Pixel [Pos: B | Key: C# major (3B) | BPM: 188]
+   2. Armed & Dangerous - Pixel [Pos: B | Key: G minor (6A) | BPM: 176]
 
 === Rastafari Army / Rich Man Dub -- Unknown Artist ===
   ID: 10351290
