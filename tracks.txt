@@ -340,8 +340,8 @@
   Year: 2010
   Label: Delacroix Records
   Art: https://i.discogs.com/0110MoSqhjMQEJAAmaODi4QBSmlRqO5YUQzjN2c4wo0/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzky/NjItMTM3MjI3Mzgy/NS0yODg2LmpwZWc.jpeg
-   1. Fit - Vendetta & Barber & Bad Kid [Pos: A | Key: A# minor (3A) | BPM: 88]
-   2. I'm The Devil - Vendetta & Barber & Bad Kid [Pos: AA | Key: C# minor (12A) | BPM: 87]
+   1. Fit - Vendetta & Barber & Bad Kid [Pos: A | Key: A# minor (3A) | BPM: 176 | Manual: key,bpm]
+   2. I'm The Devil - Vendetta & Barber & Bad Kid [Pos: AA | Key: C# minor (12A) | BPM: 174 | Manual: key,bpm]
 
 === Gimme Da Gal -- Phantasy & Shodan & UK Apache ===
   ID: 315843
@@ -430,7 +430,7 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/prmwD5RJ-OUy3z0GepH--4EMzoPU5Xz5tKZn2bRlSnI/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTE0/NDktMTM1MDg4NTgy/MC05ODgwLmpwZWc.jpeg
-   1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A minor (8A) | BPM: 88]
+   1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A minor (8A) | BPM: 176 | Manual: key,bpm]
    2. You Can Be My Night - Deekline And Ed Solo [Pos: AA | Key: C major (8B) | BPM: 175 | Manual: key,bpm]
 
 === Super Skank / Nervous -- DJ Panik ===
@@ -563,7 +563,7 @@
   Label: Soul Rebel Recordings
   Art: https://i.discogs.com/_D9LhcKcegd-ueq-xr0glz_6c3Sf6KgCaBZhOl0Z9SQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODUx/NDktMTUwOTUxODgy/NS0zNjAxLmpwZWc.jpeg
    1. Love Is The Key - Scott Allen & Deeper Connection [Pos: A | Key: Gb minor (11A) | BPM: 174]
-   2. Slumbery - Incident [Pos: AA | Key: D minor (7A) | BPM: 88]
+   2. Slumbery - Incident [Pos: AA | Key: D minor (7A) | BPM: 176 | Manual: key,bpm]
 
 === Babylon EP -- Scott Allen, Pixel ===
   ID: 5699595
