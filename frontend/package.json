@@ -16,7 +16,8 @@
     "check:manual": "esbuild scripts/manual-lock-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/manual-lock-check.mjs && node node_modules/.cache/manual-lock-check.mjs",
     "check:timers": "esbuild scripts/timer-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/timer-check.mjs && node node_modules/.cache/timer-check.mjs",
     "check:analysis": "esbuild scripts/analysis-check.ts --bundle --platform=node --format=esm --external:essentia.js --outfile=node_modules/.cache/analysis-check.mjs && node node_modules/.cache/analysis-check.mjs",
-    "check:quality": "esbuild scripts/quality-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/quality-check.mjs && node node_modules/.cache/quality-check.mjs"
+    "check:quality": "esbuild scripts/quality-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/quality-check.mjs && node node_modules/.cache/quality-check.mjs",
+    "check:sync": "esbuild scripts/sync-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/sync-check.mjs && node node_modules/.cache/sync-check.mjs"
   },
   "private": true,
   "dependencies": {

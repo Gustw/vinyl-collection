@@ -746,6 +746,9 @@ export class TrackDetailComponent {
     this.editing.set(false);
 
     if (!this.col.canCommit()) {
+      // Still queue it: once a repo and token are configured the change is
+      // pushed on the next retry, instead of quietly staying on this device.
+      this.col.markPending(`Edit ${t.title} — key/BPM`, 'GitHub is not configured.');
       this.saveErr.set(true);
       this.saveMsg.set('Saved locally. Configure a GitHub repo + token in ⚙ to persist.');
       return;
@@ -759,7 +762,10 @@ export class TrackDetailComponent {
       this.saveErr.set(false);
     } catch (e) {
       this.saveErr.set(true);
-      this.saveMsg.set('Saved locally, but GitHub commit failed: ' + e);
+      // The change is queued and retried; the banner at the top of the page
+      // carries it from here, so this message doesn't have to be the only
+      // record of the failure.
+      this.saveMsg.set('Saved locally — will retry GitHub automatically. (' + e + ')');
     } finally {
       this.saving.set(false);
     }

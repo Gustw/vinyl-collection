@@ -259,6 +259,18 @@ interface TrackOverride {
   camelot: string;
   keyText: string;
   bpm: string;
+  /**
+   * Which fields this edit *asserted*, which is not the same as which fields it
+   * filled in. Emptying a bogus BPM is a statement about the record just as
+   * much as typing one is, and without recording it separately the clear would
+   * be undone on the next reload by the value still sitting in tracks.txt.
+   *
+   * Optional because overrides written by earlier versions have no such field;
+   * those read as "locked wherever a value is present", which is exactly what
+   * the old code inferred.
+   */
+  manualKey?: boolean;
+  manualBpm?: boolean;
 }
 
 /**
@@ -285,6 +297,39 @@ export interface ManualLock {
 const NO_LOCK: ManualLock = { key: false, bpm: false };
 
 const OVERRIDES_KEY = 'overrides.tracks';
+const PENDING_KEY = 'pending.sync';
+
+/**
+ * A commit to GitHub that was attempted and did not land.
+ *
+ * The edit itself is never at risk — it is in `overrides.tracks` and re-applied
+ * on every load — but until it reaches tracks.txt it exists on this device
+ * only, and every other device will happily overwrite it. So the failure is
+ * recorded durably rather than left in a message the user can navigate away
+ * from, and retried until it lands.
+ */
+export interface PendingSync {
+  /** Commit message of the write that failed, reused on the retry. */
+  message: string;
+  /** When the collection first went out of sync (ms since epoch). */
+  since: number;
+  /** How many times we have tried to push it. */
+  attempts: number;
+  /** Why the last attempt failed, shown to the user. */
+  lastError: string;
+}
+
+/** How often an unsynced change is retried in the background. */
+const RETRY_INTERVAL_MS = 60_000;
+
+function loadPending(): PendingSync | null {
+  try {
+    const raw = localStorage.getItem(PENDING_KEY);
+    return raw ? (JSON.parse(raw) as PendingSync) : null;
+  } catch {
+    return null;
+  }
+}
 
 /** Stable id for a track across reloads (numeric ids are reassigned each load). */
 function overrideId(releaseId: string, title: string, artist: string): string {
@@ -311,6 +356,14 @@ export class CollectionService {
   readonly loaded = signal(false);
   readonly error = signal<string | null>(null);
 
+  /**
+   * The change that has been made locally but has not reached GitHub yet.
+   * Non-null means "this device is the only copy".
+   */
+  readonly pending = signal<PendingSync | null>(null);
+  /** True while a retry is in flight, so the UI can show it and not stack up. */
+  readonly syncing = signal(false);
+
   readonly tracks = computed<Track[]>(() =>
     this.records().flatMap((r) => r.tracks)
   );
@@ -322,7 +375,36 @@ export class CollectionService {
   );
 
   constructor() {
+    this.pending.set(loadPending());
     void this.reload();
+    this.startRetryLoop();
+  }
+
+  /**
+   * Keeps trying to land an unsynced change: whenever the machine comes back
+   * online, whenever the tab is brought back to the front, and on a slow timer
+   * for the case where connectivity returns without any event (a captive portal
+   * or a flaky link, which is the usual reason a commit failed in the first
+   * place).
+   *
+   * Also warns before the tab closes while a change is still local-only. That
+   * is the one moment where "it's safe in localStorage" stops being reassuring:
+   * the user may be about to close the browser on the machine that holds the
+   * only copy.
+   */
+  private startRetryLoop(): void {
+    if (typeof window === 'undefined') return;
+    const attempt = () => void this.retrySync();
+    window.addEventListener('online', attempt);
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) attempt();
+    });
+    setInterval(attempt, RETRY_INTERVAL_MS);
+    window.addEventListener('beforeunload', (e) => {
+      if (!this.pending()) return;
+      e.preventDefault();
+      e.returnValue = '';
+    });
   }
 
   /**
@@ -332,10 +414,20 @@ export class CollectionService {
   async reload(): Promise<void> {
     const cfg = this.config.config();
     let text: string | null = null;
+    /**
+     * Whether `text` is what GitHub actually holds. The bundled asset is a
+     * build-time snapshot, so it must never be used as the baseline for the
+     * comparison below — it would report drift that isn't there and, worse,
+     * push stale data over the top of the real file.
+     */
+    let fromRemote = false;
     if (githubConfigured(cfg)) {
       try {
         const res = await fetch(rawUrl(cfg) + '?t=' + Date.now());
-        if (res.ok) text = await res.text();
+        if (res.ok) {
+          text = await res.text();
+          fromRemote = true;
+        }
       } catch {
         /* fall through to the bundled asset */
       }
@@ -355,10 +447,55 @@ export class CollectionService {
     }
     this.error.set(null);
     const records = parseTracksTxt(text);
+    // Snapshot the committed values before anything local is layered on top.
+    const committed = fromRemote ? signatures(records) : null;
     hydrateFromKeyCache(records);
     this.applyOverrides(records);
     this.setRecords(records);
     this.loaded.set(true);
+    if (committed) this.reconcile(committed, records);
+    // The local state is now fully rebuilt (file + caches + overrides), so a
+    // change left unsynced by an earlier session can be pushed.
+    if (this.pending()) void this.retrySync();
+  }
+
+  /**
+   * Compares what GitHub holds against what this device believes, and queues a
+   * push if they differ.
+   *
+   * This is what catches work that was already stranded before any of the
+   * pending-change bookkeeping existed — an edit whose commit failed in an
+   * earlier session, or a re-fetch run that filled in a hundred keys and then
+   * couldn't write them. Those left no marker behind, so nothing would ever
+   * have retried them; they would sit in this browser looking perfectly saved
+   * until the day another device committed the old values back over them.
+   *
+   * It also works the other way round: if the file already matches, any pending
+   * marker is stale — the change landed, or was committed from elsewhere — and
+   * is cleared, so the warning bar can't get stuck on.
+   *
+   * The comparison is on values, not on file text: whitespace or field-order
+   * differences between the Java exporter and `renderTracksTxt` would otherwise
+   * read as permanent drift and cause a commit on every single load.
+   */
+  private reconcile(committed: string[], records: Rec[]): void {
+    const local = signatures(records);
+    let diverged = 0;
+    for (let i = 0; i < local.length; i++) {
+      if (local[i] !== committed[i]) diverged++;
+    }
+    if (local.length !== committed.length) diverged = Math.max(diverged, 1);
+
+    if (!diverged) {
+      if (this.pending()) this.markSynced();
+      return;
+    }
+    if (this.pending()) return; // already queued; don't reset its age
+    const what = diverged === 1 ? '1 track' : `${diverged} tracks`;
+    this.markPending(
+      `Sync local key/BPM changes (${what})`,
+      'Found local changes that are not in tracks.txt yet.'
+    );
   }
 
   /** Replaces the collection, re-indexing track ids and re-linking record facets. */
@@ -402,8 +539,8 @@ export class CollectionService {
         t.camelot = o.camelot;
         t.keyText = o.keyText;
         t.bpm = o.bpm;
-        t.manualKey = t.manualKey || !!(o.keyName || o.camelot);
-        t.manualBpm = t.manualBpm || !!o.bpm;
+        t.manualKey = t.manualKey || (o.manualKey ?? !!(o.keyName || o.camelot));
+        t.manualBpm = t.manualBpm || (o.manualBpm ?? !!o.bpm);
       }
     }
   }
@@ -444,6 +581,11 @@ export class CollectionService {
     track.manualBpm = false;
     this.persistOverrides();
     this.records.set([...this.records()]);
+    // Removing the flag changes tracks.txt, so it has to reach GitHub too —
+    // otherwise the file keeps saying the field is hand-set and every other
+    // device goes on skipping it.
+    this.markPending(`Unlock ${track.title} — key/BPM`, 'Not pushed yet.');
+    void this.retrySync();
   }
 
   private persistOverrides(): void {
@@ -467,19 +609,26 @@ export class CollectionService {
     bpm = (bpm || '').trim();
     const keyText = keyName && camelot ? `${keyName} (${camelot})` : keyName;
 
+    // A field is hand-set if the user put a value in it, *or* if they emptied
+    // one that had a value. Clearing a bogus BPM is a correction like any
+    // other, and without the lock the next automated pass — or the cached value
+    // picked up on the next reload — would quietly put it back.
+    const manualKey = !!keyText || (track.manualKey || !!track.keyText);
+    const manualBpm = !!bpm || (track.manualBpm || !!track.bpm);
+
     // Update the live object so computed views recalc immediately.
     track.keyName = keyName;
     track.camelot = camelot;
     track.keyText = keyText;
     track.bpm = bpm;
-    track.manualKey = !!keyText;
-    track.manualBpm = !!bpm;
+    track.manualKey = manualKey;
+    track.manualBpm = manualBpm;
 
     const id = overrideId(track.releaseId, track.title, track.artist);
-    if (!keyName && !camelot && !bpm) {
+    if (!keyName && !camelot && !bpm && !manualKey && !manualBpm) {
       delete this.overrides[id];
     } else {
-      this.overrides[id] = { keyName, camelot, keyText, bpm };
+      this.overrides[id] = { keyName, camelot, keyText, bpm, manualKey, manualBpm };
     }
     this.persistOverrides();
     // New array reference so signals (tracks/records) recompute.
@@ -496,16 +645,125 @@ export class CollectionService {
    * Commits the current collection to tracks.txt on GitHub — the same write a
    * real tunebat update uses — so manual edits are persisted remotely. Throws a
    * helpful error when GitHub isn't configured.
+   *
+   * Either way the outcome is recorded: success clears the pending marker, and
+   * failure records one so the change is retried later instead of surviving
+   * only as a message on a screen the user is about to leave.
    */
   async commitToGithub(message: string): Promise<void> {
     const cfg = this.config.config();
     if (!githubConfigured(cfg) || !cfg.githubToken) {
+      this.markPending(message, 'GitHub is not configured.');
       throw new Error('Configure a GitHub repo and token in ⚙ Settings to save changes.');
     }
-    const file = await getTracksFile(cfg); // current sha (null if the file is new)
-    const text = renderTracksTxt(this.records());
-    await putTracksFile(cfg, text, file?.sha, message);
+    try {
+      const file = await getTracksFile(cfg); // current sha (null if the file is new)
+      const text = renderTracksTxt(this.records());
+      await putTracksFile(cfg, text, file?.sha, message);
+      this.markSynced();
+    } catch (e) {
+      this.markPending(message, String(e));
+      throw e;
+    }
   }
+
+  /** Records that local state has not reached GitHub, durably. */
+  markPending(message: string, lastError: string): void {
+    const prev = this.pending();
+    const next: PendingSync = {
+      message,
+      // Keep the original timestamp: what matters is how long the collection
+      // has been out of sync, not when the most recent attempt failed.
+      since: prev?.since ?? Date.now(),
+      attempts: (prev?.attempts ?? 0) + 1,
+      lastError,
+    };
+    this.pending.set(next);
+    try {
+      localStorage.setItem(PENDING_KEY, JSON.stringify(next));
+    } catch {
+      /* ignore quota errors */
+    }
+  }
+
+  /** Records that GitHub now holds the local state. */
+  markSynced(): void {
+    this.pending.set(null);
+    try {
+      localStorage.removeItem(PENDING_KEY);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  /**
+   * Tries again to push the local collection. Safe to call at any time: it does
+   * nothing when there is nothing pending, when a push is already running, or
+   * when the browser knows it is offline.
+   *
+   * The sha is re-read immediately before the write, so a retry made minutes or
+   * days later merges against whatever is in the repo now rather than failing
+   * on a stale sha. Returns true when the change is safely on GitHub.
+   */
+  async retrySync(): Promise<boolean> {
+    const p = this.pending();
+    if (!p || this.syncing()) return false;
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return false;
+    if (!this.canCommit()) return false;
+    // Never overwrite tracks.txt with an empty file: a retry that fires before
+    // the collection has finished loading would otherwise erase the lot.
+    if (!this.records().length) return false;
+
+    this.syncing.set(true);
+    try {
+      await this.commitToGithub(p.message);
+      return true;
+    } catch {
+      return false; // already recorded by commitToGithub; try again later
+    } finally {
+      this.syncing.set(false);
+    }
+  }
+
+  /** The exact tracks.txt that a commit would write, for offline backup. */
+  renderCurrent(): string {
+    return renderTracksTxt(this.records());
+  }
+
+  /** How the pending change should be described to the user. */
+
+  pendingSummary(): string {
+    const p = this.pending();
+    if (!p) return '';
+    const mins = Math.floor((Date.now() - p.since) / 60_000);
+    if (mins < 1) return 'just now';
+    if (mins < 60) return `${mins} min ago`;
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return `${hrs} h ago`;
+    return `${Math.floor(hrs / 24)} d ago`;
+  }
+}
+
+/**
+ * One string per track capturing exactly the fields a commit would write, in
+ * collection order.
+ *
+ * Only key, BPM and the two manual flags are included, because those are the
+ * only things the app ever changes; everything else in tracks.txt comes from
+ * Discogs and is rewritten identically. Comparing these instead of the file
+ * text makes the check immune to formatting, which matters because the file may
+ * have been written by the Java exporter rather than by `renderTracksTxt`.
+ */
+function signatures(records: Rec[]): string[] {
+  const out: string[] = [];
+  for (const r of records) {
+    for (const t of r.tracks) {
+      out.push(
+        `${t.keyText}\u0000${t.bpm}\u0000${t.manualKey ? 1 : 0}${t.manualBpm ? 1 : 0}`
+      );
+    }
+  }
+  return out;
 }
 
 function uniqueSorted(values: string[]): string[] {

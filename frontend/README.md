@@ -221,9 +221,66 @@ which covers the window before it reaches GitHub: no token configured, a failed
 commit, or a reload in between. The two are unioned on load, so neither can lose
 a lock the other knows about.
 
+**Emptying** a field counts as a correction too. Deleting a bogus BPM is a
+statement about the record just as much as typing one is, so the field is locked
+and left empty — otherwise the value still sitting in `tracks.txt`, or in the
+Beatport/tunebat cache, would quietly put it back on the next reload.
+
 Every field in the metadata block is optional in both directions, and unknown
 fields are read past rather than choked on, so files written by older or newer
 versions all still read correctly.
+
+### Unsaved changes are queued, not dropped
+Every save goes to GitHub, and GitHub is not always reachable — a dead link, an
+expired token, a rate limit. When a commit fails the change is still applied
+locally, so the screen looks right; the danger is that this device is then the
+only place it exists, and the next re-fetch run from anywhere else will commit
+the old value back over the top.
+
+So a failed commit is recorded in `localStorage` under `pending.sync` and shown
+as a **standing bar at the top of every page** — not a message on the screen
+where the edit happened, which disappears the moment you navigate away. It is
+retried automatically:
+
+- when the browser comes back **online**,
+- when the **tab is brought back** to the front,
+- **on load**, once the collection has finished rebuilding,
+- and on a **60-second timer**, for connectivity that returns without an event.
+
+The `sha` is re-read immediately before each attempt, so a retry made days later
+merges against whatever is in the repo now instead of failing forever on a stale
+one. A retry never fires against an empty collection, which would otherwise
+erase `tracks.txt` if it ran before loading finished. Closing the tab while a
+change is still local-only asks for confirmation, and the bar offers **Download
+backup** — the exact file that would have been committed — for when GitHub is
+going to stay unreachable.
+
+`npm run check:sync` verifies all of it against a stubbed GitHub, including the
+stale-sha retry, the empty-collection guard, and the marker surviving into a
+fresh session.
+
+#### Drift is detected, not just remembered
+A marker only exists if something thought to write one, which is no help for
+work stranded by an *earlier* build — an edit whose commit failed months ago, or
+a re-fetch run that filled in a hundred keys and then couldn't save them. Those
+left nothing behind, so nothing would ever have retried them.
+
+So on every load the committed file is compared against what this device
+believes, and any difference queues a push regardless of how it arose. The
+comparison is on **values** (key, BPM, manual flags), not on file text —
+whitespace or field-order differences between the Java exporter and
+`renderTracksTxt` would otherwise read as permanent drift and cause a commit on
+every single load.
+
+It works in the other direction too: if the file already matches, a leftover
+marker is stale — the change landed, or was committed from another device — and
+is cleared, so the warning bar can't get stuck on.
+
+The baseline is only ever the file fetched from GitHub. When the repo is
+unreachable the app falls back to the `assets/tracks.txt` bundled at build time,
+and that snapshot is explicitly *not* used for the comparison: it is usually
+older than the repo, so treating it as the truth would report drift that isn't
+there and then overwrite good data with stale data.
 
 ### Configuration (⚙ settings)
 Open the ⚙ panel and set:

@@ -451,7 +451,6 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   object-fit: cover;
   border: 1px solid var(--border);
   background: var(--panel-2);
-  flex: 0 0 auto;
 }
 .cover-lg {
   width: 180px;
@@ -459,7 +458,6 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   border-radius: 10px;
   object-fit: cover;
   border: 1px solid var(--border);
-  background: var(--panel-2);
 }
 /* Thumbnail for dense lists, where a 48px sleeve would dominate the row. */
 .cover-sm {
@@ -1159,5 +1157,61 @@ input[type="text"]:focus { outline: none; border-color: var(--accent); }
   .cheat-wheel .cw-head { font-size: 10px; }
 }
 
+/*
+ * Unsynced-changes bar. Sticks to the top of every page and stays there until
+ * the change reaches GitHub, because the failure matters long after the screen
+ * that caused it has been left behind.
+ */
+.sync-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  /* Fixed height on desktop so the topbar below can be offset by exactly this
+     much; see the :has() rule underneath. */
+  height: 38px;
+  padding: 0 16px;
+  background: #4a2a12;
+  border-bottom: 1px solid #7a4a1c;
+  color: #ffd9a8;
+  font-size: 13px;
+}
+/*
+ * The page's own topbar is sticky at top:0 too. Without this the two would
+ * occupy the same strip and the warning — which is the more urgent of the two —
+ * would sit on top of the collection's controls.
+ */
+body:has(.sync-bar) .topbar { top: 39px; }
+.sync-icon { font-size: 15px; }
+.sync-text {
+  flex: 1 1 200px;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sync-text strong { color: #ffb765; }
+.sync-dim { color: #d8b48a; opacity: 0.85; margin-left: 6px; }
+.sync-btn {
+  flex: 0 0 auto;
+  background: #7a4a1c;
+  color: #fff3e2;
+  border: 1px solid #a4661f;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.sync-btn:hover:not(:disabled) { background: #94581f; }
+.sync-btn:disabled { opacity: 0.6; cursor: default; }
+.sync-btn-ghost { background: transparent; }
 
-
+/* On a phone the topbar isn't sticky, so the bar may take the height it needs. */
+@media (max-width: 720px) {
+  .sync-bar { height: auto; padding: 8px 12px; }
+  .sync-text { white-space: normal; }
+  body:has(.sync-bar) .topbar { top: 0; }
+}

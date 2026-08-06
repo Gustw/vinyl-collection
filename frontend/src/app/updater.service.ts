@@ -835,8 +835,16 @@ export class UpdaterService {
         this.sha,
         `Update collection (${this.processed()}/${this.total()}${suffix})`
       );
+      this.col.markSynced();
     } catch (e) {
       this.canCommit = false; // stop trying after a failure (e.g. sha conflict)
+      // Record it durably so the run's results are retried later rather than
+      // living only in this browser's caches. The retry re-reads the sha, so
+      // the conflict that stopped this run doesn't stop that one.
+      this.col.markPending(
+        `Update collection (${this.processed()}/${this.total()})`,
+        String(e)
+      );
       this.message.set('Saved partially; GitHub commit failed: ' + e);
     }
   }
