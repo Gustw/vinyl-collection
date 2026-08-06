@@ -2328,8 +2328,8 @@
   Year: 2012
   Label: Jungle Cakes
   Art: https://i.discogs.com/xFgbDOcbgkzDkUwxt-LEjMv_yEH9w0nNnnqSoVMKzSM/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNDY5/NjYtMTU0MTUzMzg3/MS05MzExLmpwZWc.jpeg
-   1. Paella / Blaze It Up - Deekline And Ed Solo [Pos: A | Key: F# minor (11A) | BPM: 88]
-   2. Soundclash (Deekline & Ed Solo Rmx) - RackNRuin [Pos: B | Key: F major (7B) | BPM: 77]
+   1. Paella / Blaze It Up - Deekline And Ed Solo [Pos: A | Key: F# minor (11A) | BPM: 176 | Manual: key,bpm]
+   2. Soundclash (Deekline & Ed Solo Rmx) - RackNRuin [Pos: B | Key: F major (7B) | BPM: 154 | Manual: key,bpm]
 
 === Five On It / Tequila Sunrise -- JFB ===
   ID: 3951392
@@ -2348,8 +2348,8 @@
   Year: 2013
   Label: Kaotik Soundsystem
   Art: https://i.discogs.com/yHDFh_7HBSOyDwWFeaef5aMInRlXbnTbJZEd2aLa9e0/rs:fit/g:sm/q:90/h:250/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5OTYz/NDQtMTM4MTY3MzA0/Ni0zMjk3LmpwZWc.jpeg
-   1. Gals Dem Sugar - Mandidextrous & Vandal [Pos: A1 | Key: C# major (3B) | BPM: 95]
-   2. Run Off Ya Mouth - Vandal [Pos: B1 | Key: B minor (10A) | BPM: 80]
+   1. Gals Dem Sugar - Mandidextrous & Vandal [Pos: A1 | Key: Db major (3B) | BPM: 190 | Manual: key,bpm]
+   2. Run Off Ya Mouth - Vandal [Pos: B1 | Key: B minor (10A) | BPM: 160 | Manual: key,bpm]
    3. Swing My Brain - Suburbass [Pos: B2 | Key: B minor (10A) | BPM: 185]
 
 === PsychoDynamik 04 -- Various ===
