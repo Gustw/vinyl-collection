@@ -1651,7 +1651,7 @@
   Year: 2009
   Label: Nu Urban Music France
   Art: https://i.discogs.com/FToNr2HG8CveDSqgYJ90nZMF23PkAmehUfmazjgze_Q/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Njg3/NzItMTIzNTc0MDgw/Ni5qcGVn.jpeg
-   1. Computer Dub - Viniselecta & U Stone [Pos: A | Key: D# minor (2A) | BPM: 91]
+   1. Computer Dub - Viniselecta & U Stone [Pos: A | Key: D# minor (2A) | BPM: 182 | Manual: key,bpm]
    2. Stone In My Heart - Viniselecta & U Stone [Pos: B | Key: Bb major (6B) | BPM: 137]
 
 === Ganja Fire / Herbsmoke (Visionary Remix) -- Visionary / Aries ===
@@ -1662,7 +1662,7 @@
   Label: Pure Vibez Recordings
   Art: https://i.discogs.com/rmruZinYsHc_3bYLskihRodq0MMQ6sdLMkPFuISsV7I/rs:fit/g:sm/q:90/h:336/w:336/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3Njk1/MS0xMTc5OTM1Nzg1/LmpwZWc.jpeg
    1. Ganja Fire - Visionary Feat. Camp Souljah [Pos: A | Key: C# major (3B) | BPM: 140]
-   2. Herbsmoke (Visionary Remix) - Aries [Pos: B | Key: G major (9B) | BPM: 90]
+   2. Herbsmoke (Visionary Remix) - Aries [Pos: B | Key: G major (9B) | BPM: 180 | Manual: key,bpm]
 
 === We Got The Sound (Zound & Ku Remix) / Hollow Earth -- Zound & Ku (10) / DJ Dubb ===
   ID: 1650200
@@ -1779,7 +1779,7 @@
   Year: 2010
   Label: Killa Dubz
   Art: https://i.discogs.com/Oy4wLywGRS3kjcQjulZcIRPOr57Mx0aObtUwKYylkXk/rs:fit/g:sm/q:90/h:600/w:517/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwOTI0/ODQtMTI2NzcyMjUx/OC5qcGVn.jpeg
-   1. My Sound A Champion - Serial Killaz [Pos: A | Key: B major (1B) | BPM: 93]
+   1. My Sound A Champion - Serial Killaz [Pos: A | Key: B major (1B) | BPM: 186 | Manual: key,bpm]
    2. Walk Like A Champion - Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 180]
 
 === Feelings -- Shy FX & T Power ===
@@ -1799,7 +1799,7 @@
   Year: 2006
   Label: Digital Soundboy Recording Co.
   Art: https://i.discogs.com/mkLjAdpws9dJzMNmi6jgS87PUPCOP0svqFhFmAjf2ow/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5OTk5/MS0xNTI3NDQ1Njg2/LTMzNTcuanBlZw.jpeg
-   1. Everyday - Shy FX & T Power [Pos: A | Key: Eb major (5B) | BPM: 89]
+   1. Everyday - Shy FX & T Power [Pos: A | Key: Eb major (5B) | BPM: 178 | Manual: key,bpm]
    2. Feelings (Instrumental) - Shy FX & T Power [Pos: AA | Key: F major (7B) | BPM: 126]
 
 === Raggamuffin / Crying Out -- Soundclash ===
@@ -1809,7 +1809,7 @@
   Year: 2006
   Label: Dirty Dubs
   Art: https://i.discogs.com/9I2bh8maunKa7t76dEmtOQknYeDoPXKYPqmFxUBur_c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2Mjgy/NC0xMzQ5NjM5MTEw/LTQ0NzguanBlZw.jpeg
-   1. Raggamuffin - Soundclash [Pos: A | Time: 5:22 | Key: G major (9B) | BPM: 86]
+   1. Raggamuffin - Soundclash [Pos: A | Time: 5:22 | Key: G major (9B) | BPM: 172 | Manual: key,bpm]
    2. Crying Out - Soundclash [Pos: AA | Time: 6:31 | Key: D major (10B) | BPM: 176]
 
 === Dub Rock Sound / Thousand Miles -- Visionary Featuring King ===
@@ -1931,8 +1931,8 @@
   Year: 2020
   Label: Jungle Cakes
   Art: https://i.discogs.com/N8wjrg9KqNXmOJO6NIGPoBjISE8OsUxYQUC4XGwJLd8/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjQ5/NzE3LTE2MDU5NzYy/OTMtMjI2OC5qcGVn.jpeg
-   1. Bad Boys (Ben Snow & Jappa Remix) - Deekline & Ed Solo [Pos: A | Key: E minor (9A) | BPM: 88]
-   2. Bam Bam (Benny Page & Deekline Remix) - Deekline & Ed Solo [Pos: B | Key: F major (7B) | BPM: 88]
+   1. Bad Boys (Ben Snow & Jappa Remix) - Deekline & Ed Solo [Pos: A | Key: E minor (9A) | BPM: 176 | Manual: key,bpm]
+   2. Bam Bam (Benny Page & Deekline Remix) - Deekline & Ed Solo [Pos: B | Key: F major (7B) | BPM: 176 | Manual: key,bpm]
 
 === Chant Down Babylon / Steppin' Razor -- Gunmen ===
   ID: 9478559
@@ -2045,7 +2045,7 @@
   Year: 2006
   Label: Digital Soundboy Recording Co.
   Art: https://i.discogs.com/dxfaLm9gObKsmYXfkoo1JTg_DBPmDdjmjdwxccrrOxw/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3ODA4/OS0xMTYzOTMzNTY5/LmpwZWc.jpeg
-   1. Rub A Dub - Benny Page [Pos: A | Key: C# major (3B) | BPM: 87]
+   1. Rub A Dub - Benny Page [Pos: A | Key: Db major (3B) | BPM: 174 | Manual: key,bpm]
    2. Urban Tribe - Benny Page [Pos: AA | Key: G major (9B) | BPM: 175]
 
 === No More War -- Daddy Teacha & Uptones ===
