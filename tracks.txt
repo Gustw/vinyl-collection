@@ -2075,7 +2075,7 @@
   Label: Roots Records
   Art: https://i.discogs.com/1bJWEXBMVeLTmDyVjC_SRJYDySK8nu2FuEqllPbCnew/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTA0/MDMtMTIxNzMzMjE3/MS5qcGVn.jpeg
    1. Super Skank - DJ Panik [Pos: A | Key: G major (9B) | BPM: 175]
-   2. Warrior Chant - DJ Origin [Pos: AA | Key: B major (1B) | BPM: 90]
+   2. Warrior Chant - DJ Origin [Pos: AA | Key: B major (1B) | BPM: 180 | Manual: key,bpm]
 
 === Truth & Rights / Precious /  Good Sensi -- DJ Panik (3) & M-Rode / Jera (4) / Dijeyow ===
   ID: 2453369
@@ -2095,7 +2095,7 @@
   Year: 2008
   Label: Dope Ammo Records
   Art: https://i.discogs.com/U27QgZyqh-hSvOheob1lnQ5cNbtNSLcRJUbjBtjnljU/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjE5/MzEtMTIxMjg4MjQy/MS5qcGVn.jpeg
-   1. Roots + Future - Dope Ammo vs Soundclash [Pos: A | Key: A# minor (3A) | BPM: 89]
+   1. Roots + Future - Dope Ammo vs Soundclash [Pos: A | Key: A# minor (3A) | BPM: 178 | Manual: key,bpm]
    2. Dub Criminal - Dope Ammo [Pos: AA | Key: F# major (2B) | BPM: 175]
 
 === Oh Natty / Skankin' Dub -- Ghetto Fabulous / Dub Street ===
@@ -2105,7 +2105,7 @@
   Year: 2006
   Label: Lion Dubs
   Art: https://i.discogs.com/0vlxZfysomQXutbSWmDFBifb6tnuNRthyUtNdF4aHqc/rs:fit/g:sm/q:90/h:397/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1Njk4/Ni0xMTQ5MDMzODA5/LmpwZWc.jpeg
-   1. Oh Natty - Ghetto Fabulous [Pos: A | Key: C# minor (12A) | BPM: 92]
+   1. Oh Natty - Ghetto Fabulous [Pos: A | Key: C# minor (12A) | BPM: 184 | Manual: key,bpm]
    2. Skankin' Dub - Dub Street [Pos: AA | Key: G major (9B) | BPM: 164]
 
 === No Gun / Be Careful -- Rub-A-Dub Soldiers / Stalefish ===
@@ -2164,7 +2164,7 @@
   Year: 2006
   Label: Digital Soundboy Recording Co.
   Art: https://i.discogs.com/46KADAW_PLiq8MKjC29qjW9onNDgq7BJarcoUcWByGU/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwOTIw/Mi0xMTYwMjI4NzA0/LmpwZWc.jpeg
-   1. Gimme Your Love - Visionary [Pos: A | Key: A# minor (3A) | BPM: 88]
+   1. Gimme Your Love - Visionary [Pos: A | Key: A# minor (3A) | BPM: 176 | Manual: key,bpm]
    2. Jungle Rock - Visionary [Pos: AA | Key: C# major (3B) | BPM: 175]
 
 === Whip Them Soundboy / Another Meditation -- Visionary / Isaac Maya ===
@@ -2184,7 +2184,7 @@
   Year: 2009
   Label: Jungle Cakes
   Art: https://i.discogs.com/RTX_KWlHmtvL0fQ779KNss_VseS2RBfj3fOX-XwQ0KU/rs:fit/g:sm/q:90/h:590/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODYy/NTctMTIzNzU3Nzc5/Ny5qcGVn.jpeg
-   1. Sugar Me - The Wildlife Collective [Pos: A | Key: F# minor (11A) | BPM: 92]
+   1. Sugar Me - The Wildlife Collective [Pos: A | Key: F# minor (11A) | BPM: 184 | Manual: key,bpm]
    2. Wadodem - The Wildlife Collective [Pos: B | Key: G# minor (1A) | BPM: 114]
 
 === Ragga Tip (Walk And Skank) / Ragga Muffin -- Wildlife ===
@@ -2318,7 +2318,7 @@
   Year: 2009
   Label: Jungle Cakes
   Art: https://i.discogs.com/HbRId2klGnAr6q2-BGudi3YXjZT9toH1sQJYIdlBhlk/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDc0/ODQtMTQxNTYzNjE4/NS04MDcyLmpwZWc.jpeg
-   1. No No No (You Don't Love Me) - The Wildlife Collective [Pos: A | Key: G major (9B) | BPM: 81]
+   1. No No No (You Don't Love Me) - The Wildlife Collective [Pos: A | Key: G major (9B) | BPM: 162 | Manual: key,bpm]
    2. Hail Up The Lion - The Wildlife Collective [Pos: B | Key: G major (9B) | BPM: 176]
 
 === Paella / Blaze It Up -- DJ Deekline & Ed Solo ===
