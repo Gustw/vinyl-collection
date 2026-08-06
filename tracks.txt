@@ -1242,7 +1242,7 @@
   Year: 2011
   Label: Jungle Cakes
   Art: https://i.discogs.com/ZCEetvkq4athNFK5K1SA4tJ0LsnAXxoICRLHTb0vtR8/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMTg3/NzgtMTcyOTg4MzM1/MC0xMDUzLmpwZWc.jpeg
-   1. Sensi - Ed Solo and Deekline [Pos: A | Key: B minor (10A) | BPM: 87]
+   1. Sensi - Ed Solo and Deekline [Pos: A | Key: B minor (10A) | BPM: 174 | Manual: key,bpm]
    2. Ghost Town - Ed Solo and Deekline [Pos: B | Key: G major (9B) | BPM: 175]
 
 === Dubplate (Benny Page Remix) -- YT, Million Stylez, Tenor Fly, Blackout Ja & Mr Williamz ===
@@ -1448,7 +1448,7 @@
   Year: 2022
   Label: Rasta Vibez
   Art: https://i.discogs.com/Ee29qgcwbrNNtZ19Py1mzUws6KIS8OqL2-QoCkVeriQ/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzY5/MzY5LTE2NTM5ODY3/NDktMzYzOC5qcGVn.jpeg
-   1. Running Over - Gunmen [Pos: A | Key: C# major (3B) | BPM: 88]
+   1. Running Over - Gunmen [Pos: A | Key: Db major (3B) | BPM: 176 | Manual: key,bpm]
    2. The Sound - Gunmen [Pos: B | Key: D major (10B) | BPM: 175]
 
 === Burn Them / Strictly Rubadub -- Mystic Pulse ===
@@ -1488,7 +1488,7 @@
   Year: 2016
   Label: Rasta Vibez
   Art: https://i.discogs.com/PYAJ2We3CgM012fxAD5N-biFrsulTrhcZ4aYU3vluAI/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNjU4/MDctMTQ3OTY3NzUw/NS0xMTU4LmpwZWc.jpeg
-   1. Soundclash - Pixel [Pos: A1 | Key: C# major (3B) | BPM: 87]
+   1. Soundclash - Pixel [Pos: A1 | Key: Db major (3B) | BPM: 174 | Manual: key,bpm]
    2. Teach - Gunmen [Pos: B1 | Key: E minor (9A) | BPM: 176]
 
 === Legalize it! / Herbalist -- Pixel (8) / Mystic Pulse ===
@@ -1519,7 +1519,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/X1m-Ysxxkb6GTVxE3CQZKMbydystLwtFlCSRkWIgkuQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDM3/MzAyLTE3Nzc0MTcz/OTktOTQyNS5qcGVn.jpeg
    1. River Jordan - Scott Allen & Deeper Connection [Pos: A | Key: G# minor (1A) | BPM: 176]
-   2. We Nah Run - Scott Allen & Deeper Connection [Pos: B | Key: Ab major (4B) | BPM: 90]
+   2. We Nah Run - Scott Allen & Deeper Connection [Pos: B | Key: Ab major (4B) | BPM: 180 | Manual: key,bpm]
 
 === Champion DJ (Remixes) -- Blackstar ===
   ID: 691132
@@ -1528,8 +1528,8 @@
   Year: 2005
   Label: Congo Natty
   Art: https://i.discogs.com/xV74I3tf4qfetig3T_w27mfRsxQR1mfnrg5cYEbX9i0/rs:fit/g:sm/q:90/h:283/w:286/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5MTEz/Mi0xMTc3MDU3MTUy/LmdpZg.jpeg
-   1. Champion DJ (2005 Ebony Dubsters Remix) - Blackstar [Pos: A | Key: E major (12B) | BPM: 83]
-   2. Champion DJ (3rd Eye Mix) - Blackstar [Pos: AA | Key: E major (12B) | BPM: 83]
+   1. Champion DJ (2005 Ebony Dubsters Remix) - Blackstar [Pos: A | Key: E major (12B) | BPM: 166 | Manual: key,bpm]
+   2. Champion DJ (3rd Eye Mix) - Blackstar [Pos: AA | Key: E major (12B) | BPM: 166 | Manual: key,bpm]
 
 === Led Astray / Stand Up (Sigma Rmx) -- DJ Friction ===
   ID: 3392669
@@ -1548,7 +1548,7 @@
   Year: 2001
   Label: Rude Bwoy Plastic
   Art: https://i.discogs.com/cmjjJZuzyVivAoygiqmCHx5Fj3Hq42bj4omHV-UDGbo/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzQy/LTExMjE3NzUxMjYu/anBn.jpeg
-   1. Heads High - Heretic [Pos: A | Key: G major (9B) | BPM: 92]
+   1. Heads High - Heretic [Pos: A | Key: G major (9B) | BPM: 184 | Manual: key,bpm]
    2. Wings Of The Morning - Murder Inc. [Pos: B | Key: B major (1B) | BPM: 144]
 
 === E.Legal Gunshot / Foxy 2 Tails -- Mr. Quest / DJ Dhanu ===
