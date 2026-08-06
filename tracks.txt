@@ -97,7 +97,7 @@
   Art: https://i.discogs.com/W02AGnesO_h9zU5cjh6Dw77LxbEtJr7kUpdpK18pUzA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4Njcx/OTgtMTM0NzQ0NzE3/OC02MDI5LmpwZWc.jpeg
    1. Took My Breath - Run Tingz Cru [Pos: A1 | Key: F minor (4A) | BPM: 176]
    2. Drop Call - Run Tingz Cru [Pos: B1 | Key: A minor (8A) | BPM: 175]
-   3. Sound Clash Toolz - Run Tingz Cru [Pos: B2 | Key: A minor (8A) | BPM: 86]
+   3. Sound Clash Toolz - Run Tingz Cru [Pos: B2 | Key: A minor (8A) | BPM: 172 | Manual: key,bpm]
 
 === Jam Da' Mace / Reservoir Dogs -- Subject 13 ===
   ID: 62850
@@ -126,7 +126,7 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/uAG2bepfH6RkE7qaXYLcPovxbbi0YHOWElOz3DBR6dQ/rs:fit/g:sm/q:90/h:239/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MDQ3/MDItMTQyNjk4MDMx/Ni0xODQyLmpwZWc.jpeg
-   1. Good To Have The Feeling - Deekline & Tippa Irie [Pos: A | Key: G major (9B) | BPM: 88]
+   1. Good To Have The Feeling - Deekline & Tippa Irie [Pos: A | Key: G major (9B) | BPM: 176 | Manual: key,bpm]
    2. Another One For The Road - Cocoa Tea [Pos: B | Key: Bb minor (3A) | BPM: 173]
 
 === #SMR007 -- Dial-M, Msymiakos ===
@@ -192,7 +192,7 @@
   Label: Not On Label (Sizzla), Not On Label (Damian Marley)
   Art: https://i.discogs.com/QMIRqVzjvAY70Crc-YOH338wsA6rnC6Ot2ddmBEa178/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTM0/MzYtMTIxNzYyMzU4/NC5qcGVn.jpeg
    1. Solid As A Rock - Sizzla [Pos: A | Key: D minor (7A) | BPM: 100]
-   2. Jamrock - Damian Marley [Pos: B | Key: G minor (6A) | BPM: 77]
+   2. Jamrock - Damian Marley [Pos: B | Key: G minor (6A) | BPM: 154 | Manual: key,bpm]
 
 === Africa -- Trojan Sound System ===
   ID: 3785465
@@ -216,7 +216,7 @@
    1. Electric Relaxin - Unknown Artist [Pos: A1 | Key: Eb minor (2A) | BPM: 176]
    2. Check The Rhyme - Unknown Artist [Pos: A2 | Key: E minor (9A) | BPM: 174]
    3. Cool Like That - Unknown Artist [Pos: B1 | Key: B minor (10A) | BPM: 176]
-   4. All Night Long - Unknown Artist [Pos: B2 | Key: C minor (5A) | BPM: 88]
+   4. All Night Long - Unknown Artist [Pos: B2 | Key: C minor (5A) | BPM: 176 | Manual: key,bpm]
 
 === Top Rankin / Good Looking Gal -- The Wildlife Collective ===
   ID: 2116925
