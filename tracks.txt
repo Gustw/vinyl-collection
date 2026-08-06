@@ -760,7 +760,7 @@
   Year: 2013
   Label: Jungle Cakes
   Art: https://i.discogs.com/VBdKS4MvllF9feke2lthzcHctsz-Bp6x2TdJlOP9cZI/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDYw/OTUtMTM2MjM5MDQ3/NC05MTc4LmpwZWc.jpeg
-   1. Amen In Session - Jinx In Dub [Pos: A1 | Key: G minor (6A) | BPM: 86]
+   1. Amen In Session - Jinx In Dub [Pos: A1 | Key: G minor (6A) | BPM: 172 | Manual: key,bpm]
    2. Seek And Find (Jinx In Dub Meets Kanjah) - Jinx In Dub [Pos: B1 | Key: C# minor (12A) | BPM: 110]
 
 === French Connection EP -- Various ===
@@ -863,7 +863,7 @@
   Year: 2007
   Label: Znootpoch
   Art: https://i.discogs.com/Z91Ks9fP31dNr2TPbqWiBeXZ-ZlVbzv-0ZseZAUaaNQ/rs:fit/g:sm/q:90/h:495/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjM5/NzgtMTIwMDUxOTA0/NS5qcGVn.jpeg
-   1. Ghost Town - Krumble [Pos: A | Key: D minor (7A) | BPM: 92]
+   1. Ghost Town - Krumble [Pos: A | Key: D minor (7A) | BPM: 184 | Manual: key,bpm]
    2. Angel City - Krumble [Pos: B | Key: A minor (8A) | BPM: 180]
 
 === Burning Babylon / Empty Words -- Alix Perez ===
@@ -874,7 +874,7 @@
   Label: 1985 Music
   Art: https://i.discogs.com/rEIewHJG3po1VAhwXjj3gr_k_EH9D0qEVSdzxQAfWY8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5ODQ1/MTY2LTE2MzM3Njgz/NzAtMjk2Mi5qcGVn.jpeg
    1. Burning Babylon - Alix Perez [Pos: A | Key: B minor (10A) | BPM: 166]
-   2. Empty Words - Alix Perez [Pos: B | Key: Db minor (12A) | BPM: 87]
+   2. Empty Words - Alix Perez [Pos: B | Key: C# minor (12A) | BPM: 174 | Manual: key,bpm]
 
 === Mr. Majestic / The Other Side -- Calibre & High Contrast ===
   ID: 19351834
@@ -913,7 +913,7 @@
   Label: Rasta Vibez
   Art: https://i.discogs.com/Gli3QFTsVCVF0z2lydex8C5EL2VEZFmcsbdO2Wp-hsM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMjkw/MjgzLTE2NDU3Nzgy/MDYtMTI3NS5qcGVn.jpeg
    1. Jah Is Coming - Scott Allen, Pixel [Pos: A | Key: Bb minor (3A) | BPM: 175]
-   2. Babylon Fall - Scott Allen, Pixel [Pos: B | Key: D minor (7A) | BPM: 88]
+   2. Babylon Fall - Scott Allen, Pixel [Pos: B | Key: D minor (7A) | BPM: 176 | Manual: key,bpm]
 
 === Red Light / Little Man -- St.Cal ===
   ID: 23602418
@@ -961,7 +961,7 @@
   Label: Fokuz Recordings
   Art: https://i.discogs.com/FrNsgztvse2dr6Kw03BxWH4hvwvn5ul9Im4Rfu6pu24/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxODQ2/NjktMTM4OTk2NTQz/MS0yMzM3LmpwZWc.jpeg
    1. Wicked Ones - Scott Allen [Pos: A | Key: A# minor (3A) | BPM: 174]
-   2. Zion Dub - Scott Allen & Deeper Connection [Pos: AA | Key: G minor (6A) | BPM: 88]
+   2. Zion Dub - Scott Allen & Deeper Connection [Pos: AA | Key: G minor (6A) | BPM: 176 | Manual: key,bpm]
 
 === Chem Trails / Fall In Love -- Various ===
   ID: 5837089
