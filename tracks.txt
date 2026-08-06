@@ -8,7 +8,7 @@
    1. See The Vibe (Ed Solo Remix) - Gardna Ft. Tiffani Juno [Pos: A | Key: C major (8B) | BPM: 176]
    2. Smoked A Spliff (Jamie Bostron Remix) - Perfect Giddimani [Pos: B | Key: Bb major (6B) | BPM: 174]
 
-=== Put Up Your Hands  -- S.C.A.M. ===
+=== Put Up Your Hands -- S.C.A.M. ===
   ID: 5189460
   Genre: Electronic
   Style: Jungle
@@ -25,7 +25,7 @@
   Year: 2002
   Label: Aphrodite Recordings
   Art: https://i.discogs.com/Y3Dnw7pD5dxqrWw-vBhsYKczyRhCVUEPQKO8x8JSzuc/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwNDMw/LTExMjE3NzQwMTIu/anBn.jpeg
-   1. Ganja Man - Aphrodite [Pos: A | Key: A minor (8A) | BPM: 89]
+   1. Ganja Man - Aphrodite [Pos: A | Key: A minor (8A) | BPM: 178 | Manual: key,bpm]
    2. Heat Haze - Aphrodite [Pos: AA | Key: A# minor (3A) | BPM: 174]
 
 === You're Mine / Terror To Your Ears -- Potential Badboy feat Yush ===
@@ -148,7 +148,7 @@
   Year: 2016
   Label: Gunmen Music
   Art: https://i.discogs.com/DuvXcEAcnd_-vY9DGRiwbx9_Q2kwtSNt7i3f2MQy9q4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNTU5/MDQtMTQ3NTk0MTM4/Mi05NDgwLmpwZWc.jpeg
-   1. Chase The Devil - Gunmen [Pos: A | Key: E minor (9A) | BPM: 175]
+   1. Chase The Devil - Gunmen [Pos: A | Key: E minor (9A) | BPM: 175 | Manual: key,bpm]
    2. So Mi Like It - Gunmen [Pos: B | Key: G minor (6A) | BPM: 176]
 
 === Greetings From Jamaica -- Gunmen / Mystic Pulse ===
@@ -431,7 +431,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/prmwD5RJ-OUy3z0GepH--4EMzoPU5Xz5tKZn2bRlSnI/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTE0/NDktMTM1MDg4NTgy/MC05ODgwLmpwZWc.jpeg
    1. Bad Boyz - Deekline And Ed Solo [Pos: A | Key: A minor (8A) | BPM: 88]
-   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA | Key: C major (8B) | BPM: 175]
+   2. You Can Be My Night - Deekline And Ed Solo [Pos: AA | Key: C major (8B) | BPM: 175 | Manual: key,bpm]
 
 === Super Skank / Nervous -- DJ Panik ===
   ID: 2041969
@@ -502,7 +502,7 @@
   Year: 2009
   Label: Melting Pot
   Art: https://i.discogs.com/D2Ibr7KPNKOKBctNck0vrceOpWzh5xDq8ZzazmH-tF4/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MjAz/NzItMTI0NTU0MDk2/OS5qcGVn.jpeg
-   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: G minor (6A) | BPM: 174]
+   1. Nuh Stop Capleton - Mooncat [Pos: A | Key: G minor (6A) | BPM: 174 | Manual: key,bpm]
    2. Strictly Roots - Mooncat [Pos: B | Key: E minor (9A) | BPM: 174]
 
 === One Of These Days / River Jordan -- Mutt & Tedder / Deeper Connection & Scott Allen ===
@@ -582,7 +582,7 @@
   Year: 2011
   Label: Killa Dubz
   Art: https://i.discogs.com/wilFAEyYlreL3Hud-fc1qkjx6DuanBqXCTdHHoCtChI/rs:fit/g:sm/q:90/h:600/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzE0/NjAtMTQ4ODgxOTM5/NC01NDQyLmpwZWc.jpeg
-   1. Good Enough - Serial Killaz [Pos: A | Key: Ab major (4B) | BPM: 176]
+   1. Good Enough - Serial Killaz [Pos: A | Key: Ab major (4B) | BPM: 176 | Manual: key,bpm]
    2. Jamaican Boy - Serial Killaz [Pos: AA | Key: E minor (9A) | BPM: 180]
 
 === Murder Ya Sound -- Serial Killaz & Run Tingz Cru Featuring Tenor Fly & Blackout J.A ===
@@ -678,7 +678,7 @@
   Year: 2021
   Label: Vibez '93
   Art: https://i.discogs.com/4N0kpR6GmMCom2nSg9S6CB7FnpbM_FrJZmeMIBTJqmU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDA0/ODg4LTE2MzkyOTUy/MzctODcwNS5qcGVn.jpeg
-   1. Desolate - Kit [Pos: A1 | Time: 5:47 | Key: A# minor (3A) | BPM: 170]
+   1. Desolate - Kit [Pos: A1 | Time: 5:47 | Key: A# minor (3A) | BPM: 170 | Manual: key,bpm]
    2. Survive - Kit [Pos: A2 | Time: 5:20 | Key: G major (9B) | BPM: 172]
    3. Between Us - Kit [Pos: B1 | Time: 6:05 | Key: E minor (9A) | BPM: 172]
    4. Out Of Touch - Kit [Pos: B2 | Time: 5:16 | Key: E minor (9A) | BPM: 174]
@@ -720,8 +720,8 @@
   Year: 2015
   Label: Jungle Cakes
   Art: https://i.discogs.com/JoGl4kGuAG8CV5Z_d6ywUOXPRxp383Thl8xoNCBt25o/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NTM2/NTItMTQ1MDIwNDEx/My01MjE1LmpwZWc.jpeg
-   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G major (9B) | BPM: 175]
-   2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 176]
+   1. Really Like You (Jamie Bostron Remix) - Sara Lugo ft. Protoje [Pos: A | Time: 5:15 | Key: G major (9B) | BPM: 175 | Manual: key,bpm]
+   2. I'm Living (Ed Solo & Stickybuds Remix) - Sizzla [Pos: B | Time: 5:33 | Key: B major (1B) | BPM: 176 | Manual: key,bpm]
 
 === Here I Come / Ganja Smuggling -- Ed Solo ===
   ID: 6154793
@@ -731,7 +731,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/2Qj1pghT69MUL25n-3veHiD0-0nCzYz5Kl2LYucSR2g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTQ3/OTMtMTQxMjQ0NDY4/NS01NjA1LmpwZWc.jpeg
    1. Here I Come - Ed Solo [Pos: A1 | Key: E minor (9A) | BPM: 176]
-   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: A# minor (3A) | BPM: 176]
+   2. Ganja Smuggling - Ed Solo [Pos: A2 | Key: A# minor (3A) | BPM: 176 | Manual: key,bpm]
 
 === Smoke The Weed / Joker Smoker -- Ed Solo And Stickybuds ===
   ID: 4742561
@@ -741,7 +741,7 @@
   Label: Jungle Cakes
   Art: https://i.discogs.com/FdvlQLYITfJ3PieS1Ql78jVkDt7fw0yEbjbN9lFlFgc/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDI1/NjEtMTM4MTQ3NzQ3/Mi0yMTkyLmpwZWc.jpeg
    1. Smoke The Weed - Ed Solo And Stickybuds [Pos: A1 | Time: 4:50 | Key: F minor (4A) | BPM: 174]
-   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: F minor (4A) | BPM: 176]
+   2. Joker Smoker - Ed Solo And Stickybuds [Pos: B1 | Time: 4:16 | Key: F minor (4A) | BPM: 176 | Manual: key,bpm]
 
 === Too Greedy (Rmx) / Murder Style -- Stalefish ===
   ID: 689940
